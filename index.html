@@ -64,7 +64,18 @@ a.faf-btn-light{color:#16181D}
 body.tr-open #faf-dock{z-index:40;bottom:0 !important}
 body.tr-open .faf-panel{height:92vh;height:92dvh;max-height:none}
 body.tr-open #faf-sheet-body{padding-bottom:130px}
-.faf-tr-head{display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:-4px;background:#F6F5F1;padding:4px 0 6px;z-index:1}
+.faf-tr-head{display:flex;flex-direction:column;gap:6px;position:sticky;top:-4px;background:#F6F5F1;padding:4px 0 8px;z-index:1;border-bottom:1px solid #E6E4DD}
+.faf-tr-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.faf-tl-row{justify-content:flex-start;gap:8px}
+.faf-tl-label{font-size:14px;color:#3A3D45}
+.faf-tl-btn{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #D6D3CA;background:#fff;color:#16181D;font-size:14px;font-weight:600}
+.faf-tl-btn.is-on{background:#16181D;border-color:#16181D;color:#fff}
+.faf-line-body{display:flex;flex-direction:column;gap:3px;min-width:0}
+.faf-tl{display:none;font-size:15px;line-height:1.45;font-weight:400}
+.faf-tl-pt{color:#1E6B45}
+.faf-tl-en{color:#1D3D66;font-style:italic}
+.faf-tl.is-err{color:#8A8E99;font-size:13px}
+.show-pt .faf-tl-pt,.show-en .faf-tl-en{display:block}
 .faf-back-btn{min-height:40px;padding:0 14px}
 .faf-blur-toggle{display:flex;align-items:center;gap:6px;font-size:14px;color:#3A3D45;min-height:40px}
 .faf-blur-toggle input{width:18px;height:18px;accent-color:#B4232A}
@@ -893,37 +904,141 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     });
   }
 
-  var trView = null; // { box, nodes, cues, idx, userScrollAt }
+  /* ---------- Tradução ---------- */
+  var LANGS = { pt: { label: 'Português', mm: 'pt-BR' }, en: { label: 'Inglês', mm: 'en' } };
+  var TR_PREF = 'fraseafrase.trlangs', TR_STORE = 'fraseafrase.trcache';
+  function getTrLangs() { try { var a = JSON.parse(localStorage.getItem(TR_PREF)); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
+  function setTrLangs(a) { try { localStorage.setItem(TR_PREF, JSON.stringify(a)); } catch (e) {} }
+  var trStore = (function () { try { return JSON.parse(localStorage.getItem(TR_STORE)) || {}; } catch (e) { return {}; } })();
+  var saveTimer = null;
+  function saveStore() {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      var keys = Object.keys(trStore);
+      if (keys.length > 4000) keys.slice(0, keys.length - 4000).forEach(function (k) { delete trStore[k]; });
+      try { localStorage.setItem(TR_STORE, JSON.stringify(trStore)); } catch (e) { trStore = {}; }
+    }, 1500);
+  }
+  var chromeTr = {};
+  function withTimeout(p, ms) { return Promise.race([p, new Promise(function (_, rej) { setTimeout(function () { rej(new Error('timeout')); }, ms); })]); }
+  function viaChrome(text, lang) {
+    if (!('Translator' in self)) return Promise.reject();
+    var get = chromeTr[lang] || (chromeTr[lang] = self.Translator.availability({ sourceLanguage: 'es', targetLanguage: lang }).then(function (av) {
+      if (av !== 'available') throw new Error('na');
+      return self.Translator.create({ sourceLanguage: 'es', targetLanguage: lang });
+    }));
+    return get.then(function (t) { return t.translate(text); });
+  }
+  function viaGoogle(text, lang) {
+    return withTimeout(fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=' + lang + '&dt=t&q=' + encodeURIComponent(text)), 8000)
+      .then(function (r) { if (!r.ok) throw new Error('g'); return r.json(); })
+      .then(function (j) { return j[0].map(function (x) { return x[0]; }).join(''); });
+  }
+  function viaMyMemory(text, lang) {
+    return withTimeout(fetch('https://api.mymemory.translated.net/get?langpair=es|' + LANGS[lang].mm + '&q=' + encodeURIComponent(text)), 8000)
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (j.quotaFinished || !j.responseData || j.responseStatus != 200) throw new Error('mm'); return j.responseData.translatedText; });
+  }
+  var trPending = {}, trQueue = [], trActive = 0;
+  function translate(text, lang) {
+    var key = lang + '|' + text;
+    if (trStore[key]) return Promise.resolve(trStore[key]);
+    if (trPending[key]) return trPending[key];
+    var p = new Promise(function (resolve, reject) { trQueue.push({ text: text, lang: lang, resolve: resolve, reject: reject }); pump(); });
+    trPending[key] = p;
+    p.then(function (out) { trStore[key] = out; saveStore(); delete trPending[key]; }, function () { delete trPending[key]; });
+    return p;
+  }
+  function pump() {
+    while (trActive < 3 && trQueue.length) {
+      var job = trQueue.shift();
+      trActive++;
+      (function (job) {
+        viaChrome(job.text, job.lang)
+          .catch(function () { return viaGoogle(job.text, job.lang); })
+          .catch(function () { return viaMyMemory(job.text, job.lang); })
+          .then(function (out) { if (!out) throw new Error('empty'); job.resolve(out.trim()); }, job.reject)
+          .then(function () { trActive--; pump(); });
+      })(job);
+    }
+  }
+  function fillTranslations(v, i) {
+    if (!v || !v.cues || !v.cues[i]) return;
+    v.langs.forEach(function (lang) {
+      var el = v.nodes[i].querySelector('.faf-tl-' + lang);
+      if (!el || el.dataset.state) return;
+      el.dataset.state = 'loading';
+      el.textContent = '…';
+      translate(v.cues[i].t, lang).then(function (out) { el.textContent = out; el.dataset.state = 'ok'; },
+        function () { el.textContent = 'Tradução indisponível agora'; el.dataset.state = ''; el.classList.add('is-err'); });
+    });
+  }
+  function applyLangs(v) {
+    v.box.classList.toggle('show-pt', v.langs.indexOf('pt') >= 0);
+    v.box.classList.toggle('show-en', v.langs.indexOf('en') >= 0);
+    if (!v.cues) return;
+    var from = Math.max(0, v.idx - 2), to = Math.min(v.cues.length, Math.max(v.idx, 0) + 8);
+    for (var i = from; i < to; i++) fillTranslations(v, i);
+    if (v.io) v.nodes.forEach(function (n) { v.io.unobserve(n); v.io.observe(n); });
+  }
+
+  var trView = null; // { box, nodes, cues, idx, userScrollAt, langs }
   function renderTranscript(m, body) {
     var ep = cur.ep;
+    var langs = getTrLangs();
     body.appendChild(h('div', { class: 'faf-tr-head' }, [
-      h('button', { type: 'button', class: 'faf-btn faf-btn-light faf-back-btn', text: '← Episódios', onclick: function () { showEpisodes = true; openSheet(m); } }),
-      h('label', { class: 'faf-blur-toggle' }, [
-        h('input', { type: 'checkbox', onchange: function () { box.classList.toggle('is-blur', this.checked); } }),
-        ' Esconder texto'
-      ])
+      h('div', { class: 'faf-tr-row' }, [
+        h('button', { type: 'button', class: 'faf-btn faf-btn-light faf-back-btn', text: '← Episódios', onclick: function () { showEpisodes = true; openSheet(m); } }),
+        h('label', { class: 'faf-blur-toggle' }, [
+          h('input', { type: 'checkbox', onchange: function () { box.classList.toggle('is-blur', this.checked); } }),
+          ' Esconder espanhol'
+        ])
+      ]),
+      h('div', { class: 'faf-tr-row faf-tl-row', role: 'group', 'aria-label': 'Tradução' }, [h('span', { class: 'faf-tl-label', text: 'Tradução:' })].concat(Object.keys(LANGS).map(function (lang) {
+        var on = langs.indexOf(lang) >= 0;
+        var b = h('button', { type: 'button', class: 'faf-tl-btn' + (on ? ' is-on' : ''), 'aria-pressed': String(on), text: LANGS[lang].label, onclick: function () {
+          var v = trView; if (!v) return;
+          var i = v.langs.indexOf(lang);
+          if (i >= 0) v.langs.splice(i, 1); else v.langs.push(lang);
+          setTrLangs(v.langs);
+          var now = v.langs.indexOf(lang) >= 0;
+          b.classList.toggle('is-on', now); b.setAttribute('aria-pressed', String(now));
+          applyLangs(v);
+        } });
+        return b;
+      })))
     ]));
     body.appendChild(h('p', { class: 'faf-tr-title', text: ep.title }));
     var box = h('div', { class: 'faf-tr', 'aria-live': 'off' }, [h('p', { class: 'faf-note', text: 'Carregando transcrição…' })]);
     body.appendChild(box);
-    body.appendChild(h('p', { class: 'faf-note', text: 'Toque numa frase para voltar o áudio até ela. Transcrição publicada pelo próprio podcast.' }));
+    body.appendChild(h('p', { class: 'faf-note', text: 'Toque numa frase para voltar o áudio até ela. Transcrição publicada pelo próprio podcast; a tradução é automática e pode ter erros.' }));
     document.body.classList.add('tr-open');
-    trView = { box: box, nodes: [], cues: null, idx: -1, userScrollAt: 0, body: body };
+    trView = { box: box, nodes: [], cues: null, idx: -1, userScrollAt: 0, body: body, langs: langs };
     body.addEventListener('scroll', function () { if (trView && !trView.auto) trView.userScrollAt = Date.now(); }, { passive: true });
     var myView = trView;
     loadTranscript(ep).then(function (cues) {
       if (trView !== myView) return;
       box.replaceChildren();
       myView.cues = cues;
-      myView.nodes = cues.map(function (c) {
-        var b = h('button', { type: 'button', class: 'faf-line', onclick: function () { audio.currentTime = c.s; if (audio.paused) audio.play(); myView.userScrollAt = 0; } }, [
+      myView.nodes = cues.map(function (c, i) {
+        var b = h('button', { type: 'button', class: 'faf-line', 'data-i': String(i), onclick: function () { audio.currentTime = c.s; if (audio.paused) audio.play(); myView.userScrollAt = 0; } }, [
           h('span', { class: 'faf-line-time', text: fmt(c.s) }),
-          h('span', { class: 'faf-line-text', text: c.t })
+          h('span', { class: 'faf-line-body' }, [
+            h('span', { class: 'faf-line-text', text: c.t }),
+            h('span', { class: 'faf-tl faf-tl-pt', lang: 'pt-BR' }),
+            h('span', { class: 'faf-tl faf-tl-en', lang: 'en' })
+          ])
         ]);
         box.appendChild(b);
         return b;
       });
+      if ('IntersectionObserver' in window) {
+        myView.io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting && myView.langs.length) fillTranslations(myView, +en.target.getAttribute('data-i')); });
+        }, { root: body, rootMargin: '200px 0px' });
+      }
       syncTranscript(true);
+      applyLangs(myView);
     }).catch(function () {
       if (trView !== myView) return;
       box.replaceChildren(h('p', { class: 'faf-note', text: 'Não consegui carregar a transcrição deste episódio agora.' }));
@@ -942,6 +1057,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     if (idx < 0) return;
     var node = v.nodes[idx];
     node.classList.add('is-now');
+    if (v.langs && v.langs.length) for (var k = idx; k < idx + 4; k++) fillTranslations(v, k);
     if (Date.now() - v.userScrollAt > 4000) {
       var body = v.body;
       var target = node.offsetTop - body.offsetTop - body.clientHeight * 0.35;
@@ -959,6 +1075,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     $('faf-sheet-body').replaceChildren();
     document.body.style.overflow = '';
     document.body.classList.remove('tr-open');
+    if (trView && trView.io) trView.io.disconnect();
     trView = null;
   }
   function openSheet(m) {
@@ -967,6 +1084,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     $('faf-sheet-sub').textContent = m.source;
     var old = $('faf-sheet-body');
     document.body.classList.remove('tr-open');
+    if (trView && trView.io) trView.io.disconnect();
     var body = old.cloneNode(false);
     old.replaceWith(body);
     trView = null;
