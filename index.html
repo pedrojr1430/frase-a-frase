@@ -1,0 +1,1726 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Frase a Frase</title>
+<meta name="description" content="Aprenda espanhol frase a frase: cartões, leitura guiada, prática e podcasts reais.">
+<meta name="theme-color" content="#F6F5F1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Frase a Frase">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#F6F5F1;height:100%}
+body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;font-family:Inter,system-ui,sans-serif;color:#16181D}
+a{color:#B4232A}a:hover{color:#8A1A20}
+button{font-family:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #F2C230;outline-offset:2px}
+#app{height:100%}
+body.has-dock #scroller{padding-bottom:132px !important}
+
+/* mini player */
+#faf-dock{position:fixed;left:0;right:0;bottom:80px;z-index:20;display:flex;justify-content:center;pointer-events:none;padding:0 8px}
+#faf-dock[hidden]{display:none}
+.faf-dock-card{pointer-events:auto;width:100%;max-width:544px;box-sizing:border-box;background:#16181D;color:#fff;border-radius:18px;padding:10px 12px 8px;box-shadow:0 8px 24px rgba(22,24,29,.28);display:flex;flex-direction:column;gap:6px;margin-bottom:6px}
+.faf-dock-top{display:flex;align-items:center;gap:10px}
+#faf-dock-info{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:10px;background:none;border:none;color:inherit;text-align:left;padding:0}
+#faf-dock-art{width:40px;height:40px;border-radius:8px;object-fit:cover;flex:0 0 auto;background:#2A2D35}
+.faf-dock-text{min-width:0;display:flex;flex-direction:column}
+#faf-dock-title{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#faf-dock-show{font-size:12px;color:#B9BCC5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.faf-ic{flex:0 0 auto;width:40px;height:40px;border-radius:999px;border:none;background:transparent;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+#faf-toggle{width:44px;height:44px;background:#B4232A}
+#faf-speed{width:auto;min-width:44px;padding:0 8px;border:1px solid #4A4E58;height:32px;font-size:12px}
+.faf-dock-bottom{display:flex;align-items:center;gap:8px;font-size:11px;color:#B9BCC5;font-variant-numeric:tabular-nums}
+#faf-seek{flex:1 1 auto;accent-color:#F2C230;height:20px;margin:0}
+
+/* sheet */
+#faf-sheet{position:fixed;inset:0;z-index:30;background:rgba(22,24,29,.5);display:flex;align-items:flex-end;justify-content:center}
+#faf-sheet[hidden]{display:none}
+.faf-panel{width:100%;max-width:560px;max-height:90vh;max-height:90dvh;background:#F6F5F1;border-radius:22px 22px 0 0;display:flex;flex-direction:column;box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom)}
+.faf-head{display:flex;align-items:flex-start;gap:12px;padding:18px 18px 10px}
+.faf-head-text{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
+#faf-sheet-title{margin:0;font-family:Fraunces,Georgia,serif;font-size:22px;line-height:1.2;font-weight:700}
+#faf-sheet-sub{font-size:13px;color:#5B5F6B}
+#faf-sheet-close{width:44px;height:44px;border-radius:999px;border:1px solid #D6D3CA;background:#fff;color:#16181D;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+#faf-sheet-body{overflow-y:auto;padding:4px 18px 22px;display:flex;flex-direction:column;gap:12px}
+.faf-video{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}
+.faf-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.faf-apple iframe{width:100%;height:450px;border:0;border-radius:12px;background:#fff}
+.faf-tip{margin:0;padding:10px 12px;background:#fff;border:1px solid #E6E4DD;border-radius:10px;font-size:14px;line-height:1.45;color:#3A3D45}
+.faf-note{margin:0;font-size:13px;line-height:1.45;color:#5B5F6B}
+.faf-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.faf-btn{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:14px;font-weight:600;text-decoration:none;padding:0 12px;box-sizing:border-box;text-align:center}
+.faf-btn-red{border:none;background:#B4232A;color:#fff}
+.faf-btn-light{border:1px solid #D6D3CA;background:#fff;color:#16181D}
+a.faf-btn-light{color:#16181D}
+.faf-list{display:flex;flex-direction:column;gap:8px}
+.faf-ep{display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:1px solid #E6E4DD;border-radius:14px;padding:12px;color:#16181D;min-height:56px}
+.faf-ep.is-playing{border:2px solid #B4232A;background:#FBE9E7}
+.faf-ep-icon{flex:0 0 auto;width:36px;height:36px;border-radius:999px;background:#16181D;color:#fff;display:flex;align-items:center;justify-content:center}
+.faf-ep.is-playing .faf-ep-icon{background:#B4232A}
+.faf-ep-text{min-width:0;display:flex;flex-direction:column;gap:2px}
+.faf-ep-title{font-size:15px;font-weight:600;line-height:1.3}
+.faf-ep-meta{font-size:12px;color:#5B5F6B}
+</style>
+</head>
+<body>
+<template id="app-template">
+<div style="width: 100%; max-width: 560px; margin: 0 auto; height: 100vh; height: 100dvh; box-sizing: border-box; display: flex; flex-direction: column; background: #F6F5F1; color: #16181D; font-family: Inter, system-ui, sans-serif; overflow: hidden">
+
+<div id="scroller" style="flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: calc(24px + env(safe-area-inset-top)) 20px 28px 20px; box-sizing: border-box">
+
+<!-- ============ INÍCIO ============ -->
+<sc-if value="{{showInicio}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 20px">
+  <div style="display: flex; flex-direction: column; gap: 4px; padding-top: 8px">
+    <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4232A">Frase a Frase</span>
+    <h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 34px; line-height: 1.1; font-weight: 700">¡Hola! Vamos praticar?</h1>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+    <div style="display: flex; align-items: baseline; justify-content: space-between">
+      <span style="font-size: 15px; font-weight: 700">Meta de hoje</span>
+      <span style="font-size: 14px; color: #5B5F6B">{{goalCount}} de {{goalTotal}} atividades</span>
+    </div>
+    <div style="height: 10px; background: #EFEDE6; border-radius: 999px; overflow: hidden">
+      <div style="{{goalBar}}"></div>
+    </div>
+    <span style="font-size: 13px; color: #5B5F6B">{{goalMsg}}</span>
+  </div>
+
+  <div style="background: #16181D; color: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F2C230">Frase do dia · {{dia.cat}}</span>
+    <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 26px; line-height: 1.2">{{dia.es}}</p>
+    <p style="margin: 0; font-size: 15px; color: #D4D6DC">{{dia.pt}}</p>
+    <sc-if value="{{dia.hasNota}}" hint-placeholder-val="{{ true }}">
+      <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #B9BCC5">{{dia.nota}}</p>
+    </sc-if>
+    <button onClick="{{speakDia}}" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #4A4E58; background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
+      Ouvir
+    </button>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E6E4DD">
+      <span style="font-family: Fraunces, Georgia, serif; font-size: 26px; font-weight: 700">{{knownCount}}</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #5B5F6B">de {{phraseTotal}} frases que você sabe</span>
+    </div>
+    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E6E4DD">
+      <span style="font-family: Fraunces, Georgia, serif; font-size: 26px; font-weight: 700">{{reviewCount}}</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #5B5F6B">frases para revisar</span>
+    </div>
+    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E6E4DD">
+      <span style="font-family: Fraunces, Georgia, serif; font-size: 26px; font-weight: 700">{{readCount}}</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #5B5F6B">de {{textTotal}} textos concluídos</span>
+    </div>
+  </div>
+
+  <sc-if value="{{hasReview}}" hint-placeholder-val="{{ false }}">
+    <button onClick="{{goReview}}" style="min-height: 52px; border: none; background: #B4232A; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar agora ({{reviewCount}})</button>
+  </sc-if>
+
+  <div style="display: flex; flex-direction: column; gap: 10px">
+    <h2 style="margin: 0; font-size: 16px; font-weight: 700">Continuar</h2>
+    <button onClick="{{goFrases}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 16px; color: #16181D">
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 16px; font-weight: 600">Frases por situação</span>
+        <span style="font-size: 13px; color: #5B5F6B">6 temas, do restaurante ao trabalho</span>
+      </span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+    </button>
+    <button onClick="{{goTextos}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 16px; color: #16181D">
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 16px; font-weight: 600">Leitura guiada</span>
+        <span style="font-size: 13px; color: #5B5F6B">6 textos, do básico ao avançado</span>
+      </span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+    </button>
+    <button onClick="{{goPratica}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 16px; color: #16181D">
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 16px; font-weight: 600">Prática</span>
+        <span style="font-size: 13px; color: #5B5F6B">Montar frases, escuta e lacunas</span>
+      </span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+    </button>
+    <button onClick="{{goOuvir}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 16px; color: #16181D">
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 16px; font-weight: 600">Ouvir e assistir</span>
+        <span style="font-size: 13px; color: #5B5F6B">Podcasts e vídeos reais de falantes nativos</span>
+      </span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+    </button>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
+    <h2 style="margin: 0; font-size: 16px; font-weight: 700">Áudio</h2>
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <span style="font-size: 13px; color: #5B5F6B">Sotaque</span>
+      <div style="display: flex; gap: 8px">
+        <button onClick="{{setSpain}}" style="{{accentSpain}}">Espanha</button>
+        <button onClick="{{setMexico}}" style="{{accentMexico}}">México</button>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <span style="font-size: 13px; color: #5B5F6B">Velocidade</span>
+      <div style="display: flex; gap: 8px">
+        <button onClick="{{setNormal}}" style="{{rateNormal}}">Normal</button>
+        <button onClick="{{setSlow}}" style="{{rateSlow}}">Lenta</button>
+      </div>
+    </div>
+    <button onClick="{{resetAll}}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: none; background: transparent; color: #B4232A; font-size: 14px; font-weight: 600; text-decoration: underline">Apagar meu progresso</button>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ FRASES ============ -->
+<sc-if value="{{showFrases}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 16px">
+  <h1 style="margin: 0; padding-top: 8px; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Frases</h1>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #EFEDE6; border-radius: 14px">
+    <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
+    <button onClick="{{viewLista}}" style="{{fseg.lista}}">Lista</button>
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px">
+    <button onClick="{{pickAll}}" style="{{allPill}}">Todas</button>
+    <sc-for list="{{cats}}" as="c" hint-placeholder-count="6">
+      <button onClick="{{c.pick}}" style="{{c.style}}">{{c.name}}</button>
+    </sc-for>
+    <button onClick="{{pickReview}}" style="{{reviewPill}}">Revisar ({{reviewCount}})</button>
+  </div>
+
+  <sc-if value="{{isLista}}" hint-placeholder-val="{{ false }}">
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="busca-frase" style="font-size: 13px; font-weight: 600; color: #5B5F6B">Buscar frase</label>
+      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #D6D3CA; border-radius: 12px; background: #FFFFFF; color: #16181D; font-family: inherit; font-size: 16px">
+    </div>
+    <span style="font-size: 13px; color: #5B5F6B">{{listCount}} · toque para estudar no cartão</span>
+    <sc-for list="{{listItems}}" as="p" hint-placeholder-count="6">
+      <div style="display: flex; align-items: stretch; gap: 8px; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 6px">
+        <button onClick="{{p.open}}" style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 10px; border: none; background: transparent; color: #16181D; border-radius: 12px">
+          <span style="font-family: Fraunces, Georgia, serif; font-size: 18px; line-height: 1.3">{{p.es}}</span>
+          <span style="font-size: 14px; line-height: 1.4; color: #5B5F6B">{{p.pt}}</span>
+          <span style="display: flex; align-items: center; gap: 6px; padding-top: 2px">
+            <span style="font-size: 12px; font-weight: 600; color: #B4232A">{{p.cat}}</span>
+            <sc-if value="{{p.isKnown}}" hint-placeholder-val="{{ false }}">
+              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #E3F1E8; color: #0F3F27">Já sei</span>
+            </sc-if>
+            <sc-if value="{{p.isReview}}" hint-placeholder-val="{{ false }}">
+              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">Revisar</span>
+            </sc-if>
+          </span>
+        </button>
+        <button onClick="{{p.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; align-self: center; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
+        </button>
+      </div>
+    </sc-for>
+    <sc-if value="{{listEmpty}}" hint-placeholder-val="{{ false }}">
+      <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #5B5F6B">{{listEmptyMsg}}</div>
+    </sc-if>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{isCards}}" hint-placeholder-val="{{ true }}">
+  <div style="display: flex; flex-direction: column; gap: 16px">
+  <sc-if value="{{deckEmpty}}" hint-placeholder-val="{{ false }}">
+    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 24px; padding: 28px 22px; display: flex; flex-direction: column; gap: 10px">
+      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 22px">Nada para revisar.</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5B5F6B">As frases que você marcar como "Revisar depois" aparecem aqui. Escolha um tema acima para continuar.</p>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{deckHas}}" hint-placeholder-val="{{ true }}">
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #5B5F6B">
+      <span>{{deckLabel}} · {{cardPos}} de {{cardTotal}}</span>
+      <span>{{deckKnown}} já sei</span>
+    </div>
+    <div style="height: 6px; background: #E6E4DD; border-radius: 999px; overflow: hidden">
+      <div style="{{barStyle}}"></div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 24px; padding: 26px 22px; min-height: 310px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4232A">{{card.cat}}</span>
+        <sc-if value="{{card.isKnown}}" hint-placeholder-val="{{ false }}">
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E3F1E8; color: #0F3F27">Já sei</span>
+        </sc-if>
+        <sc-if value="{{card.isReview}}" hint-placeholder-val="{{ false }}">
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">Revisar</span>
+        </sc-if>
+      </div>
+      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 30px; line-height: 1.2">{{card.es}}</p>
+      <div style="display: flex; gap: 8px">
+        <button onClick="{{speakCard}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
+          Ouvir
+        </button>
+        <button onClick="{{speakCardSlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
+      </div>
+      <div style="flex: 1 1 auto"></div>
+      <sc-if value="{{flipped}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid #E6E4DD">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5B5F6B">Português</span>
+          <p style="margin: 0; font-size: 18px; font-weight: 500">{{card.pt}}</p>
+          <sc-if value="{{card.hasNota}}" hint-placeholder-val="{{ true }}">
+            <p style="margin: 0; padding: 10px 12px; background: #FDF3D0; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #4A3A00">{{card.nota}}</p>
+          </sc-if>
+        </div>
+      </sc-if>
+      <sc-if value="{{notFlipped}}" hint-placeholder-val="{{ true }}">
+        <button onClick="{{flip}}" style="min-height: 48px; border: none; background: #F0EEE7; color: #16181D; border-radius: 14px; font-size: 15px; font-weight: 600">Mostrar tradução</button>
+      </sc-if>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 52px minmax(0, 1fr) minmax(0, 1fr); gap: 10px">
+      <button onClick="{{prevCard}}" aria-label="Frase anterior" style="min-height: 52px; display: flex; align-items: center; justify-content: center; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 14px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+      </button>
+      <button onClick="{{markReview}}" style="min-height: 52px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar depois</button>
+      <button onClick="{{markKnown}}" style="min-height: 52px; border: none; background: #B4232A; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Já sei</button>
+    </div>
+  </div>
+  </sc-if>
+  </div>
+  </sc-if>
+</div>
+</sc-if>
+
+<!-- ============ LEITURA ============ -->
+<sc-if value="{{showTextos}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 18px">
+  <h1 style="margin: 0; padding-top: 8px; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Leitura</h1>
+
+  <sc-if value="{{isCatalog}}" hint-placeholder-val="{{ true }}">
+  <div style="display: flex; flex-direction: column; gap: 14px">
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5B5F6B">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <sc-for list="{{levels}}" as="l" hint-placeholder-count="4">
+        <button onClick="{{l.pick}}" style="{{l.style}}">{{l.label}}</button>
+      </sc-for>
+    </div>
+    <span style="font-size: 13px; color: #5B5F6B">{{textListCount}}</span>
+    <sc-for list="{{textList}}" as="t" hint-placeholder-count="4">
+      <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid #E6E4DD; background: #FFFFFF; color: #16181D; border-radius: 18px">
+        <span style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">{{t.nivel}}</span>
+          <span style="{{t.statusStyle}}">{{t.status}}</span>
+        </span>
+        <span style="font-family: Fraunces, Georgia, serif; font-size: 20px; font-weight: 700; line-height: 1.25">{{t.title}}</span>
+        <span style="font-family: Fraunces, Georgia, serif; font-size: 15px; line-height: 1.45; color: #5B5F6B">{{t.preview}}</span>
+        <span style="font-size: 12px; color: #5B5F6B">{{t.meta}}</span>
+      </button>
+    </sc-for>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{isReading}}" hint-placeholder-val="{{ false }}">
+  <div style="display: flex; flex-direction: column; gap: 18px">
+  <button onClick="{{backToList}}" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 8px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+    Todos os textos
+  </button>
+
+  <div style="display: flex; flex-direction: column; gap: 6px">
+    <span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">{{text.nivel}}</span>
+    <h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 24px; font-weight: 700">{{text.title}}</h2>
+    <p style="margin: 0; font-size: 13px; color: #5B5F6B">Toque numa frase para ver a tradução e ouvir.</p>
+  </div>
+
+  <div style="display: flex; gap: 8px; flex-wrap: wrap">
+    <button onClick="{{speakText}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
+      Ouvir texto
+    </button>
+    <button onClick="{{toggleAll}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">{{toggleAllLabel}}</button>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 8px; display: flex; flex-direction: column">
+    <sc-for list="{{sentences}}" as="s" hint-placeholder-count="5">
+      <div style="display: flex; flex-direction: column">
+        <button onClick="{{s.toggle}}" style="{{s.style}}">{{s.es}}</button>
+        <sc-if value="{{s.open}}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 12px 12px 12px">
+            <span style="font-size: 14px; line-height: 1.45; color: #5B5F6B">{{s.pt}}</span>
+            <button onClick="{{s.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
+            </button>
+          </div>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 10px">
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700">Palavras-chave</h3>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+      <sc-for list="{{words}}" as="w" hint-placeholder-count="4">
+        <button onClick="{{w.speak}}" style="text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; color: #16181D">
+          <span style="font-size: 15px; font-weight: 600">{{w.es}}</span>
+          <span style="font-size: 13px; color: #5B5F6B">{{w.pt}}</span>
+        </button>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700">Você entendeu?</h3>
+    <sc-for list="{{questions}}" as="q" hint-placeholder-count="2">
+      <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4232A">Pergunta {{q.num}}</span>
+        <p style="margin: 0; font-size: 16px; font-weight: 600">{{q.text}}</p>
+        <sc-for list="{{q.options}}" as="o" hint-placeholder-count="3">
+          <button onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
+        </sc-for>
+        <sc-if value="{{q.answered}}" hint-placeholder-val="{{ false }}">
+          <p style="{{q.fbStyle}}">{{q.fbText}}</p>
+        </sc-if>
+      </div>
+    </sc-for>
+    <sc-if value="{{textDone}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 16px; background: #E3F1E8; color: #0F3F27">
+        <span style="font-size: 15px; font-weight: 700">Texto concluído.</span>
+        <sc-if value="{{hasNextText}}" hint-placeholder-val="{{ true }}">
+          <button onClick="{{nextText}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border: none; background: #1E6B45; color: #FFFFFF; border-radius: 12px; font-size: 14px; font-weight: 600">Próximo texto</button>
+        </sc-if>
+      </div>
+    </sc-if>
+  </div>
+  </div>
+  </sc-if>
+</div>
+</sc-if>
+
+<!-- ============ PRÁTICA ============ -->
+<sc-if value="{{showPratica}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 18px">
+  <h1 style="margin: 0; padding-top: 8px; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Prática</h1>
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #EFEDE6; border-radius: 14px">
+    <button onClick="{{modeMontar}}" style="{{seg.montar}}">Montar</button>
+    <button onClick="{{modeEscuta}}" style="{{seg.escuta}}">Escuta</button>
+    <button onClick="{{modeLacuna}}" style="{{seg.lacuna}}">Lacuna</button>
+  </div>
+
+  <!-- Montar -->
+  <sc-if value="{{isMontar}}" hint-placeholder-val="{{ true }}">
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <span style="font-size: 13px; color: #5B5F6B">Exercício {{exPos}} de {{exTotal}}</span>
+    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5B5F6B">Traduza para o espanhol</span>
+      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 24px; line-height: 1.25">{{ex.pt}}</p>
+    </div>
+    <div style="min-height: 112px; box-sizing: border-box; padding: 14px; border: 2px dashed #D6D3CA; border-radius: 16px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+      <sc-for list="{{built}}" as="b" hint-placeholder-count="2">
+        <button onClick="{{b.remove}}" style="min-height: 44px; padding: 0 14px; border: none; background: #16181D; color: #FFFFFF; border-radius: 12px; font-size: 16px; font-weight: 500">{{b.word}}</button>
+      </sc-for>
+      <sc-if value="{{builtEmpty}}" hint-placeholder-val="{{ false }}">
+        <span style="font-size: 14px; color: #5B5F6B; padding: 12px 4px">Toque nas palavras abaixo</span>
+      </sc-if>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <sc-for list="{{pool}}" as="p" hint-placeholder-count="4">
+        <button onClick="{{p.add}}" style="min-height: 44px; padding: 0 14px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 12px; font-size: 16px; font-weight: 500">{{p.word}}</button>
+      </sc-for>
+    </div>
+    <sc-if value="{{exChecked}}" hint-placeholder-val="{{ false }}">
+      <div style="{{exFbStyle}}">
+        <span style="font-size: 15px; font-weight: 700">{{exFbTitle}}</span>
+        <span style="font-size: 14px">{{ex.answer}}</span>
+      </div>
+    </sc-if>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+      <button onClick="{{resetEx}}" style="min-height: 52px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 14px; font-size: 15px; font-weight: 600">Limpar</button>
+      <button onClick="{{primaryEx}}" style="{{primaryExStyle}}">{{primaryExLabel}}</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- Escuta -->
+  <sc-if value="{{isEscuta}}" hint-placeholder-val="{{ false }}">
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <span style="font-size: 13px; color: #5B5F6B">Exercício {{liPos}} de {{liTotal}} · Ouça e escolha o significado</span>
+    <div style="background: #16181D; color: #FFFFFF; border-radius: 24px; padding: 26px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+      <button onClick="{{liPlay}}" aria-label="Ouvir frase" style="width: 88px; height: 88px; border-radius: 999px; border: none; background: #B4232A; color: #FFFFFF; display: flex; align-items: center; justify-content: center">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
+      </button>
+      <div style="display: flex; gap: 8px">
+        <button onClick="{{liPlaySlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #4A4E58; background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
+        <button onClick="{{liToggleText}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #4A4E58; background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">{{liTextLabel}}</button>
+      </div>
+      <sc-if value="{{liShowText}}" hint-placeholder-val="{{ false }}">
+        <p style="margin: 0; text-align: center; font-family: Fraunces, Georgia, serif; font-size: 22px; line-height: 1.25">{{li.es}}</p>
+      </sc-if>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{liOptions}}" as="o" hint-placeholder-count="3">
+        <button onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
+      </sc-for>
+    </div>
+    <sc-if value="{{liAnswered}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <p style="{{liFbStyle}}">{{liFbText}}</p>
+        <button onClick="{{liNext}}" style="min-height: 52px; border: none; background: #B4232A; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
+      </div>
+    </sc-if>
+  </div>
+  </sc-if>
+
+  <!-- Lacuna -->
+  <sc-if value="{{isLacuna}}" hint-placeholder-val="{{ false }}">
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <span style="font-size: 13px; color: #5B5F6B">Exercício {{gPos}} de {{gTotal}} · Complete a frase</span>
+    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 22px 20px; display: flex; flex-direction: column; gap: 12px">
+      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 24px; line-height: 1.5">{{gap.before}}<span style="{{gapStyle}}">{{gapText}}</span>{{gap.after}}</p>
+      <sc-if value="{{gAnswered}}" hint-placeholder-val="{{ false }}">
+        <p style="margin: 0; font-size: 14px; color: #5B5F6B">{{gap.pt}}</p>
+      </sc-if>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{gOptions}}" as="o" hint-placeholder-count="3">
+        <button onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
+      </sc-for>
+    </div>
+    <sc-if value="{{gAnswered}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <p style="{{gFbStyle}}">{{gFbText}}</p>
+        <button onClick="{{gNext}}" style="min-height: 52px; border: none; background: #B4232A; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
+      </div>
+    </sc-if>
+  </div>
+  </sc-if>
+</div>
+</sc-if>
+
+<!-- ============ OUVIR ============ -->
+<sc-if value="{{showOuvir}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 16px">
+  <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px">
+    <h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Ouvir e assistir</h1>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5B5F6B">Conteúdo real, gravado por falantes nativos. Toque em Ouvir ou Assistir para tocar aqui mesmo, com controle de velocidade.</p>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 8px">
+    <sc-for list="{{mFilters}}" as="f" hint-placeholder-count="4">
+      <button onClick="{{f.pick}}" style="{{f.style}}">{{f.label}}</button>
+    </sc-for>
+  </div>
+  <span style="font-size: 13px; color: #5B5F6B">{{mCount}} · {{heardCount}} marcados como ouvidos</span>
+
+  <sc-for list="{{media}}" as="m" hint-placeholder-count="4">
+    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap">
+        <span style="{{m.typeStyle}}">{{m.type}}</span>
+        <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">{{m.nivel}}</span>
+        <sc-if value="{{m.heard}}" hint-placeholder-val="{{ false }}">
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E3F1E8; color: #0F3F27">Ouvido</span>
+        </sc-if>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-family: Fraunces, Georgia, serif; font-size: 20px; font-weight: 700; line-height: 1.25">{{m.title}}</span>
+        <span style="font-size: 13px; color: #5B5F6B">{{m.source}}</span>
+      </div>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #16181D">{{m.desc}}</p>
+      <p style="margin: 0; padding: 10px 12px; background: #F6F5F1; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #3A3D45">{{m.tip}}</p>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+        <sc-if value="{{m.hasPlayer}}">
+        <button onClick="{{m.play}}" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: 12px; background: #16181D; color: #FFFFFF; font-size: 14px; font-weight: 600">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"></path></svg>
+          {{m.playLabel}}
+        </button>
+        </sc-if>
+        <sc-if value="{{m.noPlayer}}">
+        <a href="{{m.url}}" target="_blank" rel="noopener noreferrer" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 12px; background: #16181D; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">
+          Abrir
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4 10 14"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>
+        </a>
+        </sc-if>
+        <button onClick="{{m.toggle}}" style="{{m.heardStyle}}">{{m.heardLabel}}</button>
+      </div>
+    </div>
+  </sc-for>
+
+  <div style="background: #16181D; color: #FFFFFF; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F2C230">Como estudar com áudio real</span>
+    <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; color: #E4E5E9">
+      <li>Ouça uma vez sem legenda, só para pegar a ideia geral.</li>
+      <li>Ouça de novo com legenda em espanhol, pausando nas partes difíceis.</li>
+      <li>Anote 3 frases úteis e procure por elas na aba Frases.</li>
+      <li>Repita as frases em voz alta, imitando o ritmo do falante.</li>
+    </ol>
+  </div>
+</div>
+</sc-if>
+
+</div>
+
+<nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; padding: 8px 6px calc(10px + env(safe-area-inset-bottom)) 6px; background: #FFFFFF; border-top: 1px solid #E6E4DD">
+  <button onClick="{{goInicio}}" style="{{nav.inicio}}">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z"></path></svg>
+    Início
+  </button>
+  <button onClick="{{goFrases}}" style="{{nav.frases}}">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"></path></svg>
+    Frases
+  </button>
+  <button onClick="{{goTextos}}" style="{{nav.textos}}">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2V4Z"></path><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7V4Z"></path></svg>
+    Leitura
+  </button>
+  <button onClick="{{goPratica}}" style="{{nav.pratica}}">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+    Prática
+  </button>
+  <button onClick="{{goOuvir}}" style="{{nav.ouvir}}">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Z"></path><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z"></path></svg>
+    Ouvir
+  </button>
+</nav>
+
+</div>
+</template>
+<div id="app"></div>
+
+<div id="faf-dock" hidden>
+  <div class="faf-dock-card" role="region" aria-label="Player de áudio">
+    <div class="faf-dock-top">
+      <button id="faf-dock-info" type="button" aria-label="Ver episódios">
+        <img id="faf-dock-art" alt="" hidden>
+        <span class="faf-dock-text"><span id="faf-dock-title"></span><span id="faf-dock-show"></span></span>
+      </button>
+      <button id="faf-back" class="faf-ic" type="button" aria-label="Voltar 10 segundos">−10</button>
+      <button id="faf-toggle" class="faf-ic" type="button" aria-label="Pausar"></button>
+      <button id="faf-fwd" class="faf-ic" type="button" aria-label="Avançar 30 segundos">+30</button>
+      <button id="faf-close" class="faf-ic" type="button" aria-label="Fechar player"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="faf-dock-bottom">
+      <span id="faf-cur">0:00</span>
+      <input id="faf-seek" type="range" min="0" max="1000" value="0" aria-label="Posição do episódio">
+      <span id="faf-dur">0:00</span>
+      <button id="faf-speed" class="faf-ic" type="button" aria-label="Velocidade">1x</button>
+    </div>
+  </div>
+</div>
+
+<div id="faf-sheet" hidden>
+  <div class="faf-panel" role="dialog" aria-modal="true" aria-labelledby="faf-sheet-title">
+    <div class="faf-head">
+      <div class="faf-head-text"><h2 id="faf-sheet-title"></h2><span id="faf-sheet-sub"></span></div>
+      <button id="faf-sheet-close" type="button" aria-label="Fechar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div id="faf-sheet-body"></div>
+  </div>
+</div>
+
+<script>/* Frase a Frase — motor de renderização leve (substitui o runtime do protótipo) */
+(function () {
+  'use strict';
+
+  function get(scope, path) {
+    path = path.trim();
+    if (path === 'true') return true;
+    if (path === 'false') return false;
+    var parts = path.split('.');
+    var v = scope[parts[0]];
+    for (var i = 1; i < parts.length; i++) v = v == null ? undefined : v[parts[i]];
+    return v;
+  }
+  function interp(str, scope) {
+    return str.replace(/\{\{([^}]+)\}\}/g, function (m, p) {
+      var v = get(scope, p);
+      return v == null ? '' : String(v);
+    });
+  }
+  function whole(str) {
+    var m = /^\s*\{\{([^}]+)\}\}\s*$/.exec(str || '');
+    return m ? m[1] : null;
+  }
+  var EVENTS = { onclick: 'click', onchange: 'input', oninput: 'input', onsubmit: 'submit', onkeydown: 'keydown' };
+
+  function build(src, scope, out) {
+    for (var n = src.firstChild; n; n = n.nextSibling) {
+      if (n.nodeType === 3) {
+        out.appendChild(document.createTextNode(n.nodeValue.indexOf('{{') >= 0 ? interp(n.nodeValue, scope) : n.nodeValue));
+        continue;
+      }
+      if (n.nodeType !== 1) continue;
+      var tag = n.localName;
+      if (tag === 'sc-if') {
+        if (get(scope, whole(n.getAttribute('value')) || 'false')) build(n, scope, out);
+        continue;
+      }
+      if (tag === 'sc-for') {
+        var list = get(scope, whole(n.getAttribute('list')) || '') || [];
+        var as = n.getAttribute('as') || 'item';
+        for (var i = 0; i < list.length; i++) {
+          var s2 = Object.create(scope);
+          s2[as] = list[i];
+          build(n, s2, out);
+        }
+        continue;
+      }
+      var el = document.importNode(n, false);
+      var attrs = Array.prototype.slice.call(n.attributes);
+      for (var a = 0; a < attrs.length; a++) {
+        var name = attrs[a].name, val = attrs[a].value;
+        if (name.indexOf('hint-') === 0) { el.removeAttribute(name); continue; }
+        if (val.indexOf('{{') < 0) continue;
+        var lname = name.toLowerCase();
+        if (EVENTS[lname]) {
+          el.removeAttribute(name);
+          var fn = get(scope, whole(val) || '');
+          if (typeof fn === 'function') el.addEventListener(EVENTS[lname], (function (f) { return function (e) { f(e); }; })(fn));
+          continue;
+        }
+        if (lname === 'value' && (tag === 'input' || tag === 'textarea')) {
+          var v = get(scope, whole(val) || '');
+          el.removeAttribute(name);
+          el.value = v == null ? '' : String(v);
+          continue;
+        }
+        el.setAttribute(name, interp(val, scope));
+      }
+      build(n, scope, el);
+      out.appendChild(el);
+    }
+  }
+
+  var tpl, mount, inst, pending = false, lastKey = null;
+
+  function render() {
+    pending = false;
+    var vals = inst.renderVals();
+    var scroller = document.getElementById('scroller');
+    var top = scroller ? scroller.scrollTop : 0;
+    var ae = document.activeElement, focusId = ae && ae.id, selS = null, selE = null;
+    try { if (focusId && ae.selectionStart != null) { selS = ae.selectionStart; selE = ae.selectionEnd; } } catch (e) {}
+    var frag = document.createDocumentFragment();
+    build(tpl.content, vals, frag);
+    mount.replaceChildren(frag);
+    var s = inst.state;
+    var key = s.tab + '|' + s.reading + '|' + s.textIdx + '|' + s.pmode;
+    scroller = document.getElementById('scroller');
+    if (scroller) scroller.scrollTop = key === lastKey ? top : 0;
+    lastKey = key;
+    if (focusId) {
+      var f = document.getElementById(focusId);
+      if (f) { f.focus(); try { if (selS != null) f.setSelectionRange(selS, selE); } catch (e) {} }
+    }
+    if (inst.componentDidUpdate) inst.componentDidUpdate();
+    document.dispatchEvent(new CustomEvent('faf:render'));
+  }
+
+  window.DCLogic = function DCLogic(props) { this.props = props || {}; this.state = {}; };
+  window.DCLogic.prototype.setState = function (p) {
+    Object.assign(this.state, typeof p === 'function' ? p(this.state) : p);
+    if (!pending && mount) { pending = true; Promise.resolve().then(render); }
+  };
+
+  window.FAFBoot = function (Component) {
+    tpl = document.getElementById('app-template');
+    mount = document.getElementById('app');
+    inst = new Component({});
+    window.__fafApp = inst;
+    render();
+  };
+})();
+</script>
+<script>/* Frase a Frase — player de podcasts e vídeos dentro do app */
+(function () {
+  'use strict';
+  var POS_KEY = 'fraseafrase.pos';
+  var SPEEDS = [0.75, 0.9, 1, 1.25];
+  var cache = {};
+  var audio = new Audio();
+  audio.preload = 'metadata';
+  var cur = null; // { media, ep }
+
+  function $(id) { return document.getElementById(id); }
+  function h(tag, attrs, kids) {
+    var el = document.createElement(tag);
+    if (attrs) for (var k in attrs) {
+      if (k === 'text') el.textContent = attrs[k];
+      else if (k === 'html') el.innerHTML = attrs[k];
+      else if (k.indexOf('on') === 0) el.addEventListener(k.slice(2), attrs[k]);
+      else el.setAttribute(k, attrs[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return el;
+  }
+  function fmt(sec) {
+    if (!isFinite(sec) || sec < 0) sec = 0;
+    sec = Math.floor(sec);
+    var m = Math.floor(sec / 60), s = sec % 60, hh = Math.floor(m / 60);
+    if (hh) return hh + ':' + String(m % 60).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+    return m + ':' + String(s).padStart(2, '0');
+  }
+  function fmtDate(iso) {
+    try { return new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' }); } catch (e) { return ''; }
+  }
+  function https(u) { return u ? String(u).replace(/^http:\/\//, 'https://') : u; }
+
+  function loadPos() { try { return JSON.parse(localStorage.getItem(POS_KEY)) || {}; } catch (e) { return {}; } }
+  function savePos(url, t) {
+    try {
+      var p = loadPos();
+      if (t < 5) delete p[url]; else p[url] = { t: Math.floor(t), at: Date.now() };
+      var keys = Object.keys(p).sort(function (a, b) { return p[b].at - p[a].at; });
+      keys.slice(40).forEach(function (k) { delete p[k]; });
+      localStorage.setItem(POS_KEY, JSON.stringify(p));
+    } catch (e) {}
+  }
+
+  function jsonp(url, ms) {
+    return new Promise(function (resolve, reject) {
+      var cb = '__faf' + Date.now() + Math.floor(Math.random() * 1e5);
+      var s = document.createElement('script');
+      var timer = setTimeout(function () { done(); reject(new Error('timeout')); }, ms || 9000);
+      function done() { clearTimeout(timer); try { delete window[cb]; } catch (e) { window[cb] = undefined; } s.remove(); }
+      window[cb] = function (data) { done(); resolve(data); };
+      s.onerror = function () { done(); reject(new Error('network')); };
+      s.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + cb;
+      document.head.appendChild(s);
+    });
+  }
+
+  function fetchEpisodes(m) {
+    if (cache[m.id]) return Promise.resolve(cache[m.id]);
+    var idP = m.apple ? Promise.resolve(m.apple)
+      : jsonp('https://itunes.apple.com/search?media=podcast&limit=1&term=' + encodeURIComponent(m.search)).then(function (d) {
+        if (!d.results || !d.results.length) throw new Error('not found');
+        return d.results[0].collectionId;
+      });
+    return idP.then(function (id) {
+      return jsonp('https://itunes.apple.com/lookup?entity=podcastEpisode&limit=40&id=' + id).then(function (d) {
+        var res = d.results || [];
+        var show = res.filter(function (r) { return r.wrapperType !== 'podcastEpisode'; })[0] || {};
+        var eps = res.filter(function (r) { return r.wrapperType === 'podcastEpisode' && r.episodeUrl; }).map(function (r) {
+          return {
+            title: r.trackName, url: https(r.episodeUrl), date: r.releaseDate,
+            dur: r.trackTimeMillis ? r.trackTimeMillis / 1000 : null,
+            desc: (r.shortDescription || r.description || '').replace(/\s+/g, ' ').trim().slice(0, 180),
+            art: https(r.artworkUrl160 || r.artworkUrl600 || show.artworkUrl100 || '')
+          };
+        });
+        var out = { id: id, show: show, eps: eps };
+        cache[m.id] = out;
+        return out;
+      });
+    });
+  }
+
+  /* ---------- Folha (sheet) ---------- */
+  function closeSheet() {
+    var sh = $('faf-sheet');
+    sh.hidden = true;
+    $('faf-sheet-body').replaceChildren();
+    document.body.style.overflow = '';
+  }
+  function openSheet(m) {
+    var sh = $('faf-sheet');
+    $('faf-sheet-title').textContent = m.title;
+    $('faf-sheet-sub').textContent = m.source;
+    var body = $('faf-sheet-body');
+    body.replaceChildren();
+    sh.hidden = false;
+    document.body.style.overflow = 'hidden';
+    if (m.yt) renderVideo(m, body); else renderPodcast(m, body);
+    $('faf-sheet-close').focus();
+  }
+
+  function renderVideo(m, body) {
+    var src = 'https://www.youtube-nocookie.com/embed/videoseries?list=' + encodeURIComponent(m.yt) +
+      '&playsinline=1&rel=0&hl=pt-BR&cc_lang_pref=es&cc_load_policy=1';
+    if (!audio.paused) audio.pause();
+    body.appendChild(h('div', { class: 'faf-video' }, [
+      h('iframe', { src: src, title: m.title, allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', allowfullscreen: '', referrerpolicy: 'strict-origin-when-cross-origin' })
+    ]));
+    body.appendChild(h('p', { class: 'faf-tip', text: m.tip }));
+    body.appendChild(h('p', { class: 'faf-note', text: 'Toque no ícone de lista dentro do vídeo para escolher outros episódios. Legendas em espanhol: botão CC.' }));
+    body.appendChild(h('div', { class: 'faf-row' }, [
+      h('button', { class: 'faf-btn faf-btn-red', type: 'button', text: 'Marcar como assistido', onclick: function () { markHeard(m.id); this.textContent = 'Marcado ✓'; } }),
+      h('a', { class: 'faf-btn faf-btn-light', href: m.url, target: '_blank', rel: 'noopener noreferrer', text: 'Abrir no YouTube' })
+    ]));
+  }
+
+  function renderPodcast(m, body) {
+    body.appendChild(h('p', { class: 'faf-tip', text: m.tip }));
+    var status = h('p', { class: 'faf-note', text: 'Carregando episódios…' });
+    var list = h('div', { class: 'faf-list' });
+    body.appendChild(status);
+    body.appendChild(list);
+    body.appendChild(h('div', { class: 'faf-row' }, [
+      h('a', { class: 'faf-btn faf-btn-light', href: m.url, target: '_blank', rel: 'noopener noreferrer', text: 'Site oficial (transcrições)' })
+    ]));
+    fetchEpisodes(m).then(function (data) {
+      if (!data.eps.length) throw new Error('empty');
+      status.textContent = data.eps.length + ' episódios mais recentes · toque para ouvir aqui';
+      var pos = loadPos();
+      data.eps.forEach(function (ep) {
+        var playing = cur && cur.ep.url === ep.url;
+        var saved = pos[ep.url];
+        var meta = [fmtDate(ep.date), ep.dur ? fmt(ep.dur) : '', saved ? 'parou em ' + fmt(saved.t) : ''].filter(Boolean).join(' · ');
+        var btn = h('button', { type: 'button', class: 'faf-ep' + (playing ? ' is-playing' : ''), onclick: function () { play(m, ep, data); highlight(list, btn); } }, [
+          h('span', { class: 'faf-ep-icon', 'aria-hidden': 'true', html: playing ? ICON_BARS : ICON_PLAY }),
+          h('span', { class: 'faf-ep-text' }, [
+            h('span', { class: 'faf-ep-title', text: ep.title }),
+            h('span', { class: 'faf-ep-meta', text: meta })
+          ])
+        ]);
+        list.appendChild(btn);
+      });
+    }).catch(function () {
+      status.textContent = 'Não consegui carregar a lista de episódios agora. Confira a internet e tente de novo.';
+      var retry = h('button', { type: 'button', class: 'faf-btn faf-btn-red', text: 'Tentar de novo', onclick: function () { delete cache[m.id]; openSheet(m); } });
+      list.appendChild(retry);
+      if (m.apple) {
+        list.appendChild(h('div', { class: 'faf-apple' }, [
+          h('iframe', { src: 'https://embed.podcasts.apple.com/br/podcast/id' + m.apple + '?theme=light', title: m.title, allow: 'autoplay *; encrypted-media *; clipboard-write', sandbox: 'allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation' })
+        ]));
+      }
+    });
+  }
+  function highlight(list, btn) {
+    Array.prototype.forEach.call(list.children, function (b) {
+      b.classList.remove('is-playing');
+      var ic = b.querySelector('.faf-ep-icon'); if (ic) ic.innerHTML = ICON_PLAY;
+    });
+    btn.classList.add('is-playing');
+    btn.querySelector('.faf-ep-icon').innerHTML = ICON_BARS;
+  }
+
+  /* ---------- Áudio ---------- */
+  var ICON_PLAY = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>';
+  var ICON_PAUSE = '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+  var ICON_BARS = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="10" width="3" height="10" rx="1"/><rect x="10.5" y="4" width="3" height="16" rx="1"/><rect x="17" y="7" width="3" height="13" rx="1"/></svg>';
+
+  var heardMarked = {};
+  function markHeard(id) {
+    var app = window.__fafApp;
+    if (app && app.markHeard) app.markHeard(id);
+  }
+
+  function play(m, ep, data) {
+    var same = cur && cur.ep.url === ep.url;
+    cur = { media: m, ep: ep, show: data && data.show };
+    if (!same) {
+      audio.src = ep.url;
+      var p = loadPos()[ep.url];
+      audio.addEventListener('loadedmetadata', function once() {
+        audio.removeEventListener('loadedmetadata', once);
+        if (p && p.t && (!audio.duration || p.t < audio.duration - 10)) audio.currentTime = p.t;
+      });
+    }
+    audio.playbackRate = getSpeed();
+    audio.play().catch(function () {});
+    showDock();
+    if ('mediaSession' in navigator) {
+      try {
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title: ep.title, artist: m.title, album: 'Frase a Frase',
+          artwork: ep.art ? [{ src: ep.art.replace('160x160', '512x512'), sizes: '512x512' }] : []
+        });
+        navigator.mediaSession.setActionHandler('play', function () { audio.play(); });
+        navigator.mediaSession.setActionHandler('pause', function () { audio.pause(); });
+        navigator.mediaSession.setActionHandler('seekbackward', function () { skip(-10); });
+        navigator.mediaSession.setActionHandler('seekforward', function () { skip(30); });
+      } catch (e) {}
+    }
+  }
+  function skip(sec) {
+    if (!cur) return;
+    audio.currentTime = Math.max(0, Math.min((audio.duration || 1e9) - 1, audio.currentTime + sec));
+  }
+  function getSpeed() { var v = parseFloat(localStorage.getItem('fraseafrase.speed')); return SPEEDS.indexOf(v) >= 0 ? v : 1; }
+  function cycleSpeed() {
+    var i = SPEEDS.indexOf(getSpeed());
+    var v = SPEEDS[(i + 1) % SPEEDS.length];
+    try { localStorage.setItem('fraseafrase.speed', String(v)); } catch (e) {}
+    audio.playbackRate = v;
+    $('faf-speed').textContent = String(v).replace('.', ',') + 'x';
+  }
+
+  function showDock() {
+    var d = $('faf-dock');
+    d.hidden = false;
+    document.body.classList.add('has-dock');
+    $('faf-dock-title').textContent = cur.ep.title;
+    $('faf-dock-show').textContent = cur.media.title;
+    var art = $('faf-dock-art');
+    if (cur.ep.art) { art.src = cur.ep.art; art.hidden = false; } else art.hidden = true;
+    $('faf-speed').textContent = String(getSpeed()).replace('.', ',') + 'x';
+    placeDock();
+  }
+  function hideDock() {
+    if (cur) savePos(cur.ep.url, audio.currentTime);
+    audio.pause();
+    audio.removeAttribute('src');
+    audio.load();
+    cur = null;
+    $('faf-dock').hidden = true;
+    document.body.classList.remove('has-dock');
+  }
+  function placeDock() {
+    var nav = document.querySelector('#app nav');
+    var d = $('faf-dock');
+    if (nav && d) d.style.bottom = nav.offsetHeight + 'px';
+  }
+
+  var lastSave = 0;
+  audio.addEventListener('timeupdate', function () {
+    if (!cur) return;
+    var t = audio.currentTime, dur = audio.duration;
+    $('faf-cur').textContent = fmt(t);
+    $('faf-dur').textContent = fmt(dur);
+    var bar = $('faf-seek');
+    if (!bar.dragging && isFinite(dur) && dur > 0) bar.value = String(Math.round((t / dur) * 1000));
+    if (Date.now() - lastSave > 5000) { lastSave = Date.now(); savePos(cur.ep.url, t); }
+    if (isFinite(dur) && dur > 0 && t / dur > 0.85 && !heardMarked[cur.ep.url]) {
+      heardMarked[cur.ep.url] = true;
+      markHeard(cur.media.id);
+    }
+  });
+  audio.addEventListener('play', function () { $('faf-toggle').innerHTML = ICON_PAUSE; $('faf-toggle').setAttribute('aria-label', 'Pausar'); });
+  audio.addEventListener('pause', function () {
+    $('faf-toggle').innerHTML = ICON_PLAY.replace('18', '22').replace('18', '22');
+    $('faf-toggle').setAttribute('aria-label', 'Tocar');
+    if (cur) savePos(cur.ep.url, audio.currentTime);
+  });
+  audio.addEventListener('ended', function () { if (cur) savePos(cur.ep.url, 0); });
+  audio.addEventListener('error', function () {
+    if (cur && audio.getAttribute('src')) {
+      $('faf-dock-show').textContent = 'Não foi possível tocar este episódio';
+      $('faf-toggle').innerHTML = ICON_PLAY.replace('18', '22').replace('18', '22');
+      $('faf-toggle').setAttribute('aria-label', 'Tocar');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    $('faf-sheet-close').addEventListener('click', closeSheet);
+    $('faf-sheet').addEventListener('click', function (e) { if (e.target.id === 'faf-sheet') closeSheet(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('faf-sheet').hidden) closeSheet(); });
+    $('faf-toggle').addEventListener('click', function () { if (!cur) return; if (audio.paused) audio.play(); else audio.pause(); });
+    $('faf-back').addEventListener('click', function () { skip(-10); });
+    $('faf-fwd').addEventListener('click', function () { skip(30); });
+    $('faf-speed').addEventListener('click', cycleSpeed);
+    $('faf-close').addEventListener('click', hideDock);
+    $('faf-dock-info').addEventListener('click', function () { if (cur) openSheet(cur.media); });
+    var bar = $('faf-seek');
+    bar.addEventListener('input', function () {
+      bar.dragging = true;
+      if (isFinite(audio.duration)) $('faf-cur').textContent = fmt((bar.value / 1000) * audio.duration);
+    });
+    bar.addEventListener('change', function () {
+      bar.dragging = false;
+      if (isFinite(audio.duration)) audio.currentTime = (bar.value / 1000) * audio.duration;
+    });
+    window.addEventListener('resize', placeDock);
+  });
+  document.addEventListener('faf:render', placeDock);
+
+  window.FAF = { open: openSheet };
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+var GOAL = 10;
+var STORE_KEY = 'fraseafrase.v2';
+
+var CATS = [
+  { name: 'Cumprimentos', items: [
+    { es: '¿Qué tal todo?', pt: 'Como vão as coisas?', nota: 'Forma informal e muito comum de começar uma conversa.' },
+    { es: '¿Cómo te llamas?', pt: 'Como você se chama?', nota: '"Llamarse" é reflexivo: me llamo, te llamas, se llama.' },
+    { es: 'Mucho gusto en conocerte.', pt: 'Muito prazer em te conhecer.', nota: 'Em situações formais, diga "conocerle" ou "conocerlo".' },
+    { es: '¡Cuánto tiempo sin verte!', pt: 'Quanto tempo sem te ver!', nota: 'Quase igual ao português: atenção só ao "sin".' },
+    { es: 'Que tengas un buen día.', pt: 'Tenha um bom dia.', nota: 'Desejos usam o subjuntivo: "que tengas", "que te vaya bien".' },
+    { es: 'Nos vemos mañana.', pt: 'A gente se vê amanhã.', nota: '"Mañana" também é manhã: "por la mañana".' }
+  ]},
+  { name: 'Restaurante', items: [
+    { es: '¿Me trae la carta, por favor?', pt: 'Pode me trazer o cardápio, por favor?', nota: 'Falso cognato: aqui "carta" é o cardápio.' },
+    { es: 'Quisiera una mesa para dos.', pt: 'Eu gostaria de uma mesa para dois.', nota: '"Quisiera" é a forma educada de pedir algo.' },
+    { es: '¿Qué me recomienda?', pt: 'O que o senhor me recomenda?', nota: 'Com "usted", o verbo vai na 3ª pessoa: recomienda.' },
+    { es: 'Soy alérgico a los mariscos.', pt: 'Sou alérgico a frutos do mar.', nota: '' },
+    { es: 'La cuenta, por favor.', pt: 'A conta, por favor.', nota: '' },
+    { es: '¿Está incluida la propina?', pt: 'A gorjeta está incluída?', nota: 'Falso cognato: "propina" é gorjeta, não suborno.' }
+  ]},
+  { name: 'Viagem', items: [
+    { es: '¿Dónde está la parada del autobús?', pt: 'Onde fica o ponto de ônibus?', nota: 'Na Argentina se diz "colectivo"; no México, "camión".' },
+    { es: '¿A qué hora sale el tren?', pt: 'A que horas sai o trem?', nota: '' },
+    { es: 'Tengo una reserva para esta noche.', pt: 'Tenho uma reserva para esta noite.', nota: '' },
+    { es: 'Perdí mi equipaje.', pt: 'Perdi minha bagagem.', nota: '' },
+    { es: '¿Cuánto cuesta el billete?', pt: 'Quanto custa a passagem?', nota: 'Na América Latina é mais comum "boleto".' },
+    { es: 'Estoy buscando un hotel barato.', pt: 'Estou procurando um hotel barato.', nota: '' }
+  ]},
+  { name: 'Compras', items: [
+    { es: '¿Cuánto vale esto?', pt: 'Quanto custa isto?', nota: '"Vale" e "cuesta" são usados quase igualmente.' },
+    { es: 'Solo estoy mirando, gracias.', pt: 'Só estou olhando, obrigado.', nota: '' },
+    { es: '¿Lo tiene en otra talla?', pt: 'Tem em outro tamanho?', nota: 'Falso cognato: "talla" é tamanho de roupa.' },
+    { es: '¿Puedo pagar con tarjeta?', pt: 'Posso pagar com cartão?', nota: '' },
+    { es: '¿Me hace un descuento?', pt: 'Me faz um desconto?', nota: '' },
+    { es: 'Me lo llevo.', pt: 'Vou levar.', nota: 'O pronome vem antes do verbo: "me lo llevo".' }
+  ]},
+  { name: 'Trabalho', items: [
+    { es: '¿Podemos agendar una reunión?', pt: 'Podemos marcar uma reunião?', nota: '' },
+    { es: 'Le escribo para confirmar la cita.', pt: 'Escrevo para confirmar o compromisso.', nota: '"Cita" é compromisso marcado, não só encontro romântico.' },
+    { es: 'Le envío el informe hoy.', pt: 'Envio o relatório para o senhor hoje.', nota: '"Informe" é relatório.' },
+    { es: 'Estoy de acuerdo contigo.', pt: 'Concordo com você.', nota: '' },
+    { es: '¿Me puede repetir, por favor?', pt: 'Pode repetir, por favor?', nota: 'Útil em ligações e reuniões.' },
+    { es: 'Quedo a su disposición.', pt: 'Fico à sua disposição.', nota: 'Fechamento comum em e-mails formais.' }
+  ]},
+  { name: 'Dia a dia', items: [
+    { es: '¿Qué hora es?', pt: 'Que horas são?', nota: '' },
+    { es: 'Tengo prisa.', pt: 'Estou com pressa.', nota: 'Em espanhol você "tem" pressa, fome e frio: tener hambre, tener frío.' },
+    { es: 'No pasa nada.', pt: 'Não tem problema.', nota: '' },
+    { es: '¡Qué rico!', pt: 'Que delícia!', nota: 'Falso cognato: para comida, "rico" é gostoso.' },
+    { es: 'Me da igual.', pt: 'Tanto faz.', nota: '' },
+    { es: 'Ahora vuelvo.', pt: 'Já volto.', nota: '"Ahora" pode significar "já", "daqui a pouco".' }
+  ]}
+];
+
+var ALL = [];
+CATS.forEach(function (c, ci) {
+  c.items.forEach(function (it, ii) {
+    ALL.push({ key: ci + '-' + ii, cat: c.name, es: it.es, pt: it.pt, nota: it.nota });
+  });
+});
+
+var TEXTS = [
+  { title: 'Un día en Madrid', nivel: 'Básico',
+    sentences: [
+      ['Lucía vive en Madrid desde hace dos años.', 'Lucía mora em Madri há dois anos.'],
+      ['Cada mañana toma un café con leche en el bar de la esquina.', 'Toda manhã ela toma um café com leite no bar da esquina.'],
+      ['Después va en metro a la oficina, que está en el centro.', 'Depois vai de metrô ao escritório, que fica no centro.'],
+      ['Por la tarde le gusta pasear por el parque del Retiro.', 'À tarde ela gosta de passear pelo parque do Retiro.'],
+      ['Los domingos cena con sus amigos y hablan de la semana.', 'Aos domingos janta com os amigos e conversam sobre a semana.']
+    ],
+    words: [['desde hace', 'há (tempo)'], ['la esquina', 'a esquina'], ['pasear', 'passear'], ['cenar', 'jantar']],
+    questions: [
+      { q: 'Onde Lucía toma café todas as manhãs?', options: ['Em casa', 'No bar da esquina', 'No escritório'], correct: 1 },
+      { q: 'O que Lucía faz aos domingos?', options: ['Vai ao parque', 'Janta com os amigos', 'Trabalha'], correct: 1 }
+    ] },
+  { title: 'Mi primera semana', nivel: 'Básico',
+    sentences: [
+      ['El lunes empecé a trabajar en una empresa nueva.', 'Na segunda comecei a trabalhar numa empresa nova.'],
+      ['Mis compañeros son muy amables y me ayudan mucho.', 'Meus colegas são muito gentis e me ajudam muito.'],
+      ['Todavía no conozco bien el sistema, pero aprendo rápido.', 'Ainda não conheço bem o sistema, mas aprendo rápido.'],
+      ['A mediodía comemos juntos en un restaurante cerca de la oficina.', 'Ao meio-dia almoçamos juntos num restaurante perto do escritório.'],
+      ['El viernes mi jefa me dijo que estaba contenta con mi trabajo.', 'Na sexta minha chefe disse que estava contente com meu trabalho.']
+    ],
+    words: [['todavía', 'ainda'], ['los compañeros', 'os colegas'], ['a mediodía', 'ao meio-dia'], ['la jefa', 'a chefe']],
+    questions: [
+      { q: 'Onde eles almoçam?', options: ['Na empresa', 'Num restaurante perto do escritório', 'Em casa'], correct: 1 },
+      { q: 'Como a chefe se sentia com o trabalho?', options: ['Contente', 'Preocupada', 'Cansada'], correct: 0 }
+    ] },
+  { title: 'En el mercado', nivel: 'Intermediário',
+    sentences: [
+      ['El sábado, Andrés fue al mercado con una lista muy larga.', 'No sábado, Andrés foi ao mercado com uma lista bem longa.'],
+      ['Quería comprar tomates, cebollas y un buen pedazo de queso.', 'Queria comprar tomates, cebolas e um bom pedaço de queijo.'],
+      ['La vendedora le dijo que los tomates estaban más caros esta semana.', 'A vendedora disse que os tomates estavam mais caros esta semana.'],
+      ['Al final, Andrés se llevó la mitad y pidió una rebaja.', 'No fim, Andrés levou a metade e pediu um desconto.'],
+      ['Volvió a casa contento, aunque se olvidó del pan.', 'Voltou para casa contente, embora tenha esquecido o pão.']
+    ],
+    words: [['un pedazo', 'um pedaço'], ['la rebaja', 'o desconto'], ['la mitad', 'a metade'], ['aunque', 'embora']],
+    questions: [
+      { q: 'O que Andrés esqueceu de comprar?', options: ['O queijo', 'As cebolas', 'O pão'], correct: 2 },
+      { q: 'Por que Andrés levou só metade dos tomates?', options: ['Estavam mais caros', 'Estavam estragados', 'Não tinha sacola'], correct: 0 }
+    ] },
+  { title: 'Un viaje a Buenos Aires', nivel: 'Avançado',
+    sentences: [
+      ['Hace unos meses, Marta decidió pasar dos semanas en Buenos Aires.', 'Há alguns meses, Marta decidiu passar duas semanas em Buenos Aires.'],
+      ['Al llegar, le sorprendió que todos usaran "vos" en lugar de "tú".', 'Ao chegar, ela se surpreendeu que todos usassem "vos" em vez de "tú".'],
+      ['También tuvo que acostumbrarse a tomar el colectivo para moverse por la ciudad.', 'Também teve que se acostumar a pegar o ônibus para circular pela cidade.'],
+      ['Si hubiera sabido lo barato que era el teatro, habría ido más veces.', 'Se soubesse como o teatro era barato, teria ido mais vezes.'],
+      ['Ahora, cada vez que alguien le ofrece mate, se acuerda de aquel viaje.', 'Agora, toda vez que alguém lhe oferece chimarrão, ela se lembra daquela viagem.']
+    ],
+    words: [['el colectivo', 'o ônibus (Argentina)'], ['acostumbrarse', 'acostumar-se'], ['en lugar de', 'em vez de'], ['acordarse de', 'lembrar-se de']],
+    questions: [
+      { q: 'O que surpreendeu Marta ao chegar?', options: ['O preço do teatro', 'O uso de "vos"', 'O clima'], correct: 1 },
+      { q: 'Do que Marta se arrepende?', options: ['De não ter ido mais ao teatro', 'De ter viajado sozinha', 'De não ter tomado mate'], correct: 0 }
+    ] },
+  { title: 'El fin de semana', nivel: 'Básico',
+    sentences: [
+      ['Este fin de semana no tengo planes.', 'Neste fim de semana não tenho planos.'],
+      ['El sábado quiero dormir hasta tarde y leer un libro.', 'No sábado quero dormir até tarde e ler um livro.'],
+      ['Por la tarde voy a llamar a mi madre.', 'À tarde vou ligar para minha mãe.'],
+      ['El domingo, si hace buen tiempo, voy a ir a la playa.', 'No domingo, se fizer tempo bom, vou à praia.'],
+      ['Si llueve, me quedo en casa y veo una película.', 'Se chover, fico em casa e vejo um filme.']
+    ],
+    words: [['hasta tarde', 'até tarde'], ['hace buen tiempo', 'faz tempo bom'], ['llover', 'chover'], ['quedarse', 'ficar']],
+    questions: [
+      { q: 'O que a pessoa quer fazer no sábado?', options: ['Ir à praia', 'Dormir até tarde e ler', 'Trabalhar'], correct: 1 },
+      { q: 'O que ela fará se chover no domingo?', options: ['Fica em casa e vê um filme', 'Vai ao cinema', 'Liga para a mãe'], correct: 0 }
+    ] },
+  { title: 'Una llamada importante', nivel: 'Intermediário',
+    sentences: [
+      ['Esta mañana Carlos recibió la llamada de un cliente muy enfadado.', 'Esta manhã Carlos recebeu a ligação de um cliente muito irritado.'],
+      ['El cliente decía que su pedido no había llegado a tiempo.', 'O cliente dizia que o pedido dele não tinha chegado a tempo.'],
+      ['Carlos le pidió disculpas y revisó el sistema mientras hablaban.', 'Carlos pediu desculpas e verificou o sistema enquanto conversavam.'],
+      ['Descubrió que el paquete estaba retenido en la aduana.', 'Descobriu que o pacote estava retido na alfândega.'],
+      ['Le prometió que lo llamaría en cuanto tuviera noticias.', 'Prometeu que ligaria assim que tivesse notícias.']
+    ],
+    words: [['enfadado', 'irritado'], ['el pedido', 'o pedido'], ['pedir disculpas', 'pedir desculpas'], ['en cuanto', 'assim que']],
+    questions: [
+      { q: 'Por que o cliente estava irritado?', options: ['O pedido atrasou', 'O preço subiu', 'Carlos não atendeu'], correct: 0 },
+      { q: 'Onde estava o pacote?', options: ['No depósito', 'Na alfândega', 'Com o cliente'], correct: 1 }
+    ] }
+];
+
+var LEVELS = ['Básico', 'Intermediário', 'Avançado'];
+
+var MEDIA = [
+  { id: 'coffeebreak', kind: 'podcast', title: 'Coffee Break Spanish', source: 'Coffee Break Languages · podcast', nivel: 'Do zero ao avançado', apple: 201598403,
+    desc: 'Lições de 15 a 20 minutos. A temporada 1 é para quem está começando do zero e cada temporada fica um pouco mais difícil.',
+    tip: 'Comece pela temporada 1 e ouça um episódio por dia.', url: 'https://coffeebreaklanguages.com/spanish/' },
+  { id: 'pedro', kind: 'podcast', title: 'Spanish for Beginners Pedro', source: 'spanishwithpedro.com · podcast', nivel: 'Básico', apple: 1513231552,
+    desc: 'Lições práticas para aprender a manter uma conversa. O site tem transcrições.',
+    tip: 'Bom para quem quer frases prontas de conversa.', url: 'https://www.spanishwithpedro.com' },
+  { id: 'easypod', kind: 'podcast', title: 'Easy Spanish Podcast', source: 'Easy Spanish · podcast', nivel: 'Intermediário', apple: 1557471374,
+    desc: 'Conversas do dia a dia sobre a língua espanhola e a cultura dos países hispânicos.',
+    tip: 'Ouça no caminho do trabalho, sem pressão para entender tudo.', url: 'https://www.easyspanish.fm' },
+  { id: 'radioele', kind: 'podcast', title: 'Radio ELE', source: 'radioele.com · podcast', nivel: 'Intermediário', apple: 1775433869,
+    desc: 'Espanhol real, mas fácil de acompanhar, sobre temas variados. As transcrições ficam no site.',
+    tip: 'Leia a transcrição depois da primeira escuta.', url: 'https://radioele.com' },
+  { id: 'hoyhablamos', kind: 'podcast', title: 'Hoy Hablamos', source: 'hoyhablamos.com · podcast', nivel: 'Intermediário', search: 'Hoy Hablamos podcast diario para aprender español',
+    desc: 'Um episódio por dia, de segunda a sexta, com temas variados. Os episódios recentes são gratuitos.',
+    tip: 'Ótimo para criar o hábito diário.', url: 'https://hoyhablamos.com' },
+  { id: 'buscador', kind: 'podcast', title: 'El buscador de R5', source: 'RTVE · Rádio 5', nivel: 'Avançado', apple: 413640696,
+    desc: 'Programa curto de ciência e tecnologia da rádio pública espanhola. Espanhol nativo, em ritmo de rádio.',
+    tip: 'Escolha temas que você já conhece em português.', url: 'https://www.rtve.es/play/audios/el-buscador-de-r5/' },
+  { id: 'corresponsales', kind: 'podcast', title: 'Rueda de corresponsales', source: 'RTVE · Rádio 5', nivel: 'Avançado',
+    desc: 'Notícias do mundo contadas pelos correspondentes da RTVE, com sotaques variados. Este abre no site da RTVE.',
+    tip: 'Compare com uma notícia que você já leu em português.', url: 'https://www.rtve.es/play/audios/rueda-de-corresponsales/' },
+  { id: 'easyyt', kind: 'video', title: 'Easy Spanish', source: 'YouTube · @EasySpanish', nivel: 'Intermediário', yt: 'UUAL4AMMMXKxHDu3FqZV6CbQ',
+    desc: 'Entrevistas de rua na Espanha e na América Latina, com legendas em espanhol e inglês.',
+    tip: 'Ative a legenda em espanhol e pause para repetir.', url: 'https://www.youtube.com/@EasySpanish' },
+  { id: 'dreaming', kind: 'video', title: 'Dreaming Spanish', source: 'YouTube · Dreaming Spanish', nivel: 'Todos os níveis', yt: 'UUouyFdE9-Lrjo3M_2idKq1A',
+    desc: 'Vídeos falados só em espanhol, do superiniciante ao avançado, com desenhos e gestos para ajudar a entender.',
+    tip: 'Procure os vídeos "Superbeginner" e "Beginner" na lista do player.', url: 'https://www.youtube.com/channel/UCouyFdE9-Lrjo3M_2idKq1A' },
+  { id: 'juan', kind: 'video', title: 'Español con Juan', source: 'YouTube · Español con Juan', nivel: 'Intermediário', yt: 'UUoHJ7PkM6T92LwgJgrnDhWA',
+    desc: 'Professor espanhol explicando gramática e expressões do dia a dia com humor, tudo em espanhol.',
+    tip: 'Bom para ouvir espanhol da Espanha falado com calma.', url: 'https://www.youtube.com/channel/UCoHJ7PkM6T92LwgJgrnDhWA' },
+  { id: 'tatoeba', kind: 'frases', title: 'Tatoeba', source: 'tatoeba.org · banco de frases', nivel: 'Todos os níveis',
+    desc: 'Banco colaborativo com milhares de frases traduzidas, muitas com áudio de falantes nativos.',
+    tip: 'Procure uma palavra e ouça como ela aparece em frases reais.', url: 'https://tatoeba.org' }
+];
+
+var KIND_LABEL = { podcast: 'Podcast', video: 'Vídeo', frases: 'Frases' };
+
+function norm(str) {
+  return String(str).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[¿¡?!.,"]/g, '');
+}
+
+var EXS = [
+  { pt: 'Eu gostaria de um café, por favor.', words: ['Quisiera', 'un', 'café,', 'por', 'favor.'], order: [3, 0, 4, 2, 1] },
+  { pt: 'Onde fica a estação?', words: ['¿Dónde', 'está', 'la', 'estación?'], order: [2, 3, 0, 1] },
+  { pt: 'A gente se vê amanhã.', words: ['Nos', 'vemos', 'mañana.'], order: [2, 0, 1] },
+  { pt: 'A conta, por favor.', words: ['La', 'cuenta,', 'por', 'favor.'], order: [3, 1, 0, 2] },
+  { pt: 'Estou procurando um hotel barato.', words: ['Estoy', 'buscando', 'un', 'hotel', 'barato.'], order: [4, 2, 0, 3, 1] },
+  { pt: 'Posso pagar com cartão?', words: ['¿Puedo', 'pagar', 'con', 'tarjeta?'], order: [3, 1, 0, 2] },
+  { pt: 'Concordo com você.', words: ['Estoy', 'de', 'acuerdo', 'contigo.'], order: [2, 3, 1, 0] },
+  { pt: 'Tem em outro tamanho?', words: ['¿Lo', 'tiene', 'en', 'otra', 'talla?'], order: [4, 1, 3, 0, 2] }
+];
+
+var LISTEN = [
+  { es: '¿Me trae la carta, por favor?', options: ['Pode me trazer a carta?', 'Pode me trazer o cardápio, por favor?', 'Pode me trazer a conta?'], correct: 1 },
+  { es: 'Tengo prisa.', options: ['Estou com pressa.', 'Tenho preguiça.', 'Estou com frio.'], correct: 0 },
+  { es: '¿A qué hora sale el tren?', options: ['Onde fica o trem?', 'O trem está atrasado?', 'A que horas sai o trem?'], correct: 2 },
+  { es: 'Solo estoy mirando, gracias.', options: ['Só estou olhando, obrigado.', 'Só quero isso, obrigado.', 'Estou procurando, obrigado.'], correct: 0 },
+  { es: 'Quedo a su disposición.', options: ['Fico esperando sua resposta.', 'Fico à sua disposição.', 'Fico no seu lugar.'], correct: 1 },
+  { es: '¡Qué rico!', options: ['Que caro!', 'Que rico ele é!', 'Que delícia!'], correct: 2 }
+];
+
+var GAPS = [
+  { before: 'Lucía vive en Madrid ', after: ' dos años.', options: ['desde hace', 'hace mucho', 'durante'], correct: 0, pt: 'Lucía mora em Madri há dois anos.' },
+  { before: '¿Está incluida la ', after: '?', options: ['gorjeta', 'propina', 'cuenta'], correct: 1, pt: 'A gorjeta está incluída?' },
+  { before: '', after: ' una mesa para dos.', options: ['Quisiera', 'Quiero que', 'Quisiste'], correct: 0, pt: 'Eu gostaria de uma mesa para dois.' },
+  { before: '¿Lo tiene en otra ', after: '?', options: ['tamaño', 'talla', 'medida'], correct: 1, pt: 'Tem em outro tamanho?' },
+  { before: 'Volvió a casa contento, ', after: ' se olvidó del pan.', options: ['aunque', 'porque', 'entonces'], correct: 0, pt: 'Voltou para casa contente, embora tenha esquecido o pão.' },
+  { before: 'Si hubiera sabido, ', after: ' ido más veces.', options: ['habría', 'había', 'habrá'], correct: 0, pt: 'Se soubesse, teria ido mais vezes.' }
+];
+
+function todayStr() {
+  var d = new Date();
+  return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+}
+
+function dayIndex() {
+  var d = new Date();
+  var start = new Date(d.getFullYear(), 0, 0);
+  return Math.floor((d - start) / 86400000);
+}
+
+function pill(active) {
+  return active
+    ? 'min-height: 44px; padding: 0 16px; border: 1px solid #16181D; background: #16181D; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600'
+    : 'min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600';
+}
+
+function segStyle(active) {
+  return 'min-height: 44px; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; ' +
+    (active ? 'background: #FFFFFF; color: #16181D; box-shadow: 0 1px 3px rgba(22,24,29,0.12)' : 'background: transparent; color: #5B5F6B');
+}
+
+function navStyle(active) {
+  return 'display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 56px; border: none; border-radius: 12px; font-size: 12px; font-weight: 600; ' +
+    (active ? 'background: #FBE9E7; color: #B4232A' : 'background: transparent; color: #5B5F6B');
+}
+
+function optStyle(answered, idx, correct, picked) {
+  var base = 'text-align: left; min-height: 48px; padding: 10px 14px; border-radius: 12px; font-size: 15px; font-weight: 500; ';
+  if (answered && idx === correct) return base + 'border: 2px solid #1E6B45; background: #E3F1E8; color: #0F3F27';
+  if (answered && idx === picked) return base + 'border: 2px solid #B4232A; background: #FBE9E7; color: #7A161B';
+  return base + 'border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D';
+}
+
+function fbStyle(ok) {
+  return 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (ok ? '#1E6B45' : '#B4232A');
+}
+
+function loadSaved() {
+  try {
+    var raw = window.localStorage.getItem(STORE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) { return null; }
+}
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    var saved = loadSaved() || {};
+    var today = todayStr();
+    this.state = {
+      tab: 'inicio',
+      fview: 'cards', query: '', reading: false, level: 'all',
+      mfilter: 'all', heard: saved.heard || {},
+      cat: 0, card: 0, flipped: false,
+      known: saved.known || {}, review: saved.review || {},
+      textIdx: 0, open: {}, answers: saved.answers || {}, read: saved.read || {},
+      pmode: 'montar', ex: 0, built: [], checked: false,
+      li: 0, lpick: null, lshow: false,
+      gi: 0, gpick: null,
+      lang: saved.lang || 'es-ES', rate: saved.rate || 0.9,
+      goalDate: today, goalCount: saved.goalDate === today ? (saved.goalCount || 0) : 0
+    };
+  }
+
+  componentDidUpdate() {
+    var s = this.state;
+    try {
+      window.localStorage.setItem(STORE_KEY, JSON.stringify({
+        known: s.known, review: s.review, answers: s.answers, read: s.read, heard: s.heard,
+        lang: s.lang, rate: s.rate, goalDate: s.goalDate, goalCount: s.goalCount
+      }));
+    } catch (e) {}
+  }
+
+  markHeard(id) {
+    if (this.state.heard[id]) return;
+    var h = Object.assign({}, this.state.heard);
+    h[id] = true;
+    this.bump({ heard: h });
+  }
+
+  speak(text, slow) {
+    try {
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = this.state.lang;
+      u.rate = slow ? 0.6 : this.state.rate;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(u);
+    } catch (e) {}
+  }
+
+  bump(extra) {
+    var today = todayStr();
+    var count = this.state.goalDate === today ? this.state.goalCount : 0;
+    this.setState(Object.assign({ goalDate: today, goalCount: count + 1 }, extra || {}));
+  }
+
+  deck() {
+    var s = this.state;
+    if (s.cat === -1) return ALL.filter(function (p) { return s.review[p.key]; });
+    if (s.cat === -2) return ALL.slice();
+    return ALL.filter(function (p) { return p.key.indexOf(s.cat + '-') === 0; });
+  }
+
+  mark(asKnown) {
+    var s = this.state;
+    var deck = this.deck();
+    if (!deck.length) return;
+    var idx = s.card % deck.length;
+    var key = deck[idx].key;
+    var known = Object.assign({}, s.known);
+    var review = Object.assign({}, s.review);
+    if (asKnown) { known[key] = true; delete review[key]; }
+    else { review[key] = true; delete known[key]; }
+    var next;
+    if (s.cat === -1 && asKnown) {
+      var remaining = deck.length - 1;
+      next = remaining > 0 ? idx % remaining : 0;
+    } else {
+      next = (idx + 1) % deck.length;
+    }
+    this.bump({ known: known, review: review, card: next, flipped: false });
+  }
+
+  renderVals() {
+    var s = this.state;
+    var self = this;
+    var speak = function (t, slow) { self.speak(t, slow); };
+
+    // Home
+    var dia = ALL[dayIndex() % ALL.length];
+    var knownCount = Object.keys(s.known).length;
+    var reviewCount = Object.keys(s.review).length;
+    var goalPct = Math.min(100, Math.round((s.goalCount / GOAL) * 100));
+    var goalMsg = s.goalCount >= GOAL ? '¡Meta cumprida! Pode continuar se quiser.'
+      : s.goalCount === 0 ? 'Cada frase marcada e cada resposta conta.'
+      : 'Faltam ' + (GOAL - s.goalCount) + ' para completar a meta.';
+
+    // Frases
+    var deck = this.deck();
+    var cardIdx = deck.length ? s.card % deck.length : 0;
+    var c = deck[cardIdx] || ALL[0];
+    var deckKnown = deck.filter(function (p) { return s.known[p.key]; }).length;
+    var pct = deck.length ? Math.round(((cardIdx + 1) / deck.length) * 100) : 0;
+    var mediaList = MEDIA.filter(function (m) { return s.mfilter === 'all' || m.kind === s.mfilter; });
+    var q = norm(s.query.trim());
+    var listItems = q ? deck.filter(function (p) { return norm(p.es).indexOf(q) >= 0 || norm(p.pt).indexOf(q) >= 0; }) : deck;
+    var textList = TEXTS.map(function (x, idx) { return Object.assign({ idx: idx }, x); })
+      .filter(function (x) { return s.level === 'all' || x.nivel === s.level; })
+      .sort(function (a, b) { return LEVELS.indexOf(a.nivel) - LEVELS.indexOf(b.nivel) || a.idx - b.idx; });
+
+    // Leitura
+    var t = TEXTS[s.textIdx];
+    var allOpen = t.sentences.every(function (x, i) { return s.open[i]; });
+    var textDone = !!s.read[s.textIdx];
+
+    // Montar
+    var ex = EXS[s.ex];
+    var used = {};
+    s.built.forEach(function (i) { used[i] = true; });
+    var answerStr = ex.words.join(' ');
+    var exOk = s.built.map(function (i) { return ex.words[i]; }).join(' ') === answerStr;
+    var complete = s.built.length === ex.words.length;
+    var primaryReady = complete || (s.checked && exOk);
+
+    // Escuta
+    var li = LISTEN[s.li];
+    var lAns = s.lpick !== null;
+    var lOk = lAns && s.lpick === li.correct;
+
+    // Lacuna
+    var g = GAPS[s.gi];
+    var gAns = s.gpick !== null;
+    var gOk = gAns && s.gpick === g.correct;
+
+    return {
+      showInicio: s.tab === 'inicio',
+      showFrases: s.tab === 'frases',
+      showTextos: s.tab === 'textos',
+      showPratica: s.tab === 'pratica',
+      showOuvir: s.tab === 'ouvir',
+      nav: {
+        inicio: navStyle(s.tab === 'inicio'),
+        frases: navStyle(s.tab === 'frases'),
+        textos: navStyle(s.tab === 'textos'),
+        pratica: navStyle(s.tab === 'pratica'),
+        ouvir: navStyle(s.tab === 'ouvir')
+      },
+      goOuvir: function () { self.setState({ tab: 'ouvir' }); },
+
+      // Ouvir
+      mFilters: [{ id: 'all', label: 'Todos' }, { id: 'podcast', label: 'Podcasts' }, { id: 'video', label: 'Vídeos' }, { id: 'frases', label: 'Frases' }].map(function (f) {
+        return { label: f.label, style: pill(s.mfilter === f.id), pick: function () { self.setState({ mfilter: f.id }); } };
+      }),
+      mCount: mediaList.length === 1 ? '1 item' : mediaList.length + ' itens',
+      heardCount: Object.keys(s.heard).length,
+      media: mediaList.map(function (m) {
+        var heard = !!s.heard[m.id];
+        var typeColors = m.kind === 'video' ? 'background: #E4ECF7; color: #1D3D66' : m.kind === 'frases' ? 'background: #EFEDE6; color: #3A3D45' : 'background: #FBE9E7; color: #7A161B';
+        return {
+          title: m.title, source: m.source, nivel: m.nivel, desc: m.desc, tip: m.tip, url: m.url,
+          hasPlayer: !!(m.apple || m.search || m.yt),
+          noPlayer: !(m.apple || m.search || m.yt),
+          playLabel: m.yt ? 'Assistir aqui' : 'Ouvir aqui',
+          play: function () { if (window.FAF) window.FAF.open(m); },
+          type: KIND_LABEL[m.kind],
+          typeStyle: 'font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; ' + typeColors,
+          heard: heard,
+          heardLabel: heard ? 'Desmarcar' : 'Já ouvi',
+          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D' : 'border: none; background: #B4232A; color: #FFFFFF'),
+          toggle: function () {
+            var h = Object.assign({}, s.heard);
+            if (h[m.id]) { delete h[m.id]; self.setState({ heard: h }); }
+            else { h[m.id] = true; self.bump({ heard: h }); }
+          }
+        };
+      }),
+      goInicio: function () { self.setState({ tab: 'inicio' }); },
+      goFrases: function () { self.setState({ tab: 'frases', cat: s.cat === -1 ? 0 : s.cat }); },
+      goTextos: function () { self.setState({ tab: 'textos', reading: false }); },
+      goPratica: function () { self.setState({ tab: 'pratica' }); },
+      goReview: function () { self.setState({ tab: 'frases', fview: 'cards', cat: -1, card: 0, flipped: false }); },
+
+      // Frases: lista
+      fseg: { cards: segStyle(s.fview === 'cards'), lista: segStyle(s.fview === 'lista') },
+      viewCards: function () { self.setState({ fview: 'cards' }); },
+      viewLista: function () { self.setState({ fview: 'lista' }); },
+      isCards: s.fview === 'cards',
+      isLista: s.fview === 'lista',
+      allPill: pill(s.cat === -2),
+      pickAll: function () { self.setState({ cat: -2, card: 0, flipped: false }); },
+      pickReview: function () { self.setState({ cat: -1, card: 0, flipped: false }); },
+      query: s.query,
+      onQuery: function (e) { self.setState({ query: e && e.target ? e.target.value : '' }); },
+      listItems: listItems.map(function (p) {
+        return {
+          es: p.es, pt: p.pt, cat: p.cat,
+          isKnown: !!s.known[p.key], isReview: !!s.review[p.key],
+          speak: function () { speak(p.es); },
+          open: function () {
+            var pos = deck.findIndex(function (d) { return d.key === p.key; });
+            self.setState({ fview: 'cards', card: pos < 0 ? 0 : pos, flipped: false });
+          }
+        };
+      }),
+      listCount: listItems.length === 1 ? '1 frase' : listItems.length + ' frases',
+      listEmpty: listItems.length === 0,
+      listEmptyMsg: s.query ? 'Nenhuma frase encontrada para essa busca.' : 'Nenhuma frase marcada para revisar ainda.',
+
+      // Leitura: catálogo
+      isCatalog: !s.reading,
+      isReading: s.reading,
+      backToList: function () { self.setState({ reading: false }); },
+      levels: [{ id: 'all', label: 'Todos' }].concat(LEVELS.map(function (l) { return { id: l, label: l }; })).map(function (l) {
+        return { label: l.label, style: pill(s.level === l.id), pick: function () { self.setState({ level: l.id }); } };
+      }),
+      textListCount: textList.length === 1 ? '1 texto' : textList.length + ' textos',
+      textList: textList.map(function (x) {
+        var done = !!s.read[x.idx];
+        var answered = x.questions.filter(function (q, qi) { return s.answers.hasOwnProperty(x.idx + '-' + qi); }).length;
+        var status = done ? 'Concluído' : answered > 0 ? 'Em andamento' : 'Novo';
+        return {
+          title: x.title, nivel: x.nivel,
+          preview: x.sentences[0][0],
+          meta: x.sentences.length + ' frases · ' + x.words.length + ' palavras-chave · ' + x.questions.length + ' perguntas',
+          status: status,
+          statusStyle: 'font-size: 12px; font-weight: 600; ' + (done ? 'color: #1E6B45' : answered > 0 ? 'color: #B4232A' : 'color: #5B5F6B'),
+          open: function () { self.setState({ textIdx: x.idx, reading: true, open: {} }); }
+        };
+      }),
+
+      // Home
+      goalCount: Math.min(s.goalCount, GOAL),
+      goalTotal: GOAL,
+      goalBar: 'height: 100%; width: ' + goalPct + '%; background: ' + (s.goalCount >= GOAL ? '#1E6B45' : '#B4232A') + '; border-radius: 999px',
+      goalMsg: goalMsg,
+      dia: { es: dia.es, pt: dia.pt, nota: dia.nota, hasNota: !!dia.nota, cat: dia.cat },
+      speakDia: function () { speak(dia.es); },
+      knownCount: knownCount,
+      phraseTotal: ALL.length,
+      reviewCount: reviewCount,
+      hasReview: reviewCount > 0,
+      readCount: Object.keys(s.read).length,
+      textTotal: TEXTS.length,
+      accentSpain: pill(s.lang === 'es-ES'),
+      accentMexico: pill(s.lang === 'es-MX'),
+      rateNormal: pill(s.rate !== 0.7),
+      rateSlow: pill(s.rate === 0.7),
+      setSpain: function () { self.setState({ lang: 'es-ES' }); },
+      setMexico: function () { self.setState({ lang: 'es-MX' }); },
+      setNormal: function () { self.setState({ rate: 0.9 }); },
+      setSlow: function () { self.setState({ rate: 0.7 }); },
+      resetAll: function () {
+        self.setState({ known: {}, review: {}, answers: {}, read: {}, goalCount: 0, card: 0, cat: 0, flipped: false });
+      },
+
+      // Frases
+      cats: CATS.map(function (x, idx) {
+        return { name: x.name, style: pill(idx === s.cat), pick: function () { self.setState({ cat: idx, card: 0, flipped: false }); } };
+      }),
+      reviewPill: pill(s.cat === -1),
+      deckEmpty: deck.length === 0,
+      deckHas: deck.length > 0,
+      deckLabel: s.cat === -1 ? 'Revisão' : s.cat === -2 ? 'Todas' : CATS[s.cat].name,
+      card: { es: c.es, pt: c.pt, nota: c.nota, hasNota: !!c.nota, cat: c.cat, isKnown: !!s.known[c.key], isReview: !!s.review[c.key] },
+      cardPos: cardIdx + 1,
+      cardTotal: deck.length,
+      deckKnown: deckKnown,
+      barStyle: 'height: 100%; width: ' + pct + '%; background: #B4232A; border-radius: 999px',
+      flipped: s.flipped,
+      notFlipped: !s.flipped,
+      flip: function () { self.setState({ flipped: true }); },
+      speakCard: function () { speak(c.es); },
+      speakCardSlow: function () { speak(c.es, true); },
+      prevCard: function () {
+        if (!deck.length) return;
+        self.setState({ card: (cardIdx - 1 + deck.length) % deck.length, flipped: false });
+      },
+      markKnown: function () { self.mark(true); },
+      markReview: function () { self.mark(false); },
+
+      // Leitura
+      text: { title: t.title, nivel: t.nivel },
+      speakText: function () { speak(t.sentences.map(function (p) { return p[0]; }).join(' ')); },
+      toggleAllLabel: allOpen ? 'Ocultar traduções' : 'Traduzir tudo',
+      toggleAll: function () {
+        var open = {};
+        if (!allOpen) t.sentences.forEach(function (x, i) { open[i] = true; });
+        self.setState({ open: open });
+      },
+      sentences: t.sentences.map(function (pair, idx) {
+        var isOpen = !!s.open[idx];
+        return {
+          es: pair[0], pt: pair[1], open: isOpen,
+          style: 'text-align: left; width: 100%; min-height: 44px; padding: 12px; border: none; border-radius: 12px; font-family: Fraunces, Georgia, serif; font-size: 19px; line-height: 1.4; color: #16181D; ' + (isOpen ? 'background: #FDF3D0' : 'background: transparent'),
+          toggle: function () {
+            var open = Object.assign({}, s.open);
+            if (open[idx]) delete open[idx]; else open[idx] = true;
+            self.setState({ open: open });
+            if (!isOpen) speak(pair[0]);
+          },
+          speak: function () { speak(pair[0]); }
+        };
+      }),
+      words: t.words.map(function (w) { return { es: w[0], pt: w[1], speak: function () { speak(w[0]); } }; }),
+      questions: t.questions.map(function (qq, qi) {
+        var key = s.textIdx + '-' + qi;
+        var picked = s.answers.hasOwnProperty(key) ? s.answers[key] : null;
+        var answered = picked !== null;
+        var ok = answered && picked === qq.correct;
+        return {
+          num: qi + 1, text: qq.q, answered: answered,
+          fbText: ok ? '¡Muy bien! Resposta certa.' : 'Quase. A resposta certa está em verde.',
+          fbStyle: fbStyle(ok),
+          options: qq.options.map(function (label, oi) {
+            return {
+              label: label,
+              style: optStyle(answered, oi, qq.correct, picked),
+              pick: function () {
+                if (answered) return;
+                var answers = Object.assign({}, s.answers);
+                answers[key] = oi;
+                var read = Object.assign({}, s.read);
+                var allRight = t.questions.every(function (q2, j) {
+                  var k = s.textIdx + '-' + j;
+                  var a = k === key ? oi : answers[k];
+                  return a === q2.correct;
+                });
+                if (allRight) read[s.textIdx] = true;
+                var extra = { answers: answers, read: read };
+                if (oi === qq.correct) self.bump(extra); else self.setState(extra);
+              }
+            };
+          })
+        };
+      }),
+      textDone: textDone,
+      hasNextText: s.textIdx < TEXTS.length - 1,
+      nextText: function () { self.setState({ textIdx: s.textIdx + 1, open: {} }); },
+
+      // Prática
+      seg: { montar: segStyle(s.pmode === 'montar'), escuta: segStyle(s.pmode === 'escuta'), lacuna: segStyle(s.pmode === 'lacuna') },
+      modeMontar: function () { self.setState({ pmode: 'montar' }); },
+      modeEscuta: function () { self.setState({ pmode: 'escuta' }); },
+      modeLacuna: function () { self.setState({ pmode: 'lacuna' }); },
+      isMontar: s.pmode === 'montar',
+      isEscuta: s.pmode === 'escuta',
+      isLacuna: s.pmode === 'lacuna',
+
+      ex: { pt: ex.pt, answer: answerStr },
+      exPos: s.ex + 1,
+      exTotal: EXS.length,
+      built: s.built.map(function (i, pos) {
+        return { word: ex.words[i], remove: function () {
+          var b = s.built.slice(); b.splice(pos, 1);
+          self.setState({ built: b, checked: false });
+        } };
+      }),
+      builtEmpty: s.built.length === 0,
+      pool: ex.order.filter(function (i) { return !used[i]; }).map(function (i) {
+        return { word: ex.words[i], add: function () { self.setState({ built: s.built.concat([i]), checked: false }); } };
+      }),
+      exChecked: s.checked,
+      exFbTitle: exOk ? '¡Correcto!' : 'Ainda não. A ordem certa é:',
+      exFbStyle: 'display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; ' + (exOk ? 'background: #E3F1E8; color: #0F3F27' : 'background: #FBE9E7; color: #7A161B'),
+      primaryExLabel: s.checked && exOk ? 'Próxima' : 'Verificar',
+      primaryExStyle: 'min-height: 52px; border: none; border-radius: 14px; font-size: 15px; font-weight: 600; ' + (primaryReady ? 'background: #B4232A; color: #FFFFFF' : 'background: #E6E4DD; color: #5B5F6B'),
+      primaryEx: function () {
+        if (s.checked && exOk) {
+          self.setState({ ex: (s.ex + 1) % EXS.length, built: [], checked: false });
+        } else if (complete) {
+          if (exOk) { self.bump({ checked: true }); speak(answerStr); }
+          else self.setState({ checked: true });
+        }
+      },
+      resetEx: function () { self.setState({ built: [], checked: false }); },
+
+      li: { es: li.es },
+      liPos: s.li + 1,
+      liTotal: LISTEN.length,
+      liPlay: function () { speak(li.es); },
+      liPlaySlow: function () { speak(li.es, true); },
+      liShowText: s.lshow,
+      liTextLabel: s.lshow ? 'Ocultar frase' : 'Mostrar frase',
+      liToggleText: function () { self.setState({ lshow: !s.lshow }); },
+      liOptions: li.options.map(function (label, oi) {
+        return {
+          label: label,
+          style: optStyle(lAns, oi, li.correct, s.lpick),
+          pick: function () {
+            if (lAns) return;
+            if (oi === li.correct) self.bump({ lpick: oi, lshow: true }); else self.setState({ lpick: oi, lshow: true });
+          }
+        };
+      }),
+      liAnswered: lAns,
+      liFbText: lOk ? '¡Muy bien! Você entendeu de ouvido.' : 'Quase. Ouça de novo e compare com a frase escrita.',
+      liFbStyle: fbStyle(lOk),
+      liNext: function () { self.setState({ li: (s.li + 1) % LISTEN.length, lpick: null, lshow: false }); },
+
+      gap: { before: g.before, after: g.after, pt: g.pt },
+      gPos: s.gi + 1,
+      gTotal: GAPS.length,
+      gapText: gAns ? g.options[s.gpick] : '______',
+      gapStyle: 'padding: 0 6px; border-radius: 8px; ' + (!gAns ? 'background: #EFEDE6; color: #5B5F6B' : gOk ? 'background: #E3F1E8; color: #0F3F27' : 'background: #FBE9E7; color: #7A161B; text-decoration: line-through'),
+      gOptions: g.options.map(function (label, oi) {
+        return {
+          label: label,
+          style: optStyle(gAns, oi, g.correct, s.gpick),
+          pick: function () {
+            if (gAns) return;
+            if (oi === g.correct) {
+              self.bump({ gpick: oi });
+              speak(g.before + label + g.after);
+            } else self.setState({ gpick: oi });
+          }
+        };
+      }),
+      gAnswered: gAns,
+      gFbText: gOk ? '¡Correcto!' : 'A resposta certa é "' + g.options[g.correct] + '".',
+      gFbStyle: fbStyle(gOk),
+      gNext: function () { self.setState({ gi: (s.gi + 1) % GAPS.length, gpick: null }); }
+    };
+  }
+}
+
+FAFBoot(Component);
+
+});
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+}
+</script>
+</body>
+</html>
