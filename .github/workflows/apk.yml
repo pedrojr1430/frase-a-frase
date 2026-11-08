@@ -30,7 +30,9 @@ jobs:
 
       - name: Compilar
         working-directory: android
-        run: ./gradlew assembleRelease --no-daemon --stacktrace
+        run: |
+          set -o pipefail
+          ./gradlew assembleRelease --no-daemon --stacktrace 2>&1 | tee ../build.log
 
       - name: Assinar
         env:
@@ -42,6 +44,18 @@ jobs:
           "$BT/apksigner" sign --ks android/frase-a-frase.keystore --ks-key-alias fraseafrase \
             --ks-pass env:KS_PASS --key-pass env:KS_PASS --out frase-a-frase.apk aligned.apk
           "$BT/apksigner" verify --print-certs frase-a-frase.apk
+
+      - name: Guardar log da falha
+        if: failure()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git checkout --orphan ci-log
+          git rm -rf --cached . > /dev/null
+          touch build.log
+          git add -f build.log
+          git commit -m "log ${GITHUB_SHA::7}"
+          git push -f origin ci-log
 
       - name: Publicar
         env:
