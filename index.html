@@ -1205,6 +1205,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
     var src = 'https://www.youtube-nocookie.com/embed/videoseries?list=' + encodeURIComponent(m.yt) +
       '&playsinline=1&rel=0&hl=pt-BR&cc_lang_pref=es&cc_load_policy=1';
     if (!audio.paused) audio.pause();
+    stopSpeech();
     body.appendChild(h('div', { class: 'faf-video' }, [
       h('iframe', { src: src, title: m.title, allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', allowfullscreen: '', referrerpolicy: 'strict-origin-when-cross-origin' })
     ]));
@@ -1340,6 +1341,9 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
       markHeard(cur.media.id);
     }
   });
+  // Um áudio por vez: quando o podcast toca, a voz das frases e textos para.
+  function stopSpeech() { try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {} }
+  audio.addEventListener('play', stopSpeech);
   audio.addEventListener('play', function () { $('faf-toggle').innerHTML = ICON_PAUSE; $('faf-toggle').setAttribute('aria-label', 'Pausar'); });
   audio.addEventListener('pause', function () {
     $('faf-toggle').innerHTML = ICON_PLAY.replace('18', '22').replace('18', '22');
@@ -1380,7 +1384,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   });
   document.addEventListener('faf:render', placeDock);
 
-  window.FAF = { open: openSheet, translate: translate };
+  window.FAF = { open: openSheet, translate: translate, stopAudio: function () { if (!audio.paused) audio.pause(); } };
 })();
 </script>
 <script>
@@ -1743,6 +1747,7 @@ class Component extends DCLogic {
       var u = new SpeechSynthesisUtterance(text);
       u.lang = this.state.lang;
       u.rate = slow ? 0.6 : this.state.rate;
+      if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio();
       window.speechSynthesis.cancel();
       window.speechSynthesis.speak(u);
     } catch (e) {}
