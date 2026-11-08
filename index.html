@@ -107,7 +107,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 .faf-line.is-now .faf-line-time{color:var(--red)}
 .faf-line.is-now::before{content:"";position:absolute;left:52px;right:0;bottom:4px;height:2px;border-radius:2px;background:var(--line)}
 .faf-line.is-now::after{content:"";position:absolute;left:52px;bottom:4px;height:2px;border-radius:2px;background:var(--red);width:calc((100% - 52px) * var(--p,0));transition:width .25s linear}
-.faf-line:hover .faf-line-text{color:#fff}
+.faf-line:hover .faf-line-text{color:var(--red)}
 .faf-tl{display:none;font-size:.86em;line-height:1.5;font-weight:500}
 .faf-tl-pt{color:#5B3DF5}
 .faf-tl-en{color:#2F6FE0}
@@ -246,6 +246,11 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
     <button onClick="{{pickAll}}" style="{{allPill}}">Todas</button>
     <button onClick="{{pickReview}}" style="{{reviewPill}}">Revisar ({{reviewCount}})</button>
   </div>
+  <div role="group" aria-label="Idioma da tradução" style="display: flex; align-items: center; gap: 8px">
+    <span style="font-size: 13px; color: #5D6788">Tradução em</span>
+    <button onClick="{{langPt}}" aria-pressed="{{langPtOn}}" style="{{langPtStyle}}">Português</button>
+    <button onClick="{{langEn}}" aria-pressed="{{langEnOn}}" style="{{langEnStyle}}">Inglês</button>
+  </div>
   </sc-if>
 
   <sc-if value="{{isCatsView}}">
@@ -344,7 +349,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
       <div style="flex: 1 1 auto"></div>
       <sc-if value="{{flipped}}" hint-placeholder-val="{{ false }}">
         <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid #E1E6F3">
-          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5D6788">Português</span>
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5D6788">{{trLabel}}</span>
           <p style="margin: 0; font-size: 18px; font-weight: 500">{{card.pt}}</p>
           <sc-if value="{{card.hasNota}}" hint-placeholder-val="{{ true }}">
             <p style="margin: 0; padding: 10px 12px; background: #E6EEFF; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #2547B8">{{card.nota}}</p>
@@ -1375,7 +1380,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   });
   document.addEventListener('faf:render', placeDock);
 
-  window.FAF = { open: openSheet };
+  window.FAF = { open: openSheet, translate: translate };
 })();
 </script>
 <script>
@@ -1475,6 +1480,26 @@ function buildExercises() {
   EXS.length = 0;
   pick.forEach(function (i) { EXS.push(list[i]); });
 }
+
+// Tradução das frases em inglês, sob demanda, pelo mesmo tradutor do player (com cache).
+var EN_CACHE = {};
+function enOf(es) {
+  if (EN_CACHE[es]) return EN_CACHE[es];
+  if (!EN_CACHE['?' + es] && window.FAF && window.FAF.translate) {
+    EN_CACHE['?' + es] = 1;
+    window.FAF.translate(es, 'en').then(function (out) {
+      EN_CACHE[es] = out;
+      if (window.__fafApp) window.__fafApp.setState({ enTick: Date.now() });
+    }, function () {
+      delete EN_CACHE['?' + es];
+      EN_CACHE[es] = 'Tradução em inglês indisponível agora';
+      if (window.__fafApp) window.__fafApp.setState({ enTick: Date.now() });
+    });
+  }
+  return 'Traduzindo…';
+}
+function trOf(p, lang) { return lang === 'en' ? enOf(p.es) : p.pt; }
+function savedFlang() { try { return localStorage.getItem('fraseafrase.flang') === 'en' ? 'en' : 'pt'; } catch (e) { return 'pt'; } }
 
 // Conteúdo completo vem de data/*.json; o que está acima é a reserva para o primeiro uso offline.
 function loadContent() {
@@ -1683,7 +1708,7 @@ class Component extends DCLogic {
     var today = todayStr();
     this.state = {
       tab: 'inicio',
-      fview: 'cats', query: '', reading: false, level: 'all', tema: 'all', tquery: '', listLimit: 60, textLimit: 20,
+      fview: 'cats', query: '', reading: false, level: 'all', tema: 'all', tquery: '', listLimit: 60, textLimit: 20, flang: savedFlang(),
       mfilter: 'all', heard: saved.heard || {},
       cat: 0, card: 0, flipped: false,
       known: saved.known || {}, review: saved.review || {},
@@ -1862,6 +1887,13 @@ class Component extends DCLogic {
 
       // Frases: lista
       fseg: { cats: segStyle(s.fview === 'cats'), cards: segStyle(s.fview === 'cards'), lista: segStyle(s.fview === 'lista') },
+      trLabel: s.flang === 'en' ? 'Inglês' : 'Português',
+      langPtOn: s.flang === 'pt' ? 'true' : 'false',
+      langEnOn: s.flang === 'en' ? 'true' : 'false',
+      langPtStyle: pill(s.flang === 'pt') + '; min-height: 36px; padding: 0 14px; font-size: 13px',
+      langEnStyle: pill(s.flang === 'en') + '; min-height: 36px; padding: 0 14px; font-size: 13px',
+      langPt: function () { try { localStorage.setItem('fraseafrase.flang', 'pt'); } catch (e) {} self.setState({ flang: 'pt' }); },
+      langEn: function () { try { localStorage.setItem('fraseafrase.flang', 'en'); } catch (e) {} self.setState({ flang: 'en' }); },
       viewCats: function () { self.setState({ fview: 'cats' }); },
       isCatsView: s.fview === 'cats',
       notCatsView: s.fview !== 'cats',
@@ -1902,7 +1934,7 @@ class Component extends DCLogic {
       onQuery: function (e) { self.setState({ query: e && e.target ? e.target.value : '', listLimit: 60 }); },
       listItems: listItems.map(function (p) {
         return {
-          es: p.es, pt: p.pt, cat: p.cat,
+          es: p.es, pt: trOf(p, s.flang), cat: p.cat,
           isKnown: !!s.known[p.key], isReview: !!s.review[p.key],
           speak: function () { speak(p.es); },
           open: function () {
@@ -1985,7 +2017,7 @@ class Component extends DCLogic {
       deckEmpty: deck.length === 0,
       deckHas: deck.length > 0,
       deckLabel: s.cat === -1 ? 'Revisão' : s.cat === -2 ? 'Todas' : (CATS[s.cat] || CATS[0]).name,
-      card: { es: c.es, pt: c.pt, nota: c.nota, hasNota: !!c.nota, cat: c.cat, isKnown: !!s.known[c.key], isReview: !!s.review[c.key] },
+      card: { es: c.es, pt: trOf(c, s.flang), nota: c.nota, hasNota: !!c.nota, cat: c.cat, isKnown: !!s.known[c.key], isReview: !!s.review[c.key] },
       cardPos: cardIdx + 1,
       cardTotal: deck.length,
       deckKnown: deckKnown,
