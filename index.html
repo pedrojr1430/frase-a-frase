@@ -61,6 +61,22 @@ body.has-dock #scroller{padding-bottom:132px !important}
 .faf-btn-red{border:none;background:#B4232A;color:#fff}
 .faf-btn-light{border:1px solid #D6D3CA;background:#fff;color:#16181D}
 a.faf-btn-light{color:#16181D}
+body.tr-open #faf-dock{z-index:40;bottom:0 !important}
+body.tr-open .faf-panel{height:92vh;height:92dvh;max-height:none}
+body.tr-open #faf-sheet-body{padding-bottom:130px}
+.faf-tr-head{display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:-4px;background:#F6F5F1;padding:4px 0 6px;z-index:1}
+.faf-back-btn{min-height:40px;padding:0 14px}
+.faf-blur-toggle{display:flex;align-items:center;gap:6px;font-size:14px;color:#3A3D45;min-height:40px}
+.faf-blur-toggle input{width:18px;height:18px;accent-color:#B4232A}
+.faf-tr-title{margin:0;font-family:Fraunces,Georgia,serif;font-size:18px;line-height:1.3;font-weight:700}
+.faf-tr{display:flex;flex-direction:column;gap:2px}
+.faf-line{display:flex;gap:10px;align-items:baseline;text-align:left;width:100%;border:none;background:transparent;color:#16181D;padding:10px 12px;border-radius:12px;font-size:17px;line-height:1.5;transition:background .2s,color .2s}
+.faf-line-time{flex:0 0 auto;min-width:40px;font-size:12px;color:#8A8E99;font-variant-numeric:tabular-nums}
+.faf-line.is-past{color:#7A7E89}
+.faf-line.is-now{background:#FBE9E7;color:#16181D;font-weight:600}
+.faf-line.is-now .faf-line-time{color:#B4232A}
+.faf-tr.is-blur .faf-line-text{filter:blur(6px)}
+.faf-tr.is-blur .faf-line:hover .faf-line-text,.faf-tr.is-blur .faf-line:focus .faf-line-text{filter:none}
 .faf-list{display:flex;flex-direction:column;gap:8px}
 .faf-ep{display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:1px solid #E6E4DD;border-radius:14px;padding:12px;color:#16181D;min-height:56px}
 .faf-ep.is-playing{border:2px solid #B4232A;background:#FBE9E7}
@@ -506,7 +522,7 @@ a.faf-btn-light{color:#16181D}
 <div style="display: flex; flex-direction: column; gap: 16px">
   <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px">
     <h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Ouvir e assistir</h1>
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5B5F6B">Conteúdo real, gravado por falantes nativos. Toque em Ouvir ou Assistir para tocar aqui mesmo, com controle de velocidade.</p>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5B5F6B">Conteúdo real de falantes nativos, sempre com o texto junto: nos podcasts a transcrição acompanha o áudio, nos vídeos a legenda aparece na tela.</p>
   </div>
 
   <div style="display: flex; flex-wrap: wrap; gap: 8px">
@@ -792,48 +808,174 @@ a.faf-btn-light{color:#16181D}
     });
   }
 
+  function txt(el, tag) { var x = el.getElementsByTagName(tag)[0]; return x ? x.textContent.trim() : ''; }
+  function parseDur(v) {
+    if (!v) return null;
+    if (/^\d+$/.test(v)) return +v;
+    var p = v.split(':').map(Number), s = 0;
+    p.forEach(function (n) { s = s * 60 + n; });
+    return s || null;
+  }
   function fetchEpisodes(m) {
     if (cache[m.id]) return Promise.resolve(cache[m.id]);
-    var idP = m.apple ? Promise.resolve(m.apple)
-      : jsonp('https://itunes.apple.com/search?media=podcast&limit=1&term=' + encodeURIComponent(m.search)).then(function (d) {
-        if (!d.results || !d.results.length) throw new Error('not found');
-        return d.results[0].collectionId;
-      });
-    return idP.then(function (id) {
-      return jsonp('https://itunes.apple.com/lookup?entity=podcastEpisode&limit=40&id=' + id).then(function (d) {
-        var res = d.results || [];
-        var show = res.filter(function (r) { return r.wrapperType !== 'podcastEpisode'; })[0] || {};
-        var eps = res.filter(function (r) { return r.wrapperType === 'podcastEpisode' && r.episodeUrl; }).map(function (r) {
-          return {
-            title: r.trackName, url: https(r.episodeUrl), date: r.releaseDate,
-            dur: r.trackTimeMillis ? r.trackTimeMillis / 1000 : null,
-            desc: (r.shortDescription || r.description || '').replace(/\s+/g, ' ').trim().slice(0, 180),
-            art: https(r.artworkUrl160 || r.artworkUrl600 || show.artworkUrl100 || '')
-          };
+    return fetch(m.feed).then(function (r) { if (!r.ok) throw new Error('feed'); return r.text(); }).then(function (xml) {
+      var doc = new DOMParser().parseFromString(xml, 'text/xml');
+      var ch = doc.getElementsByTagName('channel')[0];
+      var chImg = ch && ch.getElementsByTagName('itunes:image')[0];
+      var showArt = chImg ? chImg.getAttribute('href') : '';
+      var eps = [];
+      Array.prototype.forEach.call(doc.getElementsByTagName('item'), function (it) {
+        var enc = it.getElementsByTagName('enclosure')[0];
+        if (!enc) return;
+        var trs = Array.prototype.map.call(it.getElementsByTagName('podcast:transcript'), function (e) {
+          return { url: e.getAttribute('url'), type: (e.getAttribute('type') || '').toLowerCase() };
         });
-        var out = { id: id, show: show, eps: eps };
-        cache[m.id] = out;
-        return out;
+        var tr = trs.filter(function (t) { return /json/.test(t.type); })[0] ||
+          trs.filter(function (t) { return /vtt/.test(t.type) || /\.vtt$/.test(t.url); })[0] ||
+          trs.filter(function (t) { return /srt|subrip/.test(t.type) || /\.srt$/.test(t.url); })[0];
+        if (!tr) return;
+        var img = it.getElementsByTagName('itunes:image')[0];
+        eps.push({
+          title: txt(it, 'title'), url: https(enc.getAttribute('url')), date: txt(it, 'pubDate'),
+          dur: parseDur(txt(it, 'itunes:duration')), tr: tr,
+          art: https((img && img.getAttribute('href')) || showArt)
+        });
       });
+      var out = { eps: eps.slice(0, 40), link: ch ? txt(ch, 'link') : '' };
+      cache[m.id] = out;
+      return out;
     });
   }
 
+  /* ---------- Transcrição ---------- */
+  var trCache = {};
+  function srtTime(s) {
+    var m = /(?:(\d+):)?(\d+):(\d+)[,.](\d+)/.exec(s);
+    if (!m) return 0;
+    return (+(m[1] || 0)) * 3600 + (+m[2]) * 60 + (+m[3]) + (+('0.' + m[4]));
+  }
+  function parseCues(text, type) {
+    if (/json/.test(type)) {
+      var j = JSON.parse(text);
+      return (j.segments || []).map(function (s) { return { s: +s.startTime, e: +s.endTime, t: String(s.body || ''), sp: s.speaker || '' }; });
+    }
+    var cues = [];
+    text.replace(/\r/g, '').split(/\n\s*\n/).forEach(function (block) {
+      var lines = block.split('\n').filter(function (l) { return l.trim() !== ''; });
+      var i = lines.findIndex(function (l) { return l.indexOf('-->') >= 0; });
+      if (i < 0) return;
+      var t = lines[i].split('-->');
+      cues.push({ s: srtTime(t[0]), e: srtTime(t[1]), t: lines.slice(i + 1).join(' ').replace(/<[^>]+>/g, ''), sp: '' });
+    });
+    return cues;
+  }
+  function mergeCues(raw) {
+    raw.sort(function (a, b) { return a.s - b.s; });
+    var out = [], cur = null;
+    raw.forEach(function (c) {
+      var t = c.t.replace(/\s+/g, ' ').trim();
+      if (!t) return;
+      if (cur && (c.sp !== cur.sp || c.s - cur.e > 2.5)) { out.push(cur); cur = null; }
+      if (!cur) cur = { s: c.s, e: c.e, t: t, sp: c.sp };
+      else { cur.t += ' ' + t; cur.e = Math.max(cur.e, c.e); }
+      if ((/[.?!…»"]$/.test(cur.t) && cur.t.length > 25) || cur.e - cur.s > 12) { out.push(cur); cur = null; }
+    });
+    if (cur) out.push(cur);
+    return out;
+  }
+  function loadTranscript(ep) {
+    if (trCache[ep.tr.url]) return Promise.resolve(trCache[ep.tr.url]);
+    return fetch(ep.tr.url).then(function (r) { if (!r.ok) throw new Error('tr'); return r.text(); }).then(function (t) {
+      var cues = mergeCues(parseCues(t, ep.tr.type));
+      if (!cues.length) throw new Error('empty');
+      trCache[ep.tr.url] = cues;
+      return cues;
+    });
+  }
+
+  var trView = null; // { box, nodes, cues, idx, userScrollAt }
+  function renderTranscript(m, body) {
+    var ep = cur.ep;
+    body.appendChild(h('div', { class: 'faf-tr-head' }, [
+      h('button', { type: 'button', class: 'faf-btn faf-btn-light faf-back-btn', text: '← Episódios', onclick: function () { showEpisodes = true; openSheet(m); } }),
+      h('label', { class: 'faf-blur-toggle' }, [
+        h('input', { type: 'checkbox', onchange: function () { box.classList.toggle('is-blur', this.checked); } }),
+        ' Esconder texto'
+      ])
+    ]));
+    body.appendChild(h('p', { class: 'faf-tr-title', text: ep.title }));
+    var box = h('div', { class: 'faf-tr', 'aria-live': 'off' }, [h('p', { class: 'faf-note', text: 'Carregando transcrição…' })]);
+    body.appendChild(box);
+    body.appendChild(h('p', { class: 'faf-note', text: 'Toque numa frase para voltar o áudio até ela. Transcrição publicada pelo próprio podcast.' }));
+    document.body.classList.add('tr-open');
+    trView = { box: box, nodes: [], cues: null, idx: -1, userScrollAt: 0, body: body };
+    body.addEventListener('scroll', function () { if (trView && !trView.auto) trView.userScrollAt = Date.now(); }, { passive: true });
+    var myView = trView;
+    loadTranscript(ep).then(function (cues) {
+      if (trView !== myView) return;
+      box.replaceChildren();
+      myView.cues = cues;
+      myView.nodes = cues.map(function (c) {
+        var b = h('button', { type: 'button', class: 'faf-line', onclick: function () { audio.currentTime = c.s; if (audio.paused) audio.play(); myView.userScrollAt = 0; } }, [
+          h('span', { class: 'faf-line-time', text: fmt(c.s) }),
+          h('span', { class: 'faf-line-text', text: c.t })
+        ]);
+        box.appendChild(b);
+        return b;
+      });
+      syncTranscript(true);
+    }).catch(function () {
+      if (trView !== myView) return;
+      box.replaceChildren(h('p', { class: 'faf-note', text: 'Não consegui carregar a transcrição deste episódio agora.' }));
+    });
+  }
+  function syncTranscript(force) {
+    var v = trView;
+    if (!v || !v.cues || $('faf-sheet').hidden) return;
+    var t = audio.currentTime, lo = 0, hi = v.cues.length - 1, idx = -1;
+    while (lo <= hi) { var mid = (lo + hi) >> 1; if (v.cues[mid].s <= t + 0.15) { idx = mid; lo = mid + 1; } else hi = mid - 1; }
+    if (idx === v.idx && !force) return;
+    if (v.idx >= 0 && v.nodes[v.idx]) v.nodes[v.idx].classList.remove('is-now');
+    for (var i = Math.max(0, Math.min(idx, v.idx) ); i < Math.max(idx, v.idx) + 1 && i < v.nodes.length; i++) v.nodes[i].classList.toggle('is-past', i < idx);
+    if (force) v.nodes.forEach(function (n, i) { n.classList.toggle('is-past', i < idx); });
+    v.idx = idx;
+    if (idx < 0) return;
+    var node = v.nodes[idx];
+    node.classList.add('is-now');
+    if (Date.now() - v.userScrollAt > 4000) {
+      var body = v.body;
+      var target = node.offsetTop - body.offsetTop - body.clientHeight * 0.35;
+      v.auto = true;
+      body.scrollTo({ top: Math.max(0, target), behavior: force ? 'auto' : 'smooth' });
+      setTimeout(function () { v.auto = false; }, 600);
+    }
+  }
+
   /* ---------- Folha (sheet) ---------- */
+  var showEpisodes = false;
   function closeSheet() {
     var sh = $('faf-sheet');
     sh.hidden = true;
     $('faf-sheet-body').replaceChildren();
     document.body.style.overflow = '';
+    document.body.classList.remove('tr-open');
+    trView = null;
   }
   function openSheet(m) {
     var sh = $('faf-sheet');
     $('faf-sheet-title').textContent = m.title;
     $('faf-sheet-sub').textContent = m.source;
-    var body = $('faf-sheet-body');
-    body.replaceChildren();
+    var old = $('faf-sheet-body');
+    document.body.classList.remove('tr-open');
+    var body = old.cloneNode(false);
+    old.replaceWith(body);
+    trView = null;
     sh.hidden = false;
     document.body.style.overflow = 'hidden';
-    if (m.yt) renderVideo(m, body); else renderPodcast(m, body);
+    if (m.yt) renderVideo(m, body);
+    else if (cur && cur.media.id === m.id && !showEpisodes) renderTranscript(m, body);
+    else renderPodcast(m, body);
+    showEpisodes = false;
     $('faf-sheet-close').focus();
   }
 
@@ -845,7 +987,7 @@ a.faf-btn-light{color:#16181D}
       h('iframe', { src: src, title: m.title, allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', allowfullscreen: '', referrerpolicy: 'strict-origin-when-cross-origin' })
     ]));
     body.appendChild(h('p', { class: 'faf-tip', text: m.tip }));
-    body.appendChild(h('p', { class: 'faf-note', text: 'Toque no ícone de lista dentro do vídeo para escolher outros episódios. Legendas em espanhol: botão CC.' }));
+    body.appendChild(h('p', { class: 'faf-note', text: 'As legendas em espanhol aparecem no próprio vídeo. Se não aparecerem, toque no botão CC. O ícone de lista dentro do vídeo mostra outros episódios.' }));
     body.appendChild(h('div', { class: 'faf-row' }, [
       h('button', { class: 'faf-btn faf-btn-red', type: 'button', text: 'Marcar como assistido', onclick: function () { markHeard(m.id); this.textContent = 'Marcado ✓'; } }),
       h('a', { class: 'faf-btn faf-btn-light', href: m.url, target: '_blank', rel: 'noopener noreferrer', text: 'Abrir no YouTube' })
@@ -858,18 +1000,18 @@ a.faf-btn-light{color:#16181D}
     var list = h('div', { class: 'faf-list' });
     body.appendChild(status);
     body.appendChild(list);
-    body.appendChild(h('div', { class: 'faf-row' }, [
-      h('a', { class: 'faf-btn faf-btn-light', href: m.url, target: '_blank', rel: 'noopener noreferrer', text: 'Site oficial (transcrições)' })
-    ]));
+    var linkRow = h('div', { class: 'faf-row' });
+    body.appendChild(linkRow);
     fetchEpisodes(m).then(function (data) {
       if (!data.eps.length) throw new Error('empty');
-      status.textContent = data.eps.length + ' episódios mais recentes · toque para ouvir aqui';
+      linkRow.appendChild(h('a', { class: 'faf-btn faf-btn-light', href: m.url || data.link, target: '_blank', rel: 'noopener noreferrer', text: 'Site do podcast' }));
+      status.textContent = data.eps.length + ' episódios com transcrição · toque para ouvir e ler junto';
       var pos = loadPos();
       data.eps.forEach(function (ep) {
         var playing = cur && cur.ep.url === ep.url;
         var saved = pos[ep.url];
         var meta = [fmtDate(ep.date), ep.dur ? fmt(ep.dur) : '', saved ? 'parou em ' + fmt(saved.t) : ''].filter(Boolean).join(' · ');
-        var btn = h('button', { type: 'button', class: 'faf-ep' + (playing ? ' is-playing' : ''), onclick: function () { play(m, ep, data); highlight(list, btn); } }, [
+        var btn = h('button', { type: 'button', class: 'faf-ep' + (playing ? ' is-playing' : ''), onclick: function () { play(m, ep); openSheet(m); } }, [
           h('span', { class: 'faf-ep-icon', 'aria-hidden': 'true', html: playing ? ICON_BARS : ICON_PLAY }),
           h('span', { class: 'faf-ep-text' }, [
             h('span', { class: 'faf-ep-title', text: ep.title }),
@@ -880,22 +1022,8 @@ a.faf-btn-light{color:#16181D}
       });
     }).catch(function () {
       status.textContent = 'Não consegui carregar a lista de episódios agora. Confira a internet e tente de novo.';
-      var retry = h('button', { type: 'button', class: 'faf-btn faf-btn-red', text: 'Tentar de novo', onclick: function () { delete cache[m.id]; openSheet(m); } });
-      list.appendChild(retry);
-      if (m.apple) {
-        list.appendChild(h('div', { class: 'faf-apple' }, [
-          h('iframe', { src: 'https://embed.podcasts.apple.com/br/podcast/id' + m.apple + '?theme=light', title: m.title, allow: 'autoplay *; encrypted-media *; clipboard-write', sandbox: 'allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation' })
-        ]));
-      }
+      list.appendChild(h('button', { type: 'button', class: 'faf-btn faf-btn-red', text: 'Tentar de novo', onclick: function () { delete cache[m.id]; openSheet(m); } }));
     });
-  }
-  function highlight(list, btn) {
-    Array.prototype.forEach.call(list.children, function (b) {
-      b.classList.remove('is-playing');
-      var ic = b.querySelector('.faf-ep-icon'); if (ic) ic.innerHTML = ICON_PLAY;
-    });
-    btn.classList.add('is-playing');
-    btn.querySelector('.faf-ep-icon').innerHTML = ICON_BARS;
   }
 
   /* ---------- Áudio ---------- */
@@ -909,9 +1037,9 @@ a.faf-btn-light{color:#16181D}
     if (app && app.markHeard) app.markHeard(id);
   }
 
-  function play(m, ep, data) {
+  function play(m, ep) {
     var same = cur && cur.ep.url === ep.url;
-    cur = { media: m, ep: ep, show: data && data.show };
+    cur = { media: m, ep: ep };
     if (!same) {
       audio.src = ep.url;
       var p = loadPos()[ep.url];
@@ -983,6 +1111,7 @@ a.faf-btn-light{color:#16181D}
     $('faf-dur').textContent = fmt(dur);
     var bar = $('faf-seek');
     if (!bar.dragging && isFinite(dur) && dur > 0) bar.value = String(Math.round((t / dur) * 1000));
+    syncTranscript(false);
     if (Date.now() - lastSave > 5000) { lastSave = Date.now(); savePos(cur.ep.url, t); }
     if (isFinite(dur) && dur > 0 && t / dur > 0.85 && !heardMarked[cur.ep.url]) {
       heardMarked[cur.ep.url] = true;
@@ -1006,6 +1135,7 @@ a.faf-btn-light{color:#16181D}
 
   document.addEventListener('DOMContentLoaded', function () {
     $('faf-sheet-close').addEventListener('click', closeSheet);
+    audio.addEventListener('seeked', function () { syncTranscript(true); });
     $('faf-sheet').addEventListener('click', function (e) { if (e.target.id === 'faf-sheet') closeSheet(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('faf-sheet').hidden) closeSheet(); });
     $('faf-toggle').addEventListener('click', function () { if (!cur) return; if (audio.paused) audio.play(); else audio.pause(); });
@@ -1178,35 +1308,26 @@ var TEXTS = [
 var LEVELS = ['Básico', 'Intermediário', 'Avançado'];
 
 var MEDIA = [
-  { id: 'coffeebreak', kind: 'podcast', title: 'Coffee Break Spanish', source: 'Coffee Break Languages · podcast', nivel: 'Do zero ao avançado', apple: 201598403,
-    desc: 'Lições de 15 a 20 minutos. A temporada 1 é para quem está começando do zero e cada temporada fica um pouco mais difícil.',
-    tip: 'Comece pela temporada 1 e ouça um episódio por dia.', url: 'https://coffeebreaklanguages.com/spanish/' },
-  { id: 'pedro', kind: 'podcast', title: 'Spanish for Beginners Pedro', source: 'spanishwithpedro.com · podcast', nivel: 'Básico', apple: 1513231552,
-    desc: 'Lições práticas para aprender a manter uma conversa. O site tem transcrições.',
-    tip: 'Bom para quem quer frases prontas de conversa.', url: 'https://www.spanishwithpedro.com' },
-  { id: 'easypod', kind: 'podcast', title: 'Easy Spanish Podcast', source: 'Easy Spanish · podcast', nivel: 'Intermediário', apple: 1557471374,
-    desc: 'Conversas do dia a dia sobre a língua espanhola e a cultura dos países hispânicos.',
-    tip: 'Ouça no caminho do trabalho, sem pressão para entender tudo.', url: 'https://www.easyspanish.fm' },
-  { id: 'radioele', kind: 'podcast', title: 'Radio ELE', source: 'radioele.com · podcast', nivel: 'Intermediário', apple: 1775433869,
-    desc: 'Espanhol real, mas fácil de acompanhar, sobre temas variados. As transcrições ficam no site.',
-    tip: 'Leia a transcrição depois da primeira escuta.', url: 'https://radioele.com' },
-  { id: 'hoyhablamos', kind: 'podcast', title: 'Hoy Hablamos', source: 'hoyhablamos.com · podcast', nivel: 'Intermediário', search: 'Hoy Hablamos podcast diario para aprender español',
-    desc: 'Um episódio por dia, de segunda a sexta, com temas variados. Os episódios recentes são gratuitos.',
-    tip: 'Ótimo para criar o hábito diário.', url: 'https://hoyhablamos.com' },
-  { id: 'buscador', kind: 'podcast', title: 'El buscador de R5', source: 'RTVE · Rádio 5', nivel: 'Avançado', apple: 413640696,
-    desc: 'Programa curto de ciência e tecnologia da rádio pública espanhola. Espanhol nativo, em ritmo de rádio.',
-    tip: 'Escolha temas que você já conhece em português.', url: 'https://www.rtve.es/play/audios/el-buscador-de-r5/' },
-  { id: 'corresponsales', kind: 'podcast', title: 'Rueda de corresponsales', source: 'RTVE · Rádio 5', nivel: 'Avançado',
-    desc: 'Notícias do mundo contadas pelos correspondentes da RTVE, com sotaques variados. Este abre no site da RTVE.',
-    tip: 'Compare com uma notícia que você já leu em português.', url: 'https://www.rtve.es/play/audios/rueda-de-corresponsales/' },
+  { id: 'falsos', kind: 'podcast', title: 'Spanish for False Beginners', source: 'Spanish Language Coach · podcast', nivel: 'Básico', feed: 'https://rss.buzzsprout.com/2437041.rss',
+    desc: 'Conversas lentas e claras entre dois professores, pensadas para quem já sabe o básico. Os episódios recentes têm transcrição.',
+    tip: 'Ouça primeiro só acompanhando o texto. Depois ouça de novo com o texto escondido.', url: 'https://www.spanishlanguagecoach.com' },
+  { id: 'intermedio', kind: 'podcast', title: 'Español Intermedio', source: 'Spanish Language Coach · podcast', nivel: 'Intermediário', feed: 'https://rss.buzzsprout.com/2381323.rss',
+    desc: 'Temas do dia a dia e da cultura hispânica, falados num ritmo natural mas claro.',
+    tip: 'Toque numa frase para repetir o trecho quantas vezes quiser.', url: 'https://www.spanishlanguagecoach.com' },
+  { id: 'colombiano', kind: 'podcast', title: 'Spanish Colombiano', source: 'Spanish Colombiano · podcast', nivel: 'Intermediário', feed: 'https://anchor.fm/s/da5bd634/podcast/rss',
+    desc: 'Histórias, gírias e espanhol real da Colômbia. Quase todos os episódios têm transcrição.',
+    tip: 'Bom para treinar o sotaque latino-americano.', url: '' },
+  { id: 'argentalk', kind: 'podcast', title: 'Argentalk', source: 'Argentalk · podcast', nivel: 'Intermediário', feed: 'https://anchor.fm/s/2a684834/podcast/rss',
+    desc: 'Histórias contadas em espanhol argentino, com o "vos" e o sotaque do Rio da Prata.',
+    tip: 'Repare como o "ll" e o "y" soam diferente aqui.', url: '' },
+  { id: 'avanzado', kind: 'podcast', title: 'Español Avanzado', source: 'Spanish Language Coach · podcast', nivel: 'Avançado', feed: 'https://rss.buzzsprout.com/2531655.rss',
+    desc: 'Conversas com convidados nativos sobre cultura, sociedade e língua, em velocidade real.',
+    tip: 'Use a velocidade 0,9x se estiver rápido demais.', url: 'https://www.spanishlanguagecoach.com' },
   { id: 'easyyt', kind: 'video', title: 'Easy Spanish', source: 'YouTube · @EasySpanish', nivel: 'Intermediário', yt: 'UUAL4AMMMXKxHDu3FqZV6CbQ',
-    desc: 'Entrevistas de rua na Espanha e na América Latina, com legendas em espanhol e inglês.',
-    tip: 'Ative a legenda em espanhol e pause para repetir.', url: 'https://www.youtube.com/@EasySpanish' },
-  { id: 'dreaming', kind: 'video', title: 'Dreaming Spanish', source: 'YouTube · Dreaming Spanish', nivel: 'Todos os níveis', yt: 'UUouyFdE9-Lrjo3M_2idKq1A',
-    desc: 'Vídeos falados só em espanhol, do superiniciante ao avançado, com desenhos e gestos para ajudar a entender.',
-    tip: 'Procure os vídeos "Superbeginner" e "Beginner" na lista do player.', url: 'https://www.youtube.com/channel/UCouyFdE9-Lrjo3M_2idKq1A' },
+    desc: 'Entrevistas de rua na Espanha e na América Latina, com legenda em espanhol na tela.',
+    tip: 'Pause e repita as frases que você entender.', url: 'https://www.youtube.com/@EasySpanish' },
   { id: 'juan', kind: 'video', title: 'Español con Juan', source: 'YouTube · Español con Juan', nivel: 'Intermediário', yt: 'UUoHJ7PkM6T92LwgJgrnDhWA',
-    desc: 'Professor espanhol explicando gramática e expressões do dia a dia com humor, tudo em espanhol.',
+    desc: 'Professor espanhol explicando gramática e expressões do dia a dia com humor, tudo em espanhol e com legendas.',
     tip: 'Bom para ouvir espanhol da Espanha falado com calma.', url: 'https://www.youtube.com/channel/UCoHJ7PkM6T92LwgJgrnDhWA' },
   { id: 'tatoeba', kind: 'frases', title: 'Tatoeba', source: 'tatoeba.org · banco de frases', nivel: 'Todos os níveis',
     desc: 'Banco colaborativo com milhares de frases traduzidas, muitas com áudio de falantes nativos.',
@@ -1450,9 +1571,9 @@ class Component extends DCLogic {
         var typeColors = m.kind === 'video' ? 'background: #E4ECF7; color: #1D3D66' : m.kind === 'frases' ? 'background: #EFEDE6; color: #3A3D45' : 'background: #FBE9E7; color: #7A161B';
         return {
           title: m.title, source: m.source, nivel: m.nivel, desc: m.desc, tip: m.tip, url: m.url,
-          hasPlayer: !!(m.apple || m.search || m.yt),
-          noPlayer: !(m.apple || m.search || m.yt),
-          playLabel: m.yt ? 'Assistir aqui' : 'Ouvir aqui',
+          hasPlayer: !!(m.feed || m.yt),
+          noPlayer: !(m.feed || m.yt),
+          playLabel: m.yt ? 'Assistir aqui' : 'Ouvir e ler',
           play: function () { if (window.FAF) window.FAF.open(m); },
           type: KIND_LABEL[m.kind],
           typeStyle: 'font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; ' + typeColors,
