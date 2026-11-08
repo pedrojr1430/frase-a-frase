@@ -5,102 +5,125 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Frase a Frase</title>
 <meta name="description" content="Aprenda espanhol frase a frase: cartões, leitura guiada, prática e podcasts reais.">
-<meta name="theme-color" content="#F6F5F1">
+<meta name="theme-color" content="#0D1220">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Frase a Frase">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
 <style>
-html,body{margin:0;background:#F6F5F1;height:100%}
-body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;font-family:Inter,system-ui,sans-serif;color:#16181D}
-a{color:#B4232A}a:hover{color:#8A1A20}
+:root{--ink:#0D1220;--deck:#151C2E;--deck2:#1C2540;--line:#232C44;--line2:#34405F;--text:#E8EDF7;--muted:#8F9BB8;--red:#FF5466;--saffron:#FFC247;--cyan:#5CC8FF;--tr-size:18px}
+html,body{margin:0;background:var(--ink);height:100%;color-scheme:dark}
+body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;font-family:Manrope,system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:#FF6B7A}a:hover{color:#FF8A96}
 button{font-family:inherit;cursor:pointer}
-button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #F2C230;outline-offset:2px}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
+::selection{background:rgba(255,84,102,.35)}
 #app{height:100%}
+#app nav{background:rgba(13,18,32,.92)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 body.has-dock #scroller{padding-bottom:132px !important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 /* mini player */
-#faf-dock{position:fixed;left:0;right:0;bottom:80px;z-index:20;display:flex;justify-content:center;pointer-events:none;padding:0 8px}
+#faf-dock{position:fixed;left:0;right:0;bottom:80px;z-index:20;display:flex;justify-content:center;pointer-events:none;padding:0 10px}
 #faf-dock[hidden]{display:none}
-.faf-dock-card{pointer-events:auto;width:100%;max-width:544px;box-sizing:border-box;background:#16181D;color:#fff;border-radius:18px;padding:10px 12px 8px;box-shadow:0 8px 24px rgba(22,24,29,.28);display:flex;flex-direction:column;gap:6px;margin-bottom:6px}
-.faf-dock-top{display:flex;align-items:center;gap:10px}
+.faf-dock-card{pointer-events:auto;width:100%;max-width:540px;box-sizing:border-box;background:#18213A;border:1px solid var(--line2);color:var(--text);border-radius:16px;padding:10px 12px 8px;box-shadow:0 18px 40px rgba(0,0,0,.55);display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.faf-dock-top{display:flex;align-items:center;gap:8px}
 #faf-dock-info{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:10px;background:none;border:none;color:inherit;text-align:left;padding:0}
-#faf-dock-art{width:40px;height:40px;border-radius:8px;object-fit:cover;flex:0 0 auto;background:#2A2D35}
+#faf-dock-art{width:40px;height:40px;border-radius:8px;object-fit:cover;flex:0 0 auto;background:var(--deck2)}
 .faf-dock-text{min-width:0;display:flex;flex-direction:column}
-#faf-dock-title{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-#faf-dock-show{font-size:12px;color:#B9BCC5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.faf-ic{flex:0 0 auto;width:40px;height:40px;border-radius:999px;border:none;background:transparent;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
-#faf-toggle{width:44px;height:44px;background:#B4232A}
-#faf-speed{width:auto;min-width:44px;padding:0 8px;border:1px solid #4A4E58;height:32px;font-size:12px}
-.faf-dock-bottom{display:flex;align-items:center;gap:8px;font-size:11px;color:#B9BCC5;font-variant-numeric:tabular-nums}
-#faf-seek{flex:1 1 auto;accent-color:#F2C230;height:20px;margin:0}
+#faf-dock-title{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#faf-dock-show{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.faf-ic{flex:0 0 auto;width:40px;height:40px;border-radius:999px;border:none;background:transparent;color:var(--text);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}
+#faf-toggle{width:44px;height:44px;background:var(--red);color:var(--ink)}
+#faf-speed{width:auto;min-width:44px;padding:0 8px;border:1px solid var(--line2);height:30px;font-size:12px}
+.faf-dock-bottom{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+#faf-seek{flex:1 1 auto;accent-color:var(--red);height:20px;margin:0}
 
 /* sheet */
-#faf-sheet{position:fixed;inset:0;z-index:30;background:rgba(22,24,29,.5);display:flex;align-items:flex-end;justify-content:center}
+#faf-sheet{position:fixed;inset:0;z-index:30;background:rgba(5,8,16,.72);display:flex;align-items:flex-end;justify-content:center}
 #faf-sheet[hidden]{display:none}
-.faf-panel{width:100%;max-width:560px;max-height:90vh;max-height:90dvh;background:#F6F5F1;border-radius:22px 22px 0 0;display:flex;flex-direction:column;box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom)}
+.faf-panel{width:100%;max-width:600px;max-height:90vh;max-height:90dvh;background:var(--ink);border:1px solid var(--line);border-bottom:none;border-radius:20px 20px 0 0;display:flex;flex-direction:column;box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom);position:relative}
 .faf-head{display:flex;align-items:flex-start;gap:12px;padding:18px 18px 10px}
-.faf-head-text{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
-#faf-sheet-title{margin:0;font-family:Fraunces,Georgia,serif;font-size:22px;line-height:1.2;font-weight:700}
-#faf-sheet-sub{font-size:13px;color:#5B5F6B}
-#faf-sheet-close{width:44px;height:44px;border-radius:999px;border:1px solid #D6D3CA;background:#fff;color:#16181D;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.faf-head-text{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px}
+#faf-sheet-title{margin:0;font-family:Unbounded,Manrope,sans-serif;font-size:19px;line-height:1.25;font-weight:600;letter-spacing:-.01em}
+#faf-sheet-sub{font-size:13px;color:var(--muted)}
+#faf-sheet-close{width:40px;height:40px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
 #faf-sheet-body{overflow-y:auto;padding:4px 18px 22px;display:flex;flex-direction:column;gap:12px}
-.faf-video{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}
+.faf-video{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
 .faf-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.faf-apple iframe{width:100%;height:450px;border:0;border-radius:12px;background:#fff}
-.faf-tip{margin:0;padding:10px 12px;background:#fff;border:1px solid #E6E4DD;border-radius:10px;font-size:14px;line-height:1.45;color:#3A3D45}
-.faf-note{margin:0;font-size:13px;line-height:1.45;color:#5B5F6B}
+.faf-tip{margin:0;padding:12px 14px;background:var(--deck);border:1px solid var(--line);border-radius:12px;font-size:14px;line-height:1.5;color:#B7C1D9}
+.faf-note{margin:0;font-size:13px;line-height:1.5;color:var(--muted)}
 .faf-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
-.faf-btn{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:14px;font-weight:600;text-decoration:none;padding:0 12px;box-sizing:border-box;text-align:center}
-.faf-btn-red{border:none;background:#B4232A;color:#fff}
-.faf-btn-light{border:1px solid #D6D3CA;background:#fff;color:#16181D}
-a.faf-btn-light{color:#16181D}
+.faf-btn{min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none;padding:0 14px;box-sizing:border-box;text-align:center}
+.faf-btn-red{border:none;background:var(--red);color:var(--ink)}
+.faf-btn-light{border:1px solid var(--line2);background:transparent;color:var(--text)}
+a.faf-btn-light{color:var(--text)}
+.faf-list{display:flex;flex-direction:column}
+.faf-ep{display:flex;align-items:center;gap:14px;text-align:left;background:transparent;border:none;border-bottom:1px solid var(--line);padding:14px 2px;color:var(--text);min-height:60px}
+.faf-ep:first-child{border-top:1px solid var(--line)}
+.faf-ep-icon{flex:0 0 auto;width:36px;height:36px;border-radius:999px;border:1px solid var(--line2);color:var(--text);display:flex;align-items:center;justify-content:center}
+.faf-ep.is-playing .faf-ep-icon{background:var(--red);border-color:var(--red);color:var(--ink)}
+.faf-ep.is-playing .faf-ep-title{color:#FF8A96}
+.faf-ep-text{min-width:0;display:flex;flex-direction:column;gap:3px}
+.faf-ep-title{font-size:15px;font-weight:700;line-height:1.35}
+.faf-ep-meta{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* transcrição */
 body.tr-open #faf-dock{z-index:40;bottom:0 !important}
-body.tr-open .faf-panel{height:92vh;height:92dvh;max-height:none}
-body.tr-open #faf-sheet-body{padding-bottom:130px}
-.faf-tr-head{display:flex;flex-direction:column;gap:6px;position:sticky;top:-4px;background:#F6F5F1;padding:4px 0 8px;z-index:1;border-bottom:1px solid #E6E4DD}
-.faf-tr-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.faf-tl-row{justify-content:flex-start;gap:8px}
-.faf-tl-label{font-size:14px;color:#3A3D45}
-.faf-tl-btn{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #D6D3CA;background:#fff;color:#16181D;font-size:14px;font-weight:600}
-.faf-tl-btn.is-on{background:#16181D;border-color:#16181D;color:#fff}
-.faf-line-body{display:flex;flex-direction:column;gap:3px;min-width:0}
-.faf-tl{display:none;font-size:15px;line-height:1.45;font-weight:400}
-.faf-tl-pt{color:#1E6B45}
-.faf-tl-en{color:#1D3D66;font-style:italic}
-.faf-tl.is-err{color:#8A8E99;font-size:13px}
+body.tr-open .faf-panel{height:96vh;height:96dvh;max-height:none}
+body.tr-open .faf-head{display:none}
+body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
+.faf-tr-top{position:sticky;top:0;z-index:2;background:rgba(13,18,32,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 16px 10px;display:flex;flex-direction:column;gap:10px}
+.faf-tr-bar{display:flex;align-items:center;gap:10px}
+.faf-round{flex:0 0 auto;width:38px;height:38px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text);display:flex;align-items:center;justify-content:center}
+.faf-tr-heading{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:1px}
+.faf-tr-show{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.faf-tr-title{margin:0;font-size:15px;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.faf-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.faf-tools::-webkit-scrollbar{display:none}
+.faf-chip{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 11px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:#B7C1D9;font-size:13px;font-weight:600;white-space:nowrap}
+.faf-chip .dot{width:8px;height:8px;border-radius:999px;background:currentColor;opacity:.5}
+.faf-chip[aria-pressed="true"]{background:var(--deck2);border-color:transparent;color:var(--text)}
+.faf-chip[aria-pressed="true"] .dot{opacity:1}
+.faf-chip.pt[aria-pressed="true"] .dot{background:var(--saffron)}
+.faf-chip.en[aria-pressed="true"] .dot{background:var(--cyan)}
+.faf-chip.es[aria-pressed="true"] .dot{background:var(--red)}
+.faf-sep{flex:0 0 auto;width:1px;height:20px;background:var(--line2);margin:0}
+.faf-size{flex:0 0 auto;min-width:34px;height:34px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text);font-weight:700;font-size:13px}
+.faf-tr{display:flex;flex-direction:column;padding:18px 16px 0}
+.faf-line{position:relative;display:grid;grid-template-columns:44px 1fr;gap:4px 10px;align-items:baseline;text-align:left;width:100%;border:none;background:transparent;color:#AEB8D0;padding:12px 10px 12px 0;border-radius:0;font-size:var(--tr-size);line-height:1.55;transition:color .25s}
+.faf-line-time{font-size:11px;color:#5E6A88;font-variant-numeric:tabular-nums;text-align:right;padding-top:.35em}
+.faf-line-body{display:flex;flex-direction:column;gap:4px;min-width:0}
+.faf-line-text{font-weight:500}
+.faf-line.is-past{color:#6A7591}
+.faf-line.is-now{color:#FFFFFF}
+.faf-line.is-now .faf-line-text{font-weight:700;font-size:1.12em;line-height:1.45}
+.faf-line.is-now .faf-line-time{color:var(--red)}
+.faf-line.is-now::before{content:"";position:absolute;left:52px;right:0;bottom:4px;height:2px;border-radius:2px;background:var(--line)}
+.faf-line.is-now::after{content:"";position:absolute;left:52px;bottom:4px;height:2px;border-radius:2px;background:var(--red);width:calc((100% - 52px) * var(--p,0));transition:width .25s linear}
+.faf-line:hover .faf-line-text{color:#fff}
+.faf-tl{display:none;font-size:.86em;line-height:1.5;font-weight:500}
+.faf-tl-pt{color:#F2BD5C}
+.faf-tl-en{color:#6FC3F0}
+.faf-line.is-past .faf-tl{opacity:.6}
+.faf-tl.is-err{color:var(--muted);font-size:12px}
 .show-pt .faf-tl-pt,.show-en .faf-tl-en{display:block}
-.faf-back-btn{min-height:40px;padding:0 14px}
-.faf-blur-toggle{display:flex;align-items:center;gap:6px;font-size:14px;color:#3A3D45;min-height:40px}
-.faf-blur-toggle input{width:18px;height:18px;accent-color:#B4232A}
-.faf-tr-title{margin:0;font-family:Fraunces,Georgia,serif;font-size:18px;line-height:1.3;font-weight:700}
-.faf-tr{display:flex;flex-direction:column;gap:2px}
-.faf-line{display:flex;gap:10px;align-items:baseline;text-align:left;width:100%;border:none;background:transparent;color:#16181D;padding:10px 12px;border-radius:12px;font-size:17px;line-height:1.5;transition:background .2s,color .2s}
-.faf-line-time{flex:0 0 auto;min-width:40px;font-size:12px;color:#8A8E99;font-variant-numeric:tabular-nums}
-.faf-line.is-past{color:#7A7E89}
-.faf-line.is-now{background:#FBE9E7;color:#16181D;font-weight:600}
-.faf-line.is-now .faf-line-time{color:#B4232A}
-.faf-tr.is-blur .faf-line-text{filter:blur(6px)}
-.faf-tr.is-blur .faf-line:hover .faf-line-text,.faf-tr.is-blur .faf-line:focus .faf-line-text{filter:none}
-.faf-list{display:flex;flex-direction:column;gap:8px}
-.faf-ep{display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:1px solid #E6E4DD;border-radius:14px;padding:12px;color:#16181D;min-height:56px}
-.faf-ep.is-playing{border:2px solid #B4232A;background:#FBE9E7}
-.faf-ep-icon{flex:0 0 auto;width:36px;height:36px;border-radius:999px;background:#16181D;color:#fff;display:flex;align-items:center;justify-content:center}
-.faf-ep.is-playing .faf-ep-icon{background:#B4232A}
-.faf-ep-text{min-width:0;display:flex;flex-direction:column;gap:2px}
-.faf-ep-title{font-size:15px;font-weight:600;line-height:1.3}
-.faf-ep-meta{font-size:12px;color:#5B5F6B}
+.faf-tr.is-blur .faf-line-text{filter:blur(7px);transition:filter .2s}
+.faf-tr.is-blur .faf-line:focus .faf-line-text,.faf-tr.is-blur .faf-line:active .faf-line-text{filter:none}
+.faf-tr-foot{padding:18px 16px 0 70px}
+#faf-follow{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(122px + env(safe-area-inset-bottom));z-index:3;min-height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:#18213A;color:var(--text);font-size:13px;font-weight:700;box-shadow:0 10px 24px rgba(0,0,0,.5)}
+#faf-follow[hidden]{display:none}
 </style>
 </head>
 <body>
 <template id="app-template">
-<div style="width: 100%; max-width: 560px; margin: 0 auto; height: 100vh; height: 100dvh; box-sizing: border-box; display: flex; flex-direction: column; background: #F6F5F1; color: #16181D; font-family: Inter, system-ui, sans-serif; overflow: hidden">
+<div style="width: 100%; max-width: 560px; margin: 0 auto; height: 100vh; height: 100dvh; box-sizing: border-box; display: flex; flex-direction: column; background: #0D1220; color: #E8EDF7; font-family: Inter, system-ui, sans-serif; overflow: hidden">
 
 <div id="scroller" style="flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: calc(24px + env(safe-area-inset-top)) 20px 28px 20px; box-sizing: border-box">
 
@@ -108,102 +131,102 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
 <sc-if value="{{showInicio}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-direction: column; gap: 20px">
   <div style="display: flex; flex-direction: column; gap: 4px; padding-top: 8px">
-    <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4232A">Frase a Frase</span>
-    <h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 34px; line-height: 1.1; font-weight: 700">¡Hola! Vamos praticar?</h1>
+    <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.01em; color: #FF6B7A">Frase a Frase</span>
+    <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 34px; line-height: 1.1;">¡Hola! Vamos praticar?</h1>
   </div>
 
-  <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+  <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
     <div style="display: flex; align-items: baseline; justify-content: space-between">
       <span style="font-size: 15px; font-weight: 700">Meta de hoje</span>
-      <span style="font-size: 14px; color: #5B5F6B">{{goalCount}} de {{goalTotal}} atividades</span>
+      <span style="font-size: 14px; color: #8F9BB8">{{goalCount}} de {{goalTotal}} atividades</span>
     </div>
-    <div style="height: 10px; background: #EFEDE6; border-radius: 999px; overflow: hidden">
+    <div style="height: 10px; background: #1A2236; border-radius: 999px; overflow: hidden">
       <div style="{{goalBar}}"></div>
     </div>
-    <span style="font-size: 13px; color: #5B5F6B">{{goalMsg}}</span>
+    <span style="font-size: 13px; color: #8F9BB8">{{goalMsg}}</span>
   </div>
 
-  <div style="background: #16181D; color: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
-    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F2C230">Frase do dia · {{dia.cat}}</span>
-    <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 26px; line-height: 1.2">{{dia.es}}</p>
-    <p style="margin: 0; font-size: 15px; color: #D4D6DC">{{dia.pt}}</p>
+  <div style="background: #E8EDF7; color: #0D1220; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #D62839">Frase do dia · {{dia.cat}}</span>
+    <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2">{{dia.es}}</p>
+    <p style="margin: 0; font-size: 15px; color: #3A4560">{{dia.pt}}</p>
     <sc-if value="{{dia.hasNota}}" hint-placeholder-val="{{ true }}">
-      <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #B9BCC5">{{dia.nota}}</p>
+      <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #56627F">{{dia.nota}}</p>
     </sc-if>
-    <button onClick="{{speakDia}}" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #4A4E58; background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">
+    <button onClick="{{speakDia}}" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #B9C2D6; background: transparent; color: #0D1220; border-radius: 999px; font-size: 14px; font-weight: 600">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
       Ouvir
     </button>
   </div>
 
   <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
-    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E6E4DD">
-      <span style="font-family: Fraunces, Georgia, serif; font-size: 26px; font-weight: 700">{{knownCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #5B5F6B">de {{phraseTotal}} frases que você sabe</span>
+    <div style="background: #151C2E; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #232C44">
+      <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{knownCount}}</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #8F9BB8">de {{phraseTotal}} frases que você sabe</span>
     </div>
-    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E6E4DD">
-      <span style="font-family: Fraunces, Georgia, serif; font-size: 26px; font-weight: 700">{{reviewCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #5B5F6B">frases para revisar</span>
+    <div style="background: #151C2E; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #232C44">
+      <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{reviewCount}}</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #8F9BB8">frases para revisar</span>
     </div>
-    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E6E4DD">
-      <span style="font-family: Fraunces, Georgia, serif; font-size: 26px; font-weight: 700">{{readCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #5B5F6B">de {{textTotal}} textos concluídos</span>
+    <div style="background: #151C2E; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #232C44">
+      <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{readCount}}</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #8F9BB8">de {{textTotal}} textos concluídos</span>
     </div>
   </div>
 
   <sc-if value="{{hasReview}}" hint-placeholder-val="{{ false }}">
-    <button onClick="{{goReview}}" style="min-height: 52px; border: none; background: #B4232A; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar agora ({{reviewCount}})</button>
+    <button onClick="{{goReview}}" style="min-height: 52px; border: none; background: #FF5466; color: #0D1220; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar agora ({{reviewCount}})</button>
   </sc-if>
 
   <div style="display: flex; flex-direction: column; gap: 10px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Continuar</h2>
-    <button onClick="{{goFrases}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 16px; color: #16181D">
+    <button onClick="{{goFrases}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Frases por situação</span>
-        <span style="font-size: 13px; color: #5B5F6B">6 temas, do restaurante ao trabalho</span>
+        <span style="font-size: 13px; color: #8F9BB8">6 temas, do restaurante ao trabalho</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goTextos}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 16px; color: #16181D">
+    <button onClick="{{goTextos}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Leitura guiada</span>
-        <span style="font-size: 13px; color: #5B5F6B">6 textos, do básico ao avançado</span>
+        <span style="font-size: 13px; color: #8F9BB8">6 textos, do básico ao avançado</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goPratica}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 16px; color: #16181D">
+    <button onClick="{{goPratica}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Prática</span>
-        <span style="font-size: 13px; color: #5B5F6B">Montar frases, escuta e lacunas</span>
+        <span style="font-size: 13px; color: #8F9BB8">Montar frases, escuta e lacunas</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goOuvir}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 16px; color: #16181D">
+    <button onClick="{{goOuvir}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Ouvir e assistir</span>
-        <span style="font-size: 13px; color: #5B5F6B">Podcasts e vídeos reais de falantes nativos</span>
+        <span style="font-size: 13px; color: #8F9BB8">Podcasts e vídeos reais de falantes nativos</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
   </div>
 
-  <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
+  <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Áudio</h2>
     <div style="display: flex; flex-direction: column; gap: 8px">
-      <span style="font-size: 13px; color: #5B5F6B">Sotaque</span>
+      <span style="font-size: 13px; color: #8F9BB8">Sotaque</span>
       <div style="display: flex; gap: 8px">
         <button onClick="{{setSpain}}" style="{{accentSpain}}">Espanha</button>
         <button onClick="{{setMexico}}" style="{{accentMexico}}">México</button>
       </div>
     </div>
     <div style="display: flex; flex-direction: column; gap: 8px">
-      <span style="font-size: 13px; color: #5B5F6B">Velocidade</span>
+      <span style="font-size: 13px; color: #8F9BB8">Velocidade</span>
       <div style="display: flex; gap: 8px">
         <button onClick="{{setNormal}}" style="{{rateNormal}}">Normal</button>
         <button onClick="{{setSlow}}" style="{{rateSlow}}">Lenta</button>
       </div>
     </div>
-    <button onClick="{{resetAll}}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: none; background: transparent; color: #B4232A; font-size: 14px; font-weight: 600; text-decoration: underline">Apagar meu progresso</button>
+    <button onClick="{{resetAll}}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: none; background: transparent; color: #FF6B7A; font-size: 14px; font-weight: 600; text-decoration: underline">Apagar meu progresso</button>
   </div>
 </div>
 </sc-if>
@@ -211,8 +234,8 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
 <!-- ============ FRASES ============ -->
 <sc-if value="{{showFrases}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 16px">
-  <h1 style="margin: 0; padding-top: 8px; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Frases</h1>
-  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #EFEDE6; border-radius: 14px">
+  <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Frases</h1>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #1A2236; border-radius: 14px">
     <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
     <button onClick="{{viewLista}}" style="{{fseg.lista}}">Lista</button>
   </div>
@@ -227,32 +250,32 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
   <sc-if value="{{isLista}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 12px">
     <div style="display: flex; flex-direction: column; gap: 6px">
-      <label for="busca-frase" style="font-size: 13px; font-weight: 600; color: #5B5F6B">Buscar frase</label>
-      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #D6D3CA; border-radius: 12px; background: #FFFFFF; color: #16181D; font-family: inherit; font-size: 16px">
+      <label for="busca-frase" style="font-size: 13px; font-weight: 600; color: #8F9BB8">Buscar frase</label>
+      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #34405F; border-radius: 12px; background: #151C2E; color: #E8EDF7; font-family: inherit; font-size: 16px">
     </div>
-    <span style="font-size: 13px; color: #5B5F6B">{{listCount}} · toque para estudar no cartão</span>
+    <span style="font-size: 13px; color: #8F9BB8">{{listCount}} · toque para estudar no cartão</span>
     <sc-for list="{{listItems}}" as="p" hint-placeholder-count="6">
-      <div style="display: flex; align-items: stretch; gap: 8px; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 6px">
-        <button onClick="{{p.open}}" style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 10px; border: none; background: transparent; color: #16181D; border-radius: 12px">
-          <span style="font-family: Fraunces, Georgia, serif; font-size: 18px; line-height: 1.3">{{p.es}}</span>
-          <span style="font-size: 14px; line-height: 1.4; color: #5B5F6B">{{p.pt}}</span>
+      <div style="display: flex; align-items: stretch; gap: 8px; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 6px">
+        <button onClick="{{p.open}}" style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 10px; border: none; background: transparent; color: #E8EDF7; border-radius: 12px">
+          <span style="font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 18px; line-height: 1.3">{{p.es}}</span>
+          <span style="font-size: 14px; line-height: 1.4; color: #8F9BB8">{{p.pt}}</span>
           <span style="display: flex; align-items: center; gap: 6px; padding-top: 2px">
-            <span style="font-size: 12px; font-weight: 600; color: #B4232A">{{p.cat}}</span>
+            <span style="font-size: 12px; font-weight: 600; color: #FF6B7A">{{p.cat}}</span>
             <sc-if value="{{p.isKnown}}" hint-placeholder-val="{{ false }}">
-              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #E3F1E8; color: #0F3F27">Já sei</span>
+              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #10302A; color: #5BE3A6">Já sei</span>
             </sc-if>
             <sc-if value="{{p.isReview}}" hint-placeholder-val="{{ false }}">
-              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">Revisar</span>
+              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #33290F; color: #FFC247">Revisar</span>
             </sc-if>
           </span>
         </button>
-        <button onClick="{{p.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; align-self: center; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px">
+        <button onClick="{{p.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; align-self: center; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
         </button>
       </div>
     </sc-for>
     <sc-if value="{{listEmpty}}" hint-placeholder-val="{{ false }}">
-      <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #5B5F6B">{{listEmptyMsg}}</div>
+      <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #8F9BB8">{{listEmptyMsg}}</div>
     </sc-if>
   </div>
   </sc-if>
@@ -260,61 +283,61 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
   <sc-if value="{{isCards}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
   <sc-if value="{{deckEmpty}}" hint-placeholder-val="{{ false }}">
-    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 24px; padding: 28px 22px; display: flex; flex-direction: column; gap: 10px">
-      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 22px">Nada para revisar.</p>
-      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5B5F6B">As frases que você marcar como "Revisar depois" aparecem aqui. Escolha um tema acima para continuar.</p>
+    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 24px; padding: 28px 22px; display: flex; flex-direction: column; gap: 10px">
+      <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 22px">Nada para revisar.</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #8F9BB8">As frases que você marcar como "Revisar depois" aparecem aqui. Escolha um tema acima para continuar.</p>
     </div>
   </sc-if>
 
   <sc-if value="{{deckHas}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #5B5F6B">
+    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #8F9BB8">
       <span>{{deckLabel}} · {{cardPos}} de {{cardTotal}}</span>
       <span>{{deckKnown}} já sei</span>
     </div>
-    <div style="height: 6px; background: #E6E4DD; border-radius: 999px; overflow: hidden">
+    <div style="height: 6px; background: #232C44; border-radius: 999px; overflow: hidden">
       <div style="{{barStyle}}"></div>
     </div>
 
-    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 24px; padding: 26px 22px; min-height: 310px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 24px; padding: 26px 22px; min-height: 310px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
       <div style="display: flex; align-items: center; justify-content: space-between">
-        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4232A">{{card.cat}}</span>
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #FF6B7A">{{card.cat}}</span>
         <sc-if value="{{card.isKnown}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E3F1E8; color: #0F3F27">Já sei</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #10302A; color: #5BE3A6">Já sei</span>
         </sc-if>
         <sc-if value="{{card.isReview}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">Revisar</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">Revisar</span>
         </sc-if>
       </div>
-      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 30px; line-height: 1.2">{{card.es}}</p>
+      <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 30px; line-height: 1.2">{{card.es}}</p>
       <div style="display: flex; gap: 8px">
-        <button onClick="{{speakCard}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">
+        <button onClick="{{speakCard}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
           Ouvir
         </button>
-        <button onClick="{{speakCardSlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
+        <button onClick="{{speakCardSlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
       </div>
       <div style="flex: 1 1 auto"></div>
       <sc-if value="{{flipped}}" hint-placeholder-val="{{ false }}">
-        <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid #E6E4DD">
-          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5B5F6B">Português</span>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid #232C44">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #8F9BB8">Português</span>
           <p style="margin: 0; font-size: 18px; font-weight: 500">{{card.pt}}</p>
           <sc-if value="{{card.hasNota}}" hint-placeholder-val="{{ true }}">
-            <p style="margin: 0; padding: 10px 12px; background: #FDF3D0; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #4A3A00">{{card.nota}}</p>
+            <p style="margin: 0; padding: 10px 12px; background: #33290F; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #FFC247">{{card.nota}}</p>
           </sc-if>
         </div>
       </sc-if>
       <sc-if value="{{notFlipped}}" hint-placeholder-val="{{ true }}">
-        <button onClick="{{flip}}" style="min-height: 48px; border: none; background: #F0EEE7; color: #16181D; border-radius: 14px; font-size: 15px; font-weight: 600">Mostrar tradução</button>
+        <button onClick="{{flip}}" style="min-height: 48px; border: none; background: #1A2236; color: #E8EDF7; border-radius: 14px; font-size: 15px; font-weight: 600">Mostrar tradução</button>
       </sc-if>
     </div>
 
     <div style="display: grid; grid-template-columns: 52px minmax(0, 1fr) minmax(0, 1fr); gap: 10px">
-      <button onClick="{{prevCard}}" aria-label="Frase anterior" style="min-height: 52px; display: flex; align-items: center; justify-content: center; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 14px">
+      <button onClick="{{prevCard}}" aria-label="Frase anterior" style="min-height: 52px; display: flex; align-items: center; justify-content: center; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 14px">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
       </button>
-      <button onClick="{{markReview}}" style="min-height: 52px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar depois</button>
-      <button onClick="{{markKnown}}" style="min-height: 52px; border: none; background: #B4232A; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Já sei</button>
+      <button onClick="{{markReview}}" style="min-height: 52px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar depois</button>
+      <button onClick="{{markKnown}}" style="min-height: 52px; border: none; background: #FF5466; color: #0D1220; border-radius: 14px; font-size: 15px; font-weight: 600">Já sei</button>
     </div>
   </div>
   </sc-if>
@@ -326,26 +349,26 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
 <!-- ============ LEITURA ============ -->
 <sc-if value="{{showTextos}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 18px">
-  <h1 style="margin: 0; padding-top: 8px; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Leitura</h1>
+  <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Leitura</h1>
 
   <sc-if value="{{isCatalog}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 14px">
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5B5F6B">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #8F9BB8">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
       <sc-for list="{{levels}}" as="l" hint-placeholder-count="4">
         <button onClick="{{l.pick}}" style="{{l.style}}">{{l.label}}</button>
       </sc-for>
     </div>
-    <span style="font-size: 13px; color: #5B5F6B">{{textListCount}}</span>
+    <span style="font-size: 13px; color: #8F9BB8">{{textListCount}}</span>
     <sc-for list="{{textList}}" as="t" hint-placeholder-count="4">
-      <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid #E6E4DD; background: #FFFFFF; color: #16181D; border-radius: 18px">
+      <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid #232C44; background: #151C2E; color: #E8EDF7; border-radius: 18px">
         <span style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">{{t.nivel}}</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">{{t.nivel}}</span>
           <span style="{{t.statusStyle}}">{{t.status}}</span>
         </span>
-        <span style="font-family: Fraunces, Georgia, serif; font-size: 20px; font-weight: 700; line-height: 1.25">{{t.title}}</span>
-        <span style="font-family: Fraunces, Georgia, serif; font-size: 15px; line-height: 1.45; color: #5B5F6B">{{t.preview}}</span>
-        <span style="font-size: 12px; color: #5B5F6B">{{t.meta}}</span>
+        <span style="font-family: Manrope, system-ui, sans-serif; ; font-size: 20px; font-weight: 700; line-height: 1.25">{{t.title}}</span>
+        <span style="font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 15px; line-height: 1.45; color: #8F9BB8">{{t.preview}}</span>
+        <span style="font-size: 12px; color: #8F9BB8">{{t.meta}}</span>
       </button>
     </sc-for>
   </div>
@@ -353,33 +376,33 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
 
   <sc-if value="{{isReading}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 18px">
-  <button onClick="{{backToList}}" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 8px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">
+  <button onClick="{{backToList}}" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 8px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
     Todos os textos
   </button>
 
   <div style="display: flex; flex-direction: column; gap: 6px">
-    <span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">{{text.nivel}}</span>
-    <h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 24px; font-weight: 700">{{text.title}}</h2>
-    <p style="margin: 0; font-size: 13px; color: #5B5F6B">Toque numa frase para ver a tradução e ouvir.</p>
+    <span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">{{text.nivel}}</span>
+    <h2 style="margin: 0; font-family: Manrope, system-ui, sans-serif; ; font-size: 24px; font-weight: 700">{{text.title}}</h2>
+    <p style="margin: 0; font-size: 13px; color: #8F9BB8">Toque numa frase para ver a tradução e ouvir.</p>
   </div>
 
   <div style="display: flex; gap: 8px; flex-wrap: wrap">
-    <button onClick="{{speakText}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">
+    <button onClick="{{speakText}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
       Ouvir texto
     </button>
-    <button onClick="{{toggleAll}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600">{{toggleAllLabel}}</button>
+    <button onClick="{{toggleAll}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">{{toggleAllLabel}}</button>
   </div>
 
-  <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 8px; display: flex; flex-direction: column">
+  <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 8px; display: flex; flex-direction: column">
     <sc-for list="{{sentences}}" as="s" hint-placeholder-count="5">
       <div style="display: flex; flex-direction: column">
         <button onClick="{{s.toggle}}" style="{{s.style}}">{{s.es}}</button>
         <sc-if value="{{s.open}}" hint-placeholder-val="{{ false }}">
           <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 12px 12px 12px">
-            <span style="font-size: 14px; line-height: 1.45; color: #5B5F6B">{{s.pt}}</span>
-            <button onClick="{{s.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px">
+            <span style="font-size: 14px; line-height: 1.45; color: #8F9BB8">{{s.pt}}</span>
+            <button onClick="{{s.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
             </button>
           </div>
@@ -392,9 +415,9 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     <h3 style="margin: 0; font-size: 16px; font-weight: 700">Palavras-chave</h3>
     <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
       <sc-for list="{{words}}" as="w" hint-placeholder-count="4">
-        <button onClick="{{w.speak}}" style="text-align: left; background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; color: #16181D">
+        <button onClick="{{w.speak}}" style="text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; color: #E8EDF7">
           <span style="font-size: 15px; font-weight: 600">{{w.es}}</span>
-          <span style="font-size: 13px; color: #5B5F6B">{{w.pt}}</span>
+          <span style="font-size: 13px; color: #8F9BB8">{{w.pt}}</span>
         </button>
       </sc-for>
     </div>
@@ -403,8 +426,8 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
   <div style="display: flex; flex-direction: column; gap: 12px">
     <h3 style="margin: 0; font-size: 16px; font-weight: 700">Você entendeu?</h3>
     <sc-for list="{{questions}}" as="q" hint-placeholder-count="2">
-      <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4232A">Pergunta {{q.num}}</span>
+      <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #FF6B7A">Pergunta {{q.num}}</span>
         <p style="margin: 0; font-size: 16px; font-weight: 600">{{q.text}}</p>
         <sc-for list="{{q.options}}" as="o" hint-placeholder-count="3">
           <button onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
@@ -415,10 +438,10 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
       </div>
     </sc-for>
     <sc-if value="{{textDone}}" hint-placeholder-val="{{ false }}">
-      <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 16px; background: #E3F1E8; color: #0F3F27">
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 16px; background: #10302A; color: #5BE3A6">
         <span style="font-size: 15px; font-weight: 700">Texto concluído.</span>
         <sc-if value="{{hasNextText}}" hint-placeholder-val="{{ true }}">
-          <button onClick="{{nextText}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border: none; background: #1E6B45; color: #FFFFFF; border-radius: 12px; font-size: 14px; font-weight: 600">Próximo texto</button>
+          <button onClick="{{nextText}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border: none; background: #3DDC97; color: #0D1220; border-radius: 12px; font-size: 14px; font-weight: 600">Próximo texto</button>
         </sc-if>
       </div>
     </sc-if>
@@ -431,8 +454,8 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
 <!-- ============ PRÁTICA ============ -->
 <sc-if value="{{showPratica}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 18px">
-  <h1 style="margin: 0; padding-top: 8px; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Prática</h1>
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #EFEDE6; border-radius: 14px">
+  <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Prática</h1>
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #1A2236; border-radius: 14px">
     <button onClick="{{modeMontar}}" style="{{seg.montar}}">Montar</button>
     <button onClick="{{modeEscuta}}" style="{{seg.escuta}}">Escuta</button>
     <button onClick="{{modeLacuna}}" style="{{seg.lacuna}}">Lacuna</button>
@@ -441,22 +464,22 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
   <!-- Montar -->
   <sc-if value="{{isMontar}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #5B5F6B">Exercício {{exPos}} de {{exTotal}}</span>
-    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
-      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5B5F6B">Traduza para o espanhol</span>
-      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 24px; line-height: 1.25">{{ex.pt}}</p>
+    <span style="font-size: 13px; color: #8F9BB8">Exercício {{exPos}} de {{exTotal}}</span>
+    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #8F9BB8">Traduza para o espanhol</span>
+      <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.25">{{ex.pt}}</p>
     </div>
-    <div style="min-height: 112px; box-sizing: border-box; padding: 14px; border: 2px dashed #D6D3CA; border-radius: 16px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+    <div style="min-height: 112px; box-sizing: border-box; padding: 14px; border: 2px dashed #34405F; border-radius: 16px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
       <sc-for list="{{built}}" as="b" hint-placeholder-count="2">
-        <button onClick="{{b.remove}}" style="min-height: 44px; padding: 0 14px; border: none; background: #16181D; color: #FFFFFF; border-radius: 12px; font-size: 16px; font-weight: 500">{{b.word}}</button>
+        <button onClick="{{b.remove}}" style="min-height: 44px; padding: 0 14px; border: none; background: #E8EDF7; color: #0D1220; border-radius: 12px; font-size: 16px; font-weight: 500">{{b.word}}</button>
       </sc-for>
       <sc-if value="{{builtEmpty}}" hint-placeholder-val="{{ false }}">
-        <span style="font-size: 14px; color: #5B5F6B; padding: 12px 4px">Toque nas palavras abaixo</span>
+        <span style="font-size: 14px; color: #8F9BB8; padding: 12px 4px">Toque nas palavras abaixo</span>
       </sc-if>
     </div>
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
       <sc-for list="{{pool}}" as="p" hint-placeholder-count="4">
-        <button onClick="{{p.add}}" style="min-height: 44px; padding: 0 14px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 12px; font-size: 16px; font-weight: 500">{{p.word}}</button>
+        <button onClick="{{p.add}}" style="min-height: 44px; padding: 0 14px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 12px; font-size: 16px; font-weight: 500">{{p.word}}</button>
       </sc-for>
     </div>
     <sc-if value="{{exChecked}}" hint-placeholder-val="{{ false }}">
@@ -466,7 +489,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
       </div>
     </sc-if>
     <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
-      <button onClick="{{resetEx}}" style="min-height: 52px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 14px; font-size: 15px; font-weight: 600">Limpar</button>
+      <button onClick="{{resetEx}}" style="min-height: 52px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 14px; font-size: 15px; font-weight: 600">Limpar</button>
       <button onClick="{{primaryEx}}" style="{{primaryExStyle}}">{{primaryExLabel}}</button>
     </div>
   </div>
@@ -475,17 +498,17 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
   <!-- Escuta -->
   <sc-if value="{{isEscuta}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #5B5F6B">Exercício {{liPos}} de {{liTotal}} · Ouça e escolha o significado</span>
-    <div style="background: #16181D; color: #FFFFFF; border-radius: 24px; padding: 26px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px">
-      <button onClick="{{liPlay}}" aria-label="Ouvir frase" style="width: 88px; height: 88px; border-radius: 999px; border: none; background: #B4232A; color: #FFFFFF; display: flex; align-items: center; justify-content: center">
+    <span style="font-size: 13px; color: #8F9BB8">Exercício {{liPos}} de {{liTotal}} · Ouça e escolha o significado</span>
+    <div style="background: #E8EDF7; color: #0D1220; border-radius: 24px; padding: 26px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+      <button onClick="{{liPlay}}" aria-label="Ouvir frase" style="width: 88px; height: 88px; border-radius: 999px; border: none; background: #FF5466; color: #0D1220; display: flex; align-items: center; justify-content: center">
         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
       </button>
       <div style="display: flex; gap: 8px">
-        <button onClick="{{liPlaySlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #4A4E58; background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
-        <button onClick="{{liToggleText}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #4A4E58; background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">{{liTextLabel}}</button>
+        <button onClick="{{liPlaySlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #B9C2D6; background: transparent; color: #0D1220; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
+        <button onClick="{{liToggleText}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #B9C2D6; background: transparent; color: #0D1220; border-radius: 999px; font-size: 14px; font-weight: 600">{{liTextLabel}}</button>
       </div>
       <sc-if value="{{liShowText}}" hint-placeholder-val="{{ false }}">
-        <p style="margin: 0; text-align: center; font-family: Fraunces, Georgia, serif; font-size: 22px; line-height: 1.25">{{li.es}}</p>
+        <p style="margin: 0; text-align: center; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.25">{{li.es}}</p>
       </sc-if>
     </div>
     <div style="display: flex; flex-direction: column; gap: 10px">
@@ -496,7 +519,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     <sc-if value="{{liAnswered}}" hint-placeholder-val="{{ false }}">
       <div style="display: flex; flex-direction: column; gap: 12px">
         <p style="{{liFbStyle}}">{{liFbText}}</p>
-        <button onClick="{{liNext}}" style="min-height: 52px; border: none; background: #B4232A; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
+        <button onClick="{{liNext}}" style="min-height: 52px; border: none; background: #FF5466; color: #0D1220; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
       </div>
     </sc-if>
   </div>
@@ -505,11 +528,11 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
   <!-- Lacuna -->
   <sc-if value="{{isLacuna}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #5B5F6B">Exercício {{gPos}} de {{gTotal}} · Complete a frase</span>
-    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 20px; padding: 22px 20px; display: flex; flex-direction: column; gap: 12px">
-      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 24px; line-height: 1.5">{{gap.before}}<span style="{{gapStyle}}">{{gapText}}</span>{{gap.after}}</p>
+    <span style="font-size: 13px; color: #8F9BB8">Exercício {{gPos}} de {{gTotal}} · Complete a frase</span>
+    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 22px 20px; display: flex; flex-direction: column; gap: 12px">
+      <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.5">{{gap.before}}<span style="{{gapStyle}}">{{gapText}}</span>{{gap.after}}</p>
       <sc-if value="{{gAnswered}}" hint-placeholder-val="{{ false }}">
-        <p style="margin: 0; font-size: 14px; color: #5B5F6B">{{gap.pt}}</p>
+        <p style="margin: 0; font-size: 14px; color: #8F9BB8">{{gap.pt}}</p>
       </sc-if>
     </div>
     <div style="display: flex; flex-direction: column; gap: 10px">
@@ -520,7 +543,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     <sc-if value="{{gAnswered}}" hint-placeholder-val="{{ false }}">
       <div style="display: flex; flex-direction: column; gap: 12px">
         <p style="{{gFbStyle}}">{{gFbText}}</p>
-        <button onClick="{{gNext}}" style="min-height: 52px; border: none; background: #B4232A; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
+        <button onClick="{{gNext}}" style="min-height: 52px; border: none; background: #FF5466; color: #0D1220; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
       </div>
     </sc-if>
   </div>
@@ -532,8 +555,8 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
 <sc-if value="{{showOuvir}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 16px">
   <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px">
-    <h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700">Ouvir e assistir</h1>
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5B5F6B">Conteúdo real de falantes nativos, sempre com o texto junto: nos podcasts a transcrição acompanha o áudio, nos vídeos a legenda aparece na tela.</p>
+    <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Ouvir e assistir</h1>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #8F9BB8">Conteúdo real de falantes nativos, sempre com o texto junto: nos podcasts a transcrição acompanha o áudio, nos vídeos a legenda aparece na tela.</p>
   </div>
 
   <div style="display: flex; flex-wrap: wrap; gap: 8px">
@@ -541,32 +564,32 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
       <button onClick="{{f.pick}}" style="{{f.style}}">{{f.label}}</button>
     </sc-for>
   </div>
-  <span style="font-size: 13px; color: #5B5F6B">{{mCount}} · {{heardCount}} marcados como ouvidos</span>
+  <span style="font-size: 13px; color: #8F9BB8">{{mCount}} · {{heardCount}} marcados como ouvidos</span>
 
   <sc-for list="{{media}}" as="m" hint-placeholder-count="4">
-    <div style="background: #FFFFFF; border: 1px solid #E6E4DD; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
       <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap">
         <span style="{{m.typeStyle}}">{{m.type}}</span>
-        <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #FDF3D0; color: #4A3A00">{{m.nivel}}</span>
+        <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">{{m.nivel}}</span>
         <sc-if value="{{m.heard}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E3F1E8; color: #0F3F27">Ouvido</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #10302A; color: #5BE3A6">Ouvido</span>
         </sc-if>
       </div>
       <div style="display: flex; flex-direction: column; gap: 2px">
-        <span style="font-family: Fraunces, Georgia, serif; font-size: 20px; font-weight: 700; line-height: 1.25">{{m.title}}</span>
-        <span style="font-size: 13px; color: #5B5F6B">{{m.source}}</span>
+        <span style="font-family: Manrope, system-ui, sans-serif; ; font-size: 20px; font-weight: 700; line-height: 1.25">{{m.title}}</span>
+        <span style="font-size: 13px; color: #8F9BB8">{{m.source}}</span>
       </div>
-      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #16181D">{{m.desc}}</p>
-      <p style="margin: 0; padding: 10px 12px; background: #F6F5F1; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #3A3D45">{{m.tip}}</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #E8EDF7">{{m.desc}}</p>
+      <p style="margin: 0; padding: 10px 12px; background: #0D1220; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #B7C1D9">{{m.tip}}</p>
       <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
         <sc-if value="{{m.hasPlayer}}">
-        <button onClick="{{m.play}}" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: 12px; background: #16181D; color: #FFFFFF; font-size: 14px; font-weight: 600">
+        <button onClick="{{m.play}}" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: 12px; background: #E8EDF7; color: #0D1220; font-size: 14px; font-weight: 600">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"></path></svg>
           {{m.playLabel}}
         </button>
         </sc-if>
         <sc-if value="{{m.noPlayer}}">
-        <a href="{{m.url}}" target="_blank" rel="noopener noreferrer" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 12px; background: #16181D; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">
+        <a href="{{m.url}}" target="_blank" rel="noopener noreferrer" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 12px; background: #E8EDF7; color: #0D1220; font-size: 14px; font-weight: 600; text-decoration: none">
           Abrir
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4 10 14"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>
         </a>
@@ -576,9 +599,9 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     </div>
   </sc-for>
 
-  <div style="background: #16181D; color: #FFFFFF; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
-    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F2C230">Como estudar com áudio real</span>
-    <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; color: #E4E5E9">
+  <div style="background: #E8EDF7; color: #0D1220; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #D62839">Como estudar com áudio real</span>
+    <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; color: #3A4560">
       <li>Ouça uma vez sem legenda, só para pegar a ideia geral.</li>
       <li>Ouça de novo com legenda em espanhol, pausando nas partes difíceis.</li>
       <li>Anote 3 frases úteis e procure por elas na aba Frases.</li>
@@ -590,7 +613,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
 
 </div>
 
-<nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; padding: 8px 6px calc(10px + env(safe-area-inset-bottom)) 6px; background: #FFFFFF; border-top: 1px solid #E6E4DD">
+<nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; padding: 8px 6px calc(10px + env(safe-area-inset-bottom)) 6px; background: #151C2E; border-top: 1px solid #232C44">
   <button onClick="{{goInicio}}" style="{{nav.inicio}}">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z"></path></svg>
     Início
@@ -645,6 +668,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
       <button id="faf-sheet-close" type="button" aria-label="Fechar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div id="faf-sheet-body"></div>
+    <button id="faf-follow" type="button" hidden>Voltar ao trecho atual</button>
   </div>
 </div>
 
@@ -791,7 +815,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     return m + ':' + String(s).padStart(2, '0');
   }
   function fmtDate(iso) {
-    try { return new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' }); } catch (e) { return ''; }
+    var d = new Date(iso); if (!iso || isNaN(d)) return ''; return d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
   }
   function https(u) { return u ? String(u).replace(/^http:\/\//, 'https://') : u; }
 
@@ -923,11 +947,12 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
   function withTimeout(p, ms) { return Promise.race([p, new Promise(function (_, rej) { setTimeout(function () { rej(new Error('timeout')); }, ms); })]); }
   function viaChrome(text, lang) {
     if (!('Translator' in self)) return Promise.reject();
-    var get = chromeTr[lang] || (chromeTr[lang] = self.Translator.availability({ sourceLanguage: 'es', targetLanguage: lang }).then(function (av) {
+    if (chromeTr.off) return Promise.reject(new Error('off'));
+    var get = chromeTr[lang] || (chromeTr[lang] = withTimeout(self.Translator.availability({ sourceLanguage: 'es', targetLanguage: lang }).then(function (av) {
       if (av !== 'available') throw new Error('na');
       return self.Translator.create({ sourceLanguage: 'es', targetLanguage: lang });
-    }));
-    return get.then(function (t) { return t.translate(text); });
+    }), 2500).catch(function (e) { chromeTr.off = true; throw e; }));
+    return get.then(function (t) { return withTimeout(t.translate(text), 4000); }).catch(function (e) { chromeTr.off = true; throw e; });
   }
   function viaGoogle(text, lang) {
     return withTimeout(fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=' + lang + '&dt=t&q=' + encodeURIComponent(text)), 8000)
@@ -983,38 +1008,56 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
   }
 
   var trView = null; // { box, nodes, cues, idx, userScrollAt, langs }
+  var SIZES = [16, 18, 20, 23];
+  function getSize() { var v = +localStorage.getItem('fraseafrase.trsize'); return SIZES.indexOf(v) >= 0 ? v : 18; }
+  function setSize(v) { try { localStorage.setItem('fraseafrase.trsize', String(v)); } catch (e) {} document.documentElement.style.setProperty('--tr-size', v + 'px'); }
+  var ICON_BACK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>';
+  var ICON_X = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+  function chip(cls, label, on, onToggle) {
+    var names = { pt: 'Tradução em português', en: 'Tradução em inglês', es: 'Ocultar texto em espanhol' };
+    var b = h('button', { type: 'button', class: 'faf-chip ' + cls, 'aria-pressed': String(!!on), 'aria-label': names[cls], title: names[cls] }, [h('span', { class: 'dot', 'aria-hidden': 'true' }), label]);
+    b.addEventListener('click', function () { var now = b.getAttribute('aria-pressed') !== 'true'; b.setAttribute('aria-pressed', String(now)); onToggle(now); });
+    return b;
+  }
   function renderTranscript(m, body) {
     var ep = cur.ep;
     var langs = getTrLangs();
-    body.appendChild(h('div', { class: 'faf-tr-head' }, [
-      h('div', { class: 'faf-tr-row' }, [
-        h('button', { type: 'button', class: 'faf-btn faf-btn-light faf-back-btn', text: '← Episódios', onclick: function () { showEpisodes = true; openSheet(m); } }),
-        h('label', { class: 'faf-blur-toggle' }, [
-          h('input', { type: 'checkbox', onchange: function () { box.classList.toggle('is-blur', this.checked); } }),
-          ' Esconder espanhol'
-        ])
+    setSize(getSize());
+    var box;
+    var tools = h('div', { class: 'faf-tools', role: 'toolbar', 'aria-label': 'Opções de leitura' }, [
+      chip('es', 'Ocultar espanhol', false, function (on) { box.classList.toggle('is-blur', on); }),
+      h('span', { class: 'faf-sep', 'aria-hidden': 'true' }),
+      chip('pt', 'PT', langs.indexOf('pt') >= 0, function (on) { toggleLang('pt', on); }),
+      chip('en', 'EN', langs.indexOf('en') >= 0, function (on) { toggleLang('en', on); }),
+      h('span', { class: 'faf-sep', 'aria-hidden': 'true' }),
+      h('button', { type: 'button', class: 'faf-size', 'aria-label': 'Diminuir texto', text: 'A−', onclick: function () { var i = SIZES.indexOf(getSize()); setSize(SIZES[Math.max(0, i - 1)]); } }),
+      h('button', { type: 'button', class: 'faf-size', 'aria-label': 'Aumentar texto', text: 'A+', onclick: function () { var i = SIZES.indexOf(getSize()); setSize(SIZES[Math.min(SIZES.length - 1, i + 1)]); } })
+    ]);
+    function toggleLang(lang, on) {
+      var v = trView; if (!v) return;
+      var i = v.langs.indexOf(lang);
+      if (on && i < 0) v.langs.push(lang);
+      if (!on && i >= 0) v.langs.splice(i, 1);
+      setTrLangs(v.langs);
+      applyLangs(v);
+    }
+    body.appendChild(h('div', { class: 'faf-tr-top' }, [
+      h('div', { class: 'faf-tr-bar' }, [
+        h('button', { type: 'button', class: 'faf-round', 'aria-label': 'Ver episódios', html: ICON_BACK, onclick: function () { showEpisodes = true; openSheet(m); } }),
+        h('div', { class: 'faf-tr-heading' }, [
+          h('span', { class: 'faf-tr-show', text: m.title }),
+          h('p', { class: 'faf-tr-title', text: ep.title })
+        ]),
+        h('button', { type: 'button', class: 'faf-round', 'aria-label': 'Fechar transcrição', html: ICON_X, onclick: closeSheet })
       ]),
-      h('div', { class: 'faf-tr-row faf-tl-row', role: 'group', 'aria-label': 'Tradução' }, [h('span', { class: 'faf-tl-label', text: 'Tradução:' })].concat(Object.keys(LANGS).map(function (lang) {
-        var on = langs.indexOf(lang) >= 0;
-        var b = h('button', { type: 'button', class: 'faf-tl-btn' + (on ? ' is-on' : ''), 'aria-pressed': String(on), text: LANGS[lang].label, onclick: function () {
-          var v = trView; if (!v) return;
-          var i = v.langs.indexOf(lang);
-          if (i >= 0) v.langs.splice(i, 1); else v.langs.push(lang);
-          setTrLangs(v.langs);
-          var now = v.langs.indexOf(lang) >= 0;
-          b.classList.toggle('is-on', now); b.setAttribute('aria-pressed', String(now));
-          applyLangs(v);
-        } });
-        return b;
-      })))
+      tools
     ]));
-    body.appendChild(h('p', { class: 'faf-tr-title', text: ep.title }));
-    var box = h('div', { class: 'faf-tr', 'aria-live': 'off' }, [h('p', { class: 'faf-note', text: 'Carregando transcrição…' })]);
+    box = h('div', { class: 'faf-tr', 'aria-live': 'off' }, [h('p', { class: 'faf-note', text: 'Carregando transcrição…' })]);
     body.appendChild(box);
-    body.appendChild(h('p', { class: 'faf-note', text: 'Toque numa frase para voltar o áudio até ela. Transcrição publicada pelo próprio podcast; a tradução é automática e pode ter erros.' }));
+    body.appendChild(h('p', { class: 'faf-note faf-tr-foot', text: 'Toque numa frase para ouvir a partir dela. A transcrição é do próprio podcast; a tradução é automática e pode ter erros.' }));
     document.body.classList.add('tr-open');
     trView = { box: box, nodes: [], cues: null, idx: -1, userScrollAt: 0, body: body, langs: langs };
-    body.addEventListener('scroll', function () { if (trView && !trView.auto) trView.userScrollAt = Date.now(); }, { passive: true });
+    body.addEventListener('scroll', function () { if (trView && !trView.auto) { trView.userScrollAt = Date.now(); updateFollow(); } }, { passive: true });
     var myView = trView;
     loadTranscript(ep).then(function (cues) {
       if (trView !== myView) return;
@@ -1041,30 +1084,45 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
       applyLangs(myView);
     }).catch(function () {
       if (trView !== myView) return;
-      box.replaceChildren(h('p', { class: 'faf-note', text: 'Não consegui carregar a transcrição deste episódio agora.' }));
+      box.replaceChildren(h('p', { class: 'faf-note', text: 'A transcrição deste episódio não carregou. Confira a internet e abra o episódio de novo.' }));
     });
+  }
+  function nodeVisible(v, node) {
+    var b = v.body.getBoundingClientRect(), r = node.getBoundingClientRect();
+    return r.bottom > b.top + 120 && r.top < b.bottom - 140;
+  }
+  function updateFollow() {
+    var f = $('faf-follow'), v = trView;
+    if (!f) return;
+    f.hidden = !(v && v.idx >= 0 && v.nodes[v.idx] && !nodeVisible(v, v.nodes[v.idx]));
+  }
+  function scrollToNow(v, instant) {
+    var node = v.nodes[v.idx]; if (!node) return;
+    var body = v.body;
+    var target = body.scrollTop + node.getBoundingClientRect().top - body.getBoundingClientRect().top - body.clientHeight * 0.32;
+    v.auto = true;
+    body.scrollTo({ top: Math.max(0, target), behavior: instant ? 'auto' : 'smooth' });
+    setTimeout(function () { v.auto = false; updateFollow(); }, 650);
   }
   function syncTranscript(force) {
     var v = trView;
     if (!v || !v.cues || $('faf-sheet').hidden) return;
     var t = audio.currentTime, lo = 0, hi = v.cues.length - 1, idx = -1;
     while (lo <= hi) { var mid = (lo + hi) >> 1; if (v.cues[mid].s <= t + 0.15) { idx = mid; lo = mid + 1; } else hi = mid - 1; }
+    if (idx >= 0) {
+      var c = v.cues[idx], end = v.cues[idx + 1] ? Math.max(c.e, v.cues[idx + 1].s) : c.e;
+      var p = end > c.s ? Math.min(1, Math.max(0, (t - c.s) / (end - c.s))) : 1;
+      v.nodes[idx].style.setProperty('--p', p.toFixed(3));
+    }
     if (idx === v.idx && !force) return;
     if (v.idx >= 0 && v.nodes[v.idx]) v.nodes[v.idx].classList.remove('is-now');
-    for (var i = Math.max(0, Math.min(idx, v.idx) ); i < Math.max(idx, v.idx) + 1 && i < v.nodes.length; i++) v.nodes[i].classList.toggle('is-past', i < idx);
-    if (force) v.nodes.forEach(function (n, i) { n.classList.toggle('is-past', i < idx); });
+    v.nodes.forEach(function (n, i) { n.classList.toggle('is-past', i < idx); });
     v.idx = idx;
     if (idx < 0) return;
     var node = v.nodes[idx];
     node.classList.add('is-now');
     if (v.langs && v.langs.length) for (var k = idx; k < idx + 4; k++) fillTranslations(v, k);
-    if (Date.now() - v.userScrollAt > 4000) {
-      var body = v.body;
-      var target = node.offsetTop - body.offsetTop - body.clientHeight * 0.35;
-      v.auto = true;
-      body.scrollTo({ top: Math.max(0, target), behavior: force ? 'auto' : 'smooth' });
-      setTimeout(function () { v.auto = false; }, 600);
-    }
+    if (Date.now() - v.userScrollAt > 5000) scrollToNow(v, force); else updateFollow();
   }
 
   /* ---------- Folha (sheet) ---------- */
@@ -1077,6 +1135,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     document.body.classList.remove('tr-open');
     if (trView && trView.io) trView.io.disconnect();
     trView = null;
+    $('faf-follow').hidden = true;
   }
   function openSheet(m) {
     var sh = $('faf-sheet');
@@ -1085,6 +1144,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
     var old = $('faf-sheet-body');
     document.body.classList.remove('tr-open');
     if (trView && trView.io) trView.io.disconnect();
+    $('faf-follow').hidden = true;
     var body = old.cloneNode(false);
     old.replaceWith(body);
     trView = null;
@@ -1253,6 +1313,7 @@ body.tr-open #faf-sheet-body{padding-bottom:130px}
 
   document.addEventListener('DOMContentLoaded', function () {
     $('faf-sheet-close').addEventListener('click', closeSheet);
+    $('faf-follow').addEventListener('click', function () { if (trView) { trView.userScrollAt = 0; scrollToNow(trView); } });
     audio.addEventListener('seeked', function () { syncTranscript(true); });
     $('faf-sheet').addEventListener('click', function (e) { if (e.target.id === 'faf-sheet') closeSheet(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('faf-sheet').hidden) closeSheet(); });
@@ -1500,29 +1561,29 @@ function dayIndex() {
 
 function pill(active) {
   return active
-    ? 'min-height: 44px; padding: 0 16px; border: 1px solid #16181D; background: #16181D; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600'
-    : 'min-height: 44px; padding: 0 16px; border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D; border-radius: 999px; font-size: 14px; font-weight: 600';
+    ? 'min-height: 44px; padding: 0 16px; border: 1px solid #E8EDF7; background: #E8EDF7; color: #0D1220; border-radius: 999px; font-size: 14px; font-weight: 600'
+    : 'min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600';
 }
 
 function segStyle(active) {
   return 'min-height: 44px; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; ' +
-    (active ? 'background: #FFFFFF; color: #16181D; box-shadow: 0 1px 3px rgba(22,24,29,0.12)' : 'background: transparent; color: #5B5F6B');
+    (active ? 'background: #2C3756; color: #F4F7FF; box-shadow: 0 1px 2px rgba(0,0,0,0.5)' : 'background: transparent; color: #8F9BB8');
 }
 
 function navStyle(active) {
   return 'display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 56px; border: none; border-radius: 12px; font-size: 12px; font-weight: 600; ' +
-    (active ? 'background: #FBE9E7; color: #B4232A' : 'background: transparent; color: #5B5F6B');
+    (active ? 'background: #3A1A28; color: #FF6B7A' : 'background: transparent; color: #8F9BB8');
 }
 
 function optStyle(answered, idx, correct, picked) {
   var base = 'text-align: left; min-height: 48px; padding: 10px 14px; border-radius: 12px; font-size: 15px; font-weight: 500; ';
-  if (answered && idx === correct) return base + 'border: 2px solid #1E6B45; background: #E3F1E8; color: #0F3F27';
-  if (answered && idx === picked) return base + 'border: 2px solid #B4232A; background: #FBE9E7; color: #7A161B';
-  return base + 'border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D';
+  if (answered && idx === correct) return base + 'border: 2px solid #3DDC97; background: #10302A; color: #5BE3A6';
+  if (answered && idx === picked) return base + 'border: 2px solid #FF5466; background: #3A1A28; color: #FF8A96';
+  return base + 'border: 1px solid #34405F; background: #151C2E; color: #E8EDF7';
 }
 
 function fbStyle(ok) {
-  return 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (ok ? '#1E6B45' : '#B4232A');
+  return 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (ok ? '#3DDC97' : '#FF5466');
 }
 
 function loadSaved() {
@@ -1686,7 +1747,7 @@ class Component extends DCLogic {
       heardCount: Object.keys(s.heard).length,
       media: mediaList.map(function (m) {
         var heard = !!s.heard[m.id];
-        var typeColors = m.kind === 'video' ? 'background: #E4ECF7; color: #1D3D66' : m.kind === 'frases' ? 'background: #EFEDE6; color: #3A3D45' : 'background: #FBE9E7; color: #7A161B';
+        var typeColors = m.kind === 'video' ? 'background: #12283B; color: #7FD0FF' : m.kind === 'frases' ? 'background: #1A2236; color: #B7C1D9' : 'background: #3A1A28; color: #FF8A96';
         return {
           title: m.title, source: m.source, nivel: m.nivel, desc: m.desc, tip: m.tip, url: m.url,
           hasPlayer: !!(m.feed || m.yt),
@@ -1697,7 +1758,7 @@ class Component extends DCLogic {
           typeStyle: 'font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; ' + typeColors,
           heard: heard,
           heardLabel: heard ? 'Desmarcar' : 'Já ouvi',
-          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid #D6D3CA; background: #FFFFFF; color: #16181D' : 'border: none; background: #B4232A; color: #FFFFFF'),
+          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid #34405F; background: #151C2E; color: #E8EDF7' : 'border: none; background: #FF5466; color: #0D1220'),
           toggle: function () {
             var h = Object.assign({}, s.heard);
             if (h[m.id]) { delete h[m.id]; self.setState({ heard: h }); }
@@ -1754,7 +1815,7 @@ class Component extends DCLogic {
           preview: x.sentences[0][0],
           meta: x.sentences.length + ' frases · ' + x.words.length + ' palavras-chave · ' + x.questions.length + ' perguntas',
           status: status,
-          statusStyle: 'font-size: 12px; font-weight: 600; ' + (done ? 'color: #1E6B45' : answered > 0 ? 'color: #B4232A' : 'color: #5B5F6B'),
+          statusStyle: 'font-size: 12px; font-weight: 600; ' + (done ? 'color: #3DDC97' : answered > 0 ? 'color: #FF6B7A' : 'color: #8F9BB8'),
           open: function () { self.setState({ textIdx: x.idx, reading: true, open: {} }); }
         };
       }),
@@ -1762,7 +1823,7 @@ class Component extends DCLogic {
       // Home
       goalCount: Math.min(s.goalCount, GOAL),
       goalTotal: GOAL,
-      goalBar: 'height: 100%; width: ' + goalPct + '%; background: ' + (s.goalCount >= GOAL ? '#1E6B45' : '#B4232A') + '; border-radius: 999px',
+      goalBar: 'height: 100%; width: ' + goalPct + '%; background: ' + (s.goalCount >= GOAL ? '#3DDC97' : '#FF5466') + '; border-radius: 999px',
       goalMsg: goalMsg,
       dia: { es: dia.es, pt: dia.pt, nota: dia.nota, hasNota: !!dia.nota, cat: dia.cat },
       speakDia: function () { speak(dia.es); },
@@ -1796,7 +1857,7 @@ class Component extends DCLogic {
       cardPos: cardIdx + 1,
       cardTotal: deck.length,
       deckKnown: deckKnown,
-      barStyle: 'height: 100%; width: ' + pct + '%; background: #B4232A; border-radius: 999px',
+      barStyle: 'height: 100%; width: ' + pct + '%; background: #FF5466; border-radius: 999px',
       flipped: s.flipped,
       notFlipped: !s.flipped,
       flip: function () { self.setState({ flipped: true }); },
@@ -1822,7 +1883,7 @@ class Component extends DCLogic {
         var isOpen = !!s.open[idx];
         return {
           es: pair[0], pt: pair[1], open: isOpen,
-          style: 'text-align: left; width: 100%; min-height: 44px; padding: 12px; border: none; border-radius: 12px; font-family: Fraunces, Georgia, serif; font-size: 19px; line-height: 1.4; color: #16181D; ' + (isOpen ? 'background: #FDF3D0' : 'background: transparent'),
+          style: 'text-align: left; width: 100%; min-height: 44px; padding: 12px; border: none; border-radius: 12px; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.4; color: #E8EDF7; ' + (isOpen ? 'background: #33290F' : 'background: transparent'),
           toggle: function () {
             var open = Object.assign({}, s.open);
             if (open[idx]) delete open[idx]; else open[idx] = true;
@@ -1892,9 +1953,9 @@ class Component extends DCLogic {
       }),
       exChecked: s.checked,
       exFbTitle: exOk ? '¡Correcto!' : 'Ainda não. A ordem certa é:',
-      exFbStyle: 'display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; ' + (exOk ? 'background: #E3F1E8; color: #0F3F27' : 'background: #FBE9E7; color: #7A161B'),
+      exFbStyle: 'display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; ' + (exOk ? 'background: #10302A; color: #5BE3A6' : 'background: #3A1A28; color: #FF8A96'),
       primaryExLabel: s.checked && exOk ? 'Próxima' : 'Verificar',
-      primaryExStyle: 'min-height: 52px; border: none; border-radius: 14px; font-size: 15px; font-weight: 600; ' + (primaryReady ? 'background: #B4232A; color: #FFFFFF' : 'background: #E6E4DD; color: #5B5F6B'),
+      primaryExStyle: 'min-height: 52px; border: none; border-radius: 14px; font-size: 15px; font-weight: 600; ' + (primaryReady ? 'background: #FF5466; color: #0D1220' : 'background: #232C44; color: #8F9BB8'),
       primaryEx: function () {
         if (s.checked && exOk) {
           self.setState({ ex: (s.ex + 1) % EXS.length, built: [], checked: false });
@@ -1932,7 +1993,7 @@ class Component extends DCLogic {
       gPos: s.gi + 1,
       gTotal: GAPS.length,
       gapText: gAns ? g.options[s.gpick] : '______',
-      gapStyle: 'padding: 0 6px; border-radius: 8px; ' + (!gAns ? 'background: #EFEDE6; color: #5B5F6B' : gOk ? 'background: #E3F1E8; color: #0F3F27' : 'background: #FBE9E7; color: #7A161B; text-decoration: line-through'),
+      gapStyle: 'padding: 0 6px; border-radius: 8px; ' + (!gAns ? 'background: #1A2236; color: #8F9BB8' : gOk ? 'background: #10302A; color: #5BE3A6' : 'background: #3A1A28; color: #FF8A96; text-decoration: line-through'),
       gOptions: g.options.map(function (label, oi) {
         return {
           label: label,
