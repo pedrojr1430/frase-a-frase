@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Frase a Frase</title>
 <meta name="description" content="Aprenda espanhol frase a frase: cartões, leitura guiada, prática e podcasts reais.">
-<meta name="theme-color" content="#0D1220">
+<meta name="theme-color" content="#F4F6FC">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -17,22 +17,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0D1220;--deck:#151C2E;--deck2:#1C2540;--line:#232C44;--line2:#34405F;--text:#E8EDF7;--muted:#8F9BB8;--red:#FF5466;--saffron:#FFC247;--cyan:#5CC8FF;--tr-size:18px}
-html,body{margin:0;background:var(--ink);height:100%;color-scheme:dark}
+:root{--ink:#F4F6FC;--deck:#FFFFFF;--deck2:#ECEFFB;--line:#E1E6F3;--line2:#C9D2EA;--text:#141A33;--muted:#5D6788;--red:#5B3DF5;--saffron:#5B3DF5;--cyan:#2F6FE0;--tr-size:18px}
+html,body{margin:0;background:var(--ink);height:100%;color-scheme:light}
 body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;font-family:Manrope,system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
-a{color:#FF6B7A}a:hover{color:#FF8A96}
+a{color:#5B3DF5}a:hover{color:#3B2DB8}
 button{font-family:inherit;cursor:pointer}
 button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
-::selection{background:rgba(255,84,102,.35)}
+::selection{background:rgba(91,61,245,.22)}
 #app{height:100%}
-#app nav{background:rgba(13,18,32,.92)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+#app nav{background:rgba(255,255,255,.94)!important;border-top-color:#E1E6F3!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 body.has-dock #scroller{padding-bottom:132px !important}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 /* mini player */
 #faf-dock{position:fixed;left:0;right:0;bottom:80px;z-index:20;display:flex;justify-content:center;pointer-events:none;padding:0 10px}
 #faf-dock[hidden]{display:none}
-.faf-dock-card{pointer-events:auto;width:100%;max-width:540px;box-sizing:border-box;background:#18213A;border:1px solid var(--line2);color:var(--text);border-radius:16px;padding:10px 12px 8px;box-shadow:0 18px 40px rgba(0,0,0,.55);display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.faf-dock-card{pointer-events:auto;width:100%;max-width:540px;box-sizing:border-box;background:#FFFFFF;border:1px solid var(--line2);color:var(--text);border-radius:16px;padding:10px 12px 8px;box-shadow:0 18px 40px rgba(20,26,51,.14);display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
 .faf-dock-top{display:flex;align-items:center;gap:8px}
 #faf-dock-info{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:10px;background:none;border:none;color:inherit;text-align:left;padding:0}
 #faf-dock-art{width:40px;height:40px;border-radius:8px;object-fit:cover;flex:0 0 auto;background:var(--deck2)}
@@ -40,13 +40,13 @@ body.has-dock #scroller{padding-bottom:132px !important}
 #faf-dock-title{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #faf-dock-show{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .faf-ic{flex:0 0 auto;width:40px;height:40px;border-radius:999px;border:none;background:transparent;color:var(--text);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}
-#faf-toggle{width:44px;height:44px;background:var(--red);color:var(--ink)}
+#faf-toggle{width:44px;height:44px;background:var(--red);color:#FFFFFF}
 #faf-speed{width:auto;min-width:44px;padding:0 8px;border:1px solid var(--line2);height:30px;font-size:12px}
 .faf-dock-bottom{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
 #faf-seek{flex:1 1 auto;accent-color:var(--red);height:20px;margin:0}
 
 /* sheet */
-#faf-sheet{position:fixed;inset:0;z-index:30;background:rgba(5,8,16,.72);display:flex;align-items:flex-end;justify-content:center}
+#faf-sheet{position:fixed;inset:0;z-index:30;background:rgba(20,26,51,.45);display:flex;align-items:flex-end;justify-content:center}
 #faf-sheet[hidden]{display:none}
 .faf-panel{width:100%;max-width:600px;max-height:90vh;max-height:90dvh;background:var(--ink);border:1px solid var(--line);border-bottom:none;border-radius:20px 20px 0 0;display:flex;flex-direction:column;box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom);position:relative}
 .faf-head{display:flex;align-items:flex-start;gap:12px;padding:18px 18px 10px}
@@ -57,19 +57,19 @@ body.has-dock #scroller{padding-bottom:132px !important}
 #faf-sheet-body{overflow-y:auto;padding:4px 18px 22px;display:flex;flex-direction:column;gap:12px}
 .faf-video{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
 .faf-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.faf-tip{margin:0;padding:12px 14px;background:var(--deck);border:1px solid var(--line);border-radius:12px;font-size:14px;line-height:1.5;color:#B7C1D9}
+.faf-tip{margin:0;padding:12px 14px;background:var(--deck);border:1px solid var(--line);border-radius:12px;font-size:14px;line-height:1.5;color:#3E4770}
 .faf-note{margin:0;font-size:13px;line-height:1.5;color:var(--muted)}
 .faf-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
 .faf-btn{min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none;padding:0 14px;box-sizing:border-box;text-align:center}
-.faf-btn-red{border:none;background:var(--red);color:var(--ink)}
+.faf-btn-red{border:none;background:var(--red);color:#FFFFFF}
 .faf-btn-light{border:1px solid var(--line2);background:transparent;color:var(--text)}
 a.faf-btn-light{color:var(--text)}
 .faf-list{display:flex;flex-direction:column}
 .faf-ep{display:flex;align-items:center;gap:14px;text-align:left;background:transparent;border:none;border-bottom:1px solid var(--line);padding:14px 2px;color:var(--text);min-height:60px}
 .faf-ep:first-child{border-top:1px solid var(--line)}
 .faf-ep-icon{flex:0 0 auto;width:36px;height:36px;border-radius:999px;border:1px solid var(--line2);color:var(--text);display:flex;align-items:center;justify-content:center}
-.faf-ep.is-playing .faf-ep-icon{background:var(--red);border-color:var(--red);color:var(--ink)}
-.faf-ep.is-playing .faf-ep-title{color:#FF8A96}
+.faf-ep.is-playing .faf-ep-icon{background:var(--red);border-color:var(--red);color:#FFFFFF}
+.faf-ep.is-playing .faf-ep-title{color:#5B3DF5}
 .faf-ep-text{min-width:0;display:flex;flex-direction:column;gap:3px}
 .faf-ep-title{font-size:15px;font-weight:700;line-height:1.35}
 .faf-ep-meta{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -79,7 +79,7 @@ body.tr-open #faf-dock{z-index:40;bottom:0 !important}
 body.tr-open .faf-panel{height:96vh;height:96dvh;max-height:none}
 body.tr-open .faf-head{display:none}
 body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
-.faf-tr-top{position:sticky;top:0;z-index:2;background:rgba(13,18,32,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 16px 10px;display:flex;flex-direction:column;gap:10px}
+.faf-tr-top{position:sticky;top:0;z-index:2;background:rgba(244,246,252,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 16px 10px;display:flex;flex-direction:column;gap:10px}
 .faf-tr-bar{display:flex;align-items:center;gap:10px}
 .faf-round{flex:0 0 auto;width:38px;height:38px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text);display:flex;align-items:center;justify-content:center}
 .faf-tr-heading{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:1px}
@@ -87,7 +87,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 .faf-tr-title{margin:0;font-size:15px;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .faf-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .faf-tools::-webkit-scrollbar{display:none}
-.faf-chip{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 11px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:#B7C1D9;font-size:13px;font-weight:600;white-space:nowrap}
+.faf-chip{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 11px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:#3E4770;font-size:13px;font-weight:600;white-space:nowrap}
 .faf-chip .dot{width:8px;height:8px;border-radius:999px;background:currentColor;opacity:.5}
 .faf-chip[aria-pressed="true"]{background:var(--deck2);border-color:transparent;color:var(--text)}
 .faf-chip[aria-pressed="true"] .dot{opacity:1}
@@ -97,33 +97,33 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 .faf-sep{flex:0 0 auto;width:1px;height:20px;background:var(--line2);margin:0}
 .faf-size{flex:0 0 auto;min-width:34px;height:34px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text);font-weight:700;font-size:13px}
 .faf-tr{display:flex;flex-direction:column;padding:18px 16px 0}
-.faf-line{position:relative;display:grid;grid-template-columns:44px 1fr;gap:4px 10px;align-items:baseline;text-align:left;width:100%;border:none;background:transparent;color:#AEB8D0;padding:12px 10px 12px 0;border-radius:0;font-size:var(--tr-size);line-height:1.55;transition:color .25s}
-.faf-line-time{font-size:11px;color:#5E6A88;font-variant-numeric:tabular-nums;text-align:right;padding-top:.35em}
+.faf-line{position:relative;display:grid;grid-template-columns:44px 1fr;gap:4px 10px;align-items:baseline;text-align:left;width:100%;border:none;background:transparent;color:#4A537A;padding:12px 10px 12px 0;border-radius:0;font-size:var(--tr-size);line-height:1.55;transition:color .25s}
+.faf-line-time{font-size:11px;color:#8A93B2;font-variant-numeric:tabular-nums;text-align:right;padding-top:.35em}
 .faf-line-body{display:flex;flex-direction:column;gap:4px;min-width:0}
 .faf-line-text{font-weight:500}
-.faf-line.is-past{color:#6A7591}
-.faf-line.is-now{color:#FFFFFF}
+.faf-line.is-past{color:#9AA2BF}
+.faf-line.is-now{color:#141A33}
 .faf-line.is-now .faf-line-text{font-weight:700;font-size:1.12em;line-height:1.45}
 .faf-line.is-now .faf-line-time{color:var(--red)}
 .faf-line.is-now::before{content:"";position:absolute;left:52px;right:0;bottom:4px;height:2px;border-radius:2px;background:var(--line)}
 .faf-line.is-now::after{content:"";position:absolute;left:52px;bottom:4px;height:2px;border-radius:2px;background:var(--red);width:calc((100% - 52px) * var(--p,0));transition:width .25s linear}
 .faf-line:hover .faf-line-text{color:#fff}
 .faf-tl{display:none;font-size:.86em;line-height:1.5;font-weight:500}
-.faf-tl-pt{color:#F2BD5C}
-.faf-tl-en{color:#6FC3F0}
+.faf-tl-pt{color:#5B3DF5}
+.faf-tl-en{color:#2F6FE0}
 .faf-line.is-past .faf-tl{opacity:.6}
 .faf-tl.is-err{color:var(--muted);font-size:12px}
 .show-pt .faf-tl-pt,.show-en .faf-tl-en{display:block}
 .faf-tr.is-blur .faf-line-text{filter:blur(7px);transition:filter .2s}
 .faf-tr.is-blur .faf-line:focus .faf-line-text,.faf-tr.is-blur .faf-line:active .faf-line-text{filter:none}
 .faf-tr-foot{padding:18px 16px 0 70px}
-#faf-follow{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(122px + env(safe-area-inset-bottom));z-index:3;min-height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:#18213A;color:var(--text);font-size:13px;font-weight:700;box-shadow:0 10px 24px rgba(0,0,0,.5)}
+#faf-follow{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(122px + env(safe-area-inset-bottom));z-index:3;min-height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:#FFFFFF;color:var(--text);font-size:13px;font-weight:700;box-shadow:0 10px 24px rgba(20,26,51,.14)}
 #faf-follow[hidden]{display:none}
 </style>
 </head>
 <body>
 <template id="app-template">
-<div style="width: 100%; max-width: 560px; margin: 0 auto; height: 100vh; height: 100dvh; box-sizing: border-box; display: flex; flex-direction: column; background: #0D1220; color: #E8EDF7; font-family: Inter, system-ui, sans-serif; overflow: hidden">
+<div style="width: 100%; max-width: 560px; margin: 0 auto; height: 100vh; height: 100dvh; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F6FC; color: #141A33; font-family: Inter, system-ui, sans-serif; overflow: hidden">
 
 <div id="scroller" style="flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: calc(24px + env(safe-area-inset-top)) 20px 28px 20px; box-sizing: border-box">
 
@@ -131,102 +131,102 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 <sc-if value="{{showInicio}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-direction: column; gap: 20px">
   <div style="display: flex; flex-direction: column; gap: 4px; padding-top: 8px">
-    <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.01em; color: #FF6B7A">Frase a Frase</span>
+    <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.01em; color: #5B3DF5">Frase a Frase</span>
     <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 34px; line-height: 1.1;">¡Hola! Vamos praticar?</h1>
   </div>
 
-  <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+  <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
     <div style="display: flex; align-items: baseline; justify-content: space-between">
       <span style="font-size: 15px; font-weight: 700">Meta de hoje</span>
-      <span style="font-size: 14px; color: #8F9BB8">{{goalCount}} de {{goalTotal}} atividades</span>
+      <span style="font-size: 14px; color: #5D6788">{{goalCount}} de {{goalTotal}} atividades</span>
     </div>
-    <div style="height: 10px; background: #1A2236; border-radius: 999px; overflow: hidden">
+    <div style="height: 10px; background: #E9EDF8; border-radius: 999px; overflow: hidden">
       <div style="{{goalBar}}"></div>
     </div>
-    <span style="font-size: 13px; color: #8F9BB8">{{goalMsg}}</span>
+    <span style="font-size: 13px; color: #5D6788">{{goalMsg}}</span>
   </div>
 
-  <div style="background: #E8EDF7; color: #0D1220; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
-    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #D62839">Frase do dia · {{dia.cat}}</span>
+  <div style="background: #3B2DB8; color: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #FFD34D">Frase do dia · {{dia.cat}}</span>
     <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2">{{dia.es}}</p>
-    <p style="margin: 0; font-size: 15px; color: #3A4560">{{dia.pt}}</p>
+    <p style="margin: 0; font-size: 15px; color: #D9DCFF">{{dia.pt}}</p>
     <sc-if value="{{dia.hasNota}}" hint-placeholder-val="{{ true }}">
-      <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #56627F">{{dia.nota}}</p>
+      <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #B9BEF0">{{dia.nota}}</p>
     </sc-if>
-    <button onClick="{{speakDia}}" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #B9C2D6; background: transparent; color: #0D1220; border-radius: 999px; font-size: 14px; font-weight: 600">
+    <button onClick="{{speakDia}}" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid rgba(255,255,255,0.45); background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
       Ouvir
     </button>
   </div>
 
   <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
-    <div style="background: #151C2E; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #232C44">
+    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E1E6F3">
       <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{knownCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #8F9BB8">de {{phraseTotal}} frases que você sabe</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #5D6788">de {{phraseTotal}} frases que você sabe</span>
     </div>
-    <div style="background: #151C2E; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #232C44">
+    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E1E6F3">
       <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{reviewCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #8F9BB8">frases para revisar</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #5D6788">frases para revisar</span>
     </div>
-    <div style="background: #151C2E; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #232C44">
+    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E1E6F3">
       <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{readCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #8F9BB8">de {{textTotal}} textos concluídos</span>
+      <span style="font-size: 12px; line-height: 1.3; color: #5D6788">de {{textTotal}} textos concluídos</span>
     </div>
   </div>
 
   <sc-if value="{{hasReview}}" hint-placeholder-val="{{ false }}">
-    <button onClick="{{goReview}}" style="min-height: 52px; border: none; background: #FF5466; color: #0D1220; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar agora ({{reviewCount}})</button>
+    <button onClick="{{goReview}}" style="min-height: 52px; border: none; background: #5B3DF5; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar agora ({{reviewCount}})</button>
   </sc-if>
 
   <div style="display: flex; flex-direction: column; gap: 10px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Continuar</h2>
-    <button onClick="{{goFrases}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
+    <button onClick="{{goFrases}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 16px; color: #141A33">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Frases por situação</span>
-        <span style="font-size: 13px; color: #8F9BB8">{{homeCatsLine}}</span>
+        <span style="font-size: 13px; color: #5D6788">{{homeCatsLine}}</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goTextos}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
+    <button onClick="{{goTextos}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 16px; color: #141A33">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Leitura guiada</span>
-        <span style="font-size: 13px; color: #8F9BB8">{{homeTextsLine}}</span>
+        <span style="font-size: 13px; color: #5D6788">{{homeTextsLine}}</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goPratica}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
+    <button onClick="{{goPratica}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 16px; color: #141A33">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Prática</span>
-        <span style="font-size: 13px; color: #8F9BB8">Montar frases, escuta e lacunas</span>
+        <span style="font-size: 13px; color: #5D6788">Montar frases, escuta e lacunas</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goOuvir}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
+    <button onClick="{{goOuvir}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 16px; color: #141A33">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Ouvir e assistir</span>
-        <span style="font-size: 13px; color: #8F9BB8">Podcasts e vídeos reais de falantes nativos</span>
+        <span style="font-size: 13px; color: #5D6788">Podcasts e vídeos reais de falantes nativos</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
   </div>
 
-  <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
+  <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Áudio</h2>
     <div style="display: flex; flex-direction: column; gap: 8px">
-      <span style="font-size: 13px; color: #8F9BB8">Sotaque</span>
+      <span style="font-size: 13px; color: #5D6788">Sotaque</span>
       <div style="display: flex; gap: 8px">
         <button onClick="{{setSpain}}" style="{{accentSpain}}">Espanha</button>
         <button onClick="{{setMexico}}" style="{{accentMexico}}">México</button>
       </div>
     </div>
     <div style="display: flex; flex-direction: column; gap: 8px">
-      <span style="font-size: 13px; color: #8F9BB8">Velocidade</span>
+      <span style="font-size: 13px; color: #5D6788">Velocidade</span>
       <div style="display: flex; gap: 8px">
         <button onClick="{{setNormal}}" style="{{rateNormal}}">Normal</button>
         <button onClick="{{setSlow}}" style="{{rateSlow}}">Lenta</button>
       </div>
     </div>
-    <button onClick="{{resetAll}}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: none; background: transparent; color: #FF6B7A; font-size: 14px; font-weight: 600; text-decoration: underline">Apagar meu progresso</button>
+    <button onClick="{{resetAll}}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: none; background: transparent; color: #5B3DF5; font-size: 14px; font-weight: 600; text-decoration: underline">Apagar meu progresso</button>
   </div>
 </div>
 </sc-if>
@@ -235,7 +235,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 <sc-if value="{{showFrases}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 16px">
   <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Frases</h1>
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #1A2236; border-radius: 14px">
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #E9EDF8; border-radius: 14px">
     <button onClick="{{viewCats}}" style="{{fseg.cats}}">Categorias</button>
     <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
     <button onClick="{{viewLista}}" style="{{fseg.lista}}">Lista</button>
@@ -250,16 +250,16 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 
   <sc-if value="{{isCatsView}}">
   <div style="display: flex; flex-direction: column; gap: 22px">
-    <span style="font-size: 13px; color: #8F9BB8">{{catSummary}}</span>
+    <span style="font-size: 13px; color: #5D6788">{{catSummary}}</span>
     <sc-for list="{{catGroups}}" as="g">
       <section style="display: flex; flex-direction: column; gap: 10px">
-        <h2 style="margin: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; font-size: 16px; font-weight: 700; color: #E8EDF7">{{g.name}}<span style="font-size: 12px; font-weight: 600; color: #8F9BB8">{{g.meta}}</span></h2>
+        <h2 style="margin: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; font-size: 16px; font-weight: 700; color: #141A33">{{g.name}}<span style="font-size: 12px; font-weight: 600; color: #5D6788">{{g.meta}}</span></h2>
         <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
           <sc-for list="{{g.cats}}" as="c">
             <button onClick="{{c.pick}}" style="{{c.style}}">
               <span style="font-size: 15px; font-weight: 700; line-height: 1.25">{{c.name}}</span>
-              <span style="font-size: 12px; color: #8F9BB8">{{c.meta}}</span>
-              <span style="display: block; height: 4px; border-radius: 999px; background: #1A2236; overflow: hidden"><span style="{{c.bar}}"></span></span>
+              <span style="font-size: 12px; color: #5D6788">{{c.meta}}</span>
+              <span style="display: block; height: 4px; border-radius: 999px; background: #E9EDF8; overflow: hidden"><span style="{{c.bar}}"></span></span>
             </button>
           </sc-for>
         </div>
@@ -271,35 +271,35 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   <sc-if value="{{isLista}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 12px">
     <div style="display: flex; flex-direction: column; gap: 6px">
-      <label for="busca-frase" style="font-size: 13px; font-weight: 600; color: #8F9BB8">Buscar frase</label>
-      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em todas as frases, em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #34405F; border-radius: 12px; background: #151C2E; color: #E8EDF7; font-family: inherit; font-size: 16px">
+      <label for="busca-frase" style="font-size: 13px; font-weight: 600; color: #5D6788">Buscar frase</label>
+      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em todas as frases, em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #C9D2EA; border-radius: 12px; background: #FFFFFF; color: #141A33; font-family: inherit; font-size: 16px">
     </div>
-    <span style="font-size: 13px; color: #8F9BB8">{{listCount}} · toque para estudar no cartão</span>
+    <span style="font-size: 13px; color: #5D6788">{{listCount}} · toque para estudar no cartão</span>
     <sc-for list="{{listItems}}" as="p" hint-placeholder-count="6">
-      <div style="display: flex; align-items: stretch; gap: 8px; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 6px">
-        <button onClick="{{p.open}}" style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 10px; border: none; background: transparent; color: #E8EDF7; border-radius: 12px">
+      <div style="display: flex; align-items: stretch; gap: 8px; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 6px">
+        <button onClick="{{p.open}}" style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 10px; border: none; background: transparent; color: #141A33; border-radius: 12px">
           <span style="font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 18px; line-height: 1.3">{{p.es}}</span>
-          <span style="font-size: 14px; line-height: 1.4; color: #8F9BB8">{{p.pt}}</span>
+          <span style="font-size: 14px; line-height: 1.4; color: #5D6788">{{p.pt}}</span>
           <span style="display: flex; align-items: center; gap: 6px; padding-top: 2px">
-            <span style="font-size: 12px; font-weight: 600; color: #FF6B7A">{{p.cat}}</span>
+            <span style="font-size: 12px; font-weight: 600; color: #5B3DF5">{{p.cat}}</span>
             <sc-if value="{{p.isKnown}}" hint-placeholder-val="{{ false }}">
-              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #10302A; color: #5BE3A6">Já sei</span>
+              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #E3F6EC; color: #0E6B45">Já sei</span>
             </sc-if>
             <sc-if value="{{p.isReview}}" hint-placeholder-val="{{ false }}">
-              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #33290F; color: #FFC247">Revisar</span>
+              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #E6EEFF; color: #2547B8">Revisar</span>
             </sc-if>
           </span>
         </button>
-        <button onClick="{{p.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; align-self: center; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px">
+        <button onClick="{{p.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; align-self: center; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
         </button>
       </div>
     </sc-for>
     <sc-if value="{{listMore}}">
-      <button onClick="{{showMoreList}}" style="min-height: 48px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 12px; font-size: 14px; font-weight: 600">{{listMoreLabel}}</button>
+      <button onClick="{{showMoreList}}" style="min-height: 48px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 12px; font-size: 14px; font-weight: 600">{{listMoreLabel}}</button>
     </sc-if>
     <sc-if value="{{listEmpty}}" hint-placeholder-val="{{ false }}">
-      <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #8F9BB8">{{listEmptyMsg}}</div>
+      <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #5D6788">{{listEmptyMsg}}</div>
     </sc-if>
   </div>
   </sc-if>
@@ -307,61 +307,61 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   <sc-if value="{{isCards}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
   <sc-if value="{{deckEmpty}}" hint-placeholder-val="{{ false }}">
-    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 24px; padding: 28px 22px; display: flex; flex-direction: column; gap: 10px">
+    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 24px; padding: 28px 22px; display: flex; flex-direction: column; gap: 10px">
       <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 22px">Nada para revisar.</p>
-      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #8F9BB8">As frases que você marcar como "Revisar depois" aparecem aqui. Escolha um tema acima para continuar.</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5D6788">As frases que você marcar como "Revisar depois" aparecem aqui. Escolha um tema acima para continuar.</p>
     </div>
   </sc-if>
 
   <sc-if value="{{deckHas}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #8F9BB8">
+    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #5D6788">
       <span>{{deckLabel}} · {{cardPos}} de {{cardTotal}}</span>
       <span>{{deckKnown}} já sei</span>
     </div>
-    <div style="height: 6px; background: #232C44; border-radius: 999px; overflow: hidden">
+    <div style="height: 6px; background: #E1E6F3; border-radius: 999px; overflow: hidden">
       <div style="{{barStyle}}"></div>
     </div>
 
-    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 24px; padding: 26px 22px; min-height: 310px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 24px; padding: 26px 22px; min-height: 310px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
       <div style="display: flex; align-items: center; justify-content: space-between">
-        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #FF6B7A">{{card.cat}}</span>
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5B3DF5">{{card.cat}}</span>
         <sc-if value="{{card.isKnown}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #10302A; color: #5BE3A6">Já sei</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E3F6EC; color: #0E6B45">Já sei</span>
         </sc-if>
         <sc-if value="{{card.isReview}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">Revisar</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6EEFF; color: #2547B8">Revisar</span>
         </sc-if>
       </div>
       <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 30px; line-height: 1.2">{{card.es}}</p>
       <div style="display: flex; gap: 8px">
-        <button onClick="{{speakCard}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">
+        <button onClick="{{speakCard}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
           Ouvir
         </button>
-        <button onClick="{{speakCardSlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
+        <button onClick="{{speakCardSlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
       </div>
       <div style="flex: 1 1 auto"></div>
       <sc-if value="{{flipped}}" hint-placeholder-val="{{ false }}">
-        <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid #232C44">
-          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #8F9BB8">Português</span>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid #E1E6F3">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5D6788">Português</span>
           <p style="margin: 0; font-size: 18px; font-weight: 500">{{card.pt}}</p>
           <sc-if value="{{card.hasNota}}" hint-placeholder-val="{{ true }}">
-            <p style="margin: 0; padding: 10px 12px; background: #33290F; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #FFC247">{{card.nota}}</p>
+            <p style="margin: 0; padding: 10px 12px; background: #E6EEFF; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #2547B8">{{card.nota}}</p>
           </sc-if>
         </div>
       </sc-if>
       <sc-if value="{{notFlipped}}" hint-placeholder-val="{{ true }}">
-        <button onClick="{{flip}}" style="min-height: 48px; border: none; background: #1A2236; color: #E8EDF7; border-radius: 14px; font-size: 15px; font-weight: 600">Mostrar tradução</button>
+        <button onClick="{{flip}}" style="min-height: 48px; border: none; background: #EEF1FB; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Mostrar tradução</button>
       </sc-if>
     </div>
 
     <div style="display: grid; grid-template-columns: 52px minmax(0, 1fr) minmax(0, 1fr); gap: 10px">
-      <button onClick="{{prevCard}}" aria-label="Frase anterior" style="min-height: 52px; display: flex; align-items: center; justify-content: center; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 14px">
+      <button onClick="{{prevCard}}" aria-label="Frase anterior" style="min-height: 52px; display: flex; align-items: center; justify-content: center; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
       </button>
-      <button onClick="{{markReview}}" style="min-height: 52px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar depois</button>
-      <button onClick="{{markKnown}}" style="min-height: 52px; border: none; background: #FF5466; color: #0D1220; border-radius: 14px; font-size: 15px; font-weight: 600">Já sei</button>
+      <button onClick="{{markReview}}" style="min-height: 52px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar depois</button>
+      <button onClick="{{markKnown}}" style="min-height: 52px; border: none; background: #5B3DF5; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Já sei</button>
     </div>
   </div>
   </sc-if>
@@ -377,8 +377,8 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 
   <sc-if value="{{isCatalog}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 14px">
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #8F9BB8">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
-    <input id="busca-texto" type="search" aria-label="Buscar texto" value="{{tquery}}" onChange="{{onTQuery}}" placeholder="Buscar por título ou palavra" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #34405F; border-radius: 12px; background: #151C2E; color: #E8EDF7; font-family: inherit; font-size: 16px">
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5D6788">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
+    <input id="busca-texto" type="search" aria-label="Buscar texto" value="{{tquery}}" onChange="{{onTQuery}}" placeholder="Buscar por título ou palavra" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #C9D2EA; border-radius: 12px; background: #FFFFFF; color: #141A33; font-family: inherit; font-size: 16px">
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
       <sc-for list="{{levels}}" as="l" hint-placeholder-count="4">
         <button onClick="{{l.pick}}" style="{{l.style}}">{{l.label}}</button>
@@ -389,59 +389,59 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
         <button onClick="{{m.pick}}" style="{{m.style}}">{{m.label}}</button>
       </sc-for>
     </div>
-    <span style="font-size: 13px; color: #8F9BB8">{{textListCount}}</span>
+    <span style="font-size: 13px; color: #5D6788">{{textListCount}}</span>
     <sc-for list="{{textList}}" as="t" hint-placeholder-count="4">
-      <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid #232C44; background: #151C2E; color: #E8EDF7; border-radius: 18px">
+      <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid #E1E6F3; background: #FFFFFF; color: #141A33; border-radius: 18px">
         <span style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
           <span style="display: flex; align-items: center; gap: 6px; min-width: 0">
-            <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">{{t.nivel}}</span>
-            <span style="font-size: 12px; font-weight: 600; color: #8F9BB8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{t.tema}}</span>
+            <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6EEFF; color: #2547B8">{{t.nivel}}</span>
+            <span style="font-size: 12px; font-weight: 600; color: #5D6788; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{t.tema}}</span>
           </span>
           <span style="{{t.statusStyle}}">{{t.status}}</span>
         </span>
         <span style="font-family: Manrope, system-ui, sans-serif; ; font-size: 20px; font-weight: 700; line-height: 1.25">{{t.title}}</span>
-        <span style="font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 15px; line-height: 1.45; color: #8F9BB8">{{t.preview}}</span>
-        <span style="font-size: 12px; color: #8F9BB8">{{t.meta}}</span>
+        <span style="font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 15px; line-height: 1.45; color: #5D6788">{{t.preview}}</span>
+        <span style="font-size: 12px; color: #5D6788">{{t.meta}}</span>
       </button>
     </sc-for>
     <sc-if value="{{textMore}}">
-      <button onClick="{{showMoreTexts}}" style="min-height: 48px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 12px; font-size: 14px; font-weight: 600">{{textMoreLabel}}</button>
+      <button onClick="{{showMoreTexts}}" style="min-height: 48px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 12px; font-size: 14px; font-weight: 600">{{textMoreLabel}}</button>
     </sc-if>
     <sc-if value="{{textEmpty}}">
-      <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #8F9BB8">Nenhum texto com esses filtros.</div>
+      <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #5D6788">Nenhum texto com esses filtros.</div>
     </sc-if>
   </div>
   </sc-if>
 
   <sc-if value="{{isReading}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 18px">
-  <button onClick="{{backToList}}" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 8px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">
+  <button onClick="{{backToList}}" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 8px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
     Todos os textos
   </button>
 
   <div style="display: flex; flex-direction: column; gap: 6px">
-    <span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">{{text.nivel}}</span>
+    <span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6EEFF; color: #2547B8">{{text.nivel}}</span>
     <h2 style="margin: 0; font-family: Manrope, system-ui, sans-serif; ; font-size: 24px; font-weight: 700">{{text.title}}</h2>
-    <p style="margin: 0; font-size: 13px; color: #8F9BB8">Toque numa frase para ver a tradução e ouvir.</p>
+    <p style="margin: 0; font-size: 13px; color: #5D6788">Toque numa frase para ver a tradução e ouvir.</p>
   </div>
 
   <div style="display: flex; gap: 8px; flex-wrap: wrap">
-    <button onClick="{{speakText}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">
+    <button onClick="{{speakText}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
       Ouvir texto
     </button>
-    <button onClick="{{toggleAll}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600">{{toggleAllLabel}}</button>
+    <button onClick="{{toggleAll}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">{{toggleAllLabel}}</button>
   </div>
 
-  <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 8px; display: flex; flex-direction: column">
+  <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 8px; display: flex; flex-direction: column">
     <sc-for list="{{sentences}}" as="s" hint-placeholder-count="5">
       <div style="display: flex; flex-direction: column">
         <button onClick="{{s.toggle}}" style="{{s.style}}">{{s.es}}</button>
         <sc-if value="{{s.open}}" hint-placeholder-val="{{ false }}">
           <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 12px 12px 12px">
-            <span style="font-size: 14px; line-height: 1.45; color: #8F9BB8">{{s.pt}}</span>
-            <button onClick="{{s.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px">
+            <span style="font-size: 14px; line-height: 1.45; color: #5D6788">{{s.pt}}</span>
+            <button onClick="{{s.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
             </button>
           </div>
@@ -454,9 +454,9 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
     <h3 style="margin: 0; font-size: 16px; font-weight: 700">Palavras-chave</h3>
     <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
       <sc-for list="{{words}}" as="w" hint-placeholder-count="4">
-        <button onClick="{{w.speak}}" style="text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; color: #E8EDF7">
+        <button onClick="{{w.speak}}" style="text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; color: #141A33">
           <span style="font-size: 15px; font-weight: 600">{{w.es}}</span>
-          <span style="font-size: 13px; color: #8F9BB8">{{w.pt}}</span>
+          <span style="font-size: 13px; color: #5D6788">{{w.pt}}</span>
         </button>
       </sc-for>
     </div>
@@ -465,8 +465,8 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   <div style="display: flex; flex-direction: column; gap: 12px">
     <h3 style="margin: 0; font-size: 16px; font-weight: 700">Você entendeu?</h3>
     <sc-for list="{{questions}}" as="q" hint-placeholder-count="2">
-      <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #FF6B7A">Pergunta {{q.num}}</span>
+      <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5B3DF5">Pergunta {{q.num}}</span>
         <p style="margin: 0; font-size: 16px; font-weight: 600">{{q.text}}</p>
         <sc-for list="{{q.options}}" as="o" hint-placeholder-count="3">
           <button onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
@@ -477,10 +477,10 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
       </div>
     </sc-for>
     <sc-if value="{{textDone}}" hint-placeholder-val="{{ false }}">
-      <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 16px; background: #10302A; color: #5BE3A6">
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 16px; background: #E3F6EC; color: #0E6B45">
         <span style="font-size: 15px; font-weight: 700">Texto concluído.</span>
         <sc-if value="{{hasNextText}}" hint-placeholder-val="{{ true }}">
-          <button onClick="{{nextText}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border: none; background: #3DDC97; color: #0D1220; border-radius: 12px; font-size: 14px; font-weight: 600">Próximo texto</button>
+          <button onClick="{{nextText}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border: none; background: #14915D; color: #FFFFFF; border-radius: 12px; font-size: 14px; font-weight: 600">Próximo texto</button>
         </sc-if>
       </div>
     </sc-if>
@@ -494,7 +494,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 <sc-if value="{{showPratica}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 18px">
   <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Prática</h1>
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #1A2236; border-radius: 14px">
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #E9EDF8; border-radius: 14px">
     <button onClick="{{modeMontar}}" style="{{seg.montar}}">Montar</button>
     <button onClick="{{modeEscuta}}" style="{{seg.escuta}}">Escuta</button>
     <button onClick="{{modeLacuna}}" style="{{seg.lacuna}}">Lacuna</button>
@@ -503,22 +503,22 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   <!-- Montar -->
   <sc-if value="{{isMontar}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #8F9BB8">Exercício {{exPos}} de {{exTotal}}</span>
-    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
-      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #8F9BB8">Traduza para o espanhol</span>
+    <span style="font-size: 13px; color: #5D6788">Exercício {{exPos}} de {{exTotal}}</span>
+    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5D6788">Traduza para o português</span>
       <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.25">{{ex.pt}}</p>
     </div>
-    <div style="min-height: 112px; box-sizing: border-box; padding: 14px; border: 2px dashed #34405F; border-radius: 16px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+    <div style="min-height: 112px; box-sizing: border-box; padding: 14px; border: 2px dashed #C9D2EA; border-radius: 16px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
       <sc-for list="{{built}}" as="b" hint-placeholder-count="2">
-        <button onClick="{{b.remove}}" style="min-height: 44px; padding: 0 14px; border: none; background: #E8EDF7; color: #0D1220; border-radius: 12px; font-size: 16px; font-weight: 500">{{b.word}}</button>
+        <button onClick="{{b.remove}}" style="min-height: 44px; padding: 0 14px; border: none; background: #3B2DB8; color: #FFFFFF; border-radius: 12px; font-size: 16px; font-weight: 500">{{b.word}}</button>
       </sc-for>
       <sc-if value="{{builtEmpty}}" hint-placeholder-val="{{ false }}">
-        <span style="font-size: 14px; color: #8F9BB8; padding: 12px 4px">Toque nas palavras abaixo</span>
+        <span style="font-size: 14px; color: #5D6788; padding: 12px 4px">Toque nas palavras abaixo</span>
       </sc-if>
     </div>
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
       <sc-for list="{{pool}}" as="p" hint-placeholder-count="4">
-        <button onClick="{{p.add}}" style="min-height: 44px; padding: 0 14px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 12px; font-size: 16px; font-weight: 500">{{p.word}}</button>
+        <button onClick="{{p.add}}" style="min-height: 44px; padding: 0 14px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 12px; font-size: 16px; font-weight: 500">{{p.word}}</button>
       </sc-for>
     </div>
     <sc-if value="{{exChecked}}" hint-placeholder-val="{{ false }}">
@@ -528,7 +528,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
       </div>
     </sc-if>
     <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
-      <button onClick="{{resetEx}}" style="min-height: 52px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 14px; font-size: 15px; font-weight: 600">Limpar</button>
+      <button onClick="{{resetEx}}" style="min-height: 52px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Limpar</button>
       <button onClick="{{primaryEx}}" style="{{primaryExStyle}}">{{primaryExLabel}}</button>
     </div>
   </div>
@@ -537,14 +537,14 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   <!-- Escuta -->
   <sc-if value="{{isEscuta}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #8F9BB8">Exercício {{liPos}} de {{liTotal}} · Ouça e escolha o significado</span>
-    <div style="background: #E8EDF7; color: #0D1220; border-radius: 24px; padding: 26px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px">
-      <button onClick="{{liPlay}}" aria-label="Ouvir frase" style="width: 88px; height: 88px; border-radius: 999px; border: none; background: #FF5466; color: #0D1220; display: flex; align-items: center; justify-content: center">
+    <span style="font-size: 13px; color: #5D6788">Exercício {{liPos}} de {{liTotal}} · Ouça e escolha o significado</span>
+    <div style="background: #3B2DB8; color: #FFFFFF; border-radius: 24px; padding: 26px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+      <button onClick="{{liPlay}}" aria-label="Ouvir frase" style="width: 88px; height: 88px; border-radius: 999px; border: none; background: #5B3DF5; color: #FFFFFF; display: flex; align-items: center; justify-content: center">
         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
       </button>
       <div style="display: flex; gap: 8px">
-        <button onClick="{{liPlaySlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #B9C2D6; background: transparent; color: #0D1220; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
-        <button onClick="{{liToggleText}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #B9C2D6; background: transparent; color: #0D1220; border-radius: 999px; font-size: 14px; font-weight: 600">{{liTextLabel}}</button>
+        <button onClick="{{liPlaySlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid rgba(255,255,255,0.45); background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
+        <button onClick="{{liToggleText}}" style="min-height: 44px; padding: 0 16px; border: 1px solid rgba(255,255,255,0.45); background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">{{liTextLabel}}</button>
       </div>
       <sc-if value="{{liShowText}}" hint-placeholder-val="{{ false }}">
         <p style="margin: 0; text-align: center; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.25">{{li.es}}</p>
@@ -558,7 +558,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
     <sc-if value="{{liAnswered}}" hint-placeholder-val="{{ false }}">
       <div style="display: flex; flex-direction: column; gap: 12px">
         <p style="{{liFbStyle}}">{{liFbText}}</p>
-        <button onClick="{{liNext}}" style="min-height: 52px; border: none; background: #FF5466; color: #0D1220; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
+        <button onClick="{{liNext}}" style="min-height: 52px; border: none; background: #5B3DF5; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
       </div>
     </sc-if>
   </div>
@@ -567,11 +567,11 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   <!-- Lacuna -->
   <sc-if value="{{isLacuna}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #8F9BB8">Exercício {{gPos}} de {{gTotal}} · Complete a frase</span>
-    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 20px; padding: 22px 20px; display: flex; flex-direction: column; gap: 12px">
+    <span style="font-size: 13px; color: #5D6788">Exercício {{gPos}} de {{gTotal}} · Complete a frase</span>
+    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 22px 20px; display: flex; flex-direction: column; gap: 12px">
       <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.5">{{gap.before}}<span style="{{gapStyle}}">{{gapText}}</span>{{gap.after}}</p>
       <sc-if value="{{gAnswered}}" hint-placeholder-val="{{ false }}">
-        <p style="margin: 0; font-size: 14px; color: #8F9BB8">{{gap.pt}}</p>
+        <p style="margin: 0; font-size: 14px; color: #5D6788">{{gap.pt}}</p>
       </sc-if>
     </div>
     <div style="display: flex; flex-direction: column; gap: 10px">
@@ -582,7 +582,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
     <sc-if value="{{gAnswered}}" hint-placeholder-val="{{ false }}">
       <div style="display: flex; flex-direction: column; gap: 12px">
         <p style="{{gFbStyle}}">{{gFbText}}</p>
-        <button onClick="{{gNext}}" style="min-height: 52px; border: none; background: #FF5466; color: #0D1220; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
+        <button onClick="{{gNext}}" style="min-height: 52px; border: none; background: #5B3DF5; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Próxima</button>
       </div>
     </sc-if>
   </div>
@@ -595,7 +595,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 <div style="display: flex; flex-direction: column; gap: 16px">
   <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px">
     <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Ouvir e assistir</h1>
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #8F9BB8">Conteúdo real de falantes nativos, sempre com o texto junto: nos podcasts a transcrição acompanha o áudio, nos vídeos a legenda aparece na tela.</p>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5D6788">Conteúdo real de falantes nativos, sempre com o texto junto: nos podcasts a transcrição acompanha o áudio, nos vídeos a legenda aparece na tela.</p>
   </div>
 
   <div style="display: flex; flex-wrap: wrap; gap: 8px">
@@ -603,32 +603,32 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
       <button onClick="{{f.pick}}" style="{{f.style}}">{{f.label}}</button>
     </sc-for>
   </div>
-  <span style="font-size: 13px; color: #8F9BB8">{{mCount}} · {{heardCount}} marcados como ouvidos</span>
+  <span style="font-size: 13px; color: #5D6788">{{mCount}} · {{heardCount}} marcados como ouvidos</span>
 
   <sc-for list="{{media}}" as="m" hint-placeholder-count="4">
-    <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
       <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap">
         <span style="{{m.typeStyle}}">{{m.type}}</span>
-        <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">{{m.nivel}}</span>
+        <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6EEFF; color: #2547B8">{{m.nivel}}</span>
         <sc-if value="{{m.heard}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #10302A; color: #5BE3A6">Ouvido</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E3F6EC; color: #0E6B45">Ouvido</span>
         </sc-if>
       </div>
       <div style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-family: Manrope, system-ui, sans-serif; ; font-size: 20px; font-weight: 700; line-height: 1.25">{{m.title}}</span>
-        <span style="font-size: 13px; color: #8F9BB8">{{m.source}}</span>
+        <span style="font-size: 13px; color: #5D6788">{{m.source}}</span>
       </div>
-      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #E8EDF7">{{m.desc}}</p>
-      <p style="margin: 0; padding: 10px 12px; background: #0D1220; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #B7C1D9">{{m.tip}}</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #141A33">{{m.desc}}</p>
+      <p style="margin: 0; padding: 10px 12px; background: #F4F6FC; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #323A5C">{{m.tip}}</p>
       <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
         <sc-if value="{{m.hasPlayer}}">
-        <button onClick="{{m.play}}" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: 12px; background: #E8EDF7; color: #0D1220; font-size: 14px; font-weight: 600">
+        <button onClick="{{m.play}}" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: 12px; background: #3B2DB8; color: #FFFFFF; font-size: 14px; font-weight: 600">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"></path></svg>
           {{m.playLabel}}
         </button>
         </sc-if>
         <sc-if value="{{m.noPlayer}}">
-        <a href="{{m.url}}" target="_blank" rel="noopener noreferrer" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 12px; background: #E8EDF7; color: #0D1220; font-size: 14px; font-weight: 600; text-decoration: none">
+        <a href="{{m.url}}" target="_blank" rel="noopener noreferrer" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 12px; background: #3B2DB8; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">
           Abrir
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4 10 14"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>
         </a>
@@ -638,9 +638,9 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
     </div>
   </sc-for>
 
-  <div style="background: #E8EDF7; color: #0D1220; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
-    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #D62839">Como estudar com áudio real</span>
-    <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; color: #3A4560">
+  <div style="background: #3B2DB8; color: #FFFFFF; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #FFD34D">Como estudar com áudio real</span>
+    <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; color: #E7E9FF">
       <li>Ouça uma vez sem legenda, só para pegar a ideia geral.</li>
       <li>Ouça de novo com legenda em espanhol, pausando nas partes difíceis.</li>
       <li>Anote 3 frases úteis e procure por elas na aba Frases.</li>
@@ -652,7 +652,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 
 </div>
 
-<nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; padding: 8px 6px calc(10px + env(safe-area-inset-bottom)) 6px; background: #151C2E; border-top: 1px solid #232C44">
+<nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; padding: 8px 6px calc(10px + env(safe-area-inset-bottom)) 6px; background: #FFFFFF; border-top: 1px solid #E1E6F3">
   <button onClick="{{goInicio}}" style="{{nav.inicio}}">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z"></path></svg>
     Início
@@ -1456,11 +1456,31 @@ function rebuildAll() {
 }
 rebuildAll();
 
+// Montar: mostra a frase em espanhol e o aluno monta a tradução em português.
+function seededOrder(n, seed) {
+  var a = []; for (var i = 0; i < n; i++) a.push(i);
+  var x = seed || 1;
+  for (var j = n - 1; j > 0; j--) { x = (x * 1103515245 + 12345) % 2147483648; var k = x % (j + 1); var tmp = a[j]; a[j] = a[k]; a[k] = tmp; }
+  var same = a.every(function (v, i) { return v === i; });
+  if (same && n > 1) a.push(a.shift());
+  return a;
+}
+function buildExercises() {
+  var list = [];
+  ALL.forEach(function (p, idx) {
+    var w = p.pt.split(/\s+/).filter(Boolean);
+    if (w.length >= 3 && w.length <= 8 && p.pt.indexOf('/') < 0) list.push({ pt: p.es, words: w, order: seededOrder(w.length, idx + 7) });
+  });
+  var pick = seededOrder(list.length, 2026);
+  EXS.length = 0;
+  pick.forEach(function (i) { EXS.push(list[i]); });
+}
+
 // Conteúdo completo vem de data/*.json; o que está acima é a reserva para o primeiro uso offline.
 function loadContent() {
   function get(u) { return fetch(u).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); }
   Promise.all([get('data/frases.json'), get('data/textos.json')]).then(function (res) {
-    if (res[0] && res[0].length >= CATS.length) { CATS.length = 0; res[0].forEach(function (c) { CATS.push(c); }); rebuildAll(); }
+    if (res[0] && res[0].length >= CATS.length) { CATS.length = 0; res[0].forEach(function (c) { CATS.push(c); }); rebuildAll(); buildExercises(); }
     if (res[1] && res[1].length >= TEXTS.length) { TEXTS.length = 0; res[1].forEach(function (t) { TEXTS.push(t); }); }
     if (window.__fafApp) window.__fafApp.setState({ contentAt: Date.now() });
   });
@@ -1624,29 +1644,29 @@ function dayIndex() {
 
 function pill(active) {
   return active
-    ? 'min-height: 44px; padding: 0 16px; border: 1px solid #E8EDF7; background: #E8EDF7; color: #0D1220; border-radius: 999px; font-size: 14px; font-weight: 600'
-    : 'min-height: 44px; padding: 0 16px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 999px; font-size: 14px; font-weight: 600';
+    ? 'min-height: 44px; padding: 0 16px; border: 1px solid #3B2DB8; background: #3B2DB8; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600'
+    : 'min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600';
 }
 
 function segStyle(active) {
   return 'min-height: 44px; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; ' +
-    (active ? 'background: #2C3756; color: #F4F7FF; box-shadow: 0 1px 2px rgba(0,0,0,0.5)' : 'background: transparent; color: #8F9BB8');
+    (active ? 'background: #FFFFFF; color: #141A33; box-shadow: 0 1px 3px rgba(20,26,51,0.10)' : 'background: transparent; color: #5D6788');
 }
 
 function navStyle(active) {
   return 'display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 56px; border: none; border-radius: 12px; font-size: 12px; font-weight: 600; ' +
-    (active ? 'background: #3A1A28; color: #FF6B7A' : 'background: transparent; color: #8F9BB8');
+    (active ? 'background: #EDE9FF; color: #5B3DF5' : 'background: transparent; color: #5D6788');
 }
 
 function optStyle(answered, idx, correct, picked) {
   var base = 'text-align: left; min-height: 48px; padding: 10px 14px; border-radius: 12px; font-size: 15px; font-weight: 500; ';
-  if (answered && idx === correct) return base + 'border: 2px solid #3DDC97; background: #10302A; color: #5BE3A6';
-  if (answered && idx === picked) return base + 'border: 2px solid #FF5466; background: #3A1A28; color: #FF8A96';
-  return base + 'border: 1px solid #34405F; background: #151C2E; color: #E8EDF7';
+  if (answered && idx === correct) return base + 'border: 2px solid #14915D; background: #E3F6EC; color: #0E6B45';
+  if (answered && idx === picked) return base + 'border: 2px solid #5B3DF5; background: #FDECF0; color: #B4234A';
+  return base + 'border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33';
 }
 
 function fbStyle(ok) {
-  return 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (ok ? '#3DDC97' : '#FF5466');
+  return 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (ok ? '#14915D' : '#5B3DF5');
 }
 
 function loadSaved() {
@@ -1774,7 +1794,7 @@ class Component extends DCLogic {
     var textDone = !!s.read[s.textIdx];
 
     // Montar
-    var ex = EXS[s.ex];
+    var ex = EXS[s.ex % EXS.length];
     var used = {};
     s.built.forEach(function (i) { used[i] = true; });
     var answerStr = ex.words.join(' ');
@@ -1815,7 +1835,7 @@ class Component extends DCLogic {
       heardCount: Object.keys(s.heard).length,
       media: mediaList.map(function (m) {
         var heard = !!s.heard[m.id];
-        var typeColors = m.kind === 'video' ? 'background: #12283B; color: #7FD0FF' : m.kind === 'frases' ? 'background: #1A2236; color: #B7C1D9' : 'background: #3A1A28; color: #FF8A96';
+        var typeColors = m.kind === 'video' ? 'background: #E6EEFF; color: #2547B8' : m.kind === 'frases' ? 'background: #E9EDF8; color: #323A5C' : 'background: #EDE9FF; color: #4329D6';
         return {
           title: m.title, source: m.source, nivel: m.nivel, desc: m.desc, tip: m.tip, url: m.url,
           hasPlayer: !!(m.feed || m.yt),
@@ -1826,7 +1846,7 @@ class Component extends DCLogic {
           typeStyle: 'font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; ' + typeColors,
           heard: heard,
           heardLabel: heard ? 'Desmarcar' : 'Já ouvi',
-          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid #34405F; background: #151C2E; color: #E8EDF7' : 'border: none; background: #FF5466; color: #0D1220'),
+          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33' : 'border: none; background: #5B3DF5; color: #FFFFFF'),
           toggle: function () {
             var h = Object.assign({}, s.heard);
             if (h[m.id]) { delete h[m.id]; self.setState({ heard: h }); }
@@ -1863,9 +1883,9 @@ class Component extends DCLogic {
           list.push({
             name: c.name,
             meta: k ? k + ' de ' + total + ' já sei' : total + ' frases',
-            bar: 'display: block; height: 100%; width: ' + pctc + '%; background: ' + (pctc === 100 ? '#3DDC97' : '#FF5466') + '; border-radius: 999px',
+            bar: 'display: block; height: 100%; width: ' + pctc + '%; background: ' + (pctc === 100 ? '#14915D' : '#5B3DF5') + '; border-radius: 999px',
             style: 'display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 14px; min-height: 96px; border-radius: 16px; ' +
-              (s.cat === ci ? 'border: 1px solid #FF5466; background: #151C2E; color: #E8EDF7' : 'border: 1px solid #232C44; background: #151C2E; color: #E8EDF7'),
+              (s.cat === ci ? 'border: 1px solid #5B3DF5; background: #FFFFFF; color: #141A33' : 'border: 1px solid #E1E6F3; background: #FFFFFF; color: #141A33'),
             pick: function () { self.setState({ cat: ci, card: 0, flipped: false, fview: 'cards' }); }
           });
         });
@@ -1927,7 +1947,7 @@ class Component extends DCLogic {
           preview: x.sentences[0][0],
           meta: x.sentences.length + ' frases · ' + x.words.length + ' palavras-chave · ' + x.questions.length + ' perguntas',
           status: status,
-          statusStyle: 'font-size: 12px; font-weight: 600; ' + (done ? 'color: #3DDC97' : answered > 0 ? 'color: #FF6B7A' : 'color: #8F9BB8'),
+          statusStyle: 'font-size: 12px; font-weight: 600; ' + (done ? 'color: #14915D' : answered > 0 ? 'color: #5B3DF5' : 'color: #5D6788'),
           open: function () { self.setState({ textIdx: x.idx, reading: true, open: {} }); }
         };
       }),
@@ -1935,7 +1955,7 @@ class Component extends DCLogic {
       // Home
       goalCount: Math.min(s.goalCount, GOAL),
       goalTotal: GOAL,
-      goalBar: 'height: 100%; width: ' + goalPct + '%; background: ' + (s.goalCount >= GOAL ? '#3DDC97' : '#FF5466') + '; border-radius: 999px',
+      goalBar: 'height: 100%; width: ' + goalPct + '%; background: ' + (s.goalCount >= GOAL ? '#14915D' : '#5B3DF5') + '; border-radius: 999px',
       goalMsg: goalMsg,
       dia: { es: dia.es, pt: dia.pt, nota: dia.nota, hasNota: !!dia.nota, cat: dia.cat },
       speakDia: function () { speak(dia.es); },
@@ -1969,7 +1989,7 @@ class Component extends DCLogic {
       cardPos: cardIdx + 1,
       cardTotal: deck.length,
       deckKnown: deckKnown,
-      barStyle: 'height: 100%; width: ' + pct + '%; background: #FF5466; border-radius: 999px',
+      barStyle: 'height: 100%; width: ' + pct + '%; background: #5B3DF5; border-radius: 999px',
       flipped: s.flipped,
       notFlipped: !s.flipped,
       flip: function () { self.setState({ flipped: true }); },
@@ -1995,7 +2015,7 @@ class Component extends DCLogic {
         var isOpen = !!s.open[idx];
         return {
           es: pair[0], pt: pair[1], open: isOpen,
-          style: 'text-align: left; width: 100%; min-height: 44px; padding: 12px; border: none; border-radius: 12px; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.4; color: #E8EDF7; ' + (isOpen ? 'background: #33290F' : 'background: transparent'),
+          style: 'text-align: left; width: 100%; min-height: 44px; padding: 12px; border: none; border-radius: 12px; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.4; color: #141A33; ' + (isOpen ? 'background: #E6EEFF' : 'background: transparent'),
           toggle: function () {
             var open = Object.assign({}, s.open);
             if (open[idx]) delete open[idx]; else open[idx] = true;
@@ -2051,7 +2071,7 @@ class Component extends DCLogic {
       isLacuna: s.pmode === 'lacuna',
 
       ex: { pt: ex.pt, answer: answerStr },
-      exPos: s.ex + 1,
+      exPos: (s.ex % EXS.length) + 1,
       exTotal: EXS.length,
       built: s.built.map(function (i, pos) {
         return { word: ex.words[i], remove: function () {
@@ -2065,9 +2085,9 @@ class Component extends DCLogic {
       }),
       exChecked: s.checked,
       exFbTitle: exOk ? '¡Correcto!' : 'Ainda não. A ordem certa é:',
-      exFbStyle: 'display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; ' + (exOk ? 'background: #10302A; color: #5BE3A6' : 'background: #3A1A28; color: #FF8A96'),
+      exFbStyle: 'display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; ' + (exOk ? 'background: #E3F6EC; color: #0E6B45' : 'background: #FDECF0; color: #B4234A'),
       primaryExLabel: s.checked && exOk ? 'Próxima' : 'Verificar',
-      primaryExStyle: 'min-height: 52px; border: none; border-radius: 14px; font-size: 15px; font-weight: 600; ' + (primaryReady ? 'background: #FF5466; color: #0D1220' : 'background: #232C44; color: #8F9BB8'),
+      primaryExStyle: 'min-height: 52px; border: none; border-radius: 14px; font-size: 15px; font-weight: 600; ' + (primaryReady ? 'background: #5B3DF5; color: #FFFFFF' : 'background: #E1E6F3; color: #5D6788'),
       primaryEx: function () {
         if (s.checked && exOk) {
           self.setState({ ex: (s.ex + 1) % EXS.length, built: [], checked: false });
@@ -2105,7 +2125,7 @@ class Component extends DCLogic {
       gPos: s.gi + 1,
       gTotal: GAPS.length,
       gapText: gAns ? g.options[s.gpick] : '______',
-      gapStyle: 'padding: 0 6px; border-radius: 8px; ' + (!gAns ? 'background: #1A2236; color: #8F9BB8' : gOk ? 'background: #10302A; color: #5BE3A6' : 'background: #3A1A28; color: #FF8A96; text-decoration: line-through'),
+      gapStyle: 'padding: 0 6px; border-radius: 8px; ' + (!gAns ? 'background: #E9EDF8; color: #5D6788' : gOk ? 'background: #E3F6EC; color: #0E6B45' : 'background: #FDECF0; color: #B4234A; text-decoration: line-through'),
       gOptions: g.options.map(function (label, oi) {
         return {
           label: label,
@@ -2129,6 +2149,7 @@ class Component extends DCLogic {
 
 FAFBoot(Component);
 
+buildExercises();
 loadContent();
 
 });
