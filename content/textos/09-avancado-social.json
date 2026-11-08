@@ -1,0 +1,702 @@
+[
+ {
+  "tema": "social",
+  "title": "La soledad no deseada",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "La soledad no deseada se ha convertido en uno de los grandes desafíos de las sociedades occidentales.",
+    "A solidão indesejada se tornou um dos grandes desafios das sociedades ocidentais."
+   ],
+   [
+    "Aunque solemos asociarla con la vejez, cada vez afecta a más jóvenes que viven en grandes ciudades.",
+    "Embora costumemos associá-la à velhice, ela afeta cada vez mais jovens que moram em grandes cidades."
+   ],
+   [
+    "Paradójicamente, nunca habíamos estado tan conectados ni nos habíamos sentido tan aislados.",
+    "Paradoxalmente, nunca estivemos tão conectados nem nos sentimos tão isolados."
+   ],
+   [
+    "Diversos estudios indican que el aislamiento prolongado perjudica la salud tanto como el tabaco.",
+    "Diversos estudos indicam que o isolamento prolongado prejudica a saúde tanto quanto o cigarro."
+   ],
+   [
+    "Por ello, algunos ayuntamientos han puesto en marcha programas de acompañamiento vecinal.",
+    "Por isso, algumas prefeituras implantaram programas de acompanhamento entre vizinhos."
+   ],
+   [
+    "Voluntarios visitan a personas que viven solas, las acompañan al médico o simplemente charlan con ellas.",
+    "Voluntários visitam pessoas que moram sozinhas, as acompanham ao médico ou simplesmente conversam com elas."
+   ],
+   [
+    "Quienes participan coinciden en que el beneficio es mutuo.",
+    "Quem participa concorda que o benefício é mútuo."
+   ]
+  ],
+  "words": [
+   [
+    "el desafío",
+    "o desafio"
+   ],
+   [
+    "la vejez",
+    "a velhice"
+   ],
+   [
+    "aislado",
+    "isolado"
+   ],
+   [
+    "perjudicar",
+    "prejudicar"
+   ],
+   [
+    "el ayuntamiento",
+    "a prefeitura"
+   ],
+   [
+    "poner en marcha",
+    "implantar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Segundo o texto, quem a solidão afeta cada vez mais?",
+    "options": [
+     "Também jovens de grandes cidades",
+     "Só os idosos",
+     "Moradores do campo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "A que os estudos comparam o isolamento prolongado?",
+    "options": [
+     "Ao cigarro",
+     "Ao estresse no trabalho",
+     "Ao sedentarismo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que dizem os participantes dos programas?",
+    "options": [
+     "Que o benefício é mútuo",
+     "Que é cansativo",
+     "Que não funciona"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Criar hijos bilingües",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Cuando Sara, brasileña, y Diego, uruguayo, tuvieron a su primer hijo, decidieron criarlo en dos idiomas.",
+    "Quando Sara, brasileira, e Diego, uruguaio, tiveram o primeiro filho, decidiram criá-lo em duas línguas."
+   ],
+   [
+    "Siguieron el método conocido como «un padre, una lengua»: ella le hablaba en portugués y él en español.",
+    "Seguiram o método conhecido como \"um pai, uma língua\": ela falava com ele em português e ele em espanhol."
+   ],
+   [
+    "Durante los primeros años, el niño mezclaba ambos idiomas en una misma frase.",
+    "Durante os primeiros anos, o menino misturava as duas línguas na mesma frase."
+   ],
+   [
+    "Algunos familiares temían que eso retrasara su desarrollo, pero los especialistas los tranquilizaron.",
+    "Alguns parentes temiam que isso atrasasse o desenvolvimento dele, mas os especialistas os tranquilizaram."
+   ],
+   [
+    "Según ellos, la mezcla es una etapa normal que desaparece con el tiempo.",
+    "Segundo eles, a mistura é uma fase normal que desaparece com o tempo."
+   ],
+   [
+    "Hoy, con ocho años, el niño cambia de idioma con total naturalidad según con quién hable.",
+    "Hoje, com oito anos, o menino muda de língua com total naturalidade conforme com quem fala."
+   ],
+   [
+    "Lo que más les costó no fue enseñarle, sino ser constantes cuando estaban cansados.",
+    "O mais difícil não foi ensiná-lo, mas ser constantes quando estavam cansados."
+   ]
+  ],
+  "words": [
+   [
+    "criar",
+    "criar (filhos)"
+   ],
+   [
+    "ambos",
+    "ambos"
+   ],
+   [
+    "retrasar",
+    "atrasar"
+   ],
+   [
+    "el desarrollo",
+    "o desenvolvimento"
+   ],
+   [
+    "la etapa",
+    "a fase"
+   ],
+   [
+    "costar",
+    "ser difícil"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual foi o método escolhido?",
+    "options": [
+     "Só espanhol em casa",
+     "Escola bilíngue",
+     "Um pai, uma língua"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que os especialistas disseram sobre a mistura de línguas?",
+    "options": [
+     "Que é uma fase normal",
+     "Que era preocupante",
+     "Que exigia terapia"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que foi mais difícil para os pais?",
+    "options": [
+     "Ser constantes quando cansados",
+     "Ensinar a gramática",
+     "Encontrar livros"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El precio de la vivienda",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "En muchas capitales europeas y latinoamericanas, acceder a una vivienda se ha convertido en un privilegio.",
+    "Em muitas capitais europeias e latino-americanas, ter acesso a uma moradia se tornou um privilégio."
+   ],
+   [
+    "Los alquileres han subido mucho más rápido que los salarios durante la última década.",
+    "Os aluguéis subiram muito mais rápido que os salários na última década."
+   ],
+   [
+    "Como resultado, numerosos jóvenes de treinta años siguen viviendo con sus padres o comparten piso.",
+    "Como resultado, muitos jovens de trinta anos continuam morando com os pais ou dividem apartamento."
+   ],
+   [
+    "Entre las causas se citan el turismo, la especulación y la escasez de vivienda pública.",
+    "Entre as causas citam-se o turismo, a especulação e a escassez de moradia pública."
+   ],
+   [
+    "Algunos gobiernos han limitado los alquileres turísticos o han fijado precios máximos.",
+    "Alguns governos limitaram os aluguéis por temporada ou fixaram preços máximos."
+   ],
+   [
+    "Sus críticos sostienen que esas medidas reducen la oferta y no resuelven el problema de fondo.",
+    "Os críticos sustentam que essas medidas reduzem a oferta e não resolvem o problema de fundo."
+   ],
+   [
+    "Lo que nadie discute es que, sin una solución, la desigualdad entre generaciones seguirá creciendo.",
+    "O que ninguém discute é que, sem uma solução, a desigualdade entre gerações continuará crescendo."
+   ]
+  ],
+  "words": [
+   [
+    "la vivienda",
+    "a moradia"
+   ],
+   [
+    "acceder a",
+    "ter acesso a"
+   ],
+   [
+    "la especulación",
+    "a especulação"
+   ],
+   [
+    "sostener",
+    "sustentar"
+   ],
+   [
+    "de fondo",
+    "de fundo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que aconteceu com os aluguéis na última década?",
+    "options": [
+     "Ficaram estáveis",
+     "Subiram mais rápido que os salários",
+     "Caíram"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual destas NÃO aparece como causa?",
+    "options": [
+     "Especulação",
+     "Turismo",
+     "Imigração"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que os críticos dizem dos preços máximos?",
+    "options": [
+     "Reduzem a oferta",
+     "Aumentam a construção",
+     "Resolvem o problema"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Una carta a mi yo de veinte años",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Querida yo: ahora que tengo cincuenta, me gustaría contarte algunas cosas que habría querido saber antes.",
+    "Querida eu: agora que tenho cinquenta, gostaria de te contar algumas coisas que eu queria ter sabido antes."
+   ],
+   [
+    "No te preocupes tanto por lo que piensen los demás; la mayoría está demasiado ocupada pensando en sí misma.",
+    "Não se preocupe tanto com o que os outros pensam; a maioria está ocupada demais pensando em si mesma."
+   ],
+   [
+    "Viaja siempre que puedas, aunque sea con poco dinero y a sitios cercanos.",
+    "Viaje sempre que puder, mesmo com pouco dinheiro e para lugares próximos."
+   ],
+   [
+    "Llama más a menudo a la abuela: un día ya no estará y echarás de menos su voz.",
+    "Ligue mais vezes para a vovó: um dia ela não estará mais e você vai sentir falta da voz dela."
+   ],
+   [
+    "Equivocarte no es fracasar; es la única forma que conozco de aprender algo de verdad.",
+    "Errar não é fracassar; é a única forma que conheço de aprender algo de verdade."
+   ],
+   [
+    "Cuida tu espalda y tus amistades, porque las dos cuestan mucho de recuperar.",
+    "Cuide das suas costas e das suas amizades, porque as duas são muito difíceis de recuperar."
+   ],
+   [
+    "Y, sobre todo, no tengas tanta prisa: casi todo lo bueno llega cuando tiene que llegar.",
+    "E, acima de tudo, não tenha tanta pressa: quase tudo de bom chega quando tem que chegar."
+   ]
+  ],
+  "words": [
+   [
+    "a menudo",
+    "com frequência"
+   ],
+   [
+    "equivocarse",
+    "errar"
+   ],
+   [
+    "fracasar",
+    "fracassar"
+   ],
+   [
+    "recuperar",
+    "recuperar"
+   ],
+   [
+    "tener prisa",
+    "ter pressa"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantos anos tem a autora da carta?",
+    "options": [
+     "Cinquenta",
+     "Vinte",
+     "Trinta"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Segundo a carta, o que é errar?",
+    "options": [
+     "A única forma de aprender de verdade",
+     "Algo a evitar",
+     "Fracassar"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual é o último conselho?",
+    "options": [
+     "Economizar dinheiro",
+     "Não ter tanta pressa",
+     "Trabalhar mais"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "La generación sándwich",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Se conoce como generación sándwich a las personas que cuidan a la vez de sus hijos y de sus padres mayores.",
+    "Chama-se geração sanduíche as pessoas que cuidam ao mesmo tempo dos filhos e dos pais idosos."
+   ],
+   [
+    "El fenómeno se ha extendido porque se tienen hijos cada vez más tarde y la esperanza de vida es mayor.",
+    "O fenômeno se espalhou porque se tem filhos cada vez mais tarde e a expectativa de vida é maior."
+   ],
+   [
+    "Mercedes, de cuarenta y siete años, lo resume así: «Salgo del colegio de mi hija y voy directa al médico con mi madre».",
+    "Mercedes, de quarenta e sete anos, resume assim: \"Saio da escola da minha filha e vou direto ao médico com minha mãe\"."
+   ],
+   [
+    "La mayoría de quienes asumen ese doble cuidado son mujeres.",
+    "A maioria de quem assume esse duplo cuidado são mulheres."
+   ],
+   [
+    "Muchas reducen su jornada laboral o renuncian a ascensos, lo que afecta a sus futuras pensiones.",
+    "Muitas reduzem a jornada de trabalho ou abrem mão de promoções, o que afeta suas futuras aposentadorias."
+   ],
+   [
+    "Los expertos reclaman más servicios públicos de atención a mayores y horarios laborales más flexibles.",
+    "Os especialistas reivindicam mais serviços públicos de atenção a idosos e horários de trabalho mais flexíveis."
+   ],
+   [
+    "Mientras tanto, el cansancio y la culpa se convierten en compañeros diarios.",
+    "Enquanto isso, o cansaço e a culpa se tornam companheiros diários."
+   ]
+  ],
+  "words": [
+   [
+    "a la vez",
+    "ao mesmo tempo"
+   ],
+   [
+    "la esperanza de vida",
+    "a expectativa de vida"
+   ],
+   [
+    "renunciar a",
+    "abrir mão de"
+   ],
+   [
+    "el ascenso",
+    "a promoção"
+   ],
+   [
+    "la pensión",
+    "a aposentadoria"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que caracteriza a geração sanduíche?",
+    "options": [
+     "Morar com os pais",
+     "Trabalhar em dois empregos",
+     "Cuidar ao mesmo tempo dos filhos e dos pais"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Quem mais assume esse duplo cuidado?",
+    "options": [
+     "Avós",
+     "Mulheres",
+     "Homens"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que os especialistas reivindicam?",
+    "options": [
+     "Salários mais altos",
+     "Serviços para idosos e horários flexíveis",
+     "Mais escolas particulares"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Mascotas como familia",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "En las últimas décadas, las mascotas han pasado de vivir en el patio a dormir en la cama de sus dueños.",
+    "Nas últimas décadas, os animais de estimação passaram de viver no quintal a dormir na cama dos donos."
+   ],
+   [
+    "En muchos hogares urbanos ya hay más perros que niños.",
+    "Em muitas casas urbanas já há mais cachorros do que crianças."
+   ],
+   [
+    "Este cambio ha impulsado un mercado enorme: seguros, guarderías, ropa e incluso psicólogos caninos.",
+    "Essa mudança impulsionou um mercado enorme: seguros, creches, roupas e até psicólogos caninos."
+   ],
+   [
+    "Algunas leyes recientes reconocen a los animales como seres sintientes y no como simples objetos.",
+    "Algumas leis recentes reconhecem os animais como seres sencientes e não como simples objetos."
+   ],
+   [
+    "En caso de divorcio, por ejemplo, un juez puede decidir con quién vive el perro según su bienestar.",
+    "Em caso de divórcio, por exemplo, um juiz pode decidir com quem o cachorro mora conforme o bem-estar dele."
+   ],
+   [
+    "Hay sociólogos que interpretan esta tendencia como una respuesta a la soledad.",
+    "Há sociólogos que interpretam essa tendência como uma resposta à solidão."
+   ],
+   [
+    "Otros, en cambio, la ven simplemente como una evolución natural de nuestra relación con los animales.",
+    "Outros, por outro lado, a veem simplesmente como uma evolução natural da nossa relação com os animais."
+   ]
+  ],
+  "words": [
+   [
+    "la mascota",
+    "o animal de estimação"
+   ],
+   [
+    "el hogar",
+    "o lar"
+   ],
+   [
+    "impulsar",
+    "impulsionar"
+   ],
+   [
+    "sintiente",
+    "senciente"
+   ],
+   [
+    "el bienestar",
+    "o bem-estar"
+   ],
+   [
+    "en cambio",
+    "por outro lado"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde muitos animais dormem hoje, segundo o texto?",
+    "options": [
+     "Em canis",
+     "Na cama dos donos",
+     "No quintal"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como algumas leis recentes veem os animais?",
+    "options": [
+     "Como patrimônio",
+     "Como objetos",
+     "Como seres sencientes"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como alguns sociólogos interpretam a tendência?",
+    "options": [
+     "Como resposta à solidão",
+     "Como moda passageira",
+     "Como problema econômico"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Desconectar en vacaciones",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Hace un par de años, durante unas vacaciones, mi jefe me escribió a las once de la noche para pedirme un informe.",
+    "Há uns dois anos, durante umas férias, meu chefe me escreveu às onze da noite pedindo um relatório."
+   ],
+   [
+    "Contesté al instante, como siempre, sin pensarlo dos veces.",
+    "Respondi na hora, como sempre, sem pensar duas vezes."
+   ],
+   [
+    "Fue entonces cuando mi pareja me preguntó si de verdad estaba de vacaciones.",
+    "Foi então que meu parceiro me perguntou se eu estava mesmo de férias."
+   ],
+   [
+    "Me di cuenta de que llevaba años sin desconectar del todo.",
+    "Percebi que fazia anos que eu não me desligava totalmente."
+   ],
+   [
+    "En varios países existe ya el derecho a la desconexión digital, que protege a los trabajadores fuera de su horario.",
+    "Em vários países já existe o direito à desconexão digital, que protege os trabalhadores fora do expediente."
+   ],
+   [
+    "Ahora, antes de irme, dejo un mensaje automático y apago las notificaciones del correo.",
+    "Agora, antes de sair, deixo uma mensagem automática e desligo as notificações do e-mail."
+   ],
+   [
+    "Al principio me sentía culpable; hoy vuelvo con más energía y, curiosamente, trabajo mejor.",
+    "No começo me sentia culpada; hoje volto com mais energia e, curiosamente, trabalho melhor."
+   ]
+  ],
+  "words": [
+   [
+    "un par de",
+    "uns dois"
+   ],
+   [
+    "al instante",
+    "na hora"
+   ],
+   [
+    "desconectar",
+    "desligar-se"
+   ],
+   [
+    "el horario",
+    "o expediente"
+   ],
+   [
+    "culpable",
+    "culpado"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que o chefe pediu durante as férias?",
+    "options": [
+     "Uma reunião",
+     "Que ela voltasse",
+     "Um relatório"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que o direito à desconexão protege?",
+    "options": [
+     "O trabalhador fora do expediente",
+     "O salário",
+     "As férias pagas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual foi o resultado de desligar-se?",
+    "options": [
+     "Sente culpa até hoje",
+     "Perdeu o emprego",
+     "Volta com mais energia e trabalha melhor"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El arte de la sobremesa",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "En España y en buena parte de América Latina existe una palabra difícil de traducir: «sobremesa».",
+    "Na Espanha e em boa parte da América Latina existe uma palavra difícil de traduzir: \"sobremesa\"."
+   ],
+   [
+    "Designa el tiempo que se pasa charlando alrededor de la mesa después de haber terminado de comer.",
+    "Designa o tempo que se passa conversando em volta da mesa depois de terminar de comer."
+   ],
+   [
+    "No es raro que una comida de domingo empiece a las dos y la sobremesa se alargue hasta las seis.",
+    "Não é raro que um almoço de domingo comece às duas e a conversa se estenda até as seis."
+   ],
+   [
+    "Durante esas horas se discute de política, se recuerdan anécdotas familiares o se arreglan los problemas del mundo.",
+    "Durante essas horas se discute política, relembram-se histórias de família ou resolvem-se os problemas do mundo."
+   ],
+   [
+    "Para muchos extranjeros, acostumbrados a levantarse en cuanto terminan el postre, resulta sorprendente.",
+    "Para muitos estrangeiros, acostumados a se levantar assim que terminam o doce, é surpreendente."
+   ],
+   [
+    "Hay quien la considera una pérdida de tiempo, pero sus defensores la ven como un pilar de la vida social.",
+    "Há quem a considere uma perda de tempo, mas seus defensores a veem como um pilar da vida social."
+   ],
+   [
+    "Al fin y al cabo, lo importante no siempre es lo que se come, sino con quién se comparte.",
+    "Afinal, o importante nem sempre é o que se come, e sim com quem se divide."
+   ]
+  ],
+  "words": [
+   [
+    "la sobremesa",
+    "a conversa à mesa após a refeição"
+   ],
+   [
+    "alargarse",
+    "estender-se"
+   ],
+   [
+    "la anécdota",
+    "a história curiosa"
+   ],
+   [
+    "en cuanto",
+    "assim que"
+   ],
+   [
+    "al fin y al cabo",
+    "afinal de contas"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que significa \"sobremesa\" em espanhol?",
+    "options": [
+     "O doce depois da refeição",
+     "O café da tarde",
+     "A conversa à mesa depois de comer"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como muitos estrangeiros reagem a esse costume?",
+    "options": [
+     "Acham surpreendente",
+     "Não percebem",
+     "Acham normal"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Segundo a conclusão, o que importa mais?",
+    "options": [
+     "Com quem se divide a mesa",
+     "O horário",
+     "O que se come"
+    ],
+    "correct": 0
+   }
+  ]
+ }
+]

@@ -1,0 +1,107 @@
+{
+ "id": "banco",
+ "name": "Banco e dinheiro",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "Quisiera abrir una cuenta.",
+   "pt": "Gostaria de abrir uma conta.",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde hay un cajero automático?",
+   "pt": "Onde tem um caixa eletrônico?",
+   "nota": ""
+  },
+  {
+   "es": "El cajero se ha tragado mi tarjeta.",
+   "pt": "O caixa eletrônico engoliu meu cartão.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuál es la comisión?",
+   "pt": "Qual é a taxa?",
+   "nota": "\"Comisión\" = taxa cobrada pelo banco."
+  },
+  {
+   "es": "Quiero hacer una transferencia.",
+   "pt": "Quero fazer uma transferência.",
+   "nota": ""
+  },
+  {
+   "es": "¿A cuánto está el cambio?",
+   "pt": "Quanto está o câmbio?",
+   "nota": ""
+  },
+  {
+   "es": "Necesito sacar dinero.",
+   "pt": "Preciso sacar dinheiro.",
+   "nota": ""
+  },
+  {
+   "es": "¿Tiene cambio de cincuenta?",
+   "pt": "Tem troco para cinquenta?",
+   "nota": "\"Cambio\" também é troco; na América Latina se diz \"vuelto\" ou \"feria\" (México)."
+  },
+  {
+   "es": "Me han cobrado dos veces.",
+   "pt": "Me cobraram duas vezes.",
+   "nota": ""
+  },
+  {
+   "es": "He perdido mi tarjeta, quiero bloquearla.",
+   "pt": "Perdi meu cartão, quero bloqueá-lo.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuál es el saldo de mi cuenta?",
+   "pt": "Qual é o saldo da minha conta?",
+   "nota": ""
+  },
+  {
+   "es": "Quisiera pedir un préstamo.",
+   "pt": "Gostaria de pedir um empréstimo.",
+   "nota": ""
+  },
+  {
+   "es": "¿Puedo pagar a plazos?",
+   "pt": "Posso pagar parcelado?",
+   "nota": "Na América Latina: \"en cuotas\" ou \"a meses\"."
+  },
+  {
+   "es": "No llevo efectivo.",
+   "pt": "Não estou com dinheiro vivo.",
+   "nota": ""
+  },
+  {
+   "es": "Firme aquí, por favor.",
+   "pt": "Assine aqui, por favor.",
+   "nota": ""
+  },
+  {
+   "es": "Necesito su documento de identidad.",
+   "pt": "Preciso do seu documento de identidade.",
+   "nota": ""
+  },
+  {
+   "es": "Me gustaría hablar con el gerente.",
+   "pt": "Gostaria de falar com o gerente.",
+   "nota": ""
+  },
+  {
+   "es": "Los billetes de cien no se aceptan.",
+   "pt": "Notas de cem não são aceitas.",
+   "nota": "\"Billete\" também é cédula de dinheiro."
+  },
+  {
+   "es": "¿Hay que pagar por la tarjeta?",
+   "pt": "Tem que pagar pelo cartão?",
+   "nota": ""
+  },
+  {
+   "es": "Ahorro un poco cada mes.",
+   "pt": "Economizo um pouco todo mês.",
+   "nota": "\"Ahorrar\" = poupar, economizar."
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "id": "restaurante",
+ "name": "Restaurante",
+ "group": "social",
+ "items": [
+  {
+   "es": "¿Me trae la carta, por favor?",
+   "pt": "Pode me trazer o cardápio, por favor?",
+   "nota": "Falso cognato: aqui \"carta\" é o cardápio."
+  },
+  {
+   "es": "Quisiera una mesa para dos.",
+   "pt": "Eu gostaria de uma mesa para dois.",
+   "nota": "\"Quisiera\" é a forma educada de pedir algo."
+  },
+  {
+   "es": "¿Qué me recomienda?",
+   "pt": "O que o senhor me recomenda?",
+   "nota": "Com \"usted\", o verbo vai na 3ª pessoa: recomienda."
+  },
+  {
+   "es": "Soy alérgico a los mariscos.",
+   "pt": "Sou alérgico a frutos do mar.",
+   "nota": ""
+  },
+  {
+   "es": "La cuenta, por favor.",
+   "pt": "A conta, por favor.",
+   "nota": ""
+  },
+  {
+   "es": "¿Está incluida la propina?",
+   "pt": "A gorjeta está incluída?",
+   "nota": "Falso cognato: \"propina\" é gorjeta, não suborno."
+  },
+  {
+   "es": "¿Tienen mesa en la terraza?",
+   "pt": "Vocês têm mesa na área externa?",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuál es el plato del día?",
+   "pt": "Qual é o prato do dia?",
+   "nota": "Na Espanha, o \"menú del día\" inclui entrada, prato e sobremesa."
+  },
+  {
+   "es": "Para mí, el pollo asado.",
+   "pt": "Para mim, o frango assado.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me puede traer un poco más de pan?",
+   "pt": "Pode me trazer um pouco mais de pão?",
+   "nota": ""
+  },
+  {
+   "es": "Un agua sin gas, por favor.",
+   "pt": "Uma água sem gás, por favor.",
+   "nota": "Diz-se \"un agua\" por causa do \"a\" tônico, mas a palavra é feminina: \"el agua fría\"."
+  },
+  {
+   "es": "¿Este plato lleva picante?",
+   "pt": "Este prato é apimentado?",
+   "nota": "Literalmente: \"leva pimenta?\". \"Picante\" é o ardido."
+  },
+  {
+   "es": "Soy vegetariano.",
+   "pt": "Sou vegetariano.",
+   "nota": ""
+  },
+  {
+   "es": "La comida está buenísima.",
+   "pt": "A comida está ótima.",
+   "nota": ""
+  },
+  {
+   "es": "Esto no es lo que pedí.",
+   "pt": "Isso não é o que eu pedi.",
+   "nota": ""
+  },
+  {
+   "es": "¿Nos trae la carta de postres?",
+   "pt": "Pode nos trazer o cardápio de sobremesas?",
+   "nota": ""
+  },
+  {
+   "es": "Un café cortado, por favor.",
+   "pt": "Um café pingado, por favor.",
+   "nota": "\"Cortado\" é o café com um pouco de leite."
+  },
+  {
+   "es": "¿Podemos pagar por separado?",
+   "pt": "Podemos pagar separado?",
+   "nota": ""
+  },
+  {
+   "es": "¿Me lo pone para llevar?",
+   "pt": "Pode embalar para viagem?",
+   "nota": "No México também se diz \"para llevar\"; na Espanha, \"para llevar\" ou \"para tomar fuera\"."
+  },
+  {
+   "es": "Quisiera reservar para las nueve.",
+   "pt": "Gostaria de reservar para as nove.",
+   "nota": "Na Espanha se janta tarde: nove ou dez da noite é normal."
+  }
+ ]
+}

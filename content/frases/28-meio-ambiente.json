@@ -1,0 +1,107 @@
+{
+ "id": "meio-ambiente",
+ "name": "Meio ambiente",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "Hay que reciclar el plástico.",
+   "pt": "É preciso reciclar o plástico.",
+   "nota": ""
+  },
+  {
+   "es": "El cambio climático nos afecta a todos.",
+   "pt": "A mudança climática afeta a todos nós.",
+   "nota": ""
+  },
+  {
+   "es": "Ahorra agua: cierra el grifo.",
+   "pt": "Economize água: feche a torneira.",
+   "nota": ""
+  },
+  {
+   "es": "Este verano ha sido muy seco.",
+   "pt": "Este verão foi muito seco.",
+   "nota": ""
+  },
+  {
+   "es": "Llevo mi propia bolsa al supermercado.",
+   "pt": "Levo minha própria sacola ao supermercado.",
+   "nota": ""
+  },
+  {
+   "es": "La contaminación del aire es preocupante.",
+   "pt": "A poluição do ar é preocupante.",
+   "nota": ""
+  },
+  {
+   "es": "Las energías renovables son el futuro.",
+   "pt": "As energias renováveis são o futuro.",
+   "nota": ""
+  },
+  {
+   "es": "Han instalado paneles solares en el edificio.",
+   "pt": "Instalaram painéis solares no prédio.",
+   "nota": ""
+  },
+  {
+   "es": "El incendio quemó miles de hectáreas.",
+   "pt": "O incêndio queimou milhares de hectares.",
+   "nota": ""
+  },
+  {
+   "es": "Hay que proteger la selva amazónica.",
+   "pt": "É preciso proteger a floresta amazônica.",
+   "nota": ""
+  },
+  {
+   "es": "Muchas especies están en peligro de extinción.",
+   "pt": "Muitas espécies estão em perigo de extinção.",
+   "nota": ""
+  },
+  {
+   "es": "Separo la basura en casa.",
+   "pt": "Separo o lixo em casa.",
+   "nota": ""
+  },
+  {
+   "es": "Prefiero el transporte público.",
+   "pt": "Prefiro o transporte público.",
+   "nota": ""
+  },
+  {
+   "es": "Las inundaciones afectaron a la región.",
+   "pt": "As enchentes afetaram a região.",
+   "nota": ""
+  },
+  {
+   "es": "Sube el nivel del mar.",
+   "pt": "O nível do mar está subindo.",
+   "nota": ""
+  },
+  {
+   "es": "Compro productos locales y de temporada.",
+   "pt": "Compro produtos locais e da estação.",
+   "nota": ""
+  },
+  {
+   "es": "Apaga las luces que no uses.",
+   "pt": "Apague as luzes que não estiver usando.",
+   "nota": ""
+  },
+  {
+   "es": "Plantamos árboles en el barrio.",
+   "pt": "Plantamos árvores no bairro.",
+   "nota": ""
+  },
+  {
+   "es": "Este coche es eléctrico.",
+   "pt": "Este carro é elétrico.",
+   "nota": ""
+  },
+  {
+   "es": "Cada pequeño gesto cuenta.",
+   "pt": "Cada pequeno gesto conta.",
+   "nota": ""
+  }
+ ]
+}

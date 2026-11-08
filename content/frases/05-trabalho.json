@@ -1,0 +1,107 @@
+{
+ "id": "trabalho",
+ "name": "Trabalho",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "¿Podemos agendar una reunión?",
+   "pt": "Podemos marcar uma reunião?",
+   "nota": ""
+  },
+  {
+   "es": "Le escribo para confirmar la cita.",
+   "pt": "Escrevo para confirmar o compromisso.",
+   "nota": "\"Cita\" é compromisso marcado, não só encontro romântico."
+  },
+  {
+   "es": "Le envío el informe hoy.",
+   "pt": "Envio o relatório para o senhor hoje.",
+   "nota": "\"Informe\" é relatório."
+  },
+  {
+   "es": "Estoy de acuerdo contigo.",
+   "pt": "Concordo com você.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me puede repetir, por favor?",
+   "pt": "Pode repetir, por favor?",
+   "nota": "Útil em ligações e reuniões."
+  },
+  {
+   "es": "Quedo a su disposición.",
+   "pt": "Fico à sua disposição.",
+   "nota": "Fechamento comum em e-mails formais."
+  },
+  {
+   "es": "Trabajo en una empresa de tecnología.",
+   "pt": "Trabalho numa empresa de tecnologia.",
+   "nota": ""
+  },
+  {
+   "es": "Hoy trabajo desde casa.",
+   "pt": "Hoje estou trabalhando de casa.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuál es el plazo de entrega?",
+   "pt": "Qual é o prazo de entrega?",
+   "nota": "\"Plazo\" = prazo."
+  },
+  {
+   "es": "Necesito más tiempo para terminarlo.",
+   "pt": "Preciso de mais tempo para terminar.",
+   "nota": ""
+  },
+  {
+   "es": "Tengo mucho trabajo esta semana.",
+   "pt": "Tenho muito trabalho esta semana.",
+   "nota": ""
+  },
+  {
+   "es": "Mi jefe está de viaje.",
+   "pt": "Meu chefe está viajando.",
+   "nota": ""
+  },
+  {
+   "es": "Voy a pedir unos días libres.",
+   "pt": "Vou pedir uns dias de folga.",
+   "nota": ""
+  },
+  {
+   "es": "¿Quién se encarga de este proyecto?",
+   "pt": "Quem é o responsável por este projeto?",
+   "nota": "\"Encargarse de\" = ficar responsável por."
+  },
+  {
+   "es": "Me han ofrecido un nuevo puesto.",
+   "pt": "Me ofereceram um novo cargo.",
+   "nota": "\"Puesto\" é cargo ou vaga de trabalho."
+  },
+  {
+   "es": "Estoy buscando trabajo.",
+   "pt": "Estou procurando emprego.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuánto tiempo llevas en la empresa?",
+   "pt": "Há quanto tempo você está na empresa?",
+   "nota": "\"Llevar\" + tempo indica duração até agora."
+  },
+  {
+   "es": "Salgo del trabajo a las seis.",
+   "pt": "Saio do trabalho às seis.",
+   "nota": ""
+  },
+  {
+   "es": "Tengo una entrevista mañana.",
+   "pt": "Tenho uma entrevista amanhã.",
+   "nota": ""
+  },
+  {
+   "es": "Lo reviso y te digo algo.",
+   "pt": "Vou dar uma olhada e te aviso.",
+   "nota": ""
+  }
+ ]
+}

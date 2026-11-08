@@ -1,0 +1,107 @@
+{
+ "id": "emocoes",
+ "name": "Emoções",
+ "group": "social",
+ "items": [
+  {
+   "es": "Estoy muy contento.",
+   "pt": "Estou muito feliz.",
+   "nota": "\"Contento\" é estar feliz no momento."
+  },
+  {
+   "es": "Me siento un poco triste hoy.",
+   "pt": "Estou me sentindo um pouco triste hoje.",
+   "nota": ""
+  },
+  {
+   "es": "Estoy nervioso por el examen.",
+   "pt": "Estou nervoso por causa da prova.",
+   "nota": ""
+  },
+  {
+   "es": "¡Qué rabia me da!",
+   "pt": "Que raiva isso me dá!",
+   "nota": ""
+  },
+  {
+   "es": "Me da miedo conducir de noche.",
+   "pt": "Tenho medo de dirigir à noite.",
+   "nota": "Na América Latina se diz \"manejar\"."
+  },
+  {
+   "es": "Estoy harto de esperar.",
+   "pt": "Estou farto de esperar.",
+   "nota": ""
+  },
+  {
+   "es": "Me hace mucha ilusión verte.",
+   "pt": "Estou muito animado para te ver.",
+   "nota": "\"Hacer ilusión\" = deixar animado, empolgado."
+  },
+  {
+   "es": "No te preocupes.",
+   "pt": "Não se preocupe.",
+   "nota": ""
+  },
+  {
+   "es": "Estoy orgulloso de ti.",
+   "pt": "Tenho orgulho de você.",
+   "nota": ""
+  },
+  {
+   "es": "Me siento solo a veces.",
+   "pt": "Às vezes me sinto sozinho.",
+   "nota": ""
+  },
+  {
+   "es": "¡Qué alivio!",
+   "pt": "Que alívio!",
+   "nota": ""
+  },
+  {
+   "es": "Me puse muy celoso.",
+   "pt": "Fiquei com muito ciúme.",
+   "nota": "Mudança de estado usa \"ponerse\": me puse nervioso, rojo."
+  },
+  {
+   "es": "Estoy agobiado con tanto trabajo.",
+   "pt": "Estou sobrecarregado com tanto trabalho.",
+   "nota": "\"Agobiado\" = sufocado, sobrecarregado."
+  },
+  {
+   "es": "Me encanta esta canción.",
+   "pt": "Adoro esta música.",
+   "nota": "\"Encantar\" é mais forte que \"gustar\"."
+  },
+  {
+   "es": "No soporto la impuntualidad.",
+   "pt": "Não suporto falta de pontualidade.",
+   "nota": ""
+  },
+  {
+   "es": "Tengo ganas de llorar.",
+   "pt": "Tenho vontade de chorar.",
+   "nota": "\"Tener ganas de\" = ter vontade de."
+  },
+  {
+   "es": "Estoy de buen humor.",
+   "pt": "Estou de bom humor.",
+   "nota": ""
+  },
+  {
+   "es": "Me da vergüenza hablar en público.",
+   "pt": "Tenho vergonha de falar em público.",
+   "nota": ""
+  },
+  {
+   "es": "Lo echo mucho de menos.",
+   "pt": "Sinto muita falta dele.",
+   "nota": "Na América Latina se diz \"lo extraño mucho\"."
+  },
+  {
+   "es": "Estoy emocionado con el viaje.",
+   "pt": "Estou empolgado com a viagem.",
+   "nota": ""
+  }
+ ]
+}

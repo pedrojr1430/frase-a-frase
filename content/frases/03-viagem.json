@@ -1,0 +1,107 @@
+{
+ "id": "viagem",
+ "name": "Viagem",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "¿Dónde está la parada del autobús?",
+   "pt": "Onde fica o ponto de ônibus?",
+   "nota": "Na Argentina se diz \"colectivo\"; no México, \"camión\"."
+  },
+  {
+   "es": "¿A qué hora sale el tren?",
+   "pt": "A que horas sai o trem?",
+   "nota": ""
+  },
+  {
+   "es": "Tengo una reserva para esta noche.",
+   "pt": "Tenho uma reserva para esta noite.",
+   "nota": ""
+  },
+  {
+   "es": "Perdí mi equipaje.",
+   "pt": "Perdi minha bagagem.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuánto cuesta el billete?",
+   "pt": "Quanto custa a passagem?",
+   "nota": "Na América Latina é mais comum \"boleto\"."
+  },
+  {
+   "es": "Estoy buscando un hotel barato.",
+   "pt": "Estou procurando um hotel barato.",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde puedo cambiar dinero?",
+   "pt": "Onde posso trocar dinheiro?",
+   "nota": ""
+  },
+  {
+   "es": "¿Me puede hacer una foto?",
+   "pt": "Pode tirar uma foto minha?",
+   "nota": "Na América Latina é mais comum \"tomar una foto\"."
+  },
+  {
+   "es": "¿Qué me recomienda visitar?",
+   "pt": "O que o senhor recomenda visitar?",
+   "nota": ""
+  },
+  {
+   "es": "¿Está lejos de aquí?",
+   "pt": "Fica longe daqui?",
+   "nota": ""
+  },
+  {
+   "es": "Quisiera un mapa de la ciudad.",
+   "pt": "Eu gostaria de um mapa da cidade.",
+   "nota": ""
+  },
+  {
+   "es": "¿A qué hora abre el museo?",
+   "pt": "A que horas abre o museu?",
+   "nota": ""
+  },
+  {
+   "es": "¿Hay que reservar con antelación?",
+   "pt": "É preciso reservar com antecedência?",
+   "nota": "\"Antelación\" = antecedência."
+  },
+  {
+   "es": "Estamos de vacaciones.",
+   "pt": "Estamos de férias.",
+   "nota": "\"Vacaciones\" é sempre plural."
+  },
+  {
+   "es": "Es mi primera vez aquí.",
+   "pt": "É minha primeira vez aqui.",
+   "nota": ""
+  },
+  {
+   "es": "¿Se puede ir andando?",
+   "pt": "Dá para ir a pé?",
+   "nota": "Na América Latina se diz mais \"caminando\"."
+  },
+  {
+   "es": "¿Dónde está la oficina de turismo?",
+   "pt": "Onde fica o posto de informações turísticas?",
+   "nota": ""
+  },
+  {
+   "es": "Me he perdido.",
+   "pt": "Eu me perdi.",
+   "nota": "Na América Latina é mais comum o passado simples: \"me perdí\"."
+  },
+  {
+   "es": "¿Cuánto se tarda en llegar?",
+   "pt": "Quanto tempo leva para chegar?",
+   "nota": ""
+  },
+  {
+   "es": "Quisiera alquilar una bicicleta.",
+   "pt": "Eu gostaria de alugar uma bicicleta.",
+   "nota": "Alugar = \"alquilar\"; no México também \"rentar\"."
+  }
+ ]
+}

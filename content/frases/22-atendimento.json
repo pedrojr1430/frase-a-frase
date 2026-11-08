@@ -1,0 +1,107 @@
+{
+ "id": "atendimento",
+ "name": "Atendimento ao cliente",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "¿En qué puedo ayudarle?",
+   "pt": "Em que posso ajudar?",
+   "nota": ""
+  },
+  {
+   "es": "Enseguida le atiendo.",
+   "pt": "Já vou atendê-lo.",
+   "nota": ""
+  },
+  {
+   "es": "Disculpe las molestias.",
+   "pt": "Desculpe o transtorno.",
+   "nota": ""
+  },
+  {
+   "es": "Quisiera hacer una reclamación.",
+   "pt": "Gostaria de fazer uma reclamação.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me da su número de pedido?",
+   "pt": "Pode me passar o número do pedido?",
+   "nota": ""
+  },
+  {
+   "es": "Voy a revisarlo ahora mismo.",
+   "pt": "Vou verificar agora mesmo.",
+   "nota": ""
+  },
+  {
+   "es": "Le devolvemos el dinero.",
+   "pt": "Devolvemos o seu dinheiro.",
+   "nota": ""
+  },
+  {
+   "es": "Lo solucionamos en 24 horas.",
+   "pt": "Resolvemos em 24 horas.",
+   "nota": ""
+  },
+  {
+   "es": "Entiendo su situación.",
+   "pt": "Entendo a sua situação.",
+   "nota": ""
+  },
+  {
+   "es": "Le paso con el departamento correspondiente.",
+   "pt": "Vou transferi-lo para o departamento responsável.",
+   "nota": ""
+  },
+  {
+   "es": "¿Hay algo más en lo que pueda ayudarle?",
+   "pt": "Posso ajudar em mais alguma coisa?",
+   "nota": ""
+  },
+  {
+   "es": "El producto llegó dañado.",
+   "pt": "O produto chegou danificado.",
+   "nota": ""
+  },
+  {
+   "es": "Todavía no he recibido el pedido.",
+   "pt": "Ainda não recebi o pedido.",
+   "nota": ""
+  },
+  {
+   "es": "Le enviaremos uno nuevo sin coste.",
+   "pt": "Enviaremos um novo sem custo.",
+   "nota": ""
+  },
+  {
+   "es": "¿Podría rellenar este formulario?",
+   "pt": "Poderia preencher este formulário?",
+   "nota": "\"Rellenar\" na Espanha; \"llenar\" na América Latina."
+  },
+  {
+   "es": "Su opinión es muy importante para nosotros.",
+   "pt": "Sua opinião é muito importante para nós.",
+   "nota": ""
+  },
+  {
+   "es": "Lamento lo ocurrido.",
+   "pt": "Lamento o ocorrido.",
+   "nota": ""
+  },
+  {
+   "es": "El horario de atención es de nueve a seis.",
+   "pt": "O horário de atendimento é das nove às seis.",
+   "nota": ""
+  },
+  {
+   "es": "Le atendemos por orden de llegada.",
+   "pt": "Atendemos por ordem de chegada.",
+   "nota": ""
+  },
+  {
+   "es": "Gracias por su paciencia.",
+   "pt": "Obrigado pela paciência.",
+   "nota": ""
+  }
+ ]
+}

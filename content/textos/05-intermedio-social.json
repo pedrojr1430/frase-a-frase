@@ -1,0 +1,772 @@
+[
+ {
+  "tema": "social",
+  "title": "Compartir piso",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Cuando empecé la universidad, decidí compartir piso con dos chicas que no conocía.",
+    "Quando comecei a faculdade, decidi dividir apartamento com duas garotas que eu não conhecia."
+   ],
+   [
+    "Al principio todo iba bien, pero pronto surgieron los primeros problemas.",
+    "No começo tudo ia bem, mas logo surgiram os primeiros problemas."
+   ],
+   [
+    "Una de ellas nunca fregaba los platos y la otra ponía música hasta las tres de la mañana.",
+    "Uma delas nunca lavava a louça e a outra punha música até as três da manhã."
+   ],
+   [
+    "Un domingo nos sentamos las tres en la cocina para hablar con calma.",
+    "Num domingo nos sentamos as três na cozinha para conversar com calma."
+   ],
+   [
+    "Hicimos una lista de tareas y acordamos unas normas básicas de convivencia.",
+    "Fizemos uma lista de tarefas e combinamos algumas regras básicas de convivência."
+   ],
+   [
+    "Desde entonces, la casa funciona mucho mejor.",
+    "Desde então, a casa funciona muito melhor."
+   ],
+   [
+    "Hoy, cinco años después, seguimos siendo grandes amigas.",
+    "Hoje, cinco anos depois, continuamos sendo grandes amigas."
+   ]
+  ],
+  "words": [
+   [
+    "compartir piso",
+    "dividir apartamento"
+   ],
+   [
+    "surgir",
+    "surgir"
+   ],
+   [
+    "fregar los platos",
+    "lavar a louça"
+   ],
+   [
+    "acordar",
+    "combinar"
+   ],
+   [
+    "la convivencia",
+    "a convivência"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era o problema de uma das colegas?",
+    "options": [
+     "Nunca lavava a louça",
+     "Não pagava o aluguel",
+     "Levava visitas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como elas resolveram os problemas?",
+    "options": [
+     "Conversaram e criaram regras",
+     "Uma delas se mudou",
+     "Chamaram o proprietário"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como é a relação delas hoje?",
+    "options": [
+     "Não se falam",
+     "São apenas conhecidas",
+     "Continuam grandes amigas"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "La boda de mi prima",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "El mes pasado se casó mi prima Lucía en un pueblo de Andalucía.",
+    "No mês passado minha prima Lucía se casou numa cidadezinha da Andaluzia."
+   ],
+   [
+    "La ceremonia fue en una pequeña iglesia y después hubo un banquete en un cortijo.",
+    "A cerimônia foi numa pequena igreja e depois houve um banquete numa fazenda."
+   ],
+   [
+    "Éramos casi doscientos invitados, muchos de ellos de fuera.",
+    "Éramos quase duzentos convidados, muitos deles de fora."
+   ],
+   [
+    "La cena empezó a las diez y no terminó hasta la medianoche.",
+    "O jantar começou às dez e só terminou à meia-noite."
+   ],
+   [
+    "Luego los novios abrieron el baile con un vals.",
+    "Depois os noivos abriram a pista com uma valsa."
+   ],
+   [
+    "Bailamos sevillanas, salsa y hasta reguetón.",
+    "Dançamos sevilhanas, salsa e até reggaeton."
+   ],
+   [
+    "Volví al hotel a las seis de la mañana, sin voz y con los pies destrozados.",
+    "Voltei ao hotel às seis da manhã, sem voz e com os pés destruídos."
+   ]
+  ],
+  "words": [
+   [
+    "casarse",
+    "casar-se"
+   ],
+   [
+    "el banquete",
+    "o banquete"
+   ],
+   [
+    "el cortijo",
+    "a fazenda andaluza"
+   ],
+   [
+    "los novios",
+    "os noivos"
+   ],
+   [
+    "destrozado",
+    "destruído"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde foi o banquete?",
+    "options": [
+     "Na praia",
+     "Num hotel",
+     "Numa fazenda"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Quantos convidados havia?",
+    "options": [
+     "Mais de quinhentos",
+     "Quase duzentos",
+     "Cerca de cinquenta"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como o narrador voltou ao hotel?",
+    "options": [
+     "Cedo e descansado",
+     "De táxi com a prima",
+     "Sem voz e com os pés destruídos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Aprender a cocinar",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Hasta los treinta años, yo no sabía cocinar ni un huevo frito.",
+    "Até os trinta anos, eu não sabia fritar nem um ovo."
+   ],
+   [
+    "Comía casi siempre fuera o pedía comida a domicilio.",
+    "Comia quase sempre fora ou pedia comida em casa."
+   ],
+   [
+    "Un día me di cuenta de que gastaba demasiado dinero y comía fatal.",
+    "Um dia percebi que gastava dinheiro demais e comia muito mal."
+   ],
+   [
+    "Me apunté a un curso de cocina los martes por la tarde.",
+    "Me inscrevi num curso de culinária às terças à tarde."
+   ],
+   [
+    "Aprendí a hacer arroces, guisos y algunas recetas de pasta.",
+    "Aprendi a fazer arrozes, ensopados e algumas receitas de massa."
+   ],
+   [
+    "Ahora cocino casi todos los días y a veces invito a mis amigos.",
+    "Agora cozinho quase todo dia e às vezes convido meus amigos."
+   ],
+   [
+    "Lo mejor es que cocinar me relaja después del trabajo.",
+    "O melhor é que cozinhar me relaxa depois do trabalho."
+   ]
+  ],
+  "words": [
+   [
+    "a domicilio",
+    "em domicílio, delivery"
+   ],
+   [
+    "darse cuenta",
+    "perceber"
+   ],
+   [
+    "fatal",
+    "muito mal"
+   ],
+   [
+    "apuntarse",
+    "inscrever-se"
+   ],
+   [
+    "el guiso",
+    "o ensopado"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que o narrador decidiu aprender a cozinhar?",
+    "options": [
+     "Para impressionar alguém",
+     "Gastava muito e comia mal",
+     "Perdeu o emprego"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quando era o curso?",
+    "options": [
+     "Aos sábados",
+     "Todos os dias",
+     "Às terças à tarde"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que cozinhar faz pelo narrador hoje?",
+    "options": [
+     "Relaxa depois do trabalho",
+     "Cansa muito",
+     "Dá dinheiro"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Vecinos ruidosos",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Hace unos meses se mudó una familia nueva al piso de arriba.",
+    "Há alguns meses uma família nova se mudou para o apartamento de cima."
+   ],
+   [
+    "Desde el primer día empezamos a oír ruidos a todas horas.",
+    "Desde o primeiro dia começamos a ouvir barulhos a toda hora."
+   ],
+   [
+    "Los niños corrían por el pasillo y movían muebles por la noche.",
+    "As crianças corriam pelo corredor e mudavam móveis de lugar à noite."
+   ],
+   [
+    "Después de dos semanas sin dormir bien, subí a hablar con ellos.",
+    "Depois de duas semanas sem dormir direito, subi para falar com eles."
+   ],
+   [
+    "Me abrió la madre, muy amable, y me pidió disculpas.",
+    "A mãe me atendeu, muito gentil, e me pediu desculpas."
+   ],
+   [
+    "Me explicó que todavía estaban montando los muebles y que pondrían alfombras.",
+    "Explicou que ainda estavam montando os móveis e que iam pôr tapetes."
+   ],
+   [
+    "Ahora hay mucho menos ruido y, de vez en cuando, nos traen un trozo de bizcocho.",
+    "Agora há muito menos barulho e, de vez em quando, eles nos trazem um pedaço de bolo."
+   ]
+  ],
+  "words": [
+   [
+    "el piso de arriba",
+    "o apartamento de cima"
+   ],
+   [
+    "el pasillo",
+    "o corredor"
+   ],
+   [
+    "los muebles",
+    "os móveis"
+   ],
+   [
+    "pedir disculpas",
+    "pedir desculpas"
+   ],
+   [
+    "la alfombra",
+    "o tapete"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De onde vinha o barulho?",
+    "options": [
+     "Da rua",
+     "Do apartamento de cima",
+     "Do apartamento ao lado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como a mãe reagiu?",
+    "options": [
+     "Foi gentil e pediu desculpas",
+     "Não abriu a porta",
+     "Ficou brava"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que a família prometeu fazer?",
+    "options": [
+     "Mudar-se",
+     "Pôr tapetes",
+     "Vender os móveis"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Una amistad a distancia",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Conocí a Inés en un intercambio de idiomas en Lisboa hace ocho años.",
+    "Conheci Inés num intercâmbio de idiomas em Lisboa há oito anos."
+   ],
+   [
+    "Ella quería mejorar su portugués y yo mi español, así que quedábamos cada semana.",
+    "Ela queria melhorar o português e eu o espanhol, então nos encontrávamos toda semana."
+   ],
+   [
+    "Cuando terminó su beca, volvió a Salamanca y pensé que perderíamos el contacto.",
+    "Quando a bolsa dela terminou, ela voltou para Salamanca e pensei que perderíamos o contato."
+   ],
+   [
+    "Sin embargo, empezamos a escribirnos largos correos casi todas las semanas.",
+    "No entanto, começamos a trocar e-mails longos quase toda semana."
+   ],
+   [
+    "Con el tiempo, nos visitamos varias veces y viajamos juntas por Marruecos.",
+    "Com o tempo, nos visitamos várias vezes e viajamos juntas pelo Marrocos."
+   ],
+   [
+    "Hoy hablamos más en español que en portugués, porque ella dice que yo necesito más práctica.",
+    "Hoje falamos mais em espanhol que em português, porque ela diz que eu preciso de mais prática."
+   ],
+   [
+    "Para mí, es la prueba de que la distancia no rompe una buena amistad.",
+    "Para mim, é a prova de que a distância não rompe uma boa amizade."
+   ]
+  ],
+  "words": [
+   [
+    "el intercambio",
+    "o intercâmbio"
+   ],
+   [
+    "la beca",
+    "a bolsa de estudos"
+   ],
+   [
+    "sin embargo",
+    "no entanto"
+   ],
+   [
+    "la prueba",
+    "a prova"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde as amigas se conheceram?",
+    "options": [
+     "Em Salamanca",
+     "Em Lisboa",
+     "No Marrocos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Por que Inés voltou para Salamanca?",
+    "options": [
+     "A bolsa terminou",
+     "Arrumou um namorado",
+     "Não gostou de Lisboa"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Em que idioma conversam mais hoje?",
+    "options": [
+     "Inglês",
+     "Espanhol",
+     "Português"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El gimnasio de enero",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Cada año, el 2 de enero, el gimnasio de mi barrio se llena de gente nueva.",
+    "Todo ano, no dia 2 de janeiro, a academia do meu bairro fica cheia de gente nova."
+   ],
+   [
+    "Todos llegan con ropa deportiva recién comprada y muchas ganas.",
+    "Todos chegam com roupa esportiva recém-comprada e muita vontade."
+   ],
+   [
+    "Hay colas para usar las cintas de correr y no quedan sitios en las clases.",
+    "Há filas para usar as esteiras e não sobram vagas nas aulas."
+   ],
+   [
+    "Sin embargo, a mediados de febrero el gimnasio vuelve a estar casi vacío.",
+    "No entanto, em meados de fevereiro a academia volta a ficar quase vazia."
+   ],
+   [
+    "El entrenador dice que el problema es querer resultados demasiado rápido.",
+    "O treinador diz que o problema é querer resultados rápido demais."
+   ],
+   [
+    "Su consejo es empezar con dos días por semana y aumentar poco a poco.",
+    "O conselho dele é começar com dois dias por semana e aumentar aos poucos."
+   ],
+   [
+    "Este año lo he seguido y, por primera vez, sigo yendo en abril.",
+    "Este ano segui o conselho e, pela primeira vez, continuo indo em abril."
+   ]
+  ],
+  "words": [
+   [
+    "llenarse",
+    "encher-se"
+   ],
+   [
+    "la cinta de correr",
+    "a esteira"
+   ],
+   [
+    "a mediados de",
+    "em meados de"
+   ],
+   [
+    "el consejo",
+    "o conselho"
+   ],
+   [
+    "poco a poco",
+    "aos poucos"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que acontece na academia em janeiro?",
+    "options": [
+     "Fica cheia de gente nova",
+     "Fecha para reforma",
+     "Fica vazia"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual é o problema, segundo o treinador?",
+    "options": [
+     "O preço alto",
+     "Querer resultados rápido demais",
+     "Falta de equipamentos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é o conselho do treinador?",
+    "options": [
+     "Treinar todos os dias",
+     "Fazer só aulas em grupo",
+     "Começar com dois dias e aumentar aos poucos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Una visita inesperada",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "El sábado por la mañana sonó el timbre mientras yo todavía estaba en pijama.",
+    "No sábado de manhã a campainha tocou enquanto eu ainda estava de pijama."
+   ],
+   [
+    "Era mi tío Ernesto, que había venido desde Rosario sin avisar.",
+    "Era meu tio Ernesto, que tinha vindo de Rosário sem avisar."
+   ],
+   [
+    "Traía una caja de alfajores y una maleta que parecía para un mes.",
+    "Trazia uma caixa de alfajores e uma mala que parecia ser para um mês."
+   ],
+   [
+    "Me contó que quería darme una sorpresa por mi cumpleaños.",
+    "Me contou que queria me fazer uma surpresa pelo meu aniversário."
+   ],
+   [
+    "El problema era que mi cumpleaños había sido la semana anterior.",
+    "O problema era que meu aniversário tinha sido na semana anterior."
+   ],
+   [
+    "Nos reímos muchísimo y decidimos celebrarlo de nuevo esa noche.",
+    "Rimos muito e decidimos comemorar de novo naquela noite."
+   ],
+   [
+    "Al final, fue uno de los mejores fines de semana del año.",
+    "No final, foi um dos melhores fins de semana do ano."
+   ]
+  ],
+  "words": [
+   [
+    "el timbre",
+    "a campainha"
+   ],
+   [
+    "sin avisar",
+    "sem avisar"
+   ],
+   [
+    "los alfajores",
+    "os alfajores"
+   ],
+   [
+    "la sorpresa",
+    "a surpresa"
+   ],
+   [
+    "de nuevo",
+    "de novo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quem chegou sem avisar?",
+    "options": [
+     "O primo",
+     "Um amigo",
+     "O tio Ernesto"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual era o erro do tio?",
+    "options": [
+     "O aniversário já tinha passado",
+     "Errou o endereço",
+     "Chegou no dia errado da semana"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que fizeram naquela noite?",
+    "options": [
+     "O tio voltou para casa",
+     "Comemoraram de novo",
+     "Foram ao cinema"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El valor de los abuelos",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "En muchos países de América Latina, los abuelos tienen un papel fundamental en la familia.",
+    "Em muitos países da América Latina, os avós têm um papel fundamental na família."
+   ],
+   [
+    "Cuando los padres trabajan, son ellos quienes recogen a los niños del colegio.",
+    "Quando os pais trabalham, são eles que buscam as crianças na escola."
+   ],
+   [
+    "Les preparan la merienda, los ayudan con los deberes y les cuentan historias.",
+    "Preparam o lanche, ajudam com a lição de casa e contam histórias."
+   ],
+   [
+    "Muchos nietos aprenden de sus abuelos recetas, canciones y tradiciones.",
+    "Muitos netos aprendem com os avós receitas, músicas e tradições."
+   ],
+   [
+    "Esta ayuda también permite a las familias ahorrar en guarderías.",
+    "Essa ajuda também permite às famílias economizar com creche."
+   ],
+   [
+    "Sin embargo, algunos expertos advierten que no hay que exigirles demasiado.",
+    "No entanto, alguns especialistas alertam que não se deve exigir demais deles."
+   ],
+   [
+    "Los abuelos también necesitan tiempo para descansar y disfrutar de su jubilación.",
+    "Os avós também precisam de tempo para descansar e aproveitar a aposentadoria."
+   ]
+  ],
+  "words": [
+   [
+    "el papel",
+    "o papel"
+   ],
+   [
+    "la merienda",
+    "o lanche da tarde"
+   ],
+   [
+    "los deberes",
+    "a lição de casa"
+   ],
+   [
+    "advertir",
+    "alertar"
+   ],
+   [
+    "la jubilación",
+    "a aposentadoria"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que os avós fazem quando os pais trabalham?",
+    "options": [
+     "Buscam as crianças e cuidam delas",
+     "Limpam a casa",
+     "Trabalham também"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que economia essa ajuda permite?",
+    "options": [
+     "Com comida",
+     "Com creche",
+     "Com transporte"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que alguns especialistas alertam?",
+    "options": [
+     "Que os avós mimam demais",
+     "Que as crianças aprendem pouco",
+     "Que não se deve exigir demais deles"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Volver al pueblo",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Cada verano, Javier vuelve al pueblo de sus padres, en Galicia.",
+    "Todo verão, Javier volta à cidadezinha dos pais, na Galícia."
+   ],
+   [
+    "En invierno apenas viven allí doscientas personas, casi todas mayores.",
+    "No inverno moram lá apenas duzentas pessoas, quase todas idosas."
+   ],
+   [
+    "Pero en agosto la población se triplica y las calles se llenan de niños.",
+    "Mas em agosto a população triplica e as ruas se enchem de crianças."
+   ],
+   [
+    "Javier se reencuentra con amigos de la infancia que ahora viven en Madrid, Londres o Buenos Aires.",
+    "Javier reencontra amigos de infância que agora moram em Madri, Londres ou Buenos Aires."
+   ],
+   [
+    "Por las noches hay verbenas en la plaza y todos bailan hasta tarde.",
+    "À noite há festas populares na praça e todos dançam até tarde."
+   ],
+   [
+    "A Javier le gustaría vivir allí todo el año, pero no hay trabajo para él.",
+    "Javier gostaria de morar lá o ano todo, mas não há trabalho para ele."
+   ],
+   [
+    "Quizá algún día, con el teletrabajo, pueda hacerlo.",
+    "Talvez algum dia, com o trabalho remoto, ele consiga."
+   ]
+  ],
+  "words": [
+   [
+    "apenas",
+    "apenas, mal"
+   ],
+   [
+    "triplicarse",
+    "triplicar"
+   ],
+   [
+    "reencontrarse",
+    "reencontrar-se"
+   ],
+   [
+    "la verbena",
+    "a festa popular"
+   ],
+   [
+    "quizá",
+    "talvez"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantas pessoas moram na cidadezinha no inverno?",
+    "options": [
+     "Cerca de duzentas",
+     "Duas mil",
+     "Vinte mil"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que acontece em agosto?",
+    "options": [
+     "A população triplica",
+     "A cidade fica vazia",
+     "Há uma eleição"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que Javier não mora lá o ano todo?",
+    "options": [
+     "Não gosta do frio",
+     "Não há trabalho para ele",
+     "A casa é pequena"
+    ],
+    "correct": 1
+   }
+  ]
+ }
+]

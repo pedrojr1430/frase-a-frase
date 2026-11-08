@@ -1,0 +1,812 @@
+[
+ {
+  "tema": "viagem",
+  "title": "El turismo masivo",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Ciudades como Barcelona, Venecia o Cartagena de Indias reciben cada año millones de visitantes.",
+    "Cidades como Barcelona, Veneza ou Cartagena das Índias recebem todo ano milhões de visitantes."
+   ],
+   [
+    "El turismo genera empleo y riqueza, pero también tensiones cada vez más visibles.",
+    "O turismo gera emprego e riqueza, mas também tensões cada vez mais visíveis."
+   ],
+   [
+    "Los vecinos de los centros históricos denuncian que sus barrios se han convertido en parques temáticos.",
+    "Os moradores dos centros históricos denunciam que seus bairros viraram parques temáticos."
+   ],
+   [
+    "Las tiendas de toda la vida han dado paso a franquicias y locales de recuerdos.",
+    "As lojas tradicionais deram lugar a franquias e lojas de souvenirs."
+   ],
+   [
+    "Algunas ciudades han impuesto tasas turísticas o limitado la llegada de cruceros.",
+    "Algumas cidades impuseram taxas turísticas ou limitaram a chegada de cruzeiros."
+   ],
+   [
+    "Otras apuestan por repartir a los visitantes hacia barrios y temporadas menos saturados.",
+    "Outras apostam em distribuir os visitantes para bairros e temporadas menos saturados."
+   ],
+   [
+    "El reto consiste en que el turismo beneficie a quienes viven allí, y no solo a quienes lo visitan.",
+    "O desafio é fazer o turismo beneficiar quem mora lá, e não só quem o visita."
+   ]
+  ],
+  "words": [
+   [
+    "la riqueza",
+    "a riqueza"
+   ],
+   [
+    "de toda la vida",
+    "tradicional, de sempre"
+   ],
+   [
+    "dar paso a",
+    "dar lugar a"
+   ],
+   [
+    "la tasa",
+    "a taxa"
+   ],
+   [
+    "apostar por",
+    "apostar em"
+   ],
+   [
+    "el reto",
+    "o desafio"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Do que os moradores dos centros históricos reclamam?",
+    "options": [
+     "Da falta de turistas",
+     "Do transporte",
+     "De os bairros virarem parques temáticos"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Que medida algumas cidades adotaram?",
+    "options": [
+     "Proibir o turismo",
+     "Fechar museus",
+     "Taxas turísticas ou limite de cruzeiros"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual é o desafio, segundo o texto?",
+    "options": [
+     "Que o turismo beneficie os moradores",
+     "Construir mais hotéis",
+     "Atrair mais turistas"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Viajar sin avión",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Cuando Clara decidió ir de Madrid a Estambul sin subirse a un avión, sus amigos pensaron que bromeaba.",
+    "Quando Clara decidiu ir de Madri a Istambul sem entrar num avião, os amigos acharam que era brincadeira."
+   ],
+   [
+    "Tardó doce días, combinando trenes nocturnos, autobuses y un ferry por el Adriático.",
+    "Levou doze dias, combinando trens noturnos, ônibus e uma balsa pelo Adriático."
+   ],
+   [
+    "Su motivación era reducir su huella de carbono, aunque pronto descubrió otras ventajas.",
+    "Sua motivação era reduzir sua pegada de carbono, mas logo descobriu outras vantagens."
+   ],
+   [
+    "Al viajar despacio, percibía cómo cambiaban gradualmente el paisaje, la comida y los idiomas.",
+    "Viajando devagar, percebia como mudavam gradualmente a paisagem, a comida e as línguas."
+   ],
+   [
+    "No todo fue idílico: perdió una conexión en Belgrado y tuvo que dormir en una estación.",
+    "Nem tudo foi idílico: perdeu uma conexão em Belgrado e teve que dormir numa estação."
+   ],
+   [
+    "Aun así, asegura que fue el viaje más memorable de su vida.",
+    "Mesmo assim, garante que foi a viagem mais memorável da vida dela."
+   ],
+   [
+    "Reconoce, eso sí, que no todo el mundo puede permitirse dedicar tanto tiempo a desplazarse.",
+    "Reconhece, porém, que nem todo mundo pode se dar ao luxo de dedicar tanto tempo para se deslocar."
+   ]
+  ],
+  "words": [
+   [
+    "bromear",
+    "brincar"
+   ],
+   [
+    "la huella de carbono",
+    "a pegada de carbono"
+   ],
+   [
+    "percibir",
+    "perceber"
+   ],
+   [
+    "aun así",
+    "mesmo assim"
+   ],
+   [
+    "permitirse",
+    "dar-se ao luxo"
+   ],
+   [
+    "desplazarse",
+    "deslocar-se"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quanto tempo durou a viagem de Clara?",
+    "options": [
+     "Doze semanas",
+     "Doze horas",
+     "Doze dias"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual era a motivação principal?",
+    "options": [
+     "Medo de avião",
+     "Economizar dinheiro",
+     "Reduzir a pegada de carbono"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Que limitação Clara reconhece?",
+    "options": [
+     "É perigoso",
+     "Viajar devagar exige tempo",
+     "É mais caro"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "La Patagonia",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "La Patagonia, compartida por Argentina y Chile, es una de las regiones menos pobladas del planeta.",
+    "A Patagônia, dividida entre Argentina e Chile, é uma das regiões menos povoadas do planeta."
+   ],
+   [
+    "Sus paisajes alternan estepas interminables, glaciares, lagos turquesa y montañas de granito.",
+    "Suas paisagens alternam estepes intermináveis, geleiras, lagos turquesa e montanhas de granito."
+   ],
+   [
+    "El viento es tan constante y violento que los árboles crecen inclinados.",
+    "O vento é tão constante e violento que as árvores crescem inclinadas."
+   ],
+   [
+    "Durante siglos fue habitada por pueblos como los tehuelches y los mapuches.",
+    "Durante séculos foi habitada por povos como os tehuelches e os mapuches."
+   ],
+   [
+    "A finales del siglo XIX llegaron colonos galeses, cuya herencia aún se percibe en algunos pueblos.",
+    "No final do século XIX chegaram colonos galeses, cuja herança ainda se percebe em algumas cidades."
+   ],
+   [
+    "Hoy atrae a montañistas y viajeros en busca de naturaleza en estado puro.",
+    "Hoje atrai montanhistas e viajantes em busca de natureza em estado puro."
+   ],
+   [
+    "Sin embargo, el retroceso de los glaciares recuerda que incluso este rincón remoto sufre el cambio climático.",
+    "No entanto, o recuo das geleiras lembra que até este canto remoto sofre com a mudança climática."
+   ]
+  ],
+  "words": [
+   [
+    "poblado",
+    "povoado"
+   ],
+   [
+    "la estepa",
+    "a estepe"
+   ],
+   [
+    "el glaciar",
+    "a geleira"
+   ],
+   [
+    "los colonos",
+    "os colonos"
+   ],
+   [
+    "cuyo",
+    "cujo"
+   ],
+   [
+    "el retroceso",
+    "o recuo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que as árvores crescem inclinadas?",
+    "options": [
+     "Pela neve",
+     "Pelo vento constante",
+     "Pelo solo"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Que colonos chegaram no século XIX?",
+    "options": [
+     "Alemães",
+     "Galeses",
+     "Italianos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que mostra que a região sofre com a mudança climática?",
+    "options": [
+     "A falta de chuva",
+     "O aumento do turismo",
+     "O recuo das geleiras"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Expatriados y nómadas digitales",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Ciudades como Medellín, Lisboa o Ciudad de México se han convertido en destinos favoritos de los nómadas digitales.",
+    "Cidades como Medellín, Lisboa ou Cidade do México se tornaram destinos favoritos dos nômades digitais."
+   ],
+   [
+    "Atraídos por el clima, el coste de vida y la buena conexión, llegan con salarios de países más ricos.",
+    "Atraídos pelo clima, pelo custo de vida e pela boa conexão, chegam com salários de países mais ricos."
+   ],
+   [
+    "Para la economía local suponen ingresos en cafeterías, espacios de coworking y alojamientos.",
+    "Para a economia local representam renda em cafés, espaços de coworking e hospedagens."
+   ],
+   [
+    "No obstante, su llegada masiva ha disparado los alquileres en ciertos barrios.",
+    "No entanto, a chegada em massa fez disparar os aluguéis em certos bairros."
+   ],
+   [
+    "Muchos residentes se ven obligados a mudarse lejos del lugar donde crecieron.",
+    "Muitos moradores se veem obrigados a se mudar para longe do lugar onde cresceram."
+   ],
+   [
+    "Algunos gobiernos ofrecen visados especiales para atraerlos, mientras que otros intentan regular su impacto.",
+    "Alguns governos oferecem vistos especiais para atraí-los, enquanto outros tentam regular seu impacto."
+   ],
+   [
+    "El fenómeno plantea una pregunta incómoda: ¿quién tiene derecho a vivir en una ciudad?",
+    "O fenômeno levanta uma pergunta incômoda: quem tem direito a viver numa cidade?"
+   ]
+  ],
+  "words": [
+   [
+    "el coste de vida",
+    "o custo de vida"
+   ],
+   [
+    "suponer",
+    "representar"
+   ],
+   [
+    "los ingresos",
+    "a renda"
+   ],
+   [
+    "no obstante",
+    "no entanto"
+   ],
+   [
+    "disparar",
+    "disparar"
+   ],
+   [
+    "el visado",
+    "o visto"
+   ],
+   [
+    "plantear",
+    "levantar (uma questão)"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que atrai os nômades digitais a essas cidades?",
+    "options": [
+     "Clima, custo de vida e conexão",
+     "Universidades",
+     "Empregos locais"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que efeito negativo o texto aponta?",
+    "options": [
+     "Falta de internet",
+     "Aumento da criminalidade",
+     "Aumento dos aluguéis"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como alguns governos reagem?",
+    "options": [
+     "Proibindo estrangeiros",
+     "Ignorando o tema",
+     "Com vistos especiais ou regulação"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Una noche en urgencias",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Estábamos en Oaxaca cuando, a medianoche, mi hermano empezó a sentir un dolor agudo en el abdomen.",
+    "Estávamos em Oaxaca quando, à meia-noite, meu irmão começou a sentir uma dor aguda no abdômen."
+   ],
+   [
+    "El recepcionista del hotel nos llamó un taxi y nos indicó el hospital más cercano.",
+    "O recepcionista do hotel chamou um táxi e nos indicou o hospital mais próximo."
+   ],
+   [
+    "En urgencias, una enfermera nos hizo una serie de preguntas que apenas logré entender por los nervios.",
+    "No pronto-socorro, uma enfermeira nos fez uma série de perguntas que mal consegui entender de nervoso."
+   ],
+   [
+    "Tuve que explicar los síntomas, cuándo habían empezado y si mi hermano era alérgico a algún medicamento.",
+    "Tive que explicar os sintomas, quando tinham começado e se meu irmão era alérgico a algum remédio."
+   ],
+   [
+    "Tras varias pruebas, el médico diagnosticó una apendicitis y decidió operarlo esa misma noche.",
+    "Depois de vários exames, o médico diagnosticou apendicite e decidiu operá-lo naquela mesma noite."
+   ],
+   [
+    "Afortunadamente, habíamos contratado un seguro de viaje que cubrió todos los gastos.",
+    "Felizmente, tínhamos contratado um seguro-viagem que cobriu todas as despesas."
+   ],
+   [
+    "Desde entonces, nunca salgo de viaje sin seguro y sin saber describir síntomas básicos en el idioma local.",
+    "Desde então, nunca viajo sem seguro e sem saber descrever sintomas básicos na língua local."
+   ]
+  ],
+  "words": [
+   [
+    "agudo",
+    "agudo"
+   ],
+   [
+    "urgencias",
+    "o pronto-socorro"
+   ],
+   [
+    "apenas",
+    "mal"
+   ],
+   [
+    "lograr",
+    "conseguir"
+   ],
+   [
+    "las pruebas",
+    "os exames"
+   ],
+   [
+    "cubrir",
+    "cobrir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que o irmão do narrador sentiu?",
+    "options": [
+     "Dor de cabeça",
+     "Febre alta",
+     "Dor aguda no abdômen"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual foi o diagnóstico?",
+    "options": [
+     "Apendicite",
+     "Intoxicação alimentar",
+     "Gastrite"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que cobriu as despesas?",
+    "options": [
+     "O hospital público",
+     "O seguro-viagem",
+     "O hotel"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Los paradores de España",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Los paradores son una red pública de hoteles situados, en muchos casos, en edificios históricos.",
+    "Os paradores são uma rede pública de hotéis situados, em muitos casos, em edifícios históricos."
+   ],
+   [
+    "La idea surgió en 1910, con el objetivo de promover el turismo en zonas poco conocidas.",
+    "A ideia surgiu em 1910, com o objetivo de promover o turismo em áreas pouco conhecidas."
+   ],
+   [
+    "Hoy es posible dormir en un castillo medieval, en un antiguo convento o en un palacio renacentista.",
+    "Hoje é possível dormir num castelo medieval, num antigo convento ou num palácio renascentista."
+   ],
+   [
+    "La restauración de estos edificios ha permitido salvar de la ruina un patrimonio valiosísimo.",
+    "A restauração desses edifícios permitiu salvar da ruína um patrimônio valiosíssimo."
+   ],
+   [
+    "Además, sus restaurantes se esfuerzan por recuperar la gastronomía tradicional de cada región.",
+    "Além disso, seus restaurantes se esforçam para recuperar a gastronomia tradicional de cada região."
+   ],
+   [
+    "Aunque no son baratos, ofrecen descuentos para jóvenes y mayores de cincuenta y cinco años.",
+    "Embora não sejam baratos, oferecem descontos para jovens e maiores de cinquenta e cinco anos."
+   ],
+   [
+    "Alojarse en uno de ellos es, para muchos viajeros, una forma de viajar también en el tiempo.",
+    "Hospedar-se num deles é, para muitos viajantes, uma forma de viajar também no tempo."
+   ]
+  ],
+  "words": [
+   [
+    "la red",
+    "a rede"
+   ],
+   [
+    "el convento",
+    "o convento"
+   ],
+   [
+    "renacentista",
+    "renascentista"
+   ],
+   [
+    "la ruina",
+    "a ruína"
+   ],
+   [
+    "esforzarse",
+    "esforçar-se"
+   ],
+   [
+    "alojarse",
+    "hospedar-se"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que são os paradores?",
+    "options": [
+     "Museus",
+     "Restaurantes privados",
+     "Uma rede pública de hotéis em edifícios históricos"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual era o objetivo original em 1910?",
+    "options": [
+     "Promover o turismo em áreas pouco conhecidas",
+     "Abrigar soldados",
+     "Hospedar a realeza"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que descontos eles oferecem?",
+    "options": [
+     "Para famílias grandes",
+     "Para estudantes estrangeiros",
+     "Para jovens e maiores de 55 anos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Turismo de idiomas",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Cada año, cientos de miles de estudiantes viajan a países hispanohablantes para aprender el idioma.",
+    "Todo ano, centenas de milhares de estudantes viajam para países de língua espanhola para aprender o idioma."
+   ],
+   [
+    "Salamanca, por ejemplo, lleva siglos atrayendo a estudiantes de todo el mundo.",
+    "Salamanca, por exemplo, atrai estudantes do mundo todo há séculos."
+   ],
+   [
+    "La inmersión total, viviendo con una familia local, suele acelerar notablemente el aprendizaje.",
+    "A imersão total, morando com uma família local, costuma acelerar notavelmente o aprendizado."
+   ],
+   [
+    "Sin embargo, muchos alumnos caen en la trampa de relacionarse solo con compañeros de su propio país.",
+    "No entanto, muitos alunos caem na armadilha de se relacionar só com colegas do próprio país."
+   ],
+   [
+    "Los profesores recomiendan apuntarse a actividades locales, como un club deportivo o un coro.",
+    "Os professores recomendam entrar em atividades locais, como um clube esportivo ou um coral."
+   ],
+   [
+    "Hoy compiten con este modelo las clases en línea con profesores nativos.",
+    "Hoje concorrem com esse modelo as aulas on-line com professores nativos."
+   ],
+   [
+    "Aun así, para muchos, nada sustituye la experiencia de equivocarse en una panadería real.",
+    "Mesmo assim, para muitos, nada substitui a experiência de errar numa padaria de verdade."
+   ]
+  ],
+  "words": [
+   [
+    "hispanohablante",
+    "de língua espanhola"
+   ],
+   [
+    "la inmersión",
+    "a imersão"
+   ],
+   [
+    "la trampa",
+    "a armadilha"
+   ],
+   [
+    "el coro",
+    "o coral"
+   ],
+   [
+    "sustituir",
+    "substituir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que costuma acelerar o aprendizado?",
+    "options": [
+     "Estudar sozinho",
+     "A imersão morando com uma família local",
+     "Assistir a filmes"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é a armadilha comum?",
+    "options": [
+     "Estudar demais",
+     "Conviver só com colegas do próprio país",
+     "Gastar muito"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que os professores recomendam?",
+    "options": [
+     "Mais horas de aula",
+     "Aplicativos",
+     "Atividades locais como clube ou coral"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Un tren por el altiplano",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "El tren que une Cusco con el lago Titicaca recorre uno de los trayectos ferroviarios más altos del mundo.",
+    "O trem que liga Cusco ao lago Titicaca percorre um dos trajetos ferroviários mais altos do mundo."
+   ],
+   [
+    "Durante unas diez horas, atraviesa el altiplano a más de cuatro mil metros sobre el nivel del mar.",
+    "Durante cerca de dez horas, atravessa o altiplano a mais de quatro mil metros acima do nível do mar."
+   ],
+   [
+    "Por la ventana desfilan rebaños de llamas, pueblos de adobe y cumbres nevadas.",
+    "Pela janela desfilam rebanhos de lhamas, vilarejos de adobe e picos nevados."
+   ],
+   [
+    "En el punto más alto, el paso de La Raya, el tren se detiene unos minutos para que los pasajeros bajen.",
+    "No ponto mais alto, a passagem de La Raya, o trem para alguns minutos para os passageiros descerem."
+   ],
+   [
+    "Allí, vendedoras quechuas ofrecen tejidos hechos a mano a los turistas, que respiran con dificultad.",
+    "Ali, vendedoras quíchuas oferecem tecidos feitos à mão aos turistas, que respiram com dificuldade."
+   ],
+   [
+    "A bordo se sirve un almuerzo con productos andinos y hay espectáculos de música tradicional.",
+    "A bordo serve-se um almoço com produtos andinos e há apresentações de música tradicional."
+   ],
+   [
+    "El precio es elevado, pero quienes lo han hecho afirman que el paisaje justifica cada sol gastado.",
+    "O preço é alto, mas quem fez garante que a paisagem justifica cada sol gasto."
+   ]
+  ],
+  "words": [
+   [
+    "el trayecto",
+    "o trajeto"
+   ],
+   [
+    "el altiplano",
+    "o altiplano"
+   ],
+   [
+    "los rebaños",
+    "os rebanhos"
+   ],
+   [
+    "las cumbres",
+    "os picos"
+   ],
+   [
+    "los tejidos",
+    "os tecidos"
+   ],
+   [
+    "el sol",
+    "o sol (moeda peruana)"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Que trecho o trem percorre?",
+    "options": [
+     "De Lima a Cusco",
+     "De Cusco ao lago Titicaca",
+     "De La Paz a Santiago"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que acontece na passagem de La Raya?",
+    "options": [
+     "Serve-se o almoço",
+     "O trem muda de trilho",
+     "O trem para e os passageiros descem"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que justifica o preço, segundo quem fez a viagem?",
+    "options": [
+     "O conforto",
+     "O almoço",
+     "A paisagem"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Reclamar como un profesional",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Muchos viajeros renuncian a reclamar porque creen que es inútil o que perderán demasiado tiempo.",
+    "Muitos viajantes desistem de reclamar porque acham que é inútil ou que vão perder tempo demais."
+   ],
+   [
+    "Sin embargo, una reclamación bien planteada suele obtener resultados.",
+    "No entanto, uma reclamação bem feita costuma dar resultado."
+   ],
+   [
+    "Lo primero es conservar todas las pruebas: billetes, facturas, fotografías y correos.",
+    "O primeiro passo é guardar todas as provas: passagens, notas, fotos e e-mails."
+   ],
+   [
+    "Conviene exponer los hechos de forma cronológica, sin insultos y con un tono firme pero educado.",
+    "Convém expor os fatos em ordem cronológica, sem ofensas e com tom firme mas educado."
+   ],
+   [
+    "También es útil citar la normativa aplicable, por ejemplo, los derechos de los pasajeros aéreos.",
+    "Também é útil citar a norma aplicável, por exemplo, os direitos dos passageiros aéreos."
+   ],
+   [
+    "Si la empresa no responde en el plazo establecido, se puede acudir a un organismo de consumo.",
+    "Se a empresa não responder no prazo estabelecido, pode-se recorrer a um órgão de defesa do consumidor."
+   ],
+   [
+    "En la mayoría de los casos, sin embargo, basta con demostrar que uno conoce sus derechos.",
+    "Na maioria dos casos, porém, basta mostrar que se conhecem os próprios direitos."
+   ]
+  ],
+  "words": [
+   [
+    "renunciar a",
+    "desistir de"
+   ],
+   [
+    "la reclamación",
+    "a reclamação"
+   ],
+   [
+    "conservar",
+    "guardar"
+   ],
+   [
+    "conviene",
+    "convém"
+   ],
+   [
+    "la normativa",
+    "a norma"
+   ],
+   [
+    "acudir a",
+    "recorrer a"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual é o primeiro passo para reclamar?",
+    "options": [
+     "Procurar um advogado",
+     "Guardar todas as provas",
+     "Ligar irritado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Que tom o texto recomenda?",
+    "options": [
+     "Agressivo",
+     "Informal",
+     "Firme mas educado"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que basta na maioria dos casos?",
+    "options": [
+     "Publicar nas redes",
+     "Ameaçar processar",
+     "Mostrar que conhece seus direitos"
+    ],
+    "correct": 2
+   }
+  ]
+ }
+]

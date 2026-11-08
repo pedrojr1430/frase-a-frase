@@ -1,0 +1,810 @@
+[
+ {
+  "tema": "social",
+  "title": "Mi familia",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Me llamo Andrés y tengo treinta años.",
+    "Meu nome é Andrés e tenho trinta anos."
+   ],
+   [
+    "Vivo en Bogotá con mi mujer, Carolina, y nuestra hija, Sofía.",
+    "Moro em Bogotá com minha esposa, Carolina, e nossa filha, Sofía."
+   ],
+   [
+    "Sofía tiene cuatro años y va a la guardería.",
+    "Sofía tem quatro anos e vai à creche."
+   ],
+   [
+    "Mis padres viven cerca, en el mismo barrio.",
+    "Meus pais moram perto, no mesmo bairro."
+   ],
+   [
+    "Los domingos comemos todos juntos en su casa.",
+    "Aos domingos almoçamos todos juntos na casa deles."
+   ],
+   [
+    "Mi madre siempre prepara ajiaco, una sopa típica de aquí.",
+    "Minha mãe sempre prepara ajiaco, uma sopa típica daqui."
+   ]
+  ],
+  "words": [
+   [
+    "la guardería",
+    "a creche"
+   ],
+   [
+    "el barrio",
+    "o bairro"
+   ],
+   [
+    "juntos",
+    "juntos"
+   ],
+   [
+    "típica",
+    "típica"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantos anos tem Sofía?",
+    "options": [
+     "Quatro",
+     "Três",
+     "Cinco"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde a família almoça aos domingos?",
+    "options": [
+     "Na casa dos pais de Andrés",
+     "Num restaurante",
+     "Em casa"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que é o ajiaco?",
+    "options": [
+     "Uma sopa",
+     "Uma sobremesa",
+     "Um pão"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "La rutina de Marta",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Marta se levanta todos los días a las siete.",
+    "Marta se levanta todos os dias às sete."
+   ],
+   [
+    "Primero se ducha y después desayuna tostadas con café.",
+    "Primeiro toma banho e depois toma café da manhã com torradas e café."
+   ],
+   [
+    "A las ocho sale de casa y va a la universidad en autobús.",
+    "Às oito sai de casa e vai para a faculdade de ônibus."
+   ],
+   [
+    "Estudia Medicina y tiene clases hasta las dos.",
+    "Estuda Medicina e tem aulas até as duas."
+   ],
+   [
+    "Por la tarde trabaja en una librería.",
+    "À tarde trabalha numa livraria."
+   ],
+   [
+    "Por la noche cena con su compañera de piso y se acuesta pronto.",
+    "À noite janta com a colega de apartamento e vai dormir cedo."
+   ]
+  ],
+  "words": [
+   [
+    "levantarse",
+    "levantar-se"
+   ],
+   [
+    "ducharse",
+    "tomar banho"
+   ],
+   [
+    "la librería",
+    "a livraria"
+   ],
+   [
+    "acostarse",
+    "deitar-se"
+   ],
+   [
+    "pronto",
+    "cedo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como Marta vai para a faculdade?",
+    "options": [
+     "De ônibus",
+     "A pé",
+     "De metrô"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde Marta trabalha?",
+    "options": [
+     "Num café",
+     "Num hospital",
+     "Numa livraria"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Com quem Marta janta?",
+    "options": [
+     "Com os pais",
+     "Sozinha",
+     "Com a colega de apartamento"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El cumpleaños de Pablo",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Hoy es el cumpleaños de Pablo y cumple diez años.",
+    "Hoje é o aniversário de Pablo e ele faz dez anos."
+   ],
+   [
+    "Su madre ha preparado una tarta de chocolate.",
+    "A mãe dele preparou um bolo de chocolate."
+   ],
+   [
+    "Sus amigos del colegio llegan a las cinco.",
+    "Os amigos da escola chegam às cinco."
+   ],
+   [
+    "Juegan en el jardín y escuchan música.",
+    "Brincam no jardim e ouvem música."
+   ],
+   [
+    "Después todos cantan «Cumpleaños feliz».",
+    "Depois todos cantam \"Parabéns a você\"."
+   ],
+   [
+    "Pablo sopla las velas y pide un deseo.",
+    "Pablo assopra as velas e faz um pedido."
+   ]
+  ],
+  "words": [
+   [
+    "cumplir años",
+    "fazer aniversário"
+   ],
+   [
+    "la tarta",
+    "o bolo"
+   ],
+   [
+    "el colegio",
+    "a escola"
+   ],
+   [
+    "soplar",
+    "assoprar"
+   ],
+   [
+    "las velas",
+    "as velas"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantos anos Pablo faz?",
+    "options": [
+     "Oito",
+     "Nove",
+     "Dez"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "De que é o bolo?",
+    "options": [
+     "De chocolate",
+     "De morango",
+     "De limão"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que Pablo faz antes de assoprar as velas?",
+    "options": [
+     "Vai dormir",
+     "Todos cantam parabéns",
+     "Abre os presentes"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Mi nuevo piso",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "La semana pasada me mudé a un piso nuevo.",
+    "Na semana passada me mudei para um apartamento novo."
+   ],
+   [
+    "Está en el centro, cerca del mercado.",
+    "Fica no centro, perto do mercado."
+   ],
+   [
+    "Tiene dos habitaciones, un salón pequeño y una cocina muy luminosa.",
+    "Tem dois quartos, uma sala pequena e uma cozinha muito iluminada."
+   ],
+   [
+    "Lo mejor es el balcón, con vistas a una plaza.",
+    "O melhor é a varanda, com vista para uma praça."
+   ],
+   [
+    "Lo malo es que no hay ascensor y vivo en el cuarto piso.",
+    "O ruim é que não tem elevador e moro no quarto andar."
+   ],
+   [
+    "Pero subir las escaleras es un buen ejercicio.",
+    "Mas subir as escadas é um bom exercício."
+   ]
+  ],
+  "words": [
+   [
+    "mudarse",
+    "mudar-se"
+   ],
+   [
+    "el salón",
+    "a sala"
+   ],
+   [
+    "luminosa",
+    "iluminada"
+   ],
+   [
+    "el ascensor",
+    "o elevador"
+   ],
+   [
+    "las escaleras",
+    "as escadas"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde fica o apartamento novo?",
+    "options": [
+     "Fora da cidade",
+     "No centro",
+     "Na praia"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que há de melhor no apartamento?",
+    "options": [
+     "A cozinha",
+     "A varanda",
+     "O elevador"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é o problema do apartamento?",
+    "options": [
+     "É longe do mercado",
+     "Não tem elevador",
+     "É escuro"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Una cena con amigos",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "El viernes invité a cuatro amigos a cenar en casa.",
+    "Na sexta convidei quatro amigos para jantar em casa."
+   ],
+   [
+    "Preparé una lasaña y una ensalada grande.",
+    "Preparei uma lasanha e uma salada grande."
+   ],
+   [
+    "Lucía trajo el vino y Tomás trajo el postre.",
+    "Lucía trouxe o vinho e Tomás trouxe a sobremesa."
+   ],
+   [
+    "Hablamos de viajes, de trabajo y de películas.",
+    "Conversamos sobre viagens, trabalho e filmes."
+   ],
+   [
+    "Nos reímos mucho con las historias de Tomás.",
+    "Rimos muito com as histórias do Tomás."
+   ],
+   [
+    "Mis amigos se fueron a la una de la mañana.",
+    "Meus amigos foram embora à uma da manhã."
+   ]
+  ],
+  "words": [
+   [
+    "invitar",
+    "convidar"
+   ],
+   [
+    "traer",
+    "trazer"
+   ],
+   [
+    "el postre",
+    "a sobremesa"
+   ],
+   [
+    "reírse",
+    "rir"
+   ],
+   [
+    "irse",
+    "ir embora"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que Lucía trouxe?",
+    "options": [
+     "O vinho",
+     "A sobremesa",
+     "A salada"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "De que eles conversaram?",
+    "options": [
+     "De futebol",
+     "De viagens, trabalho e filmes",
+     "De política"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A que horas os amigos foram embora?",
+    "options": [
+     "À meia-noite",
+     "À uma da manhã",
+     "Às duas da manhã"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "En el médico",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Ayer Luis se despertó con fiebre y dolor de garganta.",
+    "Ontem Luis acordou com febre e dor de garganta."
+   ],
+   [
+    "Llamó al centro de salud y pidió cita.",
+    "Ligou para o posto de saúde e marcou consulta."
+   ],
+   [
+    "La doctora le preguntó desde cuándo se sentía mal.",
+    "A médica perguntou desde quando ele se sentia mal."
+   ],
+   [
+    "Le dijo que tenía una infección leve.",
+    "Disse que ele tinha uma infecção leve."
+   ],
+   [
+    "Le recetó un antibiótico y mucho descanso.",
+    "Receitou um antibiótico e muito descanso."
+   ],
+   [
+    "Hoy Luis está en casa, bebe té y ve series.",
+    "Hoje Luis está em casa, toma chá e assiste a séries."
+   ]
+  ],
+  "words": [
+   [
+    "despertarse",
+    "acordar"
+   ],
+   [
+    "el centro de salud",
+    "o posto de saúde"
+   ],
+   [
+    "leve",
+    "leve"
+   ],
+   [
+    "recetar",
+    "receitar"
+   ],
+   [
+    "el descanso",
+    "o descanso"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quais sintomas Luis tinha?",
+    "options": [
+     "Febre e dor de garganta",
+     "Dor nas costas",
+     "Dor de barriga"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que a médica receitou?",
+    "options": [
+     "Um antibiótico e descanso",
+     "Exercícios",
+     "Uma vacina"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que Luis faz hoje?",
+    "options": [
+     "Vai trabalhar",
+     "Fica em casa vendo séries",
+     "Volta ao médico"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El mercado del sábado",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Todos los sábados voy al mercado con mi abuela.",
+    "Todo sábado vou à feira com minha avó."
+   ],
+   [
+    "Ella conoce a todos los vendedores por su nombre.",
+    "Ela conhece todos os vendedores pelo nome."
+   ],
+   [
+    "Compramos fruta, verdura y pescado fresco.",
+    "Compramos frutas, verduras e peixe fresco."
+   ],
+   [
+    "Mi abuela siempre pide una rebaja y casi siempre la consigue.",
+    "Minha avó sempre pede um desconto e quase sempre consegue."
+   ],
+   [
+    "Al final tomamos un zumo de naranja en un puesto.",
+    "No final tomamos um suco de laranja numa barraca."
+   ],
+   [
+    "Para mí es el mejor momento de la semana.",
+    "Para mim é o melhor momento da semana."
+   ]
+  ],
+  "words": [
+   [
+    "el vendedor",
+    "o vendedor"
+   ],
+   [
+    "fresco",
+    "fresco"
+   ],
+   [
+    "la rebaja",
+    "o desconto"
+   ],
+   [
+    "el zumo",
+    "o suco"
+   ],
+   [
+    "el puesto",
+    "a barraca"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Com quem o narrador vai à feira?",
+    "options": [
+     "Com a mãe",
+     "Sozinho",
+     "Com a avó"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que a avó sempre pede?",
+    "options": [
+     "Um desconto",
+     "Um recibo",
+     "Uma sacola"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que eles tomam no final?",
+    "options": [
+     "Suco de laranja",
+     "Café",
+     "Água de coco"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Mi mejor amiga",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Mi mejor amiga se llama Valeria.",
+    "Minha melhor amiga se chama Valeria."
+   ],
+   [
+    "Nos conocimos en el colegio cuando teníamos seis años.",
+    "Nos conhecemos na escola quando tínhamos seis anos."
+   ],
+   [
+    "Ahora ella vive en México y yo en Madrid.",
+    "Agora ela mora no México e eu em Madri."
+   ],
+   [
+    "Hablamos por videollamada todas las semanas.",
+    "Conversamos por videochamada toda semana."
+   ],
+   [
+    "Valeria es divertida, inteligente y muy generosa.",
+    "Valeria é divertida, inteligente e muito generosa."
+   ],
+   [
+    "Este verano voy a visitarla por primera vez.",
+    "Neste verão vou visitá-la pela primeira vez."
+   ]
+  ],
+  "words": [
+   [
+    "conocerse",
+    "conhecer-se"
+   ],
+   [
+    "la videollamada",
+    "a videochamada"
+   ],
+   [
+    "generosa",
+    "generosa"
+   ],
+   [
+    "visitar",
+    "visitar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde as amigas se conheceram?",
+    "options": [
+     "Na escola",
+     "Na faculdade",
+     "Numa viagem"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde Valeria mora agora?",
+    "options": [
+     "No México",
+     "Em Madri",
+     "Na Argentina"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que vai acontecer neste verão?",
+    "options": [
+     "Valeria vai a Madri",
+     "Elas vão se mudar",
+     "A narradora vai visitá-la"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Un día de lluvia",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Hoy llueve mucho y no podemos salir.",
+    "Hoje está chovendo muito e não podemos sair."
+   ],
+   [
+    "Los niños están aburridos en el salón.",
+    "As crianças estão entediadas na sala."
+   ],
+   [
+    "Decidimos hacer galletas juntos.",
+    "Decidimos fazer biscoitos juntos."
+   ],
+   [
+    "Mezclamos harina, azúcar, mantequilla y huevos.",
+    "Misturamos farinha, açúcar, manteiga e ovos."
+   ],
+   [
+    "Mientras las galletas están en el horno, jugamos a las cartas.",
+    "Enquanto os biscoitos estão no forno, jogamos cartas."
+   ],
+   [
+    "Al final la tarde es muy divertida.",
+    "No fim a tarde fica muito divertida."
+   ]
+  ],
+  "words": [
+   [
+    "aburrido",
+    "entediado"
+   ],
+   [
+    "las galletas",
+    "os biscoitos"
+   ],
+   [
+    "la harina",
+    "a farinha"
+   ],
+   [
+    "la mantequilla",
+    "a manteiga"
+   ],
+   [
+    "el horno",
+    "o forno"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que eles não podem sair?",
+    "options": [
+     "Estão doentes",
+     "Está chovendo",
+     "Está frio"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que eles fazem juntos?",
+    "options": [
+     "Biscoitos",
+     "Pão",
+     "Um bolo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que fazem enquanto esperam?",
+    "options": [
+     "Veem TV",
+     "Dormem",
+     "Jogam cartas"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Mi perro Toby",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Tengo un perro que se llama Toby.",
+    "Tenho um cachorro que se chama Toby."
+   ],
+   [
+    "Es pequeño, marrón y muy juguetón.",
+    "É pequeno, marrom e muito brincalhão."
+   ],
+   [
+    "Por la mañana lo saco a pasear antes de trabajar.",
+    "De manhã levo ele para passear antes de trabalhar."
+   ],
+   [
+    "Le encanta correr en el parque detrás de las palomas.",
+    "Ele adora correr no parque atrás dos pombos."
+   ],
+   [
+    "Cuando llego a casa, me espera en la puerta.",
+    "Quando chego em casa, ele me espera na porta."
+   ],
+   [
+    "Toby es parte de la familia.",
+    "Toby faz parte da família."
+   ]
+  ],
+  "words": [
+   [
+    "el perro",
+    "o cachorro"
+   ],
+   [
+    "juguetón",
+    "brincalhão"
+   ],
+   [
+    "sacar a pasear",
+    "levar para passear"
+   ],
+   [
+    "las palomas",
+    "os pombos"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como é o Toby?",
+    "options": [
+     "Velho e calmo",
+     "Pequeno, marrom e brincalhão",
+     "Grande e preto"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quando o narrador leva Toby para passear?",
+    "options": [
+     "À noite",
+     "Na hora do almoço",
+     "De manhã"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que Toby adora fazer no parque?",
+    "options": [
+     "Correr atrás dos pombos",
+     "Nadar",
+     "Dormir"
+    ],
+    "correct": 0
+   }
+  ]
+ }
+]

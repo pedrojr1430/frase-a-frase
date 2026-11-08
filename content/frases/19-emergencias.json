@@ -1,0 +1,107 @@
+{
+ "id": "emergencias",
+ "name": "Emergências",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "¡Ayuda!",
+   "pt": "Socorro!",
+   "nota": ""
+  },
+  {
+   "es": "Llame a una ambulancia.",
+   "pt": "Chame uma ambulância.",
+   "nota": ""
+  },
+  {
+   "es": "Me han robado la cartera.",
+   "pt": "Roubaram minha carteira.",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde está la comisaría?",
+   "pt": "Onde fica a delegacia?",
+   "nota": ""
+  },
+  {
+   "es": "Ha habido un accidente.",
+   "pt": "Houve um acidente.",
+   "nota": ""
+  },
+  {
+   "es": "Hay un incendio.",
+   "pt": "Tem um incêndio.",
+   "nota": ""
+  },
+  {
+   "es": "Necesito un médico urgentemente.",
+   "pt": "Preciso de um médico com urgência.",
+   "nota": ""
+  },
+  {
+   "es": "He perdido mi pasaporte.",
+   "pt": "Perdi meu passaporte.",
+   "nota": ""
+  },
+  {
+   "es": "¿Habla alguien portugués?",
+   "pt": "Alguém fala português?",
+   "nota": ""
+  },
+  {
+   "es": "Quiero poner una denuncia.",
+   "pt": "Quero registrar uma ocorrência.",
+   "nota": "\"Denuncia\" = boletim de ocorrência."
+  },
+  {
+   "es": "Mi hijo se ha perdido.",
+   "pt": "Meu filho se perdeu.",
+   "nota": ""
+  },
+  {
+   "es": "¡Cuidado!",
+   "pt": "Cuidado!",
+   "nota": ""
+  },
+  {
+   "es": "Está sangrando mucho.",
+   "pt": "Está sangrando muito.",
+   "nota": ""
+  },
+  {
+   "es": "No puede respirar.",
+   "pt": "Ele não consegue respirar.",
+   "nota": ""
+  },
+  {
+   "es": "Llame a la policía.",
+   "pt": "Chame a polícia.",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde está la salida de emergencia?",
+   "pt": "Onde fica a saída de emergência?",
+   "nota": ""
+  },
+  {
+   "es": "Necesito contactar con mi embajada.",
+   "pt": "Preciso entrar em contato com a minha embaixada.",
+   "nota": ""
+  },
+  {
+   "es": "Se ha desmayado.",
+   "pt": "Ela desmaiou.",
+   "nota": ""
+  },
+  {
+   "es": "Mi coche se ha averiado.",
+   "pt": "Meu carro quebrou.",
+   "nota": "\"Averiarse\" = enguiçar."
+  },
+  {
+   "es": "Estoy bien, no se preocupe.",
+   "pt": "Estou bem, não se preocupe.",
+   "nota": ""
+  }
+ ]
+}

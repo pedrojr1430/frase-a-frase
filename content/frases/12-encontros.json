@@ -1,0 +1,107 @@
+{
+ "id": "encontros",
+ "name": "Encontros e convites",
+ "group": "social",
+ "items": [
+  {
+   "es": "¿Quedamos esta tarde?",
+   "pt": "Vamos nos encontrar hoje à tarde?",
+   "nota": "\"Quedar\" = combinar de se encontrar (Espanha). Na América Latina: \"¿nos vemos?\"."
+  },
+  {
+   "es": "¿Te apetece tomar algo?",
+   "pt": "Está a fim de tomar alguma coisa?",
+   "nota": "\"Apetecer\" é típico da Espanha; na América Latina, \"¿tienes ganas de…?\"."
+  },
+  {
+   "es": "¿A qué hora quedamos?",
+   "pt": "Que horas a gente se encontra?",
+   "nota": ""
+  },
+  {
+   "es": "Te espero en la puerta del cine.",
+   "pt": "Te espero na porta do cinema.",
+   "nota": ""
+  },
+  {
+   "es": "Lo siento, no puedo ir.",
+   "pt": "Sinto muito, não posso ir.",
+   "nota": ""
+  },
+  {
+   "es": "¿Vienes a mi cumpleaños el sábado?",
+   "pt": "Você vem ao meu aniversário no sábado?",
+   "nota": ""
+  },
+  {
+   "es": "¡Claro que sí, cuenta conmigo!",
+   "pt": "Claro que sim, conte comigo!",
+   "nota": ""
+  },
+  {
+   "es": "Otro día será.",
+   "pt": "Fica para outro dia.",
+   "nota": ""
+  },
+  {
+   "es": "Te invito yo.",
+   "pt": "Eu pago.",
+   "nota": "\"Invitar\" aqui = pagar a conta para o outro."
+  },
+  {
+   "es": "¿Dónde nos vemos?",
+   "pt": "Onde a gente se encontra?",
+   "nota": ""
+  },
+  {
+   "es": "Llego en cinco minutos.",
+   "pt": "Chego em cinco minutos.",
+   "nota": ""
+  },
+  {
+   "es": "Lo pasamos genial.",
+   "pt": "Nos divertimos muito.",
+   "nota": "\"Pasarlo bien\" = divertir-se."
+  },
+  {
+   "es": "¿Quieres bailar?",
+   "pt": "Quer dançar?",
+   "nota": ""
+  },
+  {
+   "es": "Me gustaría volver a verte.",
+   "pt": "Eu gostaria de te ver de novo.",
+   "nota": "\"Volver a\" + infinitivo = fazer de novo."
+  },
+  {
+   "es": "¿Te paso a buscar?",
+   "pt": "Quer que eu passe para te buscar?",
+   "nota": ""
+  },
+  {
+   "es": "Tengo un compromiso esa noche.",
+   "pt": "Tenho um compromisso nessa noite.",
+   "nota": ""
+  },
+  {
+   "es": "Avísame cuando llegues.",
+   "pt": "Me avisa quando chegar.",
+   "nota": "\"Cuando\" + futuro pede subjuntivo: cuando llegues."
+  },
+  {
+   "es": "¿Te parece bien el viernes?",
+   "pt": "Sexta está bom para você?",
+   "nota": ""
+  },
+  {
+   "es": "Vamos a dar una vuelta.",
+   "pt": "Vamos dar uma volta.",
+   "nota": ""
+  },
+  {
+   "es": "Gracias por la invitación.",
+   "pt": "Obrigado pelo convite.",
+   "nota": ""
+  }
+ ]
+}

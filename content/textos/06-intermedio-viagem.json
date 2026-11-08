@@ -1,0 +1,846 @@
+[
+ {
+  "tema": "viagem",
+  "title": "Un vuelo cancelado",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Llevábamos dos horas en el aeropuerto cuando anunciaron que nuestro vuelo estaba cancelado.",
+    "Estávamos há duas horas no aeroporto quando anunciaram que nosso voo estava cancelado."
+   ],
+   [
+    "Se formó una cola enorme delante del mostrador de la aerolínea.",
+    "Formou-se uma fila enorme na frente do balcão da companhia aérea."
+   ],
+   [
+    "Mientras esperaba, busqué en internet cuáles eran mis derechos como pasajero.",
+    "Enquanto esperava, procurei na internet quais eram meus direitos como passageiro."
+   ],
+   [
+    "Descubrí que la compañía tenía que ofrecerme otro vuelo, comida y hotel.",
+    "Descobri que a companhia tinha que me oferecer outro voo, comida e hotel."
+   ],
+   [
+    "Cuando por fin me atendieron, me dieron un vale para cenar y una habitación cerca del aeropuerto.",
+    "Quando finalmente me atenderam, me deram um vale para jantar e um quarto perto do aeroporto."
+   ],
+   [
+    "Salí al día siguiente a primera hora.",
+    "Saí no dia seguinte bem cedo."
+   ],
+   [
+    "Semanas después recibí además una compensación económica.",
+    "Semanas depois recebi ainda uma compensação em dinheiro."
+   ]
+  ],
+  "words": [
+   [
+    "la cola",
+    "a fila"
+   ],
+   [
+    "la aerolínea",
+    "a companhia aérea"
+   ],
+   [
+    "los derechos",
+    "os direitos"
+   ],
+   [
+    "el vale",
+    "o vale"
+   ],
+   [
+    "a primera hora",
+    "logo cedo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que o narrador pesquisou na internet?",
+    "options": [
+     "Hotéis na cidade",
+     "Outro voo mais barato",
+     "Seus direitos como passageiro"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que a companhia lhe deu?",
+    "options": [
+     "Apenas um pedido de desculpas",
+     "Um vale para jantar e um quarto",
+     "Uma passagem de trem"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que ele recebeu semanas depois?",
+    "options": [
+     "Uma compensação em dinheiro",
+     "Uma carta",
+     "Pontos de milhagem"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Mochilero en Centroamérica",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Después de terminar la carrera, Mateo decidió recorrer Centroamérica con una mochila.",
+    "Depois de terminar a faculdade, Mateo decidiu percorrer a América Central com uma mochila."
+   ],
+   [
+    "Empezó en Guatemala, donde estudió español durante tres semanas en Antigua.",
+    "Começou na Guatemala, onde estudou espanhol por três semanas em Antigua."
+   ],
+   [
+    "Después cruzó a Honduras para bucear en las islas de la Bahía.",
+    "Depois atravessou para Honduras para mergulhar nas ilhas da Bahía."
+   ],
+   [
+    "En Nicaragua subió a un volcán activo y bajó en tabla por la arena.",
+    "Na Nicarágua subiu num vulcão ativo e desceu de prancha pela areia."
+   ],
+   [
+    "Viajaba en autobuses locales, que eran baratos pero muy lentos.",
+    "Viajava em ônibus locais, que eram baratos mas muito lentos."
+   ],
+   [
+    "Dormía en albergues, donde conoció a viajeros de todo el mundo.",
+    "Dormia em albergues, onde conheceu viajantes do mundo todo."
+   ],
+   [
+    "Volvió a casa tres meses después, con menos dinero y muchas historias.",
+    "Voltou para casa três meses depois, com menos dinheiro e muitas histórias."
+   ]
+  ],
+  "words": [
+   [
+    "recorrer",
+    "percorrer"
+   ],
+   [
+    "bucear",
+    "mergulhar"
+   ],
+   [
+    "el volcán",
+    "o vulcão"
+   ],
+   [
+    "el albergue",
+    "o albergue"
+   ],
+   [
+    "la carrera",
+    "o curso universitário"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde Mateo estudou espanhol?",
+    "options": [
+     "Em Manágua",
+     "Em Antigua, Guatemala",
+     "Em San José"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que ele fez na Nicarágua?",
+    "options": [
+     "Desceu um vulcão de prancha",
+     "Visitou ruínas maias",
+     "Mergulhou"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como eram os ônibus locais?",
+    "options": [
+     "Caros e rápidos",
+     "Confortáveis",
+     "Baratos mas lentos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Alquilar un coche en Mallorca",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Para recorrer Mallorca con libertad, decidimos alquilar un coche durante cinco días.",
+    "Para percorrer Maiorca com liberdade, decidimos alugar um carro por cinco dias."
+   ],
+   [
+    "En la oficina nos ofrecieron un seguro a todo riesgo y, aunque era caro, lo aceptamos.",
+    "No balcão nos ofereceram um seguro total e, embora fosse caro, aceitamos."
+   ],
+   [
+    "Nos dieron un coche pequeño, perfecto para las carreteras estrechas de la sierra.",
+    "Nos deram um carro pequeno, perfeito para as estradas estreitas da serra."
+   ],
+   [
+    "El segundo día, al aparcar en un pueblo, rozamos un muro de piedra.",
+    "No segundo dia, ao estacionar numa vila, raspamos num muro de pedra."
+   ],
+   [
+    "Al devolver el coche, temíamos tener que pagar el arreglo.",
+    "Ao devolver o carro, temíamos ter que pagar o conserto."
+   ],
+   [
+    "Pero gracias al seguro no tuvimos que pagar nada.",
+    "Mas graças ao seguro não tivemos que pagar nada."
+   ],
+   [
+    "Desde entonces, siempre contratamos el seguro completo.",
+    "Desde então, sempre contratamos o seguro completo."
+   ]
+  ],
+  "words": [
+   [
+    "el seguro a todo riesgo",
+    "o seguro total"
+   ],
+   [
+    "estrecho",
+    "estreito"
+   ],
+   [
+    "aparcar",
+    "estacionar"
+   ],
+   [
+    "rozar",
+    "raspar"
+   ],
+   [
+    "el arreglo",
+    "o conserto"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que alugaram um carro?",
+    "options": [
+     "Para ter liberdade",
+     "Porque não havia ônibus",
+     "Para ir ao aeroporto"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que aconteceu no segundo dia?",
+    "options": [
+     "Raspou num muro",
+     "Foram multados",
+     "O carro quebrou"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quanto pagaram pelo dano?",
+    "options": [
+     "Nada",
+     "O valor total",
+     "Metade"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "El Camino de Santiago",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "El verano pasado hice los últimos cien kilómetros del Camino de Santiago.",
+    "No verão passado fiz os últimos cem quilômetros do Caminho de Santiago."
+   ],
+   [
+    "Empecé en Sarria y caminé unos veinte kilómetros al día.",
+    "Comecei em Sarria e caminhei uns vinte quilômetros por dia."
+   ],
+   [
+    "Dormía en albergues de peregrinos, donde cada noche conocía a gente nueva.",
+    "Dormia em albergues de peregrinos, onde toda noite conhecia gente nova."
+   ],
+   [
+    "El tercer día me salieron ampollas y pensé en abandonar.",
+    "No terceiro dia apareceram bolhas e pensei em desistir."
+   ],
+   [
+    "Una enfermera alemana me curó los pies y me animó a seguir.",
+    "Uma enfermeira alemã cuidou dos meus pés e me animou a continuar."
+   ],
+   [
+    "Cuando llegué a la plaza del Obradoiro, delante de la catedral, me emocioné.",
+    "Quando cheguei à praça do Obradoiro, diante da catedral, me emocionei."
+   ],
+   [
+    "No fue solo un viaje, fue una experiencia que me cambió.",
+    "Não foi só uma viagem, foi uma experiência que me mudou."
+   ]
+  ],
+  "words": [
+   [
+    "el peregrino",
+    "o peregrino"
+   ],
+   [
+    "las ampollas",
+    "as bolhas"
+   ],
+   [
+    "abandonar",
+    "desistir"
+   ],
+   [
+    "animar",
+    "animar, encorajar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantos quilômetros o narrador caminhava por dia?",
+    "options": [
+     "Uns dez",
+     "Uns quarenta",
+     "Uns vinte"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Por que pensou em desistir?",
+    "options": [
+     "Pelas bolhas nos pés",
+     "Pelo cansaço",
+     "Pela chuva"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quem o ajudou?",
+    "options": [
+     "Uma enfermeira alemã",
+     "Um padre",
+     "Um amigo brasileiro"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Perdidos en Ciudad de México",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Nuestro primer día en Ciudad de México, salimos del hotel sin mapa y sin batería en el móvil.",
+    "No nosso primeiro dia na Cidade do México, saímos do hotel sem mapa e sem bateria no celular."
+   ],
+   [
+    "Queríamos ir al barrio de Coyoacán, pero tomamos el metro en la dirección equivocada.",
+    "Queríamos ir ao bairro de Coyoacán, mas pegamos o metrô na direção errada."
+   ],
+   [
+    "Acabamos en una zona que no aparecía en ninguna guía turística.",
+    "Acabamos numa área que não aparecia em nenhum guia turístico."
+   ],
+   [
+    "Entramos en un pequeño restaurante para preguntar.",
+    "Entramos num pequeno restaurante para perguntar."
+   ],
+   [
+    "La dueña nos invitó a sentarnos y nos sirvió unas quesadillas buenísimas.",
+    "A dona nos convidou a sentar e nos serviu umas quesadillas deliciosas."
+   ],
+   [
+    "Después su hijo nos acompañó hasta la estación correcta.",
+    "Depois o filho dela nos acompanhou até a estação certa."
+   ],
+   [
+    "Fue el mejor error de todo el viaje.",
+    "Foi o melhor erro da viagem toda."
+   ]
+  ],
+  "words": [
+   [
+    "equivocado",
+    "errado"
+   ],
+   [
+    "acabar",
+    "acabar, ir parar"
+   ],
+   [
+    "la dueña",
+    "a dona"
+   ],
+   [
+    "acompañar",
+    "acompanhar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual foi o erro dos viajantes?",
+    "options": [
+     "Pegaram o metrô na direção errada",
+     "Perderam o passaporte",
+     "Esqueceram o hotel"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que a dona do restaurante fez?",
+    "options": [
+     "Vendeu um mapa",
+     "Chamou a polícia",
+     "Serviu quesadillas a eles"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como eles acharam o caminho?",
+    "options": [
+     "Carregaram o celular",
+     "Pegaram um táxi",
+     "O filho da dona os acompanhou"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Un hostal con problemas",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Reservamos un hostal en Cartagena por internet porque tenía muy buenas fotos.",
+    "Reservamos uma pousada em Cartagena pela internet porque tinha fotos muito bonitas."
+   ],
+   [
+    "Al llegar, la habitación no se parecía en nada a las imágenes.",
+    "Ao chegar, o quarto não se parecia nada com as imagens."
+   ],
+   [
+    "El aire acondicionado no funcionaba y había humedad en las paredes.",
+    "O ar-condicionado não funcionava e havia umidade nas paredes."
+   ],
+   [
+    "Hablamos con el recepcionista, que nos ofreció cambiar de habitación.",
+    "Falamos com o recepcionista, que ofereceu trocar de quarto."
+   ],
+   [
+    "La segunda tampoco estaba bien, así que pedimos que nos devolvieran el dinero.",
+    "O segundo também não estava bom, então pedimos o dinheiro de volta."
+   ],
+   [
+    "Al final nos devolvieron solo la mitad y nos fuimos a otro sitio.",
+    "No final devolveram só metade e fomos para outro lugar."
+   ],
+   [
+    "Desde entonces, leemos siempre las opiniones más recientes antes de reservar.",
+    "Desde então, sempre lemos as avaliações mais recentes antes de reservar."
+   ]
+  ],
+  "words": [
+   [
+    "el hostal",
+    "a pousada, o hostel"
+   ],
+   [
+    "la humedad",
+    "a umidade"
+   ],
+   [
+    "tampoco",
+    "também não"
+   ],
+   [
+    "las opiniones",
+    "as avaliações"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que escolheram a pousada?",
+    "options": [
+     "Pelo preço",
+     "Pelas fotos",
+     "Pela localização"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quanto dinheiro devolveram?",
+    "options": [
+     "A metade",
+     "Nada",
+     "Tudo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que os viajantes fazem agora antes de reservar?",
+    "options": [
+     "Ligam para o hotel",
+     "Leem as avaliações recentes",
+     "Pagam na chegada"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "En la aduana",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Al aterrizar en Santiago de Chile, rellené la declaración de aduanas en el avión.",
+    "Ao pousar em Santiago do Chile, preenchi a declaração de alfândega no avião."
+   ],
+   [
+    "Chile es muy estricto con los productos de origen animal y vegetal.",
+    "O Chile é muito rigoroso com produtos de origem animal e vegetal."
+   ],
+   [
+    "Yo llevaba una manzana en la mochila y me había olvidado de ella.",
+    "Eu levava uma maçã na mochila e tinha me esquecido dela."
+   ],
+   [
+    "En el control pasaron mi equipaje por el escáner y un perro me olfateó.",
+    "No controle passaram minha bagagem pelo raio-x e um cachorro me farejou."
+   ],
+   [
+    "El agente encontró la manzana y me explicó que podía recibir una multa.",
+    "O agente encontrou a maçã e explicou que eu podia levar uma multa."
+   ],
+   [
+    "Como no la había declarado, me la quitaron y me advirtieron.",
+    "Como eu não tinha declarado, tiraram a maçã de mim e me advertiram."
+   ],
+   [
+    "Tuve suerte, pero aprendí la lección: hay que declararlo todo.",
+    "Tive sorte, mas aprendi a lição: é preciso declarar tudo."
+   ]
+  ],
+  "words": [
+   [
+    "aterrizar",
+    "pousar"
+   ],
+   [
+    "estricto",
+    "rigoroso"
+   ],
+   [
+    "olfatear",
+    "farejar"
+   ],
+   [
+    "la multa",
+    "a multa"
+   ],
+   [
+    "advertir",
+    "advertir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que o narrador esqueceu na mochila?",
+    "options": [
+     "Uma maçã",
+     "Um queijo",
+     "Um sanduíche"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quem encontrou o problema?",
+    "options": [
+     "A comissária de bordo",
+     "Um cachorro e o agente",
+     "Outro passageiro"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual foi a lição?",
+    "options": [
+     "Não levar mochila",
+     "Declarar tudo",
+     "Comer no avião"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Viajar en tren nocturno",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Hay algo especial en viajar de noche en tren.",
+    "Há algo especial em viajar de trem à noite."
+   ],
+   [
+    "El año pasado tomé el tren nocturno de Lisboa a Madrid, que hoy ya no existe.",
+    "No ano passado peguei o trem noturno de Lisboa a Madri, que hoje já não existe."
+   ],
+   [
+    "Compartía el compartimento con una pareja mayor de Badajoz.",
+    "Dividia a cabine com um casal de idosos de Badajoz."
+   ],
+   [
+    "Nos ofrecieron jamón y queso, y yo compartí unas galletas portuguesas.",
+    "Ofereceram presunto e queijo, e eu dividi uns biscoitos portugueses."
+   ],
+   [
+    "Hablamos de sus viajes de juventud hasta que el revisor apagó las luces.",
+    "Conversamos sobre as viagens de juventude deles até o fiscal apagar as luzes."
+   ],
+   [
+    "Dormí sorprendentemente bien con el movimiento del tren.",
+    "Dormi surpreendentemente bem com o movimento do trem."
+   ],
+   [
+    "Cuando abrí los ojos, ya estábamos entrando en Madrid.",
+    "Quando abri os olhos, já estávamos entrando em Madri."
+   ]
+  ],
+  "words": [
+   [
+    "el compartimento",
+    "a cabine"
+   ],
+   [
+    "la pareja",
+    "o casal"
+   ],
+   [
+    "el revisor",
+    "o fiscal do trem"
+   ],
+   [
+    "sorprendentemente",
+    "surpreendentemente"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Com quem o narrador dividiu a cabine?",
+    "options": [
+     "Com estudantes",
+     "Com um casal de idosos",
+     "Sozinho"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que o casal ofereceu?",
+    "options": [
+     "Vinho",
+     "Chocolate",
+     "Presunto e queijo"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como o narrador dormiu?",
+    "options": [
+     "Não dormiu",
+     "Surpreendentemente bem",
+     "Mal"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Un día en Valparaíso",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Valparaíso es una ciudad construida sobre más de cuarenta cerros frente al mar.",
+    "Valparaíso é uma cidade construída sobre mais de quarenta morros diante do mar."
+   ],
+   [
+    "Para subir de la parte baja a los cerros, se usan los famosos ascensores, algunos de más de cien años.",
+    "Para subir da parte baixa aos morros, usam-se os famosos elevadores, alguns com mais de cem anos."
+   ],
+   [
+    "Las casas están pintadas de colores muy vivos y muchas paredes tienen murales.",
+    "As casas são pintadas de cores muito vivas e muitas paredes têm murais."
+   ],
+   [
+    "Pasamos la mañana caminando por el cerro Alegre, sacando fotos en cada esquina.",
+    "Passamos a manhã caminhando pelo morro Alegre, tirando fotos em cada esquina."
+   ],
+   [
+    "Comimos en un restaurante con vistas a la bahía, donde probamos una sopa de mariscos.",
+    "Almoçamos num restaurante com vista para a baía, onde provamos uma sopa de frutos do mar."
+   ],
+   [
+    "Por la tarde visitamos La Sebastiana, la casa del poeta Pablo Neruda.",
+    "À tarde visitamos La Sebastiana, a casa do poeta Pablo Neruda."
+   ],
+   [
+    "Al atardecer, el puerto se ilumina y parece un escenario de teatro.",
+    "Ao entardecer, o porto se ilumina e parece um cenário de teatro."
+   ]
+  ],
+  "words": [
+   [
+    "el cerro",
+    "o morro"
+   ],
+   [
+    "los ascensores",
+    "os elevadores"
+   ],
+   [
+    "el mural",
+    "o mural"
+   ],
+   [
+    "la bahía",
+    "a baía"
+   ],
+   [
+    "el atardecer",
+    "o entardecer"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Sobre o que a cidade é construída?",
+    "options": [
+     "Sobre mais de quarenta morros",
+     "Sobre um vulcão",
+     "Sobre ilhas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como se sobe aos morros?",
+    "options": [
+     "Só a pé",
+     "Com elevadores antigos",
+     "De teleférico moderno"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Que casa visitaram à tarde?",
+    "options": [
+     "A de Pablo Neruda",
+     "A do presidente",
+     "A de Gabriela Mistral"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Un problema en el banco",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Durante mi estancia en Bogotá, el cajero automático se quedó con mi tarjeta.",
+    "Durante minha estadia em Bogotá, o caixa eletrônico ficou com meu cartão."
+   ],
+   [
+    "Era viernes por la tarde y el banco ya estaba cerrado.",
+    "Era sexta à tarde e o banco já estava fechado."
+   ],
+   [
+    "Llamé a mi banco en Brasil para bloquearla, por si acaso.",
+    "Liguei para meu banco no Brasil para bloqueá-lo, por via das dúvidas."
+   ],
+   [
+    "El lunes fui a la sucursal con mi pasaporte.",
+    "Na segunda fui à agência com meu passaporte."
+   ],
+   [
+    "Me explicaron que, por seguridad, las tarjetas retenidas se destruyen.",
+    "Me explicaram que, por segurança, os cartões retidos são destruídos."
+   ],
+   [
+    "Mientras tanto, usé una aplicación para recibir dinero de mi familia.",
+    "Enquanto isso, usei um aplicativo para receber dinheiro da família."
+   ],
+   [
+    "Desde entonces viajo siempre con dos tarjetas de bancos diferentes.",
+    "Desde então viajo sempre com dois cartões de bancos diferentes."
+   ]
+  ],
+  "words": [
+   [
+    "la estancia",
+    "a estadia"
+   ],
+   [
+    "por si acaso",
+    "por via das dúvidas"
+   ],
+   [
+    "la sucursal",
+    "a agência"
+   ],
+   [
+    "retenido",
+    "retido"
+   ],
+   [
+    "mientras tanto",
+    "enquanto isso"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando o caixa ficou com o cartão?",
+    "options": [
+     "Domingo",
+     "Segunda de manhã",
+     "Sexta à tarde"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que aconteceu com o cartão?",
+    "options": [
+     "Foi devolvido",
+     "Foi destruído por segurança",
+     "Foi enviado ao Brasil"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que o narrador faz agora?",
+    "options": [
+     "Não usa caixas eletrônicos",
+     "Só usa dinheiro",
+     "Viaja com dois cartões"
+    ],
+    "correct": 2
+   }
+  ]
+ }
+]

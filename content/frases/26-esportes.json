@@ -1,0 +1,107 @@
+{
+ "id": "esportes",
+ "name": "Esportes",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "¿De qué equipo eres?",
+   "pt": "Para qual time você torce?",
+   "nota": ""
+  },
+  {
+   "es": "Soy del Boca.",
+   "pt": "Torço pelo Boca.",
+   "nota": ""
+  },
+  {
+   "es": "¡Gol!",
+   "pt": "Gol!",
+   "nota": ""
+  },
+  {
+   "es": "El partido terminó en empate.",
+   "pt": "A partida terminou empatada.",
+   "nota": ""
+  },
+  {
+   "es": "Ganamos dos a uno.",
+   "pt": "Ganhamos de dois a um.",
+   "nota": ""
+  },
+  {
+   "es": "El árbitro pitó penalti.",
+   "pt": "O juiz marcou pênalti.",
+   "nota": "Na América Latina: \"penal\"."
+  },
+  {
+   "es": "Juego al tenis los sábados.",
+   "pt": "Jogo tênis aos sábados.",
+   "nota": "Na Espanha se usa \"jugar al\"; em vários países latinos, \"jugar tenis\"."
+  },
+  {
+   "es": "Voy al gimnasio después del trabajo.",
+   "pt": "Vou à academia depois do trabalho.",
+   "nota": "\"Gimnasio\" = academia."
+  },
+  {
+   "es": "Corro cinco kilómetros cada mañana.",
+   "pt": "Corro cinco quilômetros toda manhã.",
+   "nota": ""
+  },
+  {
+   "es": "¿Ponen el partido en la tele?",
+   "pt": "O jogo vai passar na TV?",
+   "nota": ""
+  },
+  {
+   "es": "Es la final del campeonato.",
+   "pt": "É a final do campeonato.",
+   "nota": ""
+  },
+  {
+   "es": "Me he apuntado a clases de natación.",
+   "pt": "Me inscrevi em aulas de natação.",
+   "nota": "\"Apuntarse\" = inscrever-se (Espanha)."
+  },
+  {
+   "es": "Mi equipo bajó a segunda división.",
+   "pt": "Meu time caiu para a segunda divisão.",
+   "nota": ""
+  },
+  {
+   "es": "Fue fuera de juego.",
+   "pt": "Foi impedimento.",
+   "nota": "Na América Latina também \"offside\"."
+  },
+  {
+   "es": "El portero paró el penalti.",
+   "pt": "O goleiro defendeu o pênalti.",
+   "nota": "\"Portero\" na Espanha; \"arquero\" na América Latina."
+  },
+  {
+   "es": "Hoy hay entrenamiento a las siete.",
+   "pt": "Hoje tem treino às sete.",
+   "nota": ""
+  },
+  {
+   "es": "Me lesioné la rodilla jugando al fútbol.",
+   "pt": "Machuquei o joelho jogando futebol.",
+   "nota": ""
+  },
+  {
+   "es": "Ella es la máxima goleadora de la liga.",
+   "pt": "Ela é a artilheira do campeonato.",
+   "nota": ""
+  },
+  {
+   "es": "Vamos al estadio el domingo.",
+   "pt": "Vamos ao estádio no domingo.",
+   "nota": ""
+  },
+  {
+   "es": "Hace falta más entrenamiento.",
+   "pt": "Falta mais treino.",
+   "nota": "\"Hacer falta\" = ser necessário."
+  }
+ ]
+}

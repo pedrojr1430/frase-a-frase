@@ -1,0 +1,107 @@
+{
+ "id": "historia-sociedade",
+ "name": "História e sociedade",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "España fue una dictadura hasta 1975.",
+   "pt": "A Espanha foi uma ditadura até 1975.",
+   "nota": ""
+  },
+  {
+   "es": "Hoy es fiesta nacional.",
+   "pt": "Hoje é feriado nacional.",
+   "nota": "\"Fiesta\" também é feriado; \"día festivo\" também."
+  },
+  {
+   "es": "Las elecciones son el próximo domingo.",
+   "pt": "As eleições são no próximo domingo.",
+   "nota": ""
+  },
+  {
+   "es": "Los mayas construyeron grandes ciudades.",
+   "pt": "Os maias construíram grandes cidades.",
+   "nota": ""
+  },
+  {
+   "es": "El castellano se habla en más de veinte países.",
+   "pt": "O espanhol é falado em mais de vinte países.",
+   "nota": "\"Castellano\" e \"español\" são sinônimos."
+  },
+  {
+   "es": "La desigualdad sigue siendo un problema.",
+   "pt": "A desigualdade continua sendo um problema.",
+   "nota": ""
+  },
+  {
+   "es": "El paro juvenil es muy alto.",
+   "pt": "O desemprego entre os jovens é muito alto.",
+   "nota": "\"Paro\" = desemprego (Espanha); na América Latina, \"desempleo\"."
+  },
+  {
+   "es": "Cada vez más gente vive en las ciudades.",
+   "pt": "Cada vez mais gente mora nas cidades.",
+   "nota": ""
+  },
+  {
+   "es": "Machu Picchu fue construido por los incas.",
+   "pt": "Machu Picchu foi construído pelos incas.",
+   "nota": ""
+  },
+  {
+   "es": "Los precios de la vivienda no paran de subir.",
+   "pt": "Os preços da moradia não param de subir.",
+   "nota": ""
+  },
+  {
+   "es": "El Día de Muertos es una tradición mexicana.",
+   "pt": "O Dia dos Mortos é uma tradição mexicana.",
+   "nota": ""
+  },
+  {
+   "es": "La manifestación recorrió el centro.",
+   "pt": "A manifestação percorreu o centro.",
+   "nota": ""
+  },
+  {
+   "es": "La población está envejeciendo.",
+   "pt": "A população está envelhecendo.",
+   "nota": ""
+  },
+  {
+   "es": "Las noticias de hoy son preocupantes.",
+   "pt": "As notícias de hoje são preocupantes.",
+   "nota": ""
+  },
+  {
+   "es": "Muchos jóvenes emigran para trabajar.",
+   "pt": "Muitos jovens emigram para trabalhar.",
+   "nota": ""
+  },
+  {
+   "es": "Bolívar luchó por la independencia.",
+   "pt": "Bolívar lutou pela independência.",
+   "nota": ""
+  },
+  {
+   "es": "Es un tema muy polémico.",
+   "pt": "É um assunto muito polêmico.",
+   "nota": ""
+  },
+  {
+   "es": "La educación pública es gratuita.",
+   "pt": "A educação pública é gratuita.",
+   "nota": ""
+  },
+  {
+   "es": "El gobierno aprobó una nueva ley.",
+   "pt": "O governo aprovou uma nova lei.",
+   "nota": ""
+  },
+  {
+   "es": "La Semana Santa es muy importante en Sevilla.",
+   "pt": "A Semana Santa é muito importante em Sevilha.",
+   "nota": ""
+  }
+ ]
+}

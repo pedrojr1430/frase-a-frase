@@ -1,0 +1,728 @@
+[
+ {
+  "tema": "cultura",
+  "title": "La tortilla de mi abuela",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Mi abuela hace la mejor tortilla de patatas del mundo.",
+    "Minha avó faz a melhor tortilha de batatas do mundo."
+   ],
+   [
+    "Primero pela las patatas y las corta en trozos finos.",
+    "Primeiro descasca as batatas e corta em pedaços finos."
+   ],
+   [
+    "Las fríe despacio en mucho aceite de oliva, con cebolla.",
+    "Frita devagar em bastante azeite, com cebola."
+   ],
+   [
+    "Después las mezcla con huevos batidos.",
+    "Depois mistura com ovos batidos."
+   ],
+   [
+    "Lo más difícil es darle la vuelta con un plato.",
+    "O mais difícil é virar com um prato."
+   ],
+   [
+    "Mi abuela lo hace sin miedo, y nunca se le rompe.",
+    "Minha avó faz sem medo, e ela nunca quebra."
+   ]
+  ],
+  "words": [
+   [
+    "pelar",
+    "descascar"
+   ],
+   [
+    "los trozos",
+    "os pedaços"
+   ],
+   [
+    "freír",
+    "fritar"
+   ],
+   [
+    "despacio",
+    "devagar"
+   ],
+   [
+    "darle la vuelta",
+    "virar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como as batatas são cortadas?",
+    "options": [
+     "Em cubos grandes",
+     "Raladas",
+     "Em pedaços finos"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Em que se fritam as batatas?",
+    "options": [
+     "Manteiga",
+     "Azeite de oliva",
+     "Óleo de soja"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é a parte mais difícil?",
+    "options": [
+     "Virar a tortilha com um prato",
+     "Bater os ovos",
+     "Descascar as batatas"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "El Día de Muertos",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "En México, el Día de Muertos se celebra el 1 y el 2 de noviembre.",
+    "No México, o Dia dos Mortos é celebrado em 1 e 2 de novembro."
+   ],
+   [
+    "Las familias recuerdan a sus seres queridos que ya no están.",
+    "As famílias lembram dos entes queridos que já se foram."
+   ],
+   [
+    "En las casas hacen altares con flores naranjas y velas.",
+    "Nas casas fazem altares com flores laranja e velas."
+   ],
+   [
+    "También ponen fotos y la comida favorita de los difuntos.",
+    "Também colocam fotos e a comida favorita dos falecidos."
+   ],
+   [
+    "Es una fiesta alegre, con música y pan de muerto.",
+    "É uma festa alegre, com música e pão de morto."
+   ],
+   [
+    "No es un día triste, sino un día para recordar.",
+    "Não é um dia triste, e sim um dia para lembrar."
+   ]
+  ],
+  "words": [
+   [
+    "los seres queridos",
+    "os entes queridos"
+   ],
+   [
+    "el altar",
+    "o altar"
+   ],
+   [
+    "las velas",
+    "as velas"
+   ],
+   [
+    "los difuntos",
+    "os falecidos"
+   ],
+   [
+    "sino",
+    "e sim"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando se celebra o Dia dos Mortos?",
+    "options": [
+     "25 de dezembro",
+     "31 de outubro",
+     "1 e 2 de novembro"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que se coloca nos altares?",
+    "options": [
+     "Só flores brancas",
+     "Flores, velas, fotos e comida",
+     "Presentes de Natal"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como é o clima da festa?",
+    "options": [
+     "Triste e silencioso",
+     "Formal",
+     "Alegre, com música"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Un partido de fútbol",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "El domingo fui al estadio con mi padre.",
+    "No domingo fui ao estádio com meu pai."
+   ],
+   [
+    "Jugaba nuestro equipo contra el líder de la liga.",
+    "Nosso time jogava contra o líder do campeonato."
+   ],
+   [
+    "En el primer tiempo, el otro equipo marcó un gol.",
+    "No primeiro tempo, o outro time fez um gol."
+   ],
+   [
+    "Pero en el segundo tiempo empatamos con un penalti.",
+    "Mas no segundo tempo empatamos com um pênalti."
+   ],
+   [
+    "En el último minuto, nuestro delantero marcó el segundo gol.",
+    "No último minuto, nosso atacante fez o segundo gol."
+   ],
+   [
+    "Todo el estadio gritó de alegría.",
+    "O estádio inteiro gritou de alegria."
+   ]
+  ],
+  "words": [
+   [
+    "el líder",
+    "o líder"
+   ],
+   [
+    "marcar un gol",
+    "fazer um gol"
+   ],
+   [
+    "empatar",
+    "empatar"
+   ],
+   [
+    "el delantero",
+    "o atacante"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Contra quem o time jogava?",
+    "options": [
+     "Um time estrangeiro",
+     "O último colocado",
+     "O líder do campeonato"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como o time empatou?",
+    "options": [
+     "De cabeça",
+     "Com um pênalti",
+     "De falta"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual foi o resultado final?",
+    "options": [
+     "Derrota",
+     "Vitória do time do narrador",
+     "Empate"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Mi cantante favorita",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Mi cantante favorita es de Colombia.",
+    "Minha cantora favorita é da Colômbia."
+   ],
+   [
+    "Canta en español y en inglés.",
+    "Ela canta em espanhol e em inglês."
+   ],
+   [
+    "Sus canciones mezclan pop, rock y ritmos latinos.",
+    "As músicas dela misturam pop, rock e ritmos latinos."
+   ],
+   [
+    "Escucho su música cuando hago ejercicio.",
+    "Ouço a música dela quando faço exercício."
+   ],
+   [
+    "El año pasado fui a un concierto suyo en São Paulo.",
+    "No ano passado fui a um show dela em São Paulo."
+   ],
+   [
+    "Canté todas las canciones, aunque no entendía todas las palabras.",
+    "Cantei todas as músicas, embora não entendesse todas as palavras."
+   ]
+  ],
+  "words": [
+   [
+    "el cantante",
+    "o cantor"
+   ],
+   [
+    "mezclar",
+    "misturar"
+   ],
+   [
+    "el concierto",
+    "o show"
+   ],
+   [
+    "aunque",
+    "embora"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De onde é a cantora?",
+    "options": [
+     "Da Colômbia",
+     "Do México",
+     "Da Espanha"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quando o narrador ouve a música dela?",
+    "options": [
+     "Quando faz exercício",
+     "Quando dorme",
+     "Quando cozinha"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde foi o show?",
+    "options": [
+     "Em Bogotá",
+     "Em São Paulo",
+     "Em Madri"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Reciclar en casa",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "En mi casa separamos la basura en cuatro cubos.",
+    "Em casa separamos o lixo em quatro lixeiras."
+   ],
+   [
+    "El amarillo es para el plástico y las latas.",
+    "A amarela é para plástico e latas."
+   ],
+   [
+    "El azul es para el papel y el cartón.",
+    "A azul é para papel e papelão."
+   ],
+   [
+    "El verde es para el vidrio.",
+    "A verde é para vidro."
+   ],
+   [
+    "Y el último es para los restos de comida.",
+    "E a última é para restos de comida."
+   ],
+   [
+    "Al principio era difícil, pero ahora es un hábito.",
+    "No começo era difícil, mas agora é um hábito."
+   ]
+  ],
+  "words": [
+   [
+    "la basura",
+    "o lixo"
+   ],
+   [
+    "el cubo",
+    "o balde, a lixeira"
+   ],
+   [
+    "las latas",
+    "as latas"
+   ],
+   [
+    "el cartón",
+    "o papelão"
+   ],
+   [
+    "el vidrio",
+    "o vidro"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Em quantas lixeiras se separa o lixo?",
+    "options": [
+     "Quatro",
+     "Três",
+     "Duas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Para que serve a lixeira verde?",
+    "options": [
+     "Plástico",
+     "Vidro",
+     "Papel"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como é a reciclagem agora para a família?",
+    "options": [
+     "Algo novo",
+     "Muito difícil",
+     "Um hábito"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Una tarde de cine",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "El sábado por la tarde fuimos al cine.",
+    "No sábado à tarde fomos ao cinema."
+   ],
+   [
+    "Vimos una película argentina sobre dos hermanos.",
+    "Vimos um filme argentino sobre dois irmãos."
+   ],
+   [
+    "La película era en versión original con subtítulos.",
+    "O filme era na versão original com legendas."
+   ],
+   [
+    "Al principio fue difícil entender el acento.",
+    "No começo foi difícil entender o sotaque."
+   ],
+   [
+    "Pero después nos acostumbramos y nos gustó mucho.",
+    "Mas depois nos acostumamos e gostamos muito."
+   ],
+   [
+    "Al salir, tomamos un helado y hablamos del final.",
+    "Na saída, tomamos um sorvete e falamos do final."
+   ]
+  ],
+  "words": [
+   [
+    "la versión original",
+    "a versão original"
+   ],
+   [
+    "los subtítulos",
+    "as legendas"
+   ],
+   [
+    "el acento",
+    "o sotaque"
+   ],
+   [
+    "acostumbrarse",
+    "acostumar-se"
+   ],
+   [
+    "el helado",
+    "o sorvete"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De onde era o filme?",
+    "options": [
+     "Da Espanha",
+     "Da Argentina",
+     "Do México"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que foi difícil no começo?",
+    "options": [
+     "Entender o sotaque",
+     "Ler as legendas",
+     "Achar o cinema"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que fizeram depois do filme?",
+    "options": [
+     "Jantaram",
+     "Foram para casa",
+     "Tomaram sorvete"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Mi teléfono nuevo",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Ayer compré un teléfono móvil nuevo.",
+    "Ontem comprei um celular novo."
+   ],
+   [
+    "El viejo era muy lento y la batería no duraba nada.",
+    "O antigo era muito lento e a bateria não durava nada."
+   ],
+   [
+    "El nuevo tiene una cámara excelente.",
+    "O novo tem uma câmera excelente."
+   ],
+   [
+    "Pasé toda la tarde configurándolo.",
+    "Passei a tarde toda configurando."
+   ],
+   [
+    "Tuve que descargar mis aplicaciones y copiar mis fotos.",
+    "Tive que baixar meus aplicativos e copiar minhas fotos."
+   ],
+   [
+    "Ahora mi hermana quiere mi teléfono viejo.",
+    "Agora minha irmã quer meu celular antigo."
+   ]
+  ],
+  "words": [
+   [
+    "el móvil",
+    "o celular"
+   ],
+   [
+    "lento",
+    "lento"
+   ],
+   [
+    "la batería",
+    "a bateria"
+   ],
+   [
+    "configurar",
+    "configurar"
+   ],
+   [
+    "descargar",
+    "baixar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era o problema do celular antigo?",
+    "options": [
+     "Sem câmera",
+     "Lento e com pouca bateria",
+     "A tela quebrada"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que o novo tem de melhor?",
+    "options": [
+     "A câmera",
+     "O preço",
+     "O tamanho"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quem quer o celular antigo?",
+    "options": [
+     "Um amigo",
+     "A irmã",
+     "O pai"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "La Navidad en Argentina",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "En Argentina, la Navidad es en verano.",
+    "Na Argentina, o Natal é no verão."
+   ],
+   [
+    "Hace mucho calor, a veces más de treinta grados.",
+    "Faz muito calor, às vezes mais de trinta graus."
+   ],
+   [
+    "Las familias cenan el 24 por la noche, muchas veces al aire libre.",
+    "As famílias jantam no dia 24 à noite, muitas vezes ao ar livre."
+   ],
+   [
+    "Comen carne asada, ensaladas y pan dulce.",
+    "Comem carne assada, saladas e panetone."
+   ],
+   [
+    "A medianoche hay fuegos artificiales y todos brindan.",
+    "À meia-noite há fogos de artifício e todos brindam."
+   ],
+   [
+    "Los niños abren los regalos antes de dormir.",
+    "As crianças abrem os presentes antes de dormir."
+   ]
+  ],
+  "words": [
+   [
+    "al aire libre",
+    "ao ar livre"
+   ],
+   [
+    "el pan dulce",
+    "o panetone"
+   ],
+   [
+    "los fuegos artificiales",
+    "os fogos de artifício"
+   ],
+   [
+    "brindar",
+    "brindar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Em que estação é o Natal na Argentina?",
+    "options": [
+     "Inverno",
+     "Outono",
+     "Verão"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que se come no jantar?",
+    "options": [
+     "Carne assada, saladas e panetone",
+     "Peixe",
+     "Peru e purê"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que acontece à meia-noite?",
+    "options": [
+     "Todos vão dormir",
+     "Missa",
+     "Fogos e brindes"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Un museo de ciencias",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Hoy visitamos el museo de ciencias con la escuela.",
+    "Hoje visitamos o museu de ciências com a escola."
+   ],
+   [
+    "Hay una sala enorme dedicada al espacio.",
+    "Há uma sala enorme dedicada ao espaço."
+   ],
+   [
+    "Vemos un trozo de meteorito de verdad.",
+    "Vemos um pedaço de meteorito de verdade."
+   ],
+   [
+    "En otra sala hacemos experimentos con agua y luz.",
+    "Em outra sala fazemos experimentos com água e luz."
+   ],
+   [
+    "Lo que más me gusta es el esqueleto de dinosaurio.",
+    "O que eu mais gosto é o esqueleto de dinossauro."
+   ],
+   [
+    "Mide doce metros de largo.",
+    "Mede doze metros de comprimento."
+   ]
+  ],
+  "words": [
+   [
+    "el espacio",
+    "o espaço"
+   ],
+   [
+    "de verdad",
+    "de verdade"
+   ],
+   [
+    "el experimento",
+    "o experimento"
+   ],
+   [
+    "el esqueleto",
+    "o esqueleto"
+   ],
+   [
+    "de largo",
+    "de comprimento"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Com quem o narrador visita o museu?",
+    "options": [
+     "Com a escola",
+     "Com a família",
+     "Sozinho"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que há de verdade na sala do espaço?",
+    "options": [
+     "Um pedaço de meteorito",
+     "Um astronauta",
+     "Um foguete"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quanto mede o esqueleto?",
+    "options": [
+     "Vinte metros",
+     "Doze metros",
+     "Cinco metros"
+    ],
+    "correct": 1
+   }
+  ]
+ }
+]

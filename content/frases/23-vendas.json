@@ -1,0 +1,107 @@
+{
+ "id": "vendas",
+ "name": "Vendas e negociação",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "¿Cuál es su mejor precio?",
+   "pt": "Qual é o seu melhor preço?",
+   "nota": ""
+  },
+  {
+   "es": "Le puedo hacer un diez por ciento de descuento.",
+   "pt": "Posso dar dez por cento de desconto.",
+   "nota": ""
+  },
+  {
+   "es": "El precio no incluye el IVA.",
+   "pt": "O preço não inclui impostos.",
+   "nota": "\"IVA\" é o imposto sobre valor agregado."
+  },
+  {
+   "es": "Es nuestra última oferta.",
+   "pt": "É a nossa última oferta.",
+   "nota": ""
+  },
+  {
+   "es": "Necesito consultarlo con mi socio.",
+   "pt": "Preciso consultar meu sócio.",
+   "nota": ""
+  },
+  {
+   "es": "¿Qué condiciones de pago ofrecen?",
+   "pt": "Que condições de pagamento vocês oferecem?",
+   "nota": ""
+  },
+  {
+   "es": "Si compran más unidades, baja el precio.",
+   "pt": "Se comprarem mais unidades, o preço cai.",
+   "nota": ""
+  },
+  {
+   "es": "Le envío un presupuesto mañana.",
+   "pt": "Envio um orçamento amanhã.",
+   "nota": ""
+  },
+  {
+   "es": "Podemos llegar a un acuerdo.",
+   "pt": "Podemos chegar a um acordo.",
+   "nota": ""
+  },
+  {
+   "es": "Eso queda fuera de nuestro presupuesto.",
+   "pt": "Isso está fora do nosso orçamento.",
+   "nota": ""
+  },
+  {
+   "es": "¿Para cuándo podrían entregarlo?",
+   "pt": "Para quando vocês conseguiriam entregar?",
+   "nota": ""
+  },
+  {
+   "es": "El envío es gratuito a partir de cien euros.",
+   "pt": "O frete é grátis a partir de cem euros.",
+   "nota": ""
+  },
+  {
+   "es": "Le propongo una alternativa.",
+   "pt": "Proponho uma alternativa.",
+   "nota": ""
+  },
+  {
+   "es": "Es un producto de muy buena calidad.",
+   "pt": "É um produto de ótima qualidade.",
+   "nota": ""
+  },
+  {
+   "es": "Firmamos el contrato la semana que viene.",
+   "pt": "Assinamos o contrato na semana que vem.",
+   "nota": ""
+  },
+  {
+   "es": "¿Tienen garantía?",
+   "pt": "Tem garantia?",
+   "nota": ""
+  },
+  {
+   "es": "Necesitamos cerrar la venta este mes.",
+   "pt": "Precisamos fechar a venda este mês.",
+   "nota": ""
+  },
+  {
+   "es": "Es una inversión, no un gasto.",
+   "pt": "É um investimento, não um gasto.",
+   "nota": ""
+  },
+  {
+   "es": "¿Qué le hace dudar?",
+   "pt": "O que o deixa em dúvida?",
+   "nota": ""
+  },
+  {
+   "es": "Trato hecho.",
+   "pt": "Negócio fechado.",
+   "nota": ""
+  }
+ ]
+}

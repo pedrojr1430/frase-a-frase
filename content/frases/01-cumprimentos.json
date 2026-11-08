@@ -1,0 +1,107 @@
+{
+ "id": "cumprimentos",
+ "name": "Cumprimentos",
+ "group": "social",
+ "items": [
+  {
+   "es": "¿Qué tal todo?",
+   "pt": "Como vão as coisas?",
+   "nota": "Forma informal e muito comum de começar uma conversa."
+  },
+  {
+   "es": "¿Cómo te llamas?",
+   "pt": "Como você se chama?",
+   "nota": "\"Llamarse\" é reflexivo: me llamo, te llamas, se llama."
+  },
+  {
+   "es": "Mucho gusto en conocerte.",
+   "pt": "Muito prazer em te conhecer.",
+   "nota": "Em situações formais, diga \"conocerle\" ou \"conocerlo\"."
+  },
+  {
+   "es": "¡Cuánto tiempo sin verte!",
+   "pt": "Quanto tempo sem te ver!",
+   "nota": "Quase igual ao português: atenção só ao \"sin\"."
+  },
+  {
+   "es": "Que tengas un buen día.",
+   "pt": "Tenha um bom dia.",
+   "nota": "Desejos usam o subjuntivo: \"que tengas\", \"que te vaya bien\"."
+  },
+  {
+   "es": "Nos vemos mañana.",
+   "pt": "A gente se vê amanhã.",
+   "nota": "\"Mañana\" também é manhã: \"por la mañana\"."
+  },
+  {
+   "es": "Buenos días, ¿cómo está usted?",
+   "pt": "Bom dia, como o senhor está?",
+   "nota": "\"Usted\" é o tratamento formal; o verbo vai na 3ª pessoa."
+  },
+  {
+   "es": "¡Hola! ¿Qué hay de nuevo?",
+   "pt": "Oi! Quais as novidades?",
+   "nota": ""
+  },
+  {
+   "es": "Encantado de conocerla.",
+   "pt": "Encantado em conhecê-la.",
+   "nota": "Quem fala ajusta o gênero: encantado (homem), encantada (mulher)."
+  },
+  {
+   "es": "Te presento a mi amiga Laura.",
+   "pt": "Te apresento minha amiga Laura.",
+   "nota": ""
+  },
+  {
+   "es": "¿De dónde eres?",
+   "pt": "De onde você é?",
+   "nota": ""
+  },
+  {
+   "es": "Soy de Brasil, de São Paulo.",
+   "pt": "Sou do Brasil, de São Paulo.",
+   "nota": "Em espanhol, Brasil não leva artigo."
+  },
+  {
+   "es": "¿A qué te dedicas?",
+   "pt": "O que você faz da vida?",
+   "nota": "Pergunta natural sobre profissão, mais comum que \"¿cuál es tu trabajo?\"."
+  },
+  {
+   "es": "Bienvenido a casa.",
+   "pt": "Bem-vindo à nossa casa.",
+   "nota": ""
+  },
+  {
+   "es": "Saludos a tu familia.",
+   "pt": "Mande lembranças para sua família.",
+   "nota": ""
+  },
+  {
+   "es": "Hasta luego.",
+   "pt": "Até mais.",
+   "nota": "Serve mesmo sem data para se ver de novo."
+  },
+  {
+   "es": "Cuídate mucho.",
+   "pt": "Se cuida.",
+   "nota": ""
+  },
+  {
+   "es": "¡Buen fin de semana!",
+   "pt": "Bom fim de semana!",
+   "nota": ""
+  },
+  {
+   "es": "Perdona, no te había visto.",
+   "pt": "Desculpa, eu não tinha te visto.",
+   "nota": "\"Perdona\" é informal; com \"usted\" diga \"perdone\"."
+  },
+  {
+   "es": "Me alegro de verte.",
+   "pt": "Que bom te ver.",
+   "nota": ""
+  }
+ ]
+}

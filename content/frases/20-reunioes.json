@@ -1,0 +1,107 @@
+{
+ "id": "reunioes",
+ "name": "Reuniões",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "Empecemos la reunión.",
+   "pt": "Vamos começar a reunião.",
+   "nota": ""
+  },
+  {
+   "es": "El primer punto del orden del día es el presupuesto.",
+   "pt": "O primeiro item da pauta é o orçamento.",
+   "nota": "\"Orden del día\" = pauta; \"presupuesto\" = orçamento."
+  },
+  {
+   "es": "¿Alguien tiene alguna pregunta?",
+   "pt": "Alguém tem alguma pergunta?",
+   "nota": ""
+  },
+  {
+   "es": "Me gustaría añadir algo.",
+   "pt": "Eu gostaria de acrescentar algo.",
+   "nota": ""
+  },
+  {
+   "es": "Perdona que te interrumpa.",
+   "pt": "Desculpe interromper.",
+   "nota": ""
+  },
+  {
+   "es": "Volvamos al tema principal.",
+   "pt": "Vamos voltar ao assunto principal.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me compartes la pantalla?",
+   "pt": "Pode compartilhar a tela?",
+   "nota": ""
+  },
+  {
+   "es": "Se te ha cortado el audio.",
+   "pt": "Seu áudio cortou.",
+   "nota": ""
+  },
+  {
+   "es": "Tienes el micrófono silenciado.",
+   "pt": "Seu microfone está no mudo.",
+   "nota": ""
+  },
+  {
+   "es": "Lo dejamos para la próxima reunión.",
+   "pt": "Deixamos para a próxima reunião.",
+   "nota": ""
+  },
+  {
+   "es": "¿Quién toma notas hoy?",
+   "pt": "Quem faz a ata hoje?",
+   "nota": ""
+  },
+  {
+   "es": "Resumiendo, estamos de acuerdo en tres puntos.",
+   "pt": "Resumindo, concordamos em três pontos.",
+   "nota": ""
+  },
+  {
+   "es": "Necesitamos tomar una decisión hoy.",
+   "pt": "Precisamos tomar uma decisão hoje.",
+   "nota": ""
+  },
+  {
+   "es": "Os mando el acta por correo.",
+   "pt": "Mando a ata para vocês por e-mail.",
+   "nota": "\"Os\" é de \"vosotros\" (Espanha); na América Latina: \"les mando\"."
+  },
+  {
+   "es": "¿Podemos aplazar la reunión?",
+   "pt": "Podemos adiar a reunião?",
+   "nota": "\"Aplazar\" = adiar."
+  },
+  {
+   "es": "Vamos con un poco de retraso.",
+   "pt": "Estamos um pouco atrasados.",
+   "nota": ""
+  },
+  {
+   "es": "Buena pregunta, lo consulto y te digo.",
+   "pt": "Boa pergunta, vou verificar e te falo.",
+   "nota": ""
+  },
+  {
+   "es": "¿Qué os parece la propuesta?",
+   "pt": "O que vocês acham da proposta?",
+   "nota": ""
+  },
+  {
+   "es": "Hay que fijar los próximos pasos.",
+   "pt": "É preciso definir os próximos passos.",
+   "nota": ""
+  },
+  {
+   "es": "Gracias a todos por vuestro tiempo.",
+   "pt": "Obrigado a todos pelo tempo.",
+   "nota": "Na América Latina: \"por su tiempo\"."
+  }
+ ]
+}

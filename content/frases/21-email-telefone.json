@@ -1,0 +1,107 @@
+{
+ "id": "email-telefone",
+ "name": "E-mail e telefone",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "Estimado señor García:",
+   "pt": "Prezado senhor García,",
+   "nota": "Em e-mails formais, a saudação termina com dois-pontos."
+  },
+  {
+   "es": "Le escribo en relación con su pedido.",
+   "pt": "Escrevo a respeito do seu pedido.",
+   "nota": ""
+  },
+  {
+   "es": "Adjunto le envío el contrato.",
+   "pt": "Segue em anexo o contrato.",
+   "nota": ""
+  },
+  {
+   "es": "Quedo a la espera de su respuesta.",
+   "pt": "Aguardo sua resposta.",
+   "nota": ""
+  },
+  {
+   "es": "Un saludo cordial.",
+   "pt": "Atenciosamente.",
+   "nota": ""
+  },
+  {
+   "es": "Disculpe la demora en responder.",
+   "pt": "Desculpe a demora em responder.",
+   "nota": ""
+  },
+  {
+   "es": "¿Diga? / ¿Dígame?",
+   "pt": "Alô?",
+   "nota": "Na Espanha atende-se assim; no México, \"¿Bueno?\"; na Argentina, \"¿Hola?\"."
+  },
+  {
+   "es": "¿De parte de quién?",
+   "pt": "Quem gostaria?",
+   "nota": ""
+  },
+  {
+   "es": "Un momento, le paso.",
+   "pt": "Um momento, vou transferir.",
+   "nota": ""
+  },
+  {
+   "es": "Ahora mismo no está. ¿Quiere dejarle un mensaje?",
+   "pt": "Ele não está no momento. Quer deixar recado?",
+   "nota": ""
+  },
+  {
+   "es": "Se ha equivocado de número.",
+   "pt": "O senhor ligou para o número errado.",
+   "nota": ""
+  },
+  {
+   "es": "Le llamo más tarde.",
+   "pt": "Ligo mais tarde.",
+   "nota": ""
+  },
+  {
+   "es": "No le oigo bien, hay mala cobertura.",
+   "pt": "Não estou ouvindo bem, o sinal está ruim.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me puede deletrear su apellido?",
+   "pt": "Pode soletrar seu sobrenome?",
+   "nota": ""
+  },
+  {
+   "es": "Le confirmo la recepción del documento.",
+   "pt": "Confirmo o recebimento do documento.",
+   "nota": ""
+  },
+  {
+   "es": "Pongo en copia a mi compañera.",
+   "pt": "Coloco minha colega em cópia.",
+   "nota": ""
+  },
+  {
+   "es": "Le reenvío el correo de ayer.",
+   "pt": "Estou reencaminhando o e-mail de ontem.",
+   "nota": ""
+  },
+  {
+   "es": "Le agradecería una respuesta antes del viernes.",
+   "pt": "Agradeceria uma resposta até sexta.",
+   "nota": ""
+  },
+  {
+   "es": "Para cualquier duda, no dude en contactarme.",
+   "pt": "Qualquer dúvida, fico à disposição.",
+   "nota": ""
+  },
+  {
+   "es": "Te mando un mensaje cuando salga.",
+   "pt": "Te mando mensagem quando sair.",
+   "nota": ""
+  }
+ ]
+}

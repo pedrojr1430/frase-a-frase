@@ -1,0 +1,107 @@
+{
+ "id": "saude",
+ "name": "Saúde",
+ "group": "social",
+ "items": [
+  {
+   "es": "Me duele la cabeza.",
+   "pt": "Estou com dor de cabeça.",
+   "nota": "\"Doler\" funciona como \"gustar\": me duele, te duelen los pies."
+  },
+  {
+   "es": "Tengo fiebre desde ayer.",
+   "pt": "Estou com febre desde ontem.",
+   "nota": ""
+  },
+  {
+   "es": "Necesito pedir cita con el médico.",
+   "pt": "Preciso marcar consulta com o médico.",
+   "nota": ""
+  },
+  {
+   "es": "Estoy resfriado.",
+   "pt": "Estou resfriado.",
+   "nota": "Também se diz \"tengo un resfriado\" ou \"estoy constipado\" (Espanha)."
+  },
+  {
+   "es": "Me he torcido el tobillo.",
+   "pt": "Torci o tornozelo.",
+   "nota": ""
+  },
+  {
+   "es": "¿Desde cuándo tiene estos síntomas?",
+   "pt": "Desde quando o senhor tem esses sintomas?",
+   "nota": ""
+  },
+  {
+   "es": "Tome una pastilla cada ocho horas.",
+   "pt": "Tome um comprimido a cada oito horas.",
+   "nota": ""
+  },
+  {
+   "es": "Tengo dolor de garganta.",
+   "pt": "Estou com dor de garganta.",
+   "nota": ""
+  },
+  {
+   "es": "Me encuentro mucho mejor.",
+   "pt": "Estou me sentindo muito melhor.",
+   "nota": ""
+  },
+  {
+   "es": "¿Tiene seguro médico?",
+   "pt": "O senhor tem plano de saúde?",
+   "nota": ""
+  },
+  {
+   "es": "Voy al dentista esta tarde.",
+   "pt": "Vou ao dentista hoje à tarde.",
+   "nota": ""
+  },
+  {
+   "es": "Hago ejercicio tres veces por semana.",
+   "pt": "Faço exercício três vezes por semana.",
+   "nota": ""
+  },
+  {
+   "es": "Duermo muy mal últimamente.",
+   "pt": "Tenho dormido muito mal ultimamente.",
+   "nota": ""
+  },
+  {
+   "es": "Estoy mareado.",
+   "pt": "Estou tonto.",
+   "nota": "\"Mareado\" = tonto, enjoado."
+  },
+  {
+   "es": "Tengo la tensión alta.",
+   "pt": "Estou com a pressão alta.",
+   "nota": "Na América Latina se diz \"la presión\"."
+  },
+  {
+   "es": "Respire hondo.",
+   "pt": "Respire fundo.",
+   "nota": ""
+  },
+  {
+   "es": "Me hice un análisis de sangre.",
+   "pt": "Fiz um exame de sangue.",
+   "nota": ""
+  },
+  {
+   "es": "Tiene que guardar reposo.",
+   "pt": "O senhor precisa ficar de repouso.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me puede dar un justificante?",
+   "pt": "Pode me dar um atestado?",
+   "nota": "Para o trabalho, diz-se também \"baja médica\" (Espanha) ou \"incapacidad\"."
+  },
+  {
+   "es": "¡Que te mejores!",
+   "pt": "Melhoras!",
+   "nota": "Subjuntivo de desejo, como \"que tengas un buen día\"."
+  }
+ ]
+}

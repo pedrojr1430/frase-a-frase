@@ -1,0 +1,107 @@
+{
+ "id": "familia",
+ "name": "Família",
+ "group": "social",
+ "items": [
+  {
+   "es": "Tengo dos hermanos mayores.",
+   "pt": "Tenho dois irmãos mais velhos.",
+   "nota": "\"Mayor\" = mais velho; \"menor\" = mais novo."
+  },
+  {
+   "es": "Mi hermana pequeña tiene diez años.",
+   "pt": "Minha irmã caçula tem dez anos.",
+   "nota": ""
+  },
+  {
+   "es": "Mis padres viven en el campo.",
+   "pt": "Meus pais moram no interior.",
+   "nota": "\"Padres\" = pais (pai e mãe juntos)."
+  },
+  {
+   "es": "¿Tienes hijos?",
+   "pt": "Você tem filhos?",
+   "nota": ""
+  },
+  {
+   "es": "Estoy casado desde hace cinco años.",
+   "pt": "Sou casado há cinco anos.",
+   "nota": ""
+  },
+  {
+   "es": "Mi abuela cocina de maravilla.",
+   "pt": "Minha avó cozinha maravilhosamente bem.",
+   "nota": ""
+  },
+  {
+   "es": "Mi primo se parece mucho a mí.",
+   "pt": "Meu primo é muito parecido comigo.",
+   "nota": "\"Parecerse a\" = ser parecido com."
+  },
+  {
+   "es": "Somos una familia muy unida.",
+   "pt": "Somos uma família muito unida.",
+   "nota": ""
+  },
+  {
+   "es": "Mi suegra viene a cenar el domingo.",
+   "pt": "Minha sogra vem jantar no domingo.",
+   "nota": ""
+  },
+  {
+   "es": "Mi sobrino acaba de nacer.",
+   "pt": "Meu sobrinho acabou de nascer.",
+   "nota": "\"Acabar de\" + infinitivo = ter acabado de."
+  },
+  {
+   "es": "Nos reunimos todos en Navidad.",
+   "pt": "Todos nos reunimos no Natal.",
+   "nota": ""
+  },
+  {
+   "es": "Mi pareja es de Chile.",
+   "pt": "Meu parceiro é do Chile.",
+   "nota": "\"Pareja\" serve para namorado(a), marido ou esposa."
+  },
+  {
+   "es": "Me llevo muy bien con mi hermano.",
+   "pt": "Me dou muito bem com meu irmão.",
+   "nota": "\"Llevarse bien\" = dar-se bem."
+  },
+  {
+   "es": "Mis abuelos celebran sus bodas de oro.",
+   "pt": "Meus avós comemoram bodas de ouro.",
+   "nota": ""
+  },
+  {
+   "es": "Estoy embarazada de tres meses.",
+   "pt": "Estou grávida de três meses.",
+   "nota": "Falso cognato: \"embarazada\" é grávida, não envergonhada."
+  },
+  {
+   "es": "Cuido a mi sobrina los martes.",
+   "pt": "Cuido da minha sobrinha às terças.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cómo se llama tu hijo?",
+   "pt": "Como se chama seu filho?",
+   "nota": ""
+  },
+  {
+   "es": "Mi padre se jubiló el año pasado.",
+   "pt": "Meu pai se aposentou no ano passado.",
+   "nota": "\"Jubilarse\" = aposentar-se."
+  },
+  {
+   "es": "Somos gemelos.",
+   "pt": "Somos gêmeos.",
+   "nota": ""
+  },
+  {
+   "es": "Mi familia es de origen italiano.",
+   "pt": "Minha família é de origem italiana.",
+   "nota": ""
+  }
+ ]
+}

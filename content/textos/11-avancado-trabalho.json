@@ -1,0 +1,878 @@
+[
+ {
+  "tema": "trabalho",
+  "title": "La inteligencia artificial en la oficina",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "La llegada de la inteligencia artificial generativa ha transformado tareas que hasta hace poco parecían exclusivamente humanas.",
+    "A chegada da inteligência artificial generativa transformou tarefas que até pouco tempo pareciam exclusivamente humanas."
+   ],
+   [
+    "Hoy, un programa puede redactar un informe, resumir una reunión o traducir un contrato en segundos.",
+    "Hoje, um programa pode redigir um relatório, resumir uma reunião ou traduzir um contrato em segundos."
+   ],
+   [
+    "Muchos trabajadores temen que estas herramientas acaben sustituyéndolos.",
+    "Muitos trabalhadores temem que essas ferramentas acabem substituindo-os."
+   ],
+   [
+    "Los economistas, sin embargo, no se ponen de acuerdo sobre el impacto real en el empleo.",
+    "Os economistas, porém, não chegam a um acordo sobre o impacto real no emprego."
+   ],
+   [
+    "Algunos sostienen que se crearán nuevas profesiones, como ya ocurrió con otras revoluciones tecnológicas.",
+    "Alguns sustentam que surgirão novas profissões, como já aconteceu em outras revoluções tecnológicas."
+   ],
+   [
+    "Otros advierten que la transición podría ser demasiado rápida para que los trabajadores se adapten.",
+    "Outros alertam que a transição pode ser rápida demais para que os trabalhadores se adaptem."
+   ],
+   [
+    "En lo que casi todos coinciden es en que saber usar estas herramientas con criterio será una competencia clave.",
+    "No que quase todos concordam é que saber usar essas ferramentas com critério será uma competência-chave."
+   ]
+  ],
+  "words": [
+   [
+    "redactar",
+    "redigir"
+   ],
+   [
+    "la herramienta",
+    "a ferramenta"
+   ],
+   [
+    "acabar + gerúndio",
+    "acabar + gerúndio"
+   ],
+   [
+    "ponerse de acuerdo",
+    "chegar a um acordo"
+   ],
+   [
+    "la competencia",
+    "a competência"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que muitos trabalhadores temem?",
+    "options": [
+     "Trabalhar mais horas",
+     "Ganhar menos",
+     "Ser substituídos pelas ferramentas"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual é a posição dos economistas?",
+    "options": [
+     "Não chegam a um acordo",
+     "Todos são otimistas",
+     "Todos acham que haverá desemprego"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Em que quase todos concordam?",
+    "options": [
+     "Que a IA deve ser proibida",
+     "Que a IA vai acabar",
+     "Que usar essas ferramentas com critério será essencial"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "La economía de plataformas",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Repartidores en bicicleta, conductores de aplicaciones y trabajadores por encargo forman parte del paisaje urbano.",
+    "Entregadores de bicicleta, motoristas de aplicativo e trabalhadores por demanda fazem parte da paisagem urbana."
+   ],
+   [
+    "Las plataformas los presentan como emprendedores independientes que deciden cuándo y cuánto trabajar.",
+    "As plataformas os apresentam como empreendedores independentes que decidem quando e quanto trabalhar."
+   ],
+   [
+    "No obstante, muchos de ellos dependen por completo de una sola empresa y de su algoritmo.",
+    "No entanto, muitos dependem completamente de uma única empresa e do seu algoritmo."
+   ],
+   [
+    "Carecen de vacaciones pagadas, de baja por enfermedad y, en muchos casos, de seguro de accidentes.",
+    "Não têm férias remuneradas, licença médica e, em muitos casos, seguro contra acidentes."
+   ],
+   [
+    "En España, la llamada «ley rider» obligó a contratar como asalariados a los repartidores.",
+    "Na Espanha, a chamada \"lei rider\" obrigou a contratar os entregadores como assalariados."
+   ],
+   [
+    "Las empresas argumentaron que perderían flexibilidad y que subirían los precios para los clientes.",
+    "As empresas argumentaram que perderiam flexibilidade e que os preços subiriam para os clientes."
+   ],
+   [
+    "El debate de fondo es si las leyes laborales del siglo XX sirven para regular el trabajo del siglo XXI.",
+    "O debate de fundo é se as leis trabalhistas do século XX servem para regular o trabalho do século XXI."
+   ]
+  ],
+  "words": [
+   [
+    "el repartidor",
+    "o entregador"
+   ],
+   [
+    "por encargo",
+    "por demanda"
+   ],
+   [
+    "el emprendedor",
+    "o empreendedor"
+   ],
+   [
+    "carecer de",
+    "não ter"
+   ],
+   [
+    "el asalariado",
+    "o assalariado"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como as plataformas apresentam esses trabalhadores?",
+    "options": [
+     "Como funcionários",
+     "Como estagiários",
+     "Como empreendedores independentes"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que a \"lei rider\" determinou na Espanha?",
+    "options": [
+     "Contratar entregadores como assalariados",
+     "Reduzir impostos",
+     "Proibir os aplicativos"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual é o debate de fundo?",
+    "options": [
+     "Quanto custa uma entrega",
+     "Se as leis do século XX servem para o trabalho atual",
+     "Se as bicicletas são seguras"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Liderar equipos en remoto",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Dirigir un equipo repartido entre Buenos Aires, Madrid y Ciudad de México exige habilidades que no se enseñan en las escuelas de negocios.",
+    "Dirigir uma equipe espalhada entre Buenos Aires, Madri e Cidade do México exige habilidades que não se ensinam nas escolas de negócios."
+   ],
+   [
+    "La primera dificultad es la diferencia horaria, que reduce las horas compartidas a apenas tres o cuatro al día.",
+    "A primeira dificuldade é a diferença de fuso, que reduz as horas em comum a apenas três ou quatro por dia."
+   ],
+   [
+    "Por eso, muchos líderes priorizan la comunicación asíncrona: documentos claros y decisiones por escrito.",
+    "Por isso, muitos líderes priorizam a comunicação assíncrona: documentos claros e decisões por escrito."
+   ],
+   [
+    "Otra dificultad es que, sin el contacto diario, los malentendidos se agravan con facilidad.",
+    "Outra dificuldade é que, sem o contato diário, os mal-entendidos se agravam facilmente."
+   ],
+   [
+    "Incluso dentro del mismo idioma, una expresión neutra en un país puede resultar brusca en otro.",
+    "Mesmo dentro da mesma língua, uma expressão neutra num país pode soar brusca em outro."
+   ],
+   [
+    "Los equipos que mejor funcionan suelen reunirse en persona al menos una vez al año.",
+    "As equipes que funcionam melhor costumam se reunir pessoalmente pelo menos uma vez por ano."
+   ],
+   [
+    "La confianza, concluyen los expertos, se construye a distancia, pero se consolida cara a cara.",
+    "A confiança, concluem os especialistas, se constrói a distância, mas se consolida cara a cara."
+   ]
+  ],
+  "words": [
+   [
+    "repartido",
+    "espalhado"
+   ],
+   [
+    "la diferencia horaria",
+    "a diferença de fuso"
+   ],
+   [
+    "asíncrono",
+    "assíncrono"
+   ],
+   [
+    "el malentendido",
+    "o mal-entendido"
+   ],
+   [
+    "brusco",
+    "brusco"
+   ],
+   [
+    "cara a cara",
+    "cara a cara"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual é a primeira dificuldade citada?",
+    "options": [
+     "A diferença de fuso",
+     "O salário",
+     "A língua"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que os mal-entendidos se agravam?",
+    "options": [
+     "Por excesso de reuniões",
+     "Pela falta de contato diário",
+     "Por falta de internet"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como se consolida a confiança, segundo os especialistas?",
+    "options": [
+     "Por e-mail",
+     "Cara a cara",
+     "Com bônus"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "El emprendimiento social",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "En un barrio periférico de Medellín, una cooperativa de mujeres fabrica bolsos con materiales reciclados.",
+    "Num bairro periférico de Medellín, uma cooperativa de mulheres fabrica bolsas com materiais reciclados."
+   ],
+   [
+    "El proyecto nació hace diez años con cinco socias y una máquina de coser prestada.",
+    "O projeto nasceu há dez anos com cinco sócias e uma máquina de costura emprestada."
+   ],
+   [
+    "Hoy emplea a cuarenta personas y exporta a varios países europeos.",
+    "Hoje emprega quarenta pessoas e exporta para vários países europeus."
+   ],
+   [
+    "A diferencia de una empresa convencional, sus beneficios se reinvierten en formación y guardería para los hijos de las trabajadoras.",
+    "Diferentemente de uma empresa convencional, seus lucros são reinvestidos em capacitação e creche para os filhos das trabalhadoras."
+   ],
+   [
+    "Este tipo de iniciativas, conocidas como emprendimiento social, buscan resolver problemas sociales con modelos sostenibles.",
+    "Esse tipo de iniciativa, conhecido como empreendedorismo social, busca resolver problemas sociais com modelos sustentáveis."
+   ],
+   [
+    "Su mayor desafío es crecer sin perder los valores que les dieron origen.",
+    "Seu maior desafio é crescer sem perder os valores que lhe deram origem."
+   ],
+   [
+    "Como dice una de las fundadoras, «aquí no solo cosemos bolsos, cosemos oportunidades».",
+    "Como diz uma das fundadoras, \"aqui não costuramos só bolsas, costuramos oportunidades\"."
+   ]
+  ],
+  "words": [
+   [
+    "periférico",
+    "periférico"
+   ],
+   [
+    "la máquina de coser",
+    "a máquina de costura"
+   ],
+   [
+    "reinvertir",
+    "reinvestir"
+   ],
+   [
+    "la formación",
+    "a capacitação"
+   ],
+   [
+    "sostenible",
+    "sustentável"
+   ],
+   [
+    "coser",
+    "costurar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Com que a cooperativa começou?",
+    "options": [
+     "Um empréstimo bancário",
+     "Cinco sócias e uma máquina emprestada",
+     "Uma doação europeia"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Em que os lucros são reinvestidos?",
+    "options": [
+     "Em capacitação e creche",
+     "Em publicidade",
+     "Em novas lojas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual é o maior desafio?",
+    "options": [
+     "Crescer sem perder os valores",
+     "Achar clientes",
+     "Pagar impostos"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Las entrevistas por competencias",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Cada vez más empresas sustituyen las preguntas clásicas por entrevistas basadas en competencias.",
+    "Cada vez mais empresas substituem as perguntas clássicas por entrevistas baseadas em competências."
+   ],
+   [
+    "En lugar de preguntar «¿cuáles son sus defectos?», piden al candidato que describa situaciones concretas.",
+    "Em vez de perguntar \"quais são seus defeitos?\", pedem ao candidato que descreva situações concretas."
+   ],
+   [
+    "Por ejemplo: «Cuénteme una ocasión en la que tuvo que resolver un conflicto con un compañero».",
+    "Por exemplo: \"Conte uma ocasião em que teve que resolver um conflito com um colega\"."
+   ],
+   [
+    "La idea es que el comportamiento pasado predice mejor el desempeño futuro que las respuestas teóricas.",
+    "A ideia é que o comportamento passado prevê melhor o desempenho futuro do que as respostas teóricas."
+   ],
+   [
+    "Para prepararse, se recomienda el método STAR: situación, tarea, acción y resultado.",
+    "Para se preparar, recomenda-se o método STAR: situação, tarefa, ação e resultado."
+   ],
+   [
+    "Los reclutadores valoran especialmente que el candidato reconozca sus errores y explique qué aprendió.",
+    "Os recrutadores valorizam especialmente que o candidato reconheça seus erros e explique o que aprendeu."
+   ],
+   [
+    "Inventar historias, advierten, suele detectarse con dos o tres preguntas de seguimiento.",
+    "Inventar histórias, alertam, costuma ser detectado com duas ou três perguntas de acompanhamento."
+   ]
+  ],
+  "words": [
+   [
+    "el candidato",
+    "o candidato"
+   ],
+   [
+    "predecir",
+    "prever"
+   ],
+   [
+    "el desempeño",
+    "o desempenho"
+   ],
+   [
+    "el reclutador",
+    "o recrutador"
+   ],
+   [
+    "de seguimiento",
+    "de acompanhamento"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que as entrevistas por competências pedem?",
+    "options": [
+     "Situações concretas vividas",
+     "Testes de lógica",
+     "Defeitos e qualidades"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que significa o \"A\" do método STAR?",
+    "options": [
+     "Ação",
+     "Ambiente",
+     "Atitude"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que os recrutadores valorizam especialmente?",
+    "options": [
+     "Ter muitas certificações",
+     "Reconhecer erros e o que aprendeu",
+     "Respostas curtas"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "La brecha salarial",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "A pesar de los avances legales, las mujeres siguen cobrando de media menos que los hombres en casi todos los países.",
+    "Apesar dos avanços legais, as mulheres continuam recebendo em média menos que os homens em quase todos os países."
+   ],
+   [
+    "Parte de la diferencia se explica porque ocupan con más frecuencia sectores peor pagados.",
+    "Parte da diferença se explica porque ocupam com mais frequência setores mais mal pagos."
+   ],
+   [
+    "Otra parte se debe a la llamada «penalización por maternidad»: tras tener hijos, sus ingresos caen de forma notable.",
+    "Outra parte se deve à chamada \"penalidade da maternidade\": depois de ter filhos, sua renda cai de forma notável."
+   ],
+   [
+    "Los ingresos de los hombres, en cambio, apenas se ven afectados por la paternidad.",
+    "A renda dos homens, por outro lado, mal é afetada pela paternidade."
+   ],
+   [
+    "Algunos países han igualado los permisos de maternidad y paternidad para repartir mejor los cuidados.",
+    "Alguns países igualaram as licenças-maternidade e paternidade para dividir melhor os cuidados."
+   ],
+   [
+    "Otros obligan a las grandes empresas a publicar los salarios por género.",
+    "Outros obrigam as grandes empresas a publicar os salários por gênero."
+   ],
+   [
+    "La transparencia, según los estudios, reduce la brecha porque obliga a justificar las diferencias.",
+    "A transparência, segundo os estudos, reduz a desigualdade porque obriga a justificar as diferenças."
+   ]
+  ],
+  "words": [
+   [
+    "la brecha",
+    "a desigualdade, a lacuna"
+   ],
+   [
+    "de media",
+    "em média"
+   ],
+   [
+    "la penalización",
+    "a penalidade"
+   ],
+   [
+    "el permiso",
+    "a licença"
+   ],
+   [
+    "la transparencia",
+    "a transparência"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que é a \"penalidade da maternidade\"?",
+    "options": [
+     "Uma multa",
+     "Uma licença mais curta",
+     "A queda de renda das mães depois dos filhos"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que acontece com a renda dos homens após a paternidade?",
+    "options": [
+     "Mal é afetada",
+     "Sobe muito",
+     "Cai muito"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que a transparência reduz a desigualdade?",
+    "options": [
+     "Diminui impostos",
+     "Aumenta todos os salários",
+     "Obriga a justificar as diferenças"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Cuando una empresa familiar cambia de generación",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Las bodegas Álvarez llevan cuatro generaciones elaborando vino en La Rioja.",
+    "A vinícola Álvarez produz vinho há quatro gerações em La Rioja."
+   ],
+   [
+    "Cuando el fundador se jubiló, sus tres hijos tuvieron visiones muy distintas sobre el futuro.",
+    "Quando o fundador se aposentou, seus três filhos tiveram visões muito diferentes sobre o futuro."
+   ],
+   [
+    "La mayor quería modernizar la marca y vender por internet; el mediano, mantener la tradición; y el pequeño, vender la empresa.",
+    "A mais velha queria modernizar a marca e vender pela internet; o do meio, manter a tradição; e o caçula, vender a empresa."
+   ],
+   [
+    "Las discusiones llegaron a poner en peligro la relación familiar.",
+    "As discussões chegaram a pôr em risco a relação familiar."
+   ],
+   [
+    "Finalmente, contrataron a un mediador y redactaron un protocolo familiar que separaba la gestión de la propiedad.",
+    "Finalmente, contrataram um mediador e redigiram um protocolo familiar que separava a gestão da propriedade."
+   ],
+   [
+    "Se estima que solo un tercio de las empresas familiares sobrevive al paso a la segunda generación.",
+    "Estima-se que só um terço das empresas familiares sobrevive à passagem para a segunda geração."
+   ],
+   [
+    "Los Álvarez lo lograron porque entendieron a tiempo que el negocio y la familia necesitaban reglas distintas.",
+    "Os Álvarez conseguiram porque entenderam a tempo que o negócio e a família precisavam de regras diferentes."
+   ]
+  ],
+  "words": [
+   [
+    "la bodega",
+    "a vinícola"
+   ],
+   [
+    "elaborar",
+    "produzir"
+   ],
+   [
+    "jubilarse",
+    "aposentar-se"
+   ],
+   [
+    "el mediador",
+    "o mediador"
+   ],
+   [
+    "la gestión",
+    "a gestão"
+   ],
+   [
+    "lograrlo",
+    "conseguir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que o filho caçula queria?",
+    "options": [
+     "Manter a tradição",
+     "Modernizar a marca",
+     "Vender a empresa"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como resolveram o conflito?",
+    "options": [
+     "Venderam a empresa",
+     "O pai voltou a comandar",
+     "Com um mediador e um protocolo familiar"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Quantas empresas familiares sobrevivem à segunda geração?",
+    "options": [
+     "Só um terço",
+     "Cerca de metade",
+     "Quase todas"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Trabajar menos, vivir mejor",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "En muchas culturas latinas, trabajar largas jornadas se ha considerado tradicionalmente un signo de compromiso.",
+    "Em muitas culturas latinas, trabalhar longas jornadas foi tradicionalmente considerado um sinal de compromisso."
+   ],
+   [
+    "Sin embargo, España y varios países latinoamericanos figuran entre los que más horas trabajan sin ser los más productivos.",
+    "No entanto, a Espanha e vários países latino-americanos estão entre os que mais trabalham horas sem ser os mais produtivos."
+   ],
+   [
+    "Una de las razones es el llamado «presentismo»: permanecer en la oficina para ser visto, aunque no haya trabajo.",
+    "Uma das razões é o chamado \"presenteísmo\": ficar no escritório para ser visto, mesmo sem trabalho."
+   ],
+   [
+    "Algunas empresas han empezado a medir resultados en lugar de horas.",
+    "Algumas empresas começaram a medir resultados em vez de horas."
+   ],
+   [
+    "Además, adelantar la hora de salida permitiría conciliar mejor la vida laboral y familiar.",
+    "Além disso, antecipar o horário de saída permitiria conciliar melhor a vida profissional e familiar."
+   ],
+   [
+    "Los detractores temen que la flexibilidad se convierta en una disponibilidad permanente.",
+    "Os críticos temem que a flexibilidade se transforme numa disponibilidade permanente."
+   ],
+   [
+    "Quizá la clave no esté en trabajar menos o más, sino en trabajar con sentido.",
+    "Talvez a chave não esteja em trabalhar menos ou mais, mas em trabalhar com propósito."
+   ]
+  ],
+  "words": [
+   [
+    "la jornada",
+    "a jornada"
+   ],
+   [
+    "el compromiso",
+    "o compromisso"
+   ],
+   [
+    "el presentismo",
+    "o presenteísmo"
+   ],
+   [
+    "conciliar",
+    "conciliar"
+   ],
+   [
+    "los detractores",
+    "os críticos"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que é o \"presenteísmo\"?",
+    "options": [
+     "Trabalhar de casa",
+     "Ficar no escritório só para ser visto",
+     "Faltar ao trabalho"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que algumas empresas começaram a medir?",
+    "options": [
+     "Faltas",
+     "Resultados",
+     "Horas"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que os críticos da flexibilidade temem?",
+    "options": [
+     "Disponibilidade permanente",
+     "Mais reuniões",
+     "Salários menores"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "La cultura del feedback",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Dar y recibir críticas en el trabajo nunca resulta sencillo, y menos aún entre culturas diferentes.",
+    "Dar e receber críticas no trabalho nunca é simples, e menos ainda entre culturas diferentes."
+   ],
+   [
+    "En algunos países del norte de Europa se valora la franqueza directa, incluso delante de otros.",
+    "Em alguns países do norte da Europa valoriza-se a franqueza direta, mesmo diante de outros."
+   ],
+   [
+    "En gran parte de América Latina, en cambio, las críticas suelen suavizarse para no herir sensibilidades.",
+    "Em grande parte da América Latina, por outro lado, as críticas costumam ser suavizadas para não ferir sensibilidades."
+   ],
+   [
+    "Un «estaría bien revisar un par de cosas» puede significar, en realidad, que el trabajo está lejos de ser aceptable.",
+    "Um \"seria bom revisar umas coisinhas\" pode significar, na verdade, que o trabalho está longe de ser aceitável."
+   ],
+   [
+    "Estos matices provocan malentendidos frecuentes en equipos internacionales.",
+    "Essas nuances provocam mal-entendidos frequentes em equipes internacionais."
+   ],
+   [
+    "Los expertos aconsejan acordar explícitamente cómo se va a dar el feedback dentro de cada equipo.",
+    "Os especialistas aconselham combinar explicitamente como o feedback será dado dentro de cada equipe."
+   ],
+   [
+    "También recomiendan centrarse en comportamientos concretos y no en la persona.",
+    "Também recomendam focar em comportamentos concretos e não na pessoa."
+   ]
+  ],
+  "words": [
+   [
+    "la franqueza",
+    "a franqueza"
+   ],
+   [
+    "suavizar",
+    "suavizar"
+   ],
+   [
+    "herir",
+    "ferir"
+   ],
+   [
+    "los matices",
+    "as nuances"
+   ],
+   [
+    "acordar",
+    "combinar"
+   ],
+   [
+    "centrarse en",
+    "focar em"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como as críticas costumam ser na América Latina, segundo o texto?",
+    "options": [
+     "Muito diretas",
+     "Públicas",
+     "Suavizadas"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que pode significar \"seria bom revisar umas coisinhas\"?",
+    "options": [
+     "Que é um elogio",
+     "Que o trabalho está longe de ser aceitável",
+     "Que está quase perfeito"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que os especialistas recomendam?",
+    "options": [
+     "Evitar o feedback",
+     "Combinar como dar feedback e focar em comportamentos",
+     "Dar feedback só por escrito"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Una startup que fracasó",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "En 2019, tres amigos de Santiago fundaron una aplicación para compartir herramientas entre vecinos.",
+    "Em 2019, três amigos de Santiago fundaram um aplicativo para compartilhar ferramentas entre vizinhos."
+   ],
+   [
+    "Consiguieron una ronda de inversión y llegaron a tener veinte empleados.",
+    "Conseguiram uma rodada de investimento e chegaram a ter vinte funcionários."
+   ],
+   [
+    "El problema era que la gente descargaba la aplicación, pero casi nadie la usaba más de una vez.",
+    "O problema era que as pessoas baixavam o aplicativo, mas quase ninguém o usava mais de uma vez."
+   ],
+   [
+    "Durante meses se negaron a aceptarlo y gastaron el dinero en publicidad en lugar de escuchar a los usuarios.",
+    "Durante meses se recusaram a aceitar isso e gastaram o dinheiro em publicidade em vez de ouvir os usuários."
+   ],
+   [
+    "Cuando por fin hicieron entrevistas, descubrieron que la mayoría prefería pedir prestado a un amigo.",
+    "Quando finalmente fizeram entrevistas, descobriram que a maioria preferia pedir emprestado a um amigo."
+   ],
+   [
+    "La empresa cerró dos años después de su lanzamiento.",
+    "A empresa fechou dois anos depois do lançamento."
+   ],
+   [
+    "Uno de los fundadores afirma hoy que aquel fracaso le enseñó más que cualquier máster.",
+    "Um dos fundadores afirma hoje que aquele fracasso lhe ensinou mais do que qualquer mestrado."
+   ]
+  ],
+  "words": [
+   [
+    "la ronda de inversión",
+    "a rodada de investimento"
+   ],
+   [
+    "negarse a",
+    "recusar-se a"
+   ],
+   [
+    "pedir prestado",
+    "pedir emprestado"
+   ],
+   [
+    "el lanzamiento",
+    "o lançamento"
+   ],
+   [
+    "el fracaso",
+    "o fracasso"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era a ideia do aplicativo?",
+    "options": [
+     "Compartilhar ferramentas entre vizinhos",
+     "Compartilhar carros",
+     "Vender roupas usadas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual foi o principal erro dos fundadores?",
+    "options": [
+     "Contratar pouca gente",
+     "Não ouvir os usuários",
+     "Cobrar caro"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que um dos fundadores diz hoje?",
+    "options": [
+     "Que o fracasso lhe ensinou mais que um mestrado",
+     "Que vai tentar de novo",
+     "Que se arrepende de tudo"
+    ],
+    "correct": 0
+   }
+  ]
+ }
+]

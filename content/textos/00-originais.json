@@ -1,0 +1,392 @@
+[
+ {
+  "tema": "viagem",
+  "title": "Un día en Madrid",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Lucía vive en Madrid desde hace dos años.",
+    "Lucía mora em Madri há dois anos."
+   ],
+   [
+    "Cada mañana toma un café con leche en el bar de la esquina.",
+    "Toda manhã ela toma um café com leite no bar da esquina."
+   ],
+   [
+    "Después va en metro a la oficina, que está en el centro.",
+    "Depois vai de metrô ao escritório, que fica no centro."
+   ],
+   [
+    "Por la tarde le gusta pasear por el parque del Retiro.",
+    "À tarde ela gosta de passear pelo parque do Retiro."
+   ],
+   [
+    "Los domingos cena con sus amigos y hablan de la semana.",
+    "Aos domingos janta com os amigos e conversam sobre a semana."
+   ]
+  ],
+  "words": [
+   [
+    "desde hace",
+    "há (tempo)"
+   ],
+   [
+    "la esquina",
+    "a esquina"
+   ],
+   [
+    "pasear",
+    "passear"
+   ],
+   [
+    "cenar",
+    "jantar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde Lucía toma café todas as manhãs?",
+    "options": [
+     "Em casa",
+     "No bar da esquina",
+     "No escritório"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que Lucía faz aos domingos?",
+    "options": [
+     "Vai ao parque",
+     "Janta com os amigos",
+     "Trabalha"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Mi primera semana",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "El lunes empecé a trabajar en una empresa nueva.",
+    "Na segunda comecei a trabalhar numa empresa nova."
+   ],
+   [
+    "Mis compañeros son muy amables y me ayudan mucho.",
+    "Meus colegas são muito gentis e me ajudam muito."
+   ],
+   [
+    "Todavía no conozco bien el sistema, pero aprendo rápido.",
+    "Ainda não conheço bem o sistema, mas aprendo rápido."
+   ],
+   [
+    "A mediodía comemos juntos en un restaurante cerca de la oficina.",
+    "Ao meio-dia almoçamos juntos num restaurante perto do escritório."
+   ],
+   [
+    "El viernes mi jefa me dijo que estaba contenta con mi trabajo.",
+    "Na sexta minha chefe disse que estava contente com meu trabalho."
+   ]
+  ],
+  "words": [
+   [
+    "todavía",
+    "ainda"
+   ],
+   [
+    "los compañeros",
+    "os colegas"
+   ],
+   [
+    "a mediodía",
+    "ao meio-dia"
+   ],
+   [
+    "la jefa",
+    "a chefe"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde eles almoçam?",
+    "options": [
+     "Na empresa",
+     "Num restaurante perto do escritório",
+     "Em casa"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como a chefe se sentia com o trabalho?",
+    "options": [
+     "Contente",
+     "Preocupada",
+     "Cansada"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "En el mercado",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "El sábado, Andrés fue al mercado con una lista muy larga.",
+    "No sábado, Andrés foi ao mercado com uma lista bem longa."
+   ],
+   [
+    "Quería comprar tomates, cebollas y un buen pedazo de queso.",
+    "Queria comprar tomates, cebolas e um bom pedaço de queijo."
+   ],
+   [
+    "La vendedora le dijo que los tomates estaban más caros esta semana.",
+    "A vendedora disse que os tomates estavam mais caros esta semana."
+   ],
+   [
+    "Al final, Andrés se llevó la mitad y pidió una rebaja.",
+    "No fim, Andrés levou a metade e pediu um desconto."
+   ],
+   [
+    "Volvió a casa contento, aunque se olvidó del pan.",
+    "Voltou para casa contente, embora tenha esquecido o pão."
+   ]
+  ],
+  "words": [
+   [
+    "un pedazo",
+    "um pedaço"
+   ],
+   [
+    "la rebaja",
+    "o desconto"
+   ],
+   [
+    "la mitad",
+    "a metade"
+   ],
+   [
+    "aunque",
+    "embora"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que Andrés esqueceu de comprar?",
+    "options": [
+     "O queijo",
+     "As cebolas",
+     "O pão"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Por que Andrés levou só metade dos tomates?",
+    "options": [
+     "Estavam mais caros",
+     "Estavam estragados",
+     "Não tinha sacola"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Un viaje a Buenos Aires",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Hace unos meses, Marta decidió pasar dos semanas en Buenos Aires.",
+    "Há alguns meses, Marta decidiu passar duas semanas em Buenos Aires."
+   ],
+   [
+    "Al llegar, le sorprendió que todos usaran \"vos\" en lugar de \"tú\".",
+    "Ao chegar, ela se surpreendeu que todos usassem \"vos\" em vez de \"tú\"."
+   ],
+   [
+    "También tuvo que acostumbrarse a tomar el colectivo para moverse por la ciudad.",
+    "Também teve que se acostumar a pegar o ônibus para circular pela cidade."
+   ],
+   [
+    "Si hubiera sabido lo barato que era el teatro, habría ido más veces.",
+    "Se soubesse como o teatro era barato, teria ido mais vezes."
+   ],
+   [
+    "Ahora, cada vez que alguien le ofrece mate, se acuerda de aquel viaje.",
+    "Agora, toda vez que alguém lhe oferece chimarrão, ela se lembra daquela viagem."
+   ]
+  ],
+  "words": [
+   [
+    "el colectivo",
+    "o ônibus (Argentina)"
+   ],
+   [
+    "acostumbrarse",
+    "acostumar-se"
+   ],
+   [
+    "en lugar de",
+    "em vez de"
+   ],
+   [
+    "acordarse de",
+    "lembrar-se de"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que surpreendeu Marta ao chegar?",
+    "options": [
+     "O preço do teatro",
+     "O uso de \"vos\"",
+     "O clima"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Do que Marta se arrepende?",
+    "options": [
+     "De não ter ido mais ao teatro",
+     "De ter viajado sozinha",
+     "De não ter tomado mate"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El fin de semana",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Este fin de semana no tengo planes.",
+    "Neste fim de semana não tenho planos."
+   ],
+   [
+    "El sábado quiero dormir hasta tarde y leer un libro.",
+    "No sábado quero dormir até tarde e ler um livro."
+   ],
+   [
+    "Por la tarde voy a llamar a mi madre.",
+    "À tarde vou ligar para minha mãe."
+   ],
+   [
+    "El domingo, si hace buen tiempo, voy a ir a la playa.",
+    "No domingo, se fizer tempo bom, vou à praia."
+   ],
+   [
+    "Si llueve, me quedo en casa y veo una película.",
+    "Se chover, fico em casa e vejo um filme."
+   ]
+  ],
+  "words": [
+   [
+    "hasta tarde",
+    "até tarde"
+   ],
+   [
+    "hace buen tiempo",
+    "faz tempo bom"
+   ],
+   [
+    "llover",
+    "chover"
+   ],
+   [
+    "quedarse",
+    "ficar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que a pessoa quer fazer no sábado?",
+    "options": [
+     "Ir à praia",
+     "Dormir até tarde e ler",
+     "Trabalhar"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que ela fará se chover no domingo?",
+    "options": [
+     "Fica em casa e vê um filme",
+     "Vai ao cinema",
+     "Liga para a mãe"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Una llamada importante",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Esta mañana Carlos recibió la llamada de un cliente muy enfadado.",
+    "Esta manhã Carlos recebeu a ligação de um cliente muito irritado."
+   ],
+   [
+    "El cliente decía que su pedido no había llegado a tiempo.",
+    "O cliente dizia que o pedido dele não tinha chegado a tempo."
+   ],
+   [
+    "Carlos le pidió disculpas y revisó el sistema mientras hablaban.",
+    "Carlos pediu desculpas e verificou o sistema enquanto conversavam."
+   ],
+   [
+    "Descubrió que el paquete estaba retenido en la aduana.",
+    "Descobriu que o pacote estava retido na alfândega."
+   ],
+   [
+    "Le prometió que lo llamaría en cuanto tuviera noticias.",
+    "Prometeu que ligaria assim que tivesse notícias."
+   ]
+  ],
+  "words": [
+   [
+    "enfadado",
+    "irritado"
+   ],
+   [
+    "el pedido",
+    "o pedido"
+   ],
+   [
+    "pedir disculpas",
+    "pedir desculpas"
+   ],
+   [
+    "en cuanto",
+    "assim que"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que o cliente estava irritado?",
+    "options": [
+     "O pedido atrasou",
+     "O preço subiu",
+     "Carlos não atendeu"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde estava o pacote?",
+    "options": [
+     "No depósito",
+     "Na alfândega",
+     "Com o cliente"
+    ],
+    "correct": 1
+   }
+  ]
+ }
+]

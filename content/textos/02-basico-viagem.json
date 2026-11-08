@@ -1,0 +1,716 @@
+[
+ {
+  "tema": "viagem",
+  "title": "Llegada a Lima",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Ana llega al aeropuerto de Lima a las seis de la mañana.",
+    "Ana chega ao aeroporto de Lima às seis da manhã."
+   ],
+   [
+    "Recoge su maleta y busca la salida.",
+    "Pega a mala e procura a saída."
+   ],
+   [
+    "Fuera hay muchos taxistas que ofrecen sus servicios.",
+    "Do lado de fora há muitos taxistas oferecendo seus serviços."
+   ],
+   [
+    "Ana prefiere pedir un taxi oficial en el mostrador.",
+    "Ana prefere pedir um táxi oficial no balcão."
+   ],
+   [
+    "El viaje hasta el hotel dura cuarenta minutos.",
+    "A viagem até o hotel dura quarenta minutos."
+   ],
+   [
+    "Desde la ventana del taxi ve el mar por primera vez.",
+    "Da janela do táxi ela vê o mar pela primeira vez."
+   ]
+  ],
+  "words": [
+   [
+    "recoger",
+    "pegar, retirar"
+   ],
+   [
+    "la salida",
+    "a saída"
+   ],
+   [
+    "el taxista",
+    "o taxista"
+   ],
+   [
+    "el mostrador",
+    "o balcão"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "A que horas Ana chega a Lima?",
+    "options": [
+     "Ao meio-dia",
+     "À noite",
+     "Às seis da manhã"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Que táxi Ana escolhe?",
+    "options": [
+     "Um táxi oficial",
+     "Um táxi de aplicativo",
+     "O primeiro que aparece"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quanto tempo leva até o hotel?",
+    "options": [
+     "Uma hora",
+     "Vinte minutos",
+     "Quarenta minutos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "En el hotel",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Carlos entra en el hotel y va a la recepción.",
+    "Carlos entra no hotel e vai à recepção."
+   ],
+   [
+    "—Buenas tardes, tengo una reserva a nombre de Carlos Ruiz.",
+    "—Boa tarde, tenho uma reserva em nome de Carlos Ruiz."
+   ],
+   [
+    "—Bienvenido. Es una habitación individual para tres noches.",
+    "—Bem-vindo. É um quarto individual para três noites."
+   ],
+   [
+    "El recepcionista le da la llave y la clave del wifi.",
+    "O recepcionista entrega a chave e a senha do wi-fi."
+   ],
+   [
+    "El desayuno es de siete a diez en el primer piso.",
+    "O café da manhã é das sete às dez no primeiro andar."
+   ],
+   [
+    "La habitación es pequeña, pero limpia y tranquila.",
+    "O quarto é pequeno, mas limpo e tranquilo."
+   ]
+  ],
+  "words": [
+   [
+    "la recepción",
+    "a recepção"
+   ],
+   [
+    "individual",
+    "de solteiro"
+   ],
+   [
+    "la llave",
+    "a chave"
+   ],
+   [
+    "limpia",
+    "limpa"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por quantas noites é a reserva?",
+    "options": [
+     "Quatro",
+     "Duas",
+     "Três"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Onde é servido o café da manhã?",
+    "options": [
+     "No primeiro andar",
+     "No quarto",
+     "No térreo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como é o quarto?",
+    "options": [
+     "Pequeno, limpo e tranquilo",
+     "Grande e barulhento",
+     "Escuro"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "El tren a Sevilla",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Hoy viajo de Madrid a Sevilla en tren.",
+    "Hoje viajo de Madri para Sevilha de trem."
+   ],
+   [
+    "El tren sale a las nueve de la estación de Atocha.",
+    "O trem sai às nove da estação de Atocha."
+   ],
+   [
+    "Mi asiento está en el vagón cinco, junto a la ventanilla.",
+    "Meu lugar fica no vagão cinco, ao lado da janela."
+   ],
+   [
+    "El viaje dura solo dos horas y media.",
+    "A viagem dura só duas horas e meia."
+   ],
+   [
+    "Por la ventana veo campos de olivos.",
+    "Pela janela vejo campos de oliveiras."
+   ],
+   [
+    "Llego a Sevilla a tiempo para comer.",
+    "Chego a Sevilha a tempo de almoçar."
+   ]
+  ],
+  "words": [
+   [
+    "el asiento",
+    "o assento"
+   ],
+   [
+    "el vagón",
+    "o vagão"
+   ],
+   [
+    "la ventanilla",
+    "a janela"
+   ],
+   [
+    "los olivos",
+    "as oliveiras"
+   ],
+   [
+    "a tiempo",
+    "a tempo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De que estação sai o trem?",
+    "options": [
+     "Chamartín",
+     "Atocha",
+     "Santa Justa"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quanto dura a viagem?",
+    "options": [
+     "Uma hora",
+     "Cinco horas",
+     "Duas horas e meia"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que o narrador vê pela janela?",
+    "options": [
+     "Montanhas com neve",
+     "Campos de oliveiras",
+     "O mar"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Una maleta perdida",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Después del vuelo, Laura espera su maleta, pero no sale.",
+    "Depois do voo, Laura espera a mala, mas ela não aparece."
+   ],
+   [
+    "Va a la oficina de equipajes y explica el problema.",
+    "Vai ao balcão de bagagens e explica o problema."
+   ],
+   [
+    "La empleada le pide la tarjeta de embarque y una descripción.",
+    "A funcionária pede o cartão de embarque e uma descrição."
+   ],
+   [
+    "—Es una maleta roja, grande, con una cinta verde.",
+    "—É uma mala vermelha, grande, com uma fita verde."
+   ],
+   [
+    "La empleada le dice que la maleta está en Barcelona.",
+    "A funcionária diz que a mala está em Barcelona."
+   ],
+   [
+    "Al día siguiente la llevan a su hotel.",
+    "No dia seguinte a levam até o hotel dela."
+   ]
+  ],
+  "words": [
+   [
+    "el equipaje",
+    "a bagagem"
+   ],
+   [
+    "la empleada",
+    "a funcionária"
+   ],
+   [
+    "la cinta",
+    "a fita"
+   ],
+   [
+    "al día siguiente",
+    "no dia seguinte"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como é a mala de Laura?",
+    "options": [
+     "Vermelha, grande, com fita verde",
+     "Preta e pequena",
+     "Azul com rodinhas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde estava a mala?",
+    "options": [
+     "Em Lisboa",
+     "Em Barcelona",
+     "Em Madri"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como o problema foi resolvido?",
+    "options": [
+     "Laura comprou outra",
+     "Ela voltou ao aeroporto",
+     "Levaram a mala ao hotel"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Turistas en Cusco",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Pedro y Elena están de vacaciones en Cusco.",
+    "Pedro e Elena estão de férias em Cusco."
+   ],
+   [
+    "La ciudad está a más de tres mil metros de altura.",
+    "A cidade fica a mais de três mil metros de altitude."
+   ],
+   [
+    "El primer día descansan y beben té de coca.",
+    "No primeiro dia descansam e tomam chá de coca."
+   ],
+   [
+    "El segundo día visitan la plaza de Armas y los mercados.",
+    "No segundo dia visitam a praça de Armas e os mercados."
+   ],
+   [
+    "Compran ropa de lana de alpaca para el invierno.",
+    "Compram roupas de lã de alpaca para o inverno."
+   ],
+   [
+    "El tercer día van en tren a Machu Picchu.",
+    "No terceiro dia vão de trem a Machu Picchu."
+   ]
+  ],
+  "words": [
+   [
+    "la altura",
+    "a altitude"
+   ],
+   [
+    "descansar",
+    "descansar"
+   ],
+   [
+    "la lana",
+    "a lã"
+   ],
+   [
+    "el invierno",
+    "o inverno"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que eles descansam no primeiro dia?",
+    "options": [
+     "Porque chove",
+     "Por causa da altitude",
+     "Porque estão doentes"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que eles compram?",
+    "options": [
+     "Café",
+     "Roupas de lã de alpaca",
+     "Joias"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como vão a Machu Picchu?",
+    "options": [
+     "De trem",
+     "De ônibus",
+     "A pé"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Pedir direcciones",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Tom está en Valencia y busca el Mercado Central.",
+    "Tom está em Valência e procura o Mercado Central."
+   ],
+   [
+    "Pregunta a una señora en la calle.",
+    "Pergunta a uma senhora na rua."
+   ],
+   [
+    "—Perdone, ¿el Mercado Central está lejos?",
+    "—Com licença, o Mercado Central fica longe?"
+   ],
+   [
+    "—No, está a cinco minutos. Siga todo recto y gire a la izquierda en la plaza.",
+    "—Não, fica a cinco minutos. Siga em frente e vire à esquerda na praça."
+   ],
+   [
+    "—Muchas gracias, es usted muy amable.",
+    "—Muito obrigado, a senhora é muito gentil."
+   ],
+   [
+    "Tres minutos después, Tom ve el edificio del mercado.",
+    "Três minutos depois, Tom vê o prédio do mercado."
+   ]
+  ],
+  "words": [
+   [
+    "lejos",
+    "longe"
+   ],
+   [
+    "todo recto",
+    "em frente"
+   ],
+   [
+    "girar",
+    "virar"
+   ],
+   [
+    "amable",
+    "gentil"
+   ],
+   [
+    "el edificio",
+    "o prédio"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que Tom procura?",
+    "options": [
+     "A estação",
+     "A praia",
+     "O Mercado Central"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Onde ele deve virar?",
+    "options": [
+     "Na igreja",
+     "No semáforo",
+     "Na praça"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "A que distância fica o mercado?",
+    "options": [
+     "Meia hora",
+     "Cinco minutos",
+     "Uma hora"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "En la farmacia",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "En la playa, Julia se quema la espalda con el sol.",
+    "Na praia, Julia queima as costas no sol."
+   ],
+   [
+    "Por la tarde va a una farmacia cerca del hotel.",
+    "À tarde vai a uma farmácia perto do hotel."
+   ],
+   [
+    "El farmacéutico le recomienda una crema con aloe vera.",
+    "O farmacêutico recomenda um creme com babosa."
+   ],
+   [
+    "También le vende un protector solar más fuerte.",
+    "Também vende um protetor solar mais forte."
+   ],
+   [
+    "Le dice que no tome el sol entre las doce y las cuatro.",
+    "Diz para ela não tomar sol entre meio-dia e quatro."
+   ],
+   [
+    "Julia paga con tarjeta y vuelve al hotel.",
+    "Julia paga com cartão e volta ao hotel."
+   ]
+  ],
+  "words": [
+   [
+    "quemarse",
+    "queimar-se"
+   ],
+   [
+    "la espalda",
+    "as costas"
+   ],
+   [
+    "el farmacéutico",
+    "o farmacêutico"
+   ],
+   [
+    "tomar el sol",
+    "tomar sol"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual é o problema de Julia?",
+    "options": [
+     "Queimadura de sol",
+     "Picada de inseto",
+     "Dor de cabeça"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que o farmacêutico recomenda?",
+    "options": [
+     "Um antibiótico",
+     "Um xarope",
+     "Um creme com babosa"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Em que horário ela não deve tomar sol?",
+    "options": [
+     "Depois das seis",
+     "De manhã cedo",
+     "Entre meio-dia e quatro"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Un paseo en bicicleta",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Barcelona es una ciudad perfecta para ir en bicicleta.",
+    "Barcelona é uma cidade perfeita para andar de bicicleta."
+   ],
+   [
+    "Nosotros alquilamos dos bicis para todo el día.",
+    "Nós alugamos duas bicicletas para o dia todo."
+   ],
+   [
+    "Primero vamos por el paseo marítimo.",
+    "Primeiro vamos pelo calçadão da praia."
+   ],
+   [
+    "Después subimos hasta el parque de la Ciudadela.",
+    "Depois subimos até o parque da Ciudadela."
+   ],
+   [
+    "Comemos un bocadillo en un banco a la sombra.",
+    "Comemos um sanduíche num banco à sombra."
+   ],
+   [
+    "Por la tarde devolvemos las bicis, cansados pero felices.",
+    "À tarde devolvemos as bicicletas, cansados mas felizes."
+   ]
+  ],
+  "words": [
+   [
+    "alquilar",
+    "alugar"
+   ],
+   [
+    "el paseo marítimo",
+    "o calçadão à beira-mar"
+   ],
+   [
+    "el bocadillo",
+    "o sanduíche"
+   ],
+   [
+    "la sombra",
+    "a sombra"
+   ],
+   [
+    "devolver",
+    "devolver"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por quanto tempo eles alugam as bicicletas?",
+    "options": [
+     "O dia todo",
+     "Uma hora",
+     "Meio dia"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que eles comem?",
+    "options": [
+     "Paella",
+     "Sorvete",
+     "Um sanduíche"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como eles terminam o dia?",
+    "options": [
+     "Perdidos",
+     "Molhados de chuva",
+     "Cansados mas felizes"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Comprar billetes",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Marina quiere ir de Buenos Aires a Mendoza.",
+    "Marina quer ir de Buenos Aires a Mendoza."
+   ],
+   [
+    "El avión es caro, así que decide ir en autobús.",
+    "O avião é caro, então ela decide ir de ônibus."
+   ],
+   [
+    "En la terminal pregunta por los horarios.",
+    "Na rodoviária pergunta pelos horários."
+   ],
+   [
+    "Hay un autobús nocturno que sale a las nueve de la noche.",
+    "Há um ônibus noturno que sai às nove da noite."
+   ],
+   [
+    "Los asientos se convierten casi en camas.",
+    "Os assentos viram quase camas."
+   ],
+   [
+    "Marina duerme todo el viaje y llega por la mañana.",
+    "Marina dorme a viagem toda e chega de manhã."
+   ]
+  ],
+  "words": [
+   [
+    "así que",
+    "então"
+   ],
+   [
+    "la terminal",
+    "a rodoviária"
+   ],
+   [
+    "nocturno",
+    "noturno"
+   ],
+   [
+    "convertirse",
+    "transformar-se"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que Marina não vai de avião?",
+    "options": [
+     "É caro",
+     "Tem medo",
+     "Não há voos"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "A que horas sai o ônibus?",
+    "options": [
+     "À meia-noite",
+     "Às nove da noite",
+     "Às nove da manhã"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como Marina passa a viagem?",
+    "options": [
+     "Dormindo",
+     "Conversando",
+     "Lendo"
+    ],
+    "correct": 0
+   }
+  ]
+ }
+]

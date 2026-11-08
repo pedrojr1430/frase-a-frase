@@ -1,0 +1,107 @@
+{
+ "id": "financas",
+ "name": "Finanças",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "Los beneficios han subido este trimestre.",
+   "pt": "Os lucros subiram neste trimestre.",
+   "nota": "\"Beneficios\" = lucros; \"ganancias\" também."
+  },
+  {
+   "es": "Tenemos que reducir gastos.",
+   "pt": "Temos que reduzir despesas.",
+   "nota": ""
+  },
+  {
+   "es": "La factura vence el día treinta.",
+   "pt": "A fatura vence no dia trinta.",
+   "nota": ""
+  },
+  {
+   "es": "Hay que emitir la factura.",
+   "pt": "É preciso emitir a nota fiscal.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuál es el margen de este producto?",
+   "pt": "Qual é a margem deste produto?",
+   "nota": ""
+  },
+  {
+   "es": "Las ventas cayeron un cinco por ciento.",
+   "pt": "As vendas caíram cinco por cento.",
+   "nota": ""
+  },
+  {
+   "es": "Estamos dentro del presupuesto.",
+   "pt": "Estamos dentro do orçamento.",
+   "nota": ""
+  },
+  {
+   "es": "Tengo que hacer la declaración de la renta.",
+   "pt": "Tenho que fazer a declaração do imposto de renda.",
+   "nota": ""
+  },
+  {
+   "es": "La empresa está en números rojos.",
+   "pt": "A empresa está no vermelho.",
+   "nota": ""
+  },
+  {
+   "es": "La inflación sigue alta.",
+   "pt": "A inflação continua alta.",
+   "nota": ""
+  },
+  {
+   "es": "Hemos recibido el pago.",
+   "pt": "Recebemos o pagamento.",
+   "nota": ""
+  },
+  {
+   "es": "El cliente todavía no ha pagado.",
+   "pt": "O cliente ainda não pagou.",
+   "nota": ""
+  },
+  {
+   "es": "Hay que revisar las cuentas.",
+   "pt": "É preciso revisar as contas.",
+   "nota": ""
+  },
+  {
+   "es": "El balance del año es positivo.",
+   "pt": "O balanço do ano é positivo.",
+   "nota": ""
+  },
+  {
+   "es": "Buscamos inversores.",
+   "pt": "Procuramos investidores.",
+   "nota": ""
+  },
+  {
+   "es": "Las acciones han bajado.",
+   "pt": "As ações caíram.",
+   "nota": ""
+  },
+  {
+   "es": "El sueldo se paga a fin de mes.",
+   "pt": "O salário é pago no fim do mês.",
+   "nota": "Também \"salario\"; na Argentina, \"sueldo\" é o mais comum."
+  },
+  {
+   "es": "Vamos a pedir un crédito.",
+   "pt": "Vamos pedir um crédito.",
+   "nota": ""
+  },
+  {
+   "es": "Los intereses son muy altos.",
+   "pt": "Os juros estão muito altos.",
+   "nota": "\"Intereses\" = juros."
+  },
+  {
+   "es": "Hay que controlar el flujo de caja.",
+   "pt": "É preciso controlar o fluxo de caixa.",
+   "nota": ""
+  }
+ ]
+}

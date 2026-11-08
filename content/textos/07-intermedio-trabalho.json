@@ -1,0 +1,862 @@
+[
+ {
+  "tema": "trabalho",
+  "title": "Montar un negocio",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Después de diez años trabajando en una multinacional, Lorena decidió montar su propio negocio.",
+    "Depois de dez anos trabalhando numa multinacional, Lorena decidiu abrir o próprio negócio."
+   ],
+   [
+    "Siempre le había gustado la repostería, así que abrió una pastelería en Guadalajara.",
+    "Sempre gostou de confeitaria, então abriu uma confeitaria em Guadalajara."
+   ],
+   [
+    "Los primeros meses fueron muy duros: trabajaba catorce horas al día.",
+    "Os primeiros meses foram muito duros: trabalhava catorze horas por dia."
+   ],
+   [
+    "Además, tuvo que aprender sobre impuestos, proveedores y permisos.",
+    "Além disso, teve que aprender sobre impostos, fornecedores e licenças."
+   ],
+   [
+    "Poco a poco, gracias a las redes sociales, empezaron a llegar clientes.",
+    "Aos poucos, graças às redes sociais, começaram a chegar clientes."
+   ],
+   [
+    "Hoy tiene cuatro empleados y prepara pasteles para bodas y eventos.",
+    "Hoje tem quatro funcionários e prepara bolos para casamentos e eventos."
+   ],
+   [
+    "Dice que gana menos que antes, pero que es mucho más feliz.",
+    "Diz que ganha menos que antes, mas é muito mais feliz."
+   ]
+  ],
+  "words": [
+   [
+    "montar un negocio",
+    "abrir um negócio"
+   ],
+   [
+    "la repostería",
+    "a confeitaria"
+   ],
+   [
+    "los proveedores",
+    "os fornecedores"
+   ],
+   [
+    "los permisos",
+    "as licenças"
+   ],
+   [
+    "los empleados",
+    "os funcionários"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde Lorena trabalhava antes?",
+    "options": [
+     "Numa escola",
+     "Numa multinacional",
+     "Num restaurante"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que ajudou a trazer clientes?",
+    "options": [
+     "Anúncios na TV",
+     "Panfletos",
+     "As redes sociais"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como Lorena se sente hoje?",
+    "options": [
+     "Ganha menos, mas é mais feliz",
+     "Rica e cansada",
+     "Arrependida"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Una negociación difícil",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Nuestra empresa necesitaba renovar el contrato con el principal proveedor de materiales.",
+    "Nossa empresa precisava renovar o contrato com o principal fornecedor de materiais."
+   ],
+   [
+    "Ellos querían subir los precios un quince por ciento.",
+    "Eles queriam aumentar os preços em quinze por cento."
+   ],
+   [
+    "En la primera reunión, ninguna de las dos partes quería ceder.",
+    "Na primeira reunião, nenhuma das partes queria ceder."
+   ],
+   [
+    "Mi jefe propuso firmar un contrato de tres años en lugar de uno.",
+    "Meu chefe propôs assinar um contrato de três anos em vez de um."
+   ],
+   [
+    "A cambio, pedimos que la subida fuera solo del seis por ciento.",
+    "Em troca, pedimos que o aumento fosse de apenas seis por cento."
+   ],
+   [
+    "Después de varias semanas de correos y llamadas, llegamos a un acuerdo del ocho por ciento.",
+    "Depois de várias semanas de e-mails e ligações, chegamos a um acordo de oito por cento."
+   ],
+   [
+    "Los dos lados quedaron razonablemente satisfechos.",
+    "Os dois lados ficaram razoavelmente satisfeitos."
+   ]
+  ],
+  "words": [
+   [
+    "el proveedor",
+    "o fornecedor"
+   ],
+   [
+    "ceder",
+    "ceder"
+   ],
+   [
+    "en lugar de",
+    "em vez de"
+   ],
+   [
+    "a cambio",
+    "em troca"
+   ],
+   [
+    "la subida",
+    "o aumento"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quanto o fornecedor queria aumentar os preços?",
+    "options": [
+     "Oito por cento",
+     "Seis por cento",
+     "Quinze por cento"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que o chefe ofereceu?",
+    "options": [
+     "Comprar mais produtos",
+     "Um contrato de três anos",
+     "Pagar adiantado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual foi o aumento final?",
+    "options": [
+     "Seis por cento",
+     "Oito por cento",
+     "Dez por cento"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "El síndrome del impostor",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Cuando me ascendieron a jefa de equipo, sentí más miedo que alegría.",
+    "Quando fui promovida a chefe de equipe, senti mais medo que alegria."
+   ],
+   [
+    "Pensaba que no estaba preparada y que pronto todos se darían cuenta.",
+    "Achava que não estava preparada e que logo todos iam perceber."
+   ],
+   [
+    "Más tarde supe que esa sensación tiene nombre: el síndrome del impostor.",
+    "Mais tarde soube que essa sensação tem nome: a síndrome do impostor."
+   ],
+   [
+    "Es muy común, sobre todo entre personas que acaban de cambiar de puesto.",
+    "É muito comum, sobretudo entre pessoas que acabaram de mudar de cargo."
+   ],
+   [
+    "Mi mentora me aconsejó apuntar cada logro, por pequeño que fuera.",
+    "Minha mentora me aconselhou a anotar cada conquista, por menor que fosse."
+   ],
+   [
+    "Al cabo de unos meses, al releer la lista, me di cuenta de todo lo que había conseguido.",
+    "Depois de alguns meses, ao reler a lista, percebi tudo o que tinha conseguido."
+   ],
+   [
+    "El miedo no ha desaparecido del todo, pero ya no me paraliza.",
+    "O medo não desapareceu de todo, mas já não me paralisa."
+   ]
+  ],
+  "words": [
+   [
+    "ascender",
+    "promover"
+   ],
+   [
+    "darse cuenta",
+    "perceber"
+   ],
+   [
+    "el logro",
+    "a conquista"
+   ],
+   [
+    "al cabo de",
+    "depois de"
+   ],
+   [
+    "paralizar",
+    "paralisar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que a narradora sentiu ao ser promovida?",
+    "options": [
+     "Mais medo que alegria",
+     "Indiferença",
+     "Muita alegria"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual foi o conselho da mentora?",
+    "options": [
+     "Anotar cada conquista",
+     "Pedir demissão",
+     "Fazer um curso"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como está a narradora hoje?",
+    "options": [
+     "O medo já não a paralisa",
+     "Ainda está paralisada",
+     "Voltou ao cargo antigo"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Teletrabajo desde la playa",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Desde que su empresa permite el teletrabajo, Iván pasa los inviernos en Canarias.",
+    "Desde que a empresa dele permite trabalho remoto, Iván passa os invernos nas Canárias."
+   ],
+   [
+    "Alquila un apartamento pequeño con buena conexión a internet.",
+    "Aluga um apartamento pequeno com boa conexão de internet."
+   ],
+   [
+    "Trabaja de ocho a cuatro, con el mismo horario que sus compañeros de Madrid.",
+    "Trabalha das oito às quatro, no mesmo horário dos colegas de Madri."
+   ],
+   [
+    "Por la tarde hace surf o pasea por la playa.",
+    "À tarde surfa ou caminha pela praia."
+   ],
+   [
+    "En el edificio hay otros nómadas digitales de varios países.",
+    "No prédio há outros nômades digitais de vários países."
+   ],
+   [
+    "Sin embargo, algunos vecinos se quejan de que los alquileres han subido mucho.",
+    "No entanto, alguns moradores reclamam que os aluguéis subiram muito."
+   ],
+   [
+    "Iván entiende el problema y prefiere alquilar a propietarios locales por temporadas largas.",
+    "Iván entende o problema e prefere alugar de proprietários locais por temporadas longas."
+   ]
+  ],
+  "words": [
+   [
+    "el teletrabajo",
+    "o trabalho remoto"
+   ],
+   [
+    "los nómadas digitales",
+    "os nômades digitais"
+   ],
+   [
+    "quejarse",
+    "reclamar"
+   ],
+   [
+    "el alquiler",
+    "o aluguel"
+   ],
+   [
+    "por temporadas",
+    "por temporada"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde Iván passa os invernos?",
+    "options": [
+     "Nas Baleares",
+     "Nas Canárias",
+     "Em Málaga"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que ele faz à tarde?",
+    "options": [
+     "Trabalha mais",
+     "Estuda",
+     "Surfa ou caminha pela praia"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Do que alguns moradores reclamam?",
+    "options": [
+     "Do barulho",
+     "Do trânsito",
+     "Do aumento dos aluguéis"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "La jornada de cuatro días",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Una empresa de software de Valencia probó durante seis meses la semana laboral de cuatro días.",
+    "Uma empresa de software de Valência testou por seis meses a semana de trabalho de quatro dias."
+   ],
+   [
+    "Los empleados trabajaban de lunes a jueves, sin cobrar menos.",
+    "Os funcionários trabalhavam de segunda a quinta, sem ganhar menos."
+   ],
+   [
+    "Al principio, algunos directivos temían que bajara la productividad.",
+    "No começo, alguns diretores temiam que a produtividade caísse."
+   ],
+   [
+    "Para evitarlo, redujeron las reuniones y organizaron mejor las tareas.",
+    "Para evitar isso, reduziram as reuniões e organizaram melhor as tarefas."
+   ],
+   [
+    "Al final del periodo, la productividad no solo se mantuvo, sino que subió un poco.",
+    "No final do período, a produtividade não só se manteve como subiu um pouco."
+   ],
+   [
+    "Además, las bajas por enfermedad disminuyeron de forma notable.",
+    "Além disso, as licenças médicas diminuíram de forma notável."
+   ],
+   [
+    "La empresa ha decidido mantener el modelo de forma permanente.",
+    "A empresa decidiu manter o modelo de forma permanente."
+   ]
+  ],
+  "words": [
+   [
+    "la jornada",
+    "a jornada"
+   ],
+   [
+    "cobrar",
+    "receber salário"
+   ],
+   [
+    "los directivos",
+    "os diretores"
+   ],
+   [
+    "la baja por enfermedad",
+    "a licença médica"
+   ],
+   [
+    "disminuir",
+    "diminuir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quanto tempo durou o teste?",
+    "options": [
+     "Três meses",
+     "Seis meses",
+     "Um ano"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que aconteceu com a produtividade?",
+    "options": [
+     "Não foi medida",
+     "Manteve-se e subiu um pouco",
+     "Caiu muito"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que a empresa decidiu?",
+    "options": [
+     "Testar mais um ano",
+     "Manter o modelo de forma permanente",
+     "Voltar aos cinco dias"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Un error en la factura",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "A principios de mes, un cliente importante nos llamó bastante enfadado.",
+    "No começo do mês, um cliente importante nos ligou bem irritado."
+   ],
+   [
+    "Le habíamos cobrado dos veces el mismo servicio en la factura.",
+    "Tínhamos cobrado duas vezes o mesmo serviço na fatura."
+   ],
+   [
+    "Mi compañera revisó el sistema y vio que había sido un fallo informático.",
+    "Minha colega verificou o sistema e viu que tinha sido uma falha de informática."
+   ],
+   [
+    "Llamamos al cliente para pedirle disculpas y explicarle lo que había pasado.",
+    "Ligamos para o cliente para pedir desculpas e explicar o que tinha acontecido."
+   ],
+   [
+    "Le enviamos una factura corregida esa misma tarde.",
+    "Enviamos uma fatura corrigida naquela mesma tarde."
+   ],
+   [
+    "Además, le ofrecimos un descuento en el siguiente pedido.",
+    "Além disso, oferecemos um desconto no próximo pedido."
+   ],
+   [
+    "El cliente agradeció la rapidez y hoy sigue trabajando con nosotros.",
+    "O cliente agradeceu a rapidez e hoje continua trabalhando conosco."
+   ]
+  ],
+  "words": [
+   [
+    "enfadado",
+    "irritado"
+   ],
+   [
+    "cobrar",
+    "cobrar"
+   ],
+   [
+    "el fallo informático",
+    "a falha de informática"
+   ],
+   [
+    "corregida",
+    "corrigida"
+   ],
+   [
+    "la rapidez",
+    "a rapidez"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era o erro na fatura?",
+    "options": [
+     "Serviço cobrado duas vezes",
+     "Preço errado",
+     "Nome errado"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual foi a causa do erro?",
+    "options": [
+     "Uma falha de informática",
+     "O próprio cliente",
+     "Uma funcionária distraída"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que a empresa ofereceu além da fatura corrigida?",
+    "options": [
+     "Um brinde",
+     "Um jantar",
+     "Um desconto no próximo pedido"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Hablar en público",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Me pidieron presentar los resultados del trimestre delante de toda la dirección.",
+    "Me pediram para apresentar os resultados do trimestre diante de toda a diretoria."
+   ],
+   [
+    "Nunca había hablado ante tanta gente y estaba aterrorizado.",
+    "Eu nunca tinha falado diante de tanta gente e estava apavorado."
+   ],
+   [
+    "Una compañera me recomendó ensayar en voz alta varias veces.",
+    "Uma colega me recomendou ensaiar em voz alta várias vezes."
+   ],
+   [
+    "También me aconsejó empezar con una historia en lugar de con números.",
+    "Também me aconselhou a começar com uma história em vez de números."
+   ],
+   [
+    "El día de la presentación me temblaban las manos durante el primer minuto.",
+    "No dia da apresentação minhas mãos tremeram durante o primeiro minuto."
+   ],
+   [
+    "Después me relajé y hasta hice reír a la directora general.",
+    "Depois relaxei e até fiz a diretora-geral rir."
+   ],
+   [
+    "Ahora, cuando me toca presentar, sigo poniéndome nervioso, pero lo disfruto.",
+    "Agora, quando é minha vez de apresentar, continuo ficando nervoso, mas gosto."
+   ]
+  ],
+  "words": [
+   [
+    "el trimestre",
+    "o trimestre"
+   ],
+   [
+    "ensayar",
+    "ensaiar"
+   ],
+   [
+    "en voz alta",
+    "em voz alta"
+   ],
+   [
+    "temblar",
+    "tremer"
+   ],
+   [
+    "disfrutar",
+    "aproveitar, curtir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual foi o conselho da colega?",
+    "options": [
+     "Ensaiar em voz alta",
+     "Ler tudo no papel",
+     "Não olhar para o público"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como começar a apresentação, segundo a colega?",
+    "options": [
+     "Com números",
+     "Com uma história",
+     "Com uma piada"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como o narrador se sente hoje ao apresentar?",
+    "options": [
+     "Fica nervoso, mas gosta",
+     "Evita apresentar",
+     "Não sente nada"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "El primer sueldo",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Recuerdo perfectamente el día que cobré mi primer sueldo.",
+    "Lembro perfeitamente do dia em que recebi meu primeiro salário."
+   ],
+   [
+    "Trabajaba de camarero en un bar de la playa durante el verano.",
+    "Trabalhava de garçom num bar da praia durante o verão."
+   ],
+   [
+    "Con el dinero, lo primero que hice fue invitar a cenar a mis padres.",
+    "Com o dinheiro, a primeira coisa que fiz foi convidar meus pais para jantar."
+   ],
+   [
+    "Después me compré una guitarra que llevaba meses mirando en el escaparate.",
+    "Depois comprei um violão que eu olhava na vitrine havia meses."
+   ],
+   [
+    "El resto lo guardé para pagar parte de la matrícula de la universidad.",
+    "O resto guardei para pagar parte da matrícula da faculdade."
+   ],
+   [
+    "Aquel trabajo me enseñó a valorar el esfuerzo de mis padres.",
+    "Aquele trabalho me ensinou a valorizar o esforço dos meus pais."
+   ],
+   [
+    "Todavía hoy, cuando voy a un bar, siempre dejo una buena propina.",
+    "Até hoje, quando vou a um bar, sempre deixo uma boa gorjeta."
+   ]
+  ],
+  "words": [
+   [
+    "el sueldo",
+    "o salário"
+   ],
+   [
+    "el camarero",
+    "o garçom"
+   ],
+   [
+    "el escaparate",
+    "a vitrine"
+   ],
+   [
+    "la matrícula",
+    "a matrícula"
+   ],
+   [
+    "la propina",
+    "a gorjeta"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era o primeiro emprego do narrador?",
+    "options": [
+     "Salva-vidas",
+     "Vendedor",
+     "Garçom num bar da praia"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que ele fez primeiro com o dinheiro?",
+    "options": [
+     "Convidou os pais para jantar",
+     "Comprou um violão",
+     "Guardou tudo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que ele faz hoje quando vai a um bar?",
+    "options": [
+     "Deixa uma boa gorjeta",
+     "Paga em dinheiro",
+     "Pede desconto"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Cambio de carrera",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "A los cuarenta y dos años, Gabriel dejó su trabajo de abogado para ser profesor de matemáticas.",
+    "Aos quarenta e dois anos, Gabriel deixou o trabalho de advogado para ser professor de matemática."
+   ],
+   [
+    "Muchos de sus amigos pensaron que se había vuelto loco.",
+    "Muitos amigos acharam que ele tinha enlouquecido."
+   ],
+   [
+    "Él llevaba años sintiéndose vacío en los tribunales.",
+    "Ele passou anos se sentindo vazio nos tribunais."
+   ],
+   [
+    "Por las noches estudió un máster en educación y luego hizo prácticas en un instituto.",
+    "À noite estudou um mestrado em educação e depois fez estágio numa escola de ensino médio."
+   ],
+   [
+    "El primer año como profesor ganó la mitad que antes.",
+    "No primeiro ano como professor ganhou metade do que antes."
+   ],
+   [
+    "Sin embargo, asegura que nunca se ha arrepentido.",
+    "No entanto, garante que nunca se arrependeu."
+   ],
+   [
+    "Lo que más le gusta es ver la cara de un alumno cuando por fin entiende algo.",
+    "O que ele mais gosta é ver a cara de um aluno quando finalmente entende algo."
+   ]
+  ],
+  "words": [
+   [
+    "volverse loco",
+    "enlouquecer"
+   ],
+   [
+    "los tribunales",
+    "os tribunais"
+   ],
+   [
+    "las prácticas",
+    "o estágio"
+   ],
+   [
+    "el instituto",
+    "a escola de ensino médio"
+   ],
+   [
+    "arrepentirse",
+    "arrepender-se"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era a profissão anterior de Gabriel?",
+    "options": [
+     "Advogado",
+     "Engenheiro",
+     "Médico"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que aconteceu com o salário dele?",
+    "options": [
+     "Caiu pela metade",
+     "Dobrou",
+     "Ficou igual"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que Gabriel mais gosta no novo trabalho?",
+    "options": [
+     "As férias",
+     "Ver o aluno entender algo",
+     "O horário"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "La oficina sin papel",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Hace dos años, nuestra gestoría decidió eliminar casi todo el papel.",
+    "Há dois anos, nosso escritório de contabilidade decidiu eliminar quase todo o papel."
+   ],
+   [
+    "Escaneamos miles de documentos y los guardamos en la nube.",
+    "Digitalizamos milhares de documentos e os guardamos na nuvem."
+   ],
+   [
+    "Al principio, los empleados más veteranos se resistían al cambio.",
+    "No começo, os funcionários mais antigos resistiam à mudança."
+   ],
+   [
+    "Les costaba encontrar los archivos y echaban de menos sus carpetas.",
+    "Tinham dificuldade para encontrar os arquivos e sentiam falta das pastas."
+   ],
+   [
+    "Organizamos varias formaciones y nombramos a una persona de referencia para dudas.",
+    "Organizamos vários treinamentos e nomeamos uma pessoa de referência para dúvidas."
+   ],
+   [
+    "Hoy encontramos cualquier documento en segundos y hemos liberado una sala entera.",
+    "Hoje encontramos qualquer documento em segundos e liberamos uma sala inteira."
+   ],
+   [
+    "Ahora esa sala es una zona de descanso con plantas y una cafetera.",
+    "Agora essa sala é uma área de descanso com plantas e uma cafeteira."
+   ]
+  ],
+  "words": [
+   [
+    "la gestoría",
+    "o escritório de contabilidade"
+   ],
+   [
+    "escanear",
+    "digitalizar"
+   ],
+   [
+    "costar",
+    "ser difícil"
+   ],
+   [
+    "la carpeta",
+    "a pasta"
+   ],
+   [
+    "la formación",
+    "o treinamento"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que a empresa decidiu eliminar?",
+    "options": [
+     "Os computadores",
+     "Quase todo o papel",
+     "As reuniões"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quem resistiu à mudança?",
+    "options": [
+     "O diretor",
+     "Os funcionários mais antigos",
+     "Os clientes"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Em que se transformou a sala liberada?",
+    "options": [
+     "Num arquivo",
+     "Numa área de descanso",
+     "Num escritório"
+    ],
+    "correct": 1
+   }
+  ]
+ }
+]

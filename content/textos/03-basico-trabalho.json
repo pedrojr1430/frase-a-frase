@@ -1,0 +1,708 @@
+[
+ {
+  "tema": "trabalho",
+  "title": "Mi primer día de trabajo",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Hoy es mi primer día en una agencia de publicidad.",
+    "Hoje é meu primeiro dia numa agência de publicidade."
+   ],
+   [
+    "Llego a las nueve menos diez para no llegar tarde.",
+    "Chego às quinze para as nove para não me atrasar."
+   ],
+   [
+    "Mi jefa, Clara, me presenta a todo el equipo.",
+    "Minha chefe, Clara, me apresenta para toda a equipe."
+   ],
+   [
+    "Me dan un ordenador, un correo y una mesa junto a la ventana.",
+    "Me dão um computador, um e-mail e uma mesa ao lado da janela."
+   ],
+   [
+    "A la hora de comer, mis compañeros me invitan a un restaurante.",
+    "Na hora do almoço, meus colegas me convidam para um restaurante."
+   ],
+   [
+    "Termino el día cansado, pero contento.",
+    "Termino o dia cansado, mas contente."
+   ]
+  ],
+  "words": [
+   [
+    "la agencia",
+    "a agência"
+   ],
+   [
+    "el equipo",
+    "a equipe"
+   ],
+   [
+    "el compañero",
+    "o colega"
+   ],
+   [
+    "contento",
+    "contente"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde o narrador começa a trabalhar?",
+    "options": [
+     "Numa escola",
+     "Numa agência de publicidade",
+     "Num banco"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quem é Clara?",
+    "options": [
+     "A recepcionista",
+     "Uma cliente",
+     "A chefe"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que os colegas fazem na hora do almoço?",
+    "options": [
+     "Comem na mesa",
+     "Vão para casa",
+     "Convidam o narrador a um restaurante"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Una entrevista",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Sergio tiene una entrevista de trabajo a las diez.",
+    "Sergio tem uma entrevista de emprego às dez."
+   ],
+   [
+    "Se pone una camisa blanca y una chaqueta.",
+    "Veste uma camisa branca e um paletó."
+   ],
+   [
+    "La entrevistadora le pregunta por su experiencia.",
+    "A entrevistadora pergunta sobre a experiência dele."
+   ],
+   [
+    "Sergio explica que trabajó tres años en una tienda.",
+    "Sergio explica que trabalhou três anos numa loja."
+   ],
+   [
+    "También dice que habla inglés y un poco de portugués.",
+    "Também diz que fala inglês e um pouco de português."
+   ],
+   [
+    "Al final ella le dice: «Le llamamos la próxima semana».",
+    "No final ela diz: \"Ligamos para o senhor na semana que vem\"."
+   ]
+  ],
+  "words": [
+   [
+    "la entrevista",
+    "a entrevista"
+   ],
+   [
+    "la chaqueta",
+    "o paletó, a jaqueta"
+   ],
+   [
+    "la experiencia",
+    "a experiência"
+   ],
+   [
+    "la tienda",
+    "a loja"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "A que horas é a entrevista?",
+    "options": [
+     "Às dez",
+     "Às onze",
+     "Às nove"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde Sergio trabalhou antes?",
+    "options": [
+     "Numa loja",
+     "Num hotel",
+     "Num escritório"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que idiomas Sergio fala além do espanhol?",
+    "options": [
+     "Inglês e um pouco de português",
+     "Italiano",
+     "Francês"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Trabajar desde casa",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Desde hace un año, Raquel trabaja desde casa.",
+    "Há um ano Raquel trabalha de casa."
+   ],
+   [
+    "Su oficina es una mesa pequeña en el salón.",
+    "O escritório dela é uma mesa pequena na sala."
+   ],
+   [
+    "Empieza a las ocho y media con una reunión por videollamada.",
+    "Começa às oito e meia com uma reunião por videochamada."
+   ],
+   [
+    "Le gusta no perder tiempo en el transporte.",
+    "Ela gosta de não perder tempo no transporte."
+   ],
+   [
+    "Pero a veces se siente sola y echa de menos a sus compañeros.",
+    "Mas às vezes se sente sozinha e sente falta dos colegas."
+   ],
+   [
+    "Por eso, una vez por semana va a la oficina.",
+    "Por isso, uma vez por semana vai ao escritório."
+   ]
+  ],
+  "words": [
+   [
+    "desde hace",
+    "há"
+   ],
+   [
+    "la reunión",
+    "a reunião"
+   ],
+   [
+    "perder tiempo",
+    "perder tempo"
+   ],
+   [
+    "echar de menos",
+    "sentir falta"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Há quanto tempo Raquel trabalha de casa?",
+    "options": [
+     "Seis meses",
+     "Dois anos",
+     "Um ano"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que Raquel gosta no trabalho em casa?",
+    "options": [
+     "Trabalhar menos",
+     "Ganhar mais",
+     "Não perder tempo no transporte"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Com que frequência ela vai ao escritório?",
+    "options": [
+     "Nunca",
+     "Uma vez por semana",
+     "Todo dia"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "La cafetería de Rosa",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Rosa tiene una pequeña cafetería en Montevideo.",
+    "Rosa tem um pequeno café em Montevidéu."
+   ],
+   [
+    "Abre todos los días a las siete de la mañana.",
+    "Abre todos os dias às sete da manhã."
+   ],
+   [
+    "Prepara medialunas y tortas caseras.",
+    "Prepara croissants e bolos caseiros."
+   ],
+   [
+    "Muchos clientes vienen antes de ir a trabajar.",
+    "Muitos clientes vêm antes de ir trabalhar."
+   ],
+   [
+    "Rosa conoce sus gustos: un café con leche, un cortado, un mate.",
+    "Rosa conhece os gostos deles: um café com leite, um pingado, um mate."
+   ],
+   [
+    "Trabaja mucho, pero le encanta su negocio.",
+    "Trabalha muito, mas adora o seu negócio."
+   ]
+  ],
+  "words": [
+   [
+    "la cafetería",
+    "o café, a lanchonete"
+   ],
+   [
+    "las medialunas",
+    "os croissants"
+   ],
+   [
+    "casero",
+    "caseiro"
+   ],
+   [
+    "el negocio",
+    "o negócio"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde fica o café de Rosa?",
+    "options": [
+     "Em Santiago",
+     "Em Montevidéu",
+     "Em Buenos Aires"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A que horas o café abre?",
+    "options": [
+     "Às sete",
+     "Às oito",
+     "Às seis"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que Rosa sente pelo trabalho?",
+    "options": [
+     "Está cansada dele",
+     "Quer vendê-lo",
+     "Adora o negócio"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Un problema con el ordenador",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Esta mañana mi ordenador no se enciende.",
+    "Hoje de manhã meu computador não liga."
+   ],
+   [
+    "Tengo que enviar un informe antes de las doce.",
+    "Tenho que enviar um relatório antes do meio-dia."
+   ],
+   [
+    "Llamo al técnico de la empresa.",
+    "Ligo para o técnico da empresa."
+   ],
+   [
+    "Él viene en diez minutos y revisa el cable.",
+    "Ele vem em dez minutos e verifica o cabo."
+   ],
+   [
+    "El problema es simple: el cable está desconectado.",
+    "O problema é simples: o cabo está desconectado."
+   ],
+   [
+    "Envío el informe a las once y media, con tiempo de sobra.",
+    "Envio o relatório às onze e meia, com tempo de sobra."
+   ]
+  ],
+  "words": [
+   [
+    "encenderse",
+    "ligar"
+   ],
+   [
+    "el informe",
+    "o relatório"
+   ],
+   [
+    "el técnico",
+    "o técnico"
+   ],
+   [
+    "desconectado",
+    "desconectado"
+   ],
+   [
+    "de sobra",
+    "de sobra"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era o prazo do relatório?",
+    "options": [
+     "Amanhã",
+     "Meio-dia",
+     "Fim do dia"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual era o problema do computador?",
+    "options": [
+     "Cabo desconectado",
+     "Vírus",
+     "Tela quebrada"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "A que horas o relatório foi enviado?",
+    "options": [
+     "Às onze e meia",
+     "Ao meio-dia e meia",
+     "Às dez"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "El horario de Daniel",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Daniel es enfermero en un hospital de Quito.",
+    "Daniel é enfermeiro num hospital de Quito."
+   ],
+   [
+    "Esta semana trabaja en el turno de noche.",
+    "Esta semana trabalha no turno da noite."
+   ],
+   [
+    "Entra a las ocho de la noche y sale a las ocho de la mañana.",
+    "Entra às oito da noite e sai às oito da manhã."
+   ],
+   [
+    "Durante el día duerme con las cortinas cerradas.",
+    "Durante o dia dorme com as cortinas fechadas."
+   ],
+   [
+    "No es fácil, pero la próxima semana tiene tres días libres.",
+    "Não é fácil, mas na semana que vem tem três dias de folga."
+   ],
+   [
+    "Quiere ir a la montaña con su novia.",
+    "Quer ir à montanha com a namorada."
+   ]
+  ],
+  "words": [
+   [
+    "el enfermero",
+    "o enfermeiro"
+   ],
+   [
+    "el turno",
+    "o turno"
+   ],
+   [
+    "las cortinas",
+    "as cortinas"
+   ],
+   [
+    "días libres",
+    "dias de folga"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual é a profissão de Daniel?",
+    "options": [
+     "Médico",
+     "Enfermeiro",
+     "Motorista"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Em que turno ele trabalha esta semana?",
+    "options": [
+     "Manhã",
+     "Noite",
+     "Tarde"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que ele quer fazer nos dias de folga?",
+    "options": [
+     "Ir à montanha com a namorada",
+     "Trabalhar mais",
+     "Dormir"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Una reunión importante",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Hoy hay una reunión importante con un cliente nuevo.",
+    "Hoje há uma reunião importante com um cliente novo."
+   ],
+   [
+    "Mi compañera y yo preparamos la presentación ayer.",
+    "Minha colega e eu preparamos a apresentação ontem."
+   ],
+   [
+    "El cliente llega puntual a las once.",
+    "O cliente chega pontualmente às onze."
+   ],
+   [
+    "Le presentamos nuestras ideas y los precios.",
+    "Apresentamos nossas ideias e os preços."
+   ],
+   [
+    "Hace muchas preguntas, pero parece interesado.",
+    "Ele faz muitas perguntas, mas parece interessado."
+   ],
+   [
+    "Al final dice que va a pensarlo y nos escribe el lunes.",
+    "No final diz que vai pensar e nos escreve na segunda."
+   ]
+  ],
+  "words": [
+   [
+    "la presentación",
+    "a apresentação"
+   ],
+   [
+    "puntual",
+    "pontual"
+   ],
+   [
+    "interesado",
+    "interessado"
+   ],
+   [
+    "pensarlo",
+    "pensar no assunto"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando prepararam a apresentação?",
+    "options": [
+     "Ontem",
+     "Na semana passada",
+     "Hoje cedo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como o cliente parece?",
+    "options": [
+     "Irritado",
+     "Interessado",
+     "Com pressa"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quando o cliente vai responder?",
+    "options": [
+     "Na segunda",
+     "No mês que vem",
+     "Hoje à tarde"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Las vacaciones de agosto",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "En España, mucha gente tiene vacaciones en agosto.",
+    "Na Espanha, muita gente tira férias em agosto."
+   ],
+   [
+    "En mi oficina, la mitad del equipo se va a la playa.",
+    "No meu escritório, metade da equipe vai para a praia."
+   ],
+   [
+    "Yo prefiero trabajar en agosto porque hay menos trabajo.",
+    "Eu prefiro trabalhar em agosto porque há menos trabalho."
+   ],
+   [
+    "Las calles de Madrid están tranquilas y no hay tráfico.",
+    "As ruas de Madri ficam tranquilas e não há trânsito."
+   ],
+   [
+    "Mis vacaciones son en septiembre, cuando todo es más barato.",
+    "Minhas férias são em setembro, quando tudo é mais barato."
+   ],
+   [
+    "Este año voy a Portugal con mi hermana.",
+    "Este ano vou a Portugal com minha irmã."
+   ]
+  ],
+  "words": [
+   [
+    "la mitad",
+    "a metade"
+   ],
+   [
+    "tranquilo",
+    "tranquilo"
+   ],
+   [
+    "el tráfico",
+    "o trânsito"
+   ],
+   [
+    "barato",
+    "barato"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando muitos espanhóis tiram férias?",
+    "options": [
+     "Em agosto",
+     "Em julho",
+     "Em dezembro"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que o narrador prefere trabalhar em agosto?",
+    "options": [
+     "Ganha mais",
+     "Faz frio",
+     "Há menos trabalho"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Para onde ele vai nas férias?",
+    "options": [
+     "Portugal",
+     "França",
+     "Itália"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "El nuevo compañero",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Esta semana ha llegado un compañero nuevo a la oficina.",
+    "Esta semana chegou um colega novo ao escritório."
+   ],
+   [
+    "Se llama Kenji y es de Japón.",
+    "Ele se chama Kenji e é do Japão."
+   ],
+   [
+    "Habla español muy bien porque vivió en México.",
+    "Fala espanhol muito bem porque morou no México."
+   ],
+   [
+    "Es diseñador y trabaja en el equipo de la web.",
+    "É designer e trabalha na equipe do site."
+   ],
+   [
+    "El jueves lo invitamos a comer tacos.",
+    "Na quinta o convidamos para comer tacos."
+   ],
+   [
+    "Nos dice que los tacos de México son mejores, claro.",
+    "Ele nos diz que os tacos do México são melhores, claro."
+   ]
+  ],
+  "words": [
+   [
+    "el diseñador",
+    "o designer"
+   ],
+   [
+    "la web",
+    "o site"
+   ],
+   [
+    "invitar",
+    "convidar"
+   ],
+   [
+    "mejores",
+    "melhores"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De onde é Kenji?",
+    "options": [
+     "Do Japão",
+     "Da Coreia",
+     "Da China"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que Kenji fala bem espanhol?",
+    "options": [
+     "Estudou na Espanha",
+     "A mãe é argentina",
+     "Morou no México"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual é o trabalho de Kenji?",
+    "options": [
+     "Designer",
+     "Vendedor",
+     "Contador"
+    ],
+    "correct": 0
+   }
+  ]
+ }
+]

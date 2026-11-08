@@ -1,0 +1,107 @@
+{
+ "id": "direcoes",
+ "name": "Direções",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "¿Cómo llego a la estación?",
+   "pt": "Como chego à estação?",
+   "nota": ""
+  },
+  {
+   "es": "Siga todo recto.",
+   "pt": "Siga em frente.",
+   "nota": "Na América Latina: \"siga derecho\"."
+  },
+  {
+   "es": "Gire a la derecha en el semáforo.",
+   "pt": "Vire à direita no semáforo.",
+   "nota": ""
+  },
+  {
+   "es": "Está a la izquierda, al lado del banco.",
+   "pt": "Fica à esquerda, ao lado do banco.",
+   "nota": ""
+  },
+  {
+   "es": "Cruce la calle.",
+   "pt": "Atravesse a rua.",
+   "nota": ""
+  },
+  {
+   "es": "Está justo enfrente.",
+   "pt": "Fica bem em frente.",
+   "nota": ""
+  },
+  {
+   "es": "Es la segunda calle a la derecha.",
+   "pt": "É a segunda rua à direita.",
+   "nota": ""
+  },
+  {
+   "es": "¿Hay una farmacia por aquí?",
+   "pt": "Tem uma farmácia por aqui?",
+   "nota": ""
+  },
+  {
+   "es": "Está a diez minutos andando.",
+   "pt": "Fica a dez minutos a pé.",
+   "nota": ""
+  },
+  {
+   "es": "Al final de la calle.",
+   "pt": "No fim da rua.",
+   "nota": ""
+  },
+  {
+   "es": "En la esquina hay un café.",
+   "pt": "Na esquina tem um café.",
+   "nota": ""
+  },
+  {
+   "es": "Detrás de la iglesia.",
+   "pt": "Atrás da igreja.",
+   "nota": ""
+  },
+  {
+   "es": "No es por aquí, está en la otra dirección.",
+   "pt": "Não é por aqui, é na outra direção.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me lo puede indicar en el mapa?",
+   "pt": "Pode me mostrar no mapa?",
+   "nota": ""
+  },
+  {
+   "es": "Suba por esta calle hasta la plaza.",
+   "pt": "Suba por esta rua até a praça.",
+   "nota": ""
+  },
+  {
+   "es": "Está cerca del puerto.",
+   "pt": "Fica perto do porto.",
+   "nota": ""
+  },
+  {
+   "es": "Pase el puente y luego pregunte.",
+   "pt": "Passe a ponte e depois pergunte.",
+   "nota": ""
+  },
+  {
+   "es": "Lo siento, no soy de aquí.",
+   "pt": "Desculpe, não sou daqui.",
+   "nota": ""
+  },
+  {
+   "es": "¿Voy bien para el museo?",
+   "pt": "Estou no caminho certo para o museu?",
+   "nota": ""
+  },
+  {
+   "es": "Está entre la panadería y el banco.",
+   "pt": "Fica entre a padaria e o banco.",
+   "nota": ""
+  }
+ ]
+}

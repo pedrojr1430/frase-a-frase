@@ -1,0 +1,107 @@
+{
+ "id": "aeroporto",
+ "name": "Aeroporto",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "¿Dónde se factura el equipaje?",
+   "pt": "Onde se despacha a bagagem?",
+   "nota": "\"Facturar\" = despachar a mala (Espanha). Na América Latina: \"documentar\"."
+  },
+  {
+   "es": "Solo llevo equipaje de mano.",
+   "pt": "Só levo bagagem de mão.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me da pasillo o ventanilla?",
+   "pt": "Corredor ou janela?",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuál es la puerta de embarque?",
+   "pt": "Qual é o portão de embarque?",
+   "nota": ""
+  },
+  {
+   "es": "El vuelo lleva una hora de retraso.",
+   "pt": "O voo está uma hora atrasado.",
+   "nota": "\"Retraso\" = atraso."
+  },
+  {
+   "es": "Han cancelado mi vuelo.",
+   "pt": "Cancelaram meu voo.",
+   "nota": ""
+  },
+  {
+   "es": "Tengo una escala en Lima.",
+   "pt": "Tenho uma conexão em Lima.",
+   "nota": "\"Escala\" = conexão, parada."
+  },
+  {
+   "es": "¿Dónde está la tarjeta de embarque?",
+   "pt": "Onde está o cartão de embarque?",
+   "nota": ""
+  },
+  {
+   "es": "Mi maleta no ha llegado.",
+   "pt": "Minha mala não chegou.",
+   "nota": ""
+  },
+  {
+   "es": "¿Tiene algo que declarar?",
+   "pt": "Tem algo a declarar?",
+   "nota": "Pergunta típica da alfândega (\"aduana\")."
+  },
+  {
+   "es": "Vengo por turismo.",
+   "pt": "Venho a turismo.",
+   "nota": ""
+  },
+  {
+   "es": "Me quedo dos semanas.",
+   "pt": "Fico duas semanas.",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde se recoge el equipaje?",
+   "pt": "Onde se retira a bagagem?",
+   "nota": ""
+  },
+  {
+   "es": "¿Hay un autobús al centro?",
+   "pt": "Tem ônibus para o centro?",
+   "nota": ""
+  },
+  {
+   "es": "Quítese el cinturón y los zapatos.",
+   "pt": "Tire o cinto e os sapatos.",
+   "nota": "Ordem formal com \"usted\", comum na inspeção de segurança."
+  },
+  {
+   "es": "El embarque empieza a las diez.",
+   "pt": "O embarque começa às dez.",
+   "nota": ""
+  },
+  {
+   "es": "Abróchense los cinturones.",
+   "pt": "Apertem os cintos.",
+   "nota": ""
+  },
+  {
+   "es": "He perdido la conexión.",
+   "pt": "Perdi a conexão.",
+   "nota": ""
+  },
+  {
+   "es": "¿Puedo llevar líquidos en la cabina?",
+   "pt": "Posso levar líquidos na cabine?",
+   "nota": ""
+  },
+  {
+   "es": "Necesito un carrito para las maletas.",
+   "pt": "Preciso de um carrinho para as malas.",
+   "nota": ""
+  }
+ ]
+}

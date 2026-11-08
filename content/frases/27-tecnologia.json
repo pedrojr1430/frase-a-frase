@@ -1,0 +1,107 @@
+{
+ "id": "tecnologia",
+ "name": "Tecnologia",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "Se me ha colgado el ordenador.",
+   "pt": "Meu computador travou.",
+   "nota": "\"Ordenador\" na Espanha; \"computadora\" na América Latina."
+  },
+  {
+   "es": "¿Has probado a reiniciarlo?",
+   "pt": "Você já tentou reiniciar?",
+   "nota": ""
+  },
+  {
+   "es": "Me he quedado sin batería.",
+   "pt": "Fiquei sem bateria.",
+   "nota": ""
+  },
+  {
+   "es": "Descárgate la aplicación.",
+   "pt": "Baixe o aplicativo.",
+   "nota": ""
+  },
+  {
+   "es": "No me llega la señal.",
+   "pt": "Não está pegando sinal.",
+   "nota": ""
+  },
+  {
+   "es": "He olvidado mi contraseña.",
+   "pt": "Esqueci minha senha.",
+   "nota": ""
+  },
+  {
+   "es": "Tengo que actualizar el móvil.",
+   "pt": "Tenho que atualizar o celular.",
+   "nota": "\"Móvil\" na Espanha; \"celular\" na América Latina."
+  },
+  {
+   "es": "Te lo mando por WhatsApp.",
+   "pt": "Te mando pelo WhatsApp.",
+   "nota": ""
+  },
+  {
+   "es": "Haz una copia de seguridad.",
+   "pt": "Faça um backup.",
+   "nota": ""
+  },
+  {
+   "es": "La inteligencia artificial está cambiando el trabajo.",
+   "pt": "A inteligência artificial está mudando o trabalho.",
+   "nota": ""
+  },
+  {
+   "es": "Esta página no carga.",
+   "pt": "Esta página não carrega.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuál es tu usuario?",
+   "pt": "Qual é o seu usuário?",
+   "nota": ""
+  },
+  {
+   "es": "Comparte el enlace en el grupo.",
+   "pt": "Compartilhe o link no grupo.",
+   "nota": "\"Enlace\" = link."
+  },
+  {
+   "es": "La pantalla está rota.",
+   "pt": "A tela está quebrada.",
+   "nota": ""
+  },
+  {
+   "es": "Hay que borrar archivos, la memoria está llena.",
+   "pt": "É preciso apagar arquivos, a memória está cheia.",
+   "nota": ""
+  },
+  {
+   "es": "Me han hackeado la cuenta.",
+   "pt": "Hackearam minha conta.",
+   "nota": ""
+  },
+  {
+   "es": "Sube las fotos a la nube.",
+   "pt": "Suba as fotos para a nuvem.",
+   "nota": ""
+  },
+  {
+   "es": "El teclado no funciona.",
+   "pt": "O teclado não funciona.",
+   "nota": ""
+  },
+  {
+   "es": "Pasa demasiado tiempo en las redes sociales.",
+   "pt": "Ele passa tempo demais nas redes sociais.",
+   "nota": ""
+  },
+  {
+   "es": "Activa la verificación en dos pasos.",
+   "pt": "Ative a verificação em duas etapas.",
+   "nota": ""
+  }
+ ]
+}

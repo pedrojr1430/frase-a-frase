@@ -1,0 +1,107 @@
+{
+ "id": "cinema-musica",
+ "name": "Cinema e música",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "¿Qué ponen en el cine?",
+   "pt": "O que está passando no cinema?",
+   "nota": ""
+  },
+  {
+   "es": "Prefiero verla en versión original.",
+   "pt": "Prefiro ver no idioma original.",
+   "nota": "Na Espanha muitos filmes são dublados; \"V.O.\" indica o original."
+  },
+  {
+   "es": "¿Tiene subtítulos?",
+   "pt": "Tem legenda?",
+   "nota": ""
+  },
+  {
+   "es": "La película me pareció lenta.",
+   "pt": "Achei o filme lento.",
+   "nota": ""
+  },
+  {
+   "es": "¿Has visto la última serie de esa directora?",
+   "pt": "Você viu a última série daquela diretora?",
+   "nota": ""
+  },
+  {
+   "es": "Al final, el protagonista muere.",
+   "pt": "No final, o protagonista morre.",
+   "nota": ""
+  },
+  {
+   "es": "¡No me hagas spoiler!",
+   "pt": "Não me dá spoiler!",
+   "nota": ""
+  },
+  {
+   "es": "Dos entradas para la sesión de las ocho.",
+   "pt": "Dois ingressos para a sessão das oito.",
+   "nota": "\"Entrada\" = ingresso (Espanha); na América Latina, \"boleto\"."
+  },
+  {
+   "es": "Me encanta la música latina.",
+   "pt": "Adoro música latina.",
+   "nota": ""
+  },
+  {
+   "es": "¿Qué tipo de música escuchas?",
+   "pt": "Que tipo de música você ouve?",
+   "nota": ""
+  },
+  {
+   "es": "Toco la guitarra desde niño.",
+   "pt": "Toco violão desde criança.",
+   "nota": "\"Guitarra\" também é violão."
+  },
+  {
+   "es": "El concierto fue increíble.",
+   "pt": "O show foi incrível.",
+   "nota": "\"Concierto\" serve para qualquer show de música."
+  },
+  {
+   "es": "Esta canción está de moda.",
+   "pt": "Esta música está na moda.",
+   "nota": ""
+  },
+  {
+   "es": "Siempre canto en la ducha.",
+   "pt": "Sempre canto no chuveiro.",
+   "nota": ""
+  },
+  {
+   "es": "El tango nació en el Río de la Plata.",
+   "pt": "O tango nasceu no Rio da Prata.",
+   "nota": ""
+  },
+  {
+   "es": "Ganó el Óscar a la mejor película.",
+   "pt": "Ganhou o Oscar de melhor filme.",
+   "nota": ""
+  },
+  {
+   "es": "Es una comedia muy divertida.",
+   "pt": "É uma comédia muito divertida.",
+   "nota": ""
+  },
+  {
+   "es": "El libro es mejor que la película.",
+   "pt": "O livro é melhor que o filme.",
+   "nota": ""
+  },
+  {
+   "es": "Vamos a un festival de música en verano.",
+   "pt": "Vamos a um festival de música no verão.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me recomiendas alguna serie?",
+   "pt": "Me recomenda alguma série?",
+   "nota": ""
+  }
+ ]
+}

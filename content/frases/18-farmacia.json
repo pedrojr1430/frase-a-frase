@@ -1,0 +1,107 @@
+{
+ "id": "farmacia",
+ "name": "Farmácia",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "¿Tiene algo para el dolor de cabeza?",
+   "pt": "Tem algo para dor de cabeça?",
+   "nota": ""
+  },
+  {
+   "es": "¿Necesito receta para esto?",
+   "pt": "Preciso de receita para isto?",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuántas veces al día lo tomo?",
+   "pt": "Quantas vezes por dia eu tomo?",
+   "nota": ""
+  },
+  {
+   "es": "Tómelo después de las comidas.",
+   "pt": "Tome depois das refeições.",
+   "nota": ""
+  },
+  {
+   "es": "Necesito protector solar.",
+   "pt": "Preciso de protetor solar.",
+   "nota": ""
+  },
+  {
+   "es": "¿Tiene tiritas?",
+   "pt": "Tem band-aid?",
+   "nota": "\"Tiritas\" na Espanha; \"curitas\" na América Latina."
+  },
+  {
+   "es": "Tengo tos seca.",
+   "pt": "Estou com tosse seca.",
+   "nota": ""
+  },
+  {
+   "es": "Algo para la picadura de mosquito.",
+   "pt": "Algo para picada de mosquito.",
+   "nota": ""
+  },
+  {
+   "es": "¿Tiene un jarabe para la tos?",
+   "pt": "Tem um xarope para tosse?",
+   "nota": ""
+  },
+  {
+   "es": "Soy alérgico a la penicilina.",
+   "pt": "Sou alérgico a penicilina.",
+   "nota": ""
+  },
+  {
+   "es": "¿Hay alguna farmacia de guardia?",
+   "pt": "Tem alguma farmácia de plantão?",
+   "nota": ""
+  },
+  {
+   "es": "Me pica todo el cuerpo.",
+   "pt": "Meu corpo inteiro está coçando.",
+   "nota": "\"Picar\" = coçar, arder."
+  },
+  {
+   "es": "Necesito pastillas para el mareo.",
+   "pt": "Preciso de comprimidos para enjoo.",
+   "nota": ""
+  },
+  {
+   "es": "¿Es genérico?",
+   "pt": "É genérico?",
+   "nota": ""
+  },
+  {
+   "es": "Me quemé con el sol.",
+   "pt": "Me queimei no sol.",
+   "nota": ""
+  },
+  {
+   "es": "¿Tiene algo para la diarrea?",
+   "pt": "Tem algo para diarreia?",
+   "nota": ""
+  },
+  {
+   "es": "No puede tomar alcohol con este medicamento.",
+   "pt": "Não pode beber álcool com este remédio.",
+   "nota": ""
+  },
+  {
+   "es": "¿Esto da sueño?",
+   "pt": "Isto dá sono?",
+   "nota": ""
+  },
+  {
+   "es": "Necesito un termómetro.",
+   "pt": "Preciso de um termômetro.",
+   "nota": ""
+  },
+  {
+   "es": "Agítese antes de usar.",
+   "pt": "Agite antes de usar.",
+   "nota": "Instrução comum em rótulos."
+  }
+ ]
+}

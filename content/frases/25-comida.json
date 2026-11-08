@@ -1,0 +1,107 @@
+{
+ "id": "comida",
+ "name": "Comida e cozinha",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "¿Cómo se prepara la paella?",
+   "pt": "Como se prepara a paella?",
+   "nota": ""
+  },
+  {
+   "es": "Hay que dejarlo cocer a fuego lento.",
+   "pt": "É preciso deixar cozinhar em fogo baixo.",
+   "nota": ""
+  },
+  {
+   "es": "Pela y corta las patatas.",
+   "pt": "Descasque e corte as batatas.",
+   "nota": "\"Patata\" na Espanha; \"papa\" na América Latina."
+  },
+  {
+   "es": "Añade una pizca de sal.",
+   "pt": "Acrescente uma pitada de sal.",
+   "nota": ""
+  },
+  {
+   "es": "Las tapas son típicas de España.",
+   "pt": "Os petiscos são típicos da Espanha.",
+   "nota": ""
+  },
+  {
+   "es": "Me encantan los tacos al pastor.",
+   "pt": "Adoro tacos al pastor.",
+   "nota": "Prato mexicano de carne de porco marinada."
+  },
+  {
+   "es": "El ceviche lleva pescado crudo y limón.",
+   "pt": "O ceviche leva peixe cru e limão.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me pasas la receta?",
+   "pt": "Me passa a receita?",
+   "nota": ""
+  },
+  {
+   "es": "Está un poco soso.",
+   "pt": "Está um pouco sem sal.",
+   "nota": "\"Soso\" = sem sal, sem graça."
+  },
+  {
+   "es": "Esto está demasiado salado.",
+   "pt": "Isto está salgado demais.",
+   "nota": ""
+  },
+  {
+   "es": "Precalienta el horno a 180 grados.",
+   "pt": "Preaqueça o forno a 180 graus.",
+   "nota": ""
+  },
+  {
+   "es": "Las empanadas argentinas son al horno.",
+   "pt": "As empanadas argentinas são assadas no forno.",
+   "nota": ""
+  },
+  {
+   "es": "Hoy hago una tortilla de patatas.",
+   "pt": "Hoje vou fazer uma tortilha de batatas.",
+   "nota": "Na Espanha \"tortilla\" é um omelete grosso; no México, é a massa de milho."
+  },
+  {
+   "es": "¿Te gusta el picante?",
+   "pt": "Você gosta de comida apimentada?",
+   "nota": ""
+  },
+  {
+   "es": "Mezcla bien todos los ingredientes.",
+   "pt": "Misture bem todos os ingredientes.",
+   "nota": ""
+  },
+  {
+   "es": "Se me ha quemado el arroz.",
+   "pt": "Queimei o arroz.",
+   "nota": ""
+  },
+  {
+   "es": "El aguacate está maduro.",
+   "pt": "O abacate está maduro.",
+   "nota": "No Chile, na Argentina e no Peru se diz \"palta\"."
+  },
+  {
+   "es": "Desayuno pan con tomate.",
+   "pt": "No café da manhã como pão com tomate.",
+   "nota": ""
+  },
+  {
+   "es": "Hoy toca comida casera.",
+   "pt": "Hoje é dia de comida caseira.",
+   "nota": ""
+  },
+  {
+   "es": "Sírvelo bien frío.",
+   "pt": "Sirva bem gelado.",
+   "nota": ""
+  }
+ ]
+}

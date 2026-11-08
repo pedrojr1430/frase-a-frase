@@ -1,0 +1,107 @@
+{
+ "id": "compras",
+ "name": "Compras",
+ "group": "social",
+ "items": [
+  {
+   "es": "¿Cuánto vale esto?",
+   "pt": "Quanto custa isto?",
+   "nota": "\"Vale\" e \"cuesta\" são usados quase igualmente."
+  },
+  {
+   "es": "Solo estoy mirando, gracias.",
+   "pt": "Só estou olhando, obrigado.",
+   "nota": ""
+  },
+  {
+   "es": "¿Lo tiene en otra talla?",
+   "pt": "Tem em outro tamanho?",
+   "nota": "Falso cognato: \"talla\" é tamanho de roupa."
+  },
+  {
+   "es": "¿Puedo pagar con tarjeta?",
+   "pt": "Posso pagar com cartão?",
+   "nota": ""
+  },
+  {
+   "es": "¿Me hace un descuento?",
+   "pt": "Me faz um desconto?",
+   "nota": ""
+  },
+  {
+   "es": "Me lo llevo.",
+   "pt": "Vou levar.",
+   "nota": "O pronome vem antes do verbo: \"me lo llevo\"."
+  },
+  {
+   "es": "¿Dónde están los probadores?",
+   "pt": "Onde ficam os provadores?",
+   "nota": ""
+  },
+  {
+   "es": "Me queda un poco grande.",
+   "pt": "Ficou um pouco grande em mim.",
+   "nota": "\"Quedar\" indica como a roupa fica em você."
+  },
+  {
+   "es": "¿Lo tiene en negro?",
+   "pt": "Tem na cor preta?",
+   "nota": ""
+  },
+  {
+   "es": "¿Puedo cambiarlo si no me queda bien?",
+   "pt": "Posso trocar se não ficar bom?",
+   "nota": ""
+  },
+  {
+   "es": "Quisiera devolver esto.",
+   "pt": "Eu gostaria de devolver isto.",
+   "nota": ""
+  },
+  {
+   "es": "¿Tiene el ticket?",
+   "pt": "Você tem o recibo?",
+   "nota": "Também se diz \"recibo\" ou \"comprobante\"."
+  },
+  {
+   "es": "Está en oferta.",
+   "pt": "Está em promoção.",
+   "nota": "Na Espanha, as liquidações de janeiro e julho são \"las rebajas\"."
+  },
+  {
+   "es": "¿Me lo envuelve para regalo?",
+   "pt": "Pode embrulhar para presente?",
+   "nota": ""
+  },
+  {
+   "es": "¿A qué hora cierran?",
+   "pt": "A que horas vocês fecham?",
+   "nota": ""
+  },
+  {
+   "es": "¿Aceptan efectivo?",
+   "pt": "Aceitam dinheiro?",
+   "nota": "\"Efectivo\" é dinheiro em espécie."
+  },
+  {
+   "es": "Busco un regalo para mi madre.",
+   "pt": "Procuro um presente para minha mãe.",
+   "nota": ""
+  },
+  {
+   "es": "Es demasiado caro para mí.",
+   "pt": "É caro demais para mim.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me da una bolsa, por favor?",
+   "pt": "Pode me dar uma sacola, por favor?",
+   "nota": ""
+  },
+  {
+   "es": "¿Tiene algo más barato?",
+   "pt": "Tem algo mais barato?",
+   "nota": ""
+  }
+ ]
+}

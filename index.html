@@ -183,14 +183,14 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
     <button onClick="{{goFrases}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Frases por situação</span>
-        <span style="font-size: 13px; color: #8F9BB8">6 temas, do restaurante ao trabalho</span>
+        <span style="font-size: 13px; color: #8F9BB8">{{homeCatsLine}}</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
     <button onClick="{{goTextos}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 16px; color: #E8EDF7">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Leitura guiada</span>
-        <span style="font-size: 13px; color: #8F9BB8">6 textos, do básico ao avançado</span>
+        <span style="font-size: 13px; color: #8F9BB8">{{homeTextsLine}}</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
@@ -235,23 +235,44 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 <sc-if value="{{showFrases}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 16px">
   <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Frases</h1>
-  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #1A2236; border-radius: 14px">
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #1A2236; border-radius: 14px">
+    <button onClick="{{viewCats}}" style="{{fseg.cats}}">Categorias</button>
     <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
     <button onClick="{{viewLista}}" style="{{fseg.lista}}">Lista</button>
   </div>
+  <sc-if value="{{notCatsView}}">
   <div style="display: flex; flex-wrap: wrap; gap: 8px">
+    <button onClick="{{viewCats}}" style="{{curPill}}">{{curCatLabel}}</button>
     <button onClick="{{pickAll}}" style="{{allPill}}">Todas</button>
-    <sc-for list="{{cats}}" as="c" hint-placeholder-count="6">
-      <button onClick="{{c.pick}}" style="{{c.style}}">{{c.name}}</button>
-    </sc-for>
     <button onClick="{{pickReview}}" style="{{reviewPill}}">Revisar ({{reviewCount}})</button>
   </div>
+  </sc-if>
+
+  <sc-if value="{{isCatsView}}">
+  <div style="display: flex; flex-direction: column; gap: 22px">
+    <span style="font-size: 13px; color: #8F9BB8">{{catSummary}}</span>
+    <sc-for list="{{catGroups}}" as="g">
+      <section style="display: flex; flex-direction: column; gap: 10px">
+        <h2 style="margin: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; font-size: 16px; font-weight: 700; color: #E8EDF7">{{g.name}}<span style="font-size: 12px; font-weight: 600; color: #8F9BB8">{{g.meta}}</span></h2>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+          <sc-for list="{{g.cats}}" as="c">
+            <button onClick="{{c.pick}}" style="{{c.style}}">
+              <span style="font-size: 15px; font-weight: 700; line-height: 1.25">{{c.name}}</span>
+              <span style="font-size: 12px; color: #8F9BB8">{{c.meta}}</span>
+              <span style="display: block; height: 4px; border-radius: 999px; background: #1A2236; overflow: hidden"><span style="{{c.bar}}"></span></span>
+            </button>
+          </sc-for>
+        </div>
+      </section>
+    </sc-for>
+  </div>
+  </sc-if>
 
   <sc-if value="{{isLista}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 12px">
     <div style="display: flex; flex-direction: column; gap: 6px">
       <label for="busca-frase" style="font-size: 13px; font-weight: 600; color: #8F9BB8">Buscar frase</label>
-      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #34405F; border-radius: 12px; background: #151C2E; color: #E8EDF7; font-family: inherit; font-size: 16px">
+      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em todas as frases, em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #34405F; border-radius: 12px; background: #151C2E; color: #E8EDF7; font-family: inherit; font-size: 16px">
     </div>
     <span style="font-size: 13px; color: #8F9BB8">{{listCount}} · toque para estudar no cartão</span>
     <sc-for list="{{listItems}}" as="p" hint-placeholder-count="6">
@@ -274,6 +295,9 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
         </button>
       </div>
     </sc-for>
+    <sc-if value="{{listMore}}">
+      <button onClick="{{showMoreList}}" style="min-height: 48px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 12px; font-size: 14px; font-weight: 600">{{listMoreLabel}}</button>
+    </sc-if>
     <sc-if value="{{listEmpty}}" hint-placeholder-val="{{ false }}">
       <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #8F9BB8">{{listEmptyMsg}}</div>
     </sc-if>
@@ -354,16 +378,25 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
   <sc-if value="{{isCatalog}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 14px">
     <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #8F9BB8">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
+    <input id="busca-texto" type="search" aria-label="Buscar texto" value="{{tquery}}" onChange="{{onTQuery}}" placeholder="Buscar por título ou palavra" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #34405F; border-radius: 12px; background: #151C2E; color: #E8EDF7; font-family: inherit; font-size: 16px">
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
       <sc-for list="{{levels}}" as="l" hint-placeholder-count="4">
         <button onClick="{{l.pick}}" style="{{l.style}}">{{l.label}}</button>
+      </sc-for>
+    </div>
+    <div style="display: flex; gap: 8px; overflow-x: auto; margin: 0 -20px; padding: 0 20px 2px 20px; scrollbar-width: none">
+      <sc-for list="{{temas}}" as="m">
+        <button onClick="{{m.pick}}" style="{{m.style}}">{{m.label}}</button>
       </sc-for>
     </div>
     <span style="font-size: 13px; color: #8F9BB8">{{textListCount}}</span>
     <sc-for list="{{textList}}" as="t" hint-placeholder-count="4">
       <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid #232C44; background: #151C2E; color: #E8EDF7; border-radius: 18px">
         <span style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">{{t.nivel}}</span>
+          <span style="display: flex; align-items: center; gap: 6px; min-width: 0">
+            <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #33290F; color: #FFC247">{{t.nivel}}</span>
+            <span style="font-size: 12px; font-weight: 600; color: #8F9BB8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{t.tema}}</span>
+          </span>
           <span style="{{t.statusStyle}}">{{t.status}}</span>
         </span>
         <span style="font-family: Manrope, system-ui, sans-serif; ; font-size: 20px; font-weight: 700; line-height: 1.25">{{t.title}}</span>
@@ -371,6 +404,12 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
         <span style="font-size: 12px; color: #8F9BB8">{{t.meta}}</span>
       </button>
     </sc-for>
+    <sc-if value="{{textMore}}">
+      <button onClick="{{showMoreTexts}}" style="min-height: 48px; border: 1px solid #34405F; background: #151C2E; color: #E8EDF7; border-radius: 12px; font-size: 14px; font-weight: 600">{{textMoreLabel}}</button>
+    </sc-if>
+    <sc-if value="{{textEmpty}}">
+      <div style="background: #151C2E; border: 1px solid #232C44; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #8F9BB8">Nenhum texto com esses filtros.</div>
+    </sc-if>
   </div>
   </sc-if>
 
@@ -1396,12 +1435,36 @@ var CATS = [
   ]}
 ];
 
+var GROUPS = [
+  { id: 'social', name: 'Dia a dia e social', short: 'Dia a dia' },
+  { id: 'viagem', name: 'Viagem e serviços', short: 'Viagem' },
+  { id: 'trabalho', name: 'Trabalho e negócios', short: 'Trabalho' },
+  { id: 'cultura', name: 'Cultura e atualidade', short: 'Cultura' }
+];
+var GROUP_SHORT = {};
+GROUPS.forEach(function (g) { GROUP_SHORT[g.id] = g.short; });
+['social', 'social', 'viagem', 'social', 'trabalho', 'social'].forEach(function (g, i) { if (CATS[i]) CATS[i].group = g; });
+
 var ALL = [];
-CATS.forEach(function (c, ci) {
-  c.items.forEach(function (it, ii) {
-    ALL.push({ key: ci + '-' + ii, cat: c.name, es: it.es, pt: it.pt, nota: it.nota });
+function rebuildAll() {
+  ALL.length = 0;
+  CATS.forEach(function (c, ci) {
+    c.items.forEach(function (it, ii) {
+      ALL.push({ key: ci + '-' + ii, ci: ci, cat: c.name, es: it.es, pt: it.pt, nota: it.nota });
+    });
   });
-});
+}
+rebuildAll();
+
+// Conteúdo completo vem de data/*.json; o que está acima é a reserva para o primeiro uso offline.
+function loadContent() {
+  function get(u) { return fetch(u).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); }
+  Promise.all([get('data/frases.json'), get('data/textos.json')]).then(function (res) {
+    if (res[0] && res[0].length >= CATS.length) { CATS.length = 0; res[0].forEach(function (c) { CATS.push(c); }); rebuildAll(); }
+    if (res[1] && res[1].length >= TEXTS.length) { TEXTS.length = 0; res[1].forEach(function (t) { TEXTS.push(t); }); }
+    if (window.__fafApp) window.__fafApp.setState({ contentAt: Date.now() });
+  });
+}
 
 var TEXTS = [
   { title: 'Un día en Madrid', nivel: 'Básico',
@@ -1600,7 +1663,7 @@ class Component extends DCLogic {
     var today = todayStr();
     this.state = {
       tab: 'inicio',
-      fview: 'cards', query: '', reading: false, level: 'all',
+      fview: 'cats', query: '', reading: false, level: 'all', tema: 'all', tquery: '', listLimit: 60, textLimit: 20,
       mfilter: 'all', heard: saved.heard || {},
       cat: 0, card: 0, flipped: false,
       known: saved.known || {}, review: saved.review || {},
@@ -1650,7 +1713,7 @@ class Component extends DCLogic {
     var s = this.state;
     if (s.cat === -1) return ALL.filter(function (p) { return s.review[p.key]; });
     if (s.cat === -2) return ALL.slice();
-    return ALL.filter(function (p) { return p.key.indexOf(s.cat + '-') === 0; });
+    return ALL.filter(function (p) { return p.ci === s.cat; });
   }
 
   mark(asKnown) {
@@ -1695,10 +1758,15 @@ class Component extends DCLogic {
     var pct = deck.length ? Math.round(((cardIdx + 1) / deck.length) * 100) : 0;
     var mediaList = MEDIA.filter(function (m) { return s.mfilter === 'all' || m.kind === s.mfilter; });
     var q = norm(s.query.trim());
-    var listItems = q ? deck.filter(function (p) { return norm(p.es).indexOf(q) >= 0 || norm(p.pt).indexOf(q) >= 0; }) : deck;
-    var textList = TEXTS.map(function (x, idx) { return Object.assign({ idx: idx }, x); })
+    var listAll = q ? ALL.filter(function (p) { return norm(p.es).indexOf(q) >= 0 || norm(p.pt).indexOf(q) >= 0; }) : deck;
+    var listItems = listAll.slice(0, s.listLimit);
+    var tq = norm(s.tquery.trim());
+    var textAll = TEXTS.map(function (x, idx) { return Object.assign({ idx: idx }, x); })
       .filter(function (x) { return s.level === 'all' || x.nivel === s.level; })
+      .filter(function (x) { return s.tema === 'all' || x.tema === s.tema; })
+      .filter(function (x) { return !tq || norm(x.title).indexOf(tq) >= 0 || x.sentences.some(function (p) { return norm(p[0]).indexOf(tq) >= 0 || norm(p[1]).indexOf(tq) >= 0; }); })
       .sort(function (a, b) { return LEVELS.indexOf(a.nivel) - LEVELS.indexOf(b.nivel) || a.idx - b.idx; });
+    var textList = textAll.slice(0, s.textLimit);
 
     // Leitura
     var t = TEXTS[s.textIdx];
@@ -1773,7 +1841,36 @@ class Component extends DCLogic {
       goReview: function () { self.setState({ tab: 'frases', fview: 'cards', cat: -1, card: 0, flipped: false }); },
 
       // Frases: lista
-      fseg: { cards: segStyle(s.fview === 'cards'), lista: segStyle(s.fview === 'lista') },
+      fseg: { cats: segStyle(s.fview === 'cats'), cards: segStyle(s.fview === 'cards'), lista: segStyle(s.fview === 'lista') },
+      viewCats: function () { self.setState({ fview: 'cats' }); },
+      isCatsView: s.fview === 'cats',
+      notCatsView: s.fview !== 'cats',
+      curPill: pill(s.cat >= 0),
+      curCatLabel: s.cat >= 0 && CATS[s.cat] ? CATS[s.cat].name : 'Escolher categoria',
+      homeCatsLine: CATS.length + ' categorias, do restaurante às finanças',
+      homeTextsLine: TEXTS.length + ' textos, do básico ao avançado',
+      catSummary: CATS.length + ' categorias · ' + ALL.length + ' frases · ' + knownCount + ' você já sabe',
+      catGroups: GROUPS.map(function (g) {
+        var list = [];
+        var gTotal = 0, gKnown = 0;
+        CATS.forEach(function (c, ci) {
+          if ((c.group || 'social') !== g.id) return;
+          var total = c.items.length;
+          var k = 0;
+          for (var ii = 0; ii < total; ii++) if (s.known[ci + '-' + ii]) k++;
+          gTotal += total; gKnown += k;
+          var pctc = total ? Math.round(k / total * 100) : 0;
+          list.push({
+            name: c.name,
+            meta: k ? k + ' de ' + total + ' já sei' : total + ' frases',
+            bar: 'display: block; height: 100%; width: ' + pctc + '%; background: ' + (pctc === 100 ? '#3DDC97' : '#FF5466') + '; border-radius: 999px',
+            style: 'display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 14px; min-height: 96px; border-radius: 16px; ' +
+              (s.cat === ci ? 'border: 1px solid #FF5466; background: #151C2E; color: #E8EDF7' : 'border: 1px solid #232C44; background: #151C2E; color: #E8EDF7'),
+            pick: function () { self.setState({ cat: ci, card: 0, flipped: false, fview: 'cards' }); }
+          });
+        });
+        return { name: g.name, meta: gKnown + '/' + gTotal, cats: list };
+      }).filter(function (g) { return g.cats.length; }),
       viewCards: function () { self.setState({ fview: 'cards' }); },
       viewLista: function () { self.setState({ fview: 'lista' }); },
       isCards: s.fview === 'cards',
@@ -1782,7 +1879,7 @@ class Component extends DCLogic {
       pickAll: function () { self.setState({ cat: -2, card: 0, flipped: false }); },
       pickReview: function () { self.setState({ cat: -1, card: 0, flipped: false }); },
       query: s.query,
-      onQuery: function (e) { self.setState({ query: e && e.target ? e.target.value : '' }); },
+      onQuery: function (e) { self.setState({ query: e && e.target ? e.target.value : '', listLimit: 60 }); },
       listItems: listItems.map(function (p) {
         return {
           es: p.es, pt: p.pt, cat: p.cat,
@@ -1790,11 +1887,17 @@ class Component extends DCLogic {
           speak: function () { speak(p.es); },
           open: function () {
             var pos = deck.findIndex(function (d) { return d.key === p.key; });
-            self.setState({ fview: 'cards', card: pos < 0 ? 0 : pos, flipped: false });
+            if (pos < 0) {
+              var own = ALL.filter(function (d) { return d.ci === p.ci; });
+              self.setState({ fview: 'cards', cat: p.ci, card: own.findIndex(function (d) { return d.key === p.key; }), flipped: false, query: '' });
+            } else self.setState({ fview: 'cards', card: pos, flipped: false });
           }
         };
       }),
-      listCount: listItems.length === 1 ? '1 frase' : listItems.length + ' frases',
+      listCount: (listAll.length === 1 ? '1 frase' : listAll.length + ' frases') + (q ? ' em todas as categorias' : ''),
+      listMore: listAll.length > listItems.length,
+      listMoreLabel: 'Mostrar mais ' + Math.min(60, listAll.length - listItems.length) + ' de ' + (listAll.length - listItems.length),
+      showMoreList: function () { self.setState({ listLimit: s.listLimit + 60 }); },
       listEmpty: listItems.length === 0,
       listEmptyMsg: s.query ? 'Nenhuma frase encontrada para essa busca.' : 'Nenhuma frase marcada para revisar ainda.',
 
@@ -1803,15 +1906,24 @@ class Component extends DCLogic {
       isReading: s.reading,
       backToList: function () { self.setState({ reading: false }); },
       levels: [{ id: 'all', label: 'Todos' }].concat(LEVELS.map(function (l) { return { id: l, label: l }; })).map(function (l) {
-        return { label: l.label, style: pill(s.level === l.id), pick: function () { self.setState({ level: l.id }); } };
+        return { label: l.label, style: pill(s.level === l.id), pick: function () { self.setState({ level: l.id, textLimit: 20 }); } };
       }),
-      textListCount: textList.length === 1 ? '1 texto' : textList.length + ' textos',
+      textListCount: textAll.length === 1 ? '1 texto' : textAll.length + ' textos',
+      tquery: s.tquery,
+      onTQuery: function (e) { self.setState({ tquery: e && e.target ? e.target.value : '', textLimit: 20 }); },
+      temas: [{ id: 'all', short: 'Todos os temas' }].concat(GROUPS).map(function (g) {
+        return { label: g.short, style: pill(s.tema === g.id) + '; flex: 0 0 auto; white-space: nowrap', pick: function () { self.setState({ tema: g.id, textLimit: 20 }); } };
+      }),
+      textMore: textAll.length > textList.length,
+      textMoreLabel: 'Mostrar mais ' + Math.min(20, textAll.length - textList.length) + ' de ' + (textAll.length - textList.length),
+      showMoreTexts: function () { self.setState({ textLimit: s.textLimit + 20 }); },
+      textEmpty: textAll.length === 0,
       textList: textList.map(function (x) {
         var done = !!s.read[x.idx];
         var answered = x.questions.filter(function (q, qi) { return s.answers.hasOwnProperty(x.idx + '-' + qi); }).length;
         var status = done ? 'Concluído' : answered > 0 ? 'Em andamento' : 'Novo';
         return {
-          title: x.title, nivel: x.nivel,
+          title: x.title, nivel: x.nivel, tema: GROUP_SHORT[x.tema] || '',
           preview: x.sentences[0][0],
           meta: x.sentences.length + ' frases · ' + x.words.length + ' palavras-chave · ' + x.questions.length + ' perguntas',
           status: status,
@@ -1852,7 +1964,7 @@ class Component extends DCLogic {
       reviewPill: pill(s.cat === -1),
       deckEmpty: deck.length === 0,
       deckHas: deck.length > 0,
-      deckLabel: s.cat === -1 ? 'Revisão' : s.cat === -2 ? 'Todas' : CATS[s.cat].name,
+      deckLabel: s.cat === -1 ? 'Revisão' : s.cat === -2 ? 'Todas' : (CATS[s.cat] || CATS[0]).name,
       card: { es: c.es, pt: c.pt, nota: c.nota, hasNota: !!c.nota, cat: c.cat, isKnown: !!s.known[c.key], isReview: !!s.review[c.key] },
       cardPos: cardIdx + 1,
       cardTotal: deck.length,
@@ -2016,6 +2128,8 @@ class Component extends DCLogic {
 }
 
 FAFBoot(Component);
+
+loadContent();
 
 });
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {

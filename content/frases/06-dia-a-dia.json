@@ -1,0 +1,107 @@
+{
+ "id": "dia-a-dia",
+ "name": "Dia a dia",
+ "group": "social",
+ "items": [
+  {
+   "es": "¿Qué hora es?",
+   "pt": "Que horas são?",
+   "nota": ""
+  },
+  {
+   "es": "Tengo prisa.",
+   "pt": "Estou com pressa.",
+   "nota": "Em espanhol você \"tem\" pressa, fome e frio: tener hambre, tener frío."
+  },
+  {
+   "es": "No pasa nada.",
+   "pt": "Não tem problema.",
+   "nota": ""
+  },
+  {
+   "es": "¡Qué rico!",
+   "pt": "Que delícia!",
+   "nota": "Falso cognato: para comida, \"rico\" é gostoso."
+  },
+  {
+   "es": "Me da igual.",
+   "pt": "Tanto faz.",
+   "nota": ""
+  },
+  {
+   "es": "Ahora vuelvo.",
+   "pt": "Já volto.",
+   "nota": "\"Ahora\" pode significar \"já\", \"daqui a pouco\"."
+  },
+  {
+   "es": "Tengo sueño.",
+   "pt": "Estou com sono.",
+   "nota": "Mais um caso com \"tener\": tener sueño, tener sed."
+  },
+  {
+   "es": "Voy al supermercado, ¿necesitas algo?",
+   "pt": "Vou ao supermercado, precisa de alguma coisa?",
+   "nota": ""
+  },
+  {
+   "es": "¿Qué vas a hacer hoy?",
+   "pt": "O que você vai fazer hoje?",
+   "nota": ""
+  },
+  {
+   "es": "Hace mucho calor.",
+   "pt": "Está muito calor.",
+   "nota": "Clima usa \"hacer\": hace frío, hace sol, hace viento."
+  },
+  {
+   "es": "Está lloviendo.",
+   "pt": "Está chovendo.",
+   "nota": ""
+  },
+  {
+   "es": "Se me olvidaron las llaves.",
+   "pt": "Esqueci as chaves.",
+   "nota": "Construção comum: o esquecimento \"acontece\" com você."
+  },
+  {
+   "es": "¿Me ayudas con esto?",
+   "pt": "Me ajuda com isso?",
+   "nota": ""
+  },
+  {
+   "es": "Estoy cansadísimo.",
+   "pt": "Estou cansadíssimo.",
+   "nota": ""
+  },
+  {
+   "es": "Vale, de acuerdo.",
+   "pt": "Tá bom, combinado.",
+   "nota": "\"Vale\" é típico da Espanha; no México se diz \"órale\" ou \"sale\"."
+  },
+  {
+   "es": "¿Qué día es hoy?",
+   "pt": "Que dia é hoje?",
+   "nota": ""
+  },
+  {
+   "es": "Llego un poco tarde.",
+   "pt": "Vou chegar um pouco atrasado.",
+   "nota": ""
+  },
+  {
+   "es": "Ya está.",
+   "pt": "Pronto, já foi.",
+   "nota": ""
+  },
+  {
+   "es": "¡Qué pena!",
+   "pt": "Que pena!",
+   "nota": "Atenção: no México, \"me da pena\" significa \"tenho vergonha\"."
+  },
+  {
+   "es": "Ojalá haga buen tiempo mañana.",
+   "pt": "Tomara que faça tempo bom amanhã.",
+   "nota": "\"Ojalá\" pede subjuntivo: ojalá haga, ojalá llueva."
+  }
+ ]
+}

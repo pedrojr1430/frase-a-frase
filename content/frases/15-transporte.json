@@ -1,0 +1,107 @@
+{
+ "id": "transporte",
+ "name": "Transporte",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "Un billete de ida y vuelta, por favor.",
+   "pt": "Uma passagem de ida e volta, por favor.",
+   "nota": "Na América Latina: \"un boleto redondo\" (México)."
+  },
+  {
+   "es": "¿Qué línea va al centro?",
+   "pt": "Que linha vai para o centro?",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde tengo que bajarme?",
+   "pt": "Onde tenho que descer?",
+   "nota": ""
+  },
+  {
+   "es": "¿Este autobús para en la plaza?",
+   "pt": "Este ônibus para na praça?",
+   "nota": ""
+  },
+  {
+   "es": "Lléveme a esta dirección, por favor.",
+   "pt": "Me leve a este endereço, por favor.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuánto es la carrera?",
+   "pt": "Quanto deu a corrida?",
+   "nota": "No táxi; também \"¿cuánto le debo?\"."
+  },
+  {
+   "es": "Tengo que hacer transbordo.",
+   "pt": "Tenho que fazer baldeação.",
+   "nota": "\"Transbordo\" = trocar de linha."
+  },
+  {
+   "es": "El metro está muy lleno.",
+   "pt": "O metrô está muito cheio.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cada cuánto pasa el tren?",
+   "pt": "De quanto em quanto tempo passa o trem?",
+   "nota": ""
+  },
+  {
+   "es": "Quisiera alquilar un coche.",
+   "pt": "Gostaria de alugar um carro.",
+   "nota": "\"Coche\" na Espanha; \"carro\" ou \"auto\" na América Latina."
+  },
+  {
+   "es": "¿Dónde está la gasolinera más cercana?",
+   "pt": "Onde fica o posto de gasolina mais próximo?",
+   "nota": ""
+  },
+  {
+   "es": "Hay mucho tráfico a esta hora.",
+   "pt": "Tem muito trânsito a esta hora.",
+   "nota": ""
+  },
+  {
+   "es": "Perdí el último autobús.",
+   "pt": "Perdi o último ônibus.",
+   "nota": ""
+  },
+  {
+   "es": "¿Este asiento está libre?",
+   "pt": "Este lugar está livre?",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde se compran los billetes?",
+   "pt": "Onde se compram as passagens?",
+   "nota": ""
+  },
+  {
+   "es": "Pare aquí, por favor.",
+   "pt": "Pare aqui, por favor.",
+   "nota": ""
+  },
+  {
+   "es": "Voy en bici al trabajo.",
+   "pt": "Vou de bicicleta para o trabalho.",
+   "nota": "Meio de transporte usa \"en\": en tren, en coche. Mas \"a pie\"."
+  },
+  {
+   "es": "El tren sale del andén tres.",
+   "pt": "O trem sai da plataforma três.",
+   "nota": "\"Andén\" = plataforma."
+  },
+  {
+   "es": "¿Acepta tarjeta el taxi?",
+   "pt": "O táxi aceita cartão?",
+   "nota": ""
+  },
+  {
+   "es": "Hay huelga de transporte mañana.",
+   "pt": "Tem greve de transporte amanhã.",
+   "nota": "\"Huelga\" = greve."
+  }
+ ]
+}

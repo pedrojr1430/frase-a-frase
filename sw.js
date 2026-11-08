@@ -1,6 +1,6 @@
 /* Frase a Frase — funciona offline (exceto podcasts e vídeos, que precisam de internet) */
-var CACHE = 'faf-v5';
-var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
+var CACHE = 'faf-v6';
+var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'data/frases.json', 'data/textos.json'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
 });
@@ -16,12 +16,12 @@ self.addEventListener('fetch', function (e) {
   var sameOrigin = url.origin === self.location.origin;
   var isFont = url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com';
   if (!sameOrigin && !isFont) return;
-  if (req.mode === 'navigate') {
+  if (req.mode === 'navigate' || (sameOrigin && url.pathname.indexOf('/data/') >= 0)) {
     // rede primeiro para pegar atualizações; cache se estiver offline
     e.respondWith(fetch(req).then(function (res) {
-      var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put('index.html', copy); });
+      var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(req.mode === 'navigate' ? 'index.html' : req, copy); });
       return res;
-    }).catch(function () { return caches.match('index.html'); }));
+    }).catch(function () { return caches.match(req.mode === 'navigate' ? 'index.html' : req); }));
     return;
   }
   e.respondWith(caches.match(req).then(function (hit) {

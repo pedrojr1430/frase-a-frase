@@ -1,0 +1,107 @@
+{
+ "id": "hotel",
+ "name": "Hotel",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "Tengo una reserva a nombre de Lima.",
+   "pt": "Tenho uma reserva em nome de Lima.",
+   "nota": ""
+  },
+  {
+   "es": "¿A qué hora es el check-out?",
+   "pt": "A que horas é o check-out?",
+   "nota": "Também se diz \"la hora de salida\"."
+  },
+  {
+   "es": "¿El desayuno está incluido?",
+   "pt": "O café da manhã está incluído?",
+   "nota": ""
+  },
+  {
+   "es": "Quisiera una habitación doble.",
+   "pt": "Gostaria de um quarto de casal.",
+   "nota": "Doble pode ter uma cama de casal (\"cama de matrimonio\") ou duas."
+  },
+  {
+   "es": "¿Tiene habitaciones libres para esta noche?",
+   "pt": "Tem quartos disponíveis para esta noite?",
+   "nota": ""
+  },
+  {
+   "es": "La clave del wifi, por favor.",
+   "pt": "A senha do wi-fi, por favor.",
+   "nota": "\"Clave\" ou \"contraseña\" = senha."
+  },
+  {
+   "es": "El aire acondicionado no funciona.",
+   "pt": "O ar-condicionado não funciona.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me pueden despertar a las siete?",
+   "pt": "Podem me acordar às sete?",
+   "nota": ""
+  },
+  {
+   "es": "¿Puedo dejar las maletas aquí?",
+   "pt": "Posso deixar as malas aqui?",
+   "nota": ""
+  },
+  {
+   "es": "Necesito más toallas.",
+   "pt": "Preciso de mais toalhas.",
+   "nota": ""
+  },
+  {
+   "es": "La habitación da a la calle y hay ruido.",
+   "pt": "O quarto dá para a rua e tem barulho.",
+   "nota": ""
+  },
+  {
+   "es": "¿Hay caja fuerte en la habitación?",
+   "pt": "Tem cofre no quarto?",
+   "nota": ""
+  },
+  {
+   "es": "Quisiera quedarme una noche más.",
+   "pt": "Gostaria de ficar mais uma noite.",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde está el ascensor?",
+   "pt": "Onde fica o elevador?",
+   "nota": ""
+  },
+  {
+   "es": "He perdido la llave de la habitación.",
+   "pt": "Perdi a chave do quarto.",
+   "nota": ""
+  },
+  {
+   "es": "¿Cuánto cuesta por noche?",
+   "pt": "Quanto custa a diária?",
+   "nota": ""
+  },
+  {
+   "es": "¿Tienen servicio de lavandería?",
+   "pt": "Vocês têm serviço de lavanderia?",
+   "nota": ""
+  },
+  {
+   "es": "¿Me puede pedir un taxi?",
+   "pt": "Pode chamar um táxi para mim?",
+   "nota": ""
+  },
+  {
+   "es": "Todo ha sido perfecto, gracias.",
+   "pt": "Foi tudo perfeito, obrigado.",
+   "nota": ""
+  },
+  {
+   "es": "¿Hay aparcamiento?",
+   "pt": "Tem estacionamento?",
+   "nota": "Na América Latina: \"estacionamiento\" ou \"parqueadero\" (Colômbia)."
+  }
+ ]
+}

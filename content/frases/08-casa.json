@@ -1,0 +1,107 @@
+{
+ "id": "casa",
+ "name": "Casa",
+ "group": "social",
+ "items": [
+  {
+   "es": "Vivo en un piso de dos habitaciones.",
+   "pt": "Moro num apartamento de dois quartos.",
+   "nota": "Na Espanha \"piso\"; na América Latina \"departamento\" ou \"apartamento\"."
+  },
+  {
+   "es": "El alquiler incluye los gastos.",
+   "pt": "O aluguel inclui as contas.",
+   "nota": "\"Gastos\" aqui = água, luz, condomínio."
+  },
+  {
+   "es": "Se ha roto la lavadora.",
+   "pt": "A máquina de lavar quebrou.",
+   "nota": ""
+  },
+  {
+   "es": "¿Puedes sacar la basura?",
+   "pt": "Pode levar o lixo para fora?",
+   "nota": ""
+  },
+  {
+   "es": "Hoy me toca limpiar el baño.",
+   "pt": "Hoje é minha vez de limpar o banheiro.",
+   "nota": "\"Me toca\" = é minha vez."
+  },
+  {
+   "es": "La cocina es pequeña pero muy cómoda.",
+   "pt": "A cozinha é pequena, mas muito prática.",
+   "nota": ""
+  },
+  {
+   "es": "Apaga la luz, por favor.",
+   "pt": "Apague a luz, por favor.",
+   "nota": ""
+  },
+  {
+   "es": "No hay agua caliente.",
+   "pt": "Não tem água quente.",
+   "nota": ""
+  },
+  {
+   "es": "Estamos buscando piso.",
+   "pt": "Estamos procurando apartamento.",
+   "nota": ""
+  },
+  {
+   "es": "Mis vecinos hacen mucho ruido.",
+   "pt": "Meus vizinhos fazem muito barulho.",
+   "nota": ""
+  },
+  {
+   "es": "¿Dónde dejo los zapatos?",
+   "pt": "Onde deixo os sapatos?",
+   "nota": ""
+  },
+  {
+   "es": "Pon la mesa, que ya está la cena.",
+   "pt": "Ponha a mesa, o jantar já está pronto.",
+   "nota": ""
+  },
+  {
+   "es": "Tengo que planchar la ropa.",
+   "pt": "Tenho que passar a roupa.",
+   "nota": "\"Planchar\" = passar a ferro."
+  },
+  {
+   "es": "El grifo gotea.",
+   "pt": "A torneira está pingando.",
+   "nota": "Na América Latina se diz \"la llave\" ou \"la canilla\" (Argentina)."
+  },
+  {
+   "es": "Nos mudamos el mes que viene.",
+   "pt": "Vamos nos mudar no mês que vem.",
+   "nota": "\"Mudarse\" = mudar de casa."
+  },
+  {
+   "es": "La calefacción no funciona.",
+   "pt": "O aquecedor não funciona.",
+   "nota": ""
+  },
+  {
+   "es": "Riego las plantas cada dos días.",
+   "pt": "Rego as plantas a cada dois dias.",
+   "nota": ""
+  },
+  {
+   "es": "¿Me prestas el cargador?",
+   "pt": "Me empresta o carregador?",
+   "nota": ""
+  },
+  {
+   "es": "Haz la cama antes de salir.",
+   "pt": "Arrume a cama antes de sair.",
+   "nota": "\"Hacer la cama\" = arrumar a cama."
+  },
+  {
+   "es": "Esta casa tiene mucha luz.",
+   "pt": "Esta casa é muito iluminada.",
+   "nota": ""
+  }
+ ]
+}

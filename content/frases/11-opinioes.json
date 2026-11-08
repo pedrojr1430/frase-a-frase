@@ -1,0 +1,107 @@
+{
+ "id": "opinioes",
+ "name": "Opiniões",
+ "group": "social",
+ "items": [
+  {
+   "es": "Creo que tienes razón.",
+   "pt": "Acho que você tem razão.",
+   "nota": ""
+  },
+  {
+   "es": "No estoy de acuerdo.",
+   "pt": "Não concordo.",
+   "nota": ""
+  },
+  {
+   "es": "En mi opinión, es una buena idea.",
+   "pt": "Na minha opinião, é uma boa ideia.",
+   "nota": ""
+  },
+  {
+   "es": "No creo que sea tan fácil.",
+   "pt": "Não acho que seja tão fácil.",
+   "nota": "\"No creo que\" pede subjuntivo: sea, tenga, haya."
+  },
+  {
+   "es": "Depende de cómo lo mires.",
+   "pt": "Depende de como você olha.",
+   "nota": ""
+  },
+  {
+   "es": "Me parece injusto.",
+   "pt": "Me parece injusto.",
+   "nota": ""
+  },
+  {
+   "es": "Tienes toda la razón.",
+   "pt": "Você tem toda a razão.",
+   "nota": ""
+  },
+  {
+   "es": "Yo lo veo de otra manera.",
+   "pt": "Eu vejo de outra forma.",
+   "nota": ""
+  },
+  {
+   "es": "Es verdad, pero…",
+   "pt": "É verdade, mas…",
+   "nota": ""
+  },
+  {
+   "es": "¿Tú qué opinas?",
+   "pt": "O que você acha?",
+   "nota": ""
+  },
+  {
+   "es": "Estoy totalmente en contra.",
+   "pt": "Sou totalmente contra.",
+   "nota": ""
+  },
+  {
+   "es": "Hay que reconocer que funciona.",
+   "pt": "Tem que admitir que funciona.",
+   "nota": ""
+  },
+  {
+   "es": "A mí me da igual una cosa que otra.",
+   "pt": "Para mim tanto faz uma coisa ou outra.",
+   "nota": ""
+  },
+  {
+   "es": "Sinceramente, no me convence.",
+   "pt": "Sinceramente, não me convence.",
+   "nota": ""
+  },
+  {
+   "es": "Lo mejor sería esperar.",
+   "pt": "O melhor seria esperar.",
+   "nota": ""
+  },
+  {
+   "es": "Puede que tengas razón.",
+   "pt": "Pode ser que você tenha razão.",
+   "nota": "\"Puede que\" + subjuntivo = pode ser que."
+  },
+  {
+   "es": "No lo tengo claro.",
+   "pt": "Não tenho certeza.",
+   "nota": ""
+  },
+  {
+   "es": "Por un lado sí, por otro no.",
+   "pt": "Por um lado sim, por outro não.",
+   "nota": ""
+  },
+  {
+   "es": "Es lo que pienso yo también.",
+   "pt": "É o que eu também penso.",
+   "nota": ""
+  },
+  {
+   "es": "Vale la pena intentarlo.",
+   "pt": "Vale a pena tentar.",
+   "nota": ""
+  }
+ ]
+}
