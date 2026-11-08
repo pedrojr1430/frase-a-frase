@@ -1,0 +1,48 @@
+name: APK Android
+
+on:
+  push:
+    branches: [main]
+    paths: ['android/**', '.github/workflows/apk.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Compilar
+        working-directory: android
+        run: ./gradlew assembleRelease --no-daemon --stacktrace
+
+      - name: Assinar
+        env:
+          KS_PASS: ${{ secrets.KEYSTORE_PASSWORD }}
+        run: |
+          if [ -z "$KS_PASS" ]; then echo "Falta o segredo KEYSTORE_PASSWORD"; exit 1; fi
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          "$BT/zipalign" -f -p 4 android/app/build/outputs/apk/release/app-release-unsigned.apk aligned.apk
+          "$BT/apksigner" sign --ks android/frase-a-frase.keystore --ks-key-alias fraseafrase \
+            --ks-pass env:KS_PASS --key-pass env:KS_PASS --out frase-a-frase.apk aligned.apk
+          "$BT/apksigner" verify --print-certs frase-a-frase.apk
+
+      - name: Publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete apk --yes --cleanup-tag || true
+          gh release create apk frase-a-frase.apk \
+            --title "Frase a Frase para Android" \
+            --notes "APK gerado automaticamente ($(date -u +%d/%m/%Y), commit ${GITHUB_SHA::7}). Baixe no celular e toque para instalar." \
+            --latest
