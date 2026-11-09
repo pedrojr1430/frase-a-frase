@@ -397,6 +397,66 @@ body.cc-locked{overflow:hidden}
 .cc-big-ico.is-level{box-shadow:0 0 40px rgba(255,200,60,.75);animation:cc-pop .5s cubic-bezier(.2,1.6,.4,1)}
 @media (prefers-reduced-motion:reduce){.cc-stars-bg,.cc-bar i::after,#faf-course .cc-node.is-current::after,#faf-course .cc-node.is-current{animation:none}}
 
+/* ===== Conversa com a Lía ===== */
+.cc-lia-card{display:flex;align-items:center;gap:14px;width:100%;margin:0 0 24px;padding:16px;border-radius:22px;border:1px solid rgba(255,255,255,.35);text-align:left;color:#fff;background:linear-gradient(120deg,rgba(255,95,200,.35),rgba(124,243,255,.25));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 10px 30px rgba(16,8,80,.3),0 0 30px rgba(255,95,200,.25),inset 0 1px 0 rgba(255,255,255,.3);position:relative;overflow:hidden}
+.cc-lia-card::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.25) 50%,transparent 70%);transform:translateX(-100%);animation:cc-shine 3.2s ease-in-out infinite;pointer-events:none}
+.cc-lia-avatar{flex:0 0 auto;width:54px;height:54px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-family:Unbounded,Manrope,sans-serif;font-weight:600;font-size:24px;color:#fff;background:conic-gradient(from 210deg,#7CF3FF,#C38BFF,#FF5FC8,#7CF3FF);box-shadow:0 0 0 3px rgba(255,255,255,.35),0 0 22px rgba(195,139,255,.8);animation:cc-avatar 6s linear infinite}
+@keyframes cc-avatar{0%,100%{filter:hue-rotate(0deg)}50%{filter:hue-rotate(25deg)}}
+.cc-lia-avatar.is-sm{width:38px;height:38px;border-radius:12px;font-size:17px}
+.cc-lia-avatar.is-xl{width:84px;height:84px;border-radius:26px;font-size:38px;margin:0 auto}
+.cc-lia-txt{display:flex;flex-direction:column;gap:4px;font-size:13.5px;line-height:1.4;color:rgba(255,255,255,.9)}
+.cc-lia-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cc-lia-top strong{font-size:17px;color:#fff}
+.cc-lia-tag{font-size:10.5px;font-weight:800;letter-spacing:.1em;color:#1B1060;background:#7CF3FF;border-radius:999px;padding:3px 8px;box-shadow:0 0 12px rgba(124,243,255,.7)}
+.cc-chat{background:radial-gradient(120% 50% at 50% 0%,#EDE9FF 0%,#F4F6FC 60%)}
+.cc-chat-top{display:flex;align-items:center;gap:10px;padding:12px 16px;padding-top:max(12px,env(safe-area-inset-top));border-bottom:1px solid var(--line);background:rgba(255,255,255,.85);backdrop-filter:blur(10px)}
+.cc-chat-id{display:flex;flex-direction:column;line-height:1.2}
+.cc-chat-id strong{font-size:16px}
+.cc-chat-sub{font-size:12px;color:var(--muted)}
+.cc-chat-main{flex:1 1 auto;overflow-y:auto;padding:18px 16px;max-width:680px;width:100%;margin:0 auto;box-sizing:border-box;display:flex;flex-direction:column;gap:12px}
+.cc-chat-hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:8px 0 6px}
+.cc-chat-hero h2{margin:6px 0 0;font-family:Unbounded,Manrope,sans-serif;font-weight:600;font-size:22px}
+.cc-chat-hero p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5;max-width:420px}
+.cc-chips{display:flex;gap:8px;flex-wrap:wrap}
+.cc-chat .cc-tool{min-width:56px;min-height:42px;border-radius:12px;background:#fff;border:2px solid var(--line);color:var(--text);font-weight:800}
+.cc-chat .cc-tool.is-on{border-color:var(--ca);background:var(--csoft);color:var(--ca)}
+.cc-scenes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cc-scene{display:flex;flex-direction:column;gap:4px;text-align:left;padding:14px;border-radius:16px;border:2px solid var(--line);background:#fff;color:var(--text);box-shadow:0 3px 0 var(--line);min-height:84px}
+.cc-scene strong{font-size:15px}.cc-scene span{font-size:12.5px;color:var(--muted);line-height:1.35}
+.cc-scene:hover{border-color:var(--ca)}
+.cc-chat-note{margin:6px 0 0;font-size:12px;color:var(--muted);line-height:1.45;text-align:center}
+.cc-msgs{display:flex;flex-direction:column;gap:12px}
+.cc-msg{max-width:84%;padding:12px 14px;border-radius:18px;font-size:16px;line-height:1.45;animation:cc-in .25s ease}
+@keyframes cc-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cc-msg p{margin:0}
+.cc-msg.is-lia{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:6px;box-shadow:0 6px 18px rgba(20,26,51,.06)}
+.cc-msg.is-me{align-self:flex-end;color:#fff;background:linear-gradient(135deg,var(--ca),var(--cb));border-bottom-right-radius:6px;box-shadow:0 6px 18px rgba(91,61,245,.25)}
+.cc-msg.is-me.is-good::after{content:"✓";display:inline-block;margin-left:8px;font-weight:800;color:#9CFFD5}
+.cc-msg-tr{margin-top:8px!important;padding-top:8px;border-top:1px dashed var(--line);color:var(--muted);font-size:14.5px}
+.cc-msg-tools{display:flex;gap:6px;margin-top:8px}
+.cc-msg-tools button{min-height:34px;min-width:34px;padding:0 10px;border-radius:10px;border:none;background:var(--csoft);color:var(--ca);font-weight:700;font-size:13px;display:inline-flex;align-items:center;justify-content:center}
+.cc-msg-tools .cc-ico svg{width:18px;height:18px}
+.cc-msg-note{margin-top:8px!important;font-size:13px;color:#8A5A00;background:#FFF4D6;border-radius:10px;padding:8px 10px}
+.cc-fix{margin-top:10px;padding:10px 12px;border-radius:12px;background:#FFF4D6;color:#5A3A00;display:flex;flex-direction:column;gap:2px;font-size:14px;line-height:1.4}
+.cc-fix strong{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#B26B00}
+.cc-msg.is-typing{display:flex;gap:5px;padding:14px 16px}
+.cc-msg.is-typing i{width:8px;height:8px;border-radius:50%;background:var(--ca);opacity:.4;animation:cc-dot 1s infinite}
+.cc-msg.is-typing i:nth-child(2){animation-delay:.15s}.cc-msg.is-typing i:nth-child(3){animation-delay:.3s}
+@keyframes cc-dot{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}
+.cc-chat-foot{flex:0 0 auto;border-top:1px solid var(--line);background:rgba(255,255,255,.92);backdrop-filter:blur(10px);padding:10px 14px;padding-bottom:max(12px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:8px}
+.cc-chat-foot:empty{display:none}
+.cc-sugg{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;max-width:680px;width:100%;margin:0 auto}
+.cc-sugg:empty{display:none}
+.cc-sugg-chip{flex:0 0 auto;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid var(--ca);background:var(--csoft);color:var(--ca);font-weight:700;font-size:14px;white-space:nowrap}
+.cc-input-row{display:flex;align-items:flex-end;gap:8px;max-width:680px;width:100%;margin:0 auto}
+.cc-input{flex:1 1 auto;min-height:48px;max-height:120px;resize:none;box-sizing:border-box;padding:12px 14px;border-radius:16px;border:2px solid var(--line);font:inherit;font-size:16px;color:var(--text);background:#fff;outline:none}
+.cc-input:focus{border-color:var(--ca)}
+.cc-send,.cc-mic{flex:0 0 auto;width:48px;height:48px;border-radius:16px;border:none;display:flex;align-items:center;justify-content:center}
+.cc-send{color:#fff;background:linear-gradient(135deg,var(--ca),var(--cb));box-shadow:0 0 16px rgba(91,61,245,.35)}
+.cc-send:disabled{background:#DDE2F0;box-shadow:none;color:#8A93B2}
+.cc-mic{background:var(--csoft);color:var(--ca)}
+.cc-mic.is-rec{background:#FF5F7E;color:#fff;animation:cc-glow 1s ease-in-out infinite}
+
 </style>
 </head>
 <body>
@@ -1707,7 +1767,9 @@ body.cc-locked{overflow:hidden}
     { id: 'bau', t: 'Caçador de baús', d: 'Abra seu primeiro baú.' },
     { id: 'prova', t: 'Aprovado', d: 'Passe na prova de uma unidade.' },
     { id: 'revisao', t: 'De volta ao jogo', d: 'Recupere uma vida praticando.' },
-    { id: 'nivel5', t: 'Nível 5', d: 'Chegue ao nível 5.' }
+    { id: 'nivel5', t: 'Nível 5', d: 'Chegue ao nível 5.' },
+    { id: 'conversa', t: 'Primeira conversa', d: 'Troque 3 mensagens com a Lía.' },
+    { id: 'conversa10', t: 'Papo longo', d: 'Mande 10 mensagens numa conversa com a Lía.' }
   ];
   var PRAISE = ['Muito bem!', 'Isso mesmo!', 'Perfeito!', '¡Muy bien!', 'Excelente!', 'Mandou bem!', '¡Genial!'];
 
@@ -1977,7 +2039,14 @@ body.cc-locked{overflow:hidden}
         });
         body.appendChild(sec);
       });
-      root.replaceChildren(h('div', { class: 'cc-stars-bg', 'aria-hidden': 'true' }), head, body);
+      var lia = h('button', { type: 'button', class: 'cc-lia-card', onclick: openChat, 'aria-label': 'Conversar com a Lía, a IA do Frase a Frase' }, [
+        h('span', { class: 'cc-lia-avatar', 'aria-hidden': 'true', text: 'L' }),
+        h('span', { class: 'cc-lia-txt' }, [
+          h('span', { class: 'cc-lia-top' }, [h('strong', { text: 'Converse com a Lía' }), h('span', { class: 'cc-lia-tag', text: 'IA · TESTE' })]),
+          h('span', { text: 'Bata papo em espanhol com a IA do Frase a Frase. Ela corrige você e sugere respostas.' })
+        ])
+      ]);
+      root.replaceChildren(h('div', { class: 'cc-stars-bg', 'aria-hidden': 'true' }), head, lia, body);
       requestAnimationFrame(drawPaths);
       if (scrollToCurrent && currentEl) currentEl.scrollIntoView({ block: 'center' }); else root.scrollTop = prevScroll;
     }, function () {
@@ -2414,6 +2483,154 @@ body.cc-locked{overflow:hidden}
     if (S.intro) showIntro(); else next();
   }
 
+  // ---------- Conversa com a Lía (IA) ----------
+  var CHAT_SCENES = [
+    { id: 'livre', t: 'Conversa livre', d: 'Fale sobre você e o seu dia.' },
+    { id: 'apresentar', t: 'Conhecer alguém', d: 'Apresente-se numa festa.' },
+    { id: 'cafe', t: 'No café', d: 'Peça algo para comer e pague.' },
+    { id: 'hotel', t: 'No hotel', d: 'Faça o check-in.' },
+    { id: 'caminho', t: 'Pedir direções', d: 'Encontre o caminho até um museu.' },
+    { id: 'entrevista', t: 'Entrevista de emprego', d: 'Para quem já está no B1.' }
+  ];
+  var CHAT_XP_MAX = 10;
+  function chatLevel() { var lv = 'A1'; try { lv = localStorage.getItem('fraseafrase.lialevel') || 'A1'; } catch (e) {} return lv; }
+  function openChat() {
+    loadCourse().then(function () {
+      var url = course.ai && course.ai.url;
+      var ov = h('div', { class: 'cc-lesson cc-chat', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Conversa com a Lía' });
+      applyTheme(ov);
+      var main = h('div', { class: 'cc-chat-main' }), foot = h('div', { class: 'cc-chat-foot' });
+      var sub = h('span', { class: 'cc-chat-sub', text: 'IA do Frase a Frase · teste' });
+      ov.appendChild(h('div', { class: 'cc-chat-top' }, [
+        h('button', { type: 'button', class: 'cc-icon-btn', 'aria-label': 'Fechar conversa', onclick: close }, [icon('close')]),
+        h('span', { class: 'cc-lia-avatar is-sm', 'aria-hidden': 'true', text: 'L' }),
+        h('div', { class: 'cc-chat-id' }, [h('strong', { text: 'Lía' }), sub])
+      ]));
+      ov.appendChild(main); ov.appendChild(foot);
+      document.body.appendChild(ov); document.body.classList.add('cc-locked');
+      var C = { scene: 'livre', level: chatLevel(), msgs: [], sent: 0, xp: 0, busy: false };
+      function close() {
+        ov.remove(); document.body.classList.remove('cc-locked'); try { speechSynthesis.cancel(); } catch (e) {}
+        if (C.xp) { var up = addXP(C.xp); touchStreak(); save(); toast('+' + C.xp + ' XP de conversa', C.sent + (C.sent === 1 ? ' mensagem enviada' : ' mensagens enviadas')); renderMap(); if (up) levelUp(up); }
+      }
+
+      function pickScreen() {
+        foot.replaceChildren();
+        main.replaceChildren(
+          h('div', { class: 'cc-chat-hero' }, [
+            h('span', { class: 'cc-lia-avatar is-xl', 'aria-hidden': 'true', text: 'L' }),
+            h('h2', { text: '¡Hola! Soy Lía.' }),
+            h('p', { text: 'Sou a inteligência artificial do Frase a Frase. Escolha o seu nível e um cenário para conversar comigo em espanhol.' })
+          ]),
+          h('p', { class: 'cc-kicker', text: 'Seu nível' }),
+          h('div', { class: 'cc-chips' }, ['A1', 'A2', 'B1', 'B2'].map(function (lv) {
+            return h('button', { type: 'button', class: 'cc-tool' + (C.level === lv ? ' is-on' : ''), 'aria-pressed': C.level === lv ? 'true' : 'false',
+              onclick: function () { C.level = lv; try { localStorage.setItem('fraseafrase.lialevel', lv); } catch (e) {} pickScreen(); }, text: lv });
+          })),
+          h('p', { class: 'cc-kicker', text: 'Cenário' }),
+          h('div', { class: 'cc-scenes' }, CHAT_SCENES.map(function (s) {
+            return h('button', { type: 'button', class: 'cc-scene', onclick: function () { C.scene = s.id; startChat(); } }, [h('strong', { text: s.t }), h('span', { text: s.d })]);
+          })),
+          h('p', { class: 'cc-chat-note', text: 'A Lía é uma IA em fase de teste: ela pode errar. As mensagens são enviadas para um serviço de IA para gerar as respostas; não escreva dados pessoais.' })
+        );
+      }
+
+      var list, input, sugg, sendBtn, micBtn;
+      function startChat() {
+        main.replaceChildren(list = h('div', { class: 'cc-msgs', 'aria-live': 'polite' }));
+        sub.textContent = CHAT_SCENES.filter(function (s) { return s.id === C.scene; })[0].t + ' · ' + C.level;
+        sugg = h('div', { class: 'cc-sugg' });
+        input = h('textarea', { class: 'cc-input', rows: '1', lang: 'es', placeholder: 'Escreva em espanhol…', 'aria-label': 'Sua mensagem',
+          onkeydown: function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } },
+          oninput: function () { onInput(); } });
+        function onInput() { input.style.height = 'auto'; input.style.height = Math.min(120, input.scrollHeight) + 'px'; sendBtn.disabled = !input.value.trim() || C.busy; }
+        input.onInputFix = onInput;
+        sendBtn = h('button', { type: 'button', class: 'cc-send', 'aria-label': 'Enviar', disabled: true, onclick: send }, [icon('play')]);
+        var Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
+        micBtn = Rec ? h('button', { type: 'button', class: 'cc-mic', 'aria-label': 'Falar em espanhol', onclick: function () { listen(Rec); } }, [micIcon()]) : null;
+        foot.replaceChildren(sugg, h('div', { class: 'cc-input-row' }, [input, micBtn, sendBtn]));
+        if (!url) {
+          bubble('lia', '¡Hola! Todavía estoy en preparación. Muy pronto podremos conversar.', { note: 'A Lía ainda não foi ligada. Falta configurar o serviço de IA (veja as instruções do projeto).' });
+          input.disabled = true; if (micBtn) micBtn.disabled = true;
+          return;
+        }
+        ask();
+      }
+      function micIcon() { var s = h('span', { class: 'cc-ico', 'aria-hidden': 'true' }); s.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 15a3.5 3.5 0 0 0 3.5-3.5v-6a3.5 3.5 0 0 0-7 0v6A3.5 3.5 0 0 0 12 15Z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg>'; return s; }
+      function listen(Rec) {
+        try {
+          if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio(); speechSynthesis.cancel();
+          var r = new Rec(); r.lang = 'es-ES'; r.interimResults = true; r.maxAlternatives = 1;
+          micBtn.classList.add('is-rec');
+          r.onresult = function (e) { var txt = ''; for (var i = 0; i < e.results.length; i++) txt += e.results[i][0].transcript; input.value = txt; input.onInputFix(); };
+          r.onend = r.onerror = function () { micBtn.classList.remove('is-rec'); input.focus(); };
+          r.start();
+        } catch (e) { micBtn.classList.remove('is-rec'); }
+      }
+      function bubble(who, text, extra) {
+        extra = extra || {};
+        var b = h('div', { class: 'cc-msg is-' + who });
+        if (who === 'lia') {
+          var tr = h('p', { class: 'cc-msg-tr', hidden: true });
+          b.appendChild(h('p', { class: 'cc-msg-txt', lang: 'es', text: text }));
+          b.appendChild(tr);
+          b.appendChild(h('div', { class: 'cc-msg-tools' }, [
+            h('button', { type: 'button', 'aria-label': 'Ouvir', onclick: function () { speak(text); } }, [icon('speaker')]),
+            h('button', { type: 'button', class: 'cc-msg-trbtn', onclick: function () {
+              if (!tr.hidden) { tr.hidden = true; return; }
+              tr.hidden = false; tr.textContent = 'Traduzindo…';
+              if (window.FAF && window.FAF.translate) window.FAF.translate(text, 'pt').then(function (o) { tr.textContent = o; }, function () { tr.textContent = 'Tradução indisponível agora.'; });
+            }, text: 'Traduzir' })
+          ]));
+          if (extra.note) b.appendChild(h('p', { class: 'cc-msg-note', text: extra.note }));
+        } else b.appendChild(h('p', { class: 'cc-msg-txt', lang: 'es', text: text }));
+        list.appendChild(b);
+        b.scrollIntoView({ block: 'end', behavior: 'smooth' });
+        return b;
+      }
+      function setSugg(arr) {
+        sugg.replaceChildren.apply(sugg, (arr || []).map(function (s) {
+          return h('button', { type: 'button', class: 'cc-sugg-chip', lang: 'es', onclick: function () { input.value = s; input.onInputFix(); input.focus(); }, text: s });
+        }));
+      }
+      function send() {
+        var txt = input.value.trim(); if (!txt || C.busy) return;
+        input.value = ''; input.onInputFix(); setSugg([]);
+        var mine = bubble('me', txt);
+        C.msgs.push({ role: 'user', content: txt }); C.sent++;
+        if (C.xp < CHAT_XP_MAX) C.xp += 2;
+        if (C.sent >= 3) unlock('conversa');
+        if (C.sent >= 10) unlock('conversa10');
+        save();
+        ask(mine);
+      }
+      function ask(mine) {
+        C.busy = true; sendBtn.disabled = true;
+        var typing = h('div', { class: 'cc-msg is-lia is-typing', 'aria-label': 'Lía está escrevendo' }, [h('i'), h('i'), h('i')]);
+        list.appendChild(typing); typing.scrollIntoView({ block: 'end' });
+        fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ level: C.level, scenario: C.scene, messages: C.msgs }) })
+          .then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.error || r.status); return d; }); })
+          .then(function (d) {
+            typing.remove();
+            if (mine && d.correction) {
+              mine.appendChild(h('div', { class: 'cc-fix' }, [h('strong', { text: 'Dica da Lía' }), h('span', { text: d.correction })]));
+            } else if (mine) mine.classList.add('is-good');
+            C.msgs.push({ role: 'assistant', content: d.reply });
+            bubble('lia', d.reply);
+            speak(d.reply);
+            setSugg(d.suggestions);
+          }, function (err) {
+            typing.remove();
+            if (mine) C.msgs.pop();
+            bubble('lia', 'Perdón, no pude responder ahora.', { note: String(err.message) === 'rate_limited' ? 'Muitas mensagens em pouco tempo. Espere alguns minutos.' : 'Não foi possível falar com a IA. Verifique a conexão e tente de novo.' });
+            if (mine) { input.value = mine.querySelector('.cc-msg-txt').textContent; mine.remove(); }
+          })
+          .then(function () { C.busy = false; input.onInputFix(); input.focus(); });
+      }
+      pickScreen();
+    });
+  }
+
   window.FAF_COURSE = {
     sync: sync,
     summary: function () {
@@ -2421,6 +2638,7 @@ body.cc-locked{overflow:hidden}
       return { xp: st.xp, level: levelOf(st.xp).lv, streak: streakNow(), lessons: Object.keys(st.lessons).length, hearts: st.hearts.n };
     },
     state: function () { return st; },
+    openChat: function () { openChat(); },
     replaceState: function (s) { if (s && s.v === 1) { st = Object.assign(blank(), s); try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} if (visible) renderMap(); } }
   };
 })();
