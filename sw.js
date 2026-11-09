@@ -1,12 +1,13 @@
 /* Frase a Frase — funciona offline (exceto podcasts e vídeos, que precisam de internet) */
-var CACHE = 'faf-v14';
+var CACHE = 'faf-v15';
+var VOZ_CACHE = 'faf-voz'; // áudios da voz natural: guardados entre versões
 var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'data/frases.json', 'data/textos.json', 'data/curso.json'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
 });
 self.addEventListener('activate', function (e) {
   e.waitUntil(caches.keys().then(function (keys) {
-    return Promise.all(keys.filter(function (k) { return k !== CACHE; }).map(function (k) { return caches.delete(k); }));
+    return Promise.all(keys.filter(function (k) { return k !== CACHE && k !== VOZ_CACHE; }).map(function (k) { return caches.delete(k); }));
   }).then(function () { return self.clients.claim(); }));
 });
 self.addEventListener('fetch', function (e) {
@@ -15,6 +16,14 @@ self.addEventListener('fetch', function (e) {
   var url = new URL(req.url);
   var sameOrigin = url.origin === self.location.origin;
   var isFont = url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com';
+  if (/\.workers\.dev$/.test(url.hostname) && url.pathname === '/voz') {
+    e.respondWith(caches.open(VOZ_CACHE).then(function (c) {
+      return c.match(req).then(function (hit) {
+        return hit || fetch(req).then(function (res) { if (res.ok) c.put(req, res.clone()); return res; });
+      });
+    }));
+    return;
+  }
   if (!sameOrigin && !isFont) return;
   if (req.mode === 'navigate' || (sameOrigin && url.pathname.indexOf('/data/') >= 0)) {
     // rede primeiro para pegar atualizações; cache se estiver offline

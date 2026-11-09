@@ -125,6 +125,7 @@ body.rd-open #faf-sheet-body{padding-bottom:24px}
 .faf-rd-play svg{width:26px;height:26px}
 .faf-rd-btn{width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:#fff;color:var(--text);display:flex;align-items:center;justify-content:center}
 .faf-rd-speed{min-width:56px;height:40px;border-radius:999px;border:1px solid var(--line2);background:#fff;color:var(--text);font-weight:700;font-size:14px}
+.faf-line-time.is-who{font-size:10.5px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:#5B3DF5;width:auto;min-width:56px;max-width:none;white-space:nowrap;overflow:visible}
 .faf-rd-pos{min-width:56px;font-size:13px;color:var(--muted);text-align:center}
 /* Curso Premium */
 #faf-course{position:fixed;z-index:40;overflow-y:auto;overscroll-behavior:contain;background:var(--ink);--ca:#5B3DF5;--cb:#2F6FE0;--csoft:#EDE9FF;padding:20px 20px 40px;box-sizing:border-box}
@@ -251,7 +252,7 @@ body.cc-locked{overflow:hidden}
 .cc-vocab{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .cc-vocab li{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:14px;padding:10px 12px}
 .cc-vocab li div{display:flex;flex-direction:column}
-.cc-vocab strong{font-size:17px}.cc-vocab span{font-size:13.5px;color:var(--muted)}
+.cc-vocab strong{font-size:17px;line-height:1.35}.cc-vocab span{font-size:13.5px;color:var(--muted)}
 .cc-say{width:44px;height:44px;flex:0 0 auto;border-radius:12px;border:none;background:var(--csoft);color:var(--ca);display:inline-flex;align-items:center;justify-content:center}
 .cc-say.is-inline{width:40px;height:40px;margin-right:10px;vertical-align:middle}
 .cc-q{margin:0;font-size:22px;line-height:1.35;font-weight:700}
@@ -468,6 +469,17 @@ body.cc-locked{overflow:hidden}
 .cc-voice-toggle[aria-pressed="false"]{border-color:var(--line2);background:#fff;color:var(--muted)}
 .cc-msg-tools button.is-loading{animation:cc-glow .8s ease-in-out infinite;opacity:.7}
 
+/* etapas premium */
+#faf-course .cc-node.is-premium:not(.is-locked):not(.is-done){background:radial-gradient(circle at 35% 30%,#FFF6C8 0%,#FFD24A 35%,#E08A00 100%);color:#4A2A00;box-shadow:0 7px 0 #9A5A00,0 0 0 4px rgba(255,226,122,.5),0 0 30px rgba(255,200,60,.85)}
+#faf-course .cc-node.is-premium.is-locked{box-shadow:0 7px 0 rgba(16,8,80,.35),inset 0 0 0 2px rgba(255,226,122,.55)}
+.cc-node-tag{font-size:9.5px;font-weight:800;letter-spacing:.14em;color:#3A2400;background:linear-gradient(135deg,#FFE27A,#FFB020);border-radius:999px;padding:2px 8px;box-shadow:0 0 10px rgba(255,200,60,.6)}
+.cc-kicker-premium{color:#B26B00}
+.cc-premium-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cc-premium-actions .cc-btn{min-height:46px;font-size:15px}
+.cc-vocab.is-dialog li{align-items:flex-start}
+.cc-dlg-who{font-size:12px!important;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ca)!important}
+body.cc-locked #faf-sheet{z-index:96}
+
 </style>
 </head>
 <body>
@@ -570,6 +582,14 @@ body.cc-locked{overflow:hidden}
 
   <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Áudio</h2>
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <span style="font-size: 13px; color: #5D6788">Voz</span>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap">
+        <button onClick="{{vozNatural}}" style="{{vozNaturalStyle}}">Natural (IA)</button>
+        <button onClick="{{vozAparelho}}" style="{{vozAparelhoStyle}}">Do aparelho</button>
+      </div>
+      <span style="font-size: 12.5px; line-height: 1.4; color: #5D6788">{{vozNota}}</span>
+    </div>
     <div style="display: flex; flex-direction: column; gap: 8px">
       <span style="font-size: 13px; color: #5D6788">Sotaque</span>
       <div style="display: flex; gap: 8px">
@@ -1536,7 +1556,49 @@ body.cc-locked{overflow:hidden}
     if (Date.now() - v.userScrollAt > 5000) scrollToNow(v, force); else updateFollow();
   }
 
-  /* ---------- Leitor de frases e textos (voz do aparelho) ---------- */
+  /* ---------- Voz natural (IA) com reserva na voz do aparelho ---------- */
+  var VOZ_URL = 'https://lia.pedrolima1430.workers.dev/voz';
+  var vAudio = new Audio(), vToken = 0, vCache = {};
+  vAudio.preload = 'auto';
+  function naturalOn() { try { return localStorage.getItem('fraseafrase.voz') !== 'aparelho'; } catch (e) { return true; } }
+  function cleanText(s) { return String(s || '').replace(/[«»]/g, '').replace(/\s+/g, ' ').trim(); }
+  function accOf(lang) { return lang === 'es-MX' ? 'mx' : 'es'; }
+  function vozSrc(text, lang) {
+    var key = accOf(lang) + '|' + cleanText(text);
+    if (!vCache[key]) {
+      vCache[key] = fetch(VOZ_URL + '?a=' + accOf(lang) + '&t=' + encodeURIComponent(cleanText(text)))
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); })
+        .then(function (b) { if (!b.size) throw new Error('vazio'); return URL.createObjectURL(b); });
+      vCache[key].catch(function () { delete vCache[key]; });
+    }
+    return vCache[key];
+  }
+  function stopVoice() { vToken++; try { vAudio.pause(); } catch (e) {} try { window.speechSynthesis.cancel(); } catch (e) {} }
+  function deviceSay(text, opt, my) {
+    try {
+      var u = new SpeechSynthesisUtterance(cleanText(text));
+      u.lang = opt.lang || 'es-ES'; u.rate = opt.rate || 0.9;
+      u.onend = function () { if (my === vToken && opt.onend) opt.onend(); };
+      window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
+    } catch (e) { if (opt.onend) setTimeout(opt.onend, 300); }
+  }
+  // opt: { lang: 'es-ES'|'es-MX', rate: velocidade no padrão da voz do aparelho (0.6 a 1.05), onend }
+  function say(text, opt) {
+    opt = opt || {};
+    stopVoice();
+    var my = vToken;
+    if (!naturalOn() || navigator.onLine === false) return deviceSay(text, opt, my);
+    vozSrc(text, opt.lang).then(function (src) {
+      if (my !== vToken) return;
+      vAudio.src = src;
+      vAudio.playbackRate = Math.max(0.6, Math.min(1.2, (opt.rate || 0.9) / 0.9));
+      vAudio.onended = function () { if (my === vToken && opt.onend) opt.onend(); };
+      vAudio.play().catch(function () { if (my === vToken) deviceSay(text, opt, my); });
+    }, function () { if (my === vToken) deviceSay(text, opt, my); });
+  }
+  function preloadVoice(text, lang) { if (naturalOn() && navigator.onLine !== false) vozSrc(text, lang).catch(function () {}); }
+
+  /* ---------- Leitor de frases e textos ---------- */
   var rd = null; // { items, idx, playing, token, nodes, box, body, langs, lang, btn }
   var RD_RATES = [0.6, 0.75, 0.9, 1.05];
   function rdRate() { var v = parseFloat(localStorage.getItem('fraseafrase.rdrate')); return RD_RATES.indexOf(v) >= 0 ? v : 0.9; }
@@ -1578,19 +1640,16 @@ body.cc-locked{overflow:hidden}
   function rdSpeak() {
     if (!rd) return;
     var my = ++rd.token, it = rd.items[rd.idx];
-    try { window.speechSynthesis.cancel(); } catch (e) {}
     if (!it) return;
     rdMark();
-    var u = new SpeechSynthesisUtterance(it.es);
-    u.lang = rd.lang; u.rate = rdRate();
-    u.onend = function () {
+    if (rd.items[rd.idx + 1]) preloadVoice(rd.items[rd.idx + 1].es, rd.lang);
+    say(it.es, { lang: rd.lang, rate: rdRate(), onend: function () {
       if (!rd || my !== rd.token || !rd.playing) return;
       if (rd.idx < rd.items.length - 1) { rd.idx++; setTimeout(function () { if (rd && my === rd.token && rd.playing) rdSpeak(); }, 450); }
       else { rd.playing = false; rdMark(); }
-    };
-    try { window.speechSynthesis.speak(u); } catch (e) {}
+    } });
   }
-  function rdPause() { if (!rd) return; rd.playing = false; rd.token++; try { window.speechSynthesis.cancel(); } catch (e) {} rdMark(); }
+  function rdPause() { if (!rd) return; rd.playing = false; rd.token++; stopVoice(); rdMark(); }
   function rdPlay() { if (!rd) return; if (!audio.paused) audio.pause(); rd.playing = true; rdSpeak(); }
   function rdGo(i) { if (!rd) return; rd.idx = Math.max(0, Math.min(rd.items.length - 1, i)); if (rd.playing) rdSpeak(); else rdMark(); }
   function readText(opt) {
@@ -1631,7 +1690,7 @@ body.cc-locked{overflow:hidden}
     box = h('div', { class: 'faf-tr', 'aria-live': 'off' });
     var nodes = opt.items.map(function (it, i) {
       var b = h('button', { type: 'button', class: 'faf-line', 'data-i': String(i), onclick: function () { if (!audio.paused) audio.pause(); rd.playing = true; rd.idx = i; rdSpeak(); } }, [
-        h('span', { class: 'faf-line-time', text: String(i + 1) }),
+        h('span', { class: 'faf-line-time' + (it.who ? ' is-who' : ''), text: it.who || String(i + 1) }),
         h('span', { class: 'faf-line-body' }, [
           h('span', { class: 'faf-line-text', lang: 'es', text: it.es }),
           h('span', { class: 'faf-tl faf-tl-pt', lang: 'pt-BR' }),
@@ -1840,7 +1899,7 @@ body.cc-locked{overflow:hidden}
     }
   });
   // Um áudio por vez: quando o podcast toca, a voz das frases e textos para.
-  function stopSpeech() { try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {} }
+  function stopSpeech() { stopVoice(); }
   audio.addEventListener('play', function () { if (rd) { rd.playing = false; rd.token++; rdMark(); } stopSpeech(); });
   audio.addEventListener('play', function () { $('faf-toggle').innerHTML = ICON_PAUSE; $('faf-toggle').setAttribute('aria-label', 'Pausar'); });
   audio.addEventListener('pause', function () {
@@ -1882,7 +1941,7 @@ body.cc-locked{overflow:hidden}
   });
   document.addEventListener('faf:render', placeDock);
 
-  window.FAF = { open: openSheet, translate: translate, stopAudio: function () { if (!audio.paused) audio.pause(); if (rd && rd.playing) rdPause(); }, read: readText };
+  window.FAF = { open: openSheet, translate: translate, stopAudio: function () { if (!audio.paused) audio.pause(); if (rd && rd.playing) rdPause(); stopVoice(); }, read: readText, say: say, stopVoice: stopVoice, preload: preloadVoice, naturalOn: naturalOn };
 })();
 </script>
 <script>/* Curso Premium: trilha sequencial A1–B2 com gamificação. Progresso em localStorage
@@ -2014,6 +2073,8 @@ body.cc-locked{overflow:hidden}
     check: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
     speaker: '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M4 9h4l5-4v14l-5-4H4V9Z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>',
     turtle: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 6c4 0 7 3 7 6.5H5C5 9 8 6 12 6Zm-8 8h16v1.5c0 .8-.7 1.5-1.5 1.5H17l.6 2H15l-.6-2H9.6L9 19H6.4l.6-2H5.5C4.7 17 4 16.3 4 15.5V14Zm16.5-3a1.8 1.8 0 1 1 0 3.6V11Z"/></svg>',
+    book: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v16H6.5a1.5 1.5 0 0 0 0 3H20v1H6.5A2.5 2.5 0 0 1 4 19.5v-15Zm4 1.5v2h8V6H8Zm0 4v2h6v-2H8Z"/></svg>',
+    quote: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 5v2h10V9H7Zm0 4v2h7v-2H7Z"/></svg>',
     close: '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></svg>'
   };
   function icon(n, cls) { var s = h('span', { class: 'cc-ico' + (cls ? ' ' + cls : ''), 'aria-hidden': 'true' }); s.innerHTML = ICON[n]; return s; }
@@ -2046,6 +2107,7 @@ body.cc-locked{overflow:hidden}
       stopLia();
       var lang = 'es-ES';
       try { lang = (JSON.parse(localStorage.getItem('fraseafrase.v2') || '{}').lang) || lang; } catch (e) {}
+      if (window.FAF && window.FAF.say) { window.FAF.say(text, { lang: lang, rate: slow ? 0.6 : 0.95 }); return; }
       var u = new SpeechSynthesisUtterance(text.replace(/[«»]/g, ''));
       u.lang = lang; u.rate = slow ? 0.6 : 0.95;
       window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
@@ -2095,6 +2157,8 @@ body.cc-locked{overflow:hidden}
       n.push({ kind: 'lesson', id: l.id, lesson: l, label: l.title });
       if (i === 2) n.push({ kind: 'chest', id: u.id + 'c1', label: 'Baú' });
     });
+    if (u.frases) n.push({ kind: 'frases', id: u.frases.id, lesson: u.frases, label: u.frases.title, premium: true });
+    if (u.texto) n.push({ kind: 'texto', id: u.texto.id, lesson: u.texto, label: 'Leitura: ' + u.texto.title, premium: true });
     if (u.lessons.length) {
       n.push({ kind: 'test', id: u.id + 't', label: 'Prova da unidade' });
       n.push({ kind: 'chest', id: u.id + 'c2', label: 'Baú da unidade', big: true });
@@ -2102,7 +2166,7 @@ body.cc-locked{overflow:hidden}
     return n;
   }
   function nodeDone(n) {
-    if (n.kind === 'lesson') return !!(st.lessons[n.id] && st.lessons[n.id].stars);
+    if (n.kind === 'lesson' || n.premium) return !!(st.lessons[n.id] && st.lessons[n.id].stars);
     if (n.kind === 'test') return !!(st.tests[n.id] && st.tests[n.id].passed);
     return !!st.chests[n.id];
   }
@@ -2193,16 +2257,17 @@ body.cc-locked{overflow:hidden}
               var state = isDone ? 'done' : prevDone ? 'current' : 'locked';
               if (state === 'current' && !firstTodo) state = 'locked';
               if (state === 'current') firstTodo = false;
-              var stars = n.kind === 'lesson' && st.lessons[n.id] ? st.lessons[n.id].stars : 0;
-              var btn = h('button', { type: 'button', class: 'cc-node is-' + n.kind + ' is-' + state + (n.big ? ' is-big' : ''), disabled: state === 'locked',
+              var stars = (n.kind === 'lesson' || n.premium) && st.lessons[n.id] ? st.lessons[n.id].stars : 0;
+              var btn = h('button', { type: 'button', class: 'cc-node is-' + n.kind + ' is-' + state + (n.big ? ' is-big' : '') + (n.premium ? ' is-premium' : ''), disabled: state === 'locked',
                 'aria-label': n.label + (state === 'done' ? ', concluída' : state === 'locked' ? ', bloqueada' : ', disponível'),
                 onclick: function () { openNode(n, u); } }, [
-                icon(n.kind === 'chest' ? 'chest' : n.kind === 'test' ? 'trophy' : state === 'done' ? 'check' : state === 'locked' ? 'lock' : 'play')
+                icon(n.kind === 'chest' ? 'chest' : n.kind === 'test' ? 'trophy' : state === 'done' ? 'check' : state === 'locked' ? 'lock' : n.kind === 'texto' ? 'book' : n.kind === 'frases' ? 'quote' : 'play')
               ]);
               var li = h('li', { class: 'cc-step', style: '--x:' + [0, 1, 2, 1, 0, -1, -2, -1][i % 8] }, [
                 btn,
+                n.premium ? h('span', { class: 'cc-node-tag', text: 'PREMIUM' }) : null,
                 h('span', { class: 'cc-node-label', text: n.label }),
-                n.kind === 'lesson' ? h('span', { class: 'cc-stars', 'aria-label': stars + ' de 3 estrelas' }, [0, 1, 2].map(function (k) { return icon('star', k < stars ? 'is-on' : ''); })) : null,
+                n.kind === 'lesson' || n.premium ? h('span', { class: 'cc-stars', 'aria-label': stars + ' de 3 estrelas' }, [0, 1, 2].map(function (k) { return icon('star', k < stars ? 'is-on' : ''); })) : null,
                 state === 'current' ? h('span', { class: 'cc-start', text: n.kind === 'chest' ? 'Abrir' : 'Começar' }) : null
               ]);
               if (state === 'current') currentEl = li;
@@ -2235,6 +2300,7 @@ body.cc-locked{overflow:hidden}
     regen();
     if (n.kind === 'lesson' && st.hearts.n <= 0) return noHearts();
     if (n.kind === 'test') return startTest(u);
+    if (n.premium) return session({ mode: 'premium', kind: n.kind, title: n.label, lesson: n.lesson, items: n.lesson.ex.slice() });
     startLesson(n.lesson);
   }
 
@@ -2434,7 +2500,7 @@ body.cc-locked{overflow:hidden}
 
   function session(cfg) {
     var S = { cfg: cfg, queue: cfg.items.map(function (e) { return { e: e, retry: false }; }), total: cfg.items.length, done: 0, errors: 0, right: 0,
-      combo: 0, maxCombo: 0, start: Date.now(), heartsLost: 0, intro: cfg.mode === 'lesson' };
+      combo: 0, maxCombo: 0, start: Date.now(), heartsLost: 0, intro: cfg.mode === 'lesson' || cfg.mode === 'premium' };
     var ov = h('div', { class: 'cc-lesson', role: 'dialog', 'aria-modal': 'true', 'aria-label': cfg.title });
     applyTheme(ov);
     var bar = h('div', { class: 'cc-bar is-lesson' }, [h('i', { style: 'width:0%' })]);
@@ -2462,7 +2528,39 @@ body.cc-locked{overflow:hidden}
     function close() { ov.remove(); document.body.classList.remove('cc-locked'); lesson = null; try { speechSynthesis.cancel(); } catch (e) {} renderMap(); if (!toastOn) nextToast(); }
     function setFoot(kids) { foot.className = 'cc-l-foot'; foot.replaceChildren.apply(foot, kids); }
 
+    function appLang() { try { return JSON.parse(localStorage.getItem('fraseafrase.v2') || '{}').lang || 'es-ES'; } catch (e) { return 'es-ES'; } }
+    function showPremiumIntro() {
+      var l = cfg.lesson, isText = cfg.kind === 'texto';
+      var items = isText ? l.lines.map(function (x) { return { who: x[0], es: x[1], pt: x[2] }; }) : l.items.map(function (x) { return { es: x[0], pt: x[1] }; });
+      var showPt = false, listEl;
+      function paintList() {
+        listEl.replaceChildren.apply(listEl, items.map(function (it, i) {
+          return h('li', { class: isText ? 'cc-dlg-line' : '' }, [
+            h('button', { type: 'button', class: 'cc-say', 'aria-label': 'Ouvir', onclick: function () { speak(it.es); } }, [icon('speaker')]),
+            h('div', {}, [
+              it.who ? h('span', { class: 'cc-dlg-who', text: it.who }) : null,
+              h('strong', { lang: 'es', text: it.es }),
+              showPt || !isText ? h('span', { text: it.pt }) : null
+            ])
+          ]);
+        }));
+      }
+      listEl = h('ul', { class: 'cc-vocab' + (isText ? ' is-dialog' : '') });
+      paintList();
+      main.replaceChildren(
+        h('p', { class: 'cc-kicker cc-kicker-premium', text: 'Premium · ' + (isText ? 'Leitura da unidade' : 'Frases da unidade') }),
+        h('h2', { class: 'cc-l-title', text: l.title }),
+        h('p', { class: 'cc-tip', text: l.tip }),
+        h('div', { class: 'cc-premium-actions' }, [
+          h('button', { type: 'button', class: 'cc-btn', onclick: function () { if (window.FAF && window.FAF.read) window.FAF.read({ title: l.title, sub: isText ? 'Leitura premium' : 'Frases da unidade', lang: appLang(), items: items }); } }, [isText ? 'Ouvir o diálogo no player' : 'Ouvir todas no player']),
+          isText ? h('button', { type: 'button', class: 'cc-btn is-ghost', 'aria-pressed': 'false', onclick: function (e) { showPt = !showPt; e.currentTarget.setAttribute('aria-pressed', String(showPt)); e.currentTarget.textContent = showPt ? 'Ocultar tradução' : 'Mostrar tradução'; paintList(); }, text: 'Mostrar tradução' }) : null
+        ]),
+        listEl
+      );
+      setFoot([h('button', { type: 'button', class: 'cc-btn is-wide', onclick: function () { S.intro = false; next(); }, text: isText ? 'Responder às perguntas' : 'Fazer os exercícios' })]);
+    }
     function showIntro() {
+      if (cfg.mode === 'premium') return showPremiumIntro();
       var l = cfg.lesson;
       main.replaceChildren(
         h('p', { class: 'cc-kicker', text: 'Nova lição' }),
@@ -2590,7 +2688,7 @@ body.cc-locked{overflow:hidden}
         S.errors++; S.combo = 0; comboEl.classList.remove('is-on'); comboEl.textContent = '';
         SFX.bad();
         if (usesHearts()) { regen(); st.hearts.n = Math.max(0, st.hearts.n - 1); if (st.hearts.n === HEART_MAX - 1) st.hearts.ts = Date.now(); S.heartsLost++; }
-        if (cfg.mode === 'lesson') S.queue.push({ e: item.e, retry: true });
+        if (cfg.mode === 'lesson' || cfg.mode === 'premium') S.queue.push({ e: item.e, retry: true });
         ov.classList.add('is-shake'); setTimeout(function () { ov.classList.remove('is-shake'); }, 400);
       }
       save(); paintTop();
@@ -2620,6 +2718,13 @@ body.cc-locked{overflow:hidden}
         st.lessons[cfg.lesson.id] = { stars: Math.max(stars, prev ? prev.stars : 0), at: Date.now(), times: (prev ? prev.times : 0) + 1 };
         unlock('primeira'); if (stars === 3) unlock('perfeita');
         title = stars === 3 ? 'Lição perfeita!' : 'Lição concluída!'; sub = cfg.lesson.title;
+      } else if (cfg.mode === 'premium') {
+        stars = S.errors === 0 ? 3 : S.errors <= 2 ? 2 : 1;
+        var prevP = st.lessons[cfg.lesson.id];
+        earned = prevP ? 5 + (stars === 3 ? 5 : 0) : 15 + (stars === 3 ? 5 : 0);
+        st.lessons[cfg.lesson.id] = { stars: Math.max(stars, prevP ? prevP.stars : 0), at: Date.now(), times: (prevP ? prevP.times : 0) + 1 };
+        if (stars === 3) unlock('perfeita');
+        title = cfg.kind === 'texto' ? 'Leitura concluída!' : 'Frases dominadas!'; sub = cfg.lesson.title;
       } else if (cfg.mode === 'test') {
         passed = S.right >= TEST_PASS;
         if (passed) { st.tests[cfg.unit.id + 't'] = { passed: true, score: S.right, at: Date.now() }; earned = 30; unlock('prova'); title = 'Aprovado!'; sub = 'Você passou na prova da unidade.'; }
@@ -2638,7 +2743,7 @@ body.cc-locked{overflow:hidden}
       if (passed) { SFX.done(); confetti(ov); }
       main.replaceChildren(
         h('div', { class: 'cc-result' }, [
-          cfg.mode === 'lesson' ? h('div', { class: 'cc-res-stars', 'aria-label': stars + ' de 3 estrelas' }, [0, 1, 2].map(function (k) { var s = icon('star', k < stars ? 'is-on' : ''); s.style.animationDelay = (0.15 + k * 0.2) + 's'; return s; })) :
+          cfg.mode === 'lesson' || cfg.mode === 'premium' ? h('div', { class: 'cc-res-stars', 'aria-label': stars + ' de 3 estrelas' }, [0, 1, 2].map(function (k) { var s = icon('star', k < stars ? 'is-on' : ''); s.style.animationDelay = (0.15 + k * 0.2) + 's'; return s; })) :
             h('div', { class: 'cc-big-ico ' + (passed ? 'is-level' : 'is-heart') }, [icon(passed ? 'trophy' : 'heart')]),
           h('h2', { class: 'cc-l-title', text: title }),
           h('p', { class: 'cc-tip is-center', text: sub }),
@@ -3149,7 +3254,7 @@ class Component extends DCLogic {
     var today = todayStr();
     this.state = {
       tab: 'inicio',
-      fview: 'cats', query: '', reading: false, level: 'all', tema: 'all', tquery: '', listLimit: 60, textLimit: 20, flang: savedFlang(),
+      fview: 'cats', query: '', reading: false, level: 'all', tema: 'all', tquery: '', listLimit: 60, textLimit: 20, flang: savedFlang(), voz: (function () { try { return localStorage.getItem('fraseafrase.voz') || 'natural'; } catch (e) { return 'natural'; } })(),
       mfilter: 'all', heard: saved.heard || {},
       cat: 0, card: 0, flipped: false,
       known: saved.known || {}, review: saved.review || {},
@@ -3185,6 +3290,7 @@ class Component extends DCLogic {
       u.lang = this.state.lang;
       u.rate = slow ? 0.6 : this.state.rate;
       if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio();
+      if (window.FAF && window.FAF.say) { window.FAF.say(text, { lang: u.lang, rate: u.rate }); return; }
       window.speechSynthesis.cancel();
       window.speechSynthesis.speak(u);
     } catch (e) {}
@@ -3331,6 +3437,11 @@ class Component extends DCLogic {
 
       // Frases: lista
       fseg: { cats: segStyle(s.fview === 'cats'), cards: segStyle(s.fview === 'cards'), lista: segStyle(s.fview === 'lista') },
+      vozNaturalStyle: pill(s.voz !== 'aparelho'),
+      vozAparelhoStyle: pill(s.voz === 'aparelho'),
+      vozNota: s.voz === 'aparelho' ? 'Usa a voz instalada no aparelho. Funciona sem internet.' : 'Voz humana gerada por IA. Precisa de internet; cada áudio fica guardado depois da primeira vez. Sem internet, o app usa a voz do aparelho.',
+      vozNatural: function () { try { localStorage.setItem('fraseafrase.voz', 'natural'); } catch (e) {} self.setState({ voz: 'natural' }); },
+      vozAparelho: function () { try { localStorage.setItem('fraseafrase.voz', 'aparelho'); } catch (e) {} self.setState({ voz: 'aparelho' }); },
       trLabel: s.flang === 'en' ? 'Inglês' : 'Português',
       readDeckLabel: 'Ouvir as ' + deck.length + ' frases',
       readDeck: function () {

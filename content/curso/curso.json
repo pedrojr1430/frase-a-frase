@@ -785,6 +785,266 @@
        ]
       }
      ],
+     "frases": {
+      "id": "a1u1f",
+      "title": "Frases da unidade",
+      "tip": "Agora as frases ficam mais longas: juntam o que você aprendeu nas lições. Ouça cada uma, repita em voz alta e depois responda aos exercícios.",
+      "items": [
+       [
+        "Hola, buenos días. Me llamo Ana y soy de Brasil.",
+        "Olá, bom dia. Eu me chamo Ana e sou do Brasil."
+       ],
+       [
+        "Mucho gusto, señor García. ¿Cómo está usted?",
+        "Muito prazer, senhor García. Como o senhor está?"
+       ],
+       [
+        "Estoy muy bien, gracias. ¿Y usted?",
+        "Estou muito bem, obrigado. E o senhor?"
+       ],
+       [
+        "Perdón, ¿cómo se llama usted?",
+        "Desculpe, como o senhor se chama?"
+       ],
+       [
+        "Soy de São Paulo, pero vivo en Madrid.",
+        "Sou de São Paulo, mas moro em Madri."
+       ],
+       [
+        "Tengo tres hermanos y dos hermanas.",
+        "Tenho três irmãos e duas irmãs."
+       ],
+       [
+        "Hoy estoy un poco cansado, pero contento.",
+        "Hoje estou um pouco cansado, mas contente."
+       ],
+       [
+        "Buenas noches a todos. ¡Hasta mañana!",
+        "Boa noite a todos. Até amanhã!"
+       ],
+       [
+        "Muchas gracias por todo. Eres muy amable.",
+        "Muito obrigado por tudo. Você é muito gentil."
+       ],
+       [
+        "Con permiso, ¿puedo pasar, por favor?",
+        "Com licença, posso passar, por favor?"
+       ],
+       [
+        "Lo siento, todavía no hablo mucho español.",
+        "Sinto muito, ainda não falo muito espanhol."
+       ],
+       [
+        "¿De dónde eres tú? ¿Eres de México?",
+        "De onde você é? Você é do México?"
+       ]
+      ],
+      "ex": [
+       {
+        "t": "listen",
+        "es": "Soy de São Paulo, pero vivo en Madrid.",
+        "o": [
+         "Sou de São Paulo, mas moro em Madri.",
+         "Moro em São Paulo, mas sou de Madri.",
+         "Sou de Madri e moro em São Paulo."
+        ]
+       },
+       {
+        "t": "build",
+        "es": "Hoy estoy un poco cansado, pero contento.",
+        "pt": "Hoje estou um pouco cansado, mas contente.",
+        "extra": [
+         "triste",
+         "muito"
+        ]
+       },
+       {
+        "t": "fill",
+        "es": "Mucho gusto, señor García. ¿Cómo ___ usted?",
+        "o": [
+         "está",
+         "es",
+         "llama"
+        ],
+        "pt": "Muito prazer, senhor García. Como o senhor está?"
+       },
+       {
+        "t": "listen",
+        "es": "Tengo tres hermanos y dos hermanas.",
+        "o": [
+         "Tenho três irmãos e duas irmãs.",
+         "Tenho dois irmãos e três irmãs.",
+         "Tenho três irmãs e dois primos."
+        ]
+       },
+       {
+        "t": "build",
+        "es": "Lo siento, todavía no hablo mucho español.",
+        "pt": "Sinto muito, ainda não falo muito espanhol.",
+        "extra": [
+         "bem",
+         "já"
+        ]
+       },
+       {
+        "t": "choice",
+        "q": "Você quer passar por alguém no corredor. Qual frase usa?",
+        "o": [
+         "Con permiso, ¿puedo pasar, por favor?",
+         "Muchas gracias por todo.",
+         "Perdón, ¿cómo se llama usted?"
+        ],
+        "say": ""
+       },
+       {
+        "t": "fill",
+        "es": "Muchas gracias por todo. Eres muy ___.",
+        "o": [
+         "amable",
+         "cansado",
+         "mañana"
+        ],
+        "pt": "Muito obrigado por tudo. Você é muito gentil."
+       },
+       {
+        "t": "build",
+        "es": "¿De dónde eres tú? ¿Eres de México?",
+        "pt": "De onde você é? Você é do México?",
+        "extra": [
+         "Brasil",
+         "mora"
+        ]
+       }
+      ]
+     },
+     "texto": {
+      "id": "a1u1r",
+      "title": "Primeiro dia de aula",
+      "tip": "Leia e ouça o diálogo completo. Use o player para ouvir frase a frase, com a tradução se precisar. Depois, responda às perguntas.",
+      "lines": [
+       [
+        "Carmen",
+        "¡Buenos días a todos! Me llamo Carmen y soy la profesora.",
+        "Bom dia a todos! Eu me chamo Carmen e sou a professora."
+       ],
+       [
+        "Pedro",
+        "Buenos días, profesora. Yo me llamo Pedro.",
+        "Bom dia, professora. Eu me chamo Pedro."
+       ],
+       [
+        "Carmen",
+        "Mucho gusto, Pedro. ¿De dónde eres?",
+        "Muito prazer, Pedro. De onde você é?"
+       ],
+       [
+        "Pedro",
+        "Soy de Brasil, de Curitiba.",
+        "Sou do Brasil, de Curitiba."
+       ],
+       [
+        "Carmen",
+        "¡Qué bien! ¿Y cómo estás hoy?",
+        "Que bom! E como você está hoje?"
+       ],
+       [
+        "Pedro",
+        "Estoy un poco nervioso, pero muy contento.",
+        "Estou um pouco nervoso, mas muito contente."
+       ],
+       [
+        "Carmen",
+        "Tranquilo, aquí todos somos amigos. Ella es Lucía. Es de Argentina.",
+        "Calma, aqui todos somos amigos. Esta é Lucía. Ela é da Argentina."
+       ],
+       [
+        "Lucía",
+        "Hola, Pedro. Encantada.",
+        "Oi, Pedro. Encantada."
+       ],
+       [
+        "Pedro",
+        "Encantado, Lucía. ¿Tienes hermanos?",
+        "Encantado, Lucía. Você tem irmãos?"
+       ],
+       [
+        "Lucía",
+        "Sí, tengo dos hermanos. ¿Y tú?",
+        "Sim, tenho dois irmãos. E você?"
+       ],
+       [
+        "Pedro",
+        "Yo tengo una hermana. Tiene diez años.",
+        "Eu tenho uma irmã. Ela tem dez anos."
+       ],
+       [
+        "Carmen",
+        "Muy bien. ¡Empezamos la clase! Abran el libro, por favor.",
+        "Muito bem. Vamos começar a aula! Abram o livro, por favor."
+       ]
+      ],
+      "ex": [
+       {
+        "t": "choice",
+        "q": "Quem é Carmen?",
+        "o": [
+         "A professora",
+         "Uma aluna",
+         "A irmã de Pedro"
+        ],
+        "say": ""
+       },
+       {
+        "t": "choice",
+        "q": "De onde é Pedro?",
+        "o": [
+         "Do Brasil",
+         "Da Argentina",
+         "Do México"
+        ],
+        "say": ""
+       },
+       {
+        "t": "choice",
+        "q": "Como Pedro se sente no primeiro dia?",
+        "o": [
+         "Nervoso, mas contente",
+         "Cansado e triste",
+         "Muito mal"
+        ],
+        "say": ""
+       },
+       {
+        "t": "choice",
+        "q": "De onde é Lucía?",
+        "o": [
+         "Da Argentina",
+         "Do Brasil",
+         "Da Espanha"
+        ],
+        "say": ""
+       },
+       {
+        "t": "choice",
+        "q": "Quantos anos tem a irmã de Pedro?",
+        "o": [
+         "Dez",
+         "Dois",
+         "Três"
+        ],
+        "say": ""
+       },
+       {
+        "t": "listen",
+        "es": "Tranquilo, aquí todos somos amigos.",
+        "o": [
+         "Calma, aqui todos somos amigos.",
+         "Rápido, aqui todos são alunos.",
+         "Tchau, até amanhã, amigos."
+        ]
+       }
+      ]
+     },
      "desc": "Cumprimentar, apresentar-se, contar até dez e ser educado."
     },
     {
