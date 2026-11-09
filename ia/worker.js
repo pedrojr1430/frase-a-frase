@@ -65,7 +65,9 @@ export default {
     if (req.method === 'OPTIONS') return new Response(null, { headers: cors });
     if (req.method === 'GET') return json({ ok: true, name: 'Lía' });
     if (req.method !== 'POST' || !allowed.includes(origin)) return json({ error: 'forbidden' }, 403);
-    if (!env.OPENAI_API_KEY) return json({ error: 'not_configured' }, 500);
+    // Aceita o Secret com o nome OPENAI_API_KEY ou, se tiver outro nome, qualquer Secret com uma chave da OpenAI.
+    const apiKey = env.OPENAI_API_KEY || Object.values(env).find((v) => typeof v === 'string' && /^sk-/.test(v));
+    if (!apiKey) return json({ error: 'not_configured' }, 500);
     if (limited(req.headers.get('CF-Connecting-IP') || 'x')) return json({ error: 'rate_limited' }, 429);
 
     let body;
@@ -89,7 +91,7 @@ export default {
 
     const r = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + env.OPENAI_API_KEY },
+      headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + apiKey },
       body: JSON.stringify(payload)
     });
     if (!r.ok) return json({ error: 'upstream', status: r.status, detail: (await r.text()).slice(0, 300) }, 502);
