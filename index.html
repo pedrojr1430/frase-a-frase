@@ -583,14 +583,6 @@ body.cc-locked #faf-sheet{z-index:96}
   <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Áudio</h2>
     <div style="display: flex; flex-direction: column; gap: 8px">
-      <span style="font-size: 13px; color: #5D6788">Voz</span>
-      <div style="display: flex; gap: 8px; flex-wrap: wrap">
-        <button onClick="{{vozNatural}}" style="{{vozNaturalStyle}}">Natural (IA)</button>
-        <button onClick="{{vozAparelho}}" style="{{vozAparelhoStyle}}">Do aparelho</button>
-      </div>
-      <span style="font-size: 12.5px; line-height: 1.4; color: #5D6788">{{vozNota}}</span>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 8px">
       <span style="font-size: 13px; color: #5D6788">Sotaque</span>
       <div style="display: flex; gap: 8px">
         <button onClick="{{setSpain}}" style="{{accentSpain}}">Espanha</button>
@@ -1560,7 +1552,7 @@ body.cc-locked #faf-sheet{z-index:96}
   var VOZ_URL = 'https://lia.pedrolima1430.workers.dev/voz';
   var vAudio = new Audio(), vToken = 0, vCache = {};
   vAudio.preload = 'auto';
-  function naturalOn() { try { return localStorage.getItem('fraseafrase.voz') !== 'aparelho'; } catch (e) { return true; } }
+  function naturalOn() { return false; } // conteúdo fixo usa sempre a voz do aparelho; voz de IA só na Lía
   function cleanText(s) { return String(s || '').replace(/[«»]/g, '').replace(/\s+/g, ' ').trim(); }
   function accOf(lang) { return lang === 'es-MX' ? 'mx' : 'es'; }
   function vozSrc(text, lang) {
