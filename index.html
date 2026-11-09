@@ -457,6 +457,10 @@ body.cc-locked{overflow:hidden}
 .cc-mic{background:var(--csoft);color:var(--ca)}
 .cc-mic.is-rec{background:#FF5F7E;color:#fff;animation:cc-glow 1s ease-in-out infinite}
 
+.cc-voice-toggle{margin-left:auto;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--ca);background:var(--csoft);color:var(--ca);font-size:12.5px;font-weight:800;white-space:nowrap}
+.cc-voice-toggle[aria-pressed="false"]{border-color:var(--line2);background:#fff;color:var(--muted)}
+.cc-msg-tools button.is-loading{animation:cc-glow .8s ease-in-out infinite;opacity:.7}
+
 </style>
 </head>
 <body>
@@ -1897,12 +1901,41 @@ body.cc-locked{overflow:hidden}
   function speak(text, slow) {
     try {
       if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio();
+      stopLia();
       var lang = 'es-ES';
       try { lang = (JSON.parse(localStorage.getItem('fraseafrase.v2') || '{}').lang) || lang; } catch (e) {}
       var u = new SpeechSynthesisUtterance(text.replace(/[«»]/g, ''));
       u.lang = lang; u.rate = slow ? 0.6 : 0.95;
       window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
     } catch (e) {}
+  }
+
+  // Voz própria da Lía (gerada no servidor); se falhar, usa a voz do aparelho.
+  var liaAudio = null, liaCache = {}, liaReq = 0;
+  function stopLia() { if (liaAudio) { try { liaAudio.pause(); } catch (e) {} } }
+  function liaVoiceOn() { try { return localStorage.getItem('fraseafrase.liavoz') !== 'aparelho'; } catch (e) { return true; } }
+  function speakLia(text, level, btn) {
+    var url = course && course.ai && course.ai.url;
+    if (!url || !liaVoiceOn()) return speak(text);
+    if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio();
+    try { speechSynthesis.cancel(); } catch (e) {}
+    stopLia();
+    var my = ++liaReq;
+    if (btn) btn.classList.add('is-loading');
+    var key = level + '|' + text;
+    var p = liaCache[key] || (liaCache[key] = fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ tts: text, level: level }) })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); })
+      .then(function (b) { return URL.createObjectURL(b); }));
+    p.then(function (src) {
+      if (btn) btn.classList.remove('is-loading');
+      if (my !== liaReq) return;
+      liaAudio = liaAudio || new Audio();
+      liaAudio.src = src; liaAudio.play().catch(function () {});
+    }, function () {
+      delete liaCache[key];
+      if (btn) btn.classList.remove('is-loading');
+      if (my === liaReq) speak(text);
+    });
   }
 
   // ---------- dados ----------
@@ -2504,13 +2537,19 @@ body.cc-locked{overflow:hidden}
       ov.appendChild(h('div', { class: 'cc-chat-top' }, [
         h('button', { type: 'button', class: 'cc-icon-btn', 'aria-label': 'Fechar conversa', onclick: close }, [icon('close')]),
         h('span', { class: 'cc-lia-avatar is-sm', 'aria-hidden': 'true', text: 'L' }),
-        h('div', { class: 'cc-chat-id' }, [h('strong', { text: 'Lía' }), sub])
+        h('div', { class: 'cc-chat-id' }, [h('strong', { text: 'Lía' }), sub]),
+        url ? (function () {
+          var vb = h('button', { type: 'button', class: 'cc-voice-toggle', 'aria-pressed': liaVoiceOn() ? 'true' : 'false' });
+          function paint() { vb.textContent = liaVoiceOn() ? 'Voz da Lía' : 'Voz do aparelho'; vb.setAttribute('aria-pressed', liaVoiceOn() ? 'true' : 'false'); vb.title = 'Trocar a voz das respostas'; }
+          vb.onclick = function () { try { localStorage.setItem('fraseafrase.liavoz', liaVoiceOn() ? 'aparelho' : 'lia'); } catch (e) {} stopLia(); paint(); };
+          paint(); return vb;
+        })() : null
       ]));
       ov.appendChild(main); ov.appendChild(foot);
       document.body.appendChild(ov); document.body.classList.add('cc-locked');
       var C = { scene: 'livre', level: chatLevel(), msgs: [], sent: 0, xp: 0, busy: false };
       function close() {
-        ov.remove(); document.body.classList.remove('cc-locked'); try { speechSynthesis.cancel(); } catch (e) {}
+        ov.remove(); document.body.classList.remove('cc-locked'); try { speechSynthesis.cancel(); } catch (e) {} stopLia(); liaReq++;
         if (C.xp) { var up = addXP(C.xp); touchStreak(); save(); toast('+' + C.xp + ' XP de conversa', C.sent + (C.sent === 1 ? ' mensagem enviada' : ' mensagens enviadas')); renderMap(); if (up) levelUp(up); }
       }
 
@@ -2575,7 +2614,7 @@ body.cc-locked{overflow:hidden}
           b.appendChild(h('p', { class: 'cc-msg-txt', lang: 'es', text: text }));
           b.appendChild(tr);
           b.appendChild(h('div', { class: 'cc-msg-tools' }, [
-            h('button', { type: 'button', 'aria-label': 'Ouvir', onclick: function () { speak(text); } }, [icon('speaker')]),
+            h('button', { type: 'button', 'aria-label': 'Ouvir', onclick: function (e) { speakLia(text, C.level, e.currentTarget); } }, [icon('speaker')]),
             h('button', { type: 'button', class: 'cc-msg-trbtn', onclick: function () {
               if (!tr.hidden) { tr.hidden = true; return; }
               tr.hidden = false; tr.textContent = 'Traduzindo…';
@@ -2616,8 +2655,8 @@ body.cc-locked{overflow:hidden}
               mine.appendChild(h('div', { class: 'cc-fix' }, [h('strong', { text: 'Dica da Lía' }), h('span', { text: d.correction })]));
             } else if (mine) mine.classList.add('is-good');
             C.msgs.push({ role: 'assistant', content: d.reply });
-            bubble('lia', d.reply);
-            speak(d.reply);
+            var lb = bubble('lia', d.reply);
+            speakLia(d.reply, C.level, lb.querySelector('.cc-msg-tools button'));
             setSugg(d.suggestions);
           }, function (err) {
             typing.remove();
