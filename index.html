@@ -480,6 +480,47 @@ body.cc-locked{overflow:hidden}
 .cc-dlg-who{font-size:12px!important;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ca)!important}
 body.cc-locked #faf-sheet{z-index:96}
 
+/* menu lateral */
+#faf-menu-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));right:max(14px,calc((100vw - 560px) / 2 + 14px));z-index:45;width:44px;height:44px;border-radius:14px;border:1px solid #E1E6F3;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#141A33;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,26,51,.10);cursor:pointer}
+#faf-menu-btn:focus-visible,.fm-item:focus-visible,.fm-close:focus-visible{outline:3px solid #5B3DF5;outline-offset:2px}
+#faf-sheet:not([hidden]) ~ #faf-menu-btn,body.tr-open #faf-menu-btn{display:none}
+#faf-course .cc-title-row{padding-right:54px}
+#faf-menu{position:fixed;inset:0;z-index:100;display:flex;justify-content:flex-end}
+#faf-menu[hidden]{display:none}
+.fm-backdrop{position:absolute;inset:0;background:rgba(20,26,51,.45);animation:fm-fade .2s ease}
+.fm-panel{position:relative;width:min(320px,86vw);height:100%;background:#F4F6FC;color:#141A33;display:flex;flex-direction:column;box-shadow:-12px 0 40px rgba(20,26,51,.22);animation:fm-in .24s cubic-bezier(.2,.8,.2,1);padding:calc(16px + env(safe-area-inset-top)) 14px calc(16px + env(safe-area-inset-bottom));box-sizing:border-box;overflow-y:auto;font-family:Inter,system-ui,sans-serif}
+.fm-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 6px 14px}
+.fm-brand{display:flex;flex-direction:column;gap:2px}
+.fm-brand span{font-size:13px;font-weight:600;color:#5B3DF5}
+.fm-brand strong{font-family:Unbounded,Manrope,system-ui,sans-serif;font-weight:600;font-size:22px}
+.fm-close{width:44px;height:44px;border-radius:14px;border:1px solid #E1E6F3;background:#fff;color:#141A33;display:flex;align-items:center;justify-content:center}
+.fm-sec{margin:14px 8px 6px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#5D6788}
+.fm-item{width:100%;min-height:52px;display:flex;align-items:center;gap:12px;padding:8px 12px;border:none;border-radius:14px;background:transparent;color:#141A33;text-align:left;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.fm-item:hover{background:#E9EDF8}
+.fm-item.is-active{background:#EDE9FF;color:#5B3DF5}
+.fm-item .fm-ic{flex:0 0 auto;width:36px;height:36px;border-radius:11px;background:#fff;border:1px solid #E1E6F3;display:flex;align-items:center;justify-content:center;color:inherit}
+.fm-item.is-active .fm-ic{border-color:#CFC4FF}
+.fm-item .fm-txt{display:flex;flex-direction:column;gap:1px;min-width:0}
+.fm-item .fm-txt small{font-size:12.5px;font-weight:500;color:#5D6788}
+.fm-item .fm-tag{margin-left:auto;font-size:11px;font-weight:700;color:#5D6788;background:#E9EDF8;border-radius:999px;padding:3px 8px}
+.fm-item.is-danger{color:#B4234A}
+.fm-item.is-danger .fm-ic{border-color:#F3C6D2;background:#FDECF0}
+.fm-modal{position:fixed;inset:0;z-index:110;background:rgba(20,26,51,.5);display:flex;align-items:center;justify-content:center;padding:20px;font-family:Inter,system-ui,sans-serif}
+.fm-dialog{width:100%;max-width:420px;background:#fff;color:#141A33;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 20px 50px rgba(20,26,51,.3)}
+.fm-dialog h2{margin:0;font-family:Manrope,system-ui,sans-serif;font-size:21px}
+.fm-dialog p{margin:0;font-size:14.5px;line-height:1.5;color:#323A5C}
+.fm-dialog label{font-size:13px;font-weight:700;color:#5D6788}
+.fm-dialog input{min-height:48px;border-radius:12px;border:2px solid #C9D2EA;padding:0 12px;font:inherit;font-size:16px;letter-spacing:.06em}
+.fm-dialog input:focus{outline:none;border-color:#B4234A}
+.fm-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+.fm-actions button{min-height:48px;padding:0 18px;border-radius:12px;font:inherit;font-size:15px;font-weight:700}
+.fm-cancel{border:1px solid #C9D2EA;background:#fff;color:#141A33}
+.fm-danger{border:none;background:#B4234A;color:#fff}
+.fm-danger:disabled{background:#E9C3CD;color:#fff}
+@keyframes fm-in{from{transform:translateX(100%)}to{transform:none}}
+@keyframes fm-fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.fm-panel,.fm-backdrop{animation:none}}
+
 </style>
 </head>
 <body>
@@ -1030,6 +1071,71 @@ body.cc-locked #faf-sheet{z-index:96}
 </div>
 </sc-if>
 
+<!-- ============ REVISÃO: frases do usuário ============ -->
+<sc-if value="{{showRevisao}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 18px">
+  <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px; padding-right: 56px">
+    <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Revisão</h1>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5D6788">Guarde frases que você encontrou por aí. Elas entram na revisão da tela inicial, junto com as que você marcou para revisar.</p>
+  </div>
+
+  <form onSubmit="{{addMine}}" style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+    <label for="mine-es" style="font-size: 13px; font-weight: 700; color: #5D6788">Frase em espanhol</label>
+    <textarea id="mine-es" lang="es" rows="2" maxlength="200" value="{{mineEs}}" onInput="{{onMineEs}}" placeholder="Ex.: ¿Me pasas la sal?" style="resize: vertical; min-height: 56px; box-sizing: border-box; padding: 12px; border: 2px solid #C9D2EA; border-radius: 12px; font-family: Manrope, system-ui, sans-serif; font-size: 17px; font-weight: 600; color: #141A33; background: #FFFFFF"></textarea>
+    <label for="mine-pt" style="font-size: 13px; font-weight: 700; color: #5D6788">Tradução</label>
+    <textarea id="mine-pt" rows="2" maxlength="200" value="{{minePt}}" onInput="{{onMinePt}}" placeholder="Ex.: Você me passa o sal?" style="resize: vertical; min-height: 56px; box-sizing: border-box; padding: 12px; border: 2px solid #C9D2EA; border-radius: 12px; font-family: Inter, system-ui, sans-serif; font-size: 16px; color: #141A33; background: #FFFFFF"></textarea>
+    <sc-if value="{{mineMsg}}" hint-placeholder-val="{{ false }}">
+      <p role="status" style="{{mineMsgStyle}}">{{mineMsg}}</p>
+    </sc-if>
+    <div style="display: flex; gap: 10px">
+      <button type="button" onClick="{{speakMineDraft}}" aria-label="Ouvir a frase em espanhol" style="flex: 0 0 auto; min-height: 52px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Ouvir</button>
+      <button type="submit" style="flex: 1 1 auto; min-height: 52px; border: none; background: #5B3DF5; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Adicionar à revisão</button>
+    </div>
+  </form>
+
+  <sc-if value="{{hasReview}}" hint-placeholder-val="{{ false }}">
+    <button onClick="{{goReview}}" style="min-height: 52px; border: none; background: #3B2DB8; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar agora ({{reviewCount}})</button>
+  </sc-if>
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px">
+    <h2 style="margin: 0; font-size: 16px; font-weight: 700">Minhas frases</h2>
+    <span style="font-size: 13px; color: #5D6788">{{mineCountLabel}}</span>
+  </div>
+
+  <sc-for list="{{mineList}}" as="m" hint-placeholder-count="2">
+    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 10px">
+        <span lang="es" style="font-family: Manrope, system-ui, sans-serif; font-size: 17px; font-weight: 600; line-height: 1.35">{{m.es}}</span>
+        <span style="{{m.chipStyle}}">{{m.status}}</span>
+      </div>
+      <span style="font-size: 14px; line-height: 1.4; color: #5D6788">{{m.pt}}</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        <button onClick="{{m.speak}}" style="min-height: 40px; padding: 0 14px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 13px; font-weight: 600">Ouvir</button>
+        <sc-if value="{{m.canRequeue}}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{m.requeue}}" style="min-height: 40px; padding: 0 14px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 13px; font-weight: 600">Revisar de novo</button>
+        </sc-if>
+        <button onClick="{{m.remove}}" style="{{m.removeStyle}}">{{m.removeLabel}}</button>
+      </div>
+    </div>
+  </sc-for>
+  <sc-if value="{{mineEmpty}}" hint-placeholder-val="{{ false }}">
+    <p style="margin: 0; padding: 18px; border: 1px dashed #C9D2EA; border-radius: 16px; font-size: 14px; line-height: 1.5; color: #5D6788; text-align: center">Nenhuma frase sua ainda. Escreva a primeira acima.</p>
+  </sc-if>
+</div>
+</sc-if>
+
+<!-- ============ PERFIL / CONFIGURAÇÕES (em breve) ============ -->
+<sc-if value="{{showSoon}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 18px">
+  <h1 style="margin: 0; padding-top: 8px; padding-right: 56px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">{{soonTitle}}</h1>
+  <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+    <span style="align-self: flex-start; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: #E9EDF8; color: #323A5C">Em breve</span>
+    <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #323A5C">{{soonText}}</p>
+  </div>
+  <button onClick="{{goInicio}}" style="min-height: 52px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Voltar ao início</button>
+</div>
+</sc-if>
+
 </div>
 
 <nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px; padding: 8px 4px calc(10px + env(safe-area-inset-bottom)) 6px; background: #FFFFFF; border-top: 1px solid #E1E6F3">
@@ -1095,6 +1201,129 @@ body.cc-locked #faf-sheet{z-index:96}
   </div>
 </div>
 
+<script>/* Frase a Frase — menu lateral (Perfil, Configurações, Revisão, Frases, Textos, Podcasts, Excluir conta) */
+(function () {
+  'use strict';
+  var SVG = {
+    menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+    close: '<path d="M6 6l12 12M18 6 6 18"/>',
+    user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+    gear: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/>',
+    review: '<path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/>',
+    chat: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/>',
+    book: '<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2V4Z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7V4Z"/>',
+    headphones: '<path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z"/>',
+    trash: '<path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/>'
+  };
+  function svg(n, size) { return '<svg width="' + (size || 20) + '" height="' + (size || 20) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + SVG[n] + '</svg>'; }
+
+  var ITEMS = [
+    { sec: 'Você' },
+    { id: 'perfil', label: 'Perfil', icon: 'user', tag: 'Em breve', go: { tab: 'perfil' } },
+    { id: 'config', label: 'Configurações', icon: 'gear', tag: 'Em breve', go: { tab: 'config' } },
+    { sec: 'Estudar' },
+    { id: 'revisao', label: 'Revisão', sub: 'Adicione suas frases', icon: 'review', go: { tab: 'revisao', mineMsg: '', mineDel: null } },
+    { id: 'frases', label: 'Frases', sub: 'Frases por situação', icon: 'chat', go: function (s) { return { tab: 'frases', cat: s.cat === -1 ? 0 : s.cat }; } },
+    { id: 'textos', label: 'Textos', sub: 'Leitura com tradução', icon: 'book', go: { tab: 'textos', reading: false } },
+    { id: 'podcasts', label: 'Podcasts', sub: 'Ouvir com transcrição', icon: 'headphones', go: { tab: 'ouvir', mfilter: 'podcast' } },
+    { sec: 'Conta' },
+    { id: 'excluir', label: 'Excluir conta', sub: 'Apagar todo o progresso', icon: 'trash', danger: true }
+  ];
+
+  var btn = document.createElement('button');
+  btn.id = 'faf-menu-btn'; btn.type = 'button';
+  btn.setAttribute('aria-label', 'Abrir menu'); btn.setAttribute('aria-haspopup', 'dialog'); btn.setAttribute('aria-expanded', 'false');
+  btn.innerHTML = svg('menu', 22);
+
+  var menu = document.createElement('div');
+  menu.id = 'faf-menu'; menu.hidden = true;
+  menu.innerHTML = '<div class="fm-backdrop"></div><nav class="fm-panel" role="dialog" aria-modal="true" aria-label="Menu"></nav>';
+  var panel = menu.querySelector('.fm-panel');
+  document.body.appendChild(btn);
+  document.body.appendChild(menu);
+
+  function activeId() {
+    var s = window.__fafApp && window.__fafApp.state; if (!s) return '';
+    if (s.tab === 'ouvir') return s.mfilter === 'podcast' ? 'podcasts' : '';
+    return { perfil: 'perfil', config: 'config', revisao: 'revisao', frases: 'frases', textos: 'textos' }[s.tab] || '';
+  }
+
+  function paint() {
+    var act = activeId();
+    var html = '<div class="fm-head"><div class="fm-brand"><span>Frase a Frase</span><strong>Menu</strong></div>' +
+      '<button type="button" class="fm-close" aria-label="Fechar menu">' + svg('close', 18) + '</button></div>';
+    ITEMS.forEach(function (it) {
+      if (it.sec) { html += '<div class="fm-sec">' + it.sec + '</div>'; return; }
+      html += '<button type="button" class="fm-item' + (it.id === act ? ' is-active' : '') + (it.danger ? ' is-danger' : '') + '" data-id="' + it.id + '"' + (it.id === act ? ' aria-current="page"' : '') + '>' +
+        '<span class="fm-ic">' + svg(it.icon) + '</span><span class="fm-txt"><span>' + it.label + '</span>' + (it.sub ? '<small>' + it.sub + '</small>' : '') + '</span>' +
+        (it.tag ? '<span class="fm-tag">' + it.tag + '</span>' : '') + '</button>';
+    });
+    panel.innerHTML = html;
+  }
+
+  function open() {
+    paint(); menu.hidden = false; btn.setAttribute('aria-expanded', 'true');
+    var first = panel.querySelector('.fm-item.is-active') || panel.querySelector('.fm-item');
+    if (first) first.focus();
+  }
+  function close(keepFocus) {
+    if (menu.hidden) return;
+    menu.hidden = true; btn.setAttribute('aria-expanded', 'false');
+    if (!keepFocus) btn.focus();
+  }
+
+  function go(id) {
+    var it = ITEMS.filter(function (x) { return x.id === id; })[0];
+    if (!it) return;
+    if (id === 'excluir') { close(true); confirmDelete(); return; }
+    var app = window.__fafApp;
+    close(true);
+    if (app) app.setState(typeof it.go === 'function' ? it.go(app.state) : it.go);
+  }
+
+  btn.addEventListener('click', open);
+  menu.addEventListener('click', function (e) {
+    if (e.target.classList.contains('fm-backdrop') || e.target.closest('.fm-close')) { close(); return; }
+    var b = e.target.closest('.fm-item'); if (b) go(b.getAttribute('data-id'));
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) close(); });
+
+  // Excluir conta: ainda não há conta na nuvem, então apaga tudo o que o app guardou neste aparelho.
+  function confirmDelete() {
+    var wrap = document.createElement('div');
+    wrap.className = 'fm-modal';
+    wrap.innerHTML = '<div class="fm-dialog" role="alertdialog" aria-modal="true" aria-labelledby="fm-del-t" aria-describedby="fm-del-d">' +
+      '<h2 id="fm-del-t">Excluir conta</h2>' +
+      '<p id="fm-del-d">Isso apaga todo o seu progresso salvo neste aparelho: frases marcadas, suas frases da Revisão, textos lidos, curso (XP, vidas e conquistas) e preferências. Não dá para desfazer.</p>' +
+      '<p>Para guardar uma cópia antes, use "Conta e backup" no Curso.</p>' +
+      '<label for="fm-del-in">Digite EXCLUIR para confirmar</label>' +
+      '<input id="fm-del-in" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false">' +
+      '<div class="fm-actions"><button type="button" class="fm-cancel">Cancelar</button><button type="button" class="fm-danger" disabled>Excluir tudo</button></div></div>';
+    document.body.appendChild(wrap);
+    var input = wrap.querySelector('input'), ok = wrap.querySelector('.fm-danger');
+    function done() { wrap.remove(); document.removeEventListener('keydown', esc); btn.focus(); }
+    function esc(e) { if (e.key === 'Escape') done(); }
+    document.addEventListener('keydown', esc);
+    input.addEventListener('input', function () { ok.disabled = input.value.trim().toUpperCase() !== 'EXCLUIR'; });
+    wrap.querySelector('.fm-cancel').addEventListener('click', done);
+    wrap.addEventListener('click', function (e) { if (e.target === wrap) done(); });
+    ok.addEventListener('click', function () {
+      if (ok.disabled) return;
+      ok.disabled = true; ok.textContent = 'Excluindo…';
+      var cloud = window.FAF_SYNC && typeof window.FAF_SYNC.deleteAccount === 'function' ? window.FAF_SYNC.deleteAccount() : null;
+      Promise.resolve(cloud).catch(function () {}).then(function () {
+        window.__fafWiping = true;
+        try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {}
+        var keys = [];
+        try { for (var i = 0; i < localStorage.length; i++) { var k = localStorage.key(i); if (k && k.indexOf('fraseafrase.') === 0) keys.push(k); } } catch (e) {}
+        keys.forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
+        location.reload();
+      });
+    });
+    setTimeout(function () { input.focus(); }, 30);
+  }
+})();
+</script>
 <script>/* Frase a Frase — motor de renderização leve (substitui o runtime do protótipo) */
 (function () {
   'use strict';
@@ -3255,15 +3484,17 @@ class Component extends DCLogic {
       li: 0, lpick: null, lshow: false,
       gi: 0, gpick: null,
       lang: saved.lang || 'es-ES', rate: saved.rate || 0.9,
-      goalDate: today, goalCount: saved.goalDate === today ? (saved.goalCount || 0) : 0
+      goalDate: today, goalCount: saved.goalDate === today ? (saved.goalCount || 0) : 0,
+      mine: Array.isArray(saved.mine) ? saved.mine : [], mineEs: '', minePt: '', mineMsg: '', mineOk: false, mineDel: null
     };
   }
 
   componentDidUpdate() {
     var s = this.state;
+    if (window.__fafWiping) return;
     try {
       window.localStorage.setItem(STORE_KEY, JSON.stringify({
-        known: s.known, review: s.review, answers: s.answers, read: s.read, heard: s.heard,
+        known: s.known, review: s.review, answers: s.answers, read: s.read, heard: s.heard, mine: s.mine,
         lang: s.lang, rate: s.rate, goalDate: s.goalDate, goalCount: s.goalCount
       }));
     } catch (e) {}
@@ -3294,9 +3525,15 @@ class Component extends DCLogic {
     this.setState(Object.assign({ goalDate: today, goalCount: count + 1 }, extra || {}));
   }
 
+  // Frases escritas pelo usuário (tela Revisão). Chave 'u:<id>' em known/review.
+  mineItems() {
+    return this.state.mine.map(function (m) { return { key: 'u:' + m.id, ci: -3, cat: 'Minhas frases', es: m.es, pt: m.pt, mine: true }; });
+  }
+
   deck() {
     var s = this.state;
-    if (s.cat === -1) return ALL.filter(function (p) { return s.review[p.key]; });
+    if (s.cat === -1) return ALL.filter(function (p) { return s.review[p.key]; })
+      .concat(this.mineItems().filter(function (p) { return s.review[p.key]; }));
     if (s.cat === -2) return ALL.slice();
     return ALL.filter(function (p) { return p.ci === s.cat; });
   }
@@ -3328,7 +3565,7 @@ class Component extends DCLogic {
 
     // Home
     var dia = ALL[dayIndex() % ALL.length];
-    var knownCount = Object.keys(s.known).length;
+    var knownCount = Object.keys(s.known).filter(function (k) { return k.indexOf('u:') !== 0; }).length;
     var reviewCount = Object.keys(s.review).length;
     var goalPct = Math.min(100, Math.round((s.goalCount / GOAL) * 100));
     var goalMsg = s.goalCount >= GOAL ? '¡Meta cumprida! Pode continuar se quiser.'
@@ -3384,6 +3621,10 @@ class Component extends DCLogic {
       showTextos: s.tab === 'textos',
       showPratica: s.tab === 'pratica',
       showOuvir: s.tab === 'ouvir',
+      showRevisao: s.tab === 'revisao',
+      showSoon: s.tab === 'perfil' || s.tab === 'config',
+      soonTitle: s.tab === 'perfil' ? 'Perfil' : 'Configurações',
+      soonText: s.tab === 'perfil' ? 'Aqui vão ficar seus dados e seu progresso.' : 'Aqui vão ficar as preferências do app.',
       nav: {
         inicio: navStyle(s.tab === 'inicio'),
         frases: navStyle(s.tab === 'frases'),
@@ -3426,6 +3667,53 @@ class Component extends DCLogic {
       goTextos: function () { self.setState({ tab: 'textos', reading: false }); },
       goPratica: function () { self.setState({ tab: 'pratica' }); },
       goReview: function () { self.setState({ tab: 'frases', fview: 'cards', cat: -1, card: 0, flipped: false }); },
+
+      // Revisão: frases do usuário
+      mineEs: s.mineEs,
+      minePt: s.minePt,
+      onMineEs: function (e) { self.setState({ mineEs: e && e.target ? e.target.value : '', mineMsg: '' }); },
+      onMinePt: function (e) { self.setState({ minePt: e && e.target ? e.target.value : '', mineMsg: '' }); },
+      mineMsg: s.mineMsg,
+      mineMsgStyle: 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (s.mineOk ? '#14915D' : '#B4234A'),
+      speakMineDraft: function () { if (s.mineEs.trim()) speak(s.mineEs.trim()); },
+      addMine: function (e) {
+        if (e && e.preventDefault) e.preventDefault();
+        var es = s.mineEs.replace(/\s+/g, ' ').trim(), pt = s.minePt.replace(/\s+/g, ' ').trim();
+        if (!es || !pt) { self.setState({ mineMsg: !es ? 'Escreva a frase em espanhol.' : 'Escreva a tradução.', mineOk: false }); return; }
+        if (s.mine.some(function (m) { return norm(m.es) === norm(es); })) { self.setState({ mineMsg: 'Essa frase já está na sua lista.', mineOk: false }); return; }
+        var id = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+        var review = Object.assign({}, s.review);
+        review['u:' + id] = true;
+        self.setState({ mine: [{ id: id, es: es, pt: pt, at: Date.now() }].concat(s.mine), review: review,
+          mineEs: '', minePt: '', mineMsg: 'Adicionada. Ela já está na revisão da tela inicial.', mineOk: true, mineDel: null });
+      },
+      mineCountLabel: s.mine.length === 1 ? '1 frase' : s.mine.length + ' frases',
+      mineEmpty: !s.mine.length,
+      mineList: s.mine.map(function (m) {
+        var key = 'u:' + m.id, inReview = !!s.review[key], known = !!s.known[key], confirm = s.mineDel === m.id;
+        return {
+          es: m.es, pt: m.pt,
+          status: inReview ? 'Na revisão' : known ? 'Já sei' : 'Fora da revisão',
+          chipStyle: 'flex: 0 0 auto; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap; ' +
+            (inReview ? 'background: #E6EEFF; color: #2547B8' : known ? 'background: #E3F6EC; color: #0E6B45' : 'background: #E9EDF8; color: #323A5C'),
+          speak: function () { speak(m.es); },
+          canRequeue: !inReview,
+          requeue: function () {
+            var review = Object.assign({}, s.review), known2 = Object.assign({}, s.known);
+            review[key] = true; delete known2[key];
+            self.setState({ review: review, known: known2, mineMsg: '', mineDel: null });
+          },
+          removeLabel: confirm ? 'Confirmar exclusão' : 'Excluir',
+          removeStyle: 'min-height: 40px; padding: 0 14px; border-radius: 999px; font-size: 13px; font-weight: 600; ' +
+            (confirm ? 'border: none; background: #B4234A; color: #FFFFFF' : 'border: 1px solid #F3C6D2; background: #FFFFFF; color: #B4234A'),
+          remove: function () {
+            if (!confirm) { self.setState({ mineDel: m.id }); return; }
+            var review = Object.assign({}, s.review), known2 = Object.assign({}, s.known);
+            delete review[key]; delete known2[key];
+            self.setState({ mine: s.mine.filter(function (x) { return x.id !== m.id; }), review: review, known: known2, mineDel: null, mineMsg: '' });
+          }
+        };
+      }),
 
       // Frases: lista
       fseg: { cats: segStyle(s.fview === 'cats'), cards: segStyle(s.fview === 'cards'), lista: segStyle(s.fview === 'lista') },
