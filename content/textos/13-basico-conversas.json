@@ -1,0 +1,2582 @@
+[
+ {
+  "tema": "social",
+  "title": "En la panadería",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Panadero: ¡Buenos días! ¿Qué le pongo?",
+    "Padeiro: Bom dia! O que vai ser?"
+   ],
+   [
+    "Clara: Buenos días. Quiero una barra de pan, por favor.",
+    "Clara: Bom dia. Quero um pão comprido, por favor."
+   ],
+   [
+    "Panadero: ¿Algo más?",
+    "Padeiro: Mais alguma coisa?"
+   ],
+   [
+    "Clara: Sí, cuatro cruasanes. ¿Están recién hechos?",
+    "Clara: Sim, quatro croissants. Estão fresquinhos?"
+   ],
+   [
+    "Panadero: Sí, salieron del horno hace diez minutos.",
+    "Padeiro: Sim, saíram do forno há dez minutos."
+   ],
+   [
+    "Clara: ¡Perfecto! ¿Cuánto es todo?",
+    "Clara: Perfeito! Quanto dá tudo?"
+   ],
+   [
+    "Panadero: Son cinco euros con veinte.",
+    "Padeiro: São cinco euros e vinte."
+   ],
+   [
+    "Clara: Aquí tiene. ¡Que tenga un buen día!",
+    "Clara: Aqui está. Tenha um bom dia!"
+   ]
+  ],
+  "words": [
+   [
+    "la barra de pan",
+    "o pão comprido (baguete)"
+   ],
+   [
+    "recién hecho",
+    "feito agora, fresquinho"
+   ],
+   [
+    "el horno",
+    "o forno"
+   ],
+   [
+    "¿Qué le pongo?",
+    "O que vai querer?"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantos croissants Clara compra?",
+    "options": [
+     "Quatro",
+     "Dois",
+     "Cinco"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quando os croissants saíram do forno?",
+    "options": [
+     "Há uma hora",
+     "Há dez minutos",
+     "Ontem à noite"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quanto Clara paga?",
+    "options": [
+     "Quatro euros",
+     "Vinte euros",
+     "Cinco euros e vinte"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Una llamada a mamá",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Mamá: ¿Diga?",
+    "Mãe: Alô?"
+   ],
+   [
+    "Diego: Hola, mamá. Soy yo, Diego. ¿Qué tal estás?",
+    "Diego: Oi, mãe. Sou eu, o Diego. Como você está?"
+   ],
+   [
+    "Mamá: ¡Hola, hijo! Muy bien. ¿Y tú? ¿Cómo va el trabajo?",
+    "Mãe: Oi, filho! Muito bem. E você? Como vai o trabalho?"
+   ],
+   [
+    "Diego: Bien, pero esta semana estoy muy cansado.",
+    "Diego: Bem, mas esta semana estou muito cansado."
+   ],
+   [
+    "Mamá: Tienes que dormir más. ¿Vienes a comer el domingo?",
+    "Mãe: Você precisa dormir mais. Vem almoçar no domingo?"
+   ],
+   [
+    "Diego: Sí, claro. ¿Llevo algo?",
+    "Diego: Sim, claro. Levo alguma coisa?"
+   ],
+   [
+    "Mamá: Trae el postre. A tu padre le encanta el flan.",
+    "Mãe: Traga a sobremesa. Seu pai adora pudim."
+   ],
+   [
+    "Diego: Vale. Un beso, mamá. Hasta el domingo.",
+    "Diego: Combinado. Um beijo, mãe. Até domingo."
+   ]
+  ],
+  "words": [
+   [
+    "¿Diga?",
+    "Alô? (ao atender)"
+   ],
+   [
+    "cansado",
+    "cansado"
+   ],
+   [
+    "el postre",
+    "a sobremesa"
+   ],
+   [
+    "el flan",
+    "o pudim"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como Diego está esta semana?",
+    "options": [
+     "Muito cansado",
+     "Doente",
+     "De férias"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quando Diego vai almoçar com os pais?",
+    "options": [
+     "No sábado",
+     "No domingo",
+     "Hoje à noite"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que Diego vai levar?",
+    "options": [
+     "O vinho",
+     "O pão",
+     "A sobremesa"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "¿Quedamos el viernes?",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Laura: Oye, Marcos, ¿tienes planes para el viernes?",
+    "Laura: Ei, Marcos, você tem planos para sexta?"
+   ],
+   [
+    "Marcos: No, nada especial. ¿Por qué?",
+    "Marcos: Não, nada de especial. Por quê?"
+   ],
+   [
+    "Laura: Hay un restaurante mexicano nuevo en el centro. ¿Vamos?",
+    "Laura: Tem um restaurante mexicano novo no centro. Vamos?"
+   ],
+   [
+    "Marcos: ¡Me encanta la comida mexicana! ¿A qué hora quedamos?",
+    "Marcos: Adoro comida mexicana! A que horas a gente se encontra?"
+   ],
+   [
+    "Laura: ¿A las nueve te va bien?",
+    "Laura: Às nove está bom para você?"
+   ],
+   [
+    "Marcos: Mejor a las nueve y media. Salgo tarde del trabajo.",
+    "Marcos: Melhor às nove e meia. Saio tarde do trabalho."
+   ],
+   [
+    "Laura: Vale. Nos vemos en la puerta del restaurante.",
+    "Laura: Combinado. A gente se vê na porta do restaurante."
+   ],
+   [
+    "Marcos: Perfecto. ¡Hasta el viernes!",
+    "Marcos: Perfeito. Até sexta!"
+   ]
+  ],
+  "words": [
+   [
+    "quedar",
+    "combinar de se encontrar"
+   ],
+   [
+    "¿Te va bien?",
+    "Está bom para você?"
+   ],
+   [
+    "salir del trabajo",
+    "sair do trabalho"
+   ],
+   [
+    "nos vemos",
+    "a gente se vê"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Que tipo de restaurante é?",
+    "options": [
+     "Mexicano",
+     "Italiano",
+     "Japonês"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "A que horas eles vão se encontrar?",
+    "options": [
+     "Às nove",
+     "Às nove e meia",
+     "Às oito"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Por que Marcos prefere mais tarde?",
+    "options": [
+     "Mora longe",
+     "Vai ao ginásio antes",
+     "Sai tarde do trabalho"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "En la peluquería",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Peluquera: Hola, ¿tienes cita?",
+    "Cabeleireira: Oi, você tem horário marcado?"
+   ],
+   [
+    "Sergio: Sí, a las cinco. Me llamo Sergio.",
+    "Sergio: Sim, às cinco. Meu nome é Sergio."
+   ],
+   [
+    "Peluquera: Siéntate aquí. ¿Qué te hago hoy?",
+    "Cabeleireira: Sente-se aqui. O que vamos fazer hoje?"
+   ],
+   [
+    "Sergio: Quiero cortarme el pelo, pero no mucho.",
+    "Sergio: Quero cortar o cabelo, mas não muito."
+   ],
+   [
+    "Peluquera: ¿Corto por los lados y arriba lo dejo largo?",
+    "Cabeleireira: Corto dos lados e deixo comprido em cima?"
+   ],
+   [
+    "Sergio: Sí, así está bien. Arriba solo un poco.",
+    "Sergio: Sim, assim está bom. Em cima, só um pouco."
+   ],
+   [
+    "Peluquera: Listo. ¿Qué te parece?",
+    "Cabeleireira: Pronto. O que você acha?"
+   ],
+   [
+    "Sergio: ¡Me gusta mucho! Muchas gracias.",
+    "Sergio: Gostei muito! Muito obrigado."
+   ]
+  ],
+  "words": [
+   [
+    "la cita",
+    "o horário marcado"
+   ],
+   [
+    "cortarse el pelo",
+    "cortar o cabelo"
+   ],
+   [
+    "los lados",
+    "os lados"
+   ],
+   [
+    "largo",
+    "comprido"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "A que horas é o horário de Sergio?",
+    "options": [
+     "Às cinco",
+     "Às quatro",
+     "Às seis"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como Sergio quer o corte?",
+    "options": [
+     "Bem curto",
+     "Não muito curto",
+     "Raspado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Sergio gostou do resultado?",
+    "options": [
+     "Não",
+     "Mais ou menos",
+     "Sim, muito"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El vecino nuevo",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Elena: Hola, ¿eres el vecino nuevo del tercero?",
+    "Elena: Oi, você é o vizinho novo do terceiro andar?"
+   ],
+   [
+    "Tomás: Sí, me mudé ayer. Me llamo Tomás.",
+    "Tomás: Sim, me mudei ontem. Meu nome é Tomás."
+   ],
+   [
+    "Elena: Encantada. Yo soy Elena, vivo en el segundo.",
+    "Elena: Muito prazer. Eu sou a Elena, moro no segundo."
+   ],
+   [
+    "Tomás: Mucho gusto. Oye, ¿sabes dónde hay un supermercado?",
+    "Tomás: Prazer. Escuta, você sabe onde tem um supermercado?"
+   ],
+   [
+    "Elena: Sí, hay uno al final de la calle, a la derecha.",
+    "Elena: Sim, tem um no fim da rua, à direita."
+   ],
+   [
+    "Tomás: ¿Y abre los domingos?",
+    "Tomás: E abre aos domingos?"
+   ],
+   [
+    "Elena: Sí, por la mañana. Si necesitas algo, llama a mi puerta.",
+    "Elena: Sim, de manhã. Se precisar de alguma coisa, bata na minha porta."
+   ],
+   [
+    "Tomás: Muy amable. ¡Gracias, Elena!",
+    "Tomás: Muito gentil. Obrigado, Elena!"
+   ]
+  ],
+  "words": [
+   [
+    "el vecino",
+    "o vizinho"
+   ],
+   [
+    "mudarse",
+    "mudar-se"
+   ],
+   [
+    "el tercero",
+    "o terceiro andar"
+   ],
+   [
+    "amable",
+    "gentil"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando Tomás se mudou?",
+    "options": [
+     "Ontem",
+     "Há uma semana",
+     "Hoje de manhã"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Em que andar mora Elena?",
+    "options": [
+     "No terceiro",
+     "No segundo",
+     "No primeiro"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quando o supermercado abre no domingo?",
+    "options": [
+     "À tarde",
+     "Não abre",
+     "De manhã"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "En la caja del supermercado",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Cajera: Hola, buenas tardes. ¿Necesita bolsa?",
+    "Caixa: Oi, boa tarde. Precisa de sacola?"
+   ],
+   [
+    "Javier: No, gracias, traigo la mía.",
+    "Javier: Não, obrigado, trouxe a minha."
+   ],
+   [
+    "Cajera: ¿Tiene la tarjeta del supermercado?",
+    "Caixa: Tem o cartão do supermercado?"
+   ],
+   [
+    "Javier: No, no la tengo. ¿Es gratis?",
+    "Javier: Não, não tenho. É grátis?"
+   ],
+   [
+    "Cajera: Sí, y con ella tiene descuentos todas las semanas.",
+    "Caixa: Sim, e com ele você tem descontos toda semana."
+   ],
+   [
+    "Javier: Bueno, la próxima vez. ¿Puedo pagar con tarjeta?",
+    "Javier: Bom, da próxima vez. Posso pagar com cartão?"
+   ],
+   [
+    "Cajera: Claro. Son treinta y dos euros. Acerque la tarjeta, por favor.",
+    "Caixa: Claro. São trinta e dois euros. Aproxime o cartão, por favor."
+   ],
+   [
+    "Javier: Ya está. ¡Gracias, hasta luego!",
+    "Javier: Pronto. Obrigado, até logo!"
+   ]
+  ],
+  "words": [
+   [
+    "la bolsa",
+    "a sacola"
+   ],
+   [
+    "gratis",
+    "grátis"
+   ],
+   [
+    "el descuento",
+    "o desconto"
+   ],
+   [
+    "acercar",
+    "aproximar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que Javier não precisa de sacola?",
+    "options": [
+     "Trouxe a dele",
+     "Comprou pouco",
+     "As sacolas acabaram"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que o cartão do supermercado oferece?",
+    "options": [
+     "Entrega grátis",
+     "Descontos toda semana",
+     "Pontos para viagens"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quanto foi a compra?",
+    "options": [
+     "Vinte e dois euros",
+     "Doze euros",
+     "Trinta e dois euros"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Pedir una pizza",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Empleado: Pizzería Napoli, ¿dígame?",
+    "Atendente: Pizzaria Napoli, pois não?"
+   ],
+   [
+    "Irene: Hola, quiero pedir una pizza para llevar a casa.",
+    "Irene: Oi, quero pedir uma pizza para entregar em casa."
+   ],
+   [
+    "Empleado: Muy bien. ¿Qué pizza quiere?",
+    "Atendente: Muito bem. Qual pizza você quer?"
+   ],
+   [
+    "Irene: Una grande de jamón y champiñones, sin cebolla.",
+    "Irene: Uma grande de presunto e cogumelos, sem cebola."
+   ],
+   [
+    "Empleado: ¿Algo para beber?",
+    "Atendente: Algo para beber?"
+   ],
+   [
+    "Irene: Sí, dos refrescos de limón. ¿Cuánto tarda?",
+    "Irene: Sim, dois refrigerantes de limão. Quanto tempo demora?"
+   ],
+   [
+    "Empleado: Unos cuarenta minutos. ¿Me da su dirección?",
+    "Atendente: Uns quarenta minutos. Pode me dar seu endereço?"
+   ],
+   [
+    "Irene: Calle Mayor, número doce, primero B.",
+    "Irene: Rua Mayor, número doze, primeiro B."
+   ]
+  ],
+  "words": [
+   [
+    "para llevar",
+    "para viagem / entrega"
+   ],
+   [
+    "el jamón",
+    "o presunto"
+   ],
+   [
+    "los champiñones",
+    "os cogumelos"
+   ],
+   [
+    "tardar",
+    "demorar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que Irene não quer na pizza?",
+    "options": [
+     "Cebola",
+     "Cogumelos",
+     "Presunto"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quanto tempo demora a entrega?",
+    "options": [
+     "Meia hora",
+     "Uns quarenta minutos",
+     "Uma hora"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que Irene pede para beber?",
+    "options": [
+     "Uma água",
+     "Um suco de laranja",
+     "Dois refrigerantes de limão"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "En el restaurante",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Camarero: Buenas noches. ¿Mesa para cuántos?",
+    "Garçom: Boa noite. Mesa para quantos?"
+   ],
+   [
+    "Rocío: Para dos, por favor.",
+    "Rocío: Para dois, por favor."
+   ],
+   [
+    "Camarero: Aquí tienen la carta. ¿Qué van a tomar?",
+    "Garçom: Aqui está o cardápio. O que vão pedir?"
+   ],
+   [
+    "Rocío: De primero, una sopa de verduras. De segundo, pescado a la plancha.",
+    "Rocío: De entrada, uma sopa de legumes. De prato principal, peixe grelhado."
+   ],
+   [
+    "Andrés: Yo quiero la ensalada y el pollo con patatas.",
+    "Andrés: Eu quero a salada e o frango com batatas."
+   ],
+   [
+    "Camarero: ¿Y para beber?",
+    "Garçom: E para beber?"
+   ],
+   [
+    "Rocío: Una botella de agua grande, por favor.",
+    "Rocío: Uma garrafa de água grande, por favor."
+   ],
+   [
+    "Andrés: Y al final, la cuenta, por favor.",
+    "Andrés: E no final, a conta, por favor."
+   ]
+  ],
+  "words": [
+   [
+    "la carta",
+    "o cardápio"
+   ],
+   [
+    "de primero",
+    "de entrada"
+   ],
+   [
+    "a la plancha",
+    "grelhado na chapa"
+   ],
+   [
+    "la cuenta",
+    "a conta"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que Rocío pede de prato principal?",
+    "options": [
+     "Peixe grelhado",
+     "Frango com batatas",
+     "Salada"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quem pede o frango?",
+    "options": [
+     "Rocío",
+     "Andrés",
+     "O garçom"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que eles pedem para beber?",
+    "options": [
+     "Vinho tinto",
+     "Dois sucos",
+     "Uma garrafa de água grande"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "En la tienda de ropa",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Dependienta: Hola, ¿te puedo ayudar?",
+    "Vendedora: Oi, posso ajudar?"
+   ],
+   [
+    "Paula: Sí, busco una chaqueta para el invierno.",
+    "Paula: Sim, procuro uma jaqueta para o inverno."
+   ],
+   [
+    "Dependienta: Tenemos estas. ¿Qué talla usas?",
+    "Vendedora: Temos estas. Que tamanho você usa?"
+   ],
+   [
+    "Paula: La M. ¿La tienes en negro?",
+    "Paula: M. Tem em preto?"
+   ],
+   [
+    "Dependienta: Sí, aquí está. Los probadores están al fondo.",
+    "Vendedora: Sim, aqui está. Os provadores ficam no fundo."
+   ],
+   [
+    "Paula: Me queda un poco grande. ¿Tienes la S?",
+    "Paula: Ficou um pouco grande. Tem a P?"
+   ],
+   [
+    "Dependienta: Sí. Y hoy tiene un veinte por ciento de descuento.",
+    "Vendedora: Sim. E hoje está com vinte por cento de desconto."
+   ],
+   [
+    "Paula: ¡Qué bien! Me la llevo.",
+    "Paula: Que bom! Vou levar."
+   ]
+  ],
+  "words": [
+   [
+    "la chaqueta",
+    "a jaqueta"
+   ],
+   [
+    "la talla",
+    "o tamanho (roupa)"
+   ],
+   [
+    "el probador",
+    "o provador"
+   ],
+   [
+    "me la llevo",
+    "vou levar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que Paula procura?",
+    "options": [
+     "Uma jaqueta para o inverno",
+     "Um vestido de festa",
+     "Sapatos"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que tamanho Paula pede no final?",
+    "options": [
+     "M",
+     "P (S)",
+     "G"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é o desconto de hoje?",
+    "options": [
+     "Dez por cento",
+     "Metade do preço",
+     "Vinte por cento"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "¿Dónde están mis llaves?",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Pedro: Ana, ¿has visto mis llaves? No las encuentro.",
+    "Pedro: Ana, você viu minhas chaves? Não acho."
+   ],
+   [
+    "Ana: ¿Miraste en la mesa de la entrada?",
+    "Ana: Você olhou na mesa da entrada?"
+   ],
+   [
+    "Pedro: Sí, y en la cocina también. Llego tarde al trabajo.",
+    "Pedro: Sim, e na cozinha também. Vou chegar atrasado no trabalho."
+   ],
+   [
+    "Ana: ¿Y en el bolsillo de la chaqueta de ayer?",
+    "Ana: E no bolso da jaqueta de ontem?"
+   ],
+   [
+    "Pedro: Espera... ¡Sí, aquí están!",
+    "Pedro: Espera... Sim, estão aqui!"
+   ],
+   [
+    "Ana: Siempre pasa lo mismo. Necesitas un sitio fijo para las llaves.",
+    "Ana: Sempre acontece a mesma coisa. Você precisa de um lugar fixo para as chaves."
+   ],
+   [
+    "Pedro: Tienes razón. Esta tarde compro un gancho para la pared.",
+    "Pedro: Você tem razão. Hoje à tarde compro um gancho para a parede."
+   ],
+   [
+    "Ana: Buena idea. ¡Corre, que pierdes el autobús!",
+    "Ana: Boa ideia. Corre, que você perde o ônibus!"
+   ]
+  ],
+  "words": [
+   [
+    "las llaves",
+    "as chaves"
+   ],
+   [
+    "el bolsillo",
+    "o bolso (da roupa)"
+   ],
+   [
+    "tener razón",
+    "ter razão"
+   ],
+   [
+    "el gancho",
+    "o gancho"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde estavam as chaves?",
+    "options": [
+     "No bolso da jaqueta",
+     "Na cozinha",
+     "Na mesa da entrada"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que Pedro vai comprar à tarde?",
+    "options": [
+     "Uma chave nova",
+     "Um gancho para a parede",
+     "Uma jaqueta"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como Pedro vai para o trabalho?",
+    "options": [
+     "De carro",
+     "A pé",
+     "De ônibus"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "¿Qué hacemos esta noche?",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Lucía: ¿Qué hacemos esta noche? ¿Salimos o nos quedamos en casa?",
+    "Lucía: O que a gente faz hoje à noite? Saímos ou ficamos em casa?"
+   ],
+   [
+    "Raúl: Estoy un poco cansado. Prefiero quedarme en casa.",
+    "Raúl: Estou um pouco cansado. Prefiro ficar em casa."
+   ],
+   [
+    "Lucía: Vale. ¿Vemos una película?",
+    "Lucía: Tá bom. Vamos ver um filme?"
+   ],
+   [
+    "Raúl: Sí. ¿Una comedia? No quiero nada de miedo.",
+    "Raúl: Sim. Uma comédia? Não quero nada de terror."
+   ],
+   [
+    "Lucía: De acuerdo. ¿Y para cenar?",
+    "Lucía: Combinado. E para o jantar?"
+   ],
+   [
+    "Raúl: Podemos hacer tortillas de patata. Tenemos huevos.",
+    "Raúl: Podemos fazer tortilha de batata. Temos ovos."
+   ],
+   [
+    "Lucía: Perfecto. Yo pelo las patatas y tú haces palomitas.",
+    "Lucía: Perfeito. Eu descasco as batatas e você faz pipoca."
+   ],
+   [
+    "Raúl: ¡Trato hecho!",
+    "Raúl: Fechado!"
+   ]
+  ],
+  "words": [
+   [
+    "quedarse en casa",
+    "ficar em casa"
+   ],
+   [
+    "de miedo",
+    "de terror"
+   ],
+   [
+    "pelar",
+    "descascar"
+   ],
+   [
+    "las palomitas",
+    "a pipoca"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que Raúl prefere ficar em casa?",
+    "options": [
+     "Está um pouco cansado",
+     "Está chovendo",
+     "Não tem dinheiro"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que tipo de filme eles vão ver?",
+    "options": [
+     "Um filme de terror",
+     "Uma comédia",
+     "Um documentário"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que Raúl vai fazer?",
+    "options": [
+     "Descascar as batatas",
+     "Lavar a louça",
+     "Pipoca"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "En el gimnasio",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Recepcionista: Hola, ¿en qué te puedo ayudar?",
+    "Recepcionista: Oi, em que posso ajudar?"
+   ],
+   [
+    "Mario: Hola. Quiero información para apuntarme al gimnasio.",
+    "Mario: Oi. Quero informações para me matricular na academia."
+   ],
+   [
+    "Recepcionista: La cuota mensual es de treinta euros.",
+    "Recepcionista: A mensalidade é de trinta euros."
+   ],
+   [
+    "Mario: ¿Incluye las clases de grupo?",
+    "Mario: Inclui as aulas em grupo?"
+   ],
+   [
+    "Recepcionista: Sí, hay yoga, spinning y baile. Todas están incluidas.",
+    "Recepcionista: Sim, tem ioga, spinning e dança. Todas estão incluídas."
+   ],
+   [
+    "Mario: ¿Y a qué hora abrís?",
+    "Mario: E a que horas vocês abrem?"
+   ],
+   [
+    "Recepcionista: De lunes a viernes, de siete de la mañana a diez de la noche.",
+    "Recepcionista: De segunda a sexta, das sete da manhã às dez da noite."
+   ],
+   [
+    "Mario: Genial. Me apunto hoy mismo.",
+    "Mario: Ótimo. Vou me matricular hoje mesmo."
+   ]
+  ],
+  "words": [
+   [
+    "apuntarse",
+    "inscrever-se, matricular-se"
+   ],
+   [
+    "la cuota",
+    "a mensalidade, a taxa"
+   ],
+   [
+    "incluir",
+    "incluir"
+   ],
+   [
+    "hoy mismo",
+    "hoje mesmo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quanto custa a mensalidade?",
+    "options": [
+     "Trinta euros",
+     "Vinte euros",
+     "Cinquenta euros"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "As aulas em grupo estão incluídas?",
+    "options": [
+     "Não, são pagas à parte",
+     "Sim, todas",
+     "Só o ioga"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quando Mario vai se matricular?",
+    "options": [
+     "Na semana que vem",
+     "No mês que vem",
+     "Hoje mesmo"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Un regalo para Lucas",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Carmen: El sábado es el cumpleaños de Lucas. ¿Qué le regalamos?",
+    "Carmen: Sábado é o aniversário do Lucas. O que vamos dar de presente?"
+   ],
+   [
+    "Óscar: No sé. ¿Un libro? Le gusta mucho leer.",
+    "Óscar: Não sei. Um livro? Ele gosta muito de ler."
+   ],
+   [
+    "Carmen: Siempre le regalamos libros. Quiero algo diferente.",
+    "Carmen: Sempre damos livros. Quero algo diferente."
+   ],
+   [
+    "Óscar: ¿Y unas entradas para un concierto?",
+    "Óscar: E ingressos para um show?"
+   ],
+   [
+    "Carmen: ¡Buena idea! Su grupo favorito toca en marzo.",
+    "Carmen: Boa ideia! A banda favorita dele toca em março."
+   ],
+   [
+    "Óscar: ¿Son caras las entradas?",
+    "Óscar: Os ingressos são caros?"
+   ],
+   [
+    "Carmen: Unos cuarenta euros cada una. Pagamos a medias.",
+    "Carmen: Uns quarenta euros cada um. Dividimos meio a meio."
+   ],
+   [
+    "Óscar: Vale. Las compro esta noche por internet.",
+    "Óscar: Combinado. Compro hoje à noite pela internet."
+   ]
+  ],
+  "words": [
+   [
+    "regalar",
+    "dar de presente"
+   ],
+   [
+    "las entradas",
+    "os ingressos"
+   ],
+   [
+    "el grupo",
+    "a banda"
+   ],
+   [
+    "a medias",
+    "meio a meio"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que Carmen não quer dar um livro?",
+    "options": [
+     "Sempre dão livros",
+     "Lucas não gosta de ler",
+     "Livros são caros"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quando é o show?",
+    "options": [
+     "No sábado",
+     "Em março",
+     "Em maio"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como eles vão pagar?",
+    "options": [
+     "Carmen paga tudo",
+     "Óscar paga tudo",
+     "Meio a meio"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "El desayuno",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Abuela: Buenos días, Nico. ¿Has dormido bien?",
+    "Avó: Bom dia, Nico. Dormiu bem?"
+   ],
+   [
+    "Nico: Sí, abuela. Tengo mucha hambre.",
+    "Nico: Sim, vó. Estou com muita fome."
+   ],
+   [
+    "Abuela: ¿Qué quieres desayunar? ¿Tostadas o cereales?",
+    "Avó: O que você quer de café da manhã? Torradas ou cereal?"
+   ],
+   [
+    "Nico: Tostadas con mantequilla y mermelada, por favor.",
+    "Nico: Torradas com manteiga e geleia, por favor."
+   ],
+   [
+    "Abuela: ¿Y quieres leche o zumo de naranja?",
+    "Avó: E quer leite ou suco de laranja?"
+   ],
+   [
+    "Nico: Un zumo. ¿Lo haces con naranjas de verdad?",
+    "Nico: Um suco. Você faz com laranjas de verdade?"
+   ],
+   [
+    "Abuela: Claro, son del árbol del jardín.",
+    "Avó: Claro, são da árvore do quintal."
+   ],
+   [
+    "Nico: ¡Qué rico! Eres la mejor, abuela.",
+    "Nico: Que delícia! Você é a melhor, vó."
+   ]
+  ],
+  "words": [
+   [
+    "desayunar",
+    "tomar café da manhã"
+   ],
+   [
+    "las tostadas",
+    "as torradas"
+   ],
+   [
+    "la mermelada",
+    "a geleia"
+   ],
+   [
+    "el zumo",
+    "o suco (na Espanha)"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que Nico come?",
+    "options": [
+     "Torradas com manteiga e geleia",
+     "Cereal com leite",
+     "Ovos"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que Nico bebe?",
+    "options": [
+     "Leite",
+     "Suco de laranja",
+     "Chocolate quente"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "De onde vêm as laranjas?",
+    "options": [
+     "Do supermercado",
+     "Da feira",
+     "Da árvore do quintal"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Un taxi al aeropuerto",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Taxista: Buenos días. ¿Adónde vamos?",
+    "Taxista: Bom dia. Para onde vamos?"
+   ],
+   [
+    "Beatriz: Al aeropuerto, por favor. A la terminal dos.",
+    "Beatriz: Para o aeroporto, por favor. Terminal dois."
+   ],
+   [
+    "Taxista: Muy bien. ¿A qué hora sale su vuelo?",
+    "Taxista: Muito bem. A que horas sai o seu voo?"
+   ],
+   [
+    "Beatriz: A las once. ¿Cuánto tardamos?",
+    "Beatriz: Às onze. Quanto tempo leva?"
+   ],
+   [
+    "Taxista: Con este tráfico, unos treinta y cinco minutos.",
+    "Taxista: Com esse trânsito, uns trinta e cinco minutos."
+   ],
+   [
+    "Beatriz: Perfecto. ¿Puedo pagar con tarjeta?",
+    "Beatriz: Perfeito. Posso pagar com cartão?"
+   ],
+   [
+    "Taxista: Sí, sin problema. Ya llegamos: son veintiocho euros.",
+    "Taxista: Sim, sem problema. Chegamos: são vinte e oito euros."
+   ],
+   [
+    "Beatriz: Aquí tiene. ¿Me da un recibo, por favor?",
+    "Beatriz: Aqui está. Pode me dar um recibo, por favor?"
+   ]
+  ],
+  "words": [
+   [
+    "¿Adónde vamos?",
+    "Para onde vamos?"
+   ],
+   [
+    "el vuelo",
+    "o voo"
+   ],
+   [
+    "el tráfico",
+    "o trânsito"
+   ],
+   [
+    "el recibo",
+    "o recibo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Para qual terminal Beatriz vai?",
+    "options": [
+     "Terminal dois",
+     "Terminal um",
+     "Terminal quatro"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quanto tempo leva a viagem de táxi?",
+    "options": [
+     "Dez minutos",
+     "Uns trinta e cinco minutos",
+     "Uma hora"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que Beatriz pede no final?",
+    "options": [
+     "O troco",
+     "Ajuda com a mala",
+     "Um recibo"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "En la estación de autobuses",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Viajero: Perdone, ¿a qué hora sale el próximo autobús a Valencia?",
+    "Viajante: Com licença, a que horas sai o próximo ônibus para Valência?"
+   ],
+   [
+    "Empleada: Sale a las tres y cuarto.",
+    "Atendente: Sai às três e quinze."
+   ],
+   [
+    "Viajero: ¿Y cuánto dura el viaje?",
+    "Viajante: E quanto tempo dura a viagem?"
+   ],
+   [
+    "Empleada: Unas cuatro horas. Hace una parada en Cuenca.",
+    "Atendente: Umas quatro horas. Faz uma parada em Cuenca."
+   ],
+   [
+    "Viajero: Un billete de ida, por favor.",
+    "Viajante: Uma passagem só de ida, por favor."
+   ],
+   [
+    "Empleada: Son veinticinco euros. ¿Ventana o pasillo?",
+    "Atendente: São vinte e cinco euros. Janela ou corredor?"
+   ],
+   [
+    "Viajero: Ventana. ¿De qué andén sale?",
+    "Viajante: Janela. De qual plataforma sai?"
+   ],
+   [
+    "Empleada: Del andén siete. ¡Buen viaje!",
+    "Atendente: Da plataforma sete. Boa viagem!"
+   ]
+  ],
+  "words": [
+   [
+    "el billete de ida",
+    "a passagem só de ida"
+   ],
+   [
+    "la parada",
+    "a parada"
+   ],
+   [
+    "el pasillo",
+    "o corredor"
+   ],
+   [
+    "el andén",
+    "a plataforma"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "A que horas sai o ônibus?",
+    "options": [
+     "Às três e quinze",
+     "Às três",
+     "Às quatro"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde o ônibus faz uma parada?",
+    "options": [
+     "Em Madri",
+     "Em Cuenca",
+     "Em Valência"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "De qual plataforma o ônibus sai?",
+    "options": [
+     "Da quatro",
+     "Da um",
+     "Da sete"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "En la oficina de turismo",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Empleado: Hola, bienvenida a Granada. ¿En qué la puedo ayudar?",
+    "Atendente: Olá, bem-vinda a Granada. Em que posso ajudar?"
+   ],
+   [
+    "Turista: Hola. ¿Tiene un mapa de la ciudad?",
+    "Turista: Olá. Tem um mapa da cidade?"
+   ],
+   [
+    "Empleado: Sí, aquí tiene. Es gratis.",
+    "Atendente: Sim, aqui está. É grátis."
+   ],
+   [
+    "Turista: Gracias. ¿Qué me recomienda visitar hoy?",
+    "Turista: Obrigada. O que o senhor recomenda visitar hoje?"
+   ],
+   [
+    "Empleado: La Alhambra, pero hay que comprar las entradas con antelación.",
+    "Atendente: A Alhambra, mas é preciso comprar os ingressos com antecedência."
+   ],
+   [
+    "Turista: Vaya, no tengo entradas. ¿Hay otra opción?",
+    "Turista: Puxa, não tenho ingressos. Tem outra opção?"
+   ],
+   [
+    "Empleado: Puede pasear por el Albaicín y ver el atardecer desde el mirador.",
+    "Atendente: Pode passear pelo Albaicín e ver o pôr do sol do mirante."
+   ],
+   [
+    "Turista: ¡Me parece perfecto! Muchas gracias.",
+    "Turista: Acho perfeito! Muito obrigada."
+   ]
+  ],
+  "words": [
+   [
+    "el mapa",
+    "o mapa"
+   ],
+   [
+    "con antelación",
+    "com antecedência"
+   ],
+   [
+    "el atardecer",
+    "o pôr do sol"
+   ],
+   [
+    "el mirador",
+    "o mirante"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quanto custa o mapa?",
+    "options": [
+     "É grátis",
+     "Dois euros",
+     "Cinco euros"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que a turista não vai à Alhambra hoje?",
+    "options": [
+     "Está fechada",
+     "Não tem ingressos",
+     "É muito cara"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que o atendente sugere?",
+    "options": [
+     "Ir à praia",
+     "Visitar um museu",
+     "Ver o pôr do sol do mirante"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "En el aeropuerto",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Empleada: Buenos días. Su pasaporte, por favor.",
+    "Atendente: Bom dia. Seu passaporte, por favor."
+   ],
+   [
+    "Gabriel: Aquí tiene. Voy a Ciudad de México.",
+    "Gabriel: Aqui está. Vou para a Cidade do México."
+   ],
+   [
+    "Empleada: ¿Va a facturar esta maleta?",
+    "Atendente: Vai despachar esta mala?"
+   ],
+   [
+    "Gabriel: Sí, esta grande. La pequeña la llevo conmigo.",
+    "Gabriel: Sim, esta grande. A pequena eu levo comigo."
+   ],
+   [
+    "Empleada: Pesa veintidós kilos. Está bien.",
+    "Atendente: Pesa vinte e dois quilos. Está bem."
+   ],
+   [
+    "Gabriel: ¿Puedo tener un asiento de pasillo?",
+    "Gabriel: Posso ter um assento no corredor?"
+   ],
+   [
+    "Empleada: Sí. El embarque es a las diez y diez por la puerta B12.",
+    "Atendente: Sim. O embarque é às dez e dez pelo portão B12."
+   ],
+   [
+    "Gabriel: Muchas gracias. ¡Hasta luego!",
+    "Gabriel: Muito obrigado. Até logo!"
+   ]
+  ],
+  "words": [
+   [
+    "facturar",
+    "despachar (bagagem)"
+   ],
+   [
+    "la maleta",
+    "a mala"
+   ],
+   [
+    "el asiento",
+    "o assento"
+   ],
+   [
+    "el embarque",
+    "o embarque"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Para onde Gabriel viaja?",
+    "options": [
+     "Cidade do México",
+     "Bogotá",
+     "Lima"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quanto pesa a mala grande?",
+    "options": [
+     "Doze quilos",
+     "Vinte e dois quilos",
+     "Trinta quilos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Por qual portão é o embarque?",
+    "options": [
+     "B10",
+     "A12",
+     "B12"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Cambiar dinero",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Cliente: Hola, quiero cambiar reales a pesos argentinos.",
+    "Cliente: Olá, quero trocar reais por pesos argentinos."
+   ],
+   [
+    "Empleado: Muy bien. ¿Cuánto quiere cambiar?",
+    "Atendente: Muito bem. Quanto quer trocar?"
+   ],
+   [
+    "Cliente: Quinientos reales. ¿A cuánto está el cambio hoy?",
+    "Cliente: Quinhentos reais. Quanto está o câmbio hoje?"
+   ],
+   [
+    "Empleado: Se lo calculo ahora. ¿Me deja su pasaporte?",
+    "Atendente: Calculo para o senhor agora. Pode me passar o passaporte?"
+   ],
+   [
+    "Cliente: Claro. ¿Cobran comisión?",
+    "Cliente: Claro. Vocês cobram comissão?"
+   ],
+   [
+    "Empleado: No, no cobramos comisión.",
+    "Atendente: Não, não cobramos comissão."
+   ],
+   [
+    "Cliente: Perfecto. ¿Me lo da en billetes pequeños, por favor?",
+    "Cliente: Perfeito. Pode me dar em notas pequenas, por favor?"
+   ],
+   [
+    "Empleado: Sin problema. Aquí tiene. Cuéntelo, por favor.",
+    "Atendente: Sem problema. Aqui está. Confira, por favor."
+   ]
+  ],
+  "words": [
+   [
+    "cambiar dinero",
+    "trocar dinheiro"
+   ],
+   [
+    "el cambio",
+    "o câmbio"
+   ],
+   [
+    "la comisión",
+    "a comissão, a taxa"
+   ],
+   [
+    "los billetes",
+    "as notas (dinheiro)"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantos reais o cliente quer trocar?",
+    "options": [
+     "Quinhentos",
+     "Cinquenta",
+     "Mil"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "A casa de câmbio cobra comissão?",
+    "options": [
+     "Sim, cinco por cento",
+     "Não",
+     "Só para estrangeiros"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como o cliente quer o dinheiro?",
+    "options": [
+     "Em moedas",
+     "Num cartão",
+     "Em notas pequenas"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Una habitación con ruido",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Recepcionista: Buenas noches. ¿Hay algún problema?",
+    "Recepcionista: Boa noite. Algum problema?"
+   ],
+   [
+    "Huésped: Sí. Mi habitación es la 305 y hay mucho ruido de la calle.",
+    "Hóspede: Sim. Meu quarto é o 305 e tem muito barulho da rua."
+   ],
+   [
+    "Recepcionista: Lo siento mucho. Esta noche hay una fiesta en la plaza.",
+    "Recepcionista: Sinto muito. Esta noite tem uma festa na praça."
+   ],
+   [
+    "Huésped: ¿Puedo cambiar de habitación? Mañana me levanto muy temprano.",
+    "Hóspede: Posso trocar de quarto? Amanhã acordo muito cedo."
+   ],
+   [
+    "Recepcionista: Tengo una libre en el quinto piso, que da al patio.",
+    "Recepcionista: Tenho um livre no quinto andar, que dá para o pátio."
+   ],
+   [
+    "Huésped: ¿Es más tranquila?",
+    "Hóspede: É mais tranquilo?"
+   ],
+   [
+    "Recepcionista: Sí, mucho más. Aquí tiene la llave de la 512.",
+    "Recepcionista: Sim, muito mais. Aqui está a chave do 512."
+   ],
+   [
+    "Huésped: Muchísimas gracias. Muy amable.",
+    "Hóspede: Muitíssimo obrigado. Muito gentil."
+   ]
+  ],
+  "words": [
+   [
+    "el ruido",
+    "o barulho"
+   ],
+   [
+    "el huésped",
+    "o hóspede"
+   ],
+   [
+    "levantarse temprano",
+    "acordar cedo"
+   ],
+   [
+    "dar al patio",
+    "ter vista para o pátio"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que há barulho?",
+    "options": [
+     "Tem uma festa na praça",
+     "Estão fazendo obras",
+     "O vizinho está ouvindo música"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que o hóspede quer trocar de quarto?",
+    "options": [
+     "O quarto está sujo",
+     "Vai acordar muito cedo",
+     "O quarto é pequeno"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é o novo quarto?",
+    "options": [
+     "305",
+     "315",
+     "512"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Un día de playa",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Sofía: ¡Qué calor! ¿Nos bañamos?",
+    "Sofía: Que calor! Vamos entrar na água?"
+   ],
+   [
+    "Hugo: Sí, pero primero ponte crema. El sol es muy fuerte.",
+    "Hugo: Sim, mas primeiro passe protetor. O sol está muito forte."
+   ],
+   [
+    "Sofía: Tienes razón. ¿Me pones crema en la espalda?",
+    "Sofía: Você tem razão. Passa protetor nas minhas costas?"
+   ],
+   [
+    "Hugo: Claro. Oye, ¿alquilamos una sombrilla?",
+    "Hugo: Claro. Escuta, vamos alugar um guarda-sol?"
+   ],
+   [
+    "Sofía: Sí, cuesta solo cinco euros todo el día.",
+    "Sofía: Sim, custa só cinco euros o dia todo."
+   ],
+   [
+    "Hugo: Mira, la bandera es amarilla. Hay que tener cuidado.",
+    "Hugo: Olha, a bandeira está amarela. É preciso ter cuidado."
+   ],
+   [
+    "Sofía: Vale, no vamos muy lejos. ¿Comemos en el chiringuito después?",
+    "Sofía: Tá bom, não vamos muito longe. Comemos no quiosque depois?"
+   ],
+   [
+    "Hugo: ¡Sí! Tienen unas sardinas buenísimas.",
+    "Hugo: Sim! Eles têm umas sardinhas ótimas."
+   ]
+  ],
+  "words": [
+   [
+    "bañarse",
+    "entrar na água, tomar banho de mar"
+   ],
+   [
+    "la crema (solar)",
+    "o protetor solar"
+   ],
+   [
+    "la sombrilla",
+    "o guarda-sol"
+   ],
+   [
+    "el chiringuito",
+    "o quiosque de praia"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que Hugo pede para Sofía fazer primeiro?",
+    "options": [
+     "Passar protetor",
+     "Comer alguma coisa",
+     "Alugar cadeiras"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quanto custa o guarda-sol?",
+    "options": [
+     "Dez euros por hora",
+     "Cinco euros o dia todo",
+     "É grátis"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "De que cor está a bandeira?",
+    "options": [
+     "Vermelha",
+     "Verde",
+     "Amarela"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Perdidos en el metro",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Turista: Perdone, ¿esta línea va al Museo del Prado?",
+    "Turista: Com licença, esta linha vai ao Museu do Prado?"
+   ],
+   [
+    "Señora: No, esta es la línea cinco. Tiene que ir en la línea uno.",
+    "Senhora: Não, esta é a linha cinco. Você precisa pegar a linha um."
+   ],
+   [
+    "Turista: ¿Y dónde cambio de línea?",
+    "Turista: E onde faço a baldeação?"
+   ],
+   [
+    "Señora: En la próxima estación, en Callao. Siga los carteles azules.",
+    "Senhora: Na próxima estação, em Callao. Siga as placas azuis."
+   ],
+   [
+    "Turista: ¿En qué parada me bajo?",
+    "Turista: Em qual parada eu desço?"
+   ],
+   [
+    "Señora: En Atocha. El museo está a cinco minutos andando.",
+    "Senhora: Em Atocha. O museu fica a cinco minutos a pé."
+   ],
+   [
+    "Turista: Muchas gracias. Es mi primer día aquí.",
+    "Turista: Muito obrigado. É meu primeiro dia aqui."
+   ],
+   [
+    "Señora: De nada. ¡Disfrute de la ciudad!",
+    "Senhora: De nada. Aproveite a cidade!"
+   ]
+  ],
+  "words": [
+   [
+    "la línea",
+    "a linha"
+   ],
+   [
+    "cambiar de línea",
+    "fazer baldeação"
+   ],
+   [
+    "el cartel",
+    "a placa"
+   ],
+   [
+    "bajarse",
+    "descer (do transporte)"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual linha o turista precisa pegar?",
+    "options": [
+     "A linha um",
+     "A linha cinco",
+     "A linha dois"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde ele faz a baldeação?",
+    "options": [
+     "Em Atocha",
+     "Em Callao",
+     "No Prado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Em qual parada ele desce?",
+    "options": [
+     "Callao",
+     "Sol",
+     "Atocha"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Llamar al trabajo",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Jefa: ¿Sí? Dime, Alberto.",
+    "Chefe: Sim? Pode falar, Alberto."
+   ],
+   [
+    "Alberto: Hola, Marta. Lo siento, hoy no puedo ir a la oficina.",
+    "Alberto: Oi, Marta. Desculpe, hoje não posso ir ao escritório."
+   ],
+   [
+    "Jefa: ¿Qué te pasa?",
+    "Chefe: O que houve?"
+   ],
+   [
+    "Alberto: Tengo fiebre y me duele mucho la garganta.",
+    "Alberto: Estou com febre e minha garganta dói muito."
+   ],
+   [
+    "Jefa: Vaya. Quédate en casa y descansa.",
+    "Chefe: Puxa. Fique em casa e descanse."
+   ],
+   [
+    "Alberto: Gracias. ¿Puede alguien ir a mi reunión de las diez?",
+    "Alberto: Obrigado. Alguém pode ir à minha reunião das dez?"
+   ],
+   [
+    "Jefa: Sí, va Carlos. Mándale tus notas por correo.",
+    "Chefe: Sim, o Carlos vai. Mande suas anotações por e-mail para ele."
+   ],
+   [
+    "Alberto: Ahora mismo se las mando. ¡Hasta mañana!",
+    "Alberto: Mando agora mesmo. Até amanhã!"
+   ]
+  ],
+  "words": [
+   [
+    "¿Qué te pasa?",
+    "O que houve com você?"
+   ],
+   [
+    "la fiebre",
+    "a febre"
+   ],
+   [
+    "la garganta",
+    "a garganta"
+   ],
+   [
+    "descansar",
+    "descansar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que Alberto não vai trabalhar?",
+    "options": [
+     "Está com febre e dor de garganta",
+     "O carro quebrou",
+     "Está de férias"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quem vai à reunião no lugar dele?",
+    "options": [
+     "Marta",
+     "Carlos",
+     "Ninguém"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que Alberto vai mandar por e-mail?",
+    "options": [
+     "Um atestado",
+     "Um relatório de vendas",
+     "Suas anotações"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "En la recepción",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Recepcionista: Buenos días. ¿Puedo ayudarle?",
+    "Recepcionista: Bom dia. Posso ajudar?"
+   ],
+   [
+    "Visitante: Sí, tengo una cita con la señora Ruiz a las nueve.",
+    "Visitante: Sim, tenho uma reunião com a senhora Ruiz às nove."
+   ],
+   [
+    "Recepcionista: ¿Su nombre, por favor?",
+    "Recepcionista: Seu nome, por favor?"
+   ],
+   [
+    "Visitante: Felipe Ortega, de la empresa Sol Verde.",
+    "Visitante: Felipe Ortega, da empresa Sol Verde."
+   ],
+   [
+    "Recepcionista: Un momento, la llamo... La señora Ruiz baja en cinco minutos.",
+    "Recepcionista: Um momento, vou ligar para ela... A senhora Ruiz desce em cinco minutos."
+   ],
+   [
+    "Visitante: Muy bien. ¿Dónde puedo esperar?",
+    "Visitante: Muito bem. Onde posso esperar?"
+   ],
+   [
+    "Recepcionista: Ahí, en el sofá. Aquí tiene su tarjeta de visitante.",
+    "Recepcionista: Ali, no sofá. Aqui está seu crachá de visitante."
+   ],
+   [
+    "Visitante: Gracias. ¿Hay wifi para invitados?",
+    "Visitante: Obrigado. Tem wi-fi para visitantes?"
+   ]
+  ],
+  "words": [
+   [
+    "la cita",
+    "o compromisso, a reunião marcada"
+   ],
+   [
+    "bajar",
+    "descer"
+   ],
+   [
+    "esperar",
+    "esperar"
+   ],
+   [
+    "la tarjeta de visitante",
+    "o crachá de visitante"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "A que horas é a reunião de Felipe?",
+    "options": [
+     "Às nove",
+     "Às dez",
+     "Às oito e meia"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "De que empresa é Felipe?",
+    "options": [
+     "Ruiz e Filhos",
+     "Sol Verde",
+     "Mar Azul"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Em quanto tempo a senhora Ruiz desce?",
+    "options": [
+     "Meia hora",
+     "Um minuto",
+     "Cinco minutos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Pedir ayuda a un compañero",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Inés: Perdona, Jorge, ¿tienes un minuto?",
+    "Inés: Desculpa, Jorge, você tem um minuto?"
+   ],
+   [
+    "Jorge: Sí, claro. ¿Qué necesitas?",
+    "Jorge: Sim, claro. Do que você precisa?"
+   ],
+   [
+    "Inés: No sé cómo imprimir en la impresora nueva.",
+    "Inés: Não sei como imprimir na impressora nova."
+   ],
+   [
+    "Jorge: Es fácil. Primero pones tu código aquí.",
+    "Jorge: É fácil. Primeiro você coloca seu código aqui."
+   ],
+   [
+    "Inés: ¿Qué código? No tengo ninguno.",
+    "Inés: Que código? Não tenho nenhum."
+   ],
+   [
+    "Jorge: Lo tienes en tu correo. Te lo mandó el informático ayer.",
+    "Jorge: Está no seu e-mail. O técnico de informática mandou ontem."
+   ],
+   [
+    "Inés: ¡Ah, sí, aquí está! Ya funciona. Muchas gracias.",
+    "Inés: Ah, sim, aqui está! Já funcionou. Muito obrigada."
+   ],
+   [
+    "Jorge: De nada. Para eso estamos.",
+    "Jorge: De nada. Estamos aqui para isso."
+   ]
+  ],
+  "words": [
+   [
+    "el compañero",
+    "o colega"
+   ],
+   [
+    "imprimir",
+    "imprimir"
+   ],
+   [
+    "la impresora",
+    "a impressora"
+   ],
+   [
+    "el informático",
+    "o técnico de informática"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual é o problema de Inés?",
+    "options": [
+     "Não sabe usar a impressora nova",
+     "O computador não liga",
+     "Esqueceu a senha do e-mail"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde estava o código?",
+    "options": [
+     "Na impressora",
+     "No e-mail dela",
+     "Com o chefe"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quem mandou o código?",
+    "options": [
+     "Jorge",
+     "A chefe",
+     "O técnico de informática"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Organizar una reunión",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Sara: Hola, Luis. Tenemos que hablar del proyecto nuevo.",
+    "Sara: Oi, Luis. Precisamos falar sobre o projeto novo."
+   ],
+   [
+    "Luis: Sí. ¿Cuándo te viene bien?",
+    "Luis: Sim. Quando fica bom para você?"
+   ],
+   [
+    "Sara: ¿El martes por la mañana?",
+    "Sara: Terça de manhã?"
+   ],
+   [
+    "Luis: El martes no puedo, estoy con un cliente. ¿El miércoles?",
+    "Luis: Terça não posso, estou com um cliente. Quarta?"
+   ],
+   [
+    "Sara: El miércoles a las once, ¿vale?",
+    "Sara: Quarta às onze, pode ser?"
+   ],
+   [
+    "Luis: Perfecto. ¿En tu despacho o en la sala grande?",
+    "Luis: Perfeito. Na sua sala ou na sala grande?"
+   ],
+   [
+    "Sara: En la sala grande. Viene también el equipo de ventas.",
+    "Sara: Na sala grande. A equipe de vendas também vem."
+   ],
+   [
+    "Luis: Muy bien. Te mando la invitación ahora.",
+    "Luis: Muito bem. Mando o convite agora."
+   ]
+  ],
+  "words": [
+   [
+    "¿Cuándo te viene bien?",
+    "Quando fica bom para você?"
+   ],
+   [
+    "el despacho",
+    "a sala (escritório individual)"
+   ],
+   [
+    "el equipo",
+    "a equipe"
+   ],
+   [
+    "la invitación",
+    "o convite"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que Luis não pode na terça?",
+    "options": [
+     "Está com um cliente",
+     "Está de férias",
+     "Tem médico"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quando será a reunião?",
+    "options": [
+     "Terça de manhã",
+     "Quarta às onze",
+     "Quinta às onze"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Por que a reunião será na sala grande?",
+    "options": [
+     "A sala de Sara está em obras",
+     "Tem projetor",
+     "A equipe de vendas também vem"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Pedir un día libre",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Pablo: Jefe, ¿puedo hablar un momento con usted?",
+    "Pablo: Chefe, posso falar um momento com o senhor?"
+   ],
+   [
+    "Jefe: Claro, Pablo. Siéntate.",
+    "Chefe: Claro, Pablo. Sente-se."
+   ],
+   [
+    "Pablo: El viernes que viene se casa mi hermana. ¿Puedo tener el día libre?",
+    "Pablo: Na sexta que vem minha irmã vai se casar. Posso tirar o dia de folga?"
+   ],
+   [
+    "Jefe: ¡Enhorabuena! ¿Tienes trabajo pendiente para ese día?",
+    "Chefe: Parabéns! Você tem trabalho pendente para esse dia?"
+   ],
+   [
+    "Pablo: Sí, el informe mensual. Pero lo termino el jueves.",
+    "Pablo: Sim, o relatório mensal. Mas termino na quinta."
+   ],
+   [
+    "Jefe: Entonces no hay problema. Avisa también a Recursos Humanos.",
+    "Chefe: Então não tem problema. Avise também o RH."
+   ],
+   [
+    "Pablo: Ahora les escribo. Muchas gracias.",
+    "Pablo: Escrevo para eles agora. Muito obrigado."
+   ],
+   [
+    "Jefe: De nada. ¡Que lo paséis muy bien en la boda!",
+    "Chefe: De nada. Aproveitem bastante o casamento!"
+   ]
+  ],
+  "words": [
+   [
+    "el día libre",
+    "o dia de folga"
+   ],
+   [
+    "casarse",
+    "casar-se"
+   ],
+   [
+    "¡Enhorabuena!",
+    "Parabéns!"
+   ],
+   [
+    "la boda",
+    "o casamento"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que Pablo quer folga?",
+    "options": [
+     "A irmã vai se casar",
+     "Vai viajar",
+     "Tem consulta médica"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quando Pablo termina o relatório?",
+    "options": [
+     "Na sexta",
+     "Na quinta",
+     "Na segunda"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quem mais Pablo precisa avisar?",
+    "options": [
+     "Os clientes",
+     "A irmã",
+     "O RH"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "¿Vamos al concierto?",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Daniela: ¿Sabes que Manu toca en el parque el sábado?",
+    "Daniela: Você sabia que o Manu toca no parque no sábado?"
+   ],
+   [
+    "Iván: ¿En serio? ¿Cuánto cuestan las entradas?",
+    "Iván: Sério? Quanto custam os ingressos?"
+   ],
+   [
+    "Daniela: Es gratis. Es la fiesta de la ciudad.",
+    "Daniela: É grátis. É a festa da cidade."
+   ],
+   [
+    "Iván: ¡Genial! ¿A qué hora empieza?",
+    "Iván: Ótimo! A que horas começa?"
+   ],
+   [
+    "Daniela: A las ocho, pero hay que llegar pronto. Va mucha gente.",
+    "Daniela: Às oito, mas tem que chegar cedo. Vai muita gente."
+   ],
+   [
+    "Iván: Vale. ¿Quedamos a las siete en la fuente?",
+    "Iván: Tá bom. A gente se encontra às sete na fonte?"
+   ],
+   [
+    "Daniela: Sí. Y llevo algo para comer, que el concierto es largo.",
+    "Daniela: Sim. E levo algo para comer, porque o show é longo."
+   ],
+   [
+    "Iván: Yo llevo el agua. ¡Qué ganas!",
+    "Iván: Eu levo a água. Que vontade!"
+   ]
+  ],
+  "words": [
+   [
+    "tocar",
+    "tocar (música)"
+   ],
+   [
+    "en serio",
+    "sério, de verdade"
+   ],
+   [
+    "pronto",
+    "cedo (na Espanha)"
+   ],
+   [
+    "¡Qué ganas!",
+    "Que vontade! / Mal posso esperar!"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quanto custa o show?",
+    "options": [
+     "É grátis",
+     "Vinte euros",
+     "Dez euros"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde eles vão se encontrar?",
+    "options": [
+     "Na entrada do parque",
+     "Na fonte",
+     "Na casa de Daniela"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que Iván vai levar?",
+    "options": [
+     "A comida",
+     "Cadeiras",
+     "A água"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Cocinamos juntos",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Valeria: Hoy te enseño a hacer guacamole. Es muy fácil.",
+    "Valeria: Hoje vou te ensinar a fazer guacamole. É muito fácil."
+   ],
+   [
+    "Leo: ¡Genial! ¿Qué necesitamos?",
+    "Leo: Ótimo! Do que a gente precisa?"
+   ],
+   [
+    "Valeria: Dos aguacates maduros, un tomate, cebolla, cilantro y un limón.",
+    "Valeria: Dois abacates maduros, um tomate, cebola, coentro e um limão."
+   ],
+   [
+    "Leo: ¿Corto la cebolla?",
+    "Leo: Corto a cebola?"
+   ],
+   [
+    "Valeria: Sí, muy pequeñita. Yo aplasto los aguacates con un tenedor.",
+    "Valeria: Sim, bem pequenininha. Eu amasso os abacates com um garfo."
+   ],
+   [
+    "Leo: Ya está. ¿Y ahora?",
+    "Leo: Pronto. E agora?"
+   ],
+   [
+    "Valeria: Lo mezclamos todo con el zumo del limón y un poco de sal.",
+    "Valeria: Misturamos tudo com o suco do limão e um pouco de sal."
+   ],
+   [
+    "Leo: ¡Mmm, está buenísimo! ¿Lo comemos con totopos?",
+    "Leo: Hum, está uma delícia! Vamos comer com tortilhas de milho fritas?"
+   ]
+  ],
+  "words": [
+   [
+    "el aguacate",
+    "o abacate"
+   ],
+   [
+    "maduro",
+    "maduro"
+   ],
+   [
+    "aplastar",
+    "amassar"
+   ],
+   [
+    "mezclar",
+    "misturar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantos abacates eles usam?",
+    "options": [
+     "Dois",
+     "Um",
+     "Quatro"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que Leo faz?",
+    "options": [
+     "Amassa os abacates",
+     "Corta a cebola",
+     "Espreme o limão"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Com o que Valeria amassa os abacates?",
+    "options": [
+     "Com uma colher",
+     "No liquidificador",
+     "Com um garfo"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "La fiesta del pueblo",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Rosa: ¿Vienes este fin de semana a la fiesta de mi pueblo?",
+    "Rosa: Você vem neste fim de semana à festa da minha cidadezinha?"
+   ],
+   [
+    "Marina: ¿Qué se hace en la fiesta?",
+    "Marina: O que se faz na festa?"
+   ],
+   [
+    "Rosa: Hay música en la plaza, baile y una comida para todo el pueblo.",
+    "Rosa: Tem música na praça, dança e um almoço para a cidade toda."
+   ],
+   [
+    "Marina: ¡Qué bonito! ¿Y dónde duermo?",
+    "Marina: Que bonito! E onde eu durmo?"
+   ],
+   [
+    "Rosa: En casa de mis abuelos. Tienen una habitación libre.",
+    "Rosa: Na casa dos meus avós. Eles têm um quarto livre."
+   ],
+   [
+    "Marina: ¿Cómo llego? No tengo coche.",
+    "Marina: Como eu chego? Não tenho carro."
+   ],
+   [
+    "Rosa: Hay un autobús el sábado a las diez. Yo te espero en la parada.",
+    "Rosa: Tem um ônibus no sábado às dez. Eu te espero na parada."
+   ],
+   [
+    "Marina: ¡Perfecto! Allí estaré.",
+    "Marina: Perfeito! Estarei lá."
+   ]
+  ],
+  "words": [
+   [
+    "el pueblo",
+    "a cidadezinha, o povoado"
+   ],
+   [
+    "la plaza",
+    "a praça"
+   ],
+   [
+    "el baile",
+    "a dança, o baile"
+   ],
+   [
+    "la parada",
+    "o ponto (de ônibus)"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde Marina vai dormir?",
+    "options": [
+     "Na casa dos avós de Rosa",
+     "Num hotel",
+     "Na casa de Rosa"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como Marina vai chegar?",
+    "options": [
+     "De carro",
+     "De ônibus",
+     "De trem"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quando sai o ônibus?",
+    "options": [
+     "Sexta à noite",
+     "Domingo de manhã",
+     "Sábado às dez"
+    ],
+    "correct": 2
+   }
+  ]
+ }
+]
