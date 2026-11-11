@@ -1,0 +1,379 @@
+// A1 — unidades 6 a 10
+
+# a1u6 | Na cidade | Lugares da cidade, transporte e como pedir e entender direções.
+
+## Lugares da cidade | "Farmacia" é farmácia e "librería" é livraria (não biblioteca, que é "biblioteca").
+v banco = banco; farmacia = farmácia; supermercado = supermercado; hospital = hospital; parque = parque; iglesia = igreja; librería = livraria; estación = estação
+f Necesito ir a la [farmacia]. = Preciso ir à farmácia. ~ iglesia, librería
+f El hospital está [cerca] de aquí. = O hospital fica perto daqui. ~ caro, alto
+b Hay un parque muy bonito. = Tem um parque muito bonito.
+b La librería está cerrada. = A livraria está fechada.
+l La estación está en el centro. = A estação fica no centro. ~ O banco fica no centro. | A estação fica longe do centro.
+q Você precisa sacar dinheiro. Para onde vai? = Voy al banco. | Voy a la iglesia. | Voy al parque.
+
+## Direções | "Todo recto" é sempre em frente. "Gire a la derecha" é vire à direita e "a la izquierda", à esquerda. "La esquina" é a esquina.
+v todo recto = sempre em frente; a la derecha = à direita; a la izquierda = à esquerda; la esquina = a esquina; la calle = a rua; cruzar = atravessar; seguir = seguir
+f Siga todo [recto] y gire a la derecha. = Siga em frente e vire à direita. ~ cerca, esquina
+f El banco está en la [esquina]. = O banco fica na esquina. ~ derecha, recto
+b Cruce la calle, por favor. = Atravesse a rua, por favor.
+b La farmacia está a la izquierda. = A farmácia fica à esquerda.
+l Gire a la izquierda en la segunda calle. = Vire à esquerda na segunda rua. ~ Vire à direita na segunda rua. | Siga em frente até a segunda rua.
+q Você está perdido e quer saber como chegar ao museu. O que pergunta? = Perdone, ¿cómo llego al museo? | ¿El museo es bonito? | ¿Hay un museo en mi casa?
+
+## Transporte | Com transporte se usa "en": "en autobús", "en metro", "en coche". Mas a pé é "a pie" ou "andando".
+v autobús = ônibus; metro = metrô; tren = trem; coche = carro; taxi = táxi; bicicleta = bicicleta; a pie = a pé; billete = passagem, bilhete
+f Voy al trabajo en [metro]. = Vou ao trabalho de metrô. ~ pie, calle
+f Un [billete] para Toledo, por favor. = Uma passagem para Toledo, por favor. ~ coche, tren
+b Mi hijo va al colegio a pie. = Meu filho vai à escola a pé.
+b El autobús llega a las ocho. = O ônibus chega às oito.
+l Prefiero ir en bicicleta. = Prefiro ir de bicicleta. ~ Prefiro ir de táxi. | Prefiro ir a pé.
+q Você quer saber qual ônibus vai para o centro. O que pergunta? = ¿Qué autobús va al centro? | ¿Dónde está mi coche? | ¿Cuánto cuesta el taxi?
+
+## Perto e longe | "Cerca" é perto e "lejos" é longe. "¿Está lejos?" é uma pergunta muito útil. "A cinco minutos" indica a distância em tempo.
+v cerca = perto; lejos = longe; a cinco minutos = a cinco minutos; enfrente de = em frente a; plaza = praça; museo = museu; ayuntamiento = prefeitura
+f El museo está [lejos] de aquí. = O museu fica longe daqui. ~ caro, recto
+f La plaza está a diez [minutos] andando. = A praça fica a dez minutos a pé. ~ calles, horas
+b ¿Está cerca la estación? = A estação fica perto?
+b El banco está enfrente de la iglesia. = O banco fica em frente à igreja.
+l El ayuntamiento está en la plaza mayor. = A prefeitura fica na praça principal. ~ O museu fica na praça principal. | A prefeitura fica perto do parque.
+q Você quer saber se dá para ir a pé até o parque. O que pergunta? = ¿Está lejos el parque? | ¿Es bonito el parque? | ¿Dónde vives?
+
+## Pedir ajuda na rua | Para abordar alguém na rua, comece com "Perdone" (formal) ou "Perdona" (informal). Para agradecer: "Muchas gracias, muy amable".
+v perdone = com licença (formal); perdido = perdido; mapa = mapa; buscar = procurar; dirección = endereço; preguntar = perguntar; ayudar = ajudar
+f Estoy [perdido]. ¿Me puede ayudar? = Estou perdido. O senhor pode me ajudar? ~ cerca, lejos
+f [Busco] la calle Mayor. = Procuro a rua Mayor. ~ Busca, Buscas
+b ¿Tiene un mapa de la ciudad? = O senhor tem um mapa da cidade?
+b Esta es la dirección del hotel. = Este é o endereço do hotel.
+l No soy de aquí, lo siento. = Não sou daqui, desculpe. ~ Não estou perdido, obrigado. | Sou daqui, posso ajudar.
+q Alguém explicou o caminho para você. O que diz no final? = Muchas gracias, muy amable. | Estoy perdido. | No soy de aquí.
+
+### frases
+fr Perdone, ¿hay una farmacia cerca de aquí? = Com licença, tem uma farmácia perto daqui?
+fr Siga todo recto y gire a la izquierda en el semáforo. = Siga em frente e vire à esquerda no semáforo.
+fr El museo está a quince minutos andando. = O museu fica a quinze minutos a pé.
+fr Voy al trabajo en metro porque es más rápido. = Vou ao trabalho de metrô porque é mais rápido.
+fr El banco está enfrente del supermercado. = O banco fica em frente ao supermercado.
+fr ¿Qué [autobús] va a la estación de tren? = Que ônibus vai para a estação de trem? ~ billete, coche
+fr Estoy perdido. ¿Me puede ayudar, por favor? = Estou perdido. O senhor pode me ajudar, por favor?
+fr La plaza mayor está en el centro histórico. = A praça principal fica no centro histórico.
+fr Cruce la calle y la iglesia está a la [derecha]. = Atravesse a rua e a igreja fica à direita. ~ cerca, recto
+fr Lo siento, no soy de aquí. = Desculpe, não sou daqui.
+
+### texto | Como chego à estação?
+t Turista | Perdone, señora. ¿Cómo llego a la estación de tren? = Com licença, senhora. Como chego à estação de trem?
+t Señora | Está un poco lejos. ¿Va a pie? = Fica um pouco longe. O senhor vai a pé?
+t Turista | Sí, no tengo coche. = Sim, não tenho carro.
+t Señora | Entonces siga todo recto por esta calle. = Então siga em frente por esta rua.
+t Señora | En la plaza, gire a la derecha. = Na praça, vire à direita.
+t Turista | ¿A la derecha en la plaza? = À direita na praça?
+t Señora | Sí. Luego cruce el puente y la estación está enfrente. = Sim. Depois atravesse a ponte e a estação fica em frente.
+t Turista | ¿Cuánto tiempo es andando? = Quanto tempo leva a pé?
+t Señora | Unos veinte minutos. También hay un autobús, el número cinco. = Uns vinte minutos. Também tem um ônibus, o número cinco.
+t Turista | Prefiero caminar. ¡Muchas gracias, muy amable! = Prefiro caminhar. Muito obrigado, muito gentil!
+tq Para onde o turista quer ir? = Para a estação de trem | Para a praça | Para o ponto de ônibus
+tq O que ele deve fazer na praça? = Virar à direita | Virar à esquerda | Pegar o ônibus
+tq Quanto tempo leva a pé? = Uns vinte minutos | Cinco minutos | Uma hora
+tq Como o turista decide ir? = A pé | De ônibus | De táxi
+
+# a1u7 | Compras | Roupas, cores e preços; pedir tamanho e pagar.
+
+## Roupas | Em espanhol, "camisa" é a camisa de botão e "camiseta" é a camiseta. "Zapatos" são sapatos e "zapatillas", tênis.
+v camisa = camisa; camiseta = camiseta; pantalones = calça; falda = saia; vestido = vestido; zapatos = sapatos; zapatillas = tênis; chaqueta = jaqueta
+f Busco unos [pantalones] negros. = Procuro uma calça preta. ~ falda, camisa
+f Me gusta este [vestido]. = Gosto deste vestido. ~ zapatos, pantalones
+b Necesito zapatillas nuevas. = Preciso de tênis novos.
+b La chaqueta es muy bonita. = A jaqueta é muito bonita.
+l Hoy llevo una camiseta y una falda. = Hoje estou usando uma camiseta e uma saia. ~ Hoje estou usando uma camisa e uma calça. | Hoje compro um vestido e uma saia.
+q Você quer comprar algo para correr. O que pede? = Unas zapatillas, por favor. | Un vestido, por favor. | Una falda, por favor.
+
+## Cores | As cores concordam com a roupa: "un vestido rojo", "una falda roja". Algumas não mudam: "verde", "azul", "gris", "naranja".
+v rojo = vermelho; azul = azul; verde = verde; amarillo = amarelo; negro = preto; blanco = branco; gris = cinza; rosa = rosa
+f Quiero la camisa [blanca]. = Quero a camisa branca. ~ blanco, blancos
+f Mis zapatos son [negros]. = Meus sapatos são pretos. ~ negro, negra
+b ¿Lo tiene en azul? = O senhor tem em azul?
+b El cielo está gris hoy. = O céu está cinza hoje.
+l Prefiero el vestido amarillo. = Prefiro o vestido amarelo. ~ Prefiro o vestido vermelho. | Prefiro a saia amarela.
+q Você gostou da camiseta, mas quer em outra cor. O que pergunta? = ¿La tiene en otro color? | ¿Cuánto cuesta? | ¿Dónde está la caja?
+
+## Quanto custa? | "¿Cuánto cuesta?" para uma coisa e "¿cuánto cuestan?" para várias. "Barato" é barato e "caro" é caro.
+v cuánto cuesta = quanto custa; barato = barato; caro = caro; euros = euros; cien = cem; cincuenta = cinquenta; rebajas = liquidação; precio = preço
+f ¿Cuánto [cuestan] estos zapatos? = Quanto custam estes sapatos? ~ cuesta, cuesto
+f Es muy [caro] para mí. = É muito caro para mim. ~ alto, rojo
+b Esta camiseta es barata. = Esta camiseta é barata.
+b Ahora hay rebajas. = Agora está em liquidação.
+l Cuesta cincuenta euros. = Custa cinquenta euros. ~ Custa quinze euros. | Custa cento e cinquenta euros.
+q O preço é alto demais. O que você diz? = Es un poco caro. | Es muy barato. | Me lo llevo.
+
+## No provador | "Talla" é o tamanho da roupa e "número", o do sapato. "¿Me lo puedo probar?" é posso experimentar? "Me queda bien" é ficou bem em mim.
+v talla = tamanho (roupa); número = número (sapato); probador = provador; probarse = experimentar; me queda grande = fica grande; me queda bien = fica bem; pequeño = pequeno
+f ¿Me lo puedo [probar]? = Posso experimentar? ~ llevar, pagar
+f Esta falda me queda [grande]. = Esta saia fica grande em mim. ~ caro, gris
+b ¿Qué talla usa? = Que tamanho o senhor usa?
+b Uso el número treinta y nueve. = Uso o número trinta e nove.
+l Los probadores están al fondo. = Os provadores ficam no fundo. ~ Os provadores ficam na entrada. | O caixa fica no fundo.
+q A calça ficou pequena. O que você pede? = ¿Tiene una talla más grande? | ¿Tiene una talla más pequeña? | Me queda bien.
+
+## Pagar | "Me lo llevo" é vou levar. "En efectivo" é em dinheiro e "con tarjeta", com cartão. "La caja" é o caixa.
+v pagar = pagar; tarjeta = cartão; en efectivo = em dinheiro; la caja = o caixa; me lo llevo = vou levar; bolsa = sacola; tique = nota, recibo
+f ¿Puedo pagar con [tarjeta]? = Posso pagar com cartão? ~ bolsa, caja
+f Me lo [llevo]. = Vou levar. ~ pago, quedo
+b Pago en efectivo. = Pago em dinheiro.
+b ¿Necesita una bolsa? = Precisa de uma sacola?
+l La caja está a la derecha. = O caixa fica à direita. ~ O provador fica à direita. | O caixa fica à esquerda.
+q Você decidiu comprar o casaco. O que diz ao vendedor? = Me lo llevo. | Es muy caro. | Solo estoy mirando.
+
+### frases
+fr Buenos días, busco una camisa blanca de manga larga. = Bom dia, procuro uma camisa branca de manga comprida.
+fr ¿Lo tiene en una talla más pequeña? = O senhor tem num tamanho menor?
+fr Estos zapatos son bonitos, pero son muy caros. = Estes sapatos são bonitos, mas são muito caros.
+fr ¿Dónde están los probadores? Están al fondo a la izquierda. = Onde ficam os provadores? Ficam no fundo, à esquerda.
+fr En rebajas todo cuesta la mitad. = Na liquidação tudo custa a metade.
+fr La chaqueta me queda bien. [Me] la llevo. = A jaqueta fica bem em mim. Vou levar. ~ Te, Le
+fr ¿Aceptan tarjeta o solo efectivo? = Vocês aceitam cartão ou só dinheiro?
+fr Mi color favorito es el azul. = Minha cor favorita é o azul.
+fr Solo estoy mirando, gracias. = Só estou olhando, obrigado.
+fr Son treinta euros. ¿Necesita [bolsa]? = São trinta euros. Precisa de sacola? ~ talla, caja
+
+### texto | Na loja de roupas
+t Vendedora | Hola, ¿puedo ayudarte? = Oi, posso ajudar?
+t Marta | Sí, busco un vestido para una boda. = Sim, procuro um vestido para um casamento.
+t Vendedora | ¿Qué color prefieres? = Que cor você prefere?
+t Marta | Azul o verde. Nada muy oscuro. = Azul ou verde. Nada muito escuro.
+t Vendedora | Tenemos este azul. Es muy elegante. ¿Qué talla usas? = Temos este azul. É muito elegante. Que tamanho você usa?
+t Marta | La treinta y ocho. ¿Me lo puedo probar? = Trinta e oito. Posso experimentar?
+t Vendedora | Claro, el probador está ahí. = Claro, o provador fica ali.
+t Marta | Me queda un poco grande. ¿Tiene la treinta y seis? = Ficou um pouco grande. Tem o trinta e seis?
+t Vendedora | Sí, aquí está. = Sim, aqui está.
+t Marta | ¡Perfecto! ¿Cuánto cuesta? = Perfeito! Quanto custa?
+t Vendedora | Noventa euros, pero hoy tiene un veinte por ciento de descuento. = Noventa euros, mas hoje tem vinte por cento de desconto.
+t Marta | ¡Genial! Me lo llevo. Pago con tarjeta. = Ótimo! Vou levar. Pago com cartão.
+tq Para que Marta precisa do vestido? = Para um casamento | Para o trabalho | Para uma viagem
+tq Que cores Marta prefere? = Azul ou verde | Preto ou cinza | Vermelho ou rosa
+tq Qual tamanho ficou bom? = Trinta e seis | Trinta e oito | Quarenta
+tq Como Marta paga? = Com cartão | Em dinheiro | Ainda não pagou
+
+# a1u8 | Tempo e clima | Falar do tempo, das estações, dos meses e das datas.
+
+## Como está o tempo? | Muitas expressões de clima usam "hace": "hace calor", "hace frío", "hace sol", "hace viento". Para chuva e neve: "llueve", "nieva".
+v hace calor = está calor; hace frío = está frio; hace sol = está sol; hace viento = está ventando; llueve = chove; nieva = neva; nublado = nublado
+f Hoy [hace] mucho calor. = Hoje está muito calor. ~ es, está
+f En invierno [nieva] en la montaña. = No inverno neva na montanha. ~ hace, sol
+b Está nublado esta mañana. = Está nublado esta manhã.
+b ¿Qué tiempo hace hoy? = Como está o tempo hoje?
+l Hace sol pero hace viento. = Está sol, mas está ventando. ~ Está nublado e chovendo. | Está sol e muito calor.
+q Está chovendo e você vai sair. O que pega? = El paraguas. | Las gafas de sol. | El bañador.
+
+## As estações | As estações: primavera, verano (verão), otoño (outono) e invierno. Lembre: no hemisfério sul, dezembro é verão!
+v primavera = primavera; verano = verão; otoño = outono; invierno = inverno; estación = estação do ano; playa = praia; nieve = neve
+f En [verano] vamos a la playa. = No verão vamos à praia. ~ invierno, otoño
+f Mi estación favorita es el [otoño]. = Minha estação favorita é o outono. ~ nieve, playa
+b En invierno hace mucho frío. = No inverno faz muito frio.
+b En primavera hay muchas flores. = Na primavera tem muitas flores.
+l En Argentina diciembre es verano. = Na Argentina dezembro é verão. ~ Na Argentina dezembro é inverno. | Na Espanha dezembro é verão.
+q Alguém pergunta sua estação favorita e você ama a praia. O que diz? = Me encanta el verano. | Me encanta el invierno. | Me encanta la nieve.
+
+## Meses e datas | Os meses também se escrevem com minúscula: enero, febrero, marzo... Para a data: "Hoy es el cinco de mayo".
+v enero = janeiro; febrero = fevereiro; marzo = março; abril = abril; mayo = maio; junio = junho; julio = julho; agosto = agosto
+f Mi cumpleaños es en [marzo]. = Meu aniversário é em março. ~ martes, mañana
+f Hoy es el diez [de] abril. = Hoje é dez de abril. ~ en, a
+b Las vacaciones son en agosto. = As férias são em agosto.
+b ¿Qué fecha es hoy? = Que dia é hoje?
+l Nací el veinte de julio. = Nasci em vinte de julho. ~ Nasci em vinte de junho. | Nasci em dez de julho.
+q Você quer saber quando é o aniversário de alguém. O que pergunta? = ¿Cuándo es tu cumpleaños? | ¿Cuántos años tienes? | ¿Qué hora es?
+
+## Roupa para o tempo | "Llevar" é usar (roupa) e também levar. "Abrigo" é o casaco grosso; "bufanda" é cachecol e "gorro", gorro.
+v abrigo = casaco; bufanda = cachecol; gorro = gorro; paraguas = guarda-chuva; gafas de sol = óculos de sol; bañador = roupa de banho; llevar = usar, levar
+f Hace frío. Lleva el [abrigo]. = Está frio. Leve o casaco. ~ bañador, playa
+f No olvides el [paraguas]. = Não esqueça o guarda-chuva. ~ verano, calor
+b Necesito unas gafas de sol. = Preciso de óculos de sol.
+b En la playa llevo bañador. = Na praia uso roupa de banho.
+l Hoy llevo bufanda y gorro. = Hoje estou usando cachecol e gorro. ~ Hoje estou usando óculos de sol. | Hoje não preciso de casaco.
+q Está muito frio e você vai sair. O que diz para o seu filho? = Ponte el abrigo. | Ponte el bañador. | Lleva las gafas de sol.
+
+## Vai chover? | Para planos e previsões simples, use "ir a" + verbo: "va a llover" (vai chover), "voy a salir" (vou sair).
+v va a llover = vai chover; mañana = amanhã; temperatura = temperatura; grados = graus; tormenta = tempestade; previsión = previsão; fin de semana = fim de semana
+f Mañana [va] a llover. = Amanhã vai chover. ~ voy, hace
+f Hay treinta [grados]. = Está fazendo trinta graus. ~ años, horas
+b Va a hacer frío esta noche. = Vai fazer frio esta noite.
+b Hay tormenta en el norte. = Tem tempestade no norte.
+l Este fin de semana va a hacer sol. = Neste fim de semana vai fazer sol. ~ Neste fim de semana vai chover. | Hoje vai fazer sol.
+q Você quer saber a previsão para amanhã. O que pergunta? = ¿Qué tiempo va a hacer mañana? | ¿Qué hora es mañana? | ¿Hace calor ahora?
+
+### frases
+fr Hoy hace mucho calor: estamos a treinta y cinco grados. = Hoje está muito calor: estamos com trinta e cinco graus.
+fr En mi ciudad llueve mucho en otoño. = Na minha cidade chove muito no outono.
+fr Mañana va a hacer sol, ¿vamos a la playa? = Amanhã vai fazer sol, vamos à praia?
+fr En invierno siempre llevo abrigo y bufanda. = No inverno sempre uso casaco e cachecol.
+fr Mi cumpleaños es el doce de octubre. = Meu aniversário é em doze de outubro.
+fr ¿Qué tiempo hace en tu país en [diciembre]? = Como é o tempo no seu país em dezembro? ~ domingo, mañana
+fr Está nublado. Creo que va a llover. = Está nublado. Acho que vai chover.
+fr La primavera es mi estación favorita. = A primavera é minha estação favorita.
+fr En la montaña nieva [mucho] en enero. = Na montanha neva muito em janeiro. ~ muy, poca
+fr No olvides el paraguas, hay tormenta. = Não esqueça o guarda-chuva, tem tempestade.
+
+### texto | Planos para o fim de semana
+t Lucas | ¿Qué hacemos este fin de semana? = O que fazemos neste fim de semana?
+t Elena | Podemos ir a la montaña. = Podemos ir à montanha.
+t Lucas | ¿Qué tiempo va a hacer? = Como vai estar o tempo?
+t Elena | El sábado va a hacer sol, pero el domingo va a llover. = No sábado vai fazer sol, mas no domingo vai chover.
+t Lucas | Entonces vamos el sábado. ¿Hace frío allí? = Então vamos no sábado. Faz frio lá?
+t Elena | Sí, por la mañana hay unos cinco grados. = Sim, de manhã faz uns cinco graus.
+t Lucas | ¡Qué frío! Llevo el abrigo y el gorro. = Que frio! Levo o casaco e o gorro.
+t Elena | Y las gafas de sol. Con nieve, el sol es muy fuerte. = E os óculos de sol. Com neve, o sol é muito forte.
+t Lucas | ¿Hay nieve? ¡Qué bien! = Tem neve? Que legal!
+t Elena | Sí, en marzo todavía hay nieve arriba. = Sim, em março ainda tem neve lá em cima.
+tq Para onde eles vão? = Para a montanha | Para a praia | Para o parque
+tq Como vai estar o tempo no domingo? = Vai chover | Vai fazer sol | Vai nevar
+tq Quantos graus faz de manhã? = Uns cinco | Uns quinze | Zero
+tq Por que Elena sugere óculos de sol? = Com neve o sol é forte | Vai fazer calor | Lucas esqueceu os dele
+
+# a1u9 | Tempo livre | Hobbies, esportes, convites e planos para o fim de semana.
+
+## Hobbies | "Me gusta" + verbo: "me gusta leer", "me gusta cocinar". O verbo fica no infinitivo.
+v leer = ler; cocinar = cozinhar; bailar = dançar; cantar = cantar; pintar = pintar; viajar = viajar; tiempo libre = tempo livre
+f Me gusta [leer] novelas. = Gosto de ler romances. ~ leo, lee
+f En mi tiempo [libre] pinto. = No meu tempo livre eu pinto. ~ largo, solo
+b Me encanta bailar salsa. = Adoro dançar salsa.
+b ¿Qué haces en tu tiempo libre? = O que você faz no seu tempo livre?
+l A mi hermana le gusta cantar. = Minha irmã gosta de cantar. ~ Minha irmã gosta de dançar. | Eu gosto de cantar.
+q Alguém pergunta seu hobby e você adora viajar. O que responde? = Me encanta viajar. | Me encanta cocinar. | No me gusta viajar.
+
+## Esportes | "Jugar al fútbol" para jogos com bola; "hacer" ou "practicar" para outros: "hago yoga", "practico natación".
+v jugar = jogar; fútbol = futebol; baloncesto = basquete; nadar = nadar; correr = correr; equipo = time; partido = partida, jogo
+f Los domingos [juego] al fútbol. = Aos domingos jogo futebol. ~ hago, nado
+f Mi equipo gana el [partido]. = Meu time ganha o jogo. ~ equipo, fútbol
+b Nado dos veces por semana. = Nado duas vezes por semana.
+b ¿Juegas al baloncesto? = Você joga basquete?
+l Corro en el parque por la mañana. = Corro no parque de manhã. ~ Corro na praia à tarde. | Nado no parque de manhã.
+q Você quer saber se seu colega pratica esporte. O que pergunta? = ¿Haces algún deporte? | ¿Tienes equipo de trabajo? | ¿Te gusta leer?
+
+## Convites | Para convidar: "¿Quieres...?" ou "¿Te apetece...?". Para aceitar: "¡Claro!", "¡Vale!". Para recusar com educação: "Lo siento, no puedo".
+v quieres = você quer; te apetece = você está a fim de; vale = combinado; claro = claro; no puedo = não posso; otro día = outro dia; quedar = combinar de se encontrar
+f ¿[Quieres] ir al cine esta noche? = Você quer ir ao cinema hoje à noite? ~ Quiero, Puedo
+f Lo siento, no [puedo]. Tengo que trabajar. = Desculpe, não posso. Tenho que trabalhar. ~ quiero, puedes
+b ¿Quedamos a las siete? = Nos encontramos às sete?
+b Vale, nos vemos allí. = Combinado, nos vemos lá.
+l ¿Te apetece tomar algo? = Está a fim de tomar alguma coisa? ~ Você quer comer agora? | Você tem algo para beber?
+q Um amigo convida você para jantar e você aceita. O que diz? = ¡Claro, me encanta! | Lo siento, no puedo. | Otro día.
+
+## Música e filmes | "Película" é filme e "serie" é série. "Cantante" é cantor ou cantora. "¿Qué tipo de música te gusta?" é uma ótima pergunta para puxar conversa.
+v película = filme; serie = série; música = música; cantante = cantor, cantora; concierto = show; canción = canção; entradas = ingressos
+f Esta [película] es muy divertida. = Este filme é muito divertido. ~ canción, entradas
+f Tengo dos [entradas] para el concierto. = Tenho dois ingressos para o show. ~ canciones, películas
+b ¿Qué tipo de música te gusta? = Que tipo de música você gosta?
+b Veo una serie todas las noches. = Vejo uma série todas as noites.
+l Mi cantante favorito es de Colombia. = Meu cantor favorito é da Colômbia. ~ Minha cantora favorita é do Chile. | Meu filme favorito é da Colômbia.
+q Você quer convidar alguém para o show de sábado. O que diz? = ¿Quieres venir al concierto el sábado? | ¿Te gusta el sábado? | El concierto es caro.
+
+## O fim de semana | Para falar de planos, use "voy a" + verbo: "voy a visitar a mis padres". O "a" antes de pessoa também aparece: "visitar a mis padres".
+v fin de semana = fim de semana; plan = plano; visitar = visitar; descansar = descansar; salir = sair; amigos = amigos; excursión = passeio
+f El sábado [voy] a visitar a mis abuelos. = No sábado vou visitar meus avós. ~ va, vamos
+f No tengo [planes] para el domingo. = Não tenho planos para domingo. ~ amigos, días
+b Este fin de semana voy a descansar. = Neste fim de semana vou descansar.
+b Salgo con mis amigos el viernes. = Saio com meus amigos na sexta.
+l Vamos de excursión al lago. = Vamos fazer um passeio ao lago. ~ Vamos nadar no lago. | Vamos de carro para a praia.
+q Você quer saber os planos do seu amigo. O que pergunta? = ¿Qué vas a hacer el fin de semana? | ¿Qué hiciste ayer? | ¿Dónde vives?
+
+### frases
+fr En mi tiempo libre me gusta leer y escuchar música. = No meu tempo livre gosto de ler e ouvir música.
+fr Los sábados por la mañana juego al tenis con mi padre. = Aos sábados de manhã jogo tênis com meu pai.
+fr ¿Te apetece ir al cine esta noche? = Está a fim de ir ao cinema hoje à noite?
+fr Lo siento, no puedo. ¿Quedamos otro día? = Desculpe, não posso. Combinamos outro dia?
+fr Mi serie favorita es española y es muy divertida. = Minha série favorita é espanhola e é muito divertida.
+fr Este fin de semana [voy] a descansar en casa. = Neste fim de semana vou descansar em casa. ~ vas, va
+fr Tengo dos entradas para el concierto del viernes. = Tenho dois ingressos para o show de sexta.
+fr Me encanta bailar, pero canto muy mal. = Adoro dançar, mas canto muito mal.
+fr ¿Haces algún deporte? Sí, nado y [corro]. = Você pratica algum esporte? Sim, nado e corro. ~ juego, corre
+fr Vale, quedamos a las ocho en la puerta del cine. = Combinado, nos encontramos às oito na porta do cinema.
+
+### texto | Um convite
+t Pablo | Hola, Clara. ¿Qué haces el sábado? = Oi, Clara. O que você vai fazer no sábado?
+t Clara | Por la mañana juego al voleibol. Por la tarde no tengo planes. = De manhã jogo vôlei. À tarde não tenho planos.
+t Pablo | ¿Te apetece ir a un concierto? Tengo dos entradas. = Está a fim de ir a um show? Tenho dois ingressos.
+t Clara | ¡Claro! ¿De quién es? = Claro! De quem é?
+t Pablo | De Julieta Venegas. Es una cantante mexicana. = Da Julieta Venegas. É uma cantora mexicana.
+t Clara | ¡Me encanta su música! ¿A qué hora empieza? = Adoro a música dela! A que horas começa?
+t Pablo | A las nueve. ¿Quedamos antes para cenar? = Às nove. Nos encontramos antes para jantar?
+t Clara | Vale. ¿A las siete en la plaza? = Combinado. Às sete na praça?
+t Pablo | Perfecto. ¡Hasta el sábado! = Perfeito. Até sábado!
+t Clara | ¡Hasta el sábado, y gracias por la invitación! = Até sábado, e obrigada pelo convite!
+tq O que Clara faz no sábado de manhã? = Joga vôlei | Vai a um show | Janta com Pablo
+tq De onde é a cantora? = Do México | Da Espanha | Da Colômbia
+tq A que horas começa o show? = Às nove | Às sete | Às oito
+tq Onde eles vão se encontrar? = Na praça | Na porta do show | Na casa de Clara
+
+# a1u10 | Primeira viagem | Aeroporto, hotel, restaurante e informações turísticas.
+
+## No aeroporto | "Vuelo" é voo, "puerta de embarque" é o portão e "facturar la maleta" é despachar a mala.
+v vuelo = voo; pasaporte = passaporte; maleta = mala; facturar = despachar; puerta = portão; embarque = embarque; retraso = atraso
+f Mi [vuelo] sale a las diez. = Meu voo sai às dez. ~ maleta, puerta
+f Tengo que [facturar] esta maleta. = Tenho que despachar esta mala. ~ llevar, pagar
+b El vuelo tiene retraso. = O voo está atrasado.
+b Su pasaporte, por favor. = Seu passaporte, por favor.
+l El embarque es por la puerta doce. = O embarque é pelo portão doze. ~ O embarque é pelo portão dois. | A saída é pelo portão doze.
+q Você não acha o portão do seu voo. O que pergunta? = ¿Dónde está la puerta B5? | ¿A qué hora llega el tren? | ¿Cuánto cuesta la maleta?
+
+## No hotel | "Habitación doble" tem cama de casal ou duas camas; "individual" é para uma pessoa. "Reserva" é a reserva.
+v reserva = reserva; habitación doble = quarto duplo; habitación individual = quarto individual; llave = chave; desayuno incluido = café da manhã incluído; noche = noite; recepción = recepção
+f Tengo una [reserva] a nombre de Silva. = Tenho uma reserva em nome de Silva. ~ llave, noche
+f Es una habitación [doble] con baño. = É um quarto duplo com banheiro. ~ doce, dos
+b ¿El desayuno está incluido? = O café da manhã está incluído?
+b Quiero una habitación para tres noches. = Quero um quarto para três noites.
+l Aquí tiene la llave. Es la habitación doscientos. = Aqui está a chave. É o quarto duzentos. ~ Aqui está a chave. É o quarto doze. | Aqui está a conta. É o quarto duzentos.
+q Você chega ao hotel. O que diz na recepção? = Hola, tengo una reserva. | Hola, quiero un vuelo. | ¿Dónde está el aeropuerto?
+
+## No restaurante | "La carta" é o cardápio. "De primero" é a entrada e "de segundo", o prato principal. "El menú del día" é o prato feito com preço fixo.
+v la carta = o cardápio; menú del día = menu do dia; de primero = de entrada; de segundo = de prato principal; postre = sobremesa; mesa = mesa; reservar = reservar
+f Una [mesa] para dos, por favor. = Uma mesa para dois, por favor. ~ carta, cena
+f De [postre], un flan. = De sobremesa, um pudim. ~ primero, mesa
+b ¿Nos trae la carta, por favor? = Você nos traz o cardápio, por favor?
+b El menú del día cuesta doce euros. = O menu do dia custa doze euros.
+l De primero quiero una sopa. = De entrada quero uma sopa. ~ De sobremesa quero um sorvete. | De prato principal quero uma salada.
+q Você quer saber o que o restaurante recomenda. O que pergunta? = ¿Qué nos recomienda? | ¿Dónde está la mesa? | ¿Cuánto es?
+
+## Informação turística | "Oficina de turismo" é o centro de informações. "Horario" é o horário de funcionamento e "entrada" pode ser a entrada ou o ingresso.
+v oficina de turismo = posto de informação turística; horario = horário; abierto = aberto; cerrado = fechado; entrada = entrada, ingresso; visita guiada = visita guiada; gratis = grátis
+f ¿El museo está [abierto] los lunes? = O museu está aberto às segundas? ~ cerca, gratis
+f La [entrada] cuesta diez euros. = O ingresso custa dez euros. ~ salida, visita
+b Hay una visita guiada a las once. = Tem uma visita guiada às onze.
+b ¿Cuál es el horario? = Qual é o horário?
+l Los domingos la entrada es gratis. = Aos domingos a entrada é grátis. ~ Aos domingos o museu está fechado. | Aos sábados a entrada é grátis.
+q Você quer um mapa da cidade no posto de turismo. O que pede? = ¿Tiene un mapa de la ciudad? | ¿Tiene una habitación? | ¿Tiene la cuenta?
+
+## Problemas na viagem | Para pedir ajuda: "¿Me puede ayudar?". "He perdido" é eu perdi: "he perdido mi pasaporte". "Me duele" é está doendo.
+v ayuda = ajuda; he perdido = eu perdi; policía = polícia; médico = médico; me duele = está doendo; problema = problema; robar = roubar
+f [He] perdido mi maleta. = Perdi minha mala. ~ Ha, Tengo
+f Me [duele] la cabeza. = Minha cabeça está doendo. ~ duelen, dolor
+b ¿Dónde está la policía? = Onde fica a polícia?
+b Necesito un médico. = Preciso de um médico.
+l Hay un problema con mi habitación. = Tem um problema com meu quarto. ~ Tem um problema com meu voo. | Não tem problema com meu quarto.
+q Sua carteira foi roubada. O que você diz? = Me han robado la cartera. | He perdido el vuelo. | Me duele la cartera.
+
+### frases
+fr Mi vuelo a Lima sale a las seis de la mañana. = Meu voo para Lima sai às seis da manhã.
+fr Buenas tardes, tengo una reserva para dos noches. = Boa tarde, tenho uma reserva para duas noites.
+fr ¿A qué hora es el desayuno? De siete a diez. = A que horas é o café da manhã? Das sete às dez.
+fr Una mesa para tres, por favor. ¿Tienen menú del día? = Uma mesa para três, por favor. Vocês têm menu do dia?
+fr ¿Qué nos recomienda de segundo? = O que o senhor nos recomenda de prato principal?
+fr El museo está [cerrado] los lunes. = O museu fica fechado às segundas. ~ abierto, gratis
+fr Perdone, he perdido mi pasaporte. ¿Qué hago? = Com licença, perdi meu passaporte. O que eu faço?
+fr La visita guiada empieza en la puerta principal. = A visita guiada começa na porta principal.
+fr El aire acondicionado de mi habitación no [funciona]. = O ar-condicionado do meu quarto não funciona. ~ funcionan, cuesta
+fr Es mi primera vez en México y me encanta. = É minha primeira vez no México e estou adorando.
+
+### texto | Chegada ao hotel
+t Recepcionista | Buenas noches, bienvenido al hotel Sol. = Boa noite, bem-vindo ao hotel Sol.
+t Rafael | Buenas noches. Tengo una reserva a nombre de Rafael Costa. = Boa noite. Tenho uma reserva em nome de Rafael Costa.
+t Recepcionista | Sí, aquí está: una habitación individual para cuatro noches. = Sim, aqui está: um quarto individual para quatro noites.
+t Rafael | Exacto. ¿El desayuno está incluido? = Exato. O café da manhã está incluído?
+t Recepcionista | Sí, es de siete a diez y media en el primer piso. = Sim, é das sete às dez e meia no primeiro andar.
+t Rafael | Perfecto. ¿Hay wifi en la habitación? = Perfeito. Tem wi-fi no quarto?
+t Recepcionista | Sí, la contraseña está en la tarjeta. = Sim, a senha está no cartão.
+t Rafael | Gracias. Una pregunta: ¿el museo de arte está lejos? = Obrigado. Uma pergunta: o museu de arte fica longe?
+t Recepcionista | No, está a diez minutos andando. Pero mañana está cerrado. = Não, fica a dez minutos a pé. Mas amanhã está fechado.
+t Rafael | Entonces voy pasado mañana. = Então vou depois de amanhã.
+t Recepcionista | Aquí tiene su llave. Es la habitación trescientos cuatro. ¡Buena estancia! = Aqui está sua chave. É o quarto trezentos e quatro. Boa estadia!
+tq Por quantas noites é a reserva? = Quatro | Duas | Dez
+tq Onde é servido o café da manhã? = No primeiro andar | No quarto | No restaurante ao lado
+tq Onde está a senha do wi-fi? = No cartão | Na recepção | Na chave
+tq Por que Rafael não vai ao museu amanhã? = Porque está fechado | Porque fica longe | Porque é caro

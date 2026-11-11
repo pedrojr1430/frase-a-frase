@@ -1,0 +1,305 @@
+// A1 — unidades 2 a 5
+
+# a1u2 | Pessoas e família | Falar da família, dizer a idade e descrever pessoas.
+
+## A família | "Padres" quer dizer "pais" (pai e mãe juntos). E "hermanos" pode ser só irmãos ou irmãos e irmãs juntos.
+v padre = pai; madre = mãe; hermano = irmão; hermana = irmã; abuelo = avô; abuela = avó; hijo = filho
+f Mi [madre] se llama Rosa. = Minha mãe se chama Rosa. ~ padre, abuelo
+f Ellos [son] mis padres. = Eles são meus pais. ~ es, está
+b Tengo dos hermanos. = Tenho dois irmãos.
+b Mi abuela vive en Lima. = Minha avó mora em Lima.
+l Mi padre se llama Juan. = Meu pai se chama Juan. ~ Meu avô se chama Juan. | Meu irmão se chama Juan.
+q Você quer apresentar sua irmã a um amigo. O que diz? = Esta es mi hermana. | Este es mi abuelo. | Tengo un hijo.
+
+## Quantos anos você tem? | Em espanhol, a idade se diz com "tener": "tengo veinte años" (literalmente, "tenho vinte anos"), igual ao português.
+v ¿cuántos años tienes? = quantos anos você tem?; tengo = eu tenho; años = anos; veinte = vinte; treinta = trinta; cuarenta = quarenta; cumpleaños = aniversário
+f Yo [tengo] veinticinco años. = Eu tenho vinte e cinco anos. ~ soy, estoy
+f Mi hijo tiene diez [años]. = Meu filho tem dez anos. ~ días, meses
+b ¿Cuántos años tiene tu madre? = Quantos anos tem sua mãe?
+b Hoy es mi cumpleaños. = Hoje é meu aniversário.
+l Mi abuelo tiene ochenta años. = Meu avô tem oitenta anos. ~ Meu avô tem dezoito anos. | Minha avó tem oito anos.
+q Alguém pergunta "¿Cuántos años tienes?". Como você responde? = Tengo treinta años. | Soy de Brasil. | Estoy muy bien.
+
+## Como é a pessoa | Para descrever como alguém é por natureza, use "ser": "es alto". O adjetivo concorda: "alto" para homem, "alta" para mulher.
+v alto = alto; bajo = baixo; delgado = magro; rubio = loiro; moreno = moreno; pelo = cabelo; ojos = olhos
+f Mi hermano [es] muy alto. = Meu irmão é muito alto. ~ está, tiene
+f Ella tiene el pelo [rubio]. = Ela tem o cabelo loiro. ~ alto, delgado
+b Mi madre es baja y morena. = Minha mãe é baixa e morena.
+b Tiene los ojos azules. = Tem os olhos azuis.
+l Mi padre es alto y delgado. = Meu pai é alto e magro. ~ Meu pai é baixo e forte. | Minha mãe é alta e magra.
+q Você quer dizer que sua amiga tem olhos verdes. O que diz? = Tiene los ojos verdes. | Tiene el pelo verde. | Es muy verde.
+
+## Jeito de ser | Cuidado: "simpático" em espanhol é "simpático" mesmo, mas "embarazada" quer dizer "grávida", não "envergonhada".
+v simpático = simpático; divertido = divertido; tímido = tímido; trabajador = trabalhador; serio = sério; inteligente = inteligente; amable = gentil
+f Mi abuela es muy [amable]. = Minha avó é muito gentil. ~ alta, años
+f Mis hermanos [son] divertidos. = Meus irmãos são divertidos. ~ es, están
+b Mi padre es serio pero simpático. = Meu pai é sério, mas simpático.
+b Ella es tímida e inteligente. = Ela é tímida e inteligente.
+l Mi hermana es muy trabajadora. = Minha irmã é muito trabalhadora. ~ Minha irmã é muito tímida. | Minha mãe trabalha muito.
+q Seu amigo faz todo mundo rir. Como você o descreve? = Es muy divertido. | Es muy serio. | Es muy tímido.
+
+## Meu, seu, nosso | "Mi" e "tu" vão antes do nome: "mi casa", "tu padre". No plural: "mis hermanos", "tus amigos". "Su" serve para dele, dela e do senhor.
+v mi = meu, minha; tu = seu, sua (tu); su = dele, dela; nuestro = nosso; mis = meus, minhas; familia = família; casado = casado
+f [Mis] padres viven en Bogotá. = Meus pais moram em Bogotá. ~ Mi, Tu
+f ¿Cómo se llama [tu] hermano? = Como se chama seu irmão? ~ mis, nuestro
+b Nuestra familia es grande. = Nossa família é grande.
+b Su hijo es muy simpático. = O filho dela é muito simpático.
+l Mi hermana está casada. = Minha irmã é casada. ~ Minha irmã está cansada. | Minha mãe é casada.
+q Você quer perguntar o nome da mãe de um amigo. O que diz? = ¿Cómo se llama tu madre? | ¿Dónde está mi madre? | Mi madre se llama Ana.
+
+### frases
+fr Te presento a mi familia: mi padre, mi madre y mi hermana. = Apresento a você minha família: meu pai, minha mãe e minha irmã.
+fr Mi hermano tiene veinte años y es muy alto. = Meu irmão tem vinte anos e é muito alto.
+fr Mis abuelos viven en el campo. = Meus avós moram no campo.
+fr Mi madre [es] profesora y mi padre es médico. = Minha mãe é professora e meu pai é médico. ~ está, tiene
+fr Tengo una familia grande: somos seis. = Tenho uma família grande: somos seis.
+fr Mi hermana es rubia y tiene los ojos verdes. = Minha irmã é loira e tem os olhos verdes.
+fr ¿Tienes hermanos o eres hijo único? = Você tem irmãos ou é filho único?
+fr Mi abuela es muy divertida y [cocina] muy bien. = Minha avó é muito divertida e cozinha muito bem. ~ come, vive
+fr Mi tío Carlos está casado y tiene dos hijos. = Meu tio Carlos é casado e tem dois filhos.
+fr Hoy es el cumpleaños de mi padre: cumple cincuenta años. = Hoje é o aniversário do meu pai: ele faz cinquenta anos.
+
+### texto | A foto da família
+t Sofía | Mira, esta es una foto de mi familia. = Olha, esta é uma foto da minha família.
+t Martín | ¡Qué bonita! ¿Quién es este señor? = Que bonita! Quem é este senhor?
+t Sofía | Es mi padre. Se llama Andrés y tiene cincuenta y dos años. = É meu pai. Ele se chama Andrés e tem cinquenta e dois anos.
+t Martín | ¿Y la señora rubia? = E a senhora loira?
+t Sofía | Es mi madre. Es muy simpática y trabajadora. = É minha mãe. Ela é muito simpática e trabalhadora.
+t Martín | ¿Y el chico alto? ¿Es tu novio? = E o rapaz alto? É seu namorado?
+t Sofía | ¡No! Es mi hermano Leo. Tiene diecinueve años. = Não! É meu irmão Leo. Ele tem dezenove anos.
+t Martín | Se parece mucho a tu padre. = Ele se parece muito com seu pai.
+t Sofía | Sí, todos dicen eso. Y esta es mi abuela Carmen. = Sim, todos dizem isso. E esta é minha avó Carmen.
+t Martín | ¿Vive con ustedes? = Ela mora com vocês?
+t Sofía | No, vive en un pueblo cerca del mar. = Não, ela mora num povoado perto do mar.
+tq Quantos anos tem o pai de Sofía? = Cinquenta e dois | Dezenove | Cinquenta
+tq Quem é o rapaz alto da foto? = O irmão de Sofía | O namorado de Sofía | O pai de Sofía
+tq Como é a mãe de Sofía? = Simpática e trabalhadora | Séria e tímida | Alta e morena
+tq Onde mora a avó Carmen? = Num povoado perto do mar | Com a família de Sofía | Na capital
+
+# a1u3 | Comida e bebida | Nomes de alimentos, pedir no café e dizer do que você gosta.
+
+## Alimentos | Na Espanha se diz "patata" e na América Latina, "papa". Os dois estão certos.
+v pan = pão; queso = queijo; huevo = ovo; carne = carne; pescado = peixe (comida); arroz = arroz; manzana = maçã
+f Como [pan] con queso. = Como pão com queijo. ~ agua, café
+f Quiero arroz con [pescado]. = Quero arroz com peixe. ~ manzana, leche
+b No como carne. = Não como carne.
+b Me encantan las manzanas. = Adoro maçãs.
+l Hoy hay huevos y arroz. = Hoje tem ovos e arroz. ~ Hoje tem queijo e pão. | Amanhã tem ovos e carne.
+q Você é vegetariano. O que diz no restaurante? = No como carne ni pescado. | Quiero mucha carne. | Me encanta el pescado.
+
+## Bebidas | "Zumo" é suco na Espanha; na América Latina se diz "jugo". "Agua" é feminina, mas se diz "el agua".
+v agua = água; leche = leite; café = café; té = chá; zumo = suco; cerveza = cerveja; vino = vinho
+f Un café con [leche], por favor. = Um café com leite, por favor. ~ pan, queso
+f ¿Quieres un [vaso] de agua? = Você quer um copo de água? ~ plato, pan
+b No bebo alcohol. = Não bebo álcool.
+b Un zumo de naranja, por favor. = Um suco de laranja, por favor.
+l Prefiero el té sin azúcar. = Prefiro o chá sem açúcar. ~ Prefiro o café sem açúcar. | Prefiro o chá com leite.
+q Está muito calor e você quer algo gelado. O que pede? = Un agua fría, por favor. | Un café caliente, por favor. | Un té caliente, por favor.
+
+## No café | "¿Qué le pongo?" e "¿Qué va a tomar?" são perguntas comuns do garçom. Para pedir, use "quiero" ou, mais educado, "quisiera".
+v la cuenta = a conta; camarero = garçom; quisiera = eu gostaria; para tomar = para beber; algo más = mais alguma coisa; cuánto es = quanto é; aquí tiene = aqui está
+f ¿Me trae la [cuenta], por favor? = Você me traz a conta, por favor? ~ carta, mesa
+f Quisiera un [bocadillo] de jamón. = Eu gostaria de um sanduíche de presunto. ~ vaso, té
+b ¿Cuánto es todo? = Quanto é tudo?
+b Para mí, un té. = Para mim, um chá.
+l ¿Algo más? No, nada más, gracias. = Mais alguma coisa? Não, nada mais, obrigado. ~ Mais um café? Sim, obrigado. | Quanto é? São dois euros.
+q Você terminou e quer pagar. O que diz ao garçom? = La cuenta, por favor. | Un café, por favor. | ¿Qué hora es?
+
+## Do que você gosta | "Me gusta" com uma coisa, "me gustan" com várias: "me gusta el café", "me gustan las frutas". Para negar: "no me gusta".
+v me gusta = eu gosto de; no me gusta = não gosto de; me encanta = adoro; odio = odeio; dulce = doce; picante = apimentado; rico = gostoso
+f Me [gustan] las frutas. = Eu gosto de frutas. ~ gusta, gusto
+f No me gusta la comida [picante]. = Não gosto de comida apimentada. ~ rica, dulce
+b Me encanta el chocolate. = Adoro chocolate.
+b ¿Te gusta el pescado? = Você gosta de peixe?
+l Esta sopa está muy rica. = Esta sopa está muito gostosa. ~ Esta sopa está muito quente. | Esta salada está muito boa.
+q Alguém pergunta "¿Te gusta el café?" e você não gosta. O que diz? = No, no me gusta. | Sí, me encanta. | Sí, mucho.
+
+## As refeições do dia | Na Espanha, "la comida" é o almoço, por volta das duas da tarde, e a "cena" (jantar) costuma ser depois das nove da noite.
+v desayuno = café da manhã; comida = almoço, comida; cena = jantar; desayunar = tomar café da manhã; comer = comer, almoçar; cenar = jantar; tener hambre = ter fome
+f Siempre [desayuno] a las siete. = Sempre tomo café da manhã às sete. ~ ceno, como
+f Tengo mucha [hambre]. = Estou com muita fome. ~ sed, años
+b Cenamos a las nueve. = Jantamos às nove.
+b ¿Qué hay para comer? = O que tem para comer?
+l Para desayunar tomo café y fruta. = No café da manhã tomo café e fruta. ~ No jantar como peixe e arroz. | No almoço tomo suco e pão.
+q Você quer perguntar a que horas é o jantar. O que diz? = ¿A qué hora es la cena? | ¿Qué hora es? | ¿Dónde está la cena?
+
+### frases
+fr Por la mañana desayuno café con leche y pan con tomate. = De manhã tomo café com leite e pão com tomate.
+fr ¿Qué vas a tomar? Yo quiero un zumo de naranja. = O que você vai beber? Eu quero um suco de laranja.
+fr No me gusta el pescado, pero me encanta la carne. = Não gosto de peixe, mas adoro carne.
+fr Camarero, ¿nos trae dos cafés y la [cuenta]? = Garçom, você nos traz dois cafés e a conta? ~ carta, cena
+fr Tengo hambre. ¿Comemos algo? = Estou com fome. Vamos comer alguma coisa?
+fr En mi casa cenamos a las ocho. = Na minha casa jantamos às oito.
+fr Este restaurante es barato y la comida está muy rica. = Este restaurante é barato e a comida é muito gostosa.
+fr Para mí, una ensalada y [agua] sin gas. = Para mim, uma salada e água sem gás. ~ cerveza, leche
+fr ¿Te gustan las comidas picantes? = Você gosta de comidas apimentadas?
+fr Mi plato favorito es el arroz con pollo. = Meu prato favorito é arroz com frango.
+
+### texto | Na cafeteria
+t Camarero | Buenos días. ¿Qué van a tomar? = Bom dia. O que vão pedir?
+t Inés | Para mí, un café con leche y una tostada. = Para mim, um café com leite e uma torrada.
+t Camarero | ¿Con mantequilla o con tomate? = Com manteiga ou com tomate?
+t Inés | Con tomate, por favor. = Com tomate, por favor.
+t Diego | Yo quiero un té verde. ¿Tienen algo dulce? = Eu quero um chá verde. Vocês têm algo doce?
+t Camarero | Sí, hay croissants y tarta de chocolate. = Sim, tem croissants e torta de chocolate.
+t Diego | ¡Me encanta el chocolate! Una tarta, por favor. = Adoro chocolate! Uma torta, por favor.
+t Camarero | Muy bien. ¿Algo más? = Muito bem. Mais alguma coisa?
+t Inés | Un vaso de agua, por favor. = Um copo de água, por favor.
+t Diego | Y luego la cuenta, que tenemos prisa. = E depois a conta, que estamos com pressa.
+t Camarero | Son nueve euros con cincuenta. = São nove euros e cinquenta.
+tq O que Inés pede para beber? = Café com leite | Chá verde | Suco de laranja
+tq Como Inés quer a torrada? = Com tomate | Com manteiga | Com queijo
+tq O que Diego come? = Torta de chocolate | Um croissant | Uma torrada
+tq Quanto custa tudo? = Nove euros e cinquenta | Cinco euros | Dezenove euros
+
+# a1u4 | A casa | Os cômodos e os móveis, dizer onde estão as coisas e falar das tarefas.
+
+## Os cômodos | "Habitación" ou "dormitorio" é o quarto. "Cuarto de baño" (ou só "baño") é o banheiro.
+v casa = casa; piso = apartamento (Espanha); cocina = cozinha; salón = sala; habitación = quarto; baño = banheiro; jardín = jardim
+f Mi piso tiene dos [habitaciones]. = Meu apartamento tem dois quartos. ~ cocinas, jardines
+f El baño [está] al lado de la cocina. = O banheiro fica ao lado da cozinha. ~ es, hay
+b La cocina es pequeña. = A cozinha é pequena.
+b Vivo en una casa con jardín. = Moro numa casa com jardim.
+l El salón es muy grande. = A sala é muito grande. ~ O quarto é muito pequeno. | A cozinha é muito grande.
+q Você está numa casa e precisa do banheiro. O que pergunta? = ¿Dónde está el baño? | ¿Dónde está la cocina? | ¿Es grande el salón?
+
+## Os móveis | Em espanhol, "mesa" é mesa e "silla" é cadeira. "Sofá" é igual, mas "estante" é "estantería".
+v cama = cama; mesa = mesa; silla = cadeira; sofá = sofá; armario = armário; ventana = janela; puerta = porta
+f Hay un sofá en el [salón]. = Tem um sofá na sala. ~ baño, armario
+f La cama está cerca de la [ventana]. = A cama fica perto da janela. ~ silla, puerta
+b Necesito una mesa nueva. = Preciso de uma mesa nova.
+b La puerta está cerrada. = A porta está fechada.
+l En mi habitación hay una cama y un armario. = No meu quarto tem uma cama e um armário. ~ Na minha sala tem um sofá e uma mesa. | No meu quarto tem duas camas.
+q Está calor no quarto. O que você pede? = ¿Puedes abrir la ventana? | ¿Puedes cerrar la puerta? | ¿Dónde está la cama?
+
+## Onde fica? | Para lugares e posições se usa "estar": "el libro está en la mesa". Algumas preposições: encima de, debajo de, al lado de, entre.
+v encima de = em cima de; debajo de = embaixo de; al lado de = ao lado de; delante de = na frente de; detrás de = atrás de; entre = entre; aquí = aqui
+f El gato está [debajo] de la cama. = O gato está embaixo da cama. ~ entre, aquí
+f Las llaves están [encima] de la mesa. = As chaves estão em cima da mesa. ~ detrás, entre
+b El libro está al lado del sofá. = O livro está ao lado do sofá.
+b ¿Dónde está mi móvil? = Onde está meu celular?
+l La silla está entre la mesa y la ventana. = A cadeira está entre a mesa e a janela. ~ A mesa está atrás da janela. | A cadeira está em cima da mesa.
+q Você não acha seus óculos. O que pergunta? = ¿Dónde están mis gafas? | ¿Dónde está el baño? | ¿Hay gafas en la cocina?
+
+## Tem e está | "Hay" apresenta algo (tem, há): "hay un sofá". "Está/están" localiza algo já conhecido: "el sofá está en el salón".
+v hay = tem, há; no hay = não tem; muchos = muitos; pocos = poucos; edificio = prédio; planta = andar; ascensor = elevador
+f En mi calle [hay] un supermercado. = Na minha rua tem um supermercado. ~ está, es
+f El supermercado [está] en mi calle. = O supermercado fica na minha rua. ~ hay, es
+b No hay ascensor en el edificio. = Não tem elevador no prédio.
+b Vivo en la tercera planta. = Moro no terceiro andar.
+l En la cocina hay muchas plantas. = Na cozinha tem muitas plantas. ~ Na sala tem poucas plantas. | Na cozinha não tem plantas.
+q Você quer saber se tem um banco perto. O que pergunta? = ¿Hay un banco cerca? | ¿El banco está cerrado? | ¿Es un banco?
+
+## Tarefas de casa | "Hacer la cama" é arrumar a cama e "fregar los platos" é lavar a louça. Na América Latina também se diz "lavar los platos".
+v limpiar = limpar; cocinar = cozinhar; lavar = lavar; ordenar = arrumar; la ropa = a roupa; los platos = a louça; la basura = o lixo
+f Hoy yo [cocino] y tú lavas los platos. = Hoje eu cozinho e você lava a louça. ~ lavo, limpias
+f Tengo que sacar la [basura]. = Tenho que levar o lixo para fora. ~ ropa, cocina
+b Los sábados limpio la casa. = Aos sábados limpo a casa.
+b Mi hijo no ordena su habitación. = Meu filho não arruma o quarto dele.
+l Lavo la ropa los domingos. = Lavo a roupa aos domingos. ~ Lavo a louça aos sábados. | Passo a roupa às segundas.
+q Você quer dividir as tarefas com seu colega de casa. O que diz? = Tú cocinas y yo limpio. | Yo no hago nada. | Mi casa es muy grande.
+
+### frases
+fr Vivo en un piso pequeño en el centro de la ciudad. = Moro num apartamento pequeno no centro da cidade.
+fr Mi casa tiene tres habitaciones, un salón y dos baños. = Minha casa tem três quartos, uma sala e dois banheiros.
+fr La cocina es mi lugar favorito de la casa. = A cozinha é meu lugar favorito da casa.
+fr En el salón [hay] un sofá grande y una televisión. = Na sala tem um sofá grande e uma televisão. ~ está, es
+fr ¿Dónde están las llaves? Están encima de la mesa. = Onde estão as chaves? Estão em cima da mesa.
+fr Mi habitación tiene una ventana muy grande. = Meu quarto tem uma janela muito grande.
+fr El edificio no tiene ascensor y vivo en el quinto. = O prédio não tem elevador e eu moro no quinto andar.
+fr Los fines de semana limpiamos la casa juntos. = Nos fins de semana limpamos a casa juntos.
+fr El gato siempre duerme [debajo] de mi cama. = O gato sempre dorme embaixo da minha cama. ~ entre, delante
+fr Busco un piso con jardín y cerca del metro. = Procuro um apartamento com jardim e perto do metrô.
+
+### texto | Visitando um apartamento
+t Agente | Pase, pase. Este es el piso. = Entre, entre. Este é o apartamento.
+t Laura | ¡Qué luminoso! ¿Cuántas habitaciones tiene? = Que iluminado! Quantos quartos tem?
+t Agente | Tiene dos habitaciones y un baño. = Tem dois quartos e um banheiro.
+t Laura | ¿Y la cocina? = E a cozinha?
+t Agente | Está aquí, al lado del salón. Es pequeña, pero moderna. = Fica aqui, ao lado da sala. É pequena, mas moderna.
+t Laura | ¿Los muebles están incluidos? = Os móveis estão incluídos?
+t Agente | Sí, hay un sofá, una mesa, sillas y dos camas. = Sim, tem um sofá, uma mesa, cadeiras e duas camas.
+t Laura | ¿Hay ascensor? Vivir en el cuarto piso sin ascensor es difícil. = Tem elevador? Morar no quarto andar sem elevador é difícil.
+t Agente | Sí, hay ascensor. Y el metro está a dos minutos. = Sim, tem elevador. E o metrô fica a dois minutos.
+t Laura | Perfecto. ¿Cuánto cuesta al mes? = Perfeito. Quanto custa por mês?
+t Agente | Ochocientos euros. = Oitocentos euros.
+t Laura | Me gusta mucho. Lo pienso y le llamo mañana. = Gostei muito. Vou pensar e ligo para o senhor amanhã.
+tq Quantos quartos tem o apartamento? = Dois | Três | Um
+tq Como é a cozinha? = Pequena, mas moderna | Grande e antiga | Grande e moderna
+tq Em que andar fica o apartamento? = No quarto | No primeiro | No oitavo
+tq Quanto custa o aluguel por mês? = Oitocentos euros | Oitenta euros | Quatrocentos euros
+
+# a1u5 | Rotina diária | Dizer as horas, os dias da semana e contar o que você faz no dia a dia.
+
+## Que horas são? | Para uma hora se diz "es la una"; para as outras, "son las dos, son las tres". "Y media" é e meia, "y cuarto" é e quinze, "menos cuarto" é quinze para.
+v ¿qué hora es? = que horas são?; es la una = é uma hora; son las dos = são duas horas; y media = e meia; y cuarto = e quinze; menos cuarto = quinze para; en punto = em ponto
+f [Son] las tres y media. = São três e meia. ~ Es, Está
+f Es la una en [punto]. = É uma hora em ponto. ~ media, cuarto
+b Son las ocho menos cuarto. = São quinze para as oito.
+b ¿A qué hora empieza la clase? = A que horas começa a aula?
+l Son las diez y cuarto. = São dez e quinze. ~ São dez e meia. | São quinze para as dez.
+q Você quer saber as horas na rua. O que pergunta? = Perdone, ¿qué hora es? | ¿A qué hora cenas? | ¿Cuántos años tiene?
+
+## Levantar e se vestir | Muitos verbos da rotina são reflexivos: "me levanto", "te duchas", "se viste". O pronome vem antes do verbo.
+v despertarse = acordar; levantarse = levantar-se; ducharse = tomar banho; vestirse = vestir-se; acostarse = deitar-se; temprano = cedo; tarde = tarde
+f Me [levanto] a las siete. = Eu me levanto às sete. ~ levanta, levantas
+f Mi hermano se [ducha] por la noche. = Meu irmão toma banho à noite. ~ duchas, duermo
+b Me acuesto a las once. = Vou dormir às onze.
+b Los domingos me levanto tarde. = Aos domingos me levanto tarde.
+l Me despierto muy temprano. = Eu acordo muito cedo. ~ Eu acordo muito tarde. | Eu durmo muito cedo.
+q Alguém pergunta a que horas você acorda. O que responde? = Me despierto a las seis. | Me acuesto a las seis. | Son las seis.
+
+## Os dias da semana | Os dias da semana em espanhol são escritos com letra minúscula: lunes, martes, miércoles, jueves, viernes, sábado, domingo.
+v lunes = segunda-feira; martes = terça-feira; miércoles = quarta-feira; jueves = quinta-feira; viernes = sexta-feira; sábado = sábado; domingo = domingo
+f El [lunes] tengo clase de inglés. = Na segunda tenho aula de inglês. ~ martes, sábado
+f Los sábados no [trabajo]. = Aos sábados não trabalho. ~ trabaja, trabajas
+b Hoy es viernes. = Hoje é sexta-feira.
+b El domingo como con mis padres. = No domingo almoço com meus pais.
+l Voy al gimnasio los martes y jueves. = Vou à academia às terças e quintas. ~ Vou à academia às segundas e sextas. | Vou ao trabalho às terças.
+q Você quer saber que dia é hoje. O que pergunta? = ¿Qué día es hoy? | ¿Qué hora es? | ¿Cuántos días tienes?
+
+## Com que frequência | "Siempre" é sempre, "a veces" é às vezes e "nunca" é nunca. "Todos los días" é todos os dias.
+v siempre = sempre; a veces = às vezes; nunca = nunca; todos los días = todos os dias; normalmente = normalmente; una vez = uma vez; por la mañana = de manhã
+f [Nunca] bebo café por la noche. = Nunca bebo café à noite. ~ Siempre, Mucho
+f Leo el periódico todos los [días]. = Leio o jornal todos os dias. ~ veces, horas
+b A veces como en casa. = Às vezes almoço em casa.
+b Normalmente camino al trabajo. = Normalmente vou a pé para o trabalho.
+l Voy al cine una vez al mes. = Vou ao cinema uma vez por mês. ~ Vou ao cinema duas vezes por semana. | Nunca vou ao cinema.
+q Você faz exercício todo dia. Como diz isso? = Hago ejercicio todos los días. | Nunca hago ejercicio. | A veces hago ejercicio.
+
+## Meu dia | Para contar a rotina em ordem, use "primero" (primeiro), "después" (depois), "luego" (em seguida) e "por último" (por último).
+v primero = primeiro; después = depois; luego = em seguida; trabajo = trabalho; empezar = começar; terminar = terminar; volver = voltar
+f Primero desayuno y [después] me ducho. = Primeiro tomo café e depois tomo banho. ~ nunca, siempre
+f Vuelvo a casa a las seis de la [tarde]. = Volto para casa às seis da tarde. ~ noche, mañana
+b Empiezo a trabajar a las nueve. = Começo a trabalhar às nove.
+b Termino a las cinco. = Termino às cinco.
+l Después del trabajo voy al supermercado. = Depois do trabalho vou ao supermercado. ~ Antes do trabalho vou à academia. | Depois do jantar vou dormir.
+q Você quer perguntar a que horas a pessoa sai do trabalho. O que diz? = ¿A qué hora terminas de trabajar? | ¿Dónde trabajas? | ¿Te gusta tu trabajo?
+
+### frases
+fr Me levanto a las seis y media y me ducho enseguida. = Eu me levanto às seis e meia e tomo banho em seguida.
+fr Primero desayuno, después me visto y salgo de casa. = Primeiro tomo café, depois me visto e saio de casa.
+fr Trabajo de lunes a viernes, de nueve a cinco. = Trabalho de segunda a sexta, das nove às cinco.
+fr Normalmente como en la oficina con mis compañeros. = Normalmente almoço no escritório com meus colegas.
+fr Los martes y jueves voy al gimnasio después del trabajo. = Às terças e quintas vou à academia depois do trabalho.
+fr Por la noche ceno, veo la tele y [leo] un poco. = À noite janto, vejo televisão e leio um pouco. ~ leen, lees
+fr Me acuesto a las once porque estoy cansado. = Vou dormir às onze porque estou cansado.
+fr Los fines de semana me levanto tarde. = Nos fins de semana me levanto tarde.
+fr Nunca desayuno, solo tomo un café. = Nunca tomo café da manhã, só tomo um café.
+fr ¿A qué hora [empieza] tu clase de español? = A que horas começa sua aula de espanhol? ~ empiezo, termino
+
+### texto | Um dia normal
+t Ana | Tomás, tú siempre llegas temprano. ¿A qué hora te levantas? = Tomás, você sempre chega cedo. A que horas você se levanta?
+t Tomás | A las cinco y media. = Às cinco e meia.
+t Ana | ¡Qué temprano! ¿Y qué haces? = Que cedo! E o que você faz?
+t Tomás | Primero corro media hora en el parque. Luego me ducho y desayuno. = Primeiro corro meia hora no parque. Depois tomo banho e tomo café.
+t Ana | Yo me levanto a las siete y media y no desayuno. = Eu me levanto às sete e meia e não tomo café da manhã.
+t Tomás | ¿Nunca? = Nunca?
+t Ana | Nunca. Tomo un café aquí en la oficina. = Nunca. Tomo um café aqui no escritório.
+t Tomás | ¿Y por la tarde? = E à tarde?
+t Ana | Los lunes y miércoles tengo clase de baile. = Às segundas e quartas tenho aula de dança.
+t Tomás | ¡Qué bien! Yo por la tarde estoy muy cansado. Me acuesto a las diez. = Que legal! Eu à tarde estou muito cansado. Vou dormir às dez.
+tq A que horas Tomás se levanta? = Às cinco e meia | Às sete e meia | Às seis
+tq O que Tomás faz primeiro? = Corre no parque | Toma café | Toma banho
+tq Onde Ana toma café? = No escritório | Em casa | Num café da rua
+tq Quando Ana tem aula de dança? = Às segundas e quartas | Às terças e quintas | Aos sábados
