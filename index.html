@@ -1334,6 +1334,76 @@ body.cc-locked #faf-sheet{z-index:96}
   }
 })();
 </script>
+<script>/* Frase a Frase — botão voltar (Android e navegador): fecha a camada de cima ou volta à tela anterior, em vez de sair do app */
+(function () {
+  'use strict';
+  var tabHist = [], lastTab = null, goingBack = false;
+
+  function visible(el) { return el && !el.hidden && el.isConnected; }
+  function last(sel) { var all = document.querySelectorAll(sel); return all.length ? all[all.length - 1] : null; }
+
+  // Camadas, da mais alta para a mais baixa. Cada uma devolve true se fechou algo.
+  var LAYERS = [
+    function () { var m = last('.fm-modal'); if (!m) return false; var b = m.querySelector('.fm-cancel'); if (b) b.click(); else m.remove(); return true; },
+    function () { var m = document.getElementById('faf-menu'); if (!visible(m)) return false; var b = m.querySelector('.fm-close'); if (b) b.click(); else m.hidden = true; return true; },
+    function () { var m = last('.cc-modal'); if (!m) return false; m.click(); if (m.isConnected) m.remove(); return true; },
+    function () {
+      var l = last('.cc-lesson'); if (!l) return false;
+      var b = l.querySelector('[aria-label="Sair da lição"], [aria-label="Fechar conversa"], .cc-l-top .cc-icon-btn, .cc-chat-top .cc-icon-btn');
+      if (b) b.click(); else l.remove();
+      return true;
+    },
+    function () {
+      var s = document.getElementById('faf-sheet'); if (!visible(s)) return false;
+      var b = s.querySelector('.faf-round[aria-label^="Fechar"]') || document.getElementById('faf-sheet-close');
+      if (b) b.click(); else s.hidden = true;
+      return true;
+    }
+  ];
+
+  function snap(st) { return { tab: st.tab, reading: st.tab === 'textos' ? !!st.reading : false, fview: st.fview }; }
+  function key(x) { return x.tab + '|' + (x.tab === 'textos' ? x.reading : '') + '|' + (x.tab === 'frases' ? x.fview : ''); }
+  function appBack() {
+    var app = window.__fafApp; if (!app) return false;
+    var cur = key(snap(app.state));
+    while (tabHist.length) {
+      var prev = tabHist.pop();
+      if (key(prev) !== cur) { goingBack = true; app.setState(prev); return true; }
+    }
+    if (app.state.tab !== 'inicio') { goingBack = true; app.setState({ tab: 'inicio', reading: false }); return true; }
+    return false;
+  }
+
+  function handleBack() {
+    for (var i = 0; i < LAYERS.length; i++) { try { if (LAYERS[i]()) return true; } catch (e) {} }
+    return appBack();
+  }
+
+  document.addEventListener('faf:render', function () {
+    var app = window.__fafApp; if (!app) return;
+    var now = snap(app.state);
+    if (lastTab !== null && key(now) !== key(lastTab) && !goingBack) {
+      tabHist.push(lastTab);
+      if (tabHist.length > 30) tabHist.shift();
+    }
+    goingBack = false;
+    lastTab = now;
+  });
+
+  try {
+    history.replaceState({ faf: 'root' }, '');
+    history.pushState({ faf: 'top' }, '');
+  } catch (e) {}
+  window.addEventListener('popstate', function () {
+    if (handleBack()) {
+      try { history.pushState({ faf: 'top' }, ''); } catch (e) {}
+    } else {
+      history.back(); // nada para voltar: sai do app
+    }
+  });
+  window.FAF_BACK = handleBack;
+})();
+</script>
 <script>/* Frase a Frase — motor de renderização leve (substitui o runtime do protótipo) */
 (function () {
   'use strict';
