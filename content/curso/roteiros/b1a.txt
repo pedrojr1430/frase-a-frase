@@ -1,0 +1,377 @@
+// B1 — unidades 1 a 5
+
+# b1u1 | Desejos e esperanças | Usar o subjuntivo para expressar desejos, esperanças e votos.
+
+## O presente do subjuntivo | O subjuntivo troca a vogal: -ar vira -e (hablar → hable), -er/-ir vira -a (comer → coma, vivir → viva). Ele aparece depois de "que" em desejos.
+v hable = (que) fale; coma = (que) coma; viva = (que) viva; tenga = (que) tenha; sea = (que) seja; vaya = (que) vá; haga = (que) faça
+f Quiero que [vengas] a mi fiesta. = Quero que você venha à minha festa. ~ vienes, venir
+f Espero que [tengas] un buen viaje. = Espero que você tenha uma boa viagem. ~ tienes, tener
+b Quiero que seas feliz. = Quero que você seja feliz.
+b Espero que haga buen tiempo. = Espero que faça tempo bom.
+l Mis padres quieren que estudie Medicina. = Meus pais querem que eu estude Medicina. ~ Meus pais querem estudar Medicina. | Meus pais estudaram Medicina.
+q Você quer dizer que espera que seu amigo melhore. O que diz? = Espero que te mejores pronto. | Espero que te mejoras pronto. | Espero mejorarte pronto.
+
+## Querer e esperar | Se o sujeito é o mesmo, use infinitivo: "quiero viajar". Se é outra pessoa, use "que" + subjuntivo: "quiero que viajes".
+v querer que = querer que; esperar que = esperar que; preferir que = preferir que; necesitar que = precisar que; pedir que = pedir que; aprobar = passar (prova); llegar a tiempo = chegar na hora
+f Prefiero [ir] en tren. = Prefiro ir de trem. ~ que vaya, vaya
+f Prefiero que [vayamos] en tren. = Prefiro que a gente vá de trem. ~ vamos, ir
+b Necesito que me ayudes. = Preciso que você me ajude.
+b Espero aprobar el examen. = Espero passar na prova.
+l Te pido que llegues a tiempo. = Te peço que chegue na hora. ~ Te peço para não chegar. | Você chegou na hora.
+q Você precisa que o colega envie o relatório hoje. O que diz? = Necesito que me envíes el informe hoy. | Necesito enviarte el informe ayer. | Necesito que me envías el informe.
+
+## Ojalá | "Ojalá" (tomara) vem do árabe e sempre pede subjuntivo: "ojalá llueva" (tomara que chova). Não precisa de "que", mas pode ter.
+v ojalá = tomara; llueva = chova; gane = ganhe; salga bien = dê certo; suerte = sorte; pronto = logo; lotería = loteria
+f Ojalá [gane] mi equipo. = Tomara que meu time ganhe. ~ gana, ganará
+f Ojalá que todo [salga] bien. = Tomara que tudo dê certo. ~ sale, saldrá
+b Ojalá llueva mañana. = Tomara que chova amanhã.
+b Ojalá nos veamos pronto. = Tomara que a gente se veja logo.
+l Ojalá me toque la lotería. = Tomara que eu ganhe na loteria. ~ Ganhei na loteria. | Tomara que você ganhe na loteria.
+q Seu amigo tem uma entrevista amanhã. O que você diz? = ¡Ojalá te vaya bien! | ¡Ojalá te va bien! | ¡Ojalá fue bien!
+
+## Votos e despedidas | Muitos votos são "que" + subjuntivo: "¡Que te mejores!" (melhoras!), "¡Que aproveche!" (bom apetite!), "¡Que tengas buen día!".
+v que te mejores = melhoras; que aproveche = bom apetite; que descanses = descanse bem; que lo pases bien = divirta-se; que tengas suerte = boa sorte; felicidades = felicidades; enhorabuena = parabéns (por conquista)
+f ¡Que lo [pases] bien en la fiesta! = Divirta-se na festa! ~ pasas, pasar
+f ¡Que [descanses]! Hasta mañana. = Descanse bem! Até amanhã. ~ descansas, descansar
+b ¡Que tengas suerte en el examen! = Boa sorte na prova!
+b ¡Que aproveche! = Bom apetite!
+l ¡Felicidades! Que cumplas muchos más. = Felicidades! Que você faça muitos mais. ~ Parabéns pela promoção! | Felicidades pelo casamento!
+q Seu colega está gripado. O que você diz ao se despedir? = ¡Que te mejores! | ¡Que aproveche! | ¡Enhorabuena!
+
+## Sonhos para o futuro | Para sonhos: "Mi sueño es..." (meu sonho é...), "Me encantaría que..." + subjuntivo. "Cuando" + subjuntivo para o futuro: "cuando tenga dinero".
+v sueño = sonho; me encantaría = eu adoraria; cuando tenga = quando eu tiver; jubilarse = aposentar-se; recorrer el mundo = percorrer o mundo; hijos = filhos; propio = próprio
+f Cuando [tenga] dinero, viajaré. = Quando eu tiver dinheiro, viajarei. ~ tengo, tendré
+f Mi [sueño] es vivir junto al mar. = Meu sonho é morar perto do mar. ~ sueña, suelo
+b Me encantaría tener mi propio negocio. = Eu adoraria ter meu próprio negócio.
+b Cuando me jubile, viviré en el campo. = Quando eu me aposentar, vou morar no campo.
+l Me encantaría que mis hijos aprendieran español. = Eu adoraria que meus filhos aprendessem espanhol. ~ Meus filhos aprenderam espanhol. | Eu adoraria aprender espanhol.
+q Alguém pergunta seu maior sonho. Você quer viajar pelo mundo. O que diz? = Mi sueño es recorrer el mundo. | Mi sueño fue el mundo. | Sueño que recorro.
+
+### frases
+fr Espero que este año encuentres el trabajo que buscas. = Espero que este ano você encontre o emprego que procura.
+fr Mis padres quieren que vuelva a casa para Navidad. = Meus pais querem que eu volte para casa no Natal.
+fr Ojalá no llueva el día de la boda. = Tomara que não chova no dia do casamento.
+fr ¡Que lo pases muy bien en tus vacaciones! = Aproveite muito as suas férias!
+fr Necesito que me [digas] la verdad. = Preciso que você me diga a verdade. ~ dices, decir
+fr Cuando termine la carrera, quiero vivir en el extranjero. = Quando eu terminar a faculdade, quero morar no exterior.
+fr Prefiero que hablemos mañana, hoy estoy muy cansado. = Prefiro que a gente converse amanhã, hoje estou muito cansado.
+fr Mi sueño es abrir una pequeña librería con cafetería. = Meu sonho é abrir uma pequena livraria com cafeteria.
+fr Te deseo que [seas] muy feliz en tu nueva casa. = Desejo que você seja muito feliz na sua casa nova. ~ eres, ser
+fr Ojalá podamos vernos pronto. = Tomara que possamos nos ver logo.
+
+### texto | Ano-novo
+t Clara | ¡Feliz año! ¿Ya has pensado en tus deseos para este año? = Feliz ano! Você já pensou nos seus desejos para este ano?
+t Iván | Sí. Ojalá encuentre un piso más grande. El mío es diminuto. = Sim. Tomara que eu encontre um apartamento maior. O meu é minúsculo.
+t Clara | Espero que lo consigas. ¿Y en el trabajo? = Espero que você consiga. E no trabalho?
+t Iván | Quiero que mi jefe me dé más responsabilidades. = Quero que meu chefe me dê mais responsabilidades.
+t Iván | ¿Y tú? ¿Qué le pides al año nuevo? = E você? O que você pede ao ano-novo?
+t Clara | Salud para mi familia, sobre todo para mi abuela. = Saúde para minha família, sobretudo para minha avó.
+t Iván | ¿Está mejor? = Ela está melhor?
+t Clara | Sí, bastante mejor. Y también quiero aprender a tocar el piano. = Sim, bem melhor. E também quero aprender a tocar piano.
+t Iván | ¡Qué bonito! Cuando aprendas, quiero que me des un concierto. = Que bonito! Quando você aprender, quero que me dê um concerto.
+t Clara | Trato hecho. ¡Que tengas un año maravilloso! = Fechado. Que você tenha um ano maravilhoso!
+t Iván | ¡Igualmente! = Igualmente!
+tq O que Iván quer encontrar? = Um apartamento maior | Um emprego novo | Uma namorada
+tq O que Iván quer do chefe? = Mais responsabilidades | Um salário maior | Mais férias
+tq O que Clara deseja para a família? = Saúde | Dinheiro | Uma viagem
+tq O que Clara quer aprender? = Tocar piano | Falar inglês | Cozinhar
+
+# b1u2 | Opiniões e debates | Dar opinião, concordar, discordar e argumentar.
+
+## Dar opinião | "Creo que" e "pienso que" levam indicativo: "creo que tienes razón". Na negativa pedem subjuntivo: "no creo que tengas razón".
+v creo que = acho que; pienso que = penso que; me parece que = me parece que; en mi opinión = na minha opinião; para mí = para mim; opinar = opinar; tener razón = ter razão
+f Creo que [tienes] razón. = Acho que você tem razão. ~ tengas, tener
+f No creo que [sea] buena idea. = Não acho que seja uma boa ideia. ~ es, será
+b En mi opinión, es demasiado caro. = Na minha opinião, é caro demais.
+b ¿Qué opinas del proyecto? = O que você acha do projeto?
+l Me parece que el plan es bueno. = Me parece que o plano é bom. ~ Não me parece que o plano seja bom. | Me parece que o plano é caro.
+q Seu colega pergunta o que você acha da proposta. Você a acha boa. O que diz? = Creo que es una buena propuesta. | No creo que es buena. | Creo que sea buena.
+
+## Concordar e discordar | Para concordar: "Estoy de acuerdo", "Tienes razón", "Exacto". Para discordar: "No estoy de acuerdo", "No lo veo así".
+v estoy de acuerdo = concordo; no estoy de acuerdo = discordo; exacto = exato; claro que sí = claro que sim; no lo veo así = não vejo assim; en parte = em parte; al contrario = pelo contrário
+f Estoy de [acuerdo] contigo. = Concordo com você. ~ acordado, razón
+f No lo [veo] así. = Não vejo assim. ~ vea, vi
+b Tienes razón en parte. = Você tem razão em parte.
+b Al contrario, es muy útil. = Pelo contrário, é muito útil.
+l Estoy totalmente de acuerdo. = Concordo totalmente. ~ Discordo totalmente. | Concordo em parte.
+q Seu amigo diz que o filme foi ótimo, mas você achou chato. O que diz? = Pues yo no estoy de acuerdo. | Sí, tienes toda la razón. | Exacto, me encantó.
+
+## Argumentar | Para organizar argumentos: "por un lado... por otro lado", "además" (além disso), "sin embargo" (no entanto), "por eso" (por isso).
+v por un lado = por um lado; por otro lado = por outro lado; además = além disso; sin embargo = no entanto; por eso = por isso; ventaja = vantagem; desventaja = desvantagem
+f [Además], es más barato. = Além disso, é mais barato. ~ Sin embargo, Por un lado
+f Es caro; sin [embargo], merece la pena. = É caro; no entanto, vale a pena. ~ duda, eso
+b Por eso prefiero el tren. = Por isso prefiro o trem.
+b La gran ventaja es el precio. = A grande vantagem é o preço.
+l Por un lado es cómodo, por otro es caro. = Por um lado é cômodo, por outro é caro. ~ Por um lado é barato, por outro é longe. | É cômodo e também é barato.
+q Você quer apresentar uma desvantagem depois de uma vantagem. Como começa? = Sin embargo, tiene un problema. | Además, es perfecto. | Por eso, me encanta.
+
+## Opiniões com subjuntivo | Expressões de valor pedem subjuntivo: "es importante que", "es mejor que", "es normal que": "es importante que todos participen".
+v es importante que = é importante que; es mejor que = é melhor que; es normal que = é normal que; es necesario que = é necessário que; es una pena que = é uma pena que; participar = participar; decidir = decidir
+f Es importante que todos [participen]. = É importante que todos participem. ~ participan, participar
+f Es una pena que no [puedas] venir. = É uma pena que você não possa vir. ~ puedes, podrás
+b Es mejor que lo decidamos juntos. = É melhor que a gente decida juntos.
+b Es normal que estés nervioso. = É normal que você esteja nervoso.
+l Es necesario que lleguemos a un acuerdo. = É necessário que cheguemos a um acordo. ~ Já chegamos a um acordo. | Não é necessário um acordo.
+q Você quer dizer que é melhor sair cedo. O que diz? = Es mejor que salgamos temprano. | Es mejor que salimos temprano. | Es mejor salgamos.
+
+## Num debate | Para pedir a palavra: "¿Puedo decir algo?". Para interromper com educação: "Perdona que te interrumpa". Para resumir: "En resumen".
+v perdona que te interrumpa = desculpe interromper; puedo decir algo = posso dizer algo; en resumen = em resumo; a ver = vejamos; desde mi punto de vista = do meu ponto de vista; tema = tema; debate = debate
+f Perdona que te [interrumpa], pero no es así. = Desculpe interromper, mas não é assim. ~ interrumpo, interrumpir
+f Desde mi punto de [vista], es justo. = Do meu ponto de vista, é justo. ~ visto, opinión
+b En resumen, necesitamos más tiempo. = Em resumo, precisamos de mais tempo.
+b ¿Puedo decir algo sobre el tema? = Posso dizer algo sobre o tema?
+l A ver, el problema principal es el dinero. = Vejamos, o problema principal é o dinheiro. ~ Vejamos, o dinheiro não é problema. | O problema principal é o tempo.
+q Você quer falar numa reunião, mas outra pessoa está falando. O que diz? = Perdona que te interrumpa, ¿puedo decir algo? | ¡Cállate, por favor! | En resumen, adiós.
+
+### frases
+fr Creo que trabajar desde casa tiene más ventajas que desventajas. = Acho que trabalhar de casa tem mais vantagens que desvantagens.
+fr No creo que la tecnología nos haga más felices. = Não acho que a tecnologia nos deixe mais felizes.
+fr Estoy de acuerdo contigo en parte, pero no del todo. = Concordo com você em parte, mas não totalmente.
+fr Por un lado, la ciudad tiene más oportunidades; por otro, es más estresante. = Por um lado, a cidade tem mais oportunidades; por outro, é mais estressante.
+fr Es importante que todos [respetemos] las opiniones de los demás. = É importante que todos respeitemos as opiniões dos outros. ~ respetamos, respetar
+fr Me parece que este debate no tiene fin. = Me parece que este debate não tem fim.
+fr Perdona que te interrumpa, pero eso no es verdad. = Desculpe interromper, mas isso não é verdade.
+fr En resumen, la propuesta es buena, pero necesita cambios. = Em resumo, a proposta é boa, mas precisa de mudanças.
+fr Además de ser barato, el transporte público [contamina] menos. = Além de ser barato, o transporte público polui menos. ~ contaminan, contamine
+fr Desde mi punto de vista, deberíamos esperar un poco. = Do meu ponto de vista, deveríamos esperar um pouco.
+
+### texto | Redes sociais: sim ou não?
+t Profesora | Hoy debatimos: ¿las redes sociales son buenas para los jóvenes? = Hoje vamos debater: as redes sociais são boas para os jovens?
+t Elena | Yo creo que sí. Nos ayudan a estar en contacto con amigos que viven lejos. = Eu acho que sim. Elas nos ajudam a ficar em contato com amigos que moram longe.
+t Marcos | No estoy de acuerdo. Pasamos demasiadas horas mirando el móvil. = Discordo. Passamos horas demais olhando o celular.
+t Elena | Es verdad que a veces las usamos demasiado. Sin embargo, también sirven para aprender. = É verdade que às vezes usamos demais. No entanto, também servem para aprender.
+t Marcos | Perdona que te interrumpa, pero ¿cuánta gente las usa para aprender? = Desculpe interromper, mas quanta gente usa para aprender?
+t Elena | Más de lo que piensas. Yo aprendo inglés con vídeos cortos. = Mais do que você imagina. Eu aprendo inglês com vídeos curtos.
+t Marcos | Vale, pero no creo que sea lo normal. Además, hay mucho acoso. = Tá, mas não acho que seja o normal. Além disso, tem muito assédio.
+t Profesora | Buen argumento. ¿Qué proponéis? = Bom argumento. O que vocês propõem?
+t Elena | Es importante que en las escuelas enseñen a usarlas bien. = É importante que nas escolas ensinem a usá-las bem.
+t Marcos | En eso sí estoy de acuerdo. = Nisso eu concordo.
+tq Qual é a posição inicial de Elena? = A favor das redes sociais | Contra as redes sociais | Não tem opinião
+tq Qual é o argumento de Marcos no começo? = Passamos horas demais no celular | As redes são caras | As redes são chatas
+tq Como Elena aprende inglês? = Com vídeos curtos | Com um professor | Com livros
+tq Em que os dois concordam no final? = As escolas devem ensinar a usar as redes | As redes devem ser proibidas | Os jovens não devem ter celular
+
+# b1u3 | Notícias | Entender e comentar notícias, reagir a novidades e resumir fatos.
+
+## O vocabulário da notícia | "Periódico" é jornal; "titular" é a manchete; "noticiero" (ou "telediario", na Espanha) é o jornal da TV.
+v periódico = jornal; titular = manchete; noticia = notícia; telediario = jornal da TV (Espanha); periodista = jornalista; suceso = ocorrência; gobierno = governo
+f He leído la [noticia] en el periódico. = Li a notícia no jornal. ~ titular, gobierno
+f El [titular] dice que subirán los precios. = A manchete diz que os preços vão subir. ~ periodista, suceso
+b Lo vi en el telediario. = Vi no jornal da TV.
+b El gobierno ha anunciado nuevas medidas. = O governo anunciou novas medidas.
+l La periodista entrevistó al alcalde. = A jornalista entrevistou o prefeito. ~ O prefeito entrevistou a jornalista. | A jornalista entrevistou o presidente.
+q Você quer saber se o amigo viu a notícia do terremoto. O que pergunta? = ¿Has visto la noticia del terremoto? | ¿Has hecho el terremoto? | ¿Eres periodista del terremoto?
+
+## A voz passiva e o "se" | Nas notícias aparece muito o "se" impessoal ("se ha descubierto" = descobriu-se) e a passiva com "ser" ("fue detenido" = foi preso).
+v se ha descubierto = descobriu-se; fue detenido = foi preso; se espera = espera-se; se calcula = calcula-se; inaugurar = inaugurar; construir = construir; puente = ponte
+f [Se] ha descubierto una nueva especie. = Foi descoberta uma nova espécie. ~ Le, Lo
+f El puente fue [construido] en 1990. = A ponte foi construída em 1990. ~ construida, construyó
+b Se espera mucha lluvia esta semana. = Espera-se muita chuva esta semana.
+b El ladrón fue detenido ayer. = O ladrão foi preso ontem.
+l Se calcula que asistieron diez mil personas. = Calcula-se que compareceram dez mil pessoas. ~ Calcula-se que compareceram mil pessoas. | Dez mil pessoas foram calculadas.
+q Você quer dizer que inauguraram um museu novo. Como diria numa notícia? = Se ha inaugurado un nuevo museo. | El museo ha inaugurado. | Se inauguraba museo.
+
+## Reagir a notícias | Para reagir: "¡No me digas!" (não acredito!), "¡Qué fuerte!" (que absurdo!, na Espanha), "¡Qué pena!", "¡Menos mal!" (ainda bem!).
+v no me digas = não acredito; qué fuerte = que absurdo; qué pena = que pena; menos mal = ainda bem; increíble = incrível; en serio = sério; vaya = puxa
+f ¿En [serio]? ¡No me lo puedo creer! = Sério? Não consigo acreditar! ~ verdad, cierto
+f ¡Menos [mal] que no hubo heridos! = Ainda bem que não houve feridos! ~ bien, malo
+b ¡Qué pena que cierren el cine! = Que pena que fechem o cinema!
+b ¡No me digas! ¿Cuándo pasó? = Não acredito! Quando aconteceu?
+l ¡Vaya! No sabía nada. = Puxa! Eu não sabia de nada. ~ Puxa! Eu já sabia de tudo. | Que bom! Eu sabia.
+q Seu amigo conta que ganhou na loteria. Como você reage? = ¡No me digas! ¡Qué suerte! | ¡Qué pena! | ¡Menos mal!
+
+## O que já tinha acontecido | O "pluscuamperfecto" (había + particípio) indica algo anterior a outro passado: "cuando llegó la policía, el ladrón ya se había ido".
+v había salido = tinha saído; ya se había ido = já tinha ido embora; antes de = antes de; nunca había visto = nunca tinha visto; ladrón = ladrão; incendio = incêndio; bomberos = bombeiros
+f Cuando llegué, el tren ya [había] salido. = Quando cheguei, o trem já tinha saído. ~ ha, hay
+f Nunca había [visto] tanta gente. = Nunca tinha visto tanta gente. ~ veía, vista
+b Los bomberos apagaron el incendio. = Os bombeiros apagaram o incêndio.
+b El ladrón ya se había escapado. = O ladrão já tinha escapado.
+l Me dijo que había perdido el trabajo. = Me disse que tinha perdido o emprego. ~ Me disse que vai perder o emprego. | Me disse que encontrou trabalho.
+q Você chegou atrasado ao cinema e o filme já tinha começado. O que diz? = Cuando llegué, la película ya había empezado. | Cuando llego, la película empieza. | La película ha empezado mañana.
+
+## Resumir uma notícia | Para resumir: "Según" (segundo), "al parecer" (pelo visto), "parece que", "la noticia dice que".
+v según = segundo; al parecer = pelo visto; parece que = parece que; fuentes = fontes; confirmar = confirmar; testigo = testemunha; ocurrir = ocorrer
+f [Según] el periódico, habrá huelga. = Segundo o jornal, haverá greve. ~ Sin, Sobre
+f Al [parecer], el accidente fue grave. = Pelo visto, o acidente foi grave. ~ pareció, claro
+b La policía ha confirmado la noticia. = A polícia confirmou a notícia.
+b Un testigo vio todo. = Uma testemunha viu tudo.
+l Parece que nadie sabe qué ocurrió. = Parece que ninguém sabe o que ocorreu. ~ Todos sabem o que ocorreu. | Parece que ninguém viu o acidente.
+q Você quer contar uma notícia sem ter certeza. Como começa? = Al parecer, han subido los impuestos. | Seguro que han subido. | Yo subí los impuestos.
+
+### frases
+fr Según el telediario, mañana habrá huelga de transportes. = Segundo o jornal da TV, amanhã haverá greve de transportes.
+fr Se ha descubierto un barco antiguo en la costa de Cádiz. = Foi descoberto um barco antigo no litoral de Cádiz.
+fr El nuevo hospital será inaugurado en marzo. = O novo hospital será inaugurado em março.
+fr ¡No me digas! No sabía que iban a cerrar la fábrica. = Não acredito! Eu não sabia que iam fechar a fábrica.
+fr Cuando llegaron los bomberos, el fuego ya se [había] apagado. = Quando os bombeiros chegaram, o fogo já tinha se apagado. ~ ha, hubo
+fr Al parecer, el accidente ocurrió por la niebla. = Pelo visto, o acidente aconteceu por causa da neblina.
+fr Menos mal que no hubo heridos. = Ainda bem que não houve feridos.
+fr La periodista confirmó la noticia con varias fuentes. = A jornalista confirmou a notícia com várias fontes.
+fr Se [calcula] que el concierto reunió a cincuenta mil personas. = Calcula-se que o show reuniu cinquenta mil pessoas. ~ calculan, calculó
+fr Nunca había leído una noticia tan increíble. = Nunca tinha lido uma notícia tão incrível.
+
+### texto | Você viu a notícia?
+t Sergio | ¿Has visto la noticia del perro que salvó a una niña? = Você viu a notícia do cachorro que salvou uma menina?
+t Andrea | ¡No! ¿Qué pasó? = Não! O que aconteceu?
+t Sergio | Al parecer, la niña se había perdido en el bosque. = Pelo visto, a menina tinha se perdido no bosque.
+t Sergio | La familia llamó a la policía, pero ya era de noche. = A família ligou para a polícia, mas já era noite.
+t Andrea | ¡Qué miedo! ¿Y el perro? = Que medo! E o cachorro?
+t Sergio | Era el perro de la familia. Se quedó con ella toda la noche y no dejó que pasara frío. = Era o cachorro da família. Ficou com ela a noite toda e não deixou que ela passasse frio.
+t Sergio | Por la mañana empezó a ladrar y los voluntarios los encontraron. = De manhã começou a latir e os voluntários os encontraram.
+t Andrea | ¡Menos mal! ¿La niña está bien? = Ainda bem! A menina está bem?
+t Sergio | Sí, según el periódico, solo tenía un poco de frío. = Sim, segundo o jornal, só estava com um pouco de frio.
+t Andrea | ¡Qué historia tan bonita! = Que história bonita!
+tq Onde a menina se perdeu? = No bosque | Na praia | Na cidade
+tq De quem era o cachorro? = Da família da menina | Da polícia | De um voluntário
+tq Como os voluntários os encontraram? = O cachorro latiu de manhã | A menina gritou | Viram uma luz
+tq Como estava a menina? = Só com um pouco de frio | Muito ferida | No hospital
+
+# b1u4 | Hipóteses | Falar do que faria, de situações imaginárias e de suposições.
+
+## O condicional | O condicional se forma com infinitivo + -ía: "viajaría" (viajaria), "comería". Os irregulares seguem o futuro: tendría, haría, podría, diría, saldría.
+v viajaría = viajaria; compraría = compraria; tendría = teria; haría = faria; podría = poderia; diría = diria; me gustaría = eu gostaria
+f Yo en tu lugar [haría] lo mismo. = Eu no seu lugar faria o mesmo. ~ hacería, hago
+f ¿[Podría] hablar con el director? = Eu poderia falar com o diretor? ~ Puedría, Poderia
+b Me gustaría vivir en Italia. = Eu gostaria de morar na Itália.
+b Yo no diría eso. = Eu não diria isso.
+l Con más tiempo, viajaría por todo el mundo. = Com mais tempo, viajaria pelo mundo todo. ~ Com mais tempo, viajei pelo mundo todo. | Com menos tempo, viajaria pouco.
+q Alguém pergunta o que você faria com um milhão. O que diz? = Compraría una casa en la playa. | Compré una casa en la playa. | Compro una casa en la playa.
+
+## Se eu tivesse… | Para situações improváveis ou imaginárias: "si" + imperfeito do subjuntivo + condicional: "si tuviera dinero, viajaría" (se eu tivesse dinheiro, viajaria).
+v si tuviera = se eu tivesse; si fuera = se eu fosse; si pudiera = se eu pudesse; si viviera = se eu morasse; si supiera = se eu soubesse; millonario = milionário; invisible = invisível
+f Si [tuviera] tiempo, aprendería japonés. = Se eu tivesse tempo, aprenderia japonês. ~ tengo, tendría
+f Si fuera millonario, [ayudaría] a mi familia. = Se eu fosse milionário, ajudaria minha família. ~ ayudo, ayudé
+b Si pudiera, dormiría todo el día. = Se eu pudesse, dormiria o dia todo.
+b Si supiera la respuesta, te la diría. = Se eu soubesse a resposta, te diria.
+l Si viviera cerca del mar, nadaría cada día. = Se eu morasse perto do mar, nadaria todo dia. ~ Moro perto do mar e nado todo dia. | Se eu morasse longe do mar, não nadaria.
+q Alguém pergunta que superpoder você queria. O que diz? = Si pudiera, sería invisible. | Si puedo, soy invisible. | Si podría, sería invisible.
+
+## Suposições | Para supor sobre o presente, use o futuro: "estará en casa" (deve estar em casa). Sobre o passado, o condicional: "serían las diez" (deviam ser dez horas).
+v estará = deve estar; tendrá = deve ter; serán = devem ser; serían = deviam ser; habrá = deve haver; supongo que = suponho que; seguramente = provavelmente
+f No contesta. [Estará] durmiendo. = Não atende. Deve estar dormindo. ~ Estuvo, Está
+f Cuando llegué, [serían] las diez. = Quando cheguei, deviam ser umas dez horas. ~ serán, son
+b Supongo que tendrá mucho trabajo. = Suponho que deve ter muito trabalho.
+b Seguramente habrá tráfico. = Provavelmente vai ter trânsito.
+l ¿Cuántos años tendrá su madre? = Quantos anos será que a mãe dele tem? ~ Quantos anos a mãe dele tinha? | A mãe dele tem quantos anos?
+q Seu amigo está atrasado e você imagina que pegou trânsito. O que diz? = Estará en un atasco. | Estuvo en un atasco ayer. | Está en atasco seguro.
+
+## Talvez | "Tal vez", "quizás" e "puede que" expressam dúvida. "Puede que" sempre pede subjuntivo: "puede que llueva" (pode ser que chova).
+v tal vez = talvez; quizás = quem sabe; puede que = pode ser que; es posible que = é possível que; probable = provável; dudar = duvidar; dudo que = duvido que
+f Puede que [llegue] tarde. = Pode ser que eu chegue tarde. ~ llego, llegaré
+f Dudo que [venga] a la fiesta. = Duvido que ele venha à festa. ~ viene, vendrá
+b Es posible que cambie de trabajo. = É possível que eu mude de emprego.
+b Tal vez nos veamos mañana. = Talvez a gente se veja amanhã.
+l Quizás tengas razón. = Talvez você tenha razão. ~ Com certeza você tem razão. | Talvez eu tenha razão.
+q Você não tem certeza se vai à reunião. O que diz? = Puede que no vaya a la reunión. | Puede que no voy a la reunión. | Seguro que voy.
+
+## Conselhos com condicional | O condicional suaviza conselhos e pedidos: "deberías" (você deveria), "podrías" (você poderia), "sería mejor" (seria melhor).
+v deberías = você deveria; podrías = você poderia; sería mejor = seria melhor; convendría = seria conveniente; yo que tú = se eu fosse você; descansar = descansar; consultar = consultar
+f Deberías [hablar] con ella. = Você deveria falar com ela. ~ hablas, hablando
+f Sería [mejor] esperar un poco. = Seria melhor esperar um pouco. ~ bueno, más
+b Podrías pedir ayuda a tu hermano. = Você poderia pedir ajuda ao seu irmão.
+b Convendría consultar a un abogado. = Seria conveniente consultar um advogado.
+l Yo que tú, aceptaría la oferta. = Se eu fosse você, aceitaria a oferta. ~ Eu aceitei a oferta. | Se eu fosse você, recusaria a oferta.
+q Sua amiga está muito cansada. Que conselho você dá com cuidado? = Deberías tomarte unos días libres. | Debes trabajar más. | Tomaste unos días libres.
+
+### frases
+fr Si tuviera más tiempo libre, aprendería a tocar el violín. = Se eu tivesse mais tempo livre, aprenderia a tocar violino.
+fr Me gustaría vivir un año en un país de habla hispana. = Eu gostaria de morar um ano num país de língua espanhola.
+fr No contesta al teléfono; estará en una reunión. = Não atende o telefone; deve estar numa reunião.
+fr Si fuera tú, no le diría nada todavía. = Se eu fosse você, não diria nada a ele ainda.
+fr Puede que el vuelo [salga] con retraso por la tormenta. = Pode ser que o voo saia atrasado por causa da tempestade. ~ sale, saldrá
+fr ¿Qué harías si te tocara la lotería? = O que você faria se ganhasse na loteria?
+fr Deberías dormir más, tienes cara de cansado. = Você deveria dormir mais, está com cara de cansado.
+fr Dudo que terminen la obra antes del verano. = Duvido que terminem a obra antes do verão.
+fr Si [pudiera] volver al pasado, estudiaría otra carrera. = Se eu pudesse voltar ao passado, faria outra faculdade. ~ puedo, podría
+fr Cuando nos conocimos, tendríamos unos veinte años. = Quando nos conhecemos, devíamos ter uns vinte anos.
+
+### texto | E se…?
+t Nuria | Juguemos a algo: ¿qué harías si pudieras vivir en cualquier época? = Vamos brincar de algo: o que você faria se pudesse viver em qualquer época?
+t Óscar | Mmm... Viviría en el futuro, en el año 3000. = Hum... Viveria no futuro, no ano 3000.
+t Nuria | ¿Por qué? = Por quê?
+t Óscar | Porque habría coches voladores y quizás podríamos viajar a otros planetas. = Porque haveria carros voadores e talvez pudéssemos viajar a outros planetas.
+t Nuria | Yo no. Si pudiera, iría a los años veinte, a París. = Eu não. Se pudesse, iria aos anos vinte, a Paris.
+t Óscar | ¿Para qué? = Para quê?
+t Nuria | Para conocer a los artistas de la época. Sería increíble hablar con Picasso. = Para conhecer os artistas da época. Seria incrível conversar com Picasso.
+t Óscar | ¿Y en qué idioma hablarías con él? = E em que língua você conversaria com ele?
+t Nuria | En español, claro. Era de Málaga. = Em espanhol, claro. Ele era de Málaga.
+t Óscar | ¡Es verdad! Entonces puede que yo también vaya contigo. = É verdade! Então pode ser que eu também vá com você.
+tq Em que época Óscar viveria? = No ano 3000 | Nos anos vinte | Na Idade Média
+tq O que haveria no futuro, segundo Óscar? = Carros voadores | Mais artistas | Menos trabalho
+tq Para onde Nuria iria? = Para Paris nos anos vinte | Para Málaga no futuro | Para Roma antiga
+tq Por que Nuria falaria espanhol com Picasso? = Porque ele era de Málaga | Porque ela não fala francês | Porque ele morava em Madri
+
+# b1u5 | Contar o que outros disseram | Relatar o que alguém disse, perguntou ou pediu.
+
+## Ele diz que… | No presente, o relato quase não muda: "Dice que está cansado" (diz que está cansado). Só mudam as pessoas: "estoy" vira "está".
+v dice que = diz que; dicen que = dizem que; comenta que = comenta que; explica que = explica que; asegura que = garante que; mensaje = mensagem; avisar = avisar
+f Ana [dice] que llegará tarde. = Ana diz que vai chegar tarde. ~ dicen, digo
+f Mi jefe [explica] que no hay presupuesto. = Meu chefe explica que não há orçamento. ~ explico, explicar
+b Dicen que va a llover. = Dizem que vai chover.
+b Me avisa que no puede venir. = Ele me avisa que não pode vir.
+l En su mensaje dice que te echa de menos. = Na mensagem ele diz que sente sua falta. ~ Na mensagem ele diz que está com fome. | Na mensagem você diz que sente falta dele.
+q Seu amigo pergunta o que a Laura escreveu. Ela vai se atrasar. O que você diz? = Dice que llegará un poco tarde. | Digo que llego tarde. | Dijo que llegué tarde.
+
+## Ele disse que… | Com "dijo que", os tempos recuam: "estoy" → "estaba", "voy a ir" → "iba a ir", "he terminado" → "había terminado", "iré" → "iría".
+v dijo que = disse que; estaba = estava; iba a = ia; había terminado = tinha terminado; vendría = viria; contó que = contou que; prometió que = prometeu que
+f Me dijo que [estaba] enfermo. = Me disse que estava doente. ~ está, estará
+f Prometió que [vendría] a las ocho. = Prometeu que viria às oito. ~ vendrá, viene
+b Contó que había perdido el tren. = Contou que tinha perdido o trem.
+b Dijo que iba a llamar. = Disse que ia ligar.
+l Me aseguró que no sabía nada. = Me garantiu que não sabia de nada. ~ Me garantiu que sabia de tudo. | Eu garanti que não sabia de nada.
+q Ontem Pedro disse "Estou cansado". Como você conta isso hoje? = Pedro dijo que estaba cansado. | Pedro dijo que estoy cansado. | Pedro dice que estuvo cansado.
+
+## Perguntas indiretas | Perguntas sim/não viram "si": "Me preguntó si tenía hambre". Perguntas com palavra interrogativa mantêm o acento: "Me preguntó dónde vivía".
+v me preguntó si = me perguntou se; quería saber = queria saber; dónde = onde; cuándo = quando; por qué = por que; cuánto = quanto; si = se
+f Me preguntó [si] quería café. = Me perguntou se eu queria café. ~ que, sí
+f Quería saber [dónde] vivía. = Queria saber onde eu morava. ~ donde, que
+b Me preguntó cuándo volvería. = Me perguntou quando eu voltaria.
+b No sé por qué se fue. = Não sei por que ele foi embora.
+l La policía preguntó qué había visto. = A polícia perguntou o que eu tinha visto. ~ A polícia perguntou onde eu estava. | Eu perguntei o que a polícia tinha visto.
+q O recepcionista perguntou se você tinha reserva. Como você conta isso? = Me preguntó si tenía reserva. | Me preguntó que tengo reserva. | Me pregunta si tuve reserva.
+
+## Pedidos e ordens | Para relatar pedidos e ordens, use subjuntivo: "Me pide que lo llame" (pede que eu ligue). No passado: "Me pidió que lo llamara".
+v me pide que = me pede que; me pidió que = me pediu que; me dijo que = me disse para; me recomendó que = me recomendou que; llamara = ligasse; trajera = trouxesse; esperara = esperasse
+f Mi madre me pide que la [llame]. = Minha mãe me pede que eu ligue para ela. ~ llamo, llamara
+f El médico me dijo que [descansara]. = O médico me disse para descansar. ~ descanso, descansaré
+b Me pidió que trajera vino. = Me pediu que eu trouxesse vinho.
+b Nos recomendó que esperáramos. = Nos recomendou que esperássemos.
+l El profesor nos dijo que no habláramos. = O professor nos disse para não falarmos. ~ O professor nos disse que não falou. | O professor nos pediu para falar.
+q Sua chefe pediu para você enviar o relatório. Como conta para um colega? = Me pidió que enviara el informe. | Me pidió que envío el informe. | Le pedí el informe.
+
+## Verbos para contar | Varie os verbos: "comentar", "contar", "explicar", "añadir" (acrescentar), "reconocer" (admitir), "negar" (negar), "quejarse" (reclamar).
+v añadir = acrescentar; reconocer = admitir; negar = negar; quejarse = reclamar; insistir = insistir; sugerir = sugerir; responder = responder
+f [Reconoció] que se había equivocado. = Admitiu que tinha errado. ~ Negó, Sugirió
+f Se [quejó] de que había mucho ruido. = Reclamou que havia muito barulho. ~ quejaba, queja
+b Negó que fuera su culpa. = Negou que fosse culpa dele.
+b Añadió que estaba muy contento. = Acrescentou que estava muito contente.
+l Insistió en que nos quedáramos a cenar. = Insistiu que ficássemos para jantar. ~ Insistiu em ir embora antes do jantar. | Sugeriu que jantássemos fora.
+q Seu vizinho reclamou do barulho. Como você conta isso? = Se quejó del ruido. | Se quejó al ruido mañana. | Quejó que ruido.
+
+### frases
+fr Mi hermana dice que este verano vendrá a visitarnos. = Minha irmã diz que neste verão virá nos visitar.
+fr El técnico me dijo que el ordenador estaba roto. = O técnico me disse que o computador estava quebrado.
+fr Me preguntó si quería ir al cine con ella. = Me perguntou se eu queria ir ao cinema com ela.
+fr La profesora nos pidió que hiciéramos los ejercicios en casa. = A professora nos pediu que fizéssemos os exercícios em casa.
+fr Juan me contó que se [había] mudado a Lima. = Juan me contou que tinha se mudado para Lima. ~ ha, habría
+fr El cliente se quejó de que la comida estaba fría. = O cliente reclamou que a comida estava fria.
+fr Quería saber cuánto costaba el billete. = Queria saber quanto custava a passagem.
+fr Prometió que nunca más llegaría tarde. = Prometeu que nunca mais chegaria atrasado.
+fr El médico me recomendó que [hiciera] más ejercicio. = O médico me recomendou que eu fizesse mais exercício. ~ hago, haré
+fr Reconoció que no había leído el contrato. = Admitiu que não tinha lido o contrato.
+
+### texto | O recado
+t Lola | ¿Ha llamado alguien mientras estaba fuera? = Alguém ligou enquanto eu estava fora?
+t Pedro | Sí, llamó tu jefa, la señora Ortiz. = Sim, ligou sua chefe, a senhora Ortiz.
+t Lola | ¿Y qué dijo? = E o que ela disse?
+t Pedro | Dijo que la reunión de mañana se había cambiado al jueves. = Disse que a reunião de amanhã tinha sido mudada para quinta.
+t Lola | ¿Al jueves? ¿Dijo a qué hora? = Para quinta? Ela disse a que horas?
+t Pedro | Sí, a las diez. Y me pidió que le enviaras el presupuesto antes. = Sim, às dez. E me pediu que você enviasse o orçamento antes.
+t Lola | Vale. ¿Algo más? = Tá bom. Mais alguma coisa?
+t Pedro | También preguntó si podrías presentar el proyecto a los clientes. = Também perguntou se você poderia apresentar o projeto aos clientes.
+t Lola | ¿Yo? ¡Qué nervios! ¿Y qué le respondiste? = Eu? Que nervoso! E o que você respondeu?
+t Pedro | Le dije que la llamarías esta tarde. = Disse que você ligaria para ela hoje à tarde.
+tq Para quando foi mudada a reunião? = Para quinta | Para amanhã | Para segunda
+tq O que a chefe pediu? = Que Lola enviasse o orçamento | Que Lola cancelasse a reunião | Que Pedro fosse à reunião
+tq O que a chefe perguntou? = Se Lola poderia apresentar o projeto | Se Lola estava doente | Onde Lola estava
+tq O que Pedro respondeu à chefe? = Que Lola ligaria à tarde | Que Lola não podia | Que ele apresentaria

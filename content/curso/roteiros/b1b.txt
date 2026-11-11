@@ -1,0 +1,378 @@
+// B1 — unidades 6 a 10
+
+# b1u6 | Meio ambiente | Falar de problemas ambientais, soluções e hábitos sustentáveis.
+
+## O planeta | "Medio ambiente" é meio ambiente; "cambio climático", mudança climática; "contaminación", poluição.
+v medio ambiente = meio ambiente; cambio climático = mudança climática; contaminación = poluição; calentamiento = aquecimento; sequía = seca; inundación = enchente; especie = espécie
+f La [contaminación] del aire es un problema grave. = A poluição do ar é um problema grave. ~ sequía, especie
+f Este verano hubo una gran [sequía]. = Neste verão houve uma grande seca. ~ inundación, lluvia
+b Muchas especies están en peligro. = Muitas espécies estão em perigo.
+b El cambio climático nos afecta a todos. = A mudança climática afeta todos nós.
+l Las inundaciones destruyeron muchas casas. = As enchentes destruíram muitas casas. ~ A seca destruiu muitas plantações. | As enchentes não destruíram nenhuma casa.
+q Você quer dizer que se preocupa com o meio ambiente. O que diz? = Me preocupa mucho el medio ambiente. | Me preocupo el medio ambiente mucho. | El medio ambiente me preocupo.
+
+## Reciclar | "Reciclar" é reciclar; "residuos" são resíduos; "contenedor" é a lixeira de coleta seletiva. "Envase" é embalagem.
+v reciclar = reciclar; residuos = resíduos; contenedor = contêiner de lixo; envase = embalagem; plástico = plástico; vidrio = vidro; reutilizar = reutilizar
+f El [vidrio] va en el contenedor verde. = O vidro vai no contêiner verde. ~ plástico, papel
+f Intento [reutilizar] las bolsas. = Tento reutilizar as sacolas. ~ reutilizo, reutilizando
+b En mi casa reciclamos todo. = Na minha casa reciclamos tudo.
+b Hay demasiados envases de plástico. = Há embalagens de plástico demais.
+l Separamos los residuos en cuatro contenedores. = Separamos os resíduos em quatro contêineres. ~ Jogamos todo o lixo num só contêiner. | Separamos o lixo em dois sacos.
+q Você não sabe onde jogar uma garrafa. O que pergunta? = ¿En qué contenedor va esta botella? | ¿Dónde compro una botella? | ¿Esta botella es de agua?
+
+## O que é preciso fazer | Para soluções: "hay que" + infinitivo (é preciso), "es necesario que" + subjuntivo, "deberíamos" (deveríamos).
+v hay que = é preciso; es necesario que = é necessário que; ahorrar energía = economizar energia; apagar = apagar, desligar; transporte público = transporte público; consumir = consumir; malgastar = desperdiçar
+f Hay que [ahorrar] agua. = É preciso economizar água. ~ ahorramos, ahorre
+f Es necesario que [consumamos] menos. = É necessário que consumamos menos. ~ consumimos, consumir
+b Apaga la luz al salir. = Apague a luz ao sair.
+b Deberíamos usar más el transporte público. = Deveríamos usar mais o transporte público.
+l No malgastes el agua cuando te duchas. = Não desperdice água quando tomar banho. ~ Não esqueça de tomar banho. | Use bastante água no banho.
+q Seu colega deixou o computador ligado à noite. O que diz? = Deberías apagar el ordenador por la noche. | Deberías encender más luces. | Apágame la noche.
+
+## Energia e consumo | "Energía renovable" é energia renovável; "placas solares", painéis solares; "huella de carbono", pegada de carbono.
+v energía renovable = energia renovável; placas solares = painéis solares; huella de carbono = pegada de carbono; eléctrico = elétrico; ahorrar = economizar; factura = conta (de luz, água); sostenible = sustentável
+f Hemos instalado placas [solares]. = Instalamos painéis solares. ~ solar, sol
+f La [factura] de la luz es muy cara. = A conta de luz é muito cara. ~ huella, energía
+b Mi próximo coche será eléctrico. = Meu próximo carro será elétrico.
+b Quiero reducir mi huella de carbono. = Quero reduzir minha pegada de carbono.
+l La energía del viento es renovable. = A energia do vento é renovável. ~ A energia do carvão é renovável. | A energia do sol não é renovável.
+q Você quer dizer que prefere produtos sustentáveis. O que diz? = Prefiero comprar productos sostenibles. | Prefiero productos sostener. | Compro sostenible siempre plástico.
+
+## O futuro do planeta | Para falar do futuro: "si no hacemos nada, ..." (se não fizermos nada) + futuro. "Cada vez más" é cada vez mais.
+v si no hacemos nada = se não fizermos nada; cada vez más = cada vez mais; nivel del mar = nível do mar; subir = subir; desaparecer = desaparecer; generaciones = gerações; esperanza = esperança
+f Si no hacemos nada, el problema [será] peor. = Se não fizermos nada, o problema será pior. ~ sea, fue
+f Las temperaturas son cada vez más [altas]. = As temperaturas estão cada vez mais altas. ~ alto, altos
+b El nivel del mar está subiendo. = O nível do mar está subindo.
+b Pensemos en las próximas generaciones. = Pensemos nas próximas gerações.
+l Muchos glaciares van a desaparecer. = Muitas geleiras vão desaparecer. ~ Muitas geleiras vão crescer. | Algumas florestas vão desaparecer.
+q Alguém diz que não há mais nada a fazer. Você discorda com otimismo. O que diz? = Todavía hay esperanza si actuamos ya. | No hay nada que hacer. | Ya es tarde para todo.
+
+### frases
+fr El cambio climático es uno de los mayores retos de nuestra época. = A mudança climática é um dos maiores desafios da nossa época.
+fr En mi barrio hay contenedores para papel, vidrio y plástico. = No meu bairro há contêineres para papel, vidro e plástico.
+fr Hay que reducir el consumo de plástico de un solo uso. = É preciso reduzir o consumo de plástico descartável.
+fr Si todos usáramos más la bici, habría menos contaminación. = Se todos usássemos mais a bicicleta, haveria menos poluição.
+fr Es necesario que el gobierno [invierta] en energía renovable. = É necessário que o governo invista em energia renovável. ~ invierte, invertir
+fr Este verano la sequía ha afectado a los agricultores. = Neste verão a seca afetou os agricultores.
+fr Apaga las luces cuando salgas de la habitación. = Apague as luzes quando sair do quarto.
+fr Cada vez más personas compran ropa de segunda mano. = Cada vez mais pessoas compram roupa de segunda mão.
+fr Instalamos placas [solares] y ahora pagamos menos de luz. = Instalamos painéis solares e agora pagamos menos de luz. ~ solar, soles
+fr Todavía estamos a tiempo de cambiar las cosas. = Ainda estamos a tempo de mudar as coisas.
+
+### texto | A casa sustentável
+t Jaime | ¿Es verdad que en tu casa ya no usáis bolsas de plástico? = É verdade que na sua casa vocês não usam mais sacolas plásticas?
+t Rocío | Sí. Hace un año decidimos cambiar nuestros hábitos. = Sim. Há um ano decidimos mudar nossos hábitos.
+t Jaime | ¿Y qué más hacéis? = E o que mais vocês fazem?
+t Rocío | Reciclamos todo, compramos a granel y vamos al trabajo en bici. = Reciclamos tudo, compramos a granel e vamos ao trabalho de bicicleta.
+t Jaime | ¿No es más caro? = Não é mais caro?
+t Rocío | Al principio sí. Pero instalamos placas solares y la factura de la luz bajó mucho. = No começo sim. Mas instalamos painéis solares e a conta de luz baixou muito.
+t Jaime | Yo creo que lo que hace una sola persona no sirve de nada. = Eu acho que o que uma só pessoa faz não serve para nada.
+t Rocío | No estoy de acuerdo. Si todos hiciéramos un poco, el cambio sería enorme. = Discordo. Se todos fizéssemos um pouco, a mudança seria enorme.
+t Jaime | Puede que tengas razón. ¿Por dónde empiezo? = Pode ser que você tenha razão. Por onde eu começo?
+t Rocío | Empieza por algo fácil: lleva tu propia botella de agua. = Comece por algo fácil: leve sua própria garrafa de água.
+tq Há quanto tempo a família de Rocío mudou os hábitos? = Há um ano | Há um mês | Há cinco anos
+tq Como Rocío vai ao trabalho? = De bicicleta | De carro elétrico | De ônibus
+tq O que fez a conta de luz baixar? = Os painéis solares | Usar menos a TV | Mudar de casa
+tq Qual é o primeiro passo que Rocío sugere? = Levar a própria garrafa de água | Comprar um carro elétrico | Instalar painéis solares
+
+# b1u7 | Entrevistas de emprego | Apresentar-se, falar de experiência, pontos fortes e condições de trabalho.
+
+## Apresentar-se | Numa entrevista, fale de forma clara: formação, experiência e o que você busca. "Me llamo... y soy licenciado en..." (sou formado em...).
+v licenciado = formado; formación = formação; puesto = cargo, vaga; empresa = empresa; candidato = candidato; perfil = perfil; motivación = motivação
+f Soy [licenciada] en Economía. = Sou formada em Economia. ~ licenciado, licencia
+f Me interesa mucho este [puesto]. = Este cargo me interessa muito. ~ perfil, motivo
+b Tengo formación en marketing. = Tenho formação em marketing.
+b Mi perfil encaja con la empresa. = Meu perfil combina com a empresa.
+l Busco un puesto con más responsabilidad. = Procuro um cargo com mais responsabilidade. ~ Procuro um cargo com menos responsabilidade. | Procuro uma empresa com mais salário.
+q O entrevistador pede "Háblenos de usted". Como você começa? = Soy ingeniero y tengo seis años de experiencia. | Me gusta la pizza y el fútbol. | No sé qué decir.
+
+## Experiência | "Llevo cinco años trabajando en..." (trabalho há cinco anos em...). "He trabajado como..." (trabalhei como...). "Estar a cargo de" é ser responsável por.
+v llevo = trabalho há (llevar + tempo); he trabajado = trabalhei; a cargo de = responsável por; equipo = equipe; proyecto = projeto; logro = conquista; prácticas = estágio
+f [Llevo] tres años trabajando aquí. = Trabalho aqui há três anos. ~ Hago, Estoy
+f Estaba a [cargo] de un equipo de diez personas. = Era responsável por uma equipe de dez pessoas. ~ cara, carga
+b Hice las prácticas en un banco. = Fiz o estágio num banco.
+b He trabajado como profesor de inglés. = Trabalhei como professor de inglês.
+l Mi mayor logro fue aumentar las ventas. = Minha maior conquista foi aumentar as vendas. ~ Meu maior erro foi diminuir as vendas. | Minha maior conquista foi abrir uma loja.
+q Você quer dizer que trabalha com vendas há oito anos. O que diz? = Llevo ocho años trabajando en ventas. | Tengo ocho años en ventas trabajé. | Trabajé ocho años mañana.
+
+## Pontos fortes e fracos | "Punto fuerte" é ponto forte. Para um ponto fraco, mostre como melhora: "A veces soy perfeccionista, pero estoy aprendiendo a delegar".
+v punto fuerte = ponto forte; punto débil = ponto fraco; responsable = responsável; organizado = organizado; perfeccionista = perfeccionista; trabajo en equipo = trabalho em equipe; adaptarse = adaptar-se
+f Mi punto [fuerte] es la organización. = Meu ponto forte é a organização. ~ débil, fuerza
+f Me [adapto] rápido a los cambios. = Me adapto rápido às mudanças. ~ adapta, adaptar
+b Soy muy responsable y puntual. = Sou muito responsável e pontual.
+b Me gusta el trabajo en equipo. = Gosto de trabalho em equipe.
+l A veces soy demasiado perfeccionista. = Às vezes sou perfeccionista demais. ~ Nunca sou perfeccionista. | Às vezes sou desorganizado.
+q Perguntam seu ponto fraco. Como responde de forma honesta e positiva? = A veces me cuesta delegar, pero estoy mejorando. | No tengo ningún punto débil. | Soy muy vago.
+
+## Perguntas do entrevistador | Perguntas comuns: "¿Por qué quiere trabajar aquí?", "¿Dónde se ve en cinco años?", "¿Cuándo podría empezar?".
+v por qué = por que; dónde se ve = onde se vê; cuándo podría empezar = quando poderia começar; disponibilidad = disponibilidade; incorporarse = começar (num emprego); de inmediato = de imediato; aportar = contribuir
+f Podría incorporarme de [inmediato]. = Poderia começar de imediato. ~ inmediata, momento
+f ¿Qué puede [aportar] a la empresa? = O que o senhor pode contribuir para a empresa? ~ aporta, apoyar
+b Tengo disponibilidad para viajar. = Tenho disponibilidade para viajar.
+b ¿Por qué quiere trabajar aquí? = Por que o senhor quer trabalhar aqui?
+l En cinco años me veo liderando un equipo. = Em cinco anos me vejo liderando uma equipe. ~ Em cinco anos me vejo em outra empresa. | Há cinco anos lidero uma equipe.
+q Perguntam quando você pode começar. Precisa de duas semanas. O que diz? = Podría empezar dentro de dos semanas. | Empecé hace dos semanas. | Nunca puedo empezar.
+
+## Condições | "Sueldo" ou "salario" é salário; "bruto" e "neto", bruto e líquido. "Jornada completa" é tempo integral e "teletrabajo", trabalho remoto.
+v sueldo = salário; bruto = bruto; jornada completa = tempo integral; media jornada = meio período; teletrabajo = trabalho remoto; vacaciones = férias; período de prueba = período de experiência
+f Es un puesto de jornada [completa]. = É um cargo de tempo integral. ~ completo, media
+f ¿Es posible hacer [teletrabajo]? = É possível fazer trabalho remoto? ~ teléfono, trabajo
+b ¿Cuál es el sueldo bruto anual? = Qual é o salário bruto anual?
+b Hay un período de prueba de tres meses. = Há um período de experiência de três meses.
+l El contrato incluye veintitrés días de vacaciones. = O contrato inclui vinte e três dias de férias. ~ O contrato inclui treze dias de férias. | O contrato não inclui férias.
+q Você quer saber se pode trabalhar de casa alguns dias. O que pergunta? = ¿Se puede teletrabajar algunos días? | ¿Puedo trabajar en mi casa siempre sin venir? | ¿Hay vacaciones en casa?
+
+### frases
+fr Soy licenciado en Administración y llevo cinco años en el sector. = Sou formado em Administração e estou há cinco anos no setor.
+fr En mi último trabajo estaba a cargo de un equipo de ocho personas. = No meu último emprego era responsável por uma equipe de oito pessoas.
+fr Mi punto fuerte es que me adapto rápido a los cambios. = Meu ponto forte é que me adapto rápido às mudanças.
+fr Me interesa este puesto porque quiero crecer profesionalmente. = Este cargo me interessa porque quero crescer profissionalmente.
+fr Podría [incorporarme] a principios del mes que viene. = Poderia começar no início do mês que vem. ~ incorporar, incorporo
+fr ¿Cuántos días de teletrabajo ofrece la empresa? = Quantos dias de trabalho remoto a empresa oferece?
+fr Hice las prácticas en una empresa internacional en Madrid. = Fiz o estágio numa empresa internacional em Madri.
+fr A veces soy perfeccionista, pero he aprendido a delegar. = Às vezes sou perfeccionista, mas aprendi a delegar.
+fr Le agradezco la [oportunidad] de esta entrevista. = Agradeço a oportunidade desta entrevista. ~ oportunidades, oportuno
+fr Quedamos a la espera de su respuesta. = Ficamos no aguardo da sua resposta.
+
+### texto | A entrevista
+t Entrevistadora | Buenos días, Daniel. Gracias por venir. Háblenos un poco de usted. = Bom dia, Daniel. Obrigada por vir. Fale um pouco sobre o senhor.
+t Daniel | Buenos días. Soy licenciado en Informática y llevo cuatro años como desarrollador web. = Bom dia. Sou formado em Informática e trabalho há quatro anos como desenvolvedor web.
+t Entrevistadora | ¿Por qué quiere dejar su trabajo actual? = Por que o senhor quer deixar seu emprego atual?
+t Daniel | Me gusta mi empresa, pero busco proyectos más grandes y aprender cosas nuevas. = Gosto da minha empresa, mas procuro projetos maiores e aprender coisas novas.
+t Entrevistadora | ¿Cuál diría que es su punto fuerte? = Qual o senhor diria que é seu ponto forte?
+t Daniel | Trabajo muy bien en equipo y soy muy organizado. = Trabalho muito bem em equipe e sou muito organizado.
+t Entrevistadora | ¿Y un punto débil? = E um ponto fraco?
+t Daniel | Hablar en público me pone nervioso, pero estoy haciendo un curso para mejorar. = Falar em público me deixa nervoso, mas estou fazendo um curso para melhorar.
+t Entrevistadora | Muy bien. ¿Tiene alguna pregunta para nosotros? = Muito bem. O senhor tem alguma pergunta para nós?
+t Daniel | Sí, ¿es posible teletrabajar algunos días a la semana? = Sim, é possível trabalhar remotamente alguns dias por semana?
+t Entrevistadora | Sí, dos días a la semana. Le llamaremos la próxima semana con una respuesta. = Sim, dois dias por semana. Ligaremos para o senhor na próxima semana com uma resposta.
+tq Há quanto tempo Daniel trabalha como desenvolvedor? = Quatro anos | Dois anos | Dez anos
+tq Por que ele quer mudar de emprego? = Procura projetos maiores | Ganha pouco | Não gosta do chefe
+tq Qual é o ponto fraco de Daniel? = Falar em público | Chegar atrasado | Trabalhar em equipe
+tq Quantos dias de trabalho remoto a empresa permite? = Dois por semana | Nenhum | Cinco por semana
+
+# b1u8 | Cultura hispânica | Festas, comida, música, variedades da língua e costumes do mundo hispânico.
+
+## Festas | O Día de Muertos (México) celebra quem já partiu com altares e flores. As Fallas (Valência) queimam grandes figuras. Os Sanfermines (Pamplona) têm corridas de touros.
+v fiesta = festa; celebrar = celebrar; tradición = tradição; desfile = desfile; disfraz = fantasia; altar = altar; fuegos artificiales = fogos de artifício
+f El Día de Muertos se [celebra] en noviembre. = O Dia dos Mortos é celebrado em novembro. ~ celebran, celebró
+f En Carnaval todos llevan [disfraz]. = No Carnaval todos usam fantasia. ~ desfile, altar
+b Es una tradición muy antigua. = É uma tradição muito antiga.
+b Hubo fuegos artificiales a medianoche. = Houve fogos de artifício à meia-noite.
+l Las familias ponen fotos en el altar. = As famílias colocam fotos no altar. ~ As famílias colocam flores na rua. | As crianças colocam fotos na escola.
+q Você quer perguntar qual é a festa mais importante da cidade. O que diz? = ¿Cuál es la fiesta más importante de aquí? | ¿Cuándo es mi fiesta? | ¿Hay fiesta mañana en mi casa?
+
+## Comida regional | Cada país tem seus pratos: tacos (México), arepas (Venezuela e Colômbia), empanadas (Argentina), ceviche (Peru), paella (Espanha).
+v plato típico = prato típico; receta = receita; maíz = milho; picante = apimentado; probar = provar; región = região; sabor = sabor
+f El ceviche es el plato [típico] de Perú. = O ceviche é o prato típico do Peru. ~ típica, tipo
+f Las arepas se hacen con [maíz]. = As arepas são feitas com milho. ~ arroz, trigo
+b Tienes que probar las empanadas argentinas. = Você tem que provar as empanadas argentinas.
+b Cada región tiene su receta. = Cada região tem sua receita.
+l La comida mexicana tiene mucho sabor. = A comida mexicana tem muito sabor. ~ A comida mexicana não tem sabor. | A comida peruana tem muito sabor.
+q Num restaurante peruano, você quer provar algo típico. O que pede? = ¿Qué plato típico me recomienda? | ¿Tiene pizza? | Quiero algo de Brasil.
+
+## Música e dança | Ritmos hispânicos: salsa (Caribe), tango (Argentina e Uruguai), flamenco (Espanha), cumbia (Colômbia), reguetón (Porto Rico).
+v ritmo = ritmo; baile = dança; bailar = dançar; letra = letra (de música); cantante = cantor; guitarra = violão; escenario = palco
+f El tango [nació] en Buenos Aires. = O tango nasceu em Buenos Aires. ~ nace, nacerá
+f Me encanta la [letra] de esta canción. = Adoro a letra desta música. ~ ritmo, guitarra
+b El flamenco es Patrimonio de la Humanidad. = O flamenco é Patrimônio da Humanidade.
+b No sé bailar salsa, pero quiero aprender. = Não sei dançar salsa, mas quero aprender.
+l La cantante salió al escenario con su guitarra. = A cantora entrou no palco com seu violão. ~ A cantora saiu do palco sem o violão. | O cantor entrou no palco com sua banda.
+q Alguém convida você para dançar salsa e você não sabe. O que diz? = No sé bailar salsa, ¿me enseñas? | Sí, bailo flamenco. | No me gusta la música.
+
+## Um idioma, muitos sotaques | Na Argentina e no Uruguai se usa "vos" em vez de "tú": "vos tenés". Na América Latina, "ustedes" substitui "vosotros". E "coger" é tabu em vários países: prefira "tomar".
+v vos = você (Argentina, Uruguai); ustedes = vocês; vosotros = vocês (Espanha); acento = sotaque; ordenador = computador (Espanha); computadora = computador (América); carro = carro (América)
+f En Argentina dicen "vos [tenés]". = Na Argentina dizem "vos tenés". ~ tienes, tengo
+f En México se dice "[computadora]". = No México se diz "computadora". ~ ordenador, computar
+b Me encanta el acento colombiano. = Adoro o sotaque colombiano.
+b En España usan vosotros. = Na Espanha usam vosotros.
+l Ustedes son muy amables. = Vocês são muito gentis. ~ Vocês são muito altos. | Nós somos muito gentis.
+q Em Buenos Aires, alguém pergunta "¿Vos de dónde sos?". O que significa? = De onde você é? | Onde você está? | Para onde você vai?
+
+## Costumes sociais | Na Espanha se cumprimenta com "dos besos" (dois beijos). A "sobremesa" é a conversa depois da refeição, não o doce. E os horários são tardios.
+v dos besos = dois beijos; sobremesa = conversa depois da refeição; siesta = sesta; horario = horário; puntual = pontual; saludar = cumprimentar; costumbre = costume
+f En España se saluda con dos [besos]. = Na Espanha se cumprimenta com dois beijos. ~ manos, besas
+f Después de comer, hacemos una larga [sobremesa]. = Depois de comer, fazemos uma longa conversa à mesa. ~ siesta, sobre
+b Es una costumbre muy española. = É um costume muito espanhol.
+b Aquí se cena muy tarde. = Aqui se janta muito tarde.
+l No todo el mundo duerme la siesta. = Nem todo mundo dorme a sesta. ~ Todo mundo dorme a sesta. | Ninguém janta tarde.
+q Você chega a um jantar na Espanha e vai cumprimentar uma amiga. O que faz? = Le doy dos besos. | Le doy la mano y me voy. | No digo nada.
+
+### frases
+fr En el Día de Muertos las familias recuerdan a sus seres queridos. = No Dia dos Mortos as famílias lembram seus entes queridos.
+fr El ceviche se prepara con pescado crudo y limón. = O ceviche é preparado com peixe cru e limão.
+fr En Argentina se toma mate a todas horas. = Na Argentina se toma mate a toda hora.
+fr El flamenco mezcla el cante, el baile y la guitarra. = O flamenco mistura o canto, a dança e o violão.
+fr En Colombia se [dice] "carro" y en España, "coche". = Na Colômbia se diz "carro" e na Espanha, "coche". ~ dicen, digo
+fr Las Fallas de Valencia terminan con un gran fuego. = As Fallas de Valência terminam com um grande fogo.
+fr En España la sobremesa puede durar horas. = Na Espanha a conversa à mesa pode durar horas.
+fr El español es la lengua oficial de veinte países. = O espanhol é a língua oficial de vinte países.
+fr Me encanta el [acento] de los chilenos. = Adoro o sotaque dos chilenos. ~ acentos, aceite
+fr Cada país hispano tiene sus propias tradiciones. = Cada país hispânico tem suas próprias tradições.
+
+### texto | Intercâmbio em Oaxaca
+t Emma | ¡Llegaste en la mejor época! Estamos preparando el Día de Muertos. = Você chegou na melhor época! Estamos preparando o Dia dos Mortos.
+t Bruno | He oído hablar de esa fiesta. ¿Es triste? = Já ouvi falar dessa festa. É triste?
+t Emma | No, al contrario. Es una celebración alegre para recordar a los que ya no están. = Não, pelo contrário. É uma celebração alegre para lembrar quem já não está.
+t Bruno | ¿Y qué hacen? = E o que vocês fazem?
+t Emma | Ponemos un altar en casa con fotos, flores naranjas y la comida favorita de nuestros muertos. = Montamos um altar em casa com fotos, flores laranja e a comida favorita dos nossos mortos.
+t Bruno | ¿Flores naranjas? = Flores laranja?
+t Emma | Sí, se llaman cempasúchil. Dicen que su olor guía a las almas. = Sim, se chamam cempasúchil. Dizem que o cheiro delas guia as almas.
+t Bruno | ¡Qué bonito! ¿Puedo ayudar a preparar el altar? = Que bonito! Posso ajudar a preparar o altar?
+t Emma | ¡Claro! Y luego vamos al cementerio. Hay música y la gente se queda toda la noche. = Claro! E depois vamos ao cemitério. Tem música e as pessoas ficam a noite toda.
+t Bruno | En Brasil no lo celebramos así. ¡Es una experiencia única! = No Brasil não celebramos assim. É uma experiência única!
+tq Como Emma descreve o Dia dos Mortos? = Uma celebração alegre | Uma festa triste | Uma festa para crianças
+tq O que vai no altar? = Fotos, flores laranja e comida | Só velas | Presentes e doces comprados
+tq Para que serve o cheiro do cempasúchil, segundo a tradição? = Guiar as almas | Afastar os insetos | Decorar a casa
+tq O que as pessoas fazem no cemitério? = Ficam a noite toda com música | Rezam em silêncio uma hora | Só deixam flores
+
+# b1u9 | Tecnologia | Dispositivos, internet, problemas técnicos e segurança digital.
+
+## Dispositivos | Na Espanha se diz "móvil" e "ordenador"; na América Latina, "celular" e "computadora". "Portátil" é notebook e "pantalla", a tela.
+v móvil = celular (Espanha); ordenador = computador (Espanha); portátil = notebook; pantalla = tela; cargador = carregador; batería = bateria; auriculares = fones de ouvido
+f Se me ha roto la [pantalla] del móvil. = A tela do meu celular quebrou. ~ batería, cargador
+f No tengo [batería]. ¿Me prestas el cargador? = Estou sem bateria. Você me empresta o carregador? ~ pantalla, portátil
+b Trabajo con un portátil. = Trabalho com um notebook.
+b ¿Has visto mis auriculares? = Você viu meus fones de ouvido?
+l El ordenador nuevo es muy rápido. = O computador novo é muito rápido. ~ O computador novo é muito lento. | O celular novo é muito rápido.
+q Seu celular está quase sem bateria num café. O que pergunta? = ¿Hay algún enchufe para cargar el móvil? | ¿Tiene una pantalla nueva? | ¿Dónde está mi ordenador?
+
+## Internet | "Descargar" é baixar; "subir" é postar ou fazer upload; "contraseña" é senha; "enlace" é link.
+v descargar = baixar; subir = postar, enviar; contraseña = senha; enlace = link; red social = rede social; aplicación = aplicativo; conexión = conexão
+f Te mando el [enlace] por correo. = Te mando o link por e-mail. ~ contraseña, conexión
+f He [subido] las fotos a la nube. = Subi as fotos para a nuvem. ~ bajado, subo
+b Descarga la aplicación del banco. = Baixe o aplicativo do banco.
+b ¿Cuál es la contraseña del wifi? = Qual é a senha do wi-fi?
+l La conexión es muy lenta hoy. = A conexão está muito lenta hoje. ~ A conexão está muito rápida hoje. | O aplicativo está muito lento hoje.
+q Você está num hotel e quer usar a internet. O que pergunta? = ¿Cuál es la contraseña del wifi? | ¿Cuál es la red social del hotel? | ¿Tiene un enlace de habitación?
+
+## Problemas técnicos | Para problemas: "no funciona", "se ha colgado" (travou), "no se enciende" (não liga), "se ha borrado" (foi apagado).
+v se ha colgado = travou; no se enciende = não liga; se ha borrado = foi apagado; reiniciar = reiniciar; actualizar = atualizar; técnico = técnico; arreglar = consertar
+f El ordenador se ha [colgado] otra vez. = O computador travou de novo. ~ caído, colgando
+f ¿Has probado a [reiniciarlo]? = Você já tentou reiniciar? ~ reinicia, reinicio
+b Mi móvil no se enciende. = Meu celular não liga.
+b Tengo que actualizar el sistema. = Tenho que atualizar o sistema.
+l El técnico dice que no lo puede arreglar. = O técnico diz que não consegue consertar. ~ O técnico diz que já consertou. | O técnico diz que vai trocar a tela.
+q Você apagou um arquivo importante sem querer. O que diz ao técnico? = He borrado un archivo importante sin querer. | Mi archivo se ha encendido. | He reiniciado mi jefe.
+
+## Prós e contras | Para avaliar: "Lo bueno es que..." (o bom é que...), "lo malo es que..." (o ruim é que...), "por un lado... por otro...".
+v lo bueno = o bom; lo malo = o ruim; depender de = depender de; adicción = vício; comunicarse = comunicar-se; privacidad = privacidade; útil = útil
+f Lo [bueno] es que puedo trabajar desde casa. = O bom é que posso trabalhar de casa. ~ bien, mejor
+f Dependemos [demasiado] de los móviles. = Dependemos demais dos celulares. ~ demasiados, demasiada
+b Lo malo es la falta de privacidad. = O ruim é a falta de privacidade.
+b La tecnología es muy útil. = A tecnologia é muito útil.
+l Los jóvenes se comunican por mensajes. = Os jovens se comunicam por mensagens. ~ Os jovens se comunicam por cartas. | Os idosos se comunicam por mensagens.
+q Alguém diz que a tecnologia só traz problemas. Você quer equilibrar. O que diz? = Tiene cosas malas, pero también es muy útil. | Sí, la tecnología es horrible. | No uso nada nunca.
+
+## Segurança digital | "Contraseña segura" é senha forte; "estafa" é golpe; "hackear" é invadir; "copia de seguridad", backup.
+v contraseña segura = senha forte; estafa = golpe; hackear = invadir (conta); copia de seguridad = backup; datos personales = dados pessoais; desconocido = desconhecido; sospechoso = suspeito
+f Haz una [copia] de seguridad cada semana. = Faça um backup toda semana. ~ copiar, segura
+f No abras enlaces [sospechosos]. = Não abra links suspeitos. ~ sospechoso, seguras
+b Me han hackeado la cuenta. = Invadiram minha conta.
+b Cuidado con tus datos personales. = Cuidado com seus dados pessoais.
+l Ese mensaje es una estafa. = Essa mensagem é um golpe. ~ Essa mensagem é do banco. | Esse e-mail é seguro.
+q Você recebeu uma mensagem estranha pedindo sua senha. O que diz ao amigo? = Creo que es una estafa, no contestes. | Voy a enviar mi contraseña. | Es un mensaje muy seguro.
+
+### frases
+fr Se me ha roto la pantalla del móvil y no puedo leer nada. = A tela do meu celular quebrou e não consigo ler nada.
+fr ¿Me pasas la contraseña del wifi, por favor? = Você me passa a senha do wi-fi, por favor?
+fr El portátil se ha colgado y he perdido el documento. = O notebook travou e perdi o documento.
+fr Lo bueno de internet es que puedes aprender de todo. = O bom da internet é que você pode aprender de tudo.
+fr Nunca compartas tus [contraseñas] con nadie. = Nunca compartilhe suas senhas com ninguém. ~ contraseña, conexiones
+fr He descargado una aplicación para aprender idiomas. = Baixei um aplicativo para aprender idiomas.
+fr Hago una copia de seguridad de mis fotos cada mes. = Faço um backup das minhas fotos todo mês.
+fr Me escribió un desconocido pidiéndome dinero: era una estafa. = Um desconhecido me escreveu pedindo dinheiro: era um golpe.
+fr Si el ordenador no [funciona], llama al técnico. = Se o computador não funcionar, ligue para o técnico. ~ funcione, funcionará
+fr Paso demasiadas horas mirando la pantalla. = Passo horas demais olhando a tela.
+
+### texto | Suporte técnico
+t Técnico | Soporte técnico, buenos días. ¿En qué le puedo ayudar? = Suporte técnico, bom dia. Em que posso ajudar?
+t Carmen | Hola. Mi portátil no se enciende desde ayer. = Olá. Meu notebook não liga desde ontem.
+t Técnico | ¿Ha probado a conectarlo al cargador? = A senhora já tentou ligá-lo no carregador?
+t Carmen | Sí, y la luz del cargador se enciende, pero la pantalla sigue negra. = Sim, e a luz do carregador acende, mas a tela continua preta.
+t Técnico | Mantenga pulsado el botón de encendido diez segundos. = Mantenha o botão de ligar pressionado por dez segundos.
+t Carmen | Vale... ¡Ahora sí! Ya se ve la pantalla. = Tá... Agora sim! Já aparece a tela.
+t Técnico | Perfecto. Seguramente se había colgado al actualizar. = Perfeito. Provavelmente tinha travado ao atualizar.
+t Carmen | ¿He perdido mis documentos? = Perdi meus documentos?
+t Técnico | No debería. Pero le recomiendo que haga copias de seguridad a menudo. = Não deveria. Mas recomendo que a senhora faça backups com frequência.
+t Carmen | Tiene razón. Hoy mismo lo hago. ¡Muchas gracias! = O senhor tem razão. Hoje mesmo eu faço. Muito obrigada!
+tq Qual era o problema do notebook? = Não ligava | Estava lento | A tela quebrou
+tq O que o técnico mandou fazer? = Segurar o botão de ligar por dez segundos | Trocar o carregador | Levar à loja
+tq Por que o notebook travou, segundo o técnico? = Ao atualizar | Por um vírus | Por falta de bateria
+tq O que o técnico recomenda? = Fazer backups com frequência | Comprar outro notebook | Não atualizar mais
+
+# b1u10 | Emoções e relações | Expressar sentimentos, falar de relações e resolver conflitos.
+
+## Como você se sente | "Estar" + emoção: "estoy contento", "estoy preocupado". "Me siento" (me sinto) também é comum: "me siento solo".
+v contento = contente; preocupado = preocupado; nervioso = nervoso; enfadado = bravo, irritado; triste = triste; agobiado = sobrecarregado; orgulloso = orgulhoso
+f Estoy muy [orgulloso] de ti. = Estou muito orgulhoso de você. ~ orgullo, orgullosa
+f Últimamente me siento [agobiado]. = Ultimamente me sinto sobrecarregado. ~ agobio, agobiada
+b Mi madre está preocupada por mí. = Minha mãe está preocupada comigo.
+b ¿Por qué estás enfadado? = Por que você está bravo?
+l Estoy nervioso por la entrevista. = Estou nervoso por causa da entrevista. ~ Estou tranquilo com a entrevista. | Estou nervoso por causa da prova.
+q Seu amigo parece triste. O que você pergunta? = ¿Qué te pasa? Te veo triste. | ¿Por qué estás tan contento? | ¿Estás orgulloso?
+
+## O que me deixa… | "Me pone triste/nervioso" (me deixa triste/nervoso). "Me molesta que" + subjuntivo (me incomoda que): "me molesta que llegues tarde".
+v me pone = me deixa; me molesta que = me incomoda que; me alegra que = fico feliz que; me da miedo = me dá medo; me da pena = me dá pena; me encanta que = adoro que; me preocupa que = me preocupa que
+f Me molesta que [hables] tan alto. = Me incomoda que você fale tão alto. ~ hablas, hablar
+f Me [alegra] que estés aquí. = Fico feliz que você esteja aqui. ~ alegro, alegre
+b Me pone nervioso esperar. = Esperar me deixa nervoso.
+b Me da miedo volar. = Tenho medo de voar.
+l Me preocupa que no duermas bien. = Me preocupa que você não durma bem. ~ Me preocupa que você durma demais. | Fico feliz que você durma bem.
+q Seu colega de casa sempre deixa a louça suja. Como você diz que isso incomoda? = Me molesta que dejes los platos sucios. | Me molesta que dejas los platos. | Me alegra los platos sucios.
+
+## Relações | "Llevarse bien/mal con" é se dar bem/mal com. "Enamorarse de" é se apaixonar por. "Romper" é terminar (um namoro).
+v llevarse bien = dar-se bem; llevarse mal = dar-se mal; enamorarse = apaixonar-se; pareja = casal, parceiro; romper = terminar (relação); confiar = confiar; amistad = amizade
+f Me [llevo] muy bien con mi suegra. = Me dou muito bem com minha sogra. ~ lleva, llevé
+f Se [enamoró] de su compañero de clase. = Se apaixonou pelo colega de classe. ~ enamora, enamoré
+b Rompieron después de cinco años. = Terminaram depois de cinco anos.
+b Confío mucho en mis amigos. = Confio muito nos meus amigos.
+l Nuestra amistad es muy importante para mí. = Nossa amizade é muito importante para mim. ~ Nossa amizade não é importante. | Nosso trabalho é muito importante para mim.
+q Alguém pergunta como é sua relação com o irmão. Vocês se dão bem. O que diz? = Me llevo muy bien con él. | Me llevo con él muy. | Estoy enamorado de mi hermano.
+
+## Conflitos e desculpas | Para pedir desculpas: "Lo siento mucho", "Perdóname", "No era mi intención" (não era minha intenção). Para resolver: "¿Podemos hablarlo?".
+v perdóname = me perdoe; no era mi intención = não era minha intenção; discutir = discutir, brigar; malentendido = mal-entendido; hacer las paces = fazer as pazes; culpa = culpa; disculparse = desculpar-se
+f Perdóname, no era mi [intención]. = Me perdoe, não era minha intenção. ~ intento, culpa
+f Fue solo un [malentendido]. = Foi só um mal-entendido. ~ discusión, malentender
+b Ayer discutí con mi hermano. = Ontem briguei com meu irmão.
+b Al final hicimos las paces. = No final fizemos as pazes.
+l No fue culpa tuya, no te preocupes. = Não foi culpa sua, não se preocupe. ~ Foi culpa sua, sim. | Não foi culpa minha.
+q Você esqueceu o aniversário de uma amiga. O que diz? = Lo siento mucho, se me olvidó por completo. | No es mi culpa, es tu cumpleaños. | Me alegra que lo olvidara.
+
+## Empatia | Para apoiar alguém: "Te entiendo" (te entendo), "Estoy aquí para lo que necesites", "Ánimo" (força!), "Lo siento mucho".
+v te entiendo = te entendo; ánimo = força, coragem; apoyar = apoiar; escuchar = ouvir, escutar; contar con = contar com; lo que necesites = o que você precisar; desahogarse = desabafar
+f Puedes [contar] conmigo. = Você pode contar comigo. ~ cuentas, contigo
+f Estoy aquí para lo que [necesites]. = Estou aqui para o que você precisar. ~ necesitas, necesitar
+b Te entiendo perfectamente. = Te entendo perfeitamente.
+b ¡Ánimo, todo saldrá bien! = Força, tudo vai dar certo!
+l A veces solo necesitas desahogarte. = Às vezes você só precisa desabafar. ~ Às vezes você precisa ficar sozinho. | Nunca é bom desabafar.
+q Sua amiga perdeu o emprego e está triste. O que você diz? = Lo siento mucho. Cuenta conmigo para lo que necesites. | ¡Qué bien, ahora tienes tiempo! | Es tu culpa.
+
+### frases
+fr Estoy muy contento de que hayas venido a mi fiesta. = Estou muito contente que você tenha vindo à minha festa.
+fr Me pone nervioso hablar en público delante de mucha gente. = Falar em público na frente de muita gente me deixa nervoso.
+fr Me llevo muy bien con mis compañeros de trabajo. = Me dou muito bem com meus colegas de trabalho.
+fr Me molesta que la gente no respete las colas. = Me incomoda que as pessoas não respeitem as filas.
+fr Perdóname, no quería [hacerte] daño. = Me perdoe, eu não queria te magoar. ~ hacete, te hacer
+fr Discutimos por una tontería, pero ya hemos hecho las paces. = Brigamos por uma bobagem, mas já fizemos as pazes.
+fr Se conocieron en un viaje y se enamoraron enseguida. = Se conheceram numa viagem e se apaixonaram na hora.
+fr Si necesitas desahogarte, aquí estoy. = Se precisar desabafar, estou aqui.
+fr Me alegra mucho que [seáis] tan buenos amigos. = Fico muito feliz que vocês sejam tão bons amigos. ~ sois, ser
+fr Ánimo, seguro que mañana lo ves todo de otra manera. = Força, com certeza amanhã você vê tudo de outro jeito.
+
+### texto | A briga
+t Alba | Te noto rara. ¿Te pasa algo? = Te acho estranha. Aconteceu alguma coisa?
+t Inés | Discutí con Marta ayer y me siento fatal. = Briguei com a Marta ontem e me sinto péssima.
+t Alba | ¿Por qué discutisteis? = Por que vocês brigaram?
+t Inés | Le conté un secreto suyo a otra amiga. No era mi intención hacerle daño. = Contei um segredo dela para outra amiga. Não era minha intenção magoá-la.
+t Alba | Entiendo que esté enfadada. A mí también me molestaría. = Entendo que ela esteja brava. A mim também incomodaria.
+t Inés | Lo sé. Me da miedo que ya no confíe en mí. = Eu sei. Tenho medo de que ela não confie mais em mim.
+t Alba | ¿Le has pedido perdón? = Você já pediu desculpas?
+t Inés | Todavía no. No sé qué decirle. = Ainda não. Não sei o que dizer a ela.
+t Alba | Sé sincera. Dile que lo sientes y que no volverá a pasar. = Seja sincera. Diga que você sente muito e que não vai acontecer de novo.
+t Inés | Tienes razón. La voy a llamar ahora mismo. Gracias por escucharme. = Você tem razão. Vou ligar para ela agora mesmo. Obrigada por me escutar.
+t Alba | Para eso están las amigas. ¡Ánimo! = Para isso servem as amigas. Força!
+tq Por que Inés e Marta brigaram? = Inés contou um segredo de Marta | Marta esqueceu o aniversário de Inés | Por causa de dinheiro
+tq Do que Inés tem medo? = Que Marta não confie mais nela | Que Marta conte o segredo dela | De perder o emprego
+tq Inés já pediu desculpas? = Ainda não | Sim, ontem | Sim, por mensagem
+tq O que Alba aconselha? = Ser sincera e pedir desculpas | Esperar uma semana | Esquecer o assunto
