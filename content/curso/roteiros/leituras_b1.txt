@@ -1,0 +1,193 @@
+// Leituras narrativas do B1: subjuntivo, discurso indireto, opinião; 10 a 12 frases.
+
+# b1u1
+### leitura | Carta para mim mesma daqui a dez anos
+n Querida yo del futuro: hoy cumplo veinticinco años y quiero escribirte algunos deseos. = Querida eu do futuro: hoje faço vinte e cinco anos e quero te escrever alguns desejos.
+n Espero que sigas viviendo cerca del mar, porque sé que te hace feliz. = Espero que você continue morando perto do mar, porque sei que isso te faz feliz.
+n Ojalá hayas aprendido a tocar la guitarra, que siempre lo dejas para mañana. = Tomara que você tenha aprendido a tocar violão, que você sempre deixa para amanhã.
+n Quiero que tengas un trabajo que te guste, aunque no ganes mucho dinero. = Quero que você tenha um trabalho de que goste, mesmo que não ganhe muito dinheiro.
+n Deseo que tus padres estén sanos y que los visites a menudo. = Desejo que seus pais estejam saudáveis e que você os visite com frequência.
+n Espero que no hayas perdido el contacto con Marta y con Luis. = Espero que você não tenha perdido o contato com a Marta e com o Luis.
+n Ojalá hayas viajado a Japón, como soñamos desde niñas. = Tomara que você tenha viajado ao Japão, como sonhamos desde crianças.
+n Pero, sobre todo, quiero que seas amable contigo misma. = Mas, sobretudo, quero que você seja gentil consigo mesma.
+n No importa que no hayas cumplido todos estos deseos. = Não importa que você não tenha cumprido todos esses desejos.
+n Lo importante es que sigas intentándolo. = O importante é que você continue tentando.
+n Un abrazo muy fuerte de tu yo de veinticinco años. = Um abraço muito forte do seu eu de vinte e cinco anos.
+tq Quantos anos a autora tem ao escrever a carta? = Vinte e cinco | Trinta e cinco | Quinze
+tq Que instrumento ela quer ter aprendido? = Violão | Piano | Violino
+tq Para que país ela sonha viajar? = Japão | Itália | México
+tv Ela deseja um trabalho que pague muito, mesmo sem gostar. = F
+tv O mais importante para ela é continuar tentando. = V
+
+# b1u2
+### leitura | Celulares na escola: proibir ou não?
+n Este curso, varios colegios de mi ciudad han prohibido los móviles en clase. = Este ano letivo, várias escolas da minha cidade proibiram os celulares em aula.
+n Los defensores de la medida creen que los alumnos se concentran más. = Os defensores da medida acham que os alunos se concentram mais.
+n Además, dicen que en el recreo los chicos vuelven a hablar y a jugar juntos. = Além disso, dizem que no recreio os jovens voltam a conversar e brincar juntos.
+n Sin embargo, otros piensan que prohibir no es la solución. = No entanto, outros pensam que proibir não é a solução.
+n Para ellos, es más importante que la escuela enseñe a usar la tecnología con responsabilidad. = Para eles, é mais importante que a escola ensine a usar a tecnologia com responsabilidade.
+n También hay padres que prefieren que sus hijos lleven el móvil por seguridad. = Também há pais que preferem que os filhos levem o celular por segurança.
+n Yo creo que las dos posturas tienen parte de razón. = Eu acho que as duas posições têm parte de razão.
+n No me parece bien que los alumnos miren el móvil durante las explicaciones. = Não me parece certo que os alunos olhem o celular durante as explicações.
+n Pero tampoco creo que sea útil fingir que la tecnología no existe. = Mas também não acho que seja útil fingir que a tecnologia não existe.
+n Por eso, propongo guardar los móviles en clase y dedicar una hora a la semana a la educación digital. = Por isso, proponho guardar os celulares em aula e dedicar uma hora por semana à educação digital.
+n Así, por un lado, protegemos la concentración y, por otro, preparamos a los jóvenes para el futuro. = Assim, por um lado, protegemos a concentração e, por outro, preparamos os jovens para o futuro.
+tq Qual é o argumento dos defensores da proibição? = Os alunos se concentram mais | Os celulares são caros | Os professores não gostam
+tq Por que alguns pais querem que os filhos levem o celular? = Por segurança | Para jogar | Para estudar
+tq O que o autor propõe? = Guardar os celulares e ter educação digital | Proibir totalmente | Liberar o uso em aula
+tv O autor concorda totalmente com a proibição. = F
+tv O autor acha que as duas posições têm parte de razão. = V
+
+# b1u3
+### leitura | O cachorro que voltou para casa
+n Un perro ha recorrido más de trescientos kilómetros para volver a su antigua casa. = Um cachorro percorreu mais de trezentos quilômetros para voltar à sua antiga casa.
+n Según informó ayer el periódico local, el animal se llama Rocky y tiene seis años. = Segundo informou ontem o jornal local, o animal se chama Rocky e tem seis anos.
+n Hace dos meses, su familia se mudó de Sevilla a Valencia por motivos de trabajo. = Há dois meses, sua família se mudou de Sevilha para Valência por motivos de trabalho.
+n Al parecer, Rocky se escapó del nuevo piso la primera semana. = Pelo visto, Rocky fugiu do novo apartamento na primeira semana.
+n La familia lo buscó durante días y puso carteles por todo el barrio. = A família o procurou durante dias e colocou cartazes por todo o bairro.
+n El pasado lunes, una antigua vecina lo encontró delante de la casa de Sevilla. = Na segunda passada, uma antiga vizinha o encontrou em frente à casa de Sevilha.
+n Estaba muy delgado y cansado, pero no tenía heridas graves. = Estava muito magro e cansado, mas não tinha ferimentos graves.
+n La vecina contó que el perro estaba esperando en la puerta, como si nada hubiera pasado. = A vizinha contou que o cachorro estava esperando na porta, como se nada tivesse acontecido.
+n Los expertos no saben exactamente cómo encontró el camino. = Os especialistas não sabem exatamente como ele encontrou o caminho.
+n Algunos creen que los perros se orientan por el olfato y por el campo magnético de la Tierra. = Alguns acreditam que os cachorros se orientam pelo olfato e pelo campo magnético da Terra.
+n La familia ya ha ido a buscarlo y ha prometido que no volverá a perderlo. = A família já foi buscá-lo e prometeu que não vai perdê-lo de novo.
+tq Por que a família se mudou? = Por motivos de trabalho | Para ficar perto do mar | Porque a casa era pequena
+tq Quem encontrou Rocky? = Uma antiga vizinha | A polícia | Um veterinário
+tq Como estava o cachorro? = Magro e cansado, sem ferimentos graves | Gravemente ferido | Muito gordo
+tv O cachorro percorreu menos de cem quilômetros. = F
+tv Os especialistas não sabem exatamente como ele achou o caminho. = V
+
+# b1u4
+### leitura | Se eu pudesse mudar uma coisa
+n Una revista preguntó a sus lectores qué cambiarían de su ciudad si fueran alcaldes por un día. = Uma revista perguntou aos leitores o que mudariam na sua cidade se fossem prefeitos por um dia.
+n Ana, profesora de cuarenta años, dijo que haría más carriles para bicicletas. = Ana, professora de quarenta anos, disse que faria mais ciclovias.
+n Según ella, si hubiera más carriles seguros, mucha gente dejaría el coche en casa. = Segundo ela, se houvesse mais ciclovias seguras, muita gente deixaria o carro em casa.
+n Miguel, un estudiante, contestó que abriría las bibliotecas por la noche. = Miguel, um estudante, respondeu que abriria as bibliotecas à noite.
+n Explicó que muchos jóvenes no tienen un lugar tranquilo para estudiar en casa. = Explicou que muitos jovens não têm um lugar tranquilo para estudar em casa.
+n Carmen, una jubilada, pensaba que lo más urgente serían más bancos y sombra en las calles. = Carmen, uma aposentada, achava que o mais urgente seriam mais bancos e sombra nas ruas.
+n Dijo que, si pudiera sentarse a descansar, saldría a pasear más a menudo. = Disse que, se pudesse sentar para descansar, sairia para passear com mais frequência.
+n Por último, Jorge, dueño de un bar, propuso que las fiestas del barrio duraran una semana entera. = Por último, Jorge, dono de um bar, propôs que as festas do bairro durassem uma semana inteira.
+n Seguramente sus vecinos no estarían tan contentos con esa idea. = Provavelmente os vizinhos dele não ficariam tão contentes com essa ideia.
+n La revista concluyó que cada persona imagina una ciudad distinta según sus necesidades. = A revista concluiu que cada pessoa imagina uma cidade diferente segundo suas necessidades.
+n ¿Y tú? ¿Qué harías si fueras alcalde por un día? = E você? O que faria se fosse prefeito por um dia?
+tq O que Ana faria? = Mais ciclovias | Mais bancos nas ruas | Festas mais longas
+tq Por que Miguel abriria as bibliotecas à noite? = Muitos jovens não têm lugar tranquilo para estudar | Para fazer festas | Porque trabalha à noite
+tq O que Jorge propôs? = Festas do bairro de uma semana | Mais bares | Menos carros
+tv Carmen é uma estudante. = F
+tv A revista concluiu que cada pessoa imagina uma cidade diferente. = V
+
+# b1u5
+### leitura | O telefone sem fio
+n El lunes, mi jefa me dijo que la empresa iba a cambiar de oficina. = Na segunda, minha chefe me disse que a empresa ia mudar de escritório.
+n Yo se lo conté a Pablo, mi compañero, y le pedí que no se lo dijera a nadie. = Eu contei ao Pablo, meu colega, e pedi que não contasse a ninguém.
+n Pablo le comentó a Lucía que nos mudábamos a un edificio en las afueras. = Pablo comentou com Lucía que nos mudaríamos para um prédio na periferia.
+n Lucía, preocupada, le preguntó a Andrés si sabía cuándo sería la mudanza. = Lucía, preocupada, perguntou ao Andrés se ele sabia quando seria a mudança.
+n Andrés le respondió que había oído que sería la semana siguiente. = Andrés respondeu que tinha ouvido que seria na semana seguinte.
+n El martes, toda la oficina comentaba que nos íbamos a otra ciudad. = Na terça, o escritório todo comentava que íamos para outra cidade.
+n Algunos incluso decían que iban a despedir a la mitad del equipo. = Alguns até diziam que iam demitir metade da equipe.
+n El miércoles, la jefa nos reunió a todos para aclarar la situación. = Na quarta, a chefe reuniu todos para esclarecer a situação.
+n Nos explicó que solo nos mudaríamos a la planta de arriba, en el mismo edificio. = Ela explicou que só nos mudaríamos para o andar de cima, no mesmo prédio.
+n Y añadió que nadie iba a perder su trabajo. = E acrescentou que ninguém ia perder o emprego.
+n Desde entonces, en mi oficina, cuando alguien cuenta un rumor, decimos: "¿Planta de arriba o otra ciudad?". = Desde então, no meu escritório, quando alguém conta um boato, dizemos: "Andar de cima ou outra cidade?".
+tq O que o narrador pediu ao Pablo? = Que não contasse a ninguém | Que falasse com a chefe | Que procurasse outro emprego
+tq O que diziam alguns colegas na terça? = Que iam demitir metade da equipe | Que iam ganhar aumento | Que a chefe ia sair
+tq Para onde a empresa realmente ia se mudar? = Para o andar de cima | Para outra cidade | Para a periferia
+tv Pablo guardou o segredo. = F
+tv A chefe disse que ninguém perderia o emprego. = V
+
+# b1u6
+### leitura | Uma cidade sem carros no centro
+n Hace más de veinte años, Pontevedra, una ciudad gallega, tomó una decisión valiente. = Há mais de vinte anos, Pontevedra, uma cidade galega, tomou uma decisão corajosa.
+n El ayuntamiento cerró el centro histórico a los coches privados. = A prefeitura fechou o centro histórico para carros particulares.
+n Al principio, muchos comerciantes se quejaron porque temían perder clientes. = No começo, muitos comerciantes reclamaram porque temiam perder clientes.
+n Sin embargo, ocurrió lo contrario: las calles se llenaron de gente caminando. = No entanto, aconteceu o contrário: as ruas se encheram de gente caminhando.
+n Los niños volvieron a ir solos al colegio y a jugar en las plazas. = As crianças voltaram a ir sozinhas para a escola e a brincar nas praças.
+n La contaminación bajó y el ruido casi desapareció. = A poluição caiu e o barulho quase desapareceu.
+n Además, se redujeron mucho los accidentes de tráfico. = Além disso, os acidentes de trânsito diminuíram muito.
+n Hoy la ciudad recibe visitantes de todo el mundo que quieren conocer su modelo. = Hoje a cidade recebe visitantes do mundo todo que querem conhecer seu modelo.
+n Eso sí, los vecinos reconocen que no todo es perfecto. = Claro, os moradores reconhecem que nem tudo é perfeito.
+n Por ejemplo, es necesario que haya buenos aparcamientos fuera del centro. = Por exemplo, é necessário que haja bons estacionamentos fora do centro.
+n Aun así, pocos quieren volver al pasado. = Mesmo assim, poucos querem voltar ao passado.
+n Pontevedra demuestra que otra ciudad es posible. = Pontevedra demonstra que outra cidade é possível.
+tq O que a prefeitura fez? = Fechou o centro histórico para carros | Construiu mais estradas | Proibiu as bicicletas
+tq Por que os comerciantes reclamaram no começo? = Temiam perder clientes | Os aluguéis subiram | Não gostavam das crianças
+tq O que é necessário, segundo os moradores? = Bons estacionamentos fora do centro | Mais carros no centro | Fechar as lojas
+tv Os acidentes de trânsito aumentaram. = F
+tv Visitantes do mundo todo vão conhecer o modelo da cidade. = V
+
+# b1u7
+### leitura | O que aprendi recrutando pessoas
+n Llevo diez años trabajando en recursos humanos y he hecho cientos de entrevistas. = Trabalho há dez anos em recursos humanos e já fiz centenas de entrevistas.
+n Muchos candidatos creen que lo más importante es el currículum. = Muitos candidatos acham que o mais importante é o currículo.
+n Es importante, claro, pero no es lo que decide la entrevista. = É importante, claro, mas não é o que decide a entrevista.
+n Lo primero que observo es si la persona ha investigado sobre la empresa. = A primeira coisa que observo é se a pessoa pesquisou sobre a empresa.
+n Me sorprende que todavía haya gente que no sabe a qué nos dedicamos. = Me surpreende que ainda haja gente que não sabe o que fazemos.
+n También valoro mucho que los candidatos den ejemplos concretos. = Também valorizo muito que os candidatos deem exemplos concretos.
+n No basta con decir "soy organizado": hay que explicar cuándo y cómo lo demostraste. = Não basta dizer "sou organizado": é preciso explicar quando e como você demonstrou isso.
+n Cuando pregunto por un punto débil, no busco una respuesta perfecta. = Quando pergunto sobre um ponto fraco, não busco uma resposta perfeita.
+n Prefiero que la persona sea sincera y cuente qué hace para mejorar. = Prefiro que a pessoa seja sincera e conte o que faz para melhorar.
+n Al final, siempre recomiendo que el candidato haga alguna pregunta. = No final, sempre recomendo que o candidato faça alguma pergunta.
+n Eso demuestra interés y, además, nos ayuda a saber qué le importa. = Isso demonstra interesse e, além disso, nos ajuda a saber o que importa para ele.
+tq Há quanto tempo a autora trabalha em RH? = Dez anos | Dois anos | Vinte anos
+tq O que ela observa primeiro? = Se a pessoa pesquisou sobre a empresa | A roupa do candidato | O salário pedido
+tq O que ela prefere na resposta sobre ponto fraco? = Sinceridade e o que a pessoa faz para melhorar | Uma resposta perfeita | Dizer que não tem pontos fracos
+tv Para ela, o currículo é o que decide a entrevista. = F
+tv Ela recomenda que o candidato faça perguntas no final. = V
+
+# b1u8
+### leitura | As Fallas de Valência
+n Cada mes de marzo, Valencia se convierte en una enorme fiesta: las Fallas. = Todo mês de março, Valência se transforma numa enorme festa: as Fallas.
+n Durante meses, artistas y vecinos construyen grandes figuras de madera, cartón y papel. = Durante meses, artistas e moradores constroem grandes figuras de madeira, papelão e papel.
+n Estas figuras, llamadas fallas, suelen criticar con humor a políticos y a la sociedad. = Essas figuras, chamadas fallas, costumam criticar com humor políticos e a sociedade.
+n Algunas miden más de veinte metros de altura. = Algumas medem mais de vinte metros de altura.
+n Durante la fiesta, las calles se llenan de música, pólvora y gente vestida con trajes tradicionales. = Durante a festa, as ruas se enchem de música, pólvora e gente vestida com trajes tradicionais.
+n Cada día, a las dos de la tarde, se celebra la "mascletà", un espectáculo de petardos muy ruidoso. = Todo dia, às duas da tarde, acontece a "mascletà", um espetáculo de rojões muito barulhento.
+n También hay una ofrenda de flores a la Virgen, que forma un gran manto de colores. = Também há uma oferenda de flores à Virgem, que forma um grande manto colorido.
+n La noche del diecinueve de marzo, casi todas las fallas se queman. = Na noite de dezenove de março, quase todas as fallas são queimadas.
+n Para los visitantes, es sorprendente que se destruya tanto trabajo en unos minutos. = Para os visitantes, é surpreendente que se destrua tanto trabalho em poucos minutos.
+n Pero para los valencianos, el fuego representa el final del invierno y un nuevo comienzo. = Mas para os valencianos, o fogo representa o fim do inverno e um novo começo.
+n Desde 2016, las Fallas son Patrimonio Cultural Inmaterial de la Humanidad. = Desde 2016, as Fallas são Patrimônio Cultural Imaterial da Humanidade.
+tq Em que mês acontecem as Fallas? = Março | Agosto | Dezembro
+tq O que é a "mascletà"? = Um espetáculo de rojões | Um desfile de moda | Um prato típico
+tq O que o fogo representa para os valencianos? = O fim do inverno e um novo começo | Uma tristeza | Um castigo
+tv As figuras são guardadas num museu depois da festa. = F
+tv As fallas costumam criticar a sociedade com humor. = V
+
+# b1u9
+### leitura | Uma semana sem celular
+n Hace un mes decidí pasar una semana entera sin móvil. = Há um mês decidi passar uma semana inteira sem celular.
+n Me di cuenta de que lo miraba más de cien veces al día. = Percebi que o olhava mais de cem vezes por dia.
+n Los primeros dos días fueron muy difíciles: buscaba el teléfono en el bolsillo constantemente. = Os dois primeiros dias foram muito difíceis: procurava o telefone no bolso o tempo todo.
+n Tuve que comprar un despertador y un mapa de papel de la ciudad. = Tive que comprar um despertador e um mapa de papel da cidade.
+n Para quedar con mis amigos, los llamaba desde el teléfono fijo de casa. = Para combinar com meus amigos, ligava para eles do telefone fixo de casa.
+n Al tercer día, empecé a notar cambios. = No terceiro dia, comecei a notar mudanças.
+n Dormía mejor y leía por la noche en vez de mirar redes sociales. = Dormia melhor e lia à noite em vez de olhar redes sociais.
+n En el metro observaba a la gente y escuchaba conversaciones. = No metrô observava as pessoas e ouvia conversas.
+n Lo peor fue no poder pagar con el móvil ni consultar el banco. = O pior foi não poder pagar com o celular nem consultar o banco.
+n Cuando terminó la semana, volví a usar el teléfono, pero de otra manera. = Quando a semana terminou, voltei a usar o telefone, mas de outro jeito.
+n Ahora lo dejo fuera de la habitación por la noche y he borrado dos aplicaciones. = Agora deixo-o fora do quarto à noite e apaguei dois aplicativos.
+tq Quantas vezes por dia a pessoa olhava o celular? = Mais de cem | Dez | Vinte
+tq O que ela comprou para substituir o celular? = Um despertador e um mapa de papel | Um computador novo | Um relógio inteligente
+tq O que mudou depois da experiência? = Deixa o celular fora do quarto à noite | Não usa mais celular | Comprou outro celular
+tv Os primeiros dias foram fáceis. = F
+tv Ela passou a dormir melhor. = V
+
+# b1u10
+### leitura | Uma amizade que voltou
+n Laura y Elena fueron inseparables desde los seis años. = Laura e Elena foram inseparáveis desde os seis anos.
+n Lo compartían todo: secretos, ropa y hasta los mismos amigos. = Compartilhavam tudo: segredos, roupas e até os mesmos amigos.
+n Pero a los veinte años discutieron por una tontería y dejaron de hablarse. = Mas aos vinte anos brigaram por uma bobagem e pararam de se falar.
+n Las dos estaban demasiado orgullosas para pedir perdón. = As duas estavam orgulhosas demais para pedir desculpas.
+n Pasaron diez años sin saber nada la una de la otra. = Passaram dez anos sem saber nada uma da outra.
+n Un día, Laura vio en una red social que Elena iba a tener un bebé. = Um dia, Laura viu numa rede social que Elena ia ter um bebê.
+n Se alegró tanto que le escribió un mensaje sin pensarlo dos veces. = Ficou tão feliz que escreveu uma mensagem para ela sem pensar duas vezes.
+n Elena le contestó enseguida: "Me alegra muchísimo que me escribas. Te he echado de menos". = Elena respondeu na hora: "Fico muito feliz que você me escreva. Senti sua falta".
+n Quedaron en un café y hablaron durante cuatro horas. = Marcaram num café e conversaram durante quatro horas.
+n Las dos reconocieron que la discusión había sido absurda. = As duas reconheceram que a briga tinha sido absurda.
+n Hoy Laura es la madrina de la hija de Elena. = Hoje Laura é a madrinha da filha de Elena.
+n A veces, dice Laura, solo hace falta dar el primer paso. = Às vezes, diz Laura, só é preciso dar o primeiro passo.
+tq Desde quando Laura e Elena eram amigas? = Desde os seis anos | Desde a faculdade | Desde os vinte anos
+tq Por que pararam de se falar? = Brigaram por uma bobagem | Uma se mudou de país | Por causa de dinheiro
+tq O que Laura é hoje para a filha de Elena? = Madrinha | Tia | Professora
+tv Elas ficaram dois anos sem se falar. = F
+tv Elena respondeu à mensagem na hora. = V

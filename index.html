@@ -480,6 +480,15 @@ body.cc-locked{overflow:hidden}
 .cc-dlg-who{font-size:12px!important;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ca)!important}
 body.cc-locked #faf-sheet{z-index:96}
 
+.cc-input{width:100%;box-sizing:border-box;min-height:84px;margin-top:14px;padding:14px;border:2px solid var(--line);border-radius:14px;font:inherit;font-size:18px;color:var(--text);background:#fff;resize:none}
+.cc-input:focus{outline:none;border-color:var(--ca,#5B3DF5)}
+.cc-keys{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.cc-key{min-width:40px;min-height:40px;border-radius:10px;border:2px solid var(--line);background:#fff;color:var(--text);font-size:17px;font-weight:700}
+.cc-mic-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:22px}
+.cc-bigmic{width:84px;height:84px;border-radius:50%;border:none;color:#fff;background:linear-gradient(135deg,#5B3DF5,#2F6FE0);box-shadow:0 6px 0 #2A178F;display:flex;align-items:center;justify-content:center}
+.cc-bigmic.is-on{animation:cc-pulse 1s ease-in-out infinite;background:linear-gradient(135deg,#E0457B,#B4234A);box-shadow:0 6px 0 #74113A}
+.cc-heard{margin:0;text-align:center;font-size:15px;color:var(--muted,#5D6788);min-height:22px}
+.cc-note{display:block;margin-top:4px;font-size:14px}
 .cc-fill-pt{margin:8px 0 0;font-size:15px;line-height:1.4;color:var(--muted,#5D6788)}
 /* menu lateral */
 #faf-menu-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));left:max(14px,calc((100vw - 560px) / 2 + 14px));z-index:45;width:44px;height:44px;border-radius:14px;border:1px solid #E1E6F3;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#141A33;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,26,51,.10);cursor:pointer}
@@ -2284,6 +2293,42 @@ body.cc-locked #faf-sheet{z-index:96}
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
   function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-zñ0-9 ]/g, '').replace(/\s+/g, ' ').trim(); }
   function tokens(s) { return s.split(/\s+/).filter(Boolean); }
+  // Comparação tolerante para respostas digitadas e faladas.
+  var SUBJ = { yo: 1, tu: 1, el: 0, ella: 1, usted: 1, nosotros: 1, nosotras: 1, vosotros: 1, vosotras: 1, ellos: 1, ellas: 1, ustedes: 1 };
+  function strictNorm(s) { return String(s).toLowerCase().replace(/[¿?¡!.,;:«»"()…\-]/g, ' ').replace(/\s+/g, ' ').trim(); }
+  function looseWords(s, dropSubj) {
+    var w = norm(String(s)).split(' ').filter(Boolean);
+    if (dropSubj) w = w.filter(function (x, i) { return !(SUBJ[x] && i === 0); });
+    return w;
+  }
+  function lev(a, b) {
+    var m = a.length, n = b.length, d = [], i, j;
+    for (i = 0; i <= m; i++) { d[i] = [i]; } for (j = 1; j <= n; j++) d[0][j] = j;
+    for (i = 1; i <= m; i++) for (j = 1; j <= n; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    return d[m][n];
+  }
+  var ARTS = { el: 1, la: 1, los: 1, las: 1, un: 1, una: 1 };
+  // Devolve { ok, note } comparando o que foi digitado com as respostas aceitas.
+  function judgeTyped(v, targets) {
+    v = String(v || '').trim();
+    if (!v) return { ok: false };
+    for (var i = 0; i < targets.length; i++) {
+      var t = targets[i];
+      if (strictNorm(v) === strictNorm(t)) return { ok: true };
+      var a = looseWords(v, true), b = looseWords(t, true);
+      var A = a.join(' '), B = b.join(' ');
+      var A2 = a.filter(function (x, k) { return !(k === 0 && ARTS[x]); }).join(' '), B2 = b.filter(function (x, k) { return !(k === 0 && ARTS[x]); }).join(' ');
+      if (A === B || (b.length <= 3 && A2 === B2)) return { ok: true, note: strictNorm(v).replace(/ /g, '') !== strictNorm(t).replace(/ /g, '') ? 'Atenção aos acentos e à forma exata: ' + t : '' };
+      if (B.length >= 6 && lev(A, B) <= Math.max(1, Math.floor(B.length / 12))) return { ok: true, note: 'Quase perfeito! Atenção à grafia: ' + t };
+    }
+    return { ok: false };
+  }
+  function speechScore(heard, target) {
+    var t = looseWords(target, false), hw = looseWords(heard, false), hit = 0, used = {};
+    t.forEach(function (w) { for (var k = 0; k < hw.length; k++) if (!used[k] && (hw[k] === w || (w.length > 4 && lev(hw[k], w) <= 1))) { used[k] = 1; hit++; break; } });
+    return t.length ? hit / t.length : 0;
+  }
+  function canSpeak() { return !!(window.SpeechRecognition || window.webkitSpeechRecognition) && !(st && st.noSpeakUntil > Date.now()); }
   var ICON = {
     flame: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2c1 3.5-1.5 5-1.5 7.5 0 1.4 1 2.5 2.3 2.5 1.5 0 2.4-1.2 2.2-3 2.3 1.7 4 4.3 4 7.2C19 20.4 15.9 23 12 23s-7-2.6-7-6.8C5 10.6 10.5 8 12 2Z"/></svg>',
     bolt: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>',
@@ -2295,6 +2340,7 @@ body.cc-locked #faf-sheet{z-index:96}
     play: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7L8 5Z"/></svg>',
     check: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
     speaker: '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M4 9h4l5-4v14l-5-4H4V9Z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>',
+    mic: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-3.1A7 7 0 0 0 19 11h-2Z"/></svg>',
     turtle: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 6c4 0 7 3 7 6.5H5C5 9 8 6 12 6Zm-8 8h16v1.5c0 .8-.7 1.5-1.5 1.5H17l.6 2H15l-.6-2H9.6L9 19H6.4l.6-2H5.5C4.7 17 4 16.3 4 15.5V14Zm16.5-3a1.8 1.8 0 1 1 0 3.6V11Z"/></svg>',
     book: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v16H6.5a1.5 1.5 0 0 0 0 3H20v1H6.5A2.5 2.5 0 0 1 4 19.5v-15Zm4 1.5v2h8V6H8Zm0 4v2h6v-2H8Z"/></svg>',
     quote: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 5v2h10V9H7Zm0 4v2h7v-2H7Z"/></svg>',
@@ -2382,6 +2428,7 @@ body.cc-locked #faf-sheet{z-index:96}
     });
     if (u.frases) n.push({ kind: 'frases', id: u.frases.id, lesson: u.frases, label: u.frases.title, premium: true });
     if (u.texto) n.push({ kind: 'texto', id: u.texto.id, lesson: u.texto, label: 'Leitura: ' + u.texto.title, premium: true });
+    if (u.texto2) n.push({ kind: 'texto', id: u.texto2.id, lesson: u.texto2, label: 'Leitura: ' + u.texto2.title, premium: true });
     if (u.lessons.length) {
       n.push({ kind: 'test', id: u.id + 't', label: 'Prova da unidade' });
       n.push({ kind: 'chest', id: u.id + 'c2', label: 'Baú da unidade', big: true });
@@ -2717,16 +2764,17 @@ body.cc-locked #faf-sheet{z-index:96}
   }
   function startLesson(l) { session({ mode: 'lesson', title: l.title, lesson: l, items: l.ex.slice() }); }
   function startTest(u) {
-    var pool = []; u.lessons.forEach(function (l) { l.ex.forEach(function (e) { if (e.t !== 'match') pool.push(e); }); });
+    var pool = []; u.lessons.forEach(function (l) { l.ex.forEach(function (e) { if (e.t !== 'match' && e.t !== 'speak') pool.push(e); }); });
     session({ mode: 'test', title: 'Prova: ' + u.title, unit: u, items: shuffle(pool).slice(0, TEST_SIZE) });
   }
   function startReview() {
     var pool = [];
-    allUnits().forEach(function (e) { e.u.lessons.forEach(function (l) { if (st.lessons[l.id]) l.ex.forEach(function (x) { if (x.t !== 'match') pool.push(x); }); }); });
+    allUnits().forEach(function (e) { e.u.lessons.forEach(function (l) { if (st.lessons[l.id]) l.ex.forEach(function (x) { if (x.t !== 'match' && x.t !== 'speak') pool.push(x); }); }); });
     session({ mode: 'review', title: 'Revisão', items: shuffle(pool).slice(0, 5) });
   }
 
   function session(cfg) {
+    if (!canSpeak()) cfg.items = cfg.items.filter(function (e) { return e.t !== 'speak'; });
     var S = { cfg: cfg, queue: cfg.items.map(function (e) { return { e: e, retry: false }; }), total: cfg.items.length, done: 0, errors: 0, right: 0,
       combo: 0, maxCombo: 0, start: Date.now(), heartsLost: 0, intro: cfg.mode === 'lesson' || cfg.mode === 'premium' };
     var ov = h('div', { class: 'cc-lesson', role: 'dialog', 'aria-modal': 'true', 'aria-label': cfg.title });
@@ -2873,6 +2921,81 @@ body.cc-locked #faf-sheet{z-index:96}
         main.appendChild(area); main.appendChild(bank);
         item.isRight = function (v) { return norm(v) === norm(e.pt); };
         item.explain = e.pt;
+      } else if (e.t === 'order') {
+        main.appendChild(h('p', { class: 'cc-kicker', text: 'Monte a frase em espanhol' }));
+        main.appendChild(h('h2', { class: 'cc-q', text: e.pt }));
+        var built2 = [], area2 = h('div', { class: 'cc-build', 'aria-label': 'Sua frase' }), bank2 = h('div', { class: 'cc-bank' });
+        var words2 = shuffle(tokens(e.es).concat(e.extra || [])).map(function (w, k) { return { w: w.replace(/^[¿¡«"(]+|[.,;:!?»")]+$/g, '') || w, k: k }; });
+        function paint2() {
+          area2.replaceChildren.apply(area2, built2.map(function (it) {
+            return h('button', { type: 'button', class: 'cc-chip', lang: 'es', onclick: function () { built2.splice(built2.indexOf(it), 1); paint2(); }, text: it.w });
+          }));
+          bank2.replaceChildren.apply(bank2, words2.map(function (it) {
+            var used = built2.indexOf(it) >= 0;
+            return h('button', { type: 'button', class: 'cc-chip' + (used ? ' is-used' : ''), lang: 'es', disabled: used, onclick: function () { built2.push(it); speak(it.w); paint2(); }, text: it.w });
+          }));
+          ready(built2.length ? built2.map(function (x) { return x.w; }).join(' ') : null);
+        }
+        paint2();
+        main.appendChild(area2); main.appendChild(bank2);
+        item.isRight = function (v) { var ok = norm(v) === norm(e.es); if (ok) speak(e.es); return ok; };
+        item.explain = e.es;
+      } else if (e.t === 'type' || e.t === 'dictation') {
+        var dict = e.t === 'dictation';
+        main.appendChild(h('p', { class: 'cc-kicker', text: dict ? 'Escute e escreva em espanhol' : 'Escreva em espanhol' }));
+        if (dict) {
+          main.appendChild(h('div', { class: 'cc-listen' }, [
+            h('button', { type: 'button', class: 'cc-play', 'aria-label': 'Ouvir de novo', onclick: function () { speak(e.es); } }, [icon('speaker')]),
+            h('button', { type: 'button', class: 'cc-play is-slow', 'aria-label': 'Ouvir devagar', onclick: function () { speak(e.es, true); } }, [icon('turtle')])
+          ]));
+          setTimeout(function () { speak(e.es); }, 250);
+        } else {
+          main.appendChild(h('h2', { class: 'cc-q', text: e.pt }));
+        }
+        var inp = h('textarea', { class: 'cc-input', id: 'cc-input', rows: '2', lang: 'es', autocomplete: 'off', autocapitalize: 'sentences', spellcheck: 'false',
+          'aria-label': dict ? 'Escreva o que você ouviu' : 'Sua tradução em espanhol', placeholder: dict ? 'Escreva o que ouviu…' : 'Escreva em espanhol…' });
+        inp.addEventListener('input', function () { ready(inp.value.trim() ? inp.value : null); });
+        inp.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' && !ev.shiftKey) { ev.preventDefault(); if (inp.value.trim() && !checkBtn.disabled) check(item, inp.value); } });
+        main.appendChild(inp);
+        main.appendChild(h('div', { class: 'cc-keys' }, ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü', '¿', '¡'].map(function (c) {
+          return h('button', { type: 'button', class: 'cc-key', 'aria-label': 'Inserir ' + c, onclick: function () {
+            var a = inp.selectionStart || inp.value.length, b = inp.selectionEnd || a;
+            inp.value = inp.value.slice(0, a) + c + inp.value.slice(b); inp.focus(); inp.setSelectionRange(a + 1, a + 1); ready(inp.value.trim() ? inp.value : null);
+          }, text: c });
+        })));
+        setTimeout(function () { try { inp.focus(); } catch (er) {} }, 60);
+        item.isRight = function (v) { var r = judgeTyped(v, [e.es].concat(e.alt || [])); item.note = r.note || ''; if (r.ok) speak(e.es); return r.ok; };
+        item.explain = dict ? e.es + ' — ' + e.pt : e.es;
+      } else if (e.t === 'speak') {
+        main.appendChild(h('p', { class: 'cc-kicker', text: 'Fale em voz alta' }));
+        main.appendChild(h('h2', { class: 'cc-q', lang: 'es' }, [h('button', { type: 'button', class: 'cc-say is-inline', 'aria-label': 'Ouvir', onclick: function () { speak(e.es); } }, [icon('speaker')]), e.es]));
+        main.appendChild(h('p', { class: 'cc-fill-pt', text: e.pt }));
+        var heardEl = h('p', { class: 'cc-heard', 'aria-live': 'polite', text: 'Toque no microfone e leia a frase.' });
+        var Rec = window.SpeechRecognition || window.webkitSpeechRecognition, recOn = null;
+        var mic = h('button', { type: 'button', class: 'cc-bigmic', 'aria-label': 'Falar', onclick: function () {
+          if (recOn) { try { recOn.stop(); } catch (er) {} return; }
+          try { speechSynthesis.cancel(); } catch (er) {}
+          var r = new Rec(); recOn = r; r.lang = 'es-ES'; r.interimResults = false; r.maxAlternatives = 3;
+          mic.classList.add('is-on'); heardEl.textContent = 'Ouvindo…';
+          r.onresult = function (ev) {
+            var best = '', sc = -1, alts = ev.results[0];
+            for (var k = 0; k < alts.length; k++) { var x = speechScore(alts[k].transcript, e.es); if (x > sc) { sc = x; best = alts[k].transcript; } }
+            heardEl.textContent = 'Entendi: “' + best + '”'; ready(best);
+          };
+          r.onerror = function () { heardEl.textContent = 'Não consegui ouvir. Tente de novo, mais perto do microfone.'; };
+          r.onend = function () { recOn = null; mic.classList.remove('is-on'); };
+          try { r.start(); } catch (er) { heardEl.textContent = 'O microfone não está disponível.'; recOn = null; mic.classList.remove('is-on'); }
+        } }, [icon('mic')]);
+        main.appendChild(h('div', { class: 'cc-mic-wrap' }, [mic, heardEl]));
+        item.isRight = function (v) { if (v === '__skip__') return true; return speechScore(v, e.es) >= 0.7; };
+        item.explain = e.es;
+        var skip = h('button', { type: 'button', class: 'cc-btn is-wide is-ghost', onclick: function () {
+          st.noSpeakUntil = Date.now() + 15 * 60 * 1000; save();
+          var before = S.queue.length; S.queue = S.queue.filter(function (q) { return q.e.t !== 'speak'; }); S.total -= (before - S.queue.length);
+          check(item, '__skip__');
+        }, text: 'Não posso falar agora' });
+        setFoot([skip, checkBtn]);
+        return;
       } else if (e.t === 'match') {
         main.appendChild(h('p', { class: 'cc-kicker', text: 'Toque nos pares' }));
         var left = h('div', { class: 'cc-col' }), right = h('div', { class: 'cc-col' }), sel = { es: null, pt: null }, left2 = e.pairs.length, missed = false;
@@ -2921,11 +3044,13 @@ body.cc-locked #faf-sheet{z-index:96}
         ov.classList.add('is-shake'); setTimeout(function () { ov.classList.remove('is-shake'); }, 400);
       }
       save(); paintTop();
-      main.querySelectorAll('button').forEach(function (b) { b.disabled = true; });
+      main.querySelectorAll('button, textarea, input').forEach(function (b) { b.disabled = true; });
       foot.className = 'cc-l-foot is-' + (ok ? 'ok' : 'bad');
       var msg = ok ? PRAISE[Math.floor(Math.random() * PRAISE.length)] : 'Resposta certa:';
       var cont = h('button', { type: 'button', class: 'cc-btn is-wide', onclick: next, text: 'Continuar' });
-      foot.replaceChildren(h('div', { class: 'cc-fb' }, [h('strong', { text: msg }), ok && item.e.t !== 'build' && item.e.t !== 'match' ? null : h('span', { text: item.explain })]), cont);
+      var showExp = !ok || item.e.t === 'build' || item.e.t === 'match' || item.e.t === 'dictation';
+      if (ok && v === '__skip__') msg = 'Tudo bem, a fala fica para depois.';
+      foot.replaceChildren(h('div', { class: 'cc-fb' }, [h('strong', { text: msg }), showExp ? h('span', { text: item.explain }) : null, ok && item.note ? h('span', { class: 'cc-note', text: item.note }) : null]), cont);
       if (ok && item.e.t === 'fill') foot.querySelector('.cc-fb').appendChild(h('span', { text: item.e.pt }));
       cont.focus();
     }

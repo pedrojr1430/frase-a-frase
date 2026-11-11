@@ -1,0 +1,171 @@
+// Leituras narrativas do A2: passados, futuro e comparações; 8 a 10 frases.
+
+# a2u1
+### leitura | Um sábado cheio
+n Hoy ha sido un sábado muy completo. = Hoje foi um sábado muito completo.
+n Me he levantado a las ocho y he salido a correr por el parque. = Levantei às oito e saí para correr no parque.
+n Después he desayunado con mi compañera de piso. = Depois tomei café com minha colega de apartamento.
+n A mediodía hemos ido al mercado y hemos comprado fruta y pescado. = Ao meio-dia fomos ao mercado e compramos fruta e peixe.
+n Por la tarde he limpiado la casa y he puesto la lavadora. = À tarde limpei a casa e liguei a máquina de lavar.
+n Todavía no he terminado el libro que empecé el lunes. = Ainda não terminei o livro que comecei na segunda.
+n Esta noche he quedado con unos amigos para cenar. = Hoje à noite combinei de jantar com uns amigos.
+n Nunca he probado la comida etíope y vamos a un restaurante etíope. = Nunca provei comida etíope e vamos a um restaurante etíope.
+n ¡Qué día tan largo, pero qué bien lo he pasado! = Que dia longo, mas como me diverti!
+tq O que a pessoa fez de manhã? = Correu no parque | Foi ao mercado | Limpou a casa
+tq O que compraram no mercado? = Fruta e peixe | Carne e pão | Verduras e queijo
+tq Onde a pessoa vai jantar? = Num restaurante etíope | Em casa | Na casa de amigos
+tv A pessoa já terminou o livro. = F
+tv É a primeira vez que vai provar comida etíope. = V
+
+# a2u2
+### leitura | Como meus avós se conheceram
+n Mis abuelos se conocieron en 1965 en un baile del pueblo. = Meus avós se conheceram em 1965 num baile do povoado.
+n Mi abuelo tenía veinte años y trabajaba en el campo. = Meu avô tinha vinte anos e trabalhava no campo.
+n Mi abuela vivía en otro pueblo y fue al baile con su prima. = Minha avó morava em outro povoado e foi ao baile com a prima.
+n Esa noche bailaron juntos toda la noche. = Naquela noite dançaram juntos a noite toda.
+n Al día siguiente, mi abuelo caminó diez kilómetros para verla. = No dia seguinte, meu avô caminhou dez quilômetros para vê-la.
+n Durante un año se escribieron cartas cada semana. = Durante um ano escreveram cartas um para o outro toda semana.
+n En 1967 se casaron en la iglesia del pueblo de mi abuela. = Em 1967 se casaram na igreja do povoado da minha avó.
+n Después se mudaron a Madrid y tuvieron cuatro hijos. = Depois se mudaram para Madri e tiveram quatro filhos.
+n Todavía hoy, cuando cuentan la historia, se ríen como niños. = Ainda hoje, quando contam a história, riem como crianças.
+tq Onde os avós se conheceram? = Num baile do povoado | Na escola | Em Madri
+tq O que o avô fez no dia seguinte? = Caminhou dez quilômetros para vê-la | Escreveu uma carta | Foi a Madri
+tq Quantos filhos eles tiveram? = Quatro | Dois | Cinco
+tv Eles se casaram no mesmo ano em que se conheceram. = F
+tv Durante um ano escreveram cartas toda semana. = V
+
+# a2u3
+### leitura | A cidade de antes
+n Mi madre siempre me cuenta cómo era nuestra ciudad hace cuarenta años. = Minha mãe sempre me conta como era nossa cidade há quarenta anos.
+n Entonces había muchos menos coches y los niños jugaban en la calle. = Naquela época havia muito menos carros e as crianças brincavam na rua.
+n No existían los centros comerciales: la gente compraba en tiendas pequeñas. = Não existiam shoppings: as pessoas compravam em lojas pequenas.
+n Todos los vecinos se conocían y se ayudaban. = Todos os vizinhos se conheciam e se ajudavam.
+n Los domingos las familias paseaban por la plaza después de misa. = Aos domingos as famílias passeavam pela praça depois da missa.
+n No había internet, así que mi madre escribía cartas a sus amigas. = Não havia internet, então minha mãe escrevia cartas para as amigas.
+n Ella dice que la vida era más tranquila, pero también más difícil. = Ela diz que a vida era mais tranquila, mas também mais difícil.
+n Por ejemplo, para llamar por teléfono tenía que ir a casa de una vecina. = Por exemplo, para telefonar ela tinha que ir à casa de uma vizinha.
+n Ahora la ciudad ha cambiado mucho, pero la plaza sigue igual. = Agora a cidade mudou muito, mas a praça continua igual.
+tq Onde as crianças brincavam antigamente? = Na rua | No shopping | No parque fechado
+tq Como a mãe se comunicava com as amigas? = Escrevendo cartas | Por telefone em casa | Por e-mail
+tq O que continua igual na cidade? = A praça | As lojas pequenas | O trânsito
+tv Antes havia mais carros que hoje. = F
+tv A mãe acha que a vida era mais tranquila e também mais difícil. = V
+
+# a2u4
+### leitura | Uma semana doente
+n La semana pasada me puse enfermo. = Na semana passada fiquei doente.
+n El lunes me desperté con dolor de cabeza y mucha tos. = Na segunda acordei com dor de cabeça e muita tosse.
+n Por la tarde tenía fiebre, así que llamé al centro de salud. = À tarde estava com febre, então liguei para o posto de saúde.
+n Me dieron cita para el día siguiente. = Me deram consulta para o dia seguinte.
+n La médica me dijo que tenía gripe y me recetó un jarabe. = A médica me disse que eu estava com gripe e me receitou um xarope.
+n También me aconsejó descansar, beber mucha agua y no ir a trabajar. = Também me aconselhou descansar, beber muita água e não ir trabalhar.
+n Pasé tres días en la cama viendo series. = Passei três dias na cama vendo séries.
+n Mi vecina me trajo sopa de pollo todos los días. = Minha vizinha me trouxe sopa de frango todos os dias.
+n El viernes ya me sentía mucho mejor y hoy he vuelto a la oficina. = Na sexta já me sentia muito melhor e hoje voltei ao escritório.
+tq Quais eram os sintomas na segunda? = Dor de cabeça e tosse | Dor nas costas | Dor de estômago
+tq O que a médica receitou? = Um xarope | Comprimidos | Uma pomada
+tq O que a vizinha trouxe? = Sopa de frango | Frutas | Remédios
+tv A pessoa foi trabalhar doente. = F
+tv Na sexta já se sentia muito melhor. = V
+
+# a2u5
+### leitura | Do estágio ao primeiro emprego
+n Cuando terminé la carrera de Periodismo, no encontraba trabajo. = Quando terminei a faculdade de Jornalismo, não encontrava emprego.
+n Envié mi currículum a más de cincuenta empresas. = Enviei meu currículo para mais de cinquenta empresas.
+n Por fin, una radio local me ofreció unas prácticas de seis meses. = Finalmente, uma rádio local me ofereceu um estágio de seis meses.
+n El sueldo era bajo, pero aprendí muchísimo. = O salário era baixo, mas aprendi muitíssimo.
+n Mi jefa era exigente, pero siempre me explicaba todo con paciencia. = Minha chefe era exigente, mas sempre me explicava tudo com paciência.
+n Al principio solo escribía noticias cortas. = No começo só escrevia notícias curtas.
+n Después empecé a hacer entrevistas en directo. = Depois comecei a fazer entrevistas ao vivo.
+n Al final de las prácticas, me ofrecieron un contrato indefinido. = No fim do estágio, me ofereceram um contrato por tempo indeterminado.
+n Ahora llevo tres años en la radio y tengo mi propio programa. = Agora estou há três anos na rádio e tenho meu próprio programa.
+tq O que a pessoa estudou? = Jornalismo | Direito | Administração
+tq Quanto durou o estágio? = Seis meses | Um ano | Três meses
+tq O que ela tem hoje na rádio? = O próprio programa | Um estágio novo | Um cargo de chefe
+tv Ela encontrou emprego logo depois da faculdade. = F
+tv A chefe explicava tudo com paciência. = V
+
+# a2u6
+### leitura | Planos para o próximo ano
+n El año que viene será un año de cambios para mí. = O ano que vem será um ano de mudanças para mim.
+n En enero empezaré un máster en Barcelona. = Em janeiro começarei um mestrado em Barcelona.
+n Viviré en un piso compartido con dos estudiantes italianos. = Vou morar num apartamento dividido com dois estudantes italianos.
+n Así podré practicar también mi italiano. = Assim poderei praticar também o meu italiano.
+n Pienso buscar un trabajo de media jornada para pagar el alquiler. = Pretendo procurar um trabalho de meio período para pagar o aluguel.
+n Si tengo tiempo, haré un curso de cocina catalana. = Se tiver tempo, farei um curso de cozinha catalã.
+n Mis padres vendrán a visitarme en primavera. = Meus pais virão me visitar na primavera.
+n Creo que al principio echaré de menos a mis amigos. = Acho que no começo vou sentir falta dos meus amigos.
+n Pero estoy seguro de que será una experiencia inolvidable. = Mas tenho certeza de que será uma experiência inesquecível.
+tq O que a pessoa vai fazer em Barcelona? = Um mestrado | Um estágio | Um curso de italiano
+tq Com quem ela vai morar? = Com dois estudantes italianos | Com os pais | Sozinha
+tq Quando os pais vão visitá-la? = Na primavera | Em janeiro | No verão
+tv Ela pretende trabalhar em tempo integral. = F
+tv Ela acha que vai sentir falta dos amigos. = V
+
+# a2u7
+### leitura | A receita da avó
+n Mi abuela hacía el mejor gazpacho de Andalucía. = Minha avó fazia o melhor gaspacho da Andaluzia.
+n El gazpacho es una sopa fría de tomate, perfecta para el verano. = O gaspacho é uma sopa fria de tomate, perfeita para o verão.
+n Antes de morir, me dio su receta en un papel viejo. = Antes de morrer, ela me deu sua receita num papel velho.
+n Primero se lavan un kilo de tomates maduros, un pimiento y un pepino. = Primeiro lavam-se um quilo de tomates maduros, um pimentão e um pepino.
+n Después se cortan en trozos con un diente de ajo. = Depois se cortam em pedaços com um dente de alho.
+n Se pone todo en la batidora con aceite de oliva, vinagre y sal. = Coloca-se tudo no liquidificador com azeite, vinagre e sal.
+n Se bate bien y se deja en la nevera dos horas. = Bate-se bem e deixa-se na geladeira duas horas.
+n Mi abuela siempre decía: "El secreto es el buen aceite". = Minha avó sempre dizia: "O segredo é o bom azeite".
+n Cada verano lo preparo y me acuerdo de ella. = Todo verão eu o preparo e me lembro dela.
+tq O que é o gaspacho? = Uma sopa fria de tomate | Um prato de arroz | Uma sobremesa
+tq Quanto tempo ele fica na geladeira? = Duas horas | Dez minutos | Uma noite
+tq Qual era o segredo da avó? = O bom azeite | Muito alho | Tomates verdes
+tv O gaspacho é servido quente. = F
+tv A pessoa prepara a receita todo verão. = V
+
+# a2u8
+### leitura | Uma viagem pela Costa Rica
+n El verano pasado viajé dos semanas por Costa Rica con mi novio. = No verão passado viajei duas semanas pela Costa Rica com meu namorado.
+n Alquilamos un coche en San José y recorrimos el país. = Alugamos um carro em San José e percorremos o país.
+n Primero fuimos al volcán Arenal y nos bañamos en aguas termales. = Primeiro fomos ao vulcão Arenal e tomamos banho em águas termais.
+n Después visitamos Monteverde, un bosque lleno de niebla y pájaros. = Depois visitamos Monteverde, uma floresta cheia de neblina e pássaros.
+n Nos alojamos en una cabaña de madera en medio del bosque. = Nos hospedamos numa cabana de madeira no meio da floresta.
+n El único problema fue la carretera: era estrecha y tenía muchas curvas. = O único problema foi a estrada: era estreita e tinha muitas curvas.
+n La última semana descansamos en una playa del Pacífico. = Na última semana descansamos numa praia do Pacífico.
+n Allí vimos tortugas y monos desde la habitación. = Lá vimos tartarugas e macacos do quarto.
+n Fue el viaje más bonito de mi vida. = Foi a viagem mais bonita da minha vida.
+tq Como eles viajaram pelo país? = Num carro alugado | De ônibus | De avião
+tq Onde eles se hospedaram em Monteverde? = Numa cabana de madeira | Num hotel na cidade | Num albergue
+tq Qual foi o único problema? = A estrada | O tempo | A comida
+tv A viagem durou um mês. = F
+tv Eles viram tartarugas e macacos. = V
+
+# a2u9
+### leitura | Campo ou cidade?
+n Hace dos años me mudé de Madrid a un pueblo de la sierra. = Há dois anos me mudei de Madri para um povoado da serra.
+n Mucha gente me preguntó si estaba loco. = Muita gente me perguntou se eu estava louco.
+n Es verdad que el pueblo tiene menos servicios que la ciudad. = É verdade que o povoado tem menos serviços que a cidade.
+n No hay cine y el hospital más cercano está a media hora. = Não há cinema e o hospital mais próximo fica a meia hora.
+n Pero aquí la vida es mucho más tranquila y más barata. = Mas aqui a vida é muito mais tranquila e mais barata.
+n Mi casa es el doble de grande que mi piso de Madrid y cuesta menos. = Minha casa é o dobro do tamanho do meu apartamento de Madri e custa menos.
+n El aire es más limpio y duermo mejor que nunca. = O ar é mais limpo e durmo melhor que nunca.
+n Trabajo desde casa, así que no pierdo dos horas en el tráfico. = Trabalho de casa, então não perco duas horas no trânsito.
+n Para mí, es la mejor decisión que he tomado. = Para mim, é a melhor decisão que tomei.
+tq Para onde a pessoa se mudou? = Para um povoado da serra | Para Madri | Para a praia
+tq A que distância fica o hospital? = A meia hora | A cinco minutos | A duas horas
+tq Como a casa nova se compara ao apartamento? = É o dobro do tamanho e custa menos | É menor e mais cara | É igual
+tv No povoado tem cinema. = F
+tv A pessoa trabalha de casa. = V
+
+# a2u10
+### leitura | Conselhos para o primeiro dia
+n Mañana empiezas en tu nuevo trabajo, así que aquí tienes unos consejos. = Amanhã você começa no seu novo emprego, então aqui vão alguns conselhos.
+n Prepara la ropa esta noche y acuéstate temprano. = Prepare a roupa hoje à noite e vá dormir cedo.
+n No llegues tarde: sal de casa con tiempo de sobra. = Não chegue atrasado: saia de casa com tempo de sobra.
+n Cuando llegues, preséntate a tus compañeros y sonríe. = Quando chegar, apresente-se aos colegas e sorria.
+n Escucha mucho y no tengas miedo de hacer preguntas. = Escute muito e não tenha medo de fazer perguntas.
+n Apunta los nombres de la gente en una libreta. = Anote os nomes das pessoas num caderninho.
+n No mires el móvil durante las reuniones. = Não olhe o celular durante as reuniões.
+n A la hora de comer, acepta las invitaciones de tus compañeros. = Na hora do almoço, aceite os convites dos colegas.
+n Y sobre todo, no te preocupes: es normal estar nervioso el primer día. = E sobretudo, não se preocupe: é normal estar nervoso no primeiro dia.
+tq O que se deve fazer hoje à noite? = Preparar a roupa e dormir cedo | Estudar a empresa | Sair com amigos
+tq Onde anotar os nomes? = Num caderninho | No celular | Na mão
+tq O que fazer na hora do almoço? = Aceitar os convites dos colegas | Almoçar sozinho | Trabalhar
+tv O texto recomenda olhar o celular nas reuniões. = F
+tv Segundo o texto, é normal ficar nervoso. = V

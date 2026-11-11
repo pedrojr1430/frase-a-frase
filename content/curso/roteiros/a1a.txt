@@ -115,7 +115,7 @@ l Esta sopa está muy rica. = Esta sopa está muito gostosa. ~ Esta sopa está m
 q Alguém pergunta "¿Te gusta el café?" e você não gosta. O que diz? = No, no me gusta. | Sí, me encanta. | Sí, mucho.
 
 ## As refeições do dia | Na Espanha, "la comida" é o almoço, por volta das duas da tarde, e a "cena" (jantar) costuma ser depois das nove da noite.
-v desayuno = café da manhã; comida = almoço, comida; cena = jantar; desayunar = tomar café da manhã; comer = comer, almoçar; cenar = jantar; tener hambre = ter fome
+v desayuno = café da manhã; comida = almoço, comida; cena = jantar (refeição); desayunar = tomar café da manhã; comer = comer, almoçar; cenar = jantar (verbo); tener hambre = ter fome
 f Siempre [desayuno] a las siete. = Sempre tomo café da manhã às sete. ~ ceno, como
 f Tengo mucha [hambre]. = Estou com muita fome. ~ sed, años
 b Cenamos a las nueve. = Jantamos às nove.

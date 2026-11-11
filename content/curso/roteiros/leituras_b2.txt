@@ -1,0 +1,205 @@
+// Leituras narrativas do B2: textos mais longos e densos, registro variado; 12 a 14 frases.
+
+# b2u1
+### leitura | A bifurcação
+n Hace quince años, Sofía tuvo que elegir entre dos caminos. = Há quinze anos, Sofía teve que escolher entre dois caminhos.
+n Le habían ofrecido una beca para estudiar arquitectura en Milán y, a la vez, un trabajo fijo en el banco de su ciudad. = Tinham lhe oferecido uma bolsa para estudar arquitetura em Milão e, ao mesmo tempo, um emprego fixo no banco da sua cidade.
+n Su familia, que había pasado años difíciles, prefería que aceptara la seguridad del banco. = Sua família, que tinha passado anos difíceis, preferia que ela aceitasse a segurança do banco.
+n Sofía eligió el banco y, durante mucho tiempo, no se arrepintió. = Sofía escolheu o banco e, durante muito tempo, não se arrependeu.
+n Se compró un piso, ayudó a sus padres y llegó a ser directora de una sucursal. = Comprou um apartamento, ajudou os pais e chegou a ser diretora de uma agência.
+n Sin embargo, cada vez que pasaba delante de un edificio bonito, se preguntaba qué habría pasado si hubiera ido a Milán. = No entanto, toda vez que passava em frente a um prédio bonito, se perguntava o que teria acontecido se tivesse ido a Milão.
+n ¿Habría diseñado museos? ¿Habría vivido en otro país? = Teria projetado museus? Teria morado em outro país?
+n Un día, su hija le preguntó por qué siempre dibujaba casas en las servilletas. = Um dia, a filha lhe perguntou por que sempre desenhava casas nos guardanapos.
+n Sofía le contó la historia y la niña le respondió: "Pues todavía puedes estudiarlo". = Sofía contou a história e a menina respondeu: "Pois você ainda pode estudar isso".
+n Al principio le pareció una idea absurda, como si fuera demasiado tarde. = No começo lhe pareceu uma ideia absurda, como se fosse tarde demais.
+n Pero, a menos que se atreviera, nunca sabría si tenía talento. = Mas, a menos que se atrevesse, nunca saberia se tinha talento.
+n Hoy, con cuarenta y tres años, estudia arquitectura a distancia mientras sigue en el banco. = Hoje, aos quarenta e três anos, estuda arquitetura a distância enquanto continua no banco.
+n Dice que, si hubiera ido a Milán, quizá no tendría la familia que tiene, y eso no lo cambiaría por nada. = Diz que, se tivesse ido a Milão, talvez não teria a família que tem, e isso ela não trocaria por nada.
+tq Entre que opções Sofía teve que escolher? = Bolsa em Milão ou emprego no banco | Dois empregos em bancos | Morar em Milão ou em Madri
+tq Quem a incentivou a estudar arquitetura? = A filha | O chefe | Os pais
+tq Como ela estuda hoje? = A distância, enquanto trabalha no banco | Em Milão, em tempo integral | Não estuda
+tv A família preferia que ela fosse para Milão. = F
+tv Sofía não trocaria a família que tem por nada. = V
+
+# b2u2
+### leitura | Carta ao meu irmão
+n Querido Javier: llevo semanas queriendo escribirte esta carta y por fin me he atrevido. = Querido Javier: há semanas quero te escrever esta carta e finalmente tive coragem.
+n Siento mucho que nuestra última conversación terminara a gritos. = Sinto muito que nossa última conversa tenha terminado aos gritos.
+n No debería haberte dicho que nunca te habías preocupado por papá. = Eu não deveria ter te dito que você nunca tinha se preocupado com o papai.
+n Sé que tú también lo pasaste mal cuando enfermó, aunque estuvieras lejos. = Sei que você também sofreu quando ele adoeceu, mesmo estando longe.
+n Ojalá hubiera sabido entonces lo que sé ahora: que cada uno sufre a su manera. = Quem me dera ter sabido então o que sei agora: que cada um sofre do seu jeito.
+n Me arrepiento de no haberte llamado más a menudo durante esos meses. = Me arrependo de não ter te ligado com mais frequência durante aqueles meses.
+n Tendría que haberte pedido ayuda en lugar de cargar con todo yo sola. = Eu deveria ter te pedido ajuda em vez de carregar tudo sozinha.
+n Si lo hubiera hecho, quizá no habría acumulado tanta rabia. = Se tivesse feito isso, talvez não tivesse acumulado tanta raiva.
+n No te escribo para que me perdones de inmediato, sino para que sepas que te echo de menos. = Não te escrevo para que você me perdoe imediatamente, mas para que saiba que sinto sua falta.
+n Mamá dice que eres igual que yo de orgulloso, y probablemente tenga razón. = A mamãe diz que você é tão orgulhoso quanto eu, e provavelmente ela tem razão.
+n En diciembre vuelvo a casa por Navidad. = Em dezembro volto para casa no Natal.
+n Me encantaría que pudiéramos tomar un café y hablar con calma, sin reproches. = Eu adoraria que pudéssemos tomar um café e conversar com calma, sem acusações.
+n Un abrazo de tu hermana, que te quiere aunque a veces no lo parezca. = Um abraço da sua irmã, que te ama mesmo que às vezes não pareça.
+tq Do que a irmã se arrepende? = De não ter ligado com mais frequência | De ter se mudado | De ter viajado
+tq Por que ela escreve a carta? = Para que o irmão saiba que ela sente falta dele | Para pedir dinheiro | Para anunciar um casamento
+tq O que ela propõe para o Natal? = Tomar um café e conversar com calma | Viajar juntos | Não se ver
+tv A última conversa dos irmãos foi tranquila. = F
+tv A irmã admite que deveria ter pedido ajuda. = V
+
+# b2u3
+### leitura | Turismo: riqueza ou problema?
+n El turismo es una de las principales fuentes de ingresos de España, ya que genera millones de empleos. = O turismo é uma das principais fontes de renda da Espanha, já que gera milhões de empregos.
+n Sin embargo, en los últimos años han surgido protestas en ciudades como Barcelona o Palma. = No entanto, nos últimos anos surgiram protestos em cidades como Barcelona ou Palma.
+n Muchos vecinos denuncian que los pisos turísticos han hecho subir los alquileres. = Muitos moradores denunciam que os apartamentos turísticos fizeram os aluguéis subir.
+n Por consiguiente, numerosas familias se han visto obligadas a abandonar el centro. = Por conseguinte, numerosas famílias se viram obrigadas a deixar o centro.
+n Además, las tiendas tradicionales han sido sustituidas por comercios de recuerdos. = Além disso, as lojas tradicionais foram substituídas por lojas de lembrancinhas.
+n Por el contrario, los empresarios del sector recuerdan que, sin turistas, muchos negocios cerrarían. = Pelo contrário, os empresários do setor lembram que, sem turistas, muitos negócios fechariam.
+n Aunque reconocen que existen problemas, consideran que la solución no es limitar las visitas. = Embora reconheçam que existem problemas, consideram que a solução não é limitar as visitas.
+n Algunas ciudades han optado por soluciones intermedias. = Algumas cidades optaram por soluções intermediárias.
+n Ámsterdam, por ejemplo, ha limitado los pisos turísticos, mientras que Venecia cobra una entrada a los visitantes de un día. = Amsterdã, por exemplo, limitou os apartamentos turísticos, enquanto Veneza cobra uma entrada dos visitantes de um dia.
+n Dado que el problema es complejo, no parece que exista una respuesta única. = Dado que o problema é complexo, não parece que exista uma resposta única.
+n En definitiva, el reto es lograr un turismo que beneficie también a quienes viven en la ciudad. = Em suma, o desafio é conseguir um turismo que beneficie também quem vive na cidade.
+n De ahí que cada vez más expertos hablen de "turismo sostenible". = Daí que cada vez mais especialistas falem de "turismo sustentável".
+tq Qual é a principal reclamação dos moradores? = Os apartamentos turísticos fizeram os aluguéis subir | Não há turistas suficientes | Os hotéis são caros
+tq O que dizem os empresários do setor? = Sem turistas muitos negócios fechariam | Que é preciso proibir o turismo | Que não há problemas
+tq O que Veneza faz? = Cobra uma entrada dos visitantes de um dia | Proíbe hotéis | Fecha o centro à noite
+tv O texto defende que existe uma solução única e simples. = F
+tv Algumas lojas tradicionais foram substituídas por lojas de lembrancinhas. = V
+
+# b2u4
+### leitura | Reclamação à companhia aérea
+n Estimados señores: me dirijo a ustedes para presentar una reclamación formal. = Prezados senhores: dirijo-me a vocês para apresentar uma reclamação formal.
+n El pasado 3 de mayo viajé en su vuelo de Madrid a Ciudad de México. = No último dia 3 de maio viajei no voo de vocês de Madri para a Cidade do México.
+n El vuelo salió con seis horas de retraso sin que se nos diera ninguna explicación. = O voo saiu com seis horas de atraso sem que nos dessem nenhuma explicação.
+n Durante la espera, no se ofreció a los pasajeros ni comida ni bebida. = Durante a espera, não foi oferecida aos passageiros nem comida nem bebida.
+n Como consecuencia del retraso, perdí la conexión a Oaxaca. = Em consequência do atraso, perdi a conexão para Oaxaca.
+n Tuve que pagar una noche de hotel y un nuevo billete, cuyos justificantes adjunto. = Tive que pagar uma noite de hotel e uma nova passagem, cujos comprovantes anexo.
+n Además, mi maleta llegó dos días más tarde y con una rueda rota. = Além disso, minha mala chegou dois dias depois e com uma roda quebrada.
+n Según la normativa europea, los pasajeros tienen derecho a una compensación en estos casos. = Segundo a norma europeia, os passageiros têm direito a uma compensação nesses casos.
+n Por todo ello, solicito el reembolso de los gastos ocasionados. = Por tudo isso, solicito o reembolso das despesas ocasionadas.
+n Asimismo, solicito la compensación que me corresponde por el retraso. = Além disso, solicito a compensação a que tenho direito pelo atraso.
+n Le agradecería que me respondieran en un plazo máximo de treinta días. = Agradeceria que me respondessem num prazo máximo de trinta dias.
+n En caso contrario, me veré obligado a acudir a la autoridad competente. = Caso contrário, serei obrigado a recorrer à autoridade competente.
+n Sin otro particular, les saluda atentamente, Ricardo Alves. = Sem mais para o momento, atenciosamente, Ricardo Alves.
+tq Quanto tempo o voo atrasou? = Seis horas | Duas horas | Um dia
+tq Que gastos Ricardo teve? = Uma noite de hotel e uma nova passagem | Só um táxi | Uma mala nova
+tq Que prazo ele dá para a resposta? = Trinta dias | Uma semana | Três meses
+tv A companhia ofereceu comida durante a espera. = F
+tv A mala chegou com uma roda quebrada. = V
+
+# b2u5
+### leitura | O estrangeiro que aprendeu a falar como os locais
+n Cuando Tom llegó a Madrid, hablaba un español de libro, correcto pero un poco rígido. = Quando Tom chegou a Madri, falava um espanhol de livro, correto mas um pouco rígido.
+n En su primera semana de trabajo, un compañero le dijo que el jefe "no tenía pelos en la lengua". = Na primeira semana de trabalho, um colega lhe disse que o chefe "não tinha papas na língua".
+n Tom, confundido, se pasó la reunión mirando la boca de su jefe. = Tom, confuso, passou a reunião olhando a boca do chefe.
+n Poco a poco empezó a apuntar en una libreta todas las expresiones que oía. = Aos poucos começou a anotar num caderninho todas as expressões que ouvia.
+n Descubrió que algo caro "cuesta un ojo de la cara" y que algo fácil "es pan comido". = Descobriu que algo caro "custa os olhos da cara" e que algo fácil "é moleza".
+n Un día, intentando usar una expresión, metió la pata delante de todos. = Um dia, tentando usar uma expressão, pisou na bola na frente de todos.
+n Quiso decir que estaba cansado y dijo que estaba "hasta las narices" de su jefe. = Quis dizer que estava cansado e disse que estava "de saco cheio" do chefe.
+n Se puso como un tomate, pero el jefe se echó a reír. = Ficou vermelho como um tomate, mas o chefe caiu na risada.
+n Desde entonces, sus compañeros le enseñan una expresión nueva cada viernes. = Desde então, os colegas lhe ensinam uma expressão nova toda sexta.
+n Tom dice que las expresiones son la parte más divertida del idioma, pero también la más traicionera. = Tom diz que as expressões são a parte mais divertida do idioma, mas também a mais traiçoeira.
+n Su consejo es claro: escuchar mucho antes de usarlas y no tener miedo de equivocarse. = O conselho dele é claro: escutar muito antes de usá-las e não ter medo de errar.
+n Hoy, tras cinco años en España, habla por los codos y nadie diría que es extranjero. = Hoje, depois de cinco anos na Espanha, fala pelos cotovelos e ninguém diria que é estrangeiro.
+tq Como era o espanhol de Tom quando chegou? = Correto, mas rígido | Muito ruim | Cheio de gírias
+tq O que Tom fez para aprender as expressões? = Anotou num caderninho | Fez um curso online | Assistiu a filmes
+tq O que os colegas fazem toda sexta? = Ensinam uma expressão nova | Saem para jantar | Fazem uma prova
+tv O chefe ficou muito bravo com o erro de Tom. = F
+tv Tom acha as expressões divertidas e traiçoeiras. = V
+
+# b2u6
+### leitura | A economia das pequenas coisas
+n Cuando hablamos de economía, solemos pensar en bancos, bolsa y grandes empresas. = Quando falamos de economia, costumamos pensar em bancos, bolsa e grandes empresas.
+n Sin embargo, la economía también está en las pequeñas decisiones de cada día. = No entanto, a economia também está nas pequenas decisões de cada dia.
+n Pensemos en un café diario fuera de casa: puede parecer un gasto insignificante. = Pensemos num café diário fora de casa: pode parecer um gasto insignificante.
+n Pero si cuesta dos euros, al cabo de un año supone más de setecientos. = Mas se custa dois euros, ao fim de um ano representa mais de setecentos.
+n Lo mismo ocurre con las suscripciones que olvidamos cancelar. = O mesmo acontece com as assinaturas que esquecemos de cancelar.
+n Los expertos en finanzas personales recomiendan revisar los gastos cada mes. = Os especialistas em finanças pessoais recomendam revisar os gastos todo mês.
+n También aconsejan tener un fondo de emergencia equivalente a varios meses de gastos. = Também aconselham ter uma reserva de emergência equivalente a vários meses de gastos.
+n Con la inflación, este consejo es todavía más importante, puesto que el dinero pierde valor. = Com a inflação, este conselho é ainda mais importante, visto que o dinheiro perde valor.
+n No se trata de vivir sin ningún capricho, sino de decidir con conciencia. = Não se trata de viver sem nenhum agrado, mas de decidir com consciência.
+n Al fin y al cabo, ahorrar no es solo guardar dinero: es comprar tranquilidad para el futuro. = Afinal de contas, economizar não é só guardar dinheiro: é comprar tranquilidade para o futuro.
+n Y, como decía mi abuela, "quien guarda, halla". = E, como dizia minha avó, "quem guarda, acha".
+n Ella nunca estudió economía, pero sabía más que muchos economistas. = Ela nunca estudou economia, mas sabia mais que muitos economistas.
+tq Quanto representa um café de dois euros por dia em um ano? = Mais de setecentos euros | Cem euros | Dois mil euros
+tq O que os especialistas recomendam? = Revisar os gastos todo mês e ter uma reserva | Investir tudo na bolsa | Não gastar nada
+tq Segundo o texto, o que é economizar? = Comprar tranquilidade para o futuro | Viver sem nenhum agrado | Guardar dinheiro no banco
+tv O texto diz que é preciso viver sem nenhum agrado. = F
+tv Com a inflação, o dinheiro perde valor. = V
+
+# b2u7
+### leitura | Avós e netos num mesmo prédio
+n En una ciudad del norte de España, un proyecto innovador está cambiando la vida de jóvenes y mayores. = Numa cidade do norte da Espanha, um projeto inovador está mudando a vida de jovens e idosos.
+n Se trata de un edificio de viviendas intergeneracionales. = Trata-se de um prédio de moradias intergeracionais.
+n Las personas mayores viven en pisos adaptados y pagan un alquiler bajo. = Os idosos moram em apartamentos adaptados e pagam um aluguel baixo.
+n Los jóvenes también pagan menos, a cambio de dedicar varias horas a la semana a sus vecinos. = Os jovens também pagam menos, em troca de dedicar várias horas por semana aos vizinhos.
+n Les ayudan con la compra, les acompañan al médico o simplemente charlan con ellos. = Ajudam com as compras, os acompanham ao médico ou simplesmente conversam com eles.
+n El objetivo es combatir dos problemas a la vez: la soledad de los mayores y el difícil acceso a la vivienda de los jóvenes. = O objetivo é combater dois problemas ao mesmo tempo: a solidão dos idosos e o difícil acesso à moradia dos jovens.
+n Carmen, de ochenta y dos años, cuenta que antes pasaba días enteros sin hablar con nadie. = Carmen, de oitenta e dois anos, conta que antes passava dias inteiros sem falar com ninguém.
+n Ahora juega a las cartas cada tarde con Iván, un estudiante de veintitrés años. = Agora joga cartas toda tarde com Iván, um estudante de vinte e três anos.
+n Iván, por su parte, asegura que ha aprendido de Carmen más que en la universidad. = Iván, por sua vez, garante que aprendeu com Carmen mais que na universidade.
+n No obstante, el proyecto también tiene retos: no siempre es fácil convivir con personas tan distintas. = Não obstante, o projeto também tem desafios: nem sempre é fácil conviver com pessoas tão diferentes.
+n Por eso, una trabajadora social organiza reuniones mensuales para resolver conflictos. = Por isso, uma assistente social organiza reuniões mensais para resolver conflitos.
+n Otras ciudades ya han mostrado interés en copiar la iniciativa. = Outras cidades já mostraram interesse em copiar a iniciativa.
+tq Que dois problemas o projeto combate? = A solidão dos idosos e o acesso dos jovens à moradia | O trânsito e a poluição | O desemprego e a inflação
+tq O que os jovens fazem em troca do aluguel menor? = Dedicam horas por semana aos vizinhos | Limpam o prédio | Pagam mais impostos
+tq Quem organiza as reuniões mensais? = Uma assistente social | Carmen | A prefeitura
+tv O projeto não tem nenhum desafio. = F
+tv Iván diz que aprendeu muito com Carmen. = V
+
+# b2u8
+### leitura | O que a ciência sabe sobre aprender idiomas
+n Durante décadas se creyó que solo los niños podían aprender un idioma a la perfección. = Durante décadas se acreditou que só as crianças podiam aprender um idioma com perfeição.
+n Hoy sabemos que la realidad es más compleja. = Hoje sabemos que a realidade é mais complexa.
+n Es cierto que los niños tienen ventaja en la pronunciación, sobre todo si empiezan antes de la adolescencia. = É verdade que as crianças têm vantagem na pronúncia, principalmente se começam antes da adolescência.
+n Sin embargo, varios estudios han demostrado que los adultos aprenden vocabulario y gramática más rápido al principio. = No entanto, vários estudos demonstraram que os adultos aprendem vocabulário e gramática mais rápido no começo.
+n La clave no parece ser la edad, sino la cantidad y la calidad de la exposición al idioma. = A chave não parece ser a idade, mas a quantidade e a qualidade da exposição ao idioma.
+n Los investigadores también han observado que estudiar poco cada día funciona mejor que estudiar mucho una vez a la semana. = Os pesquisadores também observaram que estudar pouco todo dia funciona melhor que estudar muito uma vez por semana.
+n Este fenómeno se conoce como "efecto de espaciado". = Esse fenômeno é conhecido como "efeito de espaçamento".
+n Otro hallazgo importante es que intentar recordar una palabra fortalece la memoria más que releerla. = Outra descoberta importante é que tentar lembrar uma palavra fortalece a memória mais que relê-la.
+n Por eso los ejercicios en los que hay que producir una respuesta son tan eficaces. = Por isso os exercícios em que é preciso produzir uma resposta são tão eficazes.
+n Además, dormir bien ayuda a consolidar lo aprendido durante el día. = Além disso, dormir bem ajuda a consolidar o que foi aprendido durante o dia.
+n Los expertos advierten de que no existen métodos mágicos para aprender sin esfuerzo. = Os especialistas alertam que não existem métodos mágicos para aprender sem esforço.
+n Pero la buena noticia es que nunca es tarde para empezar. = Mas a boa notícia é que nunca é tarde para começar.
+tq Em que as crianças têm vantagem? = Na pronúncia | No vocabulário | Na gramática
+tq O que é o "efeito de espaçamento"? = Estudar pouco todo dia funciona melhor | Estudar muito uma vez por semana | Dormir pouco para estudar mais
+tq O que fortalece mais a memória? = Tentar lembrar a palavra | Reler a palavra | Copiar a palavra
+tv Os adultos não conseguem aprender idiomas. = F
+tv Dormir bem ajuda a consolidar o aprendizado. = V
+
+# b2u9
+### leitura | O realismo mágico de García Márquez
+n Gabriel García Márquez nació en 1927 en Aracataca, un pequeño pueblo del Caribe colombiano. = Gabriel García Márquez nasceu em 1927 em Aracataca, um pequeno povoado do Caribe colombiano.
+n Pasó sus primeros años con sus abuelos, que le contaban historias llenas de fantasmas y prodigios. = Passou os primeiros anos com os avós, que lhe contavam histórias cheias de fantasmas e prodígios.
+n Su abuela narraba los hechos más extraordinarios con total naturalidad. = A avó narrava os fatos mais extraordinários com total naturalidade.
+n Años después, él diría que ese tono fue la clave de su estilo. = Anos depois, ele diria que esse tom foi a chave do seu estilo.
+n Antes de ser novelista, trabajó durante años como periodista. = Antes de ser romancista, trabalhou durante anos como jornalista.
+n En 1967 publicó "Cien años de soledad", la historia de la familia Buendía en el pueblo imaginario de Macondo. = Em 1967 publicou "Cem anos de solidão", a história da família Buendía no povoado imaginário de Macondo.
+n En la novela, una lluvia dura casi cinco años y una joven sube al cielo mientras dobla unas sábanas. = No romance, uma chuva dura quase cinco anos e uma jovem sobe ao céu enquanto dobra uns lençóis.
+n Sin embargo, los personajes no se sorprenden: lo mágico forma parte de lo cotidiano. = No entanto, os personagens não se surpreendem: o mágico faz parte do cotidiano.
+n Esta mezcla de realidad y fantasía se conoce como realismo mágico. = Essa mistura de realidade e fantasia é conhecida como realismo mágico.
+n El libro fue un éxito inmediato y se ha traducido a decenas de idiomas. = O livro foi um sucesso imediato e foi traduzido para dezenas de idiomas.
+n En 1982, García Márquez recibió el Premio Nobel de Literatura. = Em 1982, García Márquez recebeu o Prêmio Nobel de Literatura.
+n Sus amigos lo llamaban "Gabo", y así lo recuerdan todavía millones de lectores. = Os amigos o chamavam de "Gabo", e assim milhões de leitores ainda o lembram.
+tq Com quem García Márquez passou os primeiros anos? = Com os avós | Com os pais em Bogotá | Num colégio interno
+tq Qual era a profissão dele antes de ser romancista? = Jornalista | Professor | Advogado
+tq Em que ano ele recebeu o Nobel? = 1982 | 1967 | 1927
+tv Macondo é uma cidade real da Colômbia. = F
+tv No romance, os personagens não se surpreendem com o mágico. = V
+
+# b2u10
+### leitura | Uma língua, muitas vozes
+n Si un mexicano, una argentina y un español se sientan a la misma mesa, se entenderán sin problemas. = Se um mexicano, uma argentina e um espanhol se sentarem à mesma mesa, vão se entender sem problemas.
+n Sin embargo, enseguida notarán pequeñas diferencias. = No entanto, logo vão notar pequenas diferenças.
+n El mexicano dirá que algo es "padre", la argentina que es "copado" y el español que es "guay". = O mexicano dirá que algo é "padre", a argentina que é "copado" e o espanhol que é "guay".
+n La argentina usará "vos" en lugar de "tú" y pronunciará la "ll" de una manera muy característica. = A argentina usará "vos" no lugar de "tú" e pronunciará o "ll" de um jeito muito característico.
+n El español, por su parte, distinguirá el sonido de la "z" del de la "s". = O espanhol, por sua vez, distinguirá o som do "z" do som do "s".
+n Estas diferencias no son errores, sino la riqueza de una lengua hablada en varios continentes. = Essas diferenças não são erros, mas a riqueza de uma língua falada em vários continentes.
+n De hecho, la mayoría de los hispanohablantes vive en América, no en España. = De fato, a maioria dos falantes de espanhol vive na América, não na Espanha.
+n Las academias de la lengua de los distintos países trabajan juntas para describir esa variedad. = As academias da língua dos diferentes países trabalham juntas para descrever essa variedade.
+n Para quien aprende español, esta diversidad puede asustar al principio. = Para quem aprende espanhol, essa diversidade pode assustar no começo.
+n Pero también es una ventaja: con un solo idioma se puede viajar por medio mundo. = Mas também é uma vantagem: com um só idioma é possível viajar por meio mundo.
+n El secreto es elegir una variedad como base y acostumbrar el oído a las demás. = O segredo é escolher uma variedade como base e acostumar o ouvido às demais.
+n Escuchar podcasts, ver series y hablar con personas de distintos países ayuda muchísimo. = Ouvir podcasts, ver séries e conversar com pessoas de diferentes países ajuda muitíssimo.
+n Al final, no hay un español mejor que otro: hay muchas maneras de decir lo mismo. = No final, não há um espanhol melhor que outro: há muitas maneiras de dizer a mesma coisa.
+tq Como um argentino diz que algo é legal? = "Copado" | "Padre" | "Guay"
+tq Onde vive a maioria dos falantes de espanhol? = Na América | Na Espanha | Na África
+tq Qual é o segredo para quem aprende, segundo o texto? = Escolher uma variedade como base e acostumar o ouvido às outras | Aprender só o espanhol da Espanha | Evitar os sotaques
+tv As diferenças entre as variedades são erros. = F
+tv Com espanhol é possível viajar por meio mundo. = V

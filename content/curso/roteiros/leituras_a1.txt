@@ -1,0 +1,155 @@
+// Leituras narrativas do A1: textos curtos, presente, frases simples (6 a 8 frases).
+
+# a1u1
+### leitura | Eu sou a Lucía
+n Hola, me llamo Lucía. = Olá, eu me chamo Lucía.
+n Soy de Argentina, de Buenos Aires. = Sou da Argentina, de Buenos Aires.
+n Tengo veinte años y soy estudiante. = Tenho vinte anos e sou estudante.
+n Hablo español y un poco de portugués. = Falo espanhol e um pouco de português.
+n Mi profesora se llama Carmen y es muy simpática. = Minha professora se chama Carmen e é muito simpática.
+n Hoy estoy muy contenta: es mi primer día de clase. = Hoje estou muito contente: é meu primeiro dia de aula.
+n ¡Mucho gusto! = Muito prazer!
+tq De onde é Lucía? = Da Argentina | Do Brasil | Da Espanha
+tq Quantos anos ela tem? = Vinte | Dez | Trinta
+tq Como ela está hoje? = Muito contente | Cansada | Triste
+tv Lucía fala um pouco de português. = V
+tv A professora se chama Lucía. = F
+
+# a1u2
+### leitura | A família do Pablo
+n Me llamo Pablo y tengo una familia grande. = Eu me chamo Pablo e tenho uma família grande.
+n Mi padre se llama Jorge y es alto y moreno. = Meu pai se chama Jorge e é alto e moreno.
+n Mi madre se llama Ana. Es profesora y es muy divertida. = Minha mãe se chama Ana. É professora e é muito divertida.
+n Tengo dos hermanas: Sara tiene doce años y Eva tiene ocho. = Tenho duas irmãs: Sara tem doze anos e Eva tem oito.
+n Mis abuelos viven con nosotros. = Meus avós moram com a gente.
+n Mi abuelo es serio, pero mi abuela es muy simpática. = Meu avô é sério, mas minha avó é muito simpática.
+n También tenemos un perro. Se llama Toby. = Também temos um cachorro. Ele se chama Toby.
+tq Qual é a profissão da mãe de Pablo? = Professora | Médica | Cozinheira
+tq Quantos anos tem Eva? = Oito | Doze | Dez
+tq Quem mora com a família? = Os avós | Um tio | Uma prima
+tv O pai de Pablo é baixo e loiro. = F
+tv A família tem um cachorro chamado Toby. = V
+
+# a1u3
+### leitura | O que eu como num dia
+n Por la mañana desayuno café con leche y pan con tomate. = De manhã tomo café com leite e pão com tomate.
+n A las dos como en casa con mi familia. = Às duas almoço em casa com minha família.
+n Normalmente comemos arroz, ensalada y pescado. = Normalmente comemos arroz, salada e peixe.
+n No me gusta la carne, pero me encanta el pescado. = Não gosto de carne, mas adoro peixe.
+n Por la tarde tomo un té y una fruta. = À tarde tomo um chá e uma fruta.
+n Ceno a las nueve: una sopa o una tortilla. = Janto às nove: uma sopa ou uma tortilha.
+n Siempre bebo mucha agua. = Sempre bebo muita água.
+tq O que a pessoa toma no café da manhã? = Café com leite e pão com tomate | Suco e cereal | Chá e fruta
+tq Do que ela não gosta? = De carne | De peixe | De fruta
+tq A que horas ela janta? = Às nove | Às duas | Às sete
+tv Ela almoça no trabalho. = F
+tv À tarde ela toma um chá. = V
+
+# a1u4
+### leitura | Minha casa nova
+n Ahora vivo en un piso nuevo en el centro. = Agora moro num apartamento novo no centro.
+n El piso tiene dos habitaciones, un salón, una cocina y un baño. = O apartamento tem dois quartos, uma sala, uma cozinha e um banheiro.
+n La cocina es pequeña, pero muy bonita. = A cozinha é pequena, mas muito bonita.
+n En el salón hay un sofá azul y una mesa grande. = Na sala tem um sofá azul e uma mesa grande.
+n Mi habitación tiene una ventana muy grande. = Meu quarto tem uma janela muito grande.
+n El edificio no tiene ascensor y yo vivo en el cuarto piso. = O prédio não tem elevador e eu moro no quarto andar.
+n Pero estoy muy contento: ¡el supermercado está al lado! = Mas estou muito contente: o supermercado fica ao lado!
+tq Quantos quartos tem o apartamento? = Dois | Um | Três
+tq De que cor é o sofá? = Azul | Verde | Preto
+tq Em que andar a pessoa mora? = No quarto | No primeiro | No segundo
+tv O prédio tem elevador. = F
+tv O supermercado fica ao lado. = V
+
+# a1u5
+### leitura | A rotina da Marta
+n Marta es enfermera y trabaja en un hospital. = Marta é enfermeira e trabalha num hospital.
+n Se levanta a las seis de la mañana. = Ela se levanta às seis da manhã.
+n Se ducha, desayuna y va al trabajo en autobús. = Toma banho, toma café e vai ao trabalho de ônibus.
+n Empieza a trabajar a las siete y media. = Começa a trabalhar às sete e meia.
+n Come en el hospital con sus compañeros. = Almoça no hospital com seus colegas.
+n Por la tarde vuelve a casa y lee un poco. = À tarde volta para casa e lê um pouco.
+n Los martes y jueves va al gimnasio. = Às terças e quintas vai à academia.
+n Se acuesta a las diez porque está muy cansada. = Vai dormir às dez porque está muito cansada.
+tq Qual é a profissão de Marta? = Enfermeira | Professora | Médica
+tq Como ela vai ao trabalho? = De ônibus | De carro | A pé
+tq Quando ela vai à academia? = Às terças e quintas | Aos sábados | Todos os dias
+tv Marta almoça em casa. = F
+tv Ela vai dormir às dez. = V
+
+# a1u6
+### leitura | Meu bairro
+n Vivo en un barrio tranquilo, cerca del centro. = Moro num bairro tranquilo, perto do centro.
+n En mi calle hay una farmacia, un banco y una panadería. = Na minha rua tem uma farmácia, um banco e uma padaria.
+n El supermercado está a cinco minutos andando. = O supermercado fica a cinco minutos a pé.
+n Enfrente de mi casa hay un parque muy bonito. = Em frente à minha casa tem um parque muito bonito.
+n Para ir al trabajo tomo el metro. = Para ir ao trabalho pego o metrô.
+n La estación está en la esquina, a la derecha. = A estação fica na esquina, à direita.
+n Los domingos camino por el parque con mi perro. = Aos domingos caminho pelo parque com meu cachorro.
+tq O que fica em frente à casa? = Um parque | Uma farmácia | Uma estação
+tq Como a pessoa vai ao trabalho? = De metrô | De ônibus | De bicicleta
+tq Onde fica a estação? = Na esquina, à direita | Longe, à esquerda | Atrás do parque
+tv O supermercado fica longe. = F
+tv O bairro é tranquilo. = V
+
+# a1u7
+### leitura | Um dia de compras
+n El sábado voy de compras con mi hermana. = No sábado vou às compras com minha irmã.
+n Ella necesita un vestido para una fiesta. = Ela precisa de um vestido para uma festa.
+n Yo busco unos pantalones negros y una camiseta blanca. = Eu procuro uma calça preta e uma camiseta branca.
+n En la primera tienda todo es muy caro. = Na primeira loja tudo é muito caro.
+n En la segunda tienda hay rebajas. = Na segunda loja tem liquidação.
+n Mi hermana compra un vestido rojo por treinta euros. = Minha irmã compra um vestido vermelho por trinta euros.
+n Los pantalones me quedan pequeños, pero la camiseta me queda bien. = A calça fica pequena em mim, mas a camiseta fica bem.
+n Pago con tarjeta y volvemos a casa contentas. = Pago com cartão e voltamos para casa contentes.
+tq Para que a irmã precisa do vestido? = Para uma festa | Para o trabalho | Para um casamento
+tq Quanto custa o vestido? = Trinta euros | Treze euros | Cem euros
+tq O que a narradora não compra? = A calça | A camiseta | Nada
+tv Na primeira loja tudo é barato. = F
+tv A narradora paga com cartão. = V
+
+# a1u8
+### leitura | O tempo na minha cidade
+n Vivo en Bogotá, en Colombia. = Moro em Bogotá, na Colômbia.
+n Aquí no hay verano ni invierno como en Europa. = Aqui não tem verão nem inverno como na Europa.
+n La temperatura es casi igual todo el año: unos catorce grados. = A temperatura é quase igual o ano todo: uns catorze graus.
+n Por la mañana hace frío y por la tarde hace sol. = De manhã faz frio e à tarde faz sol.
+n Pero llueve mucho, sobre todo en abril y en octubre. = Mas chove muito, principalmente em abril e em outubro.
+n Por eso siempre llevo un paraguas y una chaqueta. = Por isso sempre levo um guarda-chuva e uma jaqueta.
+n Mi mes favorito es diciembre: hace buen tiempo y hay fiestas. = Meu mês favorito é dezembro: o tempo é bom e tem festas.
+tq Onde a pessoa mora? = Em Bogotá | Em Madri | Em Buenos Aires
+tq Como é a temperatura em Bogotá? = Quase igual o ano todo | Muito quente no verão | Muito fria no inverno
+tq Qual é o mês favorito da pessoa? = Dezembro | Abril | Outubro
+tv Em Bogotá quase não chove. = F
+tv A pessoa sempre leva guarda-chuva. = V
+
+# a1u9
+### leitura | O fim de semana do Daniel
+n Daniel trabaja mucho de lunes a viernes. = Daniel trabalha muito de segunda a sexta.
+n Por eso los fines de semana le gusta descansar. = Por isso nos fins de semana ele gosta de descansar.
+n El sábado por la mañana juega al fútbol con sus amigos. = No sábado de manhã joga futebol com os amigos.
+n Por la tarde lee una novela o ve una serie. = À tarde lê um romance ou vê uma série.
+n El sábado por la noche sale a cenar o va al cine. = No sábado à noite sai para jantar ou vai ao cinema.
+n El domingo come con sus padres. = No domingo almoça com os pais.
+n Este domingo va a ir a un concierto de salsa. = Neste domingo vai a um show de salsa.
+n ¡Le encanta bailar! = Ele adora dançar!
+tq O que Daniel faz no sábado de manhã? = Joga futebol | Vai ao cinema | Almoça com os pais
+tq Com quem ele almoça no domingo? = Com os pais | Com os amigos | Sozinho
+tq O que ele vai fazer neste domingo? = Ir a um show de salsa | Viajar | Trabalhar
+tv Daniel trabalha nos fins de semana. = F
+tv Daniel adora dançar. = V
+
+# a1u10
+### leitura | Primeira viagem a Lima
+n Me llamo Joana y soy de Brasil. = Eu me chamo Joana e sou do Brasil.
+n Esta semana estoy en Lima, mi primera vez en Perú. = Esta semana estou em Lima, minha primeira vez no Peru.
+n Mi hotel está en Miraflores, cerca del mar. = Meu hotel fica em Miraflores, perto do mar.
+n La habitación es pequeña, pero tiene vistas al mar. = O quarto é pequeno, mas tem vista para o mar.
+n El desayuno está incluido y es muy rico. = O café da manhã está incluído e é muito gostoso.
+n Hoy voy a visitar el centro histórico y un museo. = Hoje vou visitar o centro histórico e um museu.
+n Por la noche voy a cenar ceviche en un restaurante típico. = À noite vou jantar ceviche num restaurante típico.
+n Hablo poco español, pero la gente es muy amable. = Falo pouco espanhol, mas as pessoas são muito gentis.
+tq Onde fica o hotel de Joana? = Em Miraflores, perto do mar | No centro histórico | Perto do aeroporto
+tq O que Joana vai jantar? = Ceviche | Paella | Tacos
+tq Como são as pessoas em Lima, segundo Joana? = Muito gentis | Muito sérias | Pouco simpáticas
+tv É a primeira vez de Joana no Peru. = V
+tv O café da manhã não está incluído. = F
