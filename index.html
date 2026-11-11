@@ -2173,6 +2173,7 @@ body.cc-locked #faf-sheet{z-index:96}
   var KEY = 'fraseafrase.curso';
   var HEART_MAX = 5, HEART_MS = 30 * 60 * 1000, DAILY_GOAL = 30, TEST_SIZE = 12, TEST_PASS = 10;
   var PREMIUM_LIBERADO = true; // a cobrança entra numa etapa futura; até lá o curso fica aberto
+  var CURSO_LIVRE = true; // todas as unidades e etapas abertas, em qualquer ordem (false volta à trilha em sequência)
   var THEMES = {
     indigo: { name: 'Índigo', a: '#5B3DF5', b: '#2F6FE0', soft: '#EDE9FF' },
     oceano: { name: 'Oceano', a: '#0B7FA6', b: '#2F6FE0', soft: '#E1F3FA' },
@@ -2395,6 +2396,7 @@ body.cc-locked #faf-sheet{z-index:96}
   function unitDone(u) { var ns = nodesOf(u); return ns.length > 0 && ns.every(nodeDone); }
   function unitOpen(entry, idx, list) {
     if (!entry.u.lessons.length) return false;
+    if (CURSO_LIVRE) return true;
     for (var i = 0; i < idx; i++) if (list[i].u.lessons.length && !unitDone(list[i].u)) return false;
     return true;
   }
@@ -2459,7 +2461,7 @@ body.cc-locked #faf-sheet{z-index:96}
         ])
       ]);
       var body = h('div', { class: 'cc-levels' });
-      var units = allUnits(), currentEl = null;
+      var units = allUnits(), currentEl = null, anyTodo = true;
       course.levels.forEach(function (lv) {
         var sec = h('section', { class: 'cc-lv' }, [h('h2', { class: 'cc-lv-title' }, [h('span', { class: 'cc-lv-code', text: lv.id }), lv.name])]);
         lv.units.forEach(function (u) {
@@ -2479,6 +2481,10 @@ body.cc-locked #faf-sheet{z-index:96}
               var state = isDone ? 'done' : prevDone ? 'current' : 'locked';
               if (state === 'current' && !firstTodo) state = 'locked';
               if (state === 'current') firstTodo = false;
+              if (CURSO_LIVRE && !isDone) {
+                state = anyTodo ? 'current' : 'free';
+                anyTodo = false;
+              }
               var stars = (n.kind === 'lesson' || n.premium) && st.lessons[n.id] ? st.lessons[n.id].stars : 0;
               var btn = h('button', { type: 'button', class: 'cc-node is-' + n.kind + ' is-' + state + (n.big ? ' is-big' : '') + (n.premium ? ' is-premium' : ''), disabled: state === 'locked',
                 'aria-label': n.label + (state === 'done' ? ', concluída' : state === 'locked' ? ', bloqueada' : ', disponível'),
