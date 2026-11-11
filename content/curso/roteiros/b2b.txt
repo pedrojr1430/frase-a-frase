@@ -1,0 +1,377 @@
+// B2 — unidades 6 a 10
+
+# b2u6 | Economia | Finanças pessoais, empresas, mercado, inflação e impostos.
+
+## Finanças pessoais | "Ahorrar" é economizar; "hipoteca", financiamento imobiliário; "préstamo", empréstimo; "cuenta corriente", conta-corrente.
+v ahorrar = economizar; hipoteca = financiamento imobiliário; préstamo = empréstimo; cuenta corriente = conta-corrente; gastos = gastos; ingresos = receitas, renda; deuda = dívida
+f Pedimos un [préstamo] para reformar la casa. = Pedimos um empréstimo para reformar a casa. ~ ahorro, gasto
+f Este mes los [gastos] superan los ingresos. = Este mês os gastos superam a renda. ~ ahorros, deudas
+b Intento ahorrar el diez por ciento del sueldo. = Tento economizar dez por cento do salário.
+b Pagamos la hipoteca cada mes. = Pagamos o financiamento todo mês.
+l Por fin hemos terminado de pagar la deuda. = Finalmente terminamos de pagar a dívida. ~ Acabamos de fazer uma dívida nova. | Ainda não pagamos a dívida.
+q Você quer abrir uma conta no banco. O que diz? = Quería abrir una cuenta corriente. | Quería cerrar mi hipoteca hoy. | Quería ahorrar una deuda.
+
+## Empresas e mercado | "Empresa" é empresa; "beneficios", lucro; "pérdidas", prejuízo; "facturar", faturar; "cotizar en bolsa", ter ações na bolsa.
+v beneficios = lucro; pérdidas = prejuízo; facturar = faturar; bolsa = bolsa de valores; acciones = ações; competencia = concorrência; sede = sede
+f La empresa tuvo [pérdidas] el año pasado. = A empresa teve prejuízo no ano passado. ~ perdidos, ganancias de
+f Las [acciones] subieron un cinco por ciento. = As ações subiram cinco por cento. ~ acción, sede
+b La competencia es muy fuerte. = A concorrência é muito forte.
+b La sede está en Ciudad de México. = A sede fica na Cidade do México.
+l Este año la empresa ha duplicado sus beneficios. = Este ano a empresa dobrou o lucro. ~ Este ano a empresa reduziu o lucro pela metade. | No ano passado a empresa teve prejuízo.
+q Você quer dizer que a empresa faturou muito este ano. O que diz? = Este año la empresa ha facturado mucho. | Este año la empresa ha factura. | La empresa es una factura.
+
+## Crise e inflação | "Inflación" é a alta geral dos preços; "subida de precios", aumento; "paro" ou "desempleo", desemprego; "crisis", crise.
+v inflación = inflação; subida de precios = aumento de preços; desempleo = desemprego; crisis = crise; poder adquisitivo = poder de compra; recesión = recessão; crecimiento = crescimento
+f La [inflación] afecta a las familias. = A inflação afeta as famílias. ~ crecimiento, recesión de
+f El [desempleo] bajó en el último trimestre. = O desemprego caiu no último trimestre. ~ desempleado, empleo de
+b Hemos perdido poder adquisitivo. = Perdemos poder de compra.
+b La economía muestra signos de crecimiento. = A economia mostra sinais de crescimento.
+l Los expertos temen una recesión. = Os especialistas temem uma recessão. ~ Os especialistas esperam um crescimento. | Os especialistas negam a crise.
+q Você comenta que tudo está mais caro no supermercado. O que diz? = Todo está carísimo, los precios no paran de subir. | Todo está barato con la inflación. | La inflación baja los precios mucho.
+
+## Consumo e comércio | "Consumidor" é consumidor; "oferta y demanda", oferta e procura; "importar/exportar"; "a plazos", parcelado.
+v consumidor = consumidor; oferta = oferta; demanda = procura, demanda; importar = importar; exportar = exportar; a plazos = parcelado; comercio = comércio
+f España [exporta] mucho aceite de oliva. = A Espanha exporta muito azeite. ~ importa, exporte
+f Lo compré a [plazos]. = Comprei parcelado. ~ plazo, precio
+b Los consumidores buscan precios bajos. = Os consumidores procuram preços baixos.
+b El comercio online no para de crecer. = O comércio online não para de crescer.
+l Cuando la demanda sube, los precios también. = Quando a procura sobe, os preços também. ~ Quando a procura cai, os preços sobem. | Quando a oferta sobe, os preços sobem.
+q Você quer pagar um computador caro em várias vezes. O que pergunta? = ¿Se puede pagar a plazos? | ¿Se puede exportar a plazos? | ¿Hay oferta y demanda?
+
+## Impostos e serviços públicos | "Impuestos" são impostos; "Hacienda" é a Receita na Espanha; "declaración de la renta", declaração de imposto de renda; "IVA", imposto sobre consumo.
+v impuestos = impostos; Hacienda = Receita (Espanha); declaración de la renta = declaração do imposto de renda; IVA = imposto sobre valor agregado; servicios públicos = serviços públicos; pensión = aposentadoria, pensão; subvención = subsídio
+f Tengo que hacer la [declaración] de la renta. = Tenho que fazer a declaração do imposto de renda. ~ declarar, decisión
+f Los [impuestos] financian la sanidad pública. = Os impostos financiam a saúde pública. ~ impuesto, importes
+b El precio incluye el IVA. = O preço inclui o imposto.
+b Mi abuelo cobra una pensión. = Meu avô recebe uma aposentadoria.
+l El gobierno dará subvenciones a las pequeñas empresas. = O governo dará subsídios às pequenas empresas. ~ O governo cobrará mais impostos das pequenas empresas. | As pequenas empresas não receberão nada.
+q Você quer saber se o preço tem imposto incluído. O que pergunta? = ¿El IVA está incluido? | ¿Hacienda está incluida en la cena? | ¿La pensión es gratis?
+
+### frases
+fr Cada mes intento ahorrar una parte de mi sueldo. = Todo mês tento economizar uma parte do meu salário.
+fr Pedimos una hipoteca a treinta años para comprar el piso. = Fizemos um financiamento de trinta anos para comprar o apartamento.
+fr La inflación ha hecho que la cesta de la compra sea más cara. = A inflação deixou a cesta de compras mais cara.
+fr La empresa cerró el año con beneficios récord. = A empresa fechou o ano com lucro recorde.
+fr Si la demanda [aumenta], los precios suben. = Se a procura aumenta, os preços sobem. ~ aumente, aumentará
+fr En abril empieza la campaña de la declaración de la renta. = Em abril começa a campanha da declaração do imposto de renda.
+fr Muchas familias tienen problemas para llegar a fin de mes. = Muitas famílias têm dificuldade para chegar ao fim do mês.
+fr El gobierno anunció ayudas para los jóvenes que alquilan. = O governo anunciou ajudas para os jovens que alugam.
+fr Las exportaciones de vino [crecieron] un diez por ciento. = As exportações de vinho cresceram dez por cento. ~ creció, crecen
+fr Me arrepiento de haber comprado tantas cosas a plazos. = Me arrependo de ter comprado tantas coisas parceladas.
+
+### texto | Conversa sobre dinheiro
+t Lucía | Este mes no llego a fin de mes. Todo está carísimo. = Este mês não chego ao fim do mês. Está tudo caríssimo.
+t Tomás | Es la inflación. El alquiler me ha subido cien euros. = É a inflação. Meu aluguel subiu cem euros.
+t Lucía | ¿Y qué vas a hacer? = E o que você vai fazer?
+t Tomás | He hecho un presupuesto: apunto todos mis gastos en una aplicación. = Fiz um orçamento: anoto todos os meus gastos num aplicativo.
+t Lucía | ¿Y funciona? = E funciona?
+t Tomás | Sí. Descubrí que gastaba casi doscientos euros al mes en comida a domicilio. = Sim. Descobri que gastava quase duzentos euros por mês com comida por entrega.
+t Lucía | ¡Madre mía! Yo creo que me pasa lo mismo con la ropa. = Nossa! Acho que comigo acontece o mesmo com roupa.
+t Tomás | Prueba a no comprar nada en un mes, salvo lo necesario. = Tente não comprar nada por um mês, exceto o necessário.
+t Lucía | Buena idea. Y lo que ahorre, lo meto en una cuenta aparte. = Boa ideia. E o que eu economizar, coloco numa conta separada.
+t Tomás | Exacto. Así tendrás un colchón para emergencias. = Exato. Assim você terá uma reserva para emergências.
+tq Quanto subiu o aluguel de Tomás? = Cem euros | Duzentos euros | Cinquenta euros
+tq Como Tomás controla os gastos? = Anota tudo num aplicativo | Paga tudo em dinheiro | Pede ajuda ao banco
+tq Com o que Tomás gastava muito? = Comida por entrega | Roupa | Viagens
+tq O que Lucía vai fazer com o que economizar? = Colocar numa conta separada | Fazer uma viagem | Pagar o aluguel
+
+# b2u7 | Sociedade | Desigualdade, migração, igualdade de gênero, envelhecimento e participação cidadã.
+
+## Desigualdade | "Desigualdad" é desigualdade; "brecha", diferença, abismo; "pobreza", pobreza; "riqueza", riqueza; "vivienda", moradia.
+v desigualdad = desigualdade; brecha = diferença, abismo; pobreza = pobreza; riqueza = riqueza; vivienda = moradia; acceso = acesso; oportunidades = oportunidades
+f La [brecha] entre ricos y pobres ha crecido. = O abismo entre ricos e pobres cresceu. ~ riqueza, vivienda
+f El [acceso] a la vivienda es un problema. = O acesso à moradia é um problema. ~ acceder, oportunidad
+b Todos merecen las mismas oportunidades. = Todos merecem as mesmas oportunidades.
+b La pobreza infantil ha aumentado. = A pobreza infantil aumentou.
+l La desigualdad afecta a la salud. = A desigualdade afeta a saúde. ~ A desigualdade não afeta a saúde. | A pobreza afeta a educação.
+q Você quer dizer que os jovens não conseguem comprar casa. O que diz? = Los jóvenes no pueden acceder a una vivienda. | Los jóvenes tienen mucha vivienda. | La vivienda accede a los jóvenes.
+
+## Migração | "Emigrar" é sair do país; "inmigrar", chegar a outro. "Integración" é integração e "acogida", acolhimento.
+v emigrar = emigrar; inmigrante = imigrante; integración = integração; acogida = acolhimento; papeles = documentos; frontera = fronteira; diversidad = diversidade
+f Mis abuelos [emigraron] a Argentina. = Meus avós emigraram para a Argentina. ~ inmigraron, emigran
+f La [integración] lleva tiempo. = A integração leva tempo. ~ integrar, frontera
+b La diversidad enriquece la sociedad. = A diversidade enriquece a sociedade.
+b Muchos inmigrantes trabajan en el campo. = Muitos imigrantes trabalham no campo.
+l El país tiene un programa de acogida. = O país tem um programa de acolhimento. ~ O país fechou as fronteiras. | O país não tem programa de acolhimento.
+q Você quer contar que sua família emigrou da Itália. O que diz? = Mi familia emigró de Italia. | Mi familia inmigró de Italia hacia mañana. | Mi familia es frontera.
+
+## Igualdade de gênero | "Igualdad" é igualdade; "brecha salarial", diferença salarial; "conciliar" é equilibrar trabalho e família; "baja por maternidad/paternidad", licença.
+v igualdad = igualdade; brecha salarial = diferença salarial; conciliar = conciliar; baja por paternidad = licença-paternidade; cuidados = cuidados; reparto = divisão; techo de cristal = teto de vidro
+f Todavía existe una brecha [salarial]. = Ainda existe uma diferença salarial. ~ salario, sueldo
+f Es difícil [conciliar] trabajo y familia. = É difícil conciliar trabalho e família. ~ concilio, cocinar
+b Mi marido se cogió la baja por paternidad. = Meu marido tirou licença-paternidade.
+b El reparto de tareas debe ser justo. = A divisão de tarefas deve ser justa.
+l Pocas mujeres llegan a la dirección: es el techo de cristal. = Poucas mulheres chegam à direção: é o teto de vidro. ~ Muitas mulheres chegam à direção. | Poucos homens chegam à direção.
+q Você quer defender que pais e mães dividam os cuidados. O que diz? = Los cuidados deben repartirse por igual. | Los cuidados son de las mujeres. | Los cuidados no importan.
+
+## Envelhecimento | "Envejecimiento" é envelhecimento; "natalidad", natalidade; "tercera edad", terceira idade; "jubilación", aposentadoria; "esperanza de vida", expectativa de vida.
+v envejecimiento = envelhecimento; natalidad = natalidade; tercera edad = terceira idade; jubilación = aposentadoria; esperanza de vida = expectativa de vida; residencia = casa de repouso; soledad = solidão
+f La [natalidad] es muy baja en España. = A natalidade é muito baixa na Espanha. ~ natal, nacimiento
+f La esperanza de [vida] supera los ochenta años. = A expectativa de vida passa dos oitenta anos. ~ vivir, edad
+b La soledad afecta a muchos mayores. = A solidão afeta muitos idosos.
+b Mi abuela vive en una residencia. = Minha avó mora numa casa de repouso.
+l El envejecimiento de la población es un reto. = O envelhecimento da população é um desafio. ~ O rejuvenescimento da população é um desafio. | A natalidade não é um desafio.
+q Você quer comentar que cada vez nascem menos crianças. O que diz? = Cada vez nacen menos niños. | Cada vez nacen más mayores. | La natalidad es mucho alta.
+
+## Participação | "Voluntariado" é trabalho voluntário; "ONG", ONG; "votar", votar; "manifestación", protesto; "asociación de vecinos", associação de moradores.
+v voluntariado = voluntariado; ONG = ONG; votar = votar; manifestación = manifestação, protesto; asociación de vecinos = associação de moradores; donar = doar; comprometerse = comprometer-se
+f Hago [voluntariado] en un comedor social. = Faço trabalho voluntário num restaurante social. ~ voluntario, voluntad
+f Es importante [votar] en las elecciones. = É importante votar nas eleições. ~ voto, vota
+b Dono sangre dos veces al año. = Doo sangue duas vezes por ano.
+b Hubo una manifestación en el centro. = Houve uma manifestação no centro.
+l La asociación de vecinos organizó una fiesta. = A associação de moradores organizou uma festa. ~ A prefeitura organizou uma festa. | A associação de moradores cancelou a festa.
+q Você quer convidar um amigo para ser voluntário com você. O que diz? = ¿Te apuntas al voluntariado conmigo? | ¿Votas en mi casa? | ¿Donas una manifestación?
+
+### frases
+fr La desigualdad ha aumentado en la última década. = A desigualdade aumentou na última década.
+fr Para muchos jóvenes, acceder a una vivienda es casi imposible. = Para muitos jovens, conseguir uma moradia é quase impossível.
+fr Mis bisabuelos emigraron de Galicia a Buenos Aires. = Meus bisavós emigraram da Galícia para Buenos Aires.
+fr Las empresas deberían facilitar la conciliación familiar. = As empresas deveriam facilitar a conciliação familiar.
+fr La esperanza de vida en España es una de las más [altas] del mundo. = A expectativa de vida na Espanha é uma das mais altas do mundo. ~ alta, altos
+fr Cada sábado hago voluntariado con personas mayores. = Todo sábado faço trabalho voluntário com idosos.
+fr La soledad no deseada es un problema creciente. = A solidão indesejada é um problema crescente.
+fr Es fundamental que todos los ciudadanos [voten]. = É fundamental que todos os cidadãos votem. ~ votan, votar
+fr Todavía hay pocas mujeres en los consejos de administración. = Ainda há poucas mulheres nos conselhos de administração.
+fr La diversidad cultural enriquece nuestras ciudades. = A diversidade cultural enriquece nossas cidades.
+
+### texto | O projeto do bairro
+t Ana | ¿Te has enterado? La asociación de vecinos quiere crear un programa contra la soledad. = Você ficou sabendo? A associação de moradores quer criar um programa contra a solidão.
+t Pablo | ¿Contra la soledad? ¿Cómo? = Contra a solidão? Como?
+t Ana | Muchas personas mayores del barrio viven solas. La idea es que los jóvenes las visiten una vez por semana. = Muitos idosos do bairro moram sozinhos. A ideia é que os jovens os visitem uma vez por semana.
+t Pablo | Me parece muy buena idea. Mi vecina tiene noventa años y casi nunca sale. = Me parece uma ótima ideia. Minha vizinha tem noventa anos e quase nunca sai.
+t Ana | Además, a cambio, ellos pueden enseñar cosas: cocinar, coser, historias del barrio... = Além disso, em troca, eles podem ensinar coisas: cozinhar, costurar, histórias do bairro...
+t Pablo | ¿Y quién lo organiza? = E quem organiza?
+t Ana | Una ONG pequeña, con ayuda del ayuntamiento. Buscan voluntarios. = Uma ONG pequena, com ajuda da prefeitura. Estão procurando voluntários.
+t Pablo | Me apunto. Aunque trabajo mucho, una hora a la semana puedo dedicarla. = Eu topo. Embora eu trabalhe muito, uma hora por semana eu posso dedicar.
+t Ana | ¡Genial! La reunión informativa es el jueves a las siete. = Ótimo! A reunião informativa é na quinta às sete.
+t Pablo | Allí estaré. Y le hablaré a mi vecina del proyecto. = Estarei lá. E vou falar do projeto para minha vizinha.
+tq Qual é o objetivo do programa? = Combater a solidão dos idosos | Arrecadar dinheiro | Limpar o bairro
+tq Com que frequência os jovens visitariam os idosos? = Uma vez por semana | Todo dia | Uma vez por mês
+tq Quem organiza o programa? = Uma ONG com a prefeitura | Só a prefeitura | Uma empresa
+tq Quanto tempo Pablo pode dedicar? = Uma hora por semana | Um dia por semana | Nenhum
+
+# b2u8 | Ciência | Método científico, saúde, espaço, inteligência artificial e divulgação.
+
+## O método científico | "Hipótesis" é hipótese; "experimento", experimento; "investigar", pesquisar; "investigador", pesquisador; "resultados", resultados.
+v hipótesis = hipótese; experimento = experimento; investigar = pesquisar; investigador = pesquisador; resultados = resultados; laboratorio = laboratório; muestra = amostra
+f Los [investigadores] publicaron sus resultados. = Os pesquisadores publicaram seus resultados. ~ investigaciones, investigado
+f Analizaron una [muestra] de mil personas. = Analisaram uma amostra de mil pessoas. ~ muestras de, muestreo de
+b Trabaja en un laboratorio de biología. = Trabalha num laboratório de biologia.
+b Los resultados confirman la hipótesis. = Os resultados confirmam a hipótese.
+l El experimento se repitió tres veces. = O experimento foi repetido três vezes. ~ O experimento foi feito uma única vez. | O experimento falhou três vezes.
+q Você quer perguntar a uma cientista o que ela pesquisa. O que diz? = ¿Qué investiga usted? | ¿Qué experimenta mañana usted? | ¿Cuál es su muestra favorita?
+
+## Saúde e medicina | "Vacuna" é vacina; "ensayo clínico", ensaio clínico; "tratamiento", tratamento; "enfermedad", doença; "descubrimiento", descoberta.
+v vacuna = vacina; ensayo clínico = ensaio clínico; tratamiento = tratamento; enfermedad = doença; descubrimiento = descoberta; eficaz = eficaz; efecto secundario = efeito colateral
+f El nuevo [tratamiento] es muy eficaz. = O novo tratamento é muito eficaz. ~ tratado, trato
+f La vacuna tiene pocos efectos [secundarios]. = A vacina tem poucos efeitos colaterais. ~ secundario, segundos
+b Es un descubrimiento muy importante. = É uma descoberta muito importante.
+b El ensayo clínico durará dos años. = O ensaio clínico durará dois anos.
+l Esta enfermedad ya tiene cura. = Esta doença já tem cura. ~ Esta doença ainda não tem cura. | Esta vacina ainda não funciona.
+q Você quer saber se o remédio tem efeitos colaterais. O que pergunta? = ¿Tiene efectos secundarios? | ¿Tiene ensayo de vacuna? | ¿Es una enfermedad eficaz?
+
+## O espaço | "Espacio" é espaço; "planeta", planeta; "satélite", satélite; "nave espacial", nave espacial; "estrella", estrela; "lanzar", lançar.
+v espacio = espaço; planeta = planeta; satélite = satélite; nave espacial = nave espacial; estrella = estrela; lanzar = lançar; órbita = órbita
+f Marte es el cuarto [planeta] del sistema solar. = Marte é o quarto planeta do sistema solar. ~ estrella, satélite
+f La Luna es el único [satélite] natural de la Tierra. = A Lua é o único satélite natural da Terra. ~ planeta, estrella
+b El Sol es una estrella. = O Sol é uma estrela.
+b Lanzaron un nuevo satélite ayer. = Lançaram um novo satélite ontem.
+l La nave espacial ya está en órbita. = A nave espacial já está em órbita. ~ A nave espacial ainda não decolou. | O satélite caiu no mar.
+q Você quer perguntar se um dia vamos viver em Marte. O que diz? = ¿Crees que algún día viviremos en Marte? | ¿Vivimos en Marte ayer? | ¿Marte es una estrella cerca?
+
+## Inteligência artificial | "Inteligencia artificial" (IA); "algoritmo"; "datos", dados; "aprendizaje automático", aprendizado de máquina; "sustituir", substituir.
+v inteligencia artificial = inteligência artificial; algoritmo = algoritmo; datos = dados; aprendizaje automático = aprendizado de máquina; sustituir = substituir; automatizar = automatizar; ética = ética
+f La IA aprende a partir de [datos]. = A IA aprende a partir de dados. ~ dados, dato
+f Muchas tareas se van a [automatizar]. = Muitas tarefas vão ser automatizadas. ~ automático, automatizan
+b ¿La IA sustituirá a los traductores? = A IA vai substituir os tradutores?
+b La ética es fundamental en la tecnología. = A ética é fundamental na tecnologia.
+l El algoritmo recomienda vídeos según tus gustos. = O algoritmo recomenda vídeos conforme seus gostos. ~ O algoritmo escolhe vídeos aleatórios. | Você recomenda vídeos ao algoritmo.
+q Alguém teme que a IA tire todos os empregos. Como você responde com nuance? = Algunos trabajos cambiarán, pero también surgirán otros. | La IA no existe. | Todos perderemos el trabajo mañana.
+
+## Divulgação científica | Para relatar ciência: "Según un estudio..." (segundo um estudo), "se ha demostrado que" (foi demonstrado que), "los expertos advierten de que" (os especialistas alertam que).
+v según un estudio = segundo um estudo; se ha demostrado = foi demonstrado; advertir = alertar; revista científica = revista científica; evidencia = evidência; mito = mito; fuente fiable = fonte confiável
+f [Según] un estudio, dormir poco engorda. = Segundo um estudo, dormir pouco engorda. ~ Sobre, Desde
+f Se ha [demostrado] que el ejercicio mejora la memoria. = Foi demonstrado que o exercício melhora a memória. ~ demostrada, demuestra
+b Eso es un mito sin evidencia. = Isso é um mito sem evidência.
+b Busca siempre una fuente fiable. = Procure sempre uma fonte confiável.
+l Los expertos advierten de que el calor será extremo. = Os especialistas alertam que o calor será extremo. ~ Os especialistas dizem que fará frio. | Os especialistas não esperam calor.
+q Seu tio compartilha uma notícia duvidosa. O que você pergunta? = ¿Es una fuente fiable? | ¿Es un experimento tuyo? | ¿Es un planeta?
+
+### frases
+fr Los investigadores han descubierto una nueva especie en la Amazonia. = Os pesquisadores descobriram uma nova espécie na Amazônia.
+fr Según un estudio reciente, caminar media hora al día alarga la vida. = Segundo um estudo recente, caminhar meia hora por dia aumenta a vida.
+fr La vacuna fue probada en miles de voluntarios. = A vacina foi testada em milhares de voluntários.
+fr La nave llegará a Marte dentro de siete meses. = A nave chegará a Marte daqui a sete meses.
+fr Se ha [demostrado] que el estrés afecta al sistema inmunitario. = Foi demonstrado que o estresse afeta o sistema imunológico. ~ demostrada, demuestra
+fr La inteligencia artificial ya se usa para diagnosticar enfermedades. = A inteligência artificial já é usada para diagnosticar doenças.
+fr Los resultados del experimento no confirmaron la hipótesis. = Os resultados do experimento não confirmaram a hipótese.
+fr Hay que comprobar la información antes de compartirla. = É preciso verificar a informação antes de compartilhá-la.
+fr Los expertos advierten de que el nivel del mar [seguirá] subiendo. = Os especialistas alertam que o nível do mar continuará subindo. ~ siga, sigue a
+fr Ese remedio casero es un mito: no hay ninguna evidencia. = Esse remédio caseiro é um mito: não há nenhuma evidência.
+
+### texto | Entrevista com uma cientista
+t Periodista | Doctora Vega, su equipo acaba de publicar un estudio sobre el sueño. ¿Qué han descubierto? = Doutora Vega, sua equipe acaba de publicar um estudo sobre o sono. O que vocês descobriram?
+t Vega | Hemos demostrado que dormir menos de seis horas afecta a la memoria a largo plazo. = Demonstramos que dormir menos de seis horas afeta a memória de longo prazo.
+t Periodista | ¿Cómo hicieron el estudio? = Como fizeram o estudo?
+t Vega | Analizamos una muestra de dos mil personas durante tres años. = Analisamos uma amostra de duas mil pessoas durante três anos.
+t Periodista | ¿Y los resultados fueron claros? = E os resultados foram claros?
+t Vega | Sí. Quienes dormían poco recordaban un treinta por ciento menos. = Sim. Quem dormia pouco lembrava trinta por cento menos.
+t Periodista | Mucha gente dice que se acostumbra a dormir poco. ¿Es verdad? = Muita gente diz que se acostuma a dormir pouco. É verdade?
+t Vega | Es un mito. El cerebro no se acostumbra; simplemente dejamos de notar el cansancio. = É um mito. O cérebro não se acostuma; simplesmente deixamos de perceber o cansaço.
+t Periodista | ¿Qué recomienda? = O que a senhora recomenda?
+t Vega | Horarios regulares, poca pantalla antes de dormir y, sobre todo, no sacrificar el sueño por el trabajo. = Horários regulares, pouca tela antes de dormir e, sobretudo, não sacrificar o sono pelo trabalho.
+tq O que o estudo demonstrou? = Dormir menos de seis horas afeta a memória | Dormir muito engorda | O sono não importa
+tq Quantas pessoas participaram? = Duas mil | Duzentas | Vinte mil
+tq O que a cientista diz sobre "acostumar-se a dormir pouco"? = É um mito | É verdade | Depende da idade
+tq Qual destas é uma recomendação dela? = Pouca tela antes de dormir | Dormir só nos fins de semana | Tomar café à noite
+
+# b2u9 | Literatura | Gêneros, falar de livros, autores do mundo hispânico e figuras de linguagem.
+
+## Gêneros literários | "Novela" é romance (livro); "cuento", conto; "poesía", poesia; "ensayo", ensaio; "obra de teatro", peça de teatro.
+v novela = romance (livro); cuento = conto; poesía = poesia; ensayo = ensaio; obra de teatro = peça de teatro; autor = autor; personaje = personagem
+f Estoy leyendo una [novela] de misterio. = Estou lendo um romance de mistério. ~ novedad, cuenta
+f El [personaje] principal es una detective. = A personagem principal é uma detetive. ~ personal, persona
+b Me gustan más los cuentos que las novelas. = Gosto mais de contos que de romances.
+b Escribe poesía desde muy joven. = Escreve poesia desde muito jovem.
+l Esta obra de teatro tiene tres actos. = Esta peça de teatro tem três atos. ~ Esta peça tem um único ato. | Este romance tem três partes.
+q Alguém pergunta que tipo de livro você prefere. Você gosta de romances históricos. O que diz? = Me encantan las novelas históricas. | Me encantan los novelos históricos. | Leo historia de cuento poesía.
+
+## Falar de um livro | Para comentar: "trata de" (é sobre), "está ambientada en" (se passa em), "la trama" (o enredo), "el desenlace" (o desfecho), "me engancha" (me prende).
+v trata de = é sobre; está ambientada en = se passa em; trama = enredo; desenlace = desfecho; engancharse = ficar viciado, preso; capítulo = capítulo; recomendar = recomendar
+f La novela [trata] de una familia en guerra. = O romance é sobre uma família na guerra. ~ trato, tratan
+f Está [ambientada] en el siglo diecinueve. = Se passa no século dezenove. ~ ambiente, ambientado
+b El desenlace me sorprendió mucho. = O desfecho me surpreendeu muito.
+b Me enganché desde el primer capítulo. = Fiquei preso desde o primeiro capítulo.
+l La trama es complicada, pero vale la pena. = O enredo é complicado, mas vale a pena. ~ O enredo é simples, mas chato. | O livro é curto e fácil.
+q Seu amigo pede uma recomendação de livro. Como você começa? = Te recomiendo uno que me enganchó muchísimo. | Te recomiendo nada. | Leo un capítulo de ti.
+
+## Autores do mundo hispânico | Miguel de Cervantes publicou a primeira parte de "Dom Quixote" em 1605. Gabriel García Márquez escreveu "Cem anos de solidão" (1967). Pablo Neruda e Gabriela Mistral, do Chile, ganharam o Nobel.
+v escritor = escritor; poeta = poeta; obra maestra = obra-prima; Premio Nobel = Prêmio Nobel; realismo mágico = realismo mágico; siglo = século; publicar = publicar
+f "Cien años de soledad" es una obra [maestra]. = "Cem anos de solidão" é uma obra-prima. ~ maestro, maestría
+f Cervantes [publicó] el Quijote en 1605. = Cervantes publicou o Quixote em 1605. ~ publicará, publicado
+b García Márquez ganó el Premio Nobel. = García Márquez ganhou o Prêmio Nobel.
+b Neruda fue un gran poeta chileno. = Neruda foi um grande poeta chileno.
+l Su estilo se conoce como realismo mágico. = O estilo dele é conhecido como realismo mágico. ~ O estilo dele é conhecido como romantismo. | O estilo dela é muito realista.
+q Você quer perguntar qual é o autor favorito de alguém. O que diz? = ¿Quién es tu escritor favorito? | ¿Cuál es tu siglo favorito? | ¿Escribes un Premio Nobel?
+
+## Figuras de linguagem | "Metáfora" (metáfora), "comparación" ou "símil" (comparação com "como"), "hipérbole" (exagero), "personificación" (personificação).
+v metáfora = metáfora; comparación = comparação; hipérbole = exagero, hipérbole; personificación = personificação; rima = rima; verso = verso; estrofa = estrofe
+f "Tus ojos son dos luceros" es una [metáfora]. = "Seus olhos são duas estrelas" é uma metáfora. ~ rima, estrofa
+f "Te lo he dicho mil veces" es una [hipérbole]. = "Já te disse mil vezes" é um exagero. ~ verso, metáfora
+b El poema tiene cuatro estrofas. = O poema tem quatro estrofes.
+b Estos versos no tienen rima. = Estes versos não têm rima.
+l "El viento cantaba" es una personificación. = "O vento cantava" é uma personificação. ~ "O vento cantava" é uma rima. | "O vento era forte" é uma metáfora.
+q Seu amigo diz "estoy muerto de hambre". Que figura é? = Una hipérbole. | Una rima. | Una estrofa.
+
+## Escrever uma resenha | Para uma resenha: "En mi opinión, ..." "Lo que más me gustó fue..." "Lo único que no me convenció..." "La recomiendo a quien...".
+v reseña = resenha; lo que más me gustó = o que mais gostei; no me convenció = não me convenceu; ritmo = ritmo; lector = leitor; valoración = avaliação; imprescindible = imprescindível
+f Lo que más me [gustó] fue el final. = O que mais gostei foi o final. ~ gusta, gustaron
+f Lo único que no me [convenció] fue el ritmo. = A única coisa que não me convenceu foi o ritmo. ~ convence, convencí
+b Es una lectura imprescindible. = É uma leitura imprescindível.
+b Mi valoración es de cuatro estrellas. = Minha avaliação é de quatro estrelas.
+l Lo recomiendo a los lectores con paciencia. = Recomendo aos leitores com paciência. ~ Não recomendo a ninguém. | Recomendo aos leitores impacientes.
+q Você vai escrever a primeira frase de uma resenha. Como começa? = En mi opinión, es una novela brillante. | Mi novela es mañana. | Leí y adiós.
+
+### frases
+fr "Cien años de soledad" cuenta la historia de la familia Buendía. = "Cem anos de solidão" conta a história da família Buendía.
+fr La novela está ambientada en Madrid durante la posguerra. = O romance se passa em Madri durante o pós-guerra.
+fr Me enganché tanto que la terminé en dos días. = Fiquei tão preso que terminei em dois dias.
+fr Gabriela Mistral fue la primera autora latinoamericana en ganar el Nobel de Literatura. = Gabriela Mistral foi a primeira autora latino-americana a ganhar o Nobel de Literatura.
+fr El personaje principal es un hombre que [pierde] la memoria. = O personagem principal é um homem que perde a memória. ~ pierda, perdió de
+fr Lo que más me gustó fue cómo describe los paisajes. = O que mais gostei foi como descreve as paisagens.
+fr Neruda escribió algunos de los poemas de amor más famosos. = Neruda escreveu alguns dos poemas de amor mais famosos.
+fr El desenlace es abierto y cada lector lo interpreta a su manera. = O desfecho é aberto e cada leitor o interpreta do seu jeito.
+fr Don Quijote es considerado la primera novela [moderna]. = Dom Quixote é considerado o primeiro romance moderno. ~ moderno, modernas
+fr Te recomiendo empezar por sus cuentos, son más cortos. = Te recomendo começar pelos contos dele, são mais curtos.
+
+### texto | O clube de leitura
+t Moderadora | Bienvenidos al club de lectura. Este mes hemos leído "Crónica de una muerte anunciada". ¿Qué os ha parecido? = Bem-vindos ao clube de leitura. Este mês lemos "Crônica de uma morte anunciada". O que acharam?
+t Jorge | A mí me encantó. Es corta, pero muy intensa. = Eu adorei. É curta, mas muito intensa.
+t Sara | Lo curioso es que sabes desde el principio que van a matar a Santiago Nasar. = O curioso é que você sabe desde o começo que vão matar Santiago Nasar.
+t Jorge | Exacto. La tensión no está en el desenlace, sino en cómo nadie lo evita. = Exato. A tensão não está no desfecho, mas em como ninguém o evita.
+t Moderadora | ¿Y el estilo? = E o estilo?
+t Sara | Parece un reportaje periodístico. García Márquez era periodista, y se nota. = Parece uma reportagem jornalística. García Márquez era jornalista, e dá para perceber.
+t Jorge | Lo único que no me convenció fue la cantidad de personajes. Me perdía un poco. = A única coisa que não me convenceu foi a quantidade de personagens. Eu me perdia um pouco.
+t Sara | A mí me pasó igual. Hice una lista con los nombres. = Comigo aconteceu o mesmo. Fiz uma lista com os nomes.
+t Moderadora | ¿La recomendaríais? = Vocês recomendariam?
+t Jorge | Sin duda. Es perfecta para empezar a leer a García Márquez. = Sem dúvida. É perfeita para começar a ler García Márquez.
+tq Que livro o clube leu? = Crônica de uma morte anunciada | Cem anos de solidão | Dom Quixote
+tq Por que o livro é curioso, segundo Sara? = Já se sabe desde o começo o que vai acontecer | Não tem final | Não tem personagens
+tq Com o que Sara compara o estilo? = Uma reportagem jornalística | Um poema | Uma peça de teatro
+tq O que não convenceu Jorge? = A quantidade de personagens | O final | O tamanho do livro
+
+# b2u10 | O espanhol pelo mundo | Quantos falam espanhol, variedades, origem do idioma e seu futuro.
+
+## Uma língua global | O espanhol tem cerca de 500 milhões de falantes nativos e é uma das línguas mais faladas do mundo. Os Estados Unidos têm dezenas de milhões de falantes.
+v hablante = falante; lengua materna = língua materna; hoy en día = hoje em dia; extranjero = exterior, estrangeiro; crecer = crescer; ventaja = vantagem; abrir puertas = abrir portas
+f El español es la lengua [materna] de millones de personas. = O espanhol é a língua materna de milhões de pessoas. ~ materno, maternal
+f Es una de las lenguas más [habladas] del mundo. = É uma das línguas mais faladas do mundo. ~ hablada, hablantes
+b Estudio español como segunda lengua. = Estudo espanhol como segunda língua.
+b En Estados Unidos hay una gran comunidad hispana. = Nos Estados Unidos há uma grande comunidade hispânica.
+l México es el país con más hablantes de español. = O México é o país com mais falantes de espanhol. ~ A Espanha é o país com mais falantes de espanhol. | O México tem poucos falantes de espanhol.
+q Alguém pergunta por que você estuda espanhol. O que responde? = Porque se habla en muchos países y me abre puertas. | Porque es el único idioma del mundo. | Porque no se habla en ningún sitio.
+
+## As variedades | O "seseo" (pronunciar "z" e "c" como "s") é geral na América Latina e em parte da Espanha. O "voseo" (usar "vos") é comum na Argentina, Uruguai e América Central.
+v seseo = seseo (pronunciar z como s); voseo = voseo (uso de vos); variedad = variedade; pronunciación = pronúncia; acento = sotaque; norma = norma; correcto = correto
+f En casi toda América se practica el [seseo]. = Em quase toda a América se pratica o seseo. ~ voseo, sonido
+f Todas las variedades son [correctas]. = Todas as variedades são corretas. ~ correcto, corrección
+b El voseo es típico de Argentina. = O voseo é típico da Argentina.
+b Me cuesta entender ese acento. = Tenho dificuldade para entender esse sotaque.
+l No hay un español mejor que otro. = Não existe um espanhol melhor que outro. ~ O espanhol da Espanha é o melhor. | Há um espanhol mais correto que os outros.
+q Alguém diz que o espanhol da Espanha é o "verdadeiro". Como você responde? = Todas las variedades son igual de válidas. | Sí, el de América es incorrecto. | Solo existe un acento.
+
+## Espanglês e contato | Nos EUA, muitos misturam inglês e espanhol: o "espanglish" ("vamos a lonchar"). O espanhol também recebe palavras do inglês: "el wifi", "el marketing", "un email".
+v espanglish = espanglês; préstamo lingüístico = empréstimo linguístico; bilingüe = bilíngue; mezclar = misturar; anglicismo = anglicismo; frontera = fronteira; herencia = herança
+f Mis primos de Miami son [bilingües]. = Meus primos de Miami são bilíngues. ~ bilingüe, bilingües de
+f "Marketing" es un [anglicismo]. = "Marketing" é um anglicismo. ~ angloismo, inglés
+b En la frontera mezclan los dos idiomas. = Na fronteira misturam os dois idiomas.
+b El español es su lengua de herencia. = O espanhol é sua língua de herança.
+l Muchos jóvenes hispanos hablan espanglish con sus amigos. = Muitos jovens hispânicos falam espanglês com os amigos. ~ Nenhum jovem hispânico fala espanglês. | Muitos jovens falam só inglês com a família.
+q Seu amigo de Los Angeles diz "voy a parquear el carro". O que ele está fazendo? = Mezcla inglés y español. | Habla catalán. | Habla un español del siglo quince.
+
+## A origem do espanhol | O espanhol vem do latim. Por séculos de presença árabe na Península Ibérica, tem milhares de palavras de origem árabe, como "almohada", "aceite" e "ojalá".
+v latín = latim; árabe = árabe; origen = origem; palabra = palavra; evolucionar = evoluir; castellano = castelhano; península = península
+f El español [viene] del latín. = O espanhol vem do latim. ~ vienen, venir
+f "Ojalá" es una palabra de origen [árabe]. = "Ojalá" é uma palavra de origem árabe. ~ latino, griega
+b También se llama castellano. = Também se chama castelhano.
+b Las lenguas evolucionan con el tiempo. = As línguas evoluem com o tempo.
+l Muchas palabras que empiezan por "al" vienen del árabe. = Muitas palavras que começam com "al" vêm do árabe. ~ Todas as palavras com "al" vêm do latim. | Nenhuma palavra vem do árabe.
+q Alguém pergunta se "castellano" e "español" são línguas diferentes. O que responde? = No, son dos nombres para la misma lengua. | Sí, son muy diferentes. | El castellano es árabe.
+
+## O futuro da língua e o seu | Para fechar o curso: o espanhol cresce como segunda língua no mundo. E você: "¿cuál es tu siguiente paso?" Ler, ouvir, conversar e viajar.
+v siguiente paso = próximo passo; seguir aprendiendo = continuar aprendendo; practicar = praticar; fluidez = fluência; nivel = nível; meta = meta; lograr = conseguir
+f Mi [meta] es hablar con fluidez. = Minha meta é falar com fluência. ~ mete, metro
+f He [logrado] terminar el curso. = Consegui terminar o curso. ~ logré, lograr
+b Mi siguiente paso es viajar a Colombia. = Meu próximo passo é viajar para a Colômbia.
+b Quiero seguir aprendiendo cada día. = Quero continuar aprendendo todo dia.
+l Practicar un poco cada día es la clave. = Praticar um pouco todo dia é a chave. ~ Estudar muito uma vez por mês é a chave. | Praticar não é importante.
+q Você terminou o curso B2. O que diz com orgulho? = ¡Lo he logrado! Y voy a seguir practicando. | Ya no necesito practicar nunca. | No he aprendido nada.
+
+### frases
+fr El español es la segunda lengua materna más hablada del mundo. = O espanhol é a segunda língua materna mais falada do mundo.
+fr En Estados Unidos viven millones de personas que hablan español. = Nos Estados Unidos vivem milhões de pessoas que falam espanhol.
+fr En Argentina se usa "vos" en lugar de "tú". = Na Argentina se usa "vos" no lugar de "tú".
+fr Muchas palabras del español, como "almohada", vienen del árabe. = Muitas palavras do espanhol, como "almohada", vêm do árabe.
+fr No existe un acento mejor que [otro]; todos son correctos. = Não existe um sotaque melhor que outro; todos são corretos. ~ otra, otros
+fr El castellano nació en el norte de la península ibérica. = O castelhano nasceu no norte da península ibérica.
+fr Cada vez más personas estudian español como lengua extranjera. = Cada vez mais pessoas estudam espanhol como língua estrangeira.
+fr El espanglish es una mezcla natural en las zonas de contacto. = O espanglês é uma mistura natural nas zonas de contato.
+fr Mi meta es llegar a [hablar] con total fluidez. = Minha meta é chegar a falar com total fluência. ~ hablo, hable
+fr Terminar este curso ha sido solo el comienzo. = Terminar este curso foi só o começo.
+
+### texto | Formatura
+t Profesora | ¡Enhorabuena a todos! Habéis terminado el nivel B2. = Parabéns a todos! Vocês terminaram o nível B2.
+t Rafa | ¡No me lo puedo creer! Cuando empecé, solo sabía decir "hola". = Não consigo acreditar! Quando comecei, só sabia dizer "olá".
+t Profesora | ¿Qué es lo que más os ha costado? = O que foi mais difícil para vocês?
+t Rafa | El subjuntivo, sin duda. Pero ahora lo uso sin pensar. = O subjuntivo, sem dúvida. Mas agora uso sem pensar.
+t Beatriz | A mí, entender los acentos. El argentino me parecía otro idioma. = Para mim, entender os sotaques. O argentino me parecia outra língua.
+t Profesora | ¿Y ahora? = E agora?
+t Beatriz | Ahora veo series argentinas sin subtítulos. ¡Hasta uso el "vos" en broma! = Agora vejo séries argentinas sem legendas. Até uso o "vos" de brincadeira!
+t Profesora | ¿Cuál es vuestro siguiente paso? = Qual é o próximo passo de vocês?
+t Rafa | Voy a hacer un voluntariado en Guatemala este verano. = Vou fazer um trabalho voluntário na Guatemala neste verão.
+t Beatriz | Yo quiero leer "Cien años de soledad" en español original. = Eu quero ler "Cem anos de solidão" no espanhol original.
+t Profesora | Me parece perfecto. Recordad: una lengua no se termina nunca de aprender. ¡Seguid practicando! = Acho perfeito. Lembrem: uma língua nunca se termina de aprender. Continuem praticando!
+tq O que Rafa achou mais difícil? = O subjuntivo | Os sotaques | O vocabulário
+tq Como Beatriz pratica os sotaques agora? = Vendo séries argentinas | Morando na Argentina | Com um professor particular
+tq Qual é o próximo passo de Rafa? = Trabalho voluntário na Guatemala | Estudar francês | Morar na Espanha
+tq O que Beatriz quer ler? = Cem anos de solidão em espanhol | Dom Quixote | Poemas de Neruda

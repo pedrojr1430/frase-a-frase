@@ -206,7 +206,7 @@ fr El flamenco mezcla el cante, el baile y la guitarra. = O flamenco mistura o c
 fr En Colombia se [dice] "carro" y en España, "coche". = Na Colômbia se diz "carro" e na Espanha, "coche". ~ dicen, digo
 fr Las Fallas de Valencia terminan con un gran fuego. = As Fallas de Valência terminam com um grande fogo.
 fr En España la sobremesa puede durar horas. = Na Espanha a conversa à mesa pode durar horas.
-fr El español es la lengua oficial de veinte países. = O espanhol é a língua oficial de vinte países.
+fr El español es lengua oficial en unos veinte países. = O espanhol é língua oficial em uns vinte países.
 fr Me encanta el [acento] de los chilenos. = Adoro o sotaque dos chilenos. ~ acentos, aceite
 fr Cada país hispano tiene sus propias tradiciones. = Cada país hispânico tem suas próprias tradições.
 

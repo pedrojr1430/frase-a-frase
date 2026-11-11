@@ -157,7 +157,11 @@ def build_lesson(uid, i, L):
     ex.append({'t': 'listen', 'es': bq[0], 'o': [bq[1]] + [x[1] for x in d]})
     f0 = L['f'][0]
     ex.append({'t': 'fill', 'es': f0['blank'], 'o': [f0['ans']] + f0['alt'], 'pt': f0['pt']})
-    mp = v[2:6] if len(v) >= 6 else v[:4]
+    def far(x): return x[0].lower() != x[1].lower() and x[0][:4].lower() != x[1][:4].lower()
+    pool = [x for x in v if x not in (a, bq) and far(x)]
+    pool += [x for x in v if x not in pool and x not in (a, bq)]
+    pool += [x for x in v if x not in pool]
+    mp = pool[:4]
     ex.append({'t': 'match', 'pairs': [list(x) for x in mp]})
     b0 = L['b'][0]
     ex.append({'t': 'build', 'es': b0[0], 'pt': b0[1], 'extra': extras_for(b0[1], sent_pt, rnd)})

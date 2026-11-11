@@ -480,6 +480,7 @@ body.cc-locked{overflow:hidden}
 .cc-dlg-who{font-size:12px!important;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ca)!important}
 body.cc-locked #faf-sheet{z-index:96}
 
+.cc-fill-pt{margin:8px 0 0;font-size:15px;line-height:1.4;color:var(--muted,#5D6788)}
 /* menu lateral */
 #faf-menu-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));left:max(14px,calc((100vw - 560px) / 2 + 14px));z-index:45;width:44px;height:44px;border-radius:14px;border:1px solid #E1E6F3;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#141A33;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,26,51,.10);cursor:pointer}
 #faf-menu-btn:focus-visible,.fm-item:focus-visible,.fm-close:focus-visible{outline:3px solid #5B3DF5;outline-offset:2px}
@@ -2828,6 +2829,7 @@ body.cc-locked #faf-sheet{z-index:96}
           main.appendChild(h('p', { class: 'cc-kicker', text: 'Complete a frase' }));
           var parts = e.es.split('___');
           main.appendChild(h('h2', { class: 'cc-q', lang: 'es' }, [parts[0], h('span', { class: 'cc-blank', id: 'cc-blank', text: '      ' }), parts[1] || '']));
+          if (e.pt) main.appendChild(h('p', { class: 'cc-fill-pt', text: e.pt }));
         }
         var opts = h('div', { class: 'cc-opts', role: 'radiogroup' });
         shuffle(e.o).forEach(function (o, k) {

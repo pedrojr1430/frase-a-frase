@@ -1,0 +1,379 @@
+// B2 — unidades 1 a 5
+
+# b2u1 | Se eu tivesse… | Condições no passado, condicionais mistas e outras formas de expressar condição.
+
+## O condicional composto | "Habría" + particípio fala do que teria acontecido: "habría ido" (teria ido), "habrías ganado" (você teria ganhado).
+v habría ido = teria ido; habría hecho = teria feito; habrías ganado = você teria ganhado; habríamos llegado = teríamos chegado; en tu lugar = no seu lugar; a tiempo = a tempo; de otra manera = de outro jeito
+f En tu lugar, yo [habría] aceptado. = No seu lugar, eu teria aceitado. ~ habré, hube
+f Con un taxi, habríamos [llegado] a tiempo. = De táxi, teríamos chegado a tempo. ~ llegados, llegar
+b Yo lo habría hecho de otra manera. = Eu teria feito de outro jeito.
+b Habrías ganado el premio. = Você teria ganhado o prêmio.
+l Sin tu ayuda, no lo habría conseguido. = Sem a sua ajuda, eu não teria conseguido. ~ Com a sua ajuda, eu consegui. | Sem a sua ajuda, eu vou conseguir.
+q Seu amigo recusou uma viagem. Você teria ido. O que diz? = Yo habría ido sin dudarlo. | Yo iré sin dudarlo. | Yo fui sin dudarlo.
+
+## Se eu tivesse sabido… | Para o passado irreal: "si" + pluscuamperfecto do subjuntivo (hubiera + particípio) + condicional composto: "si hubiera estudiado, habría aprobado".
+v si hubiera sabido = se eu tivesse sabido; si hubieras venido = se você tivesse vindo; si hubiéramos salido = se tivéssemos saído; aprobar = passar (prova); perder = perder; avisar = avisar; antes = antes
+f Si [hubiera] sabido, te habría avisado. = Se eu tivesse sabido, teria te avisado. ~ habría, había
+f Si hubieras venido, te [habrías] divertido. = Se você tivesse vindo, teria se divertido. ~ habías, has
+b Si hubiéramos salido antes, no habríamos perdido el tren. = Se tivéssemos saído antes, não teríamos perdido o trem.
+b Si me hubieras avisado, habría venido. = Se você tivesse me avisado, eu teria vindo.
+l Si hubiera estudiado más, habría aprobado. = Se eu tivesse estudado mais, teria passado. ~ Estudei mais e passei. | Se eu estudar mais, vou passar.
+q Você não sabia que era aniversário do colega. O que diz? = Si lo hubiera sabido, te habría traído un regalo. | Si lo sé, te traigo un regalo mañana. | Lo supe y te traje un regalo.
+
+## Condicionais mistas | Pode-se misturar tempos: passado irreal com consequência no presente: "si hubiera aceptado ese trabajo, ahora viviría en Londres".
+v ahora = agora; viviría = moraria; estaría = estaria; tendría = teria; si no hubiera = se não tivesse; hoy = hoje; aceptar = aceitar
+f Si hubiera aceptado ese trabajo, ahora [viviría] en Londres. = Se eu tivesse aceitado aquele emprego, agora moraria em Londres. ~ vivo, viví
+f Si no [hubiera] perdido el móvil, te llamaría. = Se eu não tivesse perdido o celular, ligaria para você. ~ habría, había
+b Si hubiera dormido más, no estaría tan cansado. = Se eu tivesse dormido mais, não estaria tão cansado.
+b Si fuera más organizado, habría terminado ya. = Se eu fosse mais organizado, já teria terminado.
+l Si no hubieras llegado, todavía estaría esperando. = Se você não tivesse chegado, eu ainda estaria esperando. ~ Você chegou e eu fui embora. | Se você não chegar, vou embora.
+q Você não comeu nada e agora está com fome. Como explica com uma condicional? = Si hubiera desayunado, ahora no tendría hambre. | Si desayuno, tengo hambre. | Desayuné y ahora tengo hambre.
+
+## Outras condições | Além de "si": "en caso de que" (caso), "siempre que" (desde que), "a menos que" (a menos que), "con tal de que" (contanto que). Todas pedem subjuntivo.
+v en caso de que = caso; siempre que = desde que; a menos que = a menos que; con tal de que = contanto que; salvo que = salvo se; emergencia = emergência; cumplir = cumprir
+f Te lo presto siempre que me lo [devuelvas]. = Te empresto desde que você me devolva. ~ devuelves, devolverás
+f Iremos a la playa a menos que [llueva]. = Iremos à praia a menos que chova. ~ llueve, lloverá
+b En caso de emergencia, llame al 112. = Em caso de emergência, ligue para o 112.
+b Haré lo que sea con tal de que estés bien. = Farei o que for preciso contanto que você esteja bem.
+l Salvo que haya cambios, la reunión es el lunes. = Salvo se houver mudanças, a reunião é na segunda. ~ Houve mudanças e a reunião foi cancelada. | A reunião é na segunda, com certeza.
+q Você aceita emprestar o carro, mas só se o amigo tomar cuidado. O que diz? = Te lo dejo siempre que tengas cuidado. | Te lo dejo siempre que tienes cuidado. | Te lo dejé con cuidado ayer.
+
+## Como se… | "Como si" + imperfeito ou pluscuamperfecto do subjuntivo: "habla como si fuera el jefe" (fala como se fosse o chefe).
+v como si = como se; fuera = fosse; supiera = soubesse; hubiera visto = tivesse visto; nada = nada; fantasma = fantasma; jefe = chefe
+f Habla como si [fuera] el jefe. = Fala como se fosse o chefe. ~ es, será
+f Me miró como si hubiera [visto] un fantasma. = Me olhou como se tivesse visto um fantasma. ~ vista, ver
+b Actúa como si no pasara nada. = Age como se nada estivesse acontecendo.
+b Gasta como si fuera millonario. = Gasta como se fosse milionário.
+l Me trata como si fuera un niño. = Me trata como se eu fosse criança. ~ Me trata como um adulto. | Eu o trato como criança.
+q Seu colega fala de um assunto como especialista, mas não sabe nada. O que você comenta? = Habla como si lo supiera todo. | Habla como si lo sabe todo. | Sabe todo como habla.
+
+### frases
+fr Si hubiera sabido que venías, habría preparado algo especial. = Se eu soubesse que você vinha, teria preparado algo especial.
+fr En tu lugar, yo habría hablado con el director. = No seu lugar, eu teria falado com o diretor.
+fr Si no hubiera llovido, habríamos ido a la montaña. = Se não tivesse chovido, teríamos ido à montanha.
+fr Si hubiera estudiado Medicina, ahora sería médico. = Se eu tivesse estudado Medicina, agora seria médico.
+fr Te ayudo con la mudanza siempre que me [invites] a cenar. = Te ajudo com a mudança desde que você me convide para jantar. ~ invitas, invitarás
+fr En caso de que no puedas venir, avísame. = Caso você não possa vir, me avise.
+fr Habla del viaje como si hubiera estado allí. = Fala da viagem como se tivesse estado lá.
+fr Saldremos a las seis a menos que haya mucho tráfico. = Sairemos às seis a menos que haja muito trânsito.
+fr Si me lo hubieras dicho antes, te [habría] ayudado. = Se você tivesse me dito antes, eu teria te ajudado. ~ había, he
+fr Con tal de que seas feliz, me da igual dónde vivas. = Contanto que você seja feliz, não me importa onde você more.
+
+### texto | O voo perdido
+t Elena | ¿Qué tal el viaje a Roma? = Como foi a viagem a Roma?
+t Gonzalo | No fui. Perdí el avión. = Não fui. Perdi o avião.
+t Elena | ¿Cómo que lo perdiste? = Como assim perdeu?
+t Gonzalo | Me quedé dormido. Si hubiera puesto dos alarmas, habría llegado a tiempo. = Peguei no sono. Se tivesse colocado dois alarmes, teria chegado a tempo.
+t Elena | ¡Qué rabia! ¿Y no había otro vuelo? = Que raiva! E não tinha outro voo?
+t Gonzalo | Sí, pero costaba seiscientos euros. Si hubiera tenido ese dinero, lo habría comprado. = Tinha, mas custava seiscentos euros. Se eu tivesse esse dinheiro, teria comprado.
+t Elena | Vaya. ¿Y el hotel? = Puxa. E o hotel?
+t Gonzalo | Lo pude cancelar gratis, menos mal. = Consegui cancelar sem custo, ainda bem.
+t Elena | Yo en tu lugar habría pedido ayuda a la aerolínea. A veces te cambian el billete. = Eu no seu lugar teria pedido ajuda à companhia aérea. Às vezes trocam a passagem.
+t Gonzalo | Ahora lo sé. La próxima vez, en caso de que me pase algo, llamaré enseguida. = Agora eu sei. Da próxima vez, caso me aconteça algo, ligo na hora.
+tq Por que Gonzalo perdeu o avião? = Pegou no sono | Errou o aeroporto | O trânsito estava ruim
+tq Por que ele não comprou outro voo? = Era caro demais | Não havia mais voos | Desistiu da viagem
+tq O que aconteceu com o hotel? = Cancelou sem custo | Perdeu o dinheiro | Mudou a data
+tq O que Elena teria feito? = Pedido ajuda à companhia aérea | Ido de trem | Ficado em casa
+
+# b2u2 | Arrependimentos | Expressar arrependimento, lamentar e falar do que deveria ter sido diferente.
+
+## Tomara que eu tivesse… | "Ojalá" + pluscuamperfecto do subjuntivo expressa um desejo impossível sobre o passado: "ojalá hubiera ido" (quem me dera ter ido).
+v ojalá hubiera = quem me dera ter; ojalá hubieras = quem dera você tivesse; oportunidad = oportunidade; aprovechar = aproveitar; dejar pasar = deixar passar; juventud = juventude; viajar más = viajar mais
+f Ojalá [hubiera] viajado más de joven. = Quem me dera ter viajado mais quando jovem. ~ habría, había
+f Ojalá me lo hubieras [dicho] antes. = Quem dera você tivesse me dito antes. ~ decido, diciendo
+b Ojalá hubiera aprovechado esa oportunidad. = Quem me dera ter aproveitado aquela oportunidade.
+b Dejé pasar una gran oportunidad. = Deixei passar uma grande oportunidade.
+l Ojalá hubiéramos pasado más tiempo juntos. = Quem dera tivéssemos passado mais tempo juntos. ~ Passamos muito tempo juntos. | Tomara que passemos mais tempo juntos.
+q Você não visitou a avó antes de ela se mudar. Como lamenta? = Ojalá la hubiera visitado más. | Ojalá la visito más. | Ojalá la visitaré.
+
+## Deveria ter… | "Debería haber" + particípio = deveria ter: "debería haber estudiado" (deveria ter estudado). "No tendría que haber" = não deveria ter.
+v debería haber = deveria ter; no tendría que haber = não deveria ter; tendrías que haber = você deveria ter; estudiado = estudado; dicho = dito; gastado = gastado; escuchado = escutado
+f Debería haber [estudiado] más. = Eu deveria ter estudado mais. ~ estudiar, estudiando
+f No tendría que haber [gastado] tanto. = Eu não deveria ter gastado tanto. ~ gastar, gastando
+b Tendrías que haberme escuchado. = Você deveria ter me escutado.
+b No debería haber dicho eso. = Eu não deveria ter dito aquilo.
+l Deberíamos haber salido más temprano. = Deveríamos ter saído mais cedo. ~ Saímos bem cedo. | Vamos sair mais cedo.
+q Você comeu demais e passou mal. Como se arrepende? = No debería haber comido tanto. | No debo comer tanto mañana. | No comí tanto.
+
+## Me arrependo | "Arrepentirse de" (arrepender-se de) + infinitivo composto ou nome: "me arrepiento de no haber estudiado". "Lamentar" e "sentir" também expressam pesar.
+v arrepentirse = arrepender-se; lamentar = lamentar; error = erro; culpa = culpa; decisión = decisão; haber = ter (aux.); volver atrás = voltar atrás
+f Me [arrepiento] de no haber ido. = Me arrependo de não ter ido. ~ arrepiente, arrepentí
+f No me arrepiento de mi [decisión]. = Não me arrependo da minha decisão. ~ decidir, decido
+b Fue el mayor error de mi vida. = Foi o maior erro da minha vida.
+b Si pudiera volver atrás, lo haría. = Se pudesse voltar atrás, faria.
+l Lamento haberte hablado así. = Lamento ter falado com você assim. ~ Gostei de falar com você assim. | Lamento que você tenha falado assim.
+q Alguém pergunta se você se arrepende de ter mudado de país. Você não se arrepende. O que diz? = No, no me arrepiento para nada. | Sí, me arrepiento mucho. | Me arrepentí de no arrepentirme.
+
+## Sinto que você tenha… | "Siento que" / "Lamento que" + subjuntivo passado: "siento que hayas tenido que esperar" (sinto que você tenha tido que esperar).
+v siento que = sinto que; lamento que = lamento que; hayas tenido = você tenha tido; molestia = incômodo; esperar = esperar; retraso = atraso; inconveniente = inconveniente
+f Siento que [hayas] tenido que esperar. = Sinto que você tenha tido que esperar. ~ has, habías
+f Lamentamos las [molestias]. = Lamentamos o incômodo. ~ molesta, molestar
+b Siento mucho lo que pasó. = Sinto muito pelo que aconteceu.
+b Lamento que no hayas podido venir. = Lamento que você não tenha podido vir.
+l Disculpe el retraso, hubo un inconveniente. = Desculpe o atraso, houve um imprevisto. ~ Desculpe, não houve atraso. | Houve um atraso, mas sem problemas.
+q Seu amigo esperou uma hora por você. O que diz? = Siento mucho que hayas tenido que esperar tanto. | Siento que esperas. | Me alegra que esperaras.
+
+## Aprender com os erros | Expressões úteis: "aprender la lección" (aprender a lição), "a toro pasado" (depois do fato consumado), "no hay mal que por bien no venga" (há males que vêm para bem).
+v aprender la lección = aprender a lição; a toro pasado = depois que já aconteceu; experiencia = experiência; segunda oportunidad = segunda chance; equivocarse = enganar-se, errar; pasar página = virar a página; madurar = amadurecer
+f He [aprendido] la lección. = Aprendi a lição. ~ aprendo, aprendí
+f Todo el mundo merece una segunda [oportunidad]. = Todo mundo merece uma segunda chance. ~ oportunidades, oportuno
+b Es fácil opinar a toro pasado. = É fácil opinar depois que já aconteceu.
+b Ya es hora de pasar página. = Já é hora de virar a página.
+l Me equivoqué, pero aprendí mucho. = Errei, mas aprendi muito. ~ Acertei e não aprendi nada. | Não errei e aprendi muito.
+q Seu amigo ainda pensa num erro antigo. Que conselho dá? = Tienes que pasar página. | Tienes que equivocarte más. | Es tu culpa siempre.
+
+### frases
+fr Ojalá hubiera aprendido a tocar un instrumento de pequeño. = Quem me dera ter aprendido a tocar um instrumento quando pequeno.
+fr Debería haber aceptado aquella oferta de trabajo en Chile. = Eu deveria ter aceitado aquela oferta de emprego no Chile.
+fr Me arrepiento de no haber pasado más tiempo con mi abuelo. = Me arrependo de não ter passado mais tempo com meu avô.
+fr Siento que hayas tenido un día tan malo. = Sinto que você tenha tido um dia tão ruim.
+fr No tendría que haberle [dicho] la verdad tan bruscamente. = Eu não deveria ter dito a verdade a ele tão bruscamente. ~ decido, decir
+fr Es fácil dar consejos a toro pasado. = É fácil dar conselhos depois que tudo já aconteceu.
+fr Lamentamos las molestias causadas por las obras. = Lamentamos o incômodo causado pelas obras.
+fr Me equivoqué, lo reconozco, y he aprendido la lección. = Errei, reconheço, e aprendi a lição.
+fr Ojalá no hubiéramos [discutido] aquella noche. = Quem dera não tivéssemos brigado naquela noite. ~ discutimos, discutiendo
+fr No hay mal que por bien no venga. = Há males que vêm para bem.
+
+### texto | Olhando para trás
+t Raquel | Papá, ¿te arrepientes de algo en tu vida? = Pai, você se arrepende de alguma coisa na vida?
+t Padre | De pocas cosas, pero sí. Ojalá hubiera estudiado una carrera. = De poucas coisas, mas sim. Quem me dera ter feito faculdade.
+t Raquel | ¿Por qué no lo hiciste? = Por que não fez?
+t Padre | Empecé a trabajar a los dieciséis. Mi familia necesitaba dinero. = Comecei a trabalhar aos dezesseis. Minha família precisava de dinheiro.
+t Raquel | Entonces no fue culpa tuya. = Então não foi culpa sua.
+t Padre | No, pero luego tuve tiempo y no lo aproveché. Debería haberme matriculado a los treinta. = Não, mas depois tive tempo e não aproveitei. Deveria ter me matriculado aos trinta.
+t Raquel | Nunca es tarde. Hay gente que estudia con setenta años. = Nunca é tarde. Tem gente que estuda com setenta anos.
+t Padre | Tienes razón. ¿Y tú? ¿Te arrepientes de algo? = Você tem razão. E você? Se arrepende de alguma coisa?
+t Raquel | De haber dejado el piano. Ahora me encantaría saber tocar. = De ter largado o piano. Agora eu adoraria saber tocar.
+t Padre | Pues hagamos un trato: yo me matriculo en la universidad y tú vuelves al piano. = Então vamos fazer um trato: eu me matriculo na universidade e você volta para o piano.
+t Raquel | ¡Trato hecho! = Fechado!
+tq Do que o pai se arrepende? = De não ter feito faculdade | De ter trabalhado muito | De ter se mudado
+tq Por que ele começou a trabalhar cedo? = A família precisava de dinheiro | Não gostava de estudar | Queria comprar um carro
+tq Do que Raquel se arrepende? = De ter largado o piano | De ter mudado de curso | De não ter viajado
+tq Qual é o trato no final? = Ele vai estudar e ela volta ao piano | Os dois vão viajar | Ela vai trabalhar com ele
+
+# b2u3 | Argumentar bem | Conectores para causa, consequência, concessão, contraste e conclusão.
+
+## Causa | Conectores de causa: "ya que", "puesto que", "dado que" (já que, visto que). "Debido a" + nome (devido a). "Como" no início da frase.
+v ya que = já que; puesto que = visto que; dado que = dado que; debido a = devido a; como = como (causa); motivo = motivo; razón = razão
+f No salimos [ya] que llovía. = Não saímos já que estava chovendo. ~ como, pues
+f El vuelo se canceló [debido] a la niebla. = O voo foi cancelado devido à neblina. ~ dado, puesto
+b Como no tenía dinero, no fui. = Como não tinha dinheiro, não fui.
+b Dado que es tarde, terminamos aquí. = Dado que é tarde, terminamos aqui.
+l Puesto que nadie se opone, aprobamos la propuesta. = Visto que ninguém se opõe, aprovamos a proposta. ~ Como todos se opõem, rejeitamos a proposta. | Ninguém aprovou a proposta.
+q Você quer justificar formalmente o atraso por causa da greve. O que escreve? = El retraso se debe a la huelga de transportes. | La huelga es por mi retraso. | Me retrasé, así que hay huelga.
+
+## Consequência | Para consequências: "por lo tanto", "por consiguiente" (portanto), "así que" (então), "de modo que" (de modo que), "de ahí que" + subjuntivo.
+v por lo tanto = portanto; por consiguiente = por conseguinte; así que = então; de modo que = de modo que; de ahí que = daí que; resultado = resultado; consecuencia = consequência
+f Estaba cansado, [así] que me fui a casa. = Estava cansado, então fui para casa. ~ ya, como
+f Hubo pocas ventas; de ahí que [cerraran] la tienda. = Houve poucas vendas; daí que fecharam a loja. ~ cerraron, cierran
+b Por lo tanto, necesitamos más tiempo. = Portanto, precisamos de mais tempo.
+b Las consecuencias fueron graves. = As consequências foram graves.
+l No respondió, de modo que le volví a escribir. = Ele não respondeu, de modo que escrevi de novo. ~ Ele respondeu e eu não escrevi mais. | Escrevi, mas não respondi.
+q Você quer concluir que, por falta de verba, o projeto atrasa. O que diz? = No hay presupuesto; por lo tanto, el proyecto se retrasa. | El proyecto se retrasa ya que, por lo tanto. | Por lo tanto hay presupuesto.
+
+## Concessão | "Aunque" + indicativo para fatos (aunque llueve, salgo), + subjuntivo para hipóteses ou dados conhecidos (aunque llueva, saldré). "A pesar de" + infinitivo ou nome.
+v aunque = embora, mesmo que; a pesar de = apesar de; aun así = mesmo assim; si bien = se bem que; por mucho que = por mais que; esfuerzo = esforço; dificultad = dificuldade
+f [Aunque] llueva, iremos a la excursión. = Mesmo que chova, iremos à excursão. ~ Porque, Ya que
+f A pesar de [estar] cansado, terminó el trabajo. = Apesar de estar cansado, terminou o trabalho. ~ está, esté
+b Por mucho que insistas, no iré. = Por mais que você insista, não irei.
+b Es caro; aun así, lo compraré. = É caro; mesmo assim, vou comprar.
+l Si bien es difícil, merece la pena. = Se bem que seja difícil, vale a pena. ~ Como é difícil, não vale a pena. | É fácil e vale a pena.
+q Você vai à festa mesmo cansado. Como diz isso? = Aunque estoy cansado, voy a ir. | Como estoy cansado, no voy. | Aunque estar cansado, voy.
+
+## Contraste | Para contrastar: "en cambio" (por outro lado), "mientras que" (enquanto), "sin embargo" e "no obstante" (no entanto), "sino" depois de negação.
+v en cambio = por outro lado; mientras que = enquanto; no obstante = não obstante; sin embargo = no entanto; sino = mas sim; por el contrario = pelo contrário; diferencia = diferença
+f No es rojo, [sino] naranja. = Não é vermelho, mas sim laranja. ~ pero, sin
+f Él es muy tímido; su hermana, en [cambio], es muy abierta. = Ele é muito tímido; a irmã dele, por outro lado, é muito aberta. ~ vez, contra
+b Yo trabajo de día, mientras que ella trabaja de noche. = Eu trabalho de dia, enquanto ela trabalha à noite.
+b No obstante, hay algunas dudas. = Não obstante, há algumas dúvidas.
+l Los datos no mejoraron; por el contrario, empeoraron. = Os dados não melhoraram; pelo contrário, pioraram. ~ Os dados melhoraram muito. | Os dados não pioraram nem melhoraram.
+q Você quer corrigir: o problema não é o preço, é a qualidade. O que diz? = El problema no es el precio, sino la calidad. | El problema no es el precio, pero la calidad. | El precio es la calidad sino.
+
+## Concluir | Para concluir: "en conclusión", "en definitiva" (em suma), "en resumen", "para terminar". Para enfatizar: "sobre todo", "de hecho" (de fato).
+v en conclusión = em conclusão; en definitiva = em suma; para terminar = para terminar; sobre todo = sobretudo; de hecho = de fato; es decir = ou seja; en primer lugar = em primeiro lugar
+f [En] definitiva, es una buena idea. = Em suma, é uma boa ideia. ~ Por, De
+f Es caro; de [hecho], es el más caro. = É caro; de fato, é o mais caro. ~ hecha, echo
+b En primer lugar, quiero agradecerles. = Em primeiro lugar, quero agradecer a vocês.
+b Llegó tarde, es decir, a las once. = Chegou tarde, ou seja, às onze.
+l Para terminar, me gustaría hacer una pregunta. = Para terminar, eu gostaria de fazer uma pergunta. ~ Para começar, eu gostaria de fazer uma pergunta. | Para terminar, não tenho perguntas.
+q Você vai fechar uma apresentação. Como começa a última frase? = En conclusión, creo que debemos actuar ya. | En primer lugar, hola. | Sin embargo, adiós.
+
+### frases
+fr Dado que los precios han subido, tendremos que ajustar el presupuesto. = Dado que os preços subiram, teremos que ajustar o orçamento.
+fr No he dormido bien, así que hoy estoy de mal humor. = Não dormi bem, então hoje estou de mau humor.
+fr Aunque me ofrezcan más dinero, no cambiaré de empresa. = Mesmo que me ofereçam mais dinheiro, não vou mudar de empresa.
+fr A pesar de las dificultades, el proyecto salió adelante. = Apesar das dificuldades, o projeto foi para a frente.
+fr La reunión no fue el lunes, [sino] el martes. = A reunião não foi na segunda, mas sim na terça. ~ pero, si
+fr En el norte llueve mucho, mientras que en el sur casi nunca. = No norte chove muito, enquanto no sul quase nunca.
+fr En definitiva, la propuesta tiene más ventajas que inconvenientes. = Em suma, a proposta tem mais vantagens que inconvenientes.
+fr El tráfico ha empeorado; de ahí que muchos usen la bici. = O trânsito piorou; daí que muitos usem a bicicleta.
+fr Por mucho que lo [intentes], no lo convencerás. = Por mais que você tente, não vai convencê-lo. ~ intentas, intentarás
+fr De hecho, la mayoría de los vecinos está de acuerdo. = De fato, a maioria dos vizinhos concorda.
+
+### texto | O debate da semana de quatro dias
+t Moderador | Hoy debatimos la semana laboral de cuatro días. Empiece usted, señora Paredes. = Hoje debatemos a semana de trabalho de quatro dias. Comece a senhora, senhora Paredes.
+t Paredes | Gracias. En primer lugar, los estudios muestran que la productividad no baja; de hecho, a veces sube. = Obrigada. Em primeiro lugar, os estudos mostram que a produtividade não cai; de fato, às vezes sobe.
+t Paredes | Además, los trabajadores están menos estresados, ya que descansan más. = Além disso, os trabalhadores ficam menos estressados, já que descansam mais.
+t Moderador | Señor Ruiz, ¿está de acuerdo? = Senhor Ruiz, o senhor concorda?
+t Ruiz | Solo en parte. Aunque la idea es atractiva, no sirve para todos los sectores. = Só em parte. Embora a ideia seja atraente, não serve para todos os setores.
+t Ruiz | Un hospital, por ejemplo, no puede cerrar un día; por lo tanto, necesitaría más personal. = Um hospital, por exemplo, não pode fechar um dia; portanto, precisaria de mais funcionários.
+t Paredes | No se trata de cerrar, sino de organizar mejor los turnos. = Não se trata de fechar, mas sim de organizar melhor os turnos.
+t Ruiz | Sin embargo, eso cuesta dinero, y muchas pequeñas empresas no pueden pagarlo. = No entanto, isso custa dinheiro, e muitas pequenas empresas não podem pagar.
+t Moderador | Para terminar, una frase de cada uno. = Para terminar, uma frase de cada um.
+t Paredes | En definitiva, es el futuro del trabajo. = Em suma, é o futuro do trabalho.
+t Ruiz | En conclusión, sí, pero poco a poco y con ayudas. = Em conclusão, sim, mas aos poucos e com ajuda.
+tq Qual é o primeiro argumento de Paredes? = A produtividade não cai | As empresas economizam | Os clientes preferem
+tq Qual é a posição de Ruiz? = Concorda só em parte | É totalmente a favor | É totalmente contra
+tq Que exemplo Ruiz usa? = Um hospital | Uma escola | Um restaurante
+tq Qual é o problema para pequenas empresas, segundo Ruiz? = O custo | A falta de clientes | A lei
+
+# b2u4 | Registro formal | Escrever e falar em situações formais: cartas, pedidos, reclamações e trâmites.
+
+## Fórmulas de cortesia | No registro formal usa-se "usted": "¿Podría usted...?". Para iniciar uma carta: "Estimado/a señor/a"; para encerrar: "Atentamente" ou "Reciba un cordial saludo".
+v estimado = prezado; cordial saludo = cordiais saudações; atentamente = atenciosamente; le saluda = cumprimenta-o; usted = o senhor, a senhora; distinguido = distinto; a quien corresponda = a quem possa interessar
+f [Estimada] señora García: = Prezada senhora García: ~ Estimado, Querida mía
+f Reciba un [cordial] saludo. = Receba cordiais saudações. ~ cordiales, corazón
+b A quien corresponda: = A quem possa interessar:
+b Le saluda atentamente, Pedro Lima. = Atenciosamente, Pedro Lima.
+l ¿Podría usted indicarme el horario de atención? = O senhor poderia me informar o horário de atendimento? ~ Você pode me dizer que horas são? | O senhor poderia mudar o horário?
+q Você escreve para uma empresa e não sabe o nome do destinatário. Como começa? = Estimados señores: | ¡Hola, amigos! | Querido Juan:
+
+## Pedidos formais | Para pedir com formalidade: "Le agradecería que" + subjuntivo imperfeito (agradeceria se), "Me dirijo a usted para..." (dirijo-me ao senhor para...).
+v le agradecería que = agradeceria se; me dirijo a usted = dirijo-me ao senhor; solicitar = solicitar; información = informação; adjuntar = anexar; a la mayor brevedad = o quanto antes; en relación con = em relação a
+f Le [agradecería] que me enviara la factura. = Agradeceria se me enviasse a fatura. ~ agradezco, agradecí
+f Me [dirijo] a usted para solicitar información. = Dirijo-me ao senhor para solicitar informações. ~ dirige, dirigí
+b Adjunto mi currículum. = Anexo meu currículo.
+b Le ruego que me responda a la mayor brevedad. = Peço que me responda o quanto antes.
+l En relación con su consulta, le informamos lo siguiente. = Em relação à sua consulta, informamos o seguinte. ~ Sobre a sua consulta, não temos informação. | Em relação ao seu pedido, foi cancelado.
+q Você quer pedir formalmente uma cópia do contrato. O que escreve? = Le agradecería que me enviara una copia del contrato. | Mándame el contrato ya. | Quiero contrato copia.
+
+## Reclamação formal | Para reclamar: "Por medio de la presente" (por meio desta), "presentar una reclamación" (fazer uma reclamação), "exigir" (exigir), "reembolso" (reembolso).
+v por medio de la presente = por meio desta; reclamación = reclamação; reembolso = reembolso; exigir = exigir; defectuoso = com defeito; hoja de reclamaciones = livro de reclamações; indemnización = indenização
+f Quiero presentar una [reclamación]. = Quero fazer uma reclamação. ~ reclamo, reclamar
+f Solicito el [reembolso] del importe. = Solicito o reembolso do valor. ~ reembolsar, retorno
+b El producto llegó defectuoso. = O produto chegou com defeito.
+b ¿Me da la hoja de reclamaciones? = O senhor me dá o livro de reclamações?
+l Por medio de la presente, exijo una indemnización. = Por meio desta, exijo uma indenização. ~ Por meio desta, agradeço a indenização. | Não exijo nenhuma indenização.
+q A loja não quer trocar um produto com defeito. O que você pede? = Quiero la hoja de reclamaciones, por favor. | Quiero otro defecto, por favor. | Gracias por el defecto.
+
+## Trâmites | Vocabulário administrativo: "trámite" (trâmite), "solicitud" (requerimento), "cita previa" (agendamento), "empadronarse" (registrar residência), "formulario".
+v trámite = trâmite; solicitud = requerimento, pedido; cita previa = agendamento; formulario = formulário; requisito = requisito; empadronarse = registrar residência; ventanilla = guichê
+f Para este [trámite] necesita cita previa. = Para este trâmite o senhor precisa de agendamento. ~ trama, requisito
+f Rellene la [solicitud] y fírmela. = Preencha o requerimento e assine. ~ solicitar, ventanilla
+b ¿Cuáles son los requisitos? = Quais são os requisitos?
+b Pase a la ventanilla tres. = Passe ao guichê três.
+l Para empadronarse hay que presentar el contrato de alquiler. = Para registrar a residência é preciso apresentar o contrato de aluguel. ~ Para alugar é preciso registrar a residência. | Para registrar a residência basta o passaporte.
+q Você chega à repartição sem agendamento. O que pergunta? = ¿Es necesario pedir cita previa? | ¿Dónde está mi cita? | ¿Puedo rellenar la ventanilla?
+
+## Falar em público | Numa apresentação formal: "Buenos días a todos", "Me gustaría comenzar...", "Como pueden ver en la gráfica...", "Muchas gracias por su atención".
+v me gustaría comenzar = gostaria de começar; como pueden ver = como podem ver; gráfica = gráfico; a continuación = a seguir; por su atención = pela atenção; ponencia = palestra; turno de preguntas = rodada de perguntas
+f Como pueden [ver] en la gráfica, las ventas subieron. = Como podem ver no gráfico, as vendas subiram. ~ ven, vean
+f Muchas gracias por su [atención]. = Muito obrigado pela atenção. ~ atento, atender
+b A continuación, hablaré del presupuesto. = A seguir, falarei do orçamento.
+b Abrimos el turno de preguntas. = Abrimos a rodada de perguntas.
+l Me gustaría comenzar con un dato sorprendente. = Gostaria de começar com um dado surpreendente. ~ Gostaria de terminar com uma pergunta. | Não tenho nenhum dado surpreendente.
+q Você termina uma palestra formal. O que diz? = Muchas gracias por su atención. | ¡Chao, chicos! | Eso es todo, me voy.
+
+### frases
+fr Estimados señores: me dirijo a ustedes para solicitar información sobre el curso. = Prezados senhores: dirijo-me a vocês para solicitar informações sobre o curso.
+fr Le agradecería que me confirmara la cita por correo electrónico. = Agradeceria se me confirmasse o agendamento por e-mail.
+fr Por medio de la presente, presento una reclamación formal. = Por meio desta, apresento uma reclamação formal.
+fr Para renovar el pasaporte es necesario pedir cita previa. = Para renovar o passaporte é necessário fazer agendamento.
+fr Adjunto le [envío] la documentación solicitada. = Envio em anexo a documentação solicitada. ~ envía, enviar
+fr Lamentamos informarle de que su solicitud ha sido rechazada. = Lamentamos informar que seu requerimento foi recusado.
+fr Quedo a su disposición para cualquier consulta. = Fico à disposição para qualquer dúvida.
+fr A continuación, les presentaré los resultados del estudio. = A seguir, apresentarei os resultados do estudo.
+fr Sin otro particular, le saluda [atentamente]. = Sem mais para o momento, atenciosamente. ~ atento, atenta
+fr Reciba un cordial saludo. = Receba cordiais saudações.
+
+### texto | No guichê
+t Funcionaria | Buenos días. ¿Tiene cita previa? = Bom dia. O senhor tem agendamento?
+t Andrés | Sí, a las diez. Vengo a solicitar la tarjeta de residencia. = Sim, às dez. Venho solicitar a carteira de residência.
+t Funcionaria | Muy bien. ¿Ha traído el formulario relleno? = Muito bem. O senhor trouxe o formulário preenchido?
+t Andrés | Sí, aquí lo tiene, junto con el pasaporte y dos fotografías. = Sim, aqui está, junto com o passaporte e duas fotos.
+t Funcionaria | Le falta el certificado de empadronamiento. = Falta o certificado de registro de residência.
+t Andrés | ¿Cómo? En la página web no figuraba como requisito. = Como? No site não constava como requisito.
+t Funcionaria | Lo siento, pero es obligatorio desde el mes pasado. = Sinto muito, mas é obrigatório desde o mês passado.
+t Andrés | Le agradecería que me dijera dónde puedo obtenerlo. = Agradeceria se me dissesse onde posso obtê-lo.
+t Funcionaria | En el ayuntamiento. Cuando lo tenga, puede volver sin cita. = Na prefeitura. Quando tiver, pode voltar sem agendamento.
+t Andrés | Muy amable. ¿Podría también actualizar la información de la web? = Muito gentil. A senhora poderia também atualizar a informação do site?
+t Funcionaria | Tiene razón. Lo comunicaré a mis superiores. = O senhor tem razão. Vou comunicar aos meus superiores.
+tq O que Andrés veio solicitar? = A carteira de residência | Um passaporte novo | Um agendamento
+tq O que faltava? = O certificado de registro de residência | As fotos | O passaporte
+tq Onde ele pode obter o documento? = Na prefeitura | No consulado | Na polícia
+tq O que Andrés sugere à funcionária? = Atualizar a informação do site | Contratar mais pessoas | Abrir mais cedo
+
+# b2u5 | Expressões idiomáticas | Expressões populares do espanhol e quando usá-las.
+
+## Expressões com o corpo | "Costar un ojo de la cara" (custar os olhos da cara), "no tener pelos en la lengua" (não ter papas na língua), "echar una mano" (dar uma mão).
+v costar un ojo de la cara = custar os olhos da cara; no tener pelos en la lengua = não ter papas na língua; echar una mano = dar uma mão; tomar el pelo = tirar sarro, enganar; meter la pata = pisar na bola; con el corazón en la mano = com toda a sinceridade; ser uña y carne = ser unha e carne
+f Ese coche cuesta un [ojo] de la cara. = Esse carro custa os olhos da cara. ~ brazo, pie
+f ¿Me [echas] una mano con la mudanza? = Você me dá uma mão com a mudança? ~ das, tiras
+b Mi abuela no tiene pelos en la lengua. = Minha avó não tem papas na língua.
+b ¡Me estás tomando el pelo! = Você está tirando sarro de mim!
+l Metí la pata con mi suegra. = Pisei na bola com minha sogra. ~ Acertei em cheio com minha sogra. | Minha sogra pisou na bola.
+q Seu amigo diz que ganhou um carro num sorteio, mas você desconfia. O que diz? = ¿Me estás tomando el pelo? | ¿Me echas una mano? | Cuesta un ojo de la cara.
+
+## Expressões com animais | "Ser un gallina" (ser medroso), "estar como una cabra" (ser maluco), "ser un lince" (ser muito esperto), "no ver tres en un burro" (não enxergar nada).
+v ser un gallina = ser medroso; estar como una cabra = ser maluco; ser un lince = ser muito esperto; no ver tres en un burro = não enxergar nada; tener memoria de pez = ter memória de peixe; ser la oveja negra = ser a ovelha negra; aburrirse como una ostra = morrer de tédio
+f No seas [gallina] y salta. = Não seja medroso e pule. ~ cabra, lince
+f Sin gafas no veo tres en un [burro]. = Sem óculos não enxergo nada. ~ caballo, perro
+b Mi tío está como una cabra. = Meu tio é maluco.
+b En esa clase me aburro como una ostra. = Nessa aula eu morro de tédio.
+l Para los negocios, mi socia es un lince. = Para os negócios, minha sócia é muito esperta. ~ Para os negócios, minha sócia é muito lenta. | Minha sócia não gosta de negócios.
+q Você esqueceu de novo o nome de alguém que acabou de conhecer. O que diz rindo? = ¡Tengo memoria de pez! | ¡Soy un lince! | ¡Estoy como una ostra!
+
+## Expressões com comida | "Ser pan comido" (ser moleza), "importar un pimiento" (não importar nada), "estar como un tomate" (ficar vermelho), "dar calabazas" (dar um fora).
+v ser pan comido = ser moleza; importar un pimiento = não importar nada; ponerse como un tomate = ficar vermelho; dar calabazas = dar um fora; ser la leche = ser demais; estar en su salsa = estar à vontade; pedir peras al olmo = pedir o impossível
+f Este examen es pan [comido]. = Esta prova é moleza. ~ comida, duro
+f Se puso como un [tomate] al verla. = Ficou vermelho como um tomate ao vê-la. ~ pimiento, limón
+b Me importa un pimiento lo que digan. = Não me importa nada o que digam.
+b Le dio calabazas en la fiesta. = Deu um fora nele na festa.
+l En la cocina, mi padre está en su salsa. = Na cozinha, meu pai está à vontade. ~ Na cozinha, meu pai fica perdido. | Meu pai não gosta de cozinhar.
+q Seu colega acha a tarefa difícil, mas para você é fácil. O que diz? = Tranquilo, esto es pan comido. | Esto me importa un pimiento. | Me puse como un tomate.
+
+## Expressões do dia a dia | "Estar en las nubes" (estar no mundo da lua), "ponerse las pilas" (tomar jeito), "dar en el clavo" (acertar em cheio), "no pegar ojo" (não pregar o olho).
+v estar en las nubes = estar no mundo da lua; ponerse las pilas = tomar jeito; dar en el clavo = acertar em cheio; no pegar ojo = não pregar o olho; hablar por los codos = falar pelos cotovelos; llover a cántaros = chover a cântaros; estar hasta las narices = estar de saco cheio
+f Tienes que ponerte las [pilas] si quieres aprobar. = Você tem que tomar jeito se quer passar. ~ pila, baterías
+f Anoche no pegué [ojo]. = Ontem à noite não preguei o olho. ~ ojos, sueño
+b Has dado en el clavo. = Você acertou em cheio.
+b Mi hermana habla por los codos. = Minha irmã fala pelos cotovelos.
+l Hoy estás en las nubes, ¿qué te pasa? = Hoje você está no mundo da lua, o que houve? ~ Hoje você está muito atento, o que houve? | Hoje está nublado, vai chover?
+q Você está cansado das reclamações do vizinho. O que diz? = Estoy hasta las narices de sus quejas. | Estoy en las nubes de sus quejas. | Doy en el clavo de sus quejas.
+
+## Usar com cuidado | Muitas expressões são informais e algumas variam por país: "estar al loro" (ficar ligado) é da Espanha; "¡qué chévere!" (que legal!) é do Caribe e da Colômbia; "¡qué padre!" é do México.
+v estar al loro = ficar ligado (Espanha); qué chévere = que legal (Caribe, Colômbia); qué padre = que legal (México); qué guay = que legal (Espanha); bacán = legal (Chile, Peru); registro = registro, nível de formalidade; coloquial = coloquial
+f En México dicen "¡qué [padre]!". = No México dizem "¡qué padre!". ~ madre, guay
+f "Guay" es una palabra [coloquial]. = "Guay" é uma palavra coloquial. ~ formal, colegial
+b En una reunión formal, mejor evitarlas. = Numa reunião formal, melhor evitá-las.
+b Esa expresión es muy de Colombia. = Essa expressão é bem da Colômbia.
+l Estate al loro, que ya empieza el partido. = Fique ligado, que o jogo já vai começar. ~ Fique tranquilo, que o jogo acabou. | O jogo começou faz tempo.
+q Em uma entrevista de emprego formal, como você diria que algo é interessante? = Me parece muy interesante. | ¡Qué guay, tío! | ¡Es la leche!
+
+### frases
+fr Ese restaurante está muy bien, pero cuesta un ojo de la cara. = Esse restaurante é muito bom, mas custa os olhos da cara.
+fr Metí la pata: le conté la sorpresa a la cumpleañera. = Pisei na bola: contei a surpresa para a aniversariante.
+fr No le hagas caso, te está tomando el pelo. = Não ligue para ele, está tirando sarro de você.
+fr Para mi hermano, las matemáticas son pan comido. = Para o meu irmão, a matemática é moleza.
+fr Con la tormenta de anoche no pegué [ojo]. = Com a tempestade de ontem à noite não preguei o olho. ~ ojos, oído
+fr Si quieres aprobar, tienes que ponerte las pilas ya. = Se quer passar, tem que tomar jeito já.
+fr Mi abuela no tiene pelos en la lengua y dice todo lo que piensa. = Minha avó não tem papas na língua e diz tudo o que pensa.
+fr Has dado en el clavo: ese es exactamente el problema. = Você acertou em cheio: esse é exatamente o problema.
+fr Está lloviendo a [cántaros], coge el paraguas. = Está chovendo a cântaros, pegue o guarda-chuva. ~ cantos, gotas
+fr Mi hija está en las nubes desde que se enamoró. = Minha filha está no mundo da lua desde que se apaixonou.
+
+### texto | Expressões de família
+t Carla | Mamá, el profe dice que tengo que ponerme las pilas en química. = Mãe, o professor diz que eu tenho que tomar jeito em química.
+t Madre | Pues tiene razón. Últimamente estás en las nubes. = Pois ele tem razão. Ultimamente você está no mundo da lua.
+t Carla | Es que la química es dificilísima. Para Marta es pan comido, pero para mí no. = É que química é dificílima. Para a Marta é moleza, mas para mim não.
+t Madre | Marta es un lince. Pídele que te eche una mano. = A Marta é muito esperta. Peça para ela te dar uma mão.
+t Carla | Ya se lo pedí, pero me dio calabazas. Dice que está hasta las narices de explicar. = Já pedi, mas ela me deu um fora. Diz que está de saco cheio de explicar.
+t Madre | ¡Qué poco amable! ¿Y tu primo Luis? Estudió química. = Que falta de gentileza! E o seu primo Luis? Ele estudou química.
+t Carla | Luis habla por los codos. Si le pido ayuda, me tiene tres horas al teléfono. = O Luis fala pelos cotovelos. Se eu pedir ajuda, ele me deixa três horas no telefone.
+t Madre | Hija, no se puede pedir peras al olmo. O Luis, o un profesor particular. = Filha, não dá para pedir o impossível. Ou o Luis, ou um professor particular.
+t Carla | ¿Un profesor particular? ¡Eso cuesta un ojo de la cara! = Um professor particular? Isso custa os olhos da cara!
+t Madre | Entonces, ya sabes: llama a tu primo. = Então, você já sabe: ligue para o seu primo.
+tq O que o professor disse a Carla? = Que ela precisa tomar jeito em química | Que ela é ótima em química | Que vai reprovar
+tq Como Marta respondeu ao pedido de ajuda? = Recusou | Aceitou | Não respondeu
+tq Qual é o "problema" do primo Luis? = Fala demais | Não sabe química | Mora longe
+tq Por que Carla não quer professor particular? = É muito caro | Não tem tempo | Prefere estudar sozinha
