@@ -2828,7 +2828,7 @@ body.cc-locked #faf-sheet{z-index:96}
         h('h2', { class: 'cc-l-title', text: l.title }),
         h('p', { class: 'cc-tip', text: l.tip }),
         h('div', { class: 'cc-premium-actions' }, [
-          h('button', { type: 'button', class: 'cc-btn', onclick: function () { if (window.FAF && window.FAF.read) window.FAF.read({ title: l.title, sub: isText ? 'Leitura premium' : 'Frases da unidade', lang: appLang(), items: items }); } }, [isText ? 'Ouvir o diálogo no player' : 'Ouvir todas no player']),
+          h('button', { type: 'button', class: 'cc-btn', onclick: function () { if (window.FAF && window.FAF.read) window.FAF.read({ title: l.title, sub: isText ? 'Leitura premium' : 'Frases da unidade', lang: appLang(), items: items }); } }, [isText ? (items.some(function (x) { return x.who; }) ? 'Ouvir o diálogo no player' : 'Ouvir o texto no player') : 'Ouvir todas no player']),
           isText ? h('button', { type: 'button', class: 'cc-btn is-ghost', 'aria-pressed': 'false', onclick: function (e) { showPt = !showPt; e.currentTarget.setAttribute('aria-pressed', String(showPt)); e.currentTarget.textContent = showPt ? 'Ocultar tradução' : 'Mostrar tradução'; paintList(); }, text: 'Mostrar tradução' }) : null
         ]),
         listEl
