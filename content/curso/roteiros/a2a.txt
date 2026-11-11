@@ -1,0 +1,379 @@
+// A2 — unidades 1 a 5
+
+# a2u1 | O que você fez hoje | Contar o que você fez hoje e nesta semana e falar de experiências.
+
+## Hoje eu… | Para ações de hoje, esta manhã ou esta semana, a Espanha usa o "pretérito perfecto": "he comido" (comi), "has trabajado" (você trabalhou). É "haber" + particípio.
+v he = eu (fiz); has = você (fez); ha = ele, ela (fez); hemos = nós (fizemos); hoy = hoje; esta mañana = esta manhã; esta semana = esta semana
+f Hoy [he] trabajado mucho. = Hoje trabalhei muito. ~ ha, has
+f Esta mañana hemos [desayunado] juntos. = Esta manhã tomamos café juntos. ~ desayunamos, desayuno
+b ¿Qué has hecho hoy? = O que você fez hoje?
+b Esta semana he estudiado mucho. = Esta semana estudei muito.
+l Mi hermana ha llegado esta tarde. = Minha irmã chegou esta tarde. ~ Minha irmã vai chegar esta tarde. | Minha mãe chegou esta manhã.
+q Alguém pergunta como foi seu dia e você trabalhou muito. O que diz? = He trabajado mucho. | Voy a trabajar mucho. | Trabajo mucho mañana.
+
+## Já e ainda não | "Ya" é já e "todavía no" é ainda não: "¿Ya has comido?" — "No, todavía no". Na América Latina é mais comum o passado simples: "¿Ya comiste?".
+v ya = já; todavía no = ainda não; aún = ainda; terminar = terminar; llamar = ligar; comprar = comprar; enviar = enviar
+f ¿[Ya] has terminado el trabajo? = Você já terminou o trabalho? ~ Todavía, Nunca
+f Todavía no he [llamado] a mi madre. = Ainda não liguei para minha mãe. ~ llamo, llamar
+b Ya he comprado las entradas. = Já comprei os ingressos.
+b Todavía no he enviado el correo. = Ainda não enviei o e-mail.
+l ¿Ya has visto la nueva serie? = Você já viu a nova série? ~ Você vai ver a nova série? | Você já viu o novo filme?
+q Seu chefe pergunta se o relatório está pronto, mas falta um pouco. O que diz? = Todavía no lo he terminado. | Ya lo he terminado. | No tengo trabajo.
+
+## Particípios irregulares | Alguns particípios são irregulares: hacer → hecho, ver → visto, escribir → escrito, decir → dicho, poner → puesto, abrir → abierto, volver → vuelto.
+v hecho = feito; visto = visto; escrito = escrito; dicho = dito; puesto = posto; abierto = aberto; vuelto = voltado
+f ¿Qué has [hecho] este fin de semana? = O que você fez neste fim de semana? ~ hacido, haces
+f He [escrito] una carta a mi abuela. = Escrevi uma carta para minha avó. ~ escribido, escribo
+b Nunca he visto el mar. = Nunca vi o mar.
+b ¿Quién ha abierto la ventana? = Quem abriu a janela?
+l Mis padres han vuelto de viaje. = Meus pais voltaram de viagem. ~ Meus pais vão viajar. | Meus avós voltaram da praia.
+q Você quer contar que já disse a verdade ao seu amigo. O que diz? = Ya le he dicho la verdad. | Ya le he decido la verdad. | Le digo la verdad mañana.
+
+## Experiências | Para perguntar sobre experiências na vida: "¿Has estado en México?" (você já esteve no México?). Respostas: "sí, una vez", "nunca", "muchas veces".
+v alguna vez = alguma vez; nunca = nunca; muchas veces = muitas vezes; estar en = estar em, visitar; probar = provar; conocer = conhecer; vida = vida
+f ¿[Has] estado alguna vez en Perú? = Você já esteve alguma vez no Peru? ~ Ha, Hemos
+f Nunca he [probado] la comida india. = Nunca provei a comida indiana. ~ prueba, probar
+b He estado en Chile dos veces. = Estive no Chile duas vezes.
+b ¿Has conocido a gente famosa? = Você já conheceu gente famosa?
+l Es la primera vez en mi vida. = É a primeira vez na minha vida. ~ É a última vez na minha vida. | Não é a primeira vez.
+q Alguém pergunta se você já comeu paella e você comeu muitas vezes. O que responde? = Sí, la he comido muchas veces. | No, nunca la he comido. | Voy a comerla mañana.
+
+## Meu dia em detalhe | Para contar o dia em ordem, junte o "pretérito perfecto" com "primero", "luego", "después" e "al final".
+v al final = no final; reunión = reunião; tarea = tarefa; ocupado = ocupado; día = dia; cansado = cansado; tranquilo = tranquilo
+f Hoy ha sido un día muy [tranquilo]. = Hoje foi um dia muito tranquilo. ~ tarea, reunión
+f Al [final] he ido al gimnasio. = No final fui à academia. ~ primero, luego
+b He tenido tres reuniones. = Tive três reuniões.
+b Hoy he estado muy ocupado. = Hoje estive muito ocupado.
+l Después he hecho las tareas de casa. = Depois fiz as tarefas de casa. ~ Antes fiz as tarefas da escola. | Depois vou fazer as tarefas de casa.
+q Você chega em casa exausto. O que diz? = ¡Qué día! Estoy muy cansado. | Hoy no he hecho nada. | Mañana voy a trabajar.
+
+### frases
+fr Esta mañana me he levantado tarde y he perdido el autobús. = Esta manhã me levantei tarde e perdi o ônibus.
+fr ¿Has comido ya? Todavía no, tengo mucha hambre. = Você já comeu? Ainda não, estou com muita fome.
+fr Esta semana he trabajado mucho y estoy cansado. = Esta semana trabalhei muito e estou cansado.
+fr Nunca he estado en Argentina, pero quiero ir. = Nunca estive na Argentina, mas quero ir.
+fr ¿Has visto mis llaves? Las he [puesto] en la mesa. = Você viu minhas chaves? Coloquei na mesa. ~ ponido, pongo
+fr Hoy he hablado con mi jefe sobre las vacaciones. = Hoje falei com meu chefe sobre as férias.
+fr Mis amigos ya han llegado al restaurante. = Meus amigos já chegaram ao restaurante.
+fr ¿Alguna vez has probado el ceviche? = Você já provou ceviche alguma vez?
+fr Todavía no he [hecho] los deberes. = Ainda não fiz o dever de casa. ~ hacido, visto
+fr Ha sido un día largo, pero muy bueno. = Foi um dia longo, mas muito bom.
+
+### texto | Que dia!
+t Marta | ¡Hola! ¿Qué tal tu día? = Oi! Como foi seu dia?
+t Javier | Uf, ha sido un día horrible. = Ufa, foi um dia horrível.
+t Marta | ¿Por qué? ¿Qué ha pasado? = Por quê? O que aconteceu?
+t Javier | Primero me he despertado tarde porque no ha sonado el despertador. = Primeiro acordei tarde porque o despertador não tocou.
+t Javier | Luego he perdido el metro y he llegado tarde a la reunión. = Depois perdi o metrô e cheguei atrasado à reunião.
+t Marta | ¡Vaya! ¿Y tu jefe qué ha dicho? = Puxa! E o que seu chefe disse?
+t Javier | Nada, por suerte. Pero no he comido en todo el día. = Nada, por sorte. Mas não comi o dia todo.
+t Marta | ¿Todavía no has comido? ¡Son las ocho! = Você ainda não comeu? São oito horas!
+t Javier | No. ¿Y tú? ¿Qué has hecho hoy? = Não. E você? O que você fez hoje?
+t Marta | Yo he tenido un día tranquilo. Y he hecho una tortilla. ¿Quieres? = Eu tive um dia tranquilo. E fiz uma tortilha. Você quer?
+t Javier | ¡Sí, por favor! = Sim, por favor!
+tq Por que Javier acordou tarde? = O despertador não tocou | Foi dormir tarde | Estava doente
+tq O que aconteceu depois? = Perdeu o metrô | Perdeu o emprego | Esqueceu a reunião
+tq O que o chefe disse? = Nada | Que ele foi demitido | Que a reunião foi cancelada
+tq O que Marta oferece a Javier? = Uma tortilha | Um café | Uma carona
+
+# a2u2 | Histórias do passado | Contar o que aconteceu ontem, no ano passado e em outras épocas.
+
+## Ontem (verbos em -ar) | Para um momento terminado (ontem, no ano passado), use o "pretérito indefinido": hablar → hablé, hablaste, habló, hablamos, hablaron.
+v ayer = ontem; anoche = ontem à noite; anteayer = anteontem; hablé = falei; trabajé = trabalhei; compré = comprei; llegó = chegou
+f Ayer [trabajé] hasta las ocho. = Ontem trabalhei até as oito. ~ trabajo, trabaja
+f Anoche mi hermano [llegó] muy tarde. = Ontem à noite meu irmão chegou muito tarde. ~ llegué, llega
+b Ayer compré un libro. = Ontem comprei um livro.
+b ¿Hablaste con tu madre? = Você falou com sua mãe?
+l Anteayer cenamos en un restaurante. = Anteontem jantamos num restaurante. ~ Ontem jantamos em casa. | Amanhã vamos jantar num restaurante.
+q Seu amigo pergunta o que você fez ontem e você estudou. O que diz? = Ayer estudié toda la tarde. | Mañana estudio. | Estudio todos los días.
+
+## Verbos em -er e -ir | Em -er e -ir as terminações são iguais: comer → comí, comiste, comió, comimos, comieron; vivir → viví, viviste, vivió...
+v comí = comi; bebí = bebi; salí = saí; viví = morei; escribió = escreveu; abrieron = abriram; el año pasado = o ano passado
+f El año pasado [viví] en Madrid. = No ano passado morei em Madri. ~ vivo, vive
+f ¿A qué hora [saliste] de casa? = A que horas você saiu de casa? ~ salí, sales
+b Comimos paella en Valencia. = Comemos paella em Valência.
+b Ella escribió un libro. = Ela escreveu um livro.
+l Abrieron una tienda nueva en mi calle. = Abriram uma loja nova na minha rua. ~ Fecharam uma loja na minha rua. | Abriram um restaurante novo no centro.
+q Você quer perguntar se a pessoa gostou do jantar de ontem. O que diz? = ¿Te gustó la cena de ayer? | ¿Te gusta la cena? | ¿Vas a cenar mañana?
+
+## Irregulares importantes | Ser e ir têm a mesma forma: "fui" (fui), "fue" (foi). Outros: tener → tuve, hacer → hice, estar → estuve, poder → pude.
+v fui = fui; fue = foi; tuve = tive; hice = fiz; estuve = estive; pude = pude; vino = veio
+f El verano pasado [fui] a Cuba. = No verão passado fui a Cuba. ~ fue, voy
+f ¿Qué [hiciste] el sábado? = O que você fez no sábado? ~ hice, haces
+b Tuve un problema con el coche. = Tive um problema com o carro.
+b La fiesta fue muy divertida. = A festa foi muito divertida.
+l No pude ir a la reunión. = Não pude ir à reunião. ~ Não quis ir à reunião. | Pude ir à reunião.
+q Você quer contar que esteve doente na semana passada. O que diz? = La semana pasada estuve enfermo. | La semana pasada soy enfermo. | Estoy enfermo mañana.
+
+## Quando aconteceu | "Hace dos años" é há dois anos. "En 2010" é em 2010. "El mes pasado" é o mês passado e "la semana pasada", a semana passada.
+v hace dos años = há dois anos; el mes pasado = o mês passado; la semana pasada = a semana passada; en 2010 = em 2010; de niño = quando criança; nacer = nascer; casarse = casar-se
+f Me casé [hace] cinco años. = Eu me casei há cinco anos. ~ desde, para
+f Mi hija [nació] en 2015. = Minha filha nasceu em 2015. ~ nací, nace
+b El mes pasado empecé un curso. = No mês passado comecei um curso.
+b ¿Cuándo llegaste a Brasil? = Quando você chegou ao Brasil?
+l Hace tres días vi a tu hermano. = Há três dias vi seu irmão. ~ Daqui a três dias vejo seu irmão. | Há três dias vi sua irmã.
+q Alguém pergunta quando você começou a estudar espanhol. Foi há um ano. O que diz? = Empecé hace un año. | Empiezo en un año. | Estudio desde mañana.
+
+## Contar uma história | Para contar uma história: "Un día..." (um dia), "de repente" (de repente), "entonces" (então) e "al final" (no final).
+v un día = um dia; de repente = de repente; entonces = então; al final = no final; pasar = acontecer; perder = perder; encontrar = encontrar
+f [De] repente empezó a llover. = De repente começou a chover. ~ Al, En
+f Al final [encontré] mis llaves. = No final encontrei minhas chaves. ~ encuentro, perdí
+b ¿Qué pasó después? = O que aconteceu depois?
+b Un día perdí el pasaporte. = Um dia perdi o passaporte.
+l Entonces llamé a la policía. = Então liguei para a polícia. ~ Então liguei para minha mãe. | Depois fui à polícia.
+q Seu amigo conta uma história e você quer saber o que veio depois. O que pergunta? = ¿Y entonces qué pasó? | ¿Qué hora es? | ¿Dónde vives?
+
+### frases
+fr Ayer fui al cine con mis amigos y vimos una película de terror. = Ontem fui ao cinema com meus amigos e vimos um filme de terror.
+fr El año pasado viajamos a Perú y visitamos Machu Picchu. = No ano passado viajamos ao Peru e visitamos Machu Picchu.
+fr Anoche no pude dormir por el calor. = Ontem à noite não consegui dormir por causa do calor.
+fr Mi abuelo nació en un pueblo pequeño de Galicia. = Meu avô nasceu num povoado pequeno da Galícia.
+fr La fiesta de cumpleaños [fue] increíble. = A festa de aniversário foi incrível. ~ fui, era
+fr Hace dos semanas tuve una entrevista de trabajo. = Há duas semanas tive uma entrevista de emprego.
+fr ¿Qué hiciste el fin de semana pasado? = O que você fez no fim de semana passado?
+fr De repente se fue la luz y todo quedó oscuro. = De repente a luz acabou e tudo ficou escuro.
+fr Al final llegamos a casa a las tres de la [mañana]. = No final chegamos em casa às três da manhã. ~ noche, tarde
+fr Mis padres se conocieron en la universidad. = Meus pais se conheceram na universidade.
+
+### texto | Uma viagem complicada
+t Lucía | ¿Qué tal el viaje a Barcelona? = Como foi a viagem a Barcelona?
+t Andrés | Bien al final, pero el primer día fue un desastre. = Bem no final, mas o primeiro dia foi um desastre.
+t Lucía | ¿Por qué? ¿Qué pasó? = Por quê? O que aconteceu?
+t Andrés | El avión salió con tres horas de retraso. = O avião saiu com três horas de atraso.
+t Andrés | Luego, en el aeropuerto, no encontré mi maleta. = Depois, no aeroporto, não encontrei minha mala.
+t Lucía | ¡No! ¿Y qué hiciste? = Não! E o que você fez?
+t Andrés | Fui a la oficina de equipajes y rellené un formulario. = Fui ao balcão de bagagens e preenchi um formulário.
+t Andrés | Esa noche dormí con la misma ropa. = Naquela noite dormi com a mesma roupa.
+t Lucía | ¿Y te devolvieron la maleta? = E devolveram a mala?
+t Andrés | Sí, me la trajeron al hotel al día siguiente. = Sim, trouxeram ao hotel no dia seguinte.
+t Andrés | Después todo fue perfecto: comimos muy bien y vimos la Sagrada Familia. = Depois tudo foi perfeito: comemos muito bem e vimos a Sagrada Família.
+tq Quanto tempo o avião atrasou? = Três horas | Uma hora | Um dia
+tq Qual foi o problema no aeroporto? = A mala sumiu | Perdeu o passaporte | Perdeu o voo
+tq Quando a mala chegou? = No dia seguinte | Na mesma noite | No último dia
+tq Como foi o resto da viagem? = Perfeito | Outro desastre | Cansativo
+
+# a2u3 | Como era antes | Descrever como as coisas eram e falar de costumes do passado.
+
+## Quando eu era criança | Para descrever o passado e hábitos, use o "imperfecto": -ar → -aba (jugaba), -er/-ir → -ía (comía, vivía). "Ser" vira "era".
+v de pequeño = quando pequeno; era = eu era; jugaba = brincava, jogava; vivía = morava; tenía = tinha; niño = criança, menino; escuela = escola
+f De pequeño [vivía] en un pueblo. = Quando pequeno morava num povoado. ~ viví, vivo
+f Mi abuela [tenía] un perro muy grande. = Minha avó tinha um cachorro muito grande. ~ tuvo, tiene
+b Cuando era niño, jugaba al fútbol. = Quando era criança, jogava futebol.
+b Mi escuela era muy pequeña. = Minha escola era muito pequena.
+l Mi madre era profesora de música. = Minha mãe era professora de música. ~ Minha mãe é professora de música. | Minha avó era professora de música.
+q Alguém pergunta onde você morava quando criança. Você morava em Recife. O que diz? = De niño vivía en Recife. | De niño vivo en Recife. | Voy a vivir en Recife.
+
+## Costumes antigos | Para costumes: "todos los veranos íbamos a la playa" (todo verão íamos à praia). Ir no imperfecto: iba, ibas, iba, íbamos, iban.
+v siempre = sempre; todos los veranos = todo verão; iba = ia; veía = via; normalmente = normalmente; los domingos = aos domingos; antes = antes
+f Todos los veranos [íbamos] a la playa. = Todo verão íamos à praia. ~ fuimos, vamos
+f Antes [veía] mucho la tele. = Antes eu via muita televisão. ~ vi, veo
+b Los domingos comíamos con mis abuelos. = Aos domingos almoçávamos com meus avós.
+b Mi padre siempre leía el periódico. = Meu pai sempre lia o jornal.
+l Normalmente iba a la escuela en bicicleta. = Normalmente ia para a escola de bicicleta. ~ Normalmente vou para a escola de bicicleta. | Sempre ia para a escola a pé.
+q Você quer contar que antes jogava videogame todo dia. O que diz? = Antes jugaba a los videojuegos todos los días. | Ayer jugué a los videojuegos. | Mañana juego a los videojuegos.
+
+## Descrever o passado | No imperfecto também descrevemos cenários: "hacía frío", "había mucha gente", "la casa era grande".
+v había = havia, tinha; hacía = fazia; estaba = estava; gente = gente; antiguo = antigo; tranquilo = tranquilo; ruido = barulho
+f En mi barrio [había] un cine. = No meu bairro tinha um cinema. ~ hubo, hay
+f Ese día [hacía] mucho frío. = Naquele dia fazia muito frio. ~ hizo, hace
+b La ciudad era más tranquila. = A cidade era mais tranquila.
+b No había mucho ruido. = Não tinha muito barulho.
+l La casa de mis abuelos era muy antigua. = A casa dos meus avós era muito antiga. ~ A casa dos meus avós é muito moderna. | A casa dos meus pais era muito antiga.
+q Você quer descrever que antes não havia internet. O que diz? = Antes no había internet. | Antes no hay internet. | Antes no hubo internet.
+
+## Era ou foi? | Imperfecto descreve o cenário (estaba en casa); indefinido conta o que aconteceu (sonó el teléfono). "Cuando" liga os dois.
+v cuando = quando; mientras = enquanto; sonar = tocar (som); llamar = ligar; ducharse = tomar banho; dormir = dormir; teléfono = telefone
+f Estaba en la ducha cuando [sonó] el teléfono. = Estava no banho quando o telefone tocou. ~ sonaba, suena
+f Mientras yo [cocinaba], él leía. = Enquanto eu cozinhava, ele lia. ~ cociné, cocino
+b Dormía cuando llegaste. = Eu dormia quando você chegou.
+b Llovía mucho cuando salimos. = Chovia muito quando saímos.
+l Cuando era joven, conocí a tu padre. = Quando era jovem, conheci seu pai. ~ Quando sou jovem, conheço seu pai. | Quando era jovem, conhecia seu avô.
+q Você quer explicar que não atendeu porque estava dirigindo. O que diz? = No contesté porque estaba conduciendo. | No contesto porque conduzco. | No contesté porque conduje.
+
+## Antes e agora | "Ya no" é não ... mais: "ya no fumo" (não fumo mais). Para comparar: "antes vivía en el campo; ahora vivo en la ciudad".
+v ya no = não ... mais; ahora = agora; cambiar = mudar; fumar = fumar; pelo largo = cabelo comprido; delgado = magro; diferente = diferente
+f Antes fumaba, pero [ya] no fumo. = Antes fumava, mas não fumo mais. ~ todavía, nunca
+f Antes tenía el pelo [largo]. = Antes tinha o cabelo comprido. ~ alto, grande
+b Ahora vivo en la ciudad. = Agora moro na cidade.
+b Mi barrio ha cambiado mucho. = Meu bairro mudou muito.
+l Ya no trabajo en el banco. = Não trabalho mais no banco. ~ Ainda trabalho no banco. | Nunca trabalhei no banco.
+q Seu amigo pergunta se você ainda joga tênis, mas você parou. O que diz? = No, ya no juego. | Sí, todavía juego. | Juego mañana.
+
+### frases
+fr Cuando era pequeña, vivía en una casa con un jardín enorme. = Quando era pequena, morava numa casa com um jardim enorme.
+fr Todos los domingos mi abuela preparaba una comida riquísima. = Todo domingo minha avó preparava uma comida deliciosa.
+fr Antes no había móviles y escribíamos cartas. = Antes não havia celulares e escrevíamos cartas.
+fr Mi padre trabajaba en una fábrica de coches. = Meu pai trabalhava numa fábrica de carros.
+fr Estaba en el trabajo cuando me [llamaste]. = Eu estava no trabalho quando você me ligou. ~ llamabas, llamas
+fr De niño era muy tímido y no hablaba mucho. = Quando criança eu era muito tímido e não falava muito.
+fr Antes vivía en el centro, pero ahora vivo en las afueras. = Antes morava no centro, mas agora moro na periferia.
+fr En verano siempre íbamos al pueblo de mis abuelos. = No verão sempre íamos ao povoado dos meus avós.
+fr Ya no veo la tele, ahora [veo] series en el móvil. = Não vejo mais televisão, agora vejo séries no celular. ~ veía, vi
+fr Mientras dormíamos, empezó a nevar. = Enquanto dormíamos, começou a nevar.
+
+### texto | As fotos antigas
+t Nieta | Abuelo, ¿quién es este niño de la foto? = Vô, quem é este menino da foto?
+t Abuelo | Soy yo, con ocho años. Vivía en un pueblo de Asturias. = Sou eu, com oito anos. Morava num povoado das Astúrias.
+t Nieta | ¿Y cómo era la vida allí? = E como era a vida lá?
+t Abuelo | Muy tranquila. No había coches y todos nos conocíamos. = Muito tranquila. Não havia carros e todos nos conhecíamos.
+t Nieta | ¿Ibas a la escuela? = Você ia à escola?
+t Abuelo | Sí, caminaba una hora cada día. En invierno hacía mucho frío. = Sim, caminhava uma hora todo dia. No inverno fazia muito frio.
+t Nieta | ¿Y qué hacías en tu tiempo libre? = E o que você fazia no tempo livre?
+t Abuelo | Jugaba en el río con mis hermanos y ayudaba a mi padre con las vacas. = Brincava no rio com meus irmãos e ajudava meu pai com as vacas.
+t Nieta | ¿Cuándo te fuiste del pueblo? = Quando você saiu do povoado?
+t Abuelo | A los dieciocho años. Fui a Madrid a trabajar y allí conocí a tu abuela. = Aos dezoito anos. Fui a Madri trabalhar e lá conheci sua avó.
+tq Onde o avô morava quando criança? = Num povoado das Astúrias | Em Madri | Numa cidade grande
+tq Como ele ia para a escola? = A pé, uma hora por dia | De carro | De ônibus
+tq O que ele fazia no tempo livre? = Brincava no rio e ajudava com as vacas | Via televisão | Jogava futebol na cidade
+tq Onde ele conheceu a avó? = Em Madri | No povoado | Na escola
+
+# a2u4 | Saúde e corpo | Partes do corpo, dizer o que dói, ir ao médico e à farmácia.
+
+## O corpo | "Me duele" + parte do corpo no singular; "me duelen" no plural: "me duele la cabeza", "me duelen los pies".
+v cabeza = cabeça; brazo = braço; pierna = perna; mano = mão; pie = pé; espalda = costas; estómago = estômago; garganta = garganta
+f Me [duele] la espalda. = Minhas costas doem. ~ duelen, dolor
+f Me [duelen] los pies. = Meus pés doem. ~ duele, duelo
+b Me he roto el brazo. = Quebrei o braço.
+b Tengo dolor de estómago. = Estou com dor de estômago.
+l Me duele mucho la garganta. = Minha garganta dói muito. ~ Minha cabeça dói muito. | Minha garganta não dói.
+q Você comeu demais e se sente mal. O que diz? = Me duele el estómago. | Me duele el pie. | Me duelen las manos.
+
+## Sintomas | "Tener fiebre" (ter febre), "tener tos" (ter tosse), "estar resfriado" (estar resfriado), "estar mareado" (estar tonto, enjoado).
+v fiebre = febre; tos = tosse; resfriado = resfriado; gripe = gripe; mareado = tonto, enjoado; alergia = alergia; enfermo = doente
+f Tengo [fiebre] desde ayer. = Estou com febre desde ontem. ~ frío, gripes
+f Creo que estoy [resfriado]. = Acho que estou resfriado. ~ fiebre, tos
+b Mi hijo tiene tos. = Meu filho está com tosse.
+b Tengo alergia al polen. = Tenho alergia a pólen.
+l Me siento mareado. = Estou me sentindo tonto. ~ Estou me sentindo melhor. | Estou com sono.
+q Você está com febre e tosse e não vai trabalhar. O que diz ao chefe? = Estoy enfermo, tengo gripe. | Estoy muy contento. | Tengo mucho trabajo.
+
+## No médico | O médico pergunta: "¿Qué le pasa?" (o que o senhor tem?), "¿Desde cuándo?" (desde quando?). "Receta" é a receita e "pastilla", o comprimido.
+v cita = consulta marcada; receta = receita; pastilla = comprimido; desde cuándo = desde quando; qué le pasa = o que o senhor tem; tomar = tomar; análisis = exame
+f Quiero pedir una [cita] con el médico. = Quero marcar uma consulta com o médico. ~ receta, pastilla
+f Tome una [pastilla] cada ocho horas. = Tome um comprimido a cada oito horas. ~ cita, receta
+b ¿Qué le pasa? = O que o senhor tem?
+b Le voy a hacer una receta. = Vou fazer uma receita para o senhor.
+l Me duele desde hace tres días. = Dói desde três dias atrás. ~ Dói há três semanas. | Não dói mais.
+q O médico pergunta "¿Desde cuándo le duele?". Começou ontem. O que diz? = Desde ayer. | Hasta mañana. | Cada ocho horas.
+
+## Conselhos de saúde | Para aconselhar: "tienes que" (você tem que), "deberías" (você deveria), "es mejor" (é melhor).
+v deberías = você deveria; tienes que = você tem que; descansar = descansar; beber agua = beber água; dormir = dormir; dejar de = parar de; sano = saudável
+f [Deberías] descansar más. = Você deveria descansar mais. ~ Debo, Tienes
+f Tienes que [beber] mucha agua. = Você tem que beber muita água. ~ bebes, bebe
+b Es mejor dormir ocho horas. = É melhor dormir oito horas.
+b Deberías dejar de fumar. = Você deveria parar de fumar.
+l Para estar sano hay que comer bien. = Para ficar saudável é preciso comer bem. ~ Para ficar saudável é preciso dormir pouco. | Para comer bem é preciso cozinhar.
+q Seu amigo está muito estressado. Que conselho você dá? = Deberías tomar unas vacaciones. | Deberías trabajar más. | Tienes que dormir menos.
+
+## Na farmácia | Na farmácia: "¿Tiene algo para...?" (tem algo para...?). "Sin receta" é sem receita. "Jarabe" é xarope e "tiritas", band-aids.
+v farmacia = farmácia; algo para = algo para; jarabe = xarope; tiritas = curativos adesivos; crema = pomada, creme; sin receta = sem receita; dolor = dor
+f ¿Tiene algo para el [dolor] de cabeza? = Tem algo para dor de cabeça? ~ duele, receta
+f Este jarabe se vende sin [receta]. = Este xarope é vendido sem receita. ~ cita, pastilla
+b Necesito tiritas, por favor. = Preciso de curativos, por favor.
+b ¿Cuántas veces al día? = Quantas vezes por dia?
+l Póngase esta crema dos veces al día. = Passe esta pomada duas vezes por dia. ~ Tome este xarope duas vezes por dia. | Passe esta pomada uma vez por semana.
+q Você está com tosse e vai à farmácia. O que pede? = ¿Tiene algo para la tos? | ¿Tiene algo para el pie? | Quiero una cita.
+
+### frases
+fr Me duele mucho la cabeza y tengo un poco de fiebre. = Minha cabeça dói muito e estou com um pouco de febre.
+fr Llamé al médico porque mi hijo tenía tos. = Liguei para o médico porque meu filho estava com tosse.
+fr El médico me dijo que tengo que descansar. = O médico me disse que tenho que descansar.
+fr Tome estas pastillas tres veces al día después de comer. = Tome estes comprimidos três vezes por dia depois de comer.
+fr Deberías ir al médico si no te sientes [mejor]. = Você deveria ir ao médico se não se sentir melhor. ~ bien, bueno
+fr Me caí jugando al fútbol y me duele la pierna. = Caí jogando futebol e minha perna dói.
+fr ¿Tiene algo para la alergia sin receta? = Tem algo para alergia sem receita?
+fr Para estar sano, duermo bien y hago deporte. = Para ficar saudável, durmo bem e faço esporte.
+fr Tengo una cita con la dentista el [jueves]. = Tenho uma consulta com a dentista na quinta. ~ juego, julio
+fr Ya me siento mucho mejor, gracias. = Já estou me sentindo muito melhor, obrigado.
+
+### texto | No consultório
+t Médica | Buenos días. Siéntese. ¿Qué le pasa? = Bom dia. Sente-se. O que o senhor tem?
+t Paciente | Me duele mucho la garganta y tengo tos. = Minha garganta dói muito e estou com tosse.
+t Médica | ¿Desde cuándo? = Desde quando?
+t Paciente | Desde el domingo. Y anoche tuve fiebre. = Desde domingo. E ontem à noite tive febre.
+t Médica | Vamos a ver. Abra la boca, por favor. = Vamos ver. Abra a boca, por favor.
+t Médica | Tiene la garganta muy roja. Es una infección. = O senhor está com a garganta muito vermelha. É uma infecção.
+t Paciente | ¿Es grave? = É grave?
+t Médica | No, no se preocupe. Le voy a dar un antibiótico. = Não, não se preocupe. Vou dar um antibiótico ao senhor.
+t Médica | Tome una pastilla cada doce horas durante siete días. = Tome um comprimido a cada doze horas durante sete dias.
+t Paciente | ¿Puedo ir a trabajar? = Posso ir trabalhar?
+t Médica | Mejor descanse dos días y beba mucha agua. = Melhor descansar dois dias e beber muita água.
+tq Quais são os sintomas do paciente? = Dor de garganta e tosse | Dor de estômago | Dor nas costas
+tq Desde quando ele está doente? = Desde domingo | Desde ontem | Há uma semana
+tq Como ele deve tomar o remédio? = Um comprimido a cada doze horas | Três vezes por dia | Uma vez por semana
+tq O que a médica recomenda? = Descansar dois dias e beber água | Ir trabalhar normalmente | Voltar amanhã
+
+# a2u5 | Trabalho e estudos | Profissões, rotina de trabalho, estudos e procurar emprego.
+
+## Profissões | Muitas profissões mudam no feminino: "el profesor / la profesora", "el médico / la médica". Algumas não mudam: "el/la periodista".
+v abogado = advogado; enfermera = enfermeira; ingeniero = engenheiro; camarero = garçom; periodista = jornalista; cocinero = cozinheiro; dependiente = vendedor de loja
+f Mi hermana es [enfermera] en un hospital. = Minha irmã é enfermeira num hospital. ~ abogado, ingeniero
+f ¿A qué te [dedicas]? = O que você faz da vida? ~ dedico, trabajas
+b Soy ingeniero de software. = Sou engenheiro de software.
+b Mi padre trabaja de camarero. = Meu pai trabalha como garçom.
+l Quiero ser periodista. = Quero ser jornalista. ~ Quero ser advogado. | Sou jornalista.
+q Alguém pergunta sua profissão. Você é advogado. O que diz? = Soy abogado. | Estoy abogado. | Trabajo abogado.
+
+## No escritório | "Oficina" é escritório (não oficina mecânica, que é "taller"). "Jefe" é chefe e "compañero", colega.
+v oficina = escritório; jefe = chefe; compañero = colega; horario = horário; sueldo = salário; reunión = reunião; ordenador = computador (Espanha)
+f Trabajo en una [oficina] en el centro. = Trabalho num escritório no centro. ~ taller, jefe
+f Mi [jefe] es muy simpático. = Meu chefe é muito simpático. ~ sueldo, horario
+b Tengo un horario flexible. = Tenho um horário flexível.
+b Mis compañeros son muy amables. = Meus colegas são muito gentis.
+l La reunión es a las diez en la sala dos. = A reunião é às dez na sala dois. ~ A reunião é às dois na sala dez. | A aula é às dez na sala dois.
+q Você vai se atrasar para a reunião. O que escreve ao colega? = Llego un poco tarde a la reunión. | No tengo ordenador. | Mi sueldo es bajo.
+
+## Os estudos | "Carrera" é o curso de faculdade; "estudiar Derecho" é cursar Direito. "Aprobar" é passar na prova e "suspender", reprovar.
+v carrera = curso superior; universidad = universidade; examen = prova; aprobar = passar (na prova); suspender = reprovar; asignatura = matéria; beca = bolsa de estudos
+f Estudio la [carrera] de Medicina. = Faço o curso de Medicina. ~ examen, beca
+f ¡He [aprobado] el examen! = Passei na prova! ~ suspendido, estudiado
+b Tengo un examen el lunes. = Tenho uma prova na segunda.
+b Mi asignatura favorita es Historia. = Minha matéria favorita é História.
+l Consiguió una beca para estudiar en España. = Conseguiu uma bolsa para estudar na Espanha. ~ Perdeu a bolsa para estudar na Espanha. | Conseguiu um emprego na Espanha.
+q Seu amigo passou na prova difícil. O que você diz? = ¡Enhorabuena! | ¡Qué pena! | ¡Buen viaje!
+
+## Procurar emprego | "Currículum" (ou "CV") é o currículo; "oferta de trabajo" é a vaga; "entrevista" é a entrevista.
+v buscar trabajo = procurar emprego; currículum = currículo; oferta = vaga, oferta; entrevista = entrevista; experiencia = experiência; contrato = contrato; paro = desemprego (Espanha)
+f Estoy [buscando] trabajo. = Estou procurando emprego. ~ busco, buscar
+f He enviado mi [currículum] a tres empresas. = Enviei meu currículo para três empresas. ~ contrato, paro
+b Tengo una entrevista mañana. = Tenho uma entrevista amanhã.
+b Tengo cinco años de experiencia. = Tenho cinco anos de experiência.
+l Me han ofrecido un contrato de un año. = Me ofereceram um contrato de um ano. ~ Me ofereceram um contrato de um mês. | Não me ofereceram nenhum contrato.
+q Você viu uma vaga e quer saber mais. O que pergunta? = ¿Cuál es el horario del puesto? | ¿Cuándo es mi cumpleaños? | ¿Dónde está el baño?
+
+## E-mails de trabalho | Para começar um e-mail formal: "Estimado señor" ou "Estimada señora". Para terminar: "Un saludo" ou "Atentamente".
+v estimado = prezado; correo = e-mail; adjunto = anexo; atentamente = atenciosamente; un saludo = um abraço, saudações; responder = responder; plazo = prazo
+f Le envío el informe [adjunto]. = Envio o relatório em anexo. ~ estimado, plazo
+f El [plazo] termina el viernes. = O prazo termina na sexta. ~ correo, saludo
+b Estimada señora López: = Prezada senhora López:
+b Quedo a la espera de su respuesta. = Fico no aguardo da sua resposta.
+l Gracias por su correo. Un saludo. = Obrigado pelo seu e-mail. Saudações. ~ Desculpe pela demora. Saudações. | Obrigado pela reunião. Atenciosamente.
+q Você termina um e-mail formal para um cliente. Como fecha? = Atentamente, Pedro. | ¡Besos, Pedro! | Chao, Pedro.
+
+### frases
+fr Trabajo como enfermera en un hospital del centro. = Trabalho como enfermeira num hospital do centro.
+fr Mi jefe es exigente, pero aprendo mucho con él. = Meu chefe é exigente, mas aprendo muito com ele.
+fr Estudié Derecho en la Universidad de Salamanca. = Cursei Direito na Universidade de Salamanca.
+fr Tengo un horario de nueve a seis, con una hora para comer. = Tenho um horário das nove às seis, com uma hora para almoçar.
+fr He enviado mi currículum a una empresa [internacional]. = Enviei meu currículo para uma empresa internacional. ~ internacionales, internación
+fr Mañana tengo una entrevista y estoy nervioso. = Amanhã tenho uma entrevista e estou nervoso.
+fr Mi hermano suspendió dos asignaturas este año. = Meu irmão reprovou em duas matérias este ano.
+fr Le adjunto el contrato para su firma. = Envio em anexo o contrato para sua assinatura.
+fr Me gusta mi trabajo porque mis compañeros son [geniales]. = Gosto do meu trabalho porque meus colegas são ótimos. ~ genial, malos
+fr ¿A qué te dedicas? Soy periodista en una radio. = O que você faz? Sou jornalista numa rádio.
+
+### texto | O novo emprego
+t Carlos | ¡Hola, Irene! Me han dicho que tienes trabajo nuevo. = Oi, Irene! Me disseram que você tem um emprego novo.
+t Irene | Sí, empecé el lunes en una empresa de diseño. = Sim, comecei na segunda numa empresa de design.
+t Carlos | ¡Enhorabuena! ¿Y qué tal? = Parabéns! E como está?
+t Irene | Muy bien. Mis compañeros son jóvenes y muy simpáticos. = Muito bem. Meus colegas são jovens e muito simpáticos.
+t Carlos | ¿Y el horario? = E o horário?
+t Irene | Es flexible. Puedo empezar entre las ocho y las diez. = É flexível. Posso começar entre as oito e as dez.
+t Irene | Y los viernes trabajo desde casa. = E às sextas trabalho de casa.
+t Carlos | ¡Qué suerte! Yo todavía estoy buscando trabajo. = Que sorte! Eu ainda estou procurando emprego.
+t Irene | ¿Has enviado el currículum a mi empresa? Buscan un programador. = Você enviou o currículo para minha empresa? Estão procurando um programador.
+t Carlos | ¿De verdad? Esta noche lo envío. = Sério? Hoje à noite eu envio.
+tq Quando Irene começou no emprego novo? = Na segunda | Ontem | No mês passado
+tq Como é o horário de Irene? = Flexível | Das nove às cinco, fixo | Só à noite
+tq O que Irene faz às sextas? = Trabalha de casa | Não trabalha | Faz reuniões
+tq Que vaga a empresa de Irene tem? = Programador | Designer | Gerente
