@@ -36,6 +36,9 @@ const ACCENT = {
   mx: 'Leia em espanhol do México, com pronúncia mexicana natural.'
 };
 
+// Vozes que o app pode pedir (página vozes.html, para comparar).
+const VOICES = ['alloy', 'ash', 'ballad', 'coral', 'echo', 'fable', 'nova', 'onyx', 'sage', 'shimmer', 'verse', 'marin', 'cedar'];
+
 const VOICE_STYLE = {
   A1: 'Fale bem devagar e com pausas claras entre as frases, articulando cada palavra.',
   A2: 'Fale devagar e com clareza.',
@@ -149,12 +152,13 @@ export default {
     if (typeof body.tts === 'string') {
       const input = body.tts.trim().slice(0, 600);
       if (!input) return json({ error: 'bad_request' }, 400);
+      const ttsVoice = VOICES.includes(body.voice) ? body.voice : (env.LIA_VOICE || 'coral');
       const tr = await fetch('https://api.openai.com/v1/audio/speech', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + apiKey },
         body: JSON.stringify({
           model: env.TTS_MODEL || 'gpt-4o-mini-tts',
-          voice: env.LIA_VOICE || 'coral',
+          voice: ttsVoice,
           input,
           instructions: 'Você é a Lía, professora de espanhol simpática e acolhedora. Fale em espanhol latino-americano neutro, com voz calorosa, sorridente e encorajadora. ' + VOICE_STYLE[level],
           response_format: 'mp3'
@@ -164,7 +168,7 @@ export default {
         console.log('OpenAI TTS', tr.status, (await tr.text()).slice(0, 300));
         return json({ error: 'tts_failed', status: tr.status }, 502);
       }
-      return new Response(tr.body, { headers: { ...cors, 'Content-Type': 'audio/mpeg', 'Cache-Control': 'no-store' } });
+      return new Response(tr.body, { headers: { ...cors, 'Content-Type': 'audio/mpeg', 'Cache-Control': 'no-store', 'X-Voice': ttsVoice, 'Access-Control-Expose-Headers': 'X-Voice' } });
     }
     const scenario = SCENARIOS[body.scenario] ? body.scenario : 'livre';
     const history = (Array.isArray(body.messages) ? body.messages : [])

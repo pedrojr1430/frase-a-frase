@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vozes — Frase a Frase</title>
+<style>
+  :root { --bg:#F4F6FC; --ink:#141A33; --muted:#5D6485; --line:#E2E6F3; --roxo:#5B3DF5; --azul:#2F6FE0; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:620px; margin:0 auto; padding:20px 16px 48px; }
+  h1 { font-size:24px; margin:4px 0 6px; }
+  h2 { font-size:18px; margin:28px 0 4px; }
+  p.sub { color:var(--muted); margin:0 0 14px; font-size:14.5px; }
+  .frase { background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px 12px; font-size:15px; margin-bottom:12px; }
+  .frase textarea { width:100%; border:0; resize:vertical; font:inherit; color:inherit; min-height:48px; outline:none; }
+  .card { display:flex; align-items:center; gap:12px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-bottom:8px; }
+  .card.sel { border-color:var(--roxo); box-shadow:0 0 0 2px rgba(91,61,245,.15); }
+  .info { flex:1; min-width:0; }
+  .nome { font-weight:700; }
+  .desc { color:var(--muted); font-size:13.5px; }
+  .tag { display:inline-block; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:999px; background:#EEEAFE; color:var(--roxo); margin-left:6px; vertical-align:middle; }
+  .tag.boa { background:#E6F4EA; color:#1D7A3A; }
+  button.play { flex:none; min-width:84px; height:40px; border:0; border-radius:999px; background:var(--roxo); color:#fff; font-weight:700; font-size:14px; }
+  button.play.azul { background:var(--azul); }
+  button.play:disabled { opacity:.55; }
+  .aviso { background:#FFF6E0; border:1px solid #F2DDA4; color:#6B5212; border-radius:12px; padding:10px 12px; font-size:14px; margin:10px 0; display:none; }
+  .vazio { color:var(--muted); font-size:14px; }
+  a.voltar { color:var(--azul); text-decoration:none; font-weight:600; font-size:14.5px; }
+</style>
+</head>
+<body>
+<main>
+  <a class="voltar" href="./">‹ Voltar ao app</a>
+  <h1>Vozes</h1>
+  <p class="sub">Toque em Ouvir para comparar. Você pode trocar a frase de teste.</p>
+  <div class="frase"><textarea id="frase">¡Hola! Soy Lía. ¿Qué tal tu día? Cuéntame qué hiciste esta mañana.</textarea></div>
+
+  <h2>Voz da Lía (IA)</h2>
+  <p class="sub">Usada só na conversa com a Lía. A primeira vez de cada voz leva alguns segundos.</p>
+  <div class="aviso" id="avisoLia"></div>
+  <div id="lia"></div>
+
+  <h2>Vozes do seu celular</h2>
+  <p class="sub">Usadas nas frases, textos e curso. A lista muda de aparelho para aparelho.</p>
+  <div id="aparelho"><p class="vazio">Procurando vozes…</p></div>
+  <div class="aviso" id="avisoAparelho"></div>
+</main>
+<script>
+(function () {
+  var LIA_URL = 'https://lia.pedrolima1430.workers.dev';
+  var LIA_VOZES = [
+    ['coral', 'Calorosa e simpática', 'atual'],
+    ['marin', 'Natural, a mais nova e realista'],
+    ['nova', 'Jovem e animada'],
+    ['shimmer', 'Suave e tranquila'],
+    ['sage', 'Calma, tom de professora'],
+    ['alloy', 'Neutra e equilibrada'],
+    ['cedar', 'Masculina, natural e grave'],
+    ['ash', 'Masculina, firme e clara']
+  ];
+  var audio = new Audio(), cache = {}, atual = null, avisouVelho = false;
+  function frase() { return document.getElementById('frase').value.trim() || 'Hola, ¿qué tal?'; }
+  function parar() { try { audio.pause(); } catch (e) {} try { speechSynthesis.cancel(); } catch (e) {} }
+  function aviso(id, txt) { var el = document.getElementById(id); el.textContent = txt; el.style.display = txt ? 'block' : 'none'; }
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    for (var k in attrs) { if (k === 'text') n.textContent = attrs[k]; else n.setAttribute(k, attrs[k]); }
+    (kids || []).forEach(function (c) { n.appendChild(c); });
+    return n;
+  }
+  function marcar(card) { if (atual) atual.classList.remove('sel'); atual = card; if (card) card.classList.add('sel'); }
+
+  // ---------- Lía ----------
+  var lia = document.getElementById('lia');
+  LIA_VOZES.forEach(function (v) {
+    var nome = el('div', { class: 'nome', text: v[0].charAt(0).toUpperCase() + v[0].slice(1) });
+    if (v[2]) nome.appendChild(el('span', { class: 'tag', text: v[2] }));
+    var btn = el('button', { class: 'play', type: 'button', text: 'Ouvir' });
+    var card = el('div', { class: 'card' }, [el('div', { class: 'info' }, [nome, el('div', { class: 'desc', text: v[1] })]), btn]);
+    btn.onclick = function () {
+      parar(); marcar(card);
+      var t = frase(), key = v[0] + '|' + t;
+      btn.disabled = true; btn.textContent = '…';
+      var p = cache[key] || (cache[key] = fetch(LIA_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ tts: t, level: 'B1', voice: v[0] }) })
+        .then(function (r) {
+          if (r.status === 429) throw new Error('limite');
+          if (!r.ok) throw new Error(r.status);
+          if (!r.headers.get('X-Voice') && !avisouVelho) { avisouVelho = true; aviso('avisoLia', 'O servidor da Lía ainda não foi atualizado: todas as vozes estão saindo iguais (Coral). Cole o novo worker.js no Cloudflare e recarregue esta página.'); }
+          return r.blob();
+        }).then(function (b) { return URL.createObjectURL(b); }));
+      p.then(function (src) {
+        btn.disabled = false; btn.textContent = 'Ouvir';
+        audio.src = src; audio.play().catch(function () {});
+      }, function (e) {
+        delete cache[key]; btn.disabled = false; btn.textContent = 'Ouvir';
+        aviso('avisoLia', e.message === 'limite' ? 'Muitos pedidos em pouco tempo. Espere alguns minutos e tente de novo.' : 'Não consegui falar com o servidor da Lía. Verifique a internet e tente de novo.');
+      });
+    };
+    lia.appendChild(card);
+  });
+
+  // ---------- Aparelho ----------
+  var box = document.getElementById('aparelho');
+  function qualidade(v) {
+    var n = (v.name + ' ' + (v.voiceURI || '')).toLowerCase();
+    if (/natural|neural|premium|enhanced|aprimorad|online|wavenet|high|alta/.test(n)) return 'boa';
+    if (/google/.test(n)) return 'boa';
+    return '';
+  }
+  function pais(lang) {
+    var m = { 'es-ES': 'Espanha', 'es-MX': 'México', 'es-US': 'EUA (latino)', 'es-AR': 'Argentina', 'es-CO': 'Colômbia', 'es-CL': 'Chile', 'es-419': 'América Latina' };
+    return m[lang.replace('_', '-')] || lang;
+  }
+  function listar() {
+    if (!window.speechSynthesis) { box.innerHTML = ''; box.appendChild(el('p', { class: 'vazio', text: 'Este navegador não tem voz do aparelho.' })); return; }
+    var vs = speechSynthesis.getVoices().filter(function (v) { return /^es([-_]|$)/i.test(v.lang); });
+    if (!vs.length) return false;
+    vs.sort(function (a, b) { return (qualidade(b) ? 1 : 0) - (qualidade(a) ? 1 : 0) || a.lang.localeCompare(b.lang); });
+    box.innerHTML = '';
+    vs.forEach(function (v) {
+      var nome = el('div', { class: 'nome', text: v.name });
+      if (qualidade(v)) nome.appendChild(el('span', { class: 'tag boa', text: 'boa qualidade' }));
+      if (v.default) nome.appendChild(el('span', { class: 'tag', text: 'padrão' }));
+      var desc = pais(v.lang) + (v.localService === false ? ' · precisa de internet' : ' · funciona offline');
+      var btn = el('button', { class: 'play azul', type: 'button', text: 'Ouvir' });
+      var card = el('div', { class: 'card' }, [el('div', { class: 'info' }, [nome, el('div', { class: 'desc', text: desc })]), btn]);
+      btn.onclick = function () {
+        parar(); marcar(card);
+        var u = new SpeechSynthesisUtterance(frase());
+        u.voice = v; u.lang = v.lang; u.rate = 0.95;
+        speechSynthesis.speak(u);
+      };
+      box.appendChild(card);
+    });
+    if (vs.length < 2 || !vs.some(qualidade)) {
+      aviso('avisoAparelho', 'Seu celular tem poucas vozes em espanhol. No Android: Configurações › Sistema › Idiomas › Saída de texto para fala › Mecanismo do Google › Instalar dados de voz › Español. Baixe as vozes e volte aqui.');
+    }
+    return true;
+  }
+  if (window.speechSynthesis) {
+    if (!listar()) {
+      speechSynthesis.onvoiceschanged = listar;
+      setTimeout(function () {
+        if (!listar()) { box.innerHTML = ''; box.appendChild(el('p', { class: 'vazio', text: 'Nenhuma voz em espanhol encontrada neste aparelho.' })); aviso('avisoAparelho', 'No Android: Configurações › Sistema › Idiomas › Saída de texto para fala › Mecanismo do Google › Instalar dados de voz › Español.'); }
+      }, 2500);
+    }
+  } else listar();
+})();
+</script>
+</body>
+</html>
