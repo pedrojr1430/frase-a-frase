@@ -2485,19 +2485,17 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   // Voz própria da Lía (gerada no servidor); se falhar, usa a voz do aparelho.
   var liaAudio = null, liaCache = {}, liaReq = 0;
   function stopLia() { if (liaAudio) { try { liaAudio.pause(); } catch (e) {} } }
-  // Voz da conversa: Lía (padrão, voz de IA padrão do servidor) ou Leo (voz masculina 'cedar').
-  function liaVoz() { try { return localStorage.getItem('fraseafrase.liavoz') === 'leo' ? 'leo' : 'lia'; } catch (e) { return 'lia'; } }
+  // Voz da conversa: sempre a voz de IA da Lía (padrão do servidor).
   function speakLia(text, level, btn) {
     var url = course && course.ai && course.ai.url;
     if (!url) return speak(text);
-    var voz = liaVoz();
     if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio();
     try { speechSynthesis.cancel(); } catch (e) {}
     stopLia();
     var my = ++liaReq;
     if (btn) btn.classList.add('is-loading');
-    var key = voz + '|' + level + '|' + text;
-    var body = { tts: text, level: level }; if (voz === 'leo') body.voice = 'cedar';
+    var key = level + '|' + text;
+    var body = { tts: text, level: level };
     var p = liaCache[key] || (liaCache[key] = fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); })
       .then(function (b) { return URL.createObjectURL(b); }));
@@ -3240,13 +3238,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
       ov.appendChild(h('div', { class: 'cc-chat-top' }, [
         h('button', { type: 'button', class: 'cc-icon-btn', 'aria-label': 'Fechar conversa', onclick: close }, [icon('close')]),
         h('span', { class: 'cc-lia-avatar is-sm', 'aria-hidden': 'true', text: 'L' }),
-        h('div', { class: 'cc-chat-id' }, [h('strong', { text: 'Lía' }), sub]),
-        url ? (function () {
-          var vb = h('button', { type: 'button', class: 'cc-voice-toggle', 'aria-pressed': 'true' });
-          function paint() { vb.textContent = liaVoz() === 'leo' ? 'Voz: Leo' : 'Voz: Lía'; vb.title = 'Trocar a voz das respostas (Lía ou Leo)'; }
-          vb.onclick = function () { try { localStorage.setItem('fraseafrase.liavoz', liaVoz() === 'leo' ? 'lia' : 'leo'); } catch (e) {} stopLia(); paint(); };
-          paint(); return vb;
-        })() : null
+        h('div', { class: 'cc-chat-id' }, [h('strong', { text: 'Lía' }), sub])
       ]));
       ov.appendChild(main); ov.appendChild(foot);
       document.body.appendChild(ov); document.body.classList.add('cc-locked');
