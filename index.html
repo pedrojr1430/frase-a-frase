@@ -1211,7 +1211,10 @@ body.cc-locked #faf-sheet{z-index:96}
   </div>
 </div>
 
-<script>/* Frase a Frase — menu lateral (Perfil, Configurações, Revisão, Frases, Textos, Podcasts, Excluir conta) */
+<script>
+/* Sotaque do app: México por padrão (vale também para quem já usava antes, uma vez). */
+function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.v2') || '{}'); return (o.langMx ? o.lang : '') || 'es-MX'; } catch (e) { return 'es-MX'; } }
+/* Frase a Frase — menu lateral (Perfil, Configurações, Revisão, Frases, Textos, Podcasts, Excluir conta) */
 (function () {
   'use strict';
   var SVG = {
@@ -1874,11 +1877,38 @@ body.cc-locked #faf-sheet{z-index:96}
     }
     return vCache[key];
   }
+  // Escolhe a melhor voz instalada para o sotaque. México: es-MX, depois espanhol latino (es-US, es-419...), por último qualquer espanhol.
+  var LATAM = ['es-MX', 'es-US', 'es-419', 'es-CO', 'es-AR', 'es-CL', 'es-PE', 'es-VE'];
+  function voiceScore(v) {
+    var n = (v.name + ' ' + (v.voiceURI || '')).toLowerCase(), sc = 0;
+    if (/natural|neural|premium|enhanced|aprimorad|wavenet|high|alta/.test(n)) sc += 4;
+    if (/google/.test(n)) sc += 3;
+    if (/online/.test(n)) sc += 2;
+    if (v.localService !== false) sc += 1; // funciona offline
+    if (/compact|eloquence|espeak/.test(n)) sc -= 4;
+    return sc;
+  }
+  function pickVoice(lang) {
+    try {
+      var all = (window.speechSynthesis && speechSynthesis.getVoices()) || [];
+      var norm = function (l) { return String(l || '').replace('_', '-').toLowerCase(); };
+      var order = lang === 'es-MX' ? LATAM : ['es-ES'];
+      for (var i = 0; i < order.length; i++) {
+        var want = order[i].toLowerCase();
+        var m = all.filter(function (v) { return norm(v.lang) === want; });
+        if (m.length) return m.sort(function (a, b) { return voiceScore(b) - voiceScore(a); })[0];
+      }
+      var any = all.filter(function (v) { return /^es(-|$)/.test(norm(v.lang)); });
+      return any.sort(function (a, b) { return voiceScore(b) - voiceScore(a); })[0] || null;
+    } catch (e) { return null; }
+  }
+  try { if (window.speechSynthesis) speechSynthesis.getVoices(); } catch (e) {} // carrega a lista de vozes cedo
   function stopVoice() { vToken++; try { vAudio.pause(); } catch (e) {} try { window.speechSynthesis.cancel(); } catch (e) {} }
   function deviceSay(text, opt, my) {
     try {
       var u = new SpeechSynthesisUtterance(cleanText(text));
-      u.lang = opt.lang || 'es-ES'; u.rate = opt.rate || 0.9;
+      u.lang = opt.lang || 'es-MX'; u.rate = opt.rate || 0.9;
+      var bv = pickVoice(u.lang); if (bv) { u.voice = bv; u.lang = bv.lang.replace('_', '-'); }
       u.onend = function () { if (my === vToken && opt.onend) opt.onend(); };
       window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
     } catch (e) { if (opt.onend) setTimeout(opt.onend, 300); }
@@ -2017,7 +2047,7 @@ body.cc-locked #faf-sheet{z-index:96}
       speedBtn
     ]));
     document.body.classList.add('tr-open'); document.body.classList.add('rd-open');
-    rd = { items: opt.items, idx: Math.max(0, opt.start || 0), playing: false, token: 0, nodes: nodes, box: box, body: body, langs: langs, lang: opt.lang || 'es-ES', btn: btn, pos: pos };
+    rd = { items: opt.items, idx: Math.max(0, opt.start || 0), playing: false, token: 0, nodes: nodes, box: box, body: body, langs: langs, lang: opt.lang || 'es-MX', btn: btn, pos: pos };
     rdApplyLangs();
     if (opt.autoplay !== false) rdPlay(); else rdMark();
     btn.focus();
@@ -2444,8 +2474,7 @@ body.cc-locked #faf-sheet{z-index:96}
     try {
       if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio();
       stopLia();
-      var lang = 'es-ES';
-      try { lang = (JSON.parse(localStorage.getItem('fraseafrase.v2') || '{}').lang) || lang; } catch (e) {}
+      var lang = fafLang();
       if (window.FAF && window.FAF.say) { window.FAF.say(text, { lang: lang, rate: slow ? 0.6 : 0.95 }); return; }
       var u = new SpeechSynthesisUtterance(text.replace(/[«»]/g, ''));
       u.lang = lang; u.rate = slow ? 0.6 : 0.95;
@@ -2456,17 +2485,20 @@ body.cc-locked #faf-sheet{z-index:96}
   // Voz própria da Lía (gerada no servidor); se falhar, usa a voz do aparelho.
   var liaAudio = null, liaCache = {}, liaReq = 0;
   function stopLia() { if (liaAudio) { try { liaAudio.pause(); } catch (e) {} } }
-  function liaVoiceOn() { try { return localStorage.getItem('fraseafrase.liavoz') !== 'aparelho'; } catch (e) { return true; } }
+  // Voz da conversa: Lía (padrão, voz de IA padrão do servidor) ou Leo (voz masculina 'cedar').
+  function liaVoz() { try { return localStorage.getItem('fraseafrase.liavoz') === 'leo' ? 'leo' : 'lia'; } catch (e) { return 'lia'; } }
   function speakLia(text, level, btn) {
     var url = course && course.ai && course.ai.url;
-    if (!url || !liaVoiceOn()) return speak(text);
+    if (!url) return speak(text);
+    var voz = liaVoz();
     if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio();
     try { speechSynthesis.cancel(); } catch (e) {}
     stopLia();
     var my = ++liaReq;
     if (btn) btn.classList.add('is-loading');
-    var key = level + '|' + text;
-    var p = liaCache[key] || (liaCache[key] = fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ tts: text, level: level }) })
+    var key = voz + '|' + level + '|' + text;
+    var body = { tts: text, level: level }; if (voz === 'leo') body.voice = 'cedar';
+    var p = liaCache[key] || (liaCache[key] = fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); })
       .then(function (b) { return URL.createObjectURL(b); }));
     p.then(function (src) {
@@ -2874,7 +2906,7 @@ body.cc-locked #faf-sheet{z-index:96}
     function close() { ov.remove(); document.body.classList.remove('cc-locked'); lesson = null; try { speechSynthesis.cancel(); } catch (e) {} renderMap(); if (!toastOn) nextToast(); }
     function setFoot(kids) { foot.className = 'cc-l-foot'; foot.replaceChildren.apply(foot, kids); }
 
-    function appLang() { try { return JSON.parse(localStorage.getItem('fraseafrase.v2') || '{}').lang || 'es-ES'; } catch (e) { return 'es-ES'; } }
+    function appLang() { return fafLang(); }
     function showPremiumIntro() {
       var l = cfg.lesson, isText = cfg.kind === 'texto';
       var items = isText ? l.lines.map(function (x) { return { who: x[0], es: x[1], pt: x[2] }; }) : l.items.map(function (x) { return { es: x[0], pt: x[1] }; });
@@ -3045,7 +3077,7 @@ body.cc-locked #faf-sheet{z-index:96}
         var mic = h('button', { type: 'button', class: 'cc-bigmic', 'aria-label': 'Falar', onclick: function () {
           if (recOn) { try { recOn.stop(); } catch (er) {} return; }
           try { speechSynthesis.cancel(); } catch (er) {}
-          var r = new Rec(); recOn = r; r.lang = 'es-ES'; r.interimResults = false; r.maxAlternatives = 3;
+          var r = new Rec(); recOn = r; r.lang = fafLang(); r.interimResults = false; r.maxAlternatives = 3;
           mic.classList.add('is-on'); heardEl.textContent = 'Ouvindo…';
           r.onresult = function (ev) {
             var best = '', sc = -1, alts = ev.results[0];
@@ -3210,9 +3242,9 @@ body.cc-locked #faf-sheet{z-index:96}
         h('span', { class: 'cc-lia-avatar is-sm', 'aria-hidden': 'true', text: 'L' }),
         h('div', { class: 'cc-chat-id' }, [h('strong', { text: 'Lía' }), sub]),
         url ? (function () {
-          var vb = h('button', { type: 'button', class: 'cc-voice-toggle', 'aria-pressed': liaVoiceOn() ? 'true' : 'false' });
-          function paint() { vb.textContent = liaVoiceOn() ? 'Voz da Lía' : 'Voz do aparelho'; vb.setAttribute('aria-pressed', liaVoiceOn() ? 'true' : 'false'); vb.title = 'Trocar a voz das respostas'; }
-          vb.onclick = function () { try { localStorage.setItem('fraseafrase.liavoz', liaVoiceOn() ? 'aparelho' : 'lia'); } catch (e) {} stopLia(); paint(); };
+          var vb = h('button', { type: 'button', class: 'cc-voice-toggle', 'aria-pressed': 'true' });
+          function paint() { vb.textContent = liaVoz() === 'leo' ? 'Voz: Leo' : 'Voz: Lía'; vb.title = 'Trocar a voz das respostas (Lía ou Leo)'; }
+          vb.onclick = function () { try { localStorage.setItem('fraseafrase.liavoz', liaVoz() === 'leo' ? 'lia' : 'leo'); } catch (e) {} stopLia(); paint(); };
           paint(); return vb;
         })() : null
       ]));
@@ -3270,7 +3302,7 @@ body.cc-locked #faf-sheet{z-index:96}
       function listen(Rec) {
         try {
           if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio(); speechSynthesis.cancel();
-          var r = new Rec(); r.lang = 'es-ES'; r.interimResults = true; r.maxAlternatives = 1;
+          var r = new Rec(); r.lang = 'es-MX'; r.interimResults = true; r.maxAlternatives = 1;
           micBtn.classList.add('is-rec');
           r.onresult = function (e) { var txt = ''; for (var i = 0; i < e.results.length; i++) txt += e.results[i][0].transcript; input.value = txt; input.onInputFix(); };
           r.onend = r.onerror = function () { micBtn.classList.remove('is-rec'); input.focus(); };
@@ -3686,7 +3718,7 @@ class Component extends DCLogic {
       pmode: 'montar', ex: 0, built: [], checked: false,
       li: 0, lpick: null, lshow: false,
       gi: 0, gpick: null,
-      lang: saved.lang || 'es-ES', rate: saved.rate || 0.9,
+      lang: (saved.langMx ? saved.lang : '') || 'es-MX', rate: saved.rate || 0.9,
       goalDate: today, goalCount: saved.goalDate === today ? (saved.goalCount || 0) : 0,
       mine: Array.isArray(saved.mine) ? saved.mine : [], mineEs: '', minePt: '', mineMsg: '', mineOk: false, mineDel: null
     };
@@ -3698,7 +3730,7 @@ class Component extends DCLogic {
     try {
       window.localStorage.setItem(STORE_KEY, JSON.stringify({
         known: s.known, review: s.review, answers: s.answers, read: s.read, heard: s.heard, mine: s.mine,
-        lang: s.lang, rate: s.rate, goalDate: s.goalDate, goalCount: s.goalCount
+        lang: s.lang, langMx: 1, rate: s.rate, goalDate: s.goalDate, goalCount: s.goalCount
       }));
     } catch (e) {}
   }
