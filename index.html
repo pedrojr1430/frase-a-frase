@@ -948,7 +948,7 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
   <sc-if value="{{isCatalog}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 14px">
     <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted)">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
-    <input id="busca-texto" type="search" aria-label="Buscar texto" value="{{tquery}}" onChange="{{onTQuery}}" placeholder="Buscar por título ou palavra" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid var(--line2); border-radius: 12px; background: var(--deck); color: var(--text); font-family: inherit; font-size: 16px">
+    <input id="busca-texto" type="search" aria-label="Buscar texto" value="{{tquery}}" onChange="{{onTQuery}}" placeholder="Buscar por número, título ou palavra" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid var(--line2); border-radius: 12px; background: var(--deck); color: var(--text); font-family: inherit; font-size: 16px">
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
       <sc-for list="{{levels}}" as="l" hint-placeholder-count="4">
         <button onClick="{{l.pick}}" style="{{l.style}}">{{l.label}}</button>
@@ -964,6 +964,7 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
       <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid var(--line); background: var(--deck); color: var(--text); border-radius: 18px">
         <span style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
           <span style="display: flex; align-items: center; gap: 6px; min-width: 0">
+            <span style="min-width: 26px; height: 26px; padding: 0 7px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: var(--tint-purple); color: var(--accent-t); font-size: 12.5px; font-weight: 700; font-variant-numeric: tabular-nums">{{t.num}}</span>
             <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">{{t.nivel}}</span>
             <span style="font-size: 12px; font-weight: 600; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{t.tema}}</span>
           </span>
@@ -991,7 +992,10 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
   </button>
 
   <div style="display: flex; flex-direction: column; gap: 6px">
-    <span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">{{text.nivel}}</span>
+    <span style="display: flex; align-items: center; gap: 6px">
+      <span style="font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--tint-purple); color: var(--accent-t)">Texto {{text.num}}</span>
+      <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">{{text.nivel}}</span>
+    </span>
     <h2 style="margin: 0; font-family: Manrope, system-ui, sans-serif; ; font-size: 24px; font-weight: 700">{{text.title}}</h2>
     <p style="margin: 0; font-size: 13px; color: var(--muted)">Toque numa frase para ver a tradução e ouvir.</p>
   </div>
@@ -4026,10 +4030,15 @@ class Component extends DCLogic {
     var listItems = listAll.slice(0, s.listLimit);
     var courseSum = window.FAF_COURSE ? window.FAF_COURSE.summary() : null;
     var tq = norm(s.tquery.trim());
-    var textAll = TEXTS.map(function (x, idx) { return Object.assign({ idx: idx }, x); })
+    // Número fixo de cada texto (1, 2, 3…), na ordem da lista completa: nível e depois posição.
+    var TEXT_NUM = {};
+    TEXTS.map(function (x, idx) { return { idx: idx, nivel: x.nivel }; })
+      .sort(function (a, b) { return LEVELS.indexOf(a.nivel) - LEVELS.indexOf(b.nivel) || a.idx - b.idx; })
+      .forEach(function (x, i) { TEXT_NUM[x.idx] = i + 1; });
+    var textAll = TEXTS.map(function (x, idx) { return Object.assign({ idx: idx, num: TEXT_NUM[idx] }, x); })
       .filter(function (x) { return s.level === 'all' || x.nivel === s.level; })
       .filter(function (x) { return s.tema === 'all' || x.tema === s.tema; })
-      .filter(function (x) { return !tq || norm(x.title).indexOf(tq) >= 0 || x.sentences.some(function (p) { return norm(p[0]).indexOf(tq) >= 0 || norm(p[1]).indexOf(tq) >= 0; }); })
+      .filter(function (x) { return !tq || String(x.num) === tq || norm(x.title).indexOf(tq) >= 0 || x.sentences.some(function (p) { return norm(p[0]).indexOf(tq) >= 0 || norm(p[1]).indexOf(tq) >= 0; }); })
       .sort(function (a, b) { return LEVELS.indexOf(a.nivel) - LEVELS.indexOf(b.nivel) || a.idx - b.idx; });
     var textList = textAll.slice(0, s.textLimit);
 
@@ -4264,7 +4273,7 @@ class Component extends DCLogic {
         var answered = x.questions.filter(function (q, qi) { return s.answers.hasOwnProperty(x.idx + '-' + qi); }).length;
         var status = done ? 'Concluído' : answered > 0 ? 'Em andamento' : 'Novo';
         return {
-          title: x.title, nivel: x.nivel, tema: GROUP_SHORT[x.tema] || '',
+          title: x.title, num: x.num, nivel: x.nivel, tema: GROUP_SHORT[x.tema] || '',
           preview: x.sentences[0][0],
           meta: x.sentences.length + ' frases · ' + x.words.length + ' palavras-chave · ' + x.questions.length + ' perguntas',
           status: status,
@@ -4324,7 +4333,7 @@ class Component extends DCLogic {
       markReview: function () { self.mark(false); },
 
       // Leitura
-      text: { title: t.title, nivel: t.nivel },
+      text: { title: t.title, nivel: t.nivel, num: TEXT_NUM[s.textIdx] || '' },
       speakText: function () { if (window.FAF && window.FAF.read) window.FAF.read({ title: t.title, sub: 'Texto · ' + t.nivel, lang: s.lang, items: t.sentences.map(function (p) { return { es: p[0], pt: p[1] }; }) }); else speak(t.sentences.map(function (p) { return p[0]; }).join(' ')); },
       toggleAllLabel: allOpen ? 'Ocultar traduções' : 'Traduzir tudo',
       toggleAll: function () {
