@@ -596,6 +596,79 @@ html{text-rendering:optimizeLegibility}
 /* rolagem sem barra pesada */
 @media (prefers-color-scheme:dark){#app button[style*="background: var(--brand-deep)"]{background:var(--brand)!important;border-color:var(--brand)!important}}
 #scroller{scrollbar-width:none}#scroller::-webkit-scrollbar{display:none}
+
+/* ===== movimento: suave e elegante ===== */
+:root{--ease-out:cubic-bezier(.16,1,.3,1);--ease-io:cubic-bezier(.65,0,.35,1);--t-fast:.18s;--t:.32s;--t-slow:.55s}
+html,body,#app>div{transition:background-color .45s var(--ease-io),color .45s var(--ease-io)}
+@keyframes faf-rise{from{opacity:0;transform:translate3d(0,10px,0)}to{opacity:1;transform:none}}
+@keyframes faf-fade{from{opacity:0}to{opacity:1}}
+@keyframes faf-pop{0%{opacity:0;transform:scale(.94)}100%{opacity:1;transform:none}}
+@keyframes faf-sheet-up{from{transform:translate3d(0,24px,0);opacity:0}to{transform:none;opacity:1}}
+@keyframes faf-slide-up{from{transform:translate3d(0,100%,0)}to{transform:none}}
+@keyframes faf-chip-in{from{opacity:0;transform:scale(.86)}to{opacity:1;transform:none}}
+@keyframes faf-shake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(2px)}30%,50%,70%{transform:translateX(-4px)}40%,60%{transform:translateX(4px)}}
+@keyframes faf-glow-ok{0%{box-shadow:0 0 0 0 rgba(20,145,93,.35)}100%{box-shadow:0 0 0 10px rgba(20,145,93,0)}}
+
+/* cores, contornos e larguras mudam com transição (a tela reaproveita os elementos) */
+#app *,.fm-panel *,#faf-course *,.cc-lesson *{transition-property:background-color,border-color,color,fill,stroke,box-shadow,opacity,transform,width;transition-duration:var(--t);transition-timing-function:var(--ease-out)}
+#app [style*="border-radius: 999px"]>[style*="width:"],#app [style*="border-radius: 999px; overflow: hidden"]>div,.cc-bar i{transition:width .7s var(--ease-out)!important}
+#app button:active:not(:disabled),.fm-item:active,.cc-tool:active,.cc-btn:active:not(:disabled),.cc-opt:active:not(:disabled),.cc-chip:active,.cc-unit:active{transform:scale(.975);transition-duration:var(--t-fast)}
+
+/* entrada de cada tela: sobe e aparece, em cascata */
+body.faf-enter #scroller>div>*{animation:faf-rise var(--t-slow) var(--ease-out) both}
+body.faf-enter #scroller>div>*:nth-child(2){animation-delay:.04s}
+body.faf-enter #scroller>div>*:nth-child(3){animation-delay:.08s}
+body.faf-enter #scroller>div>*:nth-child(4){animation-delay:.12s}
+body.faf-enter #scroller>div>*:nth-child(5){animation-delay:.16s}
+body.faf-enter #scroller>div>*:nth-child(6){animation-delay:.2s}
+body.faf-enter #scroller>div>*:nth-child(7){animation-delay:.24s}
+body.faf-enter #scroller>div>*:nth-child(n+8){animation-delay:.28s}
+body.faf-enter #scroller [style*="display: grid"]>*{animation:faf-rise var(--t-slow) var(--ease-out) both}
+body.faf-enter #scroller [style*="display: grid"]>*:nth-child(2n){animation-delay:.05s}
+body.faf-enter #scroller [style*="display: grid"]>*:nth-child(3n){animation-delay:.09s}
+body.faf-enter-first #scroller>div>*{animation-duration:.8s}
+
+/* barra inferior: ícone ativo com leve impulso */
+#app nav button svg{transition:background-color var(--t) var(--ease-out),transform var(--t) var(--ease-out),stroke-width var(--t)}
+#app nav button[style*="color: var(--accent-t)"] svg{transform:translateY(-1px)}
+#app nav button:active svg{transform:scale(.9)}
+
+/* menu, janelas e player */
+.fm-panel{animation:fm-in .42s var(--ease-out)!important}
+.fm-backdrop{animation:faf-fade .3s var(--ease-io)!important}
+.fm-panel .fm-item{animation:faf-rise .45s var(--ease-out) both}
+.fm-panel .fm-item:nth-of-type(2){animation-delay:.03s}.fm-panel .fm-item:nth-of-type(3){animation-delay:.06s}.fm-panel .fm-item:nth-of-type(4){animation-delay:.09s}.fm-panel .fm-item:nth-of-type(5){animation-delay:.12s}.fm-panel .fm-item:nth-of-type(n+6){animation-delay:.15s}
+.fm-dialog,.cc-modal-box{animation:faf-pop .38s var(--ease-out) both}
+.cc-modal{animation:faf-fade .25s var(--ease-io) both}
+#faf-sheet:not([hidden]){animation:faf-fade .28s var(--ease-io) both}
+#faf-sheet:not([hidden]) .faf-panel{animation:faf-sheet-up .45s var(--ease-out) both}
+#faf-dock:not([hidden]) .faf-dock-card{animation:faf-sheet-up .45s var(--ease-out) both}
+.faf-line{transition:color .35s var(--ease-out),transform .35s var(--ease-out)}
+.faf-line.is-now .faf-line-text{transition:font-size .3s var(--ease-out)}
+.cc-toast{transition:transform .5s var(--ease-out)!important}
+
+/* curso: mapa aparece em cascata; lições abrem com suavidade */
+#faf-course:not([hidden]){animation:faf-fade .35s var(--ease-io) both}
+#faf-course .cc-head,#faf-course .cc-lia-card,#faf-course .cc-level,#faf-course .cc-unit{animation:faf-rise .6s var(--ease-out) both}
+#faf-course .cc-lia-card{animation-delay:.06s}
+#faf-course .cc-level{animation-delay:.1s}
+#faf-course .cc-unit{animation-delay:.14s}
+.cc-lesson{animation:faf-sheet-up .45s var(--ease-out) both}
+.cc-l-main>*{animation:faf-rise .5s var(--ease-out) both}
+.cc-l-main>*:nth-child(2){animation-delay:.05s}.cc-l-main>*:nth-child(3){animation-delay:.1s}.cc-l-main>*:nth-child(4){animation-delay:.15s}.cc-l-main>*:nth-child(n+5){animation-delay:.2s}
+.cc-opts>*,.cc-options>*{animation:faf-rise .45s var(--ease-out) both}
+.cc-opts>*:nth-child(2),.cc-options>*:nth-child(2){animation-delay:.04s}.cc-opts>*:nth-child(3),.cc-options>*:nth-child(3){animation-delay:.08s}.cc-opts>*:nth-child(4),.cc-options>*:nth-child(4){animation-delay:.12s}
+.cc-chip{animation:faf-chip-in .3s var(--ease-out) both}
+.cc-l-foot.is-ok,.cc-l-foot.is-bad{animation:faf-sheet-up .4s var(--ease-out) both}
+.cc-l-foot.is-bad .cc-fb{animation:faf-shake .45s var(--ease-io) both}
+.cc-opt.is-ok,.cc-opt.is-right{animation:faf-glow-ok .7s var(--ease-out)}
+.cc-result>*{animation:faf-pop .6s var(--ease-out) both}
+.cc-result>*:nth-child(2){animation-delay:.08s}.cc-result>*:nth-child(3){animation-delay:.16s}.cc-result>*:nth-child(4){animation-delay:.24s}.cc-result>*:nth-child(n+5){animation-delay:.32s}
+.cc-msg{animation:faf-rise .4s var(--ease-out) both}
+
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}
+}
 </style>
 </head>
 <body>
@@ -1497,6 +1570,41 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   }
   var EVENTS = { onclick: 'click', onchange: 'input', oninput: 'input', onsubmit: 'submit', onkeydown: 'keydown' };
 
+  // eventos guardados no próprio elemento: assim o mesmo nó pode ser reaproveitado entre renderizações
+  function dispatch(e) { var f = this.__fafOn && this.__fafOn[e.type]; if (f) f(e); }
+  function on(el, type, fn) {
+    el.__fafOn = el.__fafOn || {}; el.__fafTypes = el.__fafTypes || {};
+    el.__fafOn[type] = fn;
+    if (!el.__fafTypes[type]) { el.__fafTypes[type] = true; el.addEventListener(type, dispatch); }
+  }
+
+  // atualiza a tela reaproveitando os nós: cores, larguras e estados mudam com transição suave
+  function sameKind(a, b) { return a.nodeType === b.nodeType && (a.nodeType !== 1 || a.localName === b.localName); }
+  function morphNode(o, n) {
+    if (o.nodeType === 3 || o.nodeType === 8) { if (o.nodeValue !== n.nodeValue) o.nodeValue = n.nodeValue; return; }
+    var oa = o.attributes, na = n.attributes, i;
+    for (i = oa.length - 1; i >= 0; i--) { var an = oa[i].name; if (!n.hasAttribute(an)) o.removeAttribute(an); }
+    for (i = 0; i < na.length; i++) { if (o.getAttribute(na[i].name) !== na[i].value) o.setAttribute(na[i].name, na[i].value); }
+    o.__fafOn = n.__fafOn || null;
+    if (n.__fafTypes) for (var t in n.__fafTypes) { o.__fafTypes = o.__fafTypes || {}; if (!o.__fafTypes[t]) { o.__fafTypes[t] = true; o.addEventListener(t, dispatch); } }
+    var tag = o.localName;
+    if (tag === 'input' || tag === 'textarea' || tag === 'select') {
+      if (o.value !== n.value) o.value = n.value;
+      if (o.checked !== n.checked) o.checked = n.checked;
+    }
+    morphChildren(o, n);
+  }
+  function morphChildren(op, np) {
+    var o = op.firstChild, n = np.firstChild;
+    while (n) {
+      var next = n.nextSibling;
+      if (o && sameKind(o, n)) { morphNode(o, n); o = o.nextSibling; }
+      else op.insertBefore(n, o);
+      n = next;
+    }
+    while (o) { var rm = o; o = o.nextSibling; op.removeChild(rm); }
+  }
+
   function build(src, scope, out) {
     for (var n = src.firstChild; n; n = n.nextSibling) {
       if (n.nodeType === 3) {
@@ -1529,7 +1637,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
         if (EVENTS[lname]) {
           el.removeAttribute(name);
           var fn = get(scope, whole(val) || '');
-          if (typeof fn === 'function') el.addEventListener(EVENTS[lname], (function (f) { return function (e) { f(e); }; })(fn));
+          if (typeof fn === 'function') on(el, EVENTS[lname], fn);
           continue;
         }
         if (lname === 'value' && (tag === 'input' || tag === 'textarea')) {
@@ -1556,9 +1664,10 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     try { if (focusId && ae.selectionStart != null) { selS = ae.selectionStart; selE = ae.selectionEnd; } } catch (e) {}
     var frag = document.createDocumentFragment();
     build(tpl.content, vals, frag);
-    mount.replaceChildren(frag);
     var s = inst.state;
-    var key = s.tab + '|' + s.reading + '|' + s.textIdx + '|' + s.pmode;
+    var key = s.tab + '|' + s.reading + '|' + s.textIdx + '|' + s.pmode + '|' + s.fview;
+    if (mount.firstChild) morphChildren(mount, frag); else mount.replaceChildren(frag);
+    if (key !== lastKey) enter(lastKey === null);
     scroller = document.getElementById('scroller');
     if (scroller) scroller.scrollTop = key === lastKey ? top : 0;
     lastKey = key;
@@ -1568,6 +1677,17 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     }
     if (inst.componentDidUpdate) inst.componentDidUpdate();
     document.dispatchEvent(new CustomEvent('faf:render'));
+  }
+
+  // entrada suave de cada tela nova (troca de aba, abrir texto, trocar de modo)
+  var enterTimer = null;
+  function enter(first) {
+    var b = document.body;
+    b.classList.remove('faf-enter', 'faf-enter-first');
+    void b.offsetWidth;
+    b.classList.add('faf-enter'); if (first) b.classList.add('faf-enter-first');
+    clearTimeout(enterTimer);
+    enterTimer = setTimeout(function () { b.classList.remove('faf-enter', 'faf-enter-first'); }, 900);
   }
 
   window.DCLogic = function DCLogic(props) { this.props = props || {}; this.state = {}; };
