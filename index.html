@@ -17,7 +17,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#F4F6FC;--deck:#FFFFFF;--deck2:#ECEFFB;--off:#DDE2F0;--line:#E1E6F3;--line2:#C9D2EA;--text:#141A33;--text2:#3E4770;--muted:#5D6788;--faint:#8A93B2;--red:#5B3DF5;--saffron:#5B3DF5;--cyan:#2F6FE0;--tr-size:18px;
 --accent-t:#5B3DF5;--accent-t2:#3B2DB8;--blue-t:#2547B8;--green-t:#0E6B45;--red-t:#B4234A;--yellow-t:#B26B00;
@@ -556,6 +556,46 @@ body.cc-locked #faf-sheet{z-index:96}
 @keyframes fm-fade{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion:reduce){.fm-panel,.fm-backdrop{animation:none}}
 
+
+/* ===== acabamento fino (vale para claro e escuro) ===== */
+:root{--hair:rgba(20,26,51,.07);--hair2:rgba(20,26,51,.12);--lift:0 1px 2px rgba(20,26,51,.04),0 8px 24px -12px rgba(20,26,51,.10);--ease:cubic-bezier(.2,.8,.2,1)}
+@media (prefers-color-scheme:dark){:root{--hair:rgba(255,255,255,.06);--hair2:rgba(255,255,255,.10);--lift:none}}
+html{text-rendering:optimizeLegibility}
+#app,#app button,#app input,#app textarea,#app select{font-family:Inter,Manrope,system-ui,sans-serif;font-feature-settings:"cv11","ss01","ss03"}
+#app{letter-spacing:-.006em}
+/* títulos: mais finos e justos */
+#app h1{font-family:Inter,Manrope,system-ui,sans-serif!important;font-weight:700!important;letter-spacing:-.035em!important;font-size:30px!important;line-height:1.1!important}
+#app h2{letter-spacing:-.015em}
+#app [style*="font-weight: 800"]{font-weight:700!important}
+#app p[style*="font-size: 26px"],#app span[style*="font-size: 26px"]{letter-spacing:-.025em;font-variant-numeric:tabular-nums}
+/* cartões: borda de um fio e sombra quase invisível */
+#app [style*="background: var(--deck)"][style*="border: 1px solid var(--line)"]{border-color:var(--hair)!important;box-shadow:var(--lift)}
+#app [style*="background: var(--deck)"][style*="border-radius: 20px"],#app [style*="background: var(--deck)"][style*="border-radius: 18px"]{border-radius:18px!important}
+/* botões secundários e chips: contorno mais leve */
+#app button[style*="border: 1px solid var(--line2)"]{border-color:var(--hair2)!important;box-shadow:none}
+#app [style*="border: 1px solid var(--line2)"]:not(button){border-color:var(--hair2)!important}
+#app input,#app textarea{border-color:var(--hair2)!important;transition:border-color .2s var(--ease),box-shadow .2s var(--ease)}
+#app input:focus,#app textarea:focus{outline:none;border-color:var(--accent-t)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent-t) 18%,transparent)}
+/* blocos de destaque: sombra suave e brilho discreto */
+#app button[style*="var(--brand-grad)"]{box-shadow:0 10px 30px -12px rgba(91,61,245,.55)!important}
+#app [style*="background: var(--brand-deep)"]{background-image:radial-gradient(120% 90% at 100% 0%,rgba(255,255,255,.10),rgba(255,255,255,0) 55%)!important}
+/* barras de progresso mais finas */
+#app [style*="height: 10px; background: var(--deck2)"],#app [style*="height: 8px; background: var(--deck2)"]{height:6px!important}
+/* ícones com traço mais fino */
+#app svg[stroke-width="2"],#faf-menu-btn svg,.fm-panel svg{stroke-width:1.75}
+/* toque: resposta suave */
+#app button,.fm-item,.cc-btn,.cc-opt,.cc-tool{transition:transform .14s var(--ease),background-color .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease),opacity .2s}
+#app button:active:not(:disabled),.fm-item:active,.cc-tool:active{transform:scale(.975)}
+/* barra inferior: vidro, fio fino e indicador só no ícone ativo */
+#app nav{background:var(--glass)!important;backdrop-filter:saturate(1.4) blur(16px)!important;-webkit-backdrop-filter:saturate(1.4) blur(16px)!important;border-top:1px solid var(--hair)!important;padding-top:6px!important}
+#app nav button{min-height:52px!important;font-size:11px!important;font-weight:600!important;gap:3px!important;letter-spacing:0}
+#app nav button svg{width:22px;height:22px;padding:4px 18px;border-radius:999px;box-sizing:content-box;transition:background-color .25s var(--ease)}
+#app nav button[style*="color: var(--accent-t)"] svg{background:var(--tint-purple);stroke-width:2}
+/* botão do menu e painel */
+#faf-menu-btn{border-color:var(--hair)!important;box-shadow:var(--lift)!important}
+/* rolagem sem barra pesada */
+@media (prefers-color-scheme:dark){#app button[style*="background: var(--brand-deep)"]{background:var(--brand)!important;border-color:var(--brand)!important}}
+#scroller{scrollbar-width:none}#scroller::-webkit-scrollbar{display:none}
 </style>
 </head>
 <body>
@@ -3699,7 +3739,7 @@ function segStyle(active) {
 
 function navStyle(active) {
   return 'display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 56px; border: none; border-radius: 12px; font-size: 12px; font-weight: 600; ' +
-    (active ? 'background: var(--tint-purple); color: var(--accent-t)' : 'background: transparent; color: var(--muted)');
+    (active ? 'background: transparent; color: var(--accent-t)' : 'background: transparent; color: var(--muted)');
 }
 
 function optStyle(answered, idx, correct, picked) {
