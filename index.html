@@ -669,6 +669,8 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 @media (prefers-reduced-motion:reduce){
 *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}
 }
+#faf-exit-hint{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom));z-index:200;transform:translate(-50%,12px);opacity:0;pointer-events:none;background:var(--solid);color:#fff;font:600 14px/1.3 Inter,Manrope,system-ui,sans-serif;padding:11px 18px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,.25);transition:opacity .3s cubic-bezier(.16,1,.3,1),transform .3s cubic-bezier(.16,1,.3,1);white-space:nowrap}
+#faf-exit-hint.is-on{opacity:1;transform:translate(-50%,0)}
 </style>
 </head>
 <body>
@@ -1504,14 +1506,13 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
 
   function snap(st) { return { tab: st.tab, reading: st.tab === 'textos' ? !!st.reading : false, fview: st.fview }; }
   function key(x) { return x.tab + '|' + (x.tab === 'textos' ? x.reading : '') + '|' + (x.tab === 'frases' ? x.fview : ''); }
+  // Pedido do Pedro (14/11/2026): fora das camadas, voltar leva para a tela de Início.
+  // Um texto aberto na Leitura volta primeiro para a lista.
   function appBack() {
     var app = window.__fafApp; if (!app) return false;
-    var cur = key(snap(app.state));
-    while (tabHist.length) {
-      var prev = tabHist.pop();
-      if (key(prev) !== cur) { goingBack = true; app.setState(prev); return true; }
-    }
-    if (app.state.tab !== 'inicio') { goingBack = true; app.setState({ tab: 'inicio', reading: false }); return true; }
+    var s = app.state;
+    if (s.tab === 'textos' && s.reading) { goingBack = true; app.setState({ reading: false }); return true; }
+    if (s.tab !== 'inicio') { goingBack = true; tabHist = []; app.setState({ tab: 'inicio', reading: false }); return true; }
     return false;
   }
 
@@ -1531,16 +1532,45 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     lastTab = now;
   });
 
+  // Entradas de histórico de reserva. O Chrome pula, no botão voltar, entradas criadas sem toque do
+  // usuário, e aí o app fechava direto. Por isso as reservas são repostas durante um toque (até GUARDS).
+  var GUARDS = 3, exitArmed = false, exitTimer = null;
+  function depth() { var st = history.state; return st && st.faf ? (st.d || 0) : 0; }
+  function topUp() {
+    try { for (var d = depth(); d < GUARDS; d++) history.pushState({ faf: 1, d: d + 1 }, ''); } catch (e) {}
+  }
   try {
-    history.replaceState({ faf: 'root' }, '');
-    history.pushState({ faf: 'top' }, '');
+    history.replaceState({ faf: 1, d: 0 }, '');
+    history.pushState({ faf: 1, d: 1 }, ''); // reserva inicial (antes do primeiro toque)
   } catch (e) {}
+  ['click', 'pointerup', 'keydown', 'touchend'].forEach(function (t) {
+    window.addEventListener(t, function () { if (depth() < GUARDS) topUp(); }, { capture: true, passive: true });
+  });
+
+  function exitHint() {
+    var t = document.getElementById('faf-exit-hint');
+    if (!t) { t = document.createElement('div'); t.id = 'faf-exit-hint'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+    t.textContent = 'Toque em voltar de novo para sair';
+    t.classList.remove('is-on'); void t.offsetWidth; t.classList.add('is-on');
+    clearTimeout(exitTimer);
+    exitTimer = setTimeout(function () { exitArmed = false; t.classList.remove('is-on'); }, 2200);
+  }
+
   window.addEventListener('popstate', function () {
+    var d = depth();
     if (handleBack()) {
-      try { history.pushState({ faf: 'top' }, ''); } catch (e) {}
-    } else {
-      history.back(); // nada para voltar: sai do app
+      exitArmed = false;
+      if (d === 0) { try { history.pushState({ faf: 1, d: 1 }, ''); } catch (e) {} }
+      return;
     }
+    // Já no Início e sem nada aberto: o primeiro voltar só avisa; o segundo (em até 2s) sai.
+    if (!exitArmed) {
+      exitArmed = true;
+      exitHint();
+      if (d === 0) { try { history.pushState({ faf: 1, d: 1 }, ''); } catch (e) {} }
+      return;
+    }
+    history.go(-(d + 1)); // sai do app
   });
   window.FAF_BACK = handleBack;
 })();
