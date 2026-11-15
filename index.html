@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Frase a Frase</title>
 <meta name="description" content="Aprenda espanhol frase a frase: cartões, leitura guiada, prática e podcasts reais.">
-<meta name="theme-color" content="#F4F6FC">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4F6FC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151A2C" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -17,22 +19,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#F4F6FC;--deck:#FFFFFF;--deck2:#ECEFFB;--line:#E1E6F3;--line2:#C9D2EA;--text:#141A33;--muted:#5D6788;--red:#5B3DF5;--saffron:#5B3DF5;--cyan:#2F6FE0;--tr-size:18px}
-html,body{margin:0;background:var(--ink);height:100%;color-scheme:light}
+:root{--ink:#F4F6FC;--deck:#FFFFFF;--deck2:#ECEFFB;--off:#DDE2F0;--line:#E1E6F3;--line2:#C9D2EA;--text:#141A33;--text2:#3E4770;--muted:#5D6788;--faint:#8A93B2;--red:#5B3DF5;--saffron:#5B3DF5;--cyan:#2F6FE0;--tr-size:18px;
+--accent-t:#5B3DF5;--accent-t2:#3B2DB8;--blue-t:#2547B8;--green-t:#0E6B45;--red-t:#B4234A;--yellow-t:#B26B00;
+--tint-purple:#EDE9FF;--tint-blue:#E6EEFF;--tint-green:#E3F6EC;--tint-green2:#D2F5E3;--tint-red:#FDECF0;--tint-red2:#FBDDE5;--tint-yellow:#FFF4D6;
+--line-red:#F3C6D2;--line-green:#BFE8D3;--line-purple:#CFC4FF;--glass:rgba(255,255,255,.94);--glass-ink:rgba(244,246,252,.94);--solid:#141A33;--star-off:#DDE2F0;color-scheme:light dark}
+*{--cs:var(--csoft,#EDE9FF)}
+/* modo escuro: segue o tema do celular; azul-marinho suave (não preto) */
+@media (prefers-color-scheme:dark){
+:root{--ink:#151A2C;--deck:#1E2540;--deck2:#28304F;--off:#323B5E;--line:#2C3454;--line2:#3F4870;--text:#ECEEF8;--text2:#C9CEE6;--muted:#A3AACA;--faint:#7C85A8;--red:#6E55FF;--saffron:#8F7BFF;--cyan:#6E9BFF;
+--accent-t:#A595FF;--accent-t2:#C3B8FF;--blue-t:#8DB0FF;--green-t:#6FDDAE;--red-t:#FF8EAA;--yellow-t:#FFCB6B;
+--tint-purple:#2E2A5E;--tint-blue:#22335F;--tint-green:#173F35;--tint-green2:#1A4A3D;--tint-red:#45233A;--tint-red2:#502840;--tint-yellow:#3E3320;
+--line-red:#6B3350;--line-green:#2C6B55;--line-purple:#5245A8;--glass:rgba(30,37,64,.94);--glass-ink:rgba(21,26,44,.94);--solid:#2E3760;--star-off:#3F4870}
+*{--cs:color-mix(in srgb,var(--ca,#5B3DF5) 24%,#1E2540)}
+::selection{background:rgba(143,123,255,.35)}
+.faf-dock-card,#faf-follow,.cc-modal-box,.fm-dialog{box-shadow:0 18px 40px rgba(0,0,0,.45)!important}
+.cc-kicker,.cc-link{color:color-mix(in srgb,var(--ca,#5B3DF5) 55%,#fff)!important}
+}
+html,body{margin:0;background:var(--ink);height:100%}
 body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;font-family:Manrope,system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
-a{color:#5B3DF5}a:hover{color:#3B2DB8}
+a{color:var(--accent-t)}a:hover{color:var(--accent-t2)}
 button{font-family:inherit;cursor:pointer}
 button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
 ::selection{background:rgba(91,61,245,.22)}
 #app{height:100%}
-#app nav{background:rgba(255,255,255,.94)!important;border-top-color:#E1E6F3!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+#app nav{background:var(--glass)!important;border-top-color:var(--line)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 body.has-dock #scroller{padding-bottom:132px !important}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 /* mini player */
 #faf-dock{position:fixed;left:0;right:0;bottom:80px;z-index:20;display:flex;justify-content:center;pointer-events:none;padding:0 10px}
 #faf-dock[hidden]{display:none}
-.faf-dock-card{pointer-events:auto;width:100%;max-width:540px;box-sizing:border-box;background:#FFFFFF;border:1px solid var(--line2);color:var(--text);border-radius:16px;padding:10px 12px 8px;box-shadow:0 18px 40px rgba(20,26,51,.14);display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.faf-dock-card{pointer-events:auto;width:100%;max-width:540px;box-sizing:border-box;background:var(--deck);border:1px solid var(--line2);color:var(--text);border-radius:16px;padding:10px 12px 8px;box-shadow:0 18px 40px rgba(20,26,51,.14);display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
 .faf-dock-top{display:flex;align-items:center;gap:8px}
 #faf-dock-info{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:10px;background:none;border:none;color:inherit;text-align:left;padding:0}
 #faf-dock-art{width:40px;height:40px;border-radius:8px;object-fit:cover;flex:0 0 auto;background:var(--deck2)}
@@ -57,7 +74,7 @@ body.has-dock #scroller{padding-bottom:132px !important}
 #faf-sheet-body{overflow-y:auto;padding:4px 18px 22px;display:flex;flex-direction:column;gap:12px}
 .faf-video{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
 .faf-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.faf-tip{margin:0;padding:12px 14px;background:var(--deck);border:1px solid var(--line);border-radius:12px;font-size:14px;line-height:1.5;color:#3E4770}
+.faf-tip{margin:0;padding:12px 14px;background:var(--deck);border:1px solid var(--line);border-radius:12px;font-size:14px;line-height:1.5;color:var(--text2)}
 .faf-note{margin:0;font-size:13px;line-height:1.5;color:var(--muted)}
 .faf-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
 .faf-btn{min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none;padding:0 14px;box-sizing:border-box;text-align:center}
@@ -69,7 +86,7 @@ a.faf-btn-light{color:var(--text)}
 .faf-ep:first-child{border-top:1px solid var(--line)}
 .faf-ep-icon{flex:0 0 auto;width:36px;height:36px;border-radius:999px;border:1px solid var(--line2);color:var(--text);display:flex;align-items:center;justify-content:center}
 .faf-ep.is-playing .faf-ep-icon{background:var(--red);border-color:var(--red);color:#FFFFFF}
-.faf-ep.is-playing .faf-ep-title{color:#5B3DF5}
+.faf-ep.is-playing .faf-ep-title{color:var(--accent-t)}
 .faf-ep-text{min-width:0;display:flex;flex-direction:column;gap:3px}
 .faf-ep-title{font-size:15px;font-weight:700;line-height:1.35}
 .faf-ep-meta{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -79,7 +96,7 @@ body.tr-open #faf-dock{z-index:40;bottom:0 !important}
 body.tr-open .faf-panel{height:96vh;height:96dvh;max-height:none}
 body.tr-open .faf-head{display:none}
 body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
-.faf-tr-top{position:sticky;top:0;z-index:2;background:rgba(244,246,252,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 16px 10px;display:flex;flex-direction:column;gap:10px}
+.faf-tr-top{position:sticky;top:0;z-index:2;background:var(--glass-ink);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 16px 10px;display:flex;flex-direction:column;gap:10px}
 .faf-tr-bar{display:flex;align-items:center;gap:10px}
 .faf-round{flex:0 0 auto;width:38px;height:38px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text);display:flex;align-items:center;justify-content:center}
 .faf-tr-heading{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:1px}
@@ -87,7 +104,7 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 .faf-tr-title{margin:0;font-size:15px;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .faf-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .faf-tools::-webkit-scrollbar{display:none}
-.faf-chip{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 11px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:#3E4770;font-size:13px;font-weight:600;white-space:nowrap}
+.faf-chip{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 11px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text2);font-size:13px;font-weight:600;white-space:nowrap}
 .faf-chip .dot{width:8px;height:8px;border-radius:999px;background:currentColor;opacity:.5}
 .faf-chip[aria-pressed="true"]{background:var(--deck2);border-color:transparent;color:var(--text)}
 .faf-chip[aria-pressed="true"] .dot{opacity:1}
@@ -97,35 +114,35 @@ body.tr-open #faf-sheet-body{padding:0 0 150px;gap:0}
 .faf-sep{flex:0 0 auto;width:1px;height:20px;background:var(--line2);margin:0}
 .faf-size{flex:0 0 auto;min-width:34px;height:34px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text);font-weight:700;font-size:13px}
 .faf-tr{display:flex;flex-direction:column;padding:18px 16px 0}
-.faf-line{position:relative;display:grid;grid-template-columns:44px 1fr;gap:4px 10px;align-items:baseline;text-align:left;width:100%;border:none;background:transparent;color:#4A537A;padding:12px 10px 12px 0;border-radius:0;font-size:var(--tr-size);line-height:1.55;transition:color .25s}
-.faf-line-time{font-size:11px;color:#8A93B2;font-variant-numeric:tabular-nums;text-align:right;padding-top:.35em}
+.faf-line{position:relative;display:grid;grid-template-columns:44px 1fr;gap:4px 10px;align-items:baseline;text-align:left;width:100%;border:none;background:transparent;color:var(--text2);padding:12px 10px 12px 0;border-radius:0;font-size:var(--tr-size);line-height:1.55;transition:color .25s}
+.faf-line-time{font-size:11px;color:var(--faint);font-variant-numeric:tabular-nums;text-align:right;padding-top:.35em}
 .faf-line-body{display:flex;flex-direction:column;gap:4px;min-width:0}
 .faf-line-text{font-weight:500}
-.faf-line.is-past{color:#9AA2BF}
-.faf-line.is-now{color:#141A33}
+.faf-line.is-past{color:var(--faint)}
+.faf-line.is-now{color:var(--text)}
 .faf-line.is-now .faf-line-text{font-weight:700;font-size:1.12em;line-height:1.45}
 .faf-line.is-now .faf-line-time{color:var(--red)}
 .faf-line.is-now::before{content:"";position:absolute;left:52px;right:0;bottom:4px;height:2px;border-radius:2px;background:var(--line)}
 .faf-line.is-now::after{content:"";position:absolute;left:52px;bottom:4px;height:2px;border-radius:2px;background:var(--red);width:calc((100% - 52px) * var(--p,0));transition:width .25s linear}
 .faf-line:hover .faf-line-text{color:var(--red)}
 .faf-tl{display:none;font-size:.86em;line-height:1.5;font-weight:500}
-.faf-tl-pt{color:#5B3DF5}
-.faf-tl-en{color:#2F6FE0}
+.faf-tl-pt{color:var(--accent-t)}
+.faf-tl-en{color:var(--blue-t)}
 .faf-line.is-past .faf-tl{opacity:.6}
 .faf-tl.is-err{color:var(--muted);font-size:12px}
 .show-pt .faf-tl-pt,.show-en .faf-tl-en{display:block}
 .faf-tr.is-blur .faf-line-text{filter:blur(7px);transition:filter .2s}
 .faf-tr.is-blur .faf-line:focus .faf-line-text,.faf-tr.is-blur .faf-line:active .faf-line-text{filter:none}
 .faf-tr-foot{padding:18px 16px 0 70px}
-#faf-follow{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(122px + env(safe-area-inset-bottom));z-index:3;min-height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:#FFFFFF;color:var(--text);font-size:13px;font-weight:700;box-shadow:0 10px 24px rgba(20,26,51,.14)}
+#faf-follow{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(122px + env(safe-area-inset-bottom));z-index:3;min-height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:var(--deck);color:var(--text);font-size:13px;font-weight:700;box-shadow:0 10px 24px rgba(20,26,51,.14)}
 #faf-follow[hidden]{display:none}
-.faf-rd-ctl{flex:0 0 auto;z-index:3;display:flex;align-items:center;justify-content:center;gap:14px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.faf-rd-ctl{flex:0 0 auto;z-index:3;display:flex;align-items:center;justify-content:center;gap:14px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
 body.rd-open #faf-sheet-body{padding-bottom:24px}
 .faf-rd-play{width:60px;height:60px;border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;color:#fff;background:linear-gradient(135deg,#5B3DF5,#2F6FE0);box-shadow:0 6px 18px rgba(91,61,245,.35)}
 .faf-rd-play svg{width:26px;height:26px}
-.faf-rd-btn{width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:#fff;color:var(--text);display:flex;align-items:center;justify-content:center}
-.faf-rd-speed{min-width:56px;height:40px;border-radius:999px;border:1px solid var(--line2);background:#fff;color:var(--text);font-weight:700;font-size:14px}
-.faf-line-time.is-who{font-size:10.5px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:#5B3DF5;width:auto;min-width:56px;max-width:none;white-space:nowrap;overflow:visible}
+.faf-rd-btn{width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:var(--deck);color:var(--text);display:flex;align-items:center;justify-content:center}
+.faf-rd-speed{min-width:56px;height:40px;border-radius:999px;border:1px solid var(--line2);background:var(--deck);color:var(--text);font-weight:700;font-size:14px}
+.faf-line-time.is-who{font-size:10.5px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--accent-t);width:auto;min-width:56px;max-width:none;white-space:nowrap;overflow:visible}
 .faf-rd-pos{min-width:56px;font-size:13px;color:var(--muted);text-align:center}
 /* Curso Premium */
 #faf-course{position:fixed;z-index:40;overflow-y:auto;overscroll-behavior:contain;background:var(--ink);--ca:#5B3DF5;--cb:#2F6FE0;--csoft:#EDE9FF;padding:20px 20px 40px;box-sizing:border-box}
@@ -139,26 +156,26 @@ body.rd-open #faf-sheet-body{padding-bottom:24px}
 .cc-sub{margin:4px 0 0;color:var(--muted);font-size:14px}
 .cc-premium{flex:0 0 auto;font-size:12px;font-weight:800;letter-spacing:.04em;color:#fff;background:linear-gradient(135deg,var(--ca),var(--cb));padding:6px 12px;border-radius:999px}
 .cc-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.cc-stat{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px;min-width:0}
+.cc-stat{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--deck);border:1px solid var(--line);border-radius:14px;padding:10px 12px;min-width:0}
 .cc-stat strong{font-size:20px;font-weight:800;color:var(--text);line-height:1.1}
 .cc-stat-l{font-size:11.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-.cc-stat.is-flame .cc-ico{color:#B8BFD6}.cc-stat.is-flame.is-lit .cc-ico{color:#FF8A1F}
+.cc-stat.is-flame .cc-ico{color:var(--faint)}.cc-stat.is-flame.is-lit .cc-ico{color:#FF8A1F}
 .cc-stat.is-xp .cc-ico{color:#F2A900}.cc-stat.is-heart .cc-ico{color:#F0476D}
-.cc-level{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:7px}
+.cc-level{background:var(--deck);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:7px}
 .cc-level-top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
 .cc-level-top strong{color:var(--text);font-size:14px}
 .cc-bar{height:10px;border-radius:999px;background:var(--deck2);overflow:hidden}
 .cc-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--ca),var(--cb));transition:width .5s ease}
 .cc-bar.is-goal i{background:linear-gradient(90deg,#FFB020,#FF8A1F)}
 .cc-tools{display:flex;flex-wrap:wrap;gap:8px}
-.cc-tool{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line2);background:#fff;color:var(--text);font-size:13px;font-weight:600}
+.cc-tool{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line2);background:var(--deck);color:var(--text);font-size:13px;font-weight:600}
 .cc-tool b{color:var(--ca)}
 .cc-tool:hover,.cc-opt:hover:not(:disabled),.cc-chip:hover:not(:disabled){border-color:var(--ca)}
 .cc-levels{display:flex;flex-direction:column;gap:26px}
 .cc-lv{display:flex;flex-direction:column;gap:12px}
 .cc-lv-title{margin:0;display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text)}
-.cc-lv-code{font-family:Unbounded,Manrope,sans-serif;font-size:13px;font-weight:600;color:#fff;background:var(--text);border-radius:8px;padding:4px 8px}
-.cc-unit{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px}
+.cc-lv-code{font-family:Unbounded,Manrope,sans-serif;font-size:13px;font-weight:600;color:#fff;background:var(--solid);border-radius:8px;padding:4px 8px}
+.cc-unit{background:var(--deck);border:1px solid var(--line);border-radius:18px;padding:14px 16px}
 .cc-unit.is-locked{background:transparent;border-style:dashed;opacity:.8}
 .cc-unit.is-open{border-color:var(--ca);box-shadow:0 10px 30px rgba(20,26,51,.06)}
 .cc-unit.is-done{border-color:#33C08D}
@@ -167,21 +184,21 @@ body.rd-open #faf-sheet-body{padding-bottom:24px}
 .cc-unit h3{margin:2px 0 0;font-size:16px;color:var(--text)}
 .cc-unit p{margin:6px 0 0;font-size:13.5px;color:var(--muted);line-height:1.45}
 .cc-badge{flex:0 0 auto;display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;color:var(--muted);background:var(--deck2);border-radius:999px;padding:5px 10px}
-.cc-badge.is-done{color:#0E6B45;background:#E3F6EC}
+.cc-badge.is-done{color:var(--green-t);background:var(--tint-green)}
 .cc-path{list-style:none;margin:34px 0 6px;padding:0;display:flex;flex-direction:column;align-items:center;gap:40px}
 .cc-step{display:flex;flex-direction:column;align-items:center;gap:6px;transform:translateX(calc(var(--x) * 34px));position:relative}
 .cc-node{width:68px;height:68px;border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;color:#fff;background:linear-gradient(145deg,var(--ca),var(--cb));box-shadow:0 6px 0 rgba(20,26,51,.18);transition:transform .12s}
 .cc-node:active:not(:disabled){transform:translateY(4px);box-shadow:0 2px 0 rgba(20,26,51,.18)}
 .cc-node.is-done{background:linear-gradient(145deg,#33C08D,#14915D)}
-.cc-node.is-locked{background:#DDE2F0;color:#97A0BD;box-shadow:0 6px 0 #C9D2EA;cursor:not-allowed}
+.cc-node.is-locked{background:var(--off);color:var(--faint);box-shadow:0 6px 0 var(--line2);cursor:not-allowed}
 .cc-node.is-current{animation:cc-pulse 1.8s ease-in-out infinite}
 .cc-node.is-chest{background:linear-gradient(145deg,#FFC93C,#F29A1F)}
 .cc-node.is-chest.is-locked{background:#EFE6CF;color:#C7B98F;box-shadow:0 6px 0 #E3D6B5}
-.cc-node.is-chest.is-done{background:#E9EDF8;color:#9AA2BF;box-shadow:0 6px 0 #D6DCEC}
+.cc-node.is-chest.is-done{background:var(--deck2);color:var(--faint);box-shadow:0 6px 0 #D6DCEC}
 .cc-node.is-test{width:76px;height:76px}
 .cc-node.is-big{width:80px;height:80px}
 .cc-node-label{font-size:12.5px;font-weight:700;color:var(--text);text-align:center;max-width:140px}
-.cc-stars{display:flex;gap:1px;color:#DDE2F0}
+.cc-stars{display:flex;gap:1px;color:var(--star-off)}
 .cc-stars .is-on{color:#F2A900}
 .cc-start{position:absolute;top:-32px;white-space:nowrap;z-index:1;font-size:12px;font-weight:800;color:var(--ca);background:#fff;border:2px solid var(--ca);border-radius:10px;padding:3px 10px;animation:cc-bob 1.6s ease-in-out infinite}
 @keyframes cc-pulse{0%,100%{box-shadow:0 6px 0 rgba(20,26,51,.18),0 0 0 0 rgba(91,61,245,.35)}50%{box-shadow:0 6px 0 rgba(20,26,51,.18),0 0 0 12px rgba(91,61,245,0)}}
@@ -189,25 +206,25 @@ body.rd-open #faf-sheet-body{padding-bottom:24px}
 
 /* modais e avisos */
 .cc-modal{position:fixed;inset:0;z-index:90;background:rgba(20,26,51,.45);display:flex;align-items:center;justify-content:center;padding:20px}
-.cc-modal-box{position:relative;overflow:hidden;width:100%;max-width:380px;max-height:86vh;overflow-y:auto;background:#fff;border-radius:22px;padding:24px 20px;display:flex;flex-direction:column;gap:12px;text-align:center;color:var(--text);box-sizing:border-box}
+.cc-modal-box{position:relative;overflow:hidden;width:100%;max-width:380px;max-height:86vh;overflow-y:auto;background:var(--deck);border-radius:22px;padding:24px 20px;display:flex;flex-direction:column;gap:12px;text-align:center;color:var(--text);box-sizing:border-box}
 .cc-modal-box.is-wide{max-width:460px;text-align:left}
 .cc-modal-box h2{margin:0;font-size:20px}
 .cc-muted{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
 .cc-muted.is-center{text-align:center;width:100%}
 .cc-btn{min-height:50px;border:none;border-radius:14px;background:linear-gradient(135deg,var(--ca),var(--cb));color:#fff;font-size:16px;font-weight:800;padding:0 20px;box-shadow:0 4px 0 rgba(20,26,51,.2)}
 .cc-btn:active:not(:disabled){transform:translateY(2px);box-shadow:0 2px 0 rgba(20,26,51,.2)}
-.cc-btn:disabled{background:#DDE2F0;color:#8A93B2;box-shadow:none;cursor:not-allowed}
-.cc-btn.is-ghost{background:#fff;color:var(--text);border:1px solid var(--line2);box-shadow:none}
+.cc-btn:disabled{background:var(--off);color:var(--faint);box-shadow:none;cursor:not-allowed}
+.cc-btn.is-ghost{background:var(--deck);color:var(--text);border:1px solid var(--line2);box-shadow:none}
 .cc-btn.is-wide{width:100%}
 .cc-hidden{display:none}
 .cc-ach{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.cc-ach li{display:flex;gap:12px;align-items:center;padding:10px 12px;border-radius:12px;background:var(--deck2);color:#9AA2BF}
+.cc-ach li{display:flex;gap:12px;align-items:center;padding:10px 12px;border-radius:12px;background:var(--deck2);color:var(--faint)}
 .cc-ach li div{display:flex;flex-direction:column;gap:2px}
 .cc-ach li strong{color:var(--muted);font-size:14px}.cc-ach li span{font-size:12.5px}
-.cc-ach li.is-got{background:var(--csoft);color:var(--ca)}
+.cc-ach li.is-got{background:var(--cs);color:var(--ca)}
 .cc-ach li.is-got strong{color:var(--text)}.cc-ach li.is-got span{color:var(--muted)}
 .cc-themes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.cc-theme{display:flex;align-items:center;gap:8px;min-height:52px;padding:0 12px;border-radius:14px;border:2px solid var(--line);background:#fff;color:var(--text);font-weight:700;font-size:14px}
+.cc-theme{display:flex;align-items:center;gap:8px;min-height:52px;padding:0 12px;border-radius:14px;border:2px solid var(--line);background:var(--deck);color:var(--text);font-weight:700;font-size:14px}
 .cc-theme.is-on{border-color:var(--ca)}
 .cc-theme:disabled{opacity:.55;cursor:not-allowed}
 .cc-swatch{display:inline-block;width:22px;height:22px;border-radius:7px;flex:0 0 auto}
@@ -216,7 +233,7 @@ body.rd-open #faf-sheet-body{padding-bottom:24px}
 .cc-big-ico.is-heart{background:linear-gradient(145deg,#FF7A93,#F0476D)}
 .cc-big-ico.is-level{background:linear-gradient(145deg,#FFC93C,#F29A1F)}
 .cc-big-ico strong{font-family:Unbounded,Manrope,sans-serif;font-size:34px}
-.cc-toast{position:fixed;left:50%;top:14px;z-index:120;transform:translate(-50%,-140%);transition:transform .3s ease;display:flex;gap:12px;align-items:center;background:var(--text);color:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 14px 30px rgba(20,26,51,.25);max-width:calc(100vw - 32px)}
+.cc-toast{position:fixed;left:50%;top:14px;z-index:120;transform:translate(-50%,-140%);transition:transform .3s ease;display:flex;gap:12px;align-items:center;background:var(--solid);color:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 14px 30px rgba(20,26,51,.25);max-width:calc(100vw - 32px)}
 .cc-toast.is-in{transform:translate(-50%,0)}
 .cc-toast .cc-ico{color:#FFC93C}
 .cc-toast div{display:flex;flex-direction:column;font-size:13px}.cc-toast strong{font-size:14px}
@@ -233,12 +250,12 @@ body.rd-open #faf-sheet-body{padding-bottom:24px}
 
 /* lição */
 body.cc-locked{overflow:hidden}
-.cc-lesson{position:fixed;inset:0;z-index:80;background:#fff;display:flex;flex-direction:column;color:var(--text);overflow:hidden}
+.cc-lesson{position:fixed;inset:0;z-index:80;background:var(--deck);display:flex;flex-direction:column;color:var(--text);overflow:hidden}
 .cc-lesson.is-shake{animation:cc-nudge .35s ease}
 @keyframes cc-nudge{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .cc-l-top{display:flex;align-items:center;gap:12px;padding:14px 16px 6px;padding-top:max(14px,env(safe-area-inset-top));max-width:680px;width:100%;margin:0 auto;box-sizing:border-box}
 .cc-bar.is-lesson{flex:1 1 auto;height:14px}
-.cc-icon-btn{width:44px;height:44px;border:none;background:none;color:#8A93B2;display:flex;align-items:center;justify-content:center;border-radius:12px;flex:0 0 auto}
+.cc-icon-btn{width:44px;height:44px;border:none;background:none;color:var(--faint);display:flex;align-items:center;justify-content:center;border-radius:12px;flex:0 0 auto}
 .cc-l-hearts{display:flex;align-items:center;gap:4px;color:#F0476D;font-weight:800;font-size:17px;min-width:40px;justify-content:flex-end}
 .cc-l-score{color:var(--text);font-size:15px}
 .cc-combo{height:22px;text-align:center;font-size:13px;font-weight:800;color:#FF8A1F;opacity:0;transform:scale(.8);transition:all .2s}
@@ -247,13 +264,13 @@ body.cc-locked{overflow:hidden}
 .cc-kicker{margin:0;font-size:13px;font-weight:800;color:var(--ca);letter-spacing:.02em}
 .cc-kicker.is-retry{color:#E0663A}
 .cc-l-title{margin:0;font-size:24px;font-weight:800;text-align:inherit}
-.cc-tip{margin:0;font-size:15.5px;line-height:1.55;color:#3E4770;background:var(--csoft);border-radius:14px;padding:14px 16px}
+.cc-tip{margin:0;font-size:15.5px;line-height:1.55;color:var(--text2);background:var(--cs);border-radius:14px;padding:14px 16px}
 .cc-tip.is-center{text-align:center;background:none;padding:0}
 .cc-vocab{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .cc-vocab li{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:14px;padding:10px 12px}
 .cc-vocab li div{display:flex;flex-direction:column}
 .cc-vocab strong{font-size:17px;line-height:1.35}.cc-vocab span{font-size:13.5px;color:var(--muted)}
-.cc-say{width:44px;height:44px;flex:0 0 auto;border-radius:12px;border:none;background:var(--csoft);color:var(--ca);display:inline-flex;align-items:center;justify-content:center}
+.cc-say{width:44px;height:44px;flex:0 0 auto;border-radius:12px;border:none;background:var(--cs);color:var(--ca);display:inline-flex;align-items:center;justify-content:center}
 .cc-say.is-inline{width:40px;height:40px;margin-right:10px;vertical-align:middle}
 .cc-q{margin:0;font-size:22px;line-height:1.35;font-weight:700}
 .cc-blank{display:inline-block;min-width:80px;border-bottom:3px solid var(--ca);color:var(--ca);text-align:center;padding:0 6px;white-space:pre}
@@ -263,31 +280,31 @@ body.cc-locked{overflow:hidden}
 .cc-play.is-slow{width:64px;height:64px;align-self:flex-end;border-radius:18px}
 .cc-play.is-slow .cc-ico svg{width:28px;height:28px}
 .cc-opts{display:flex;flex-direction:column;gap:10px}
-.cc-opt{display:flex;align-items:center;gap:12px;min-height:56px;padding:10px 14px;border-radius:14px;border:2px solid var(--line);background:#fff;color:var(--text);font-size:16.5px;font-weight:600;text-align:left;box-shadow:0 3px 0 var(--line)}
+.cc-opt{display:flex;align-items:center;gap:12px;min-height:56px;padding:10px 14px;border-radius:14px;border:2px solid var(--line);background:var(--deck);color:var(--text);font-size:16.5px;font-weight:600;text-align:left;box-shadow:0 3px 0 var(--line)}
 .cc-opt-n{width:26px;height:26px;flex:0 0 auto;border-radius:8px;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted)}
-.cc-opt.is-sel{border-color:var(--ca);background:var(--csoft);box-shadow:0 3px 0 var(--ca)}
+.cc-opt.is-sel{border-color:var(--ca);background:var(--cs);box-shadow:0 3px 0 var(--ca)}
 .cc-opt.is-sel .cc-opt-n{border-color:var(--ca);color:var(--ca)}
 .cc-opt:disabled{cursor:default}
 .cc-match{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .cc-col{display:flex;flex-direction:column;gap:10px}
 .cc-opt.is-match{justify-content:center;text-align:center;min-height:58px}
-.cc-opt.is-ok{border-color:#33C08D;background:#E3F6EC;color:#0E6B45;box-shadow:none;opacity:.7}
-.cc-opt.is-bad{border-color:#F0476D;background:#FDECF0;color:#B4234A}
+.cc-opt.is-ok{border-color:#33C08D;background:var(--tint-green);color:var(--green-t);box-shadow:none;opacity:.7}
+.cc-opt.is-bad{border-color:#F0476D;background:var(--tint-red);color:var(--red-t)}
 .cc-build{min-height:62px;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;padding:10px 0;border-bottom:2px solid var(--line);border-top:2px solid var(--line)}
 .cc-bank{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding-top:6px}
-.cc-chip{min-height:46px;padding:0 14px;border-radius:12px;border:2px solid var(--line);background:#fff;color:var(--text);font-size:16px;font-weight:600;box-shadow:0 3px 0 var(--line)}
+.cc-chip{min-height:46px;padding:0 14px;border-radius:12px;border:2px solid var(--line);background:var(--deck);color:var(--text);font-size:16px;font-weight:600;box-shadow:0 3px 0 var(--line)}
 .cc-chip.is-used{color:transparent;background:var(--deck2);border-color:var(--deck2);box-shadow:none}
 .cc-l-foot{flex:0 0 auto;padding:14px 20px;padding-bottom:max(18px,env(safe-area-inset-bottom));border-top:1px solid var(--line);display:flex;flex-direction:column;gap:12px;max-width:680px;width:100%;margin:0 auto;box-sizing:border-box;transition:background .2s}
-.cc-l-foot.is-ok{background:#E3F6EC;border-color:#BFE8D3}
-.cc-l-foot.is-bad{background:#FDECF0;border-color:#F7C9D5}
+.cc-l-foot.is-ok{background:var(--tint-green);border-color:var(--line-green)}
+.cc-l-foot.is-bad{background:var(--tint-red);border-color:var(--line-red)}
 .cc-l-foot.is-ok .cc-btn{background:linear-gradient(135deg,#33C08D,#14915D)}
 .cc-l-foot.is-bad .cc-btn{background:linear-gradient(135deg,#FF6B8B,#E0365E)}
 .cc-fb{display:flex;flex-direction:column;gap:4px}
 .cc-fb strong{font-size:19px}
-.cc-l-foot.is-ok .cc-fb strong{color:#0E6B45}.cc-l-foot.is-bad .cc-fb strong{color:#B4234A}
+.cc-l-foot.is-ok .cc-fb strong{color:var(--green-t)}.cc-l-foot.is-bad .cc-fb strong{color:var(--red-t)}
 .cc-fb span{font-size:15px;color:var(--text)}
 .cc-result{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding-top:20px}
-.cc-res-stars{display:flex;gap:10px;color:#DDE2F0}
+.cc-res-stars{display:flex;gap:10px;color:var(--star-off)}
 .cc-res-stars .cc-ico svg{width:58px;height:58px}
 .cc-res-stars .is-on{color:#F2A900;animation:cc-pop .45s cubic-bezier(.2,1.6,.4,1) both}
 @keyframes cc-pop{0%{transform:scale(0) rotate(-40deg)}100%{transform:scale(1) rotate(0)}}
@@ -370,8 +387,8 @@ body.cc-locked{overflow:hidden}
 #faf-course .cc-start{background:#fff;color:#4B2FE0;border:none;box-shadow:0 0 0 3px #7CF3FF,0 0 22px rgba(124,243,255,.8);letter-spacing:.06em;text-transform:uppercase;font-size:11.5px}
 
 /* lição com acabamento de jogo */
-.cc-lesson{background:radial-gradient(90% 40% at 50% 0%,var(--csoft) 0%,#fff 70%)}
-.cc-bar.is-lesson{height:16px;background:#E9EDF8;box-shadow:inset 0 2px 3px rgba(20,26,51,.08)}
+.cc-lesson{background:radial-gradient(90% 40% at 50% 0%,var(--cs) 0%,var(--deck) 70%)}
+.cc-bar.is-lesson{height:16px;background:var(--deck2);box-shadow:inset 0 2px 3px rgba(20,26,51,.08)}
 .cc-bar.is-lesson i{background:linear-gradient(90deg,#3FE0A0,#7CF3FF,var(--ca));box-shadow:0 0 12px rgba(63,224,160,.6);position:relative;overflow:hidden}
 .cc-combo{display:flex;align-items:center;justify-content:center;gap:4px;height:26px}
 .cc-combo.is-on{color:#fff;background:linear-gradient(135deg,#FFB020,#FF5F3C);border-radius:999px;width:max-content;margin:0 auto;padding:0 12px;box-shadow:0 0 18px rgba(255,120,40,.6);letter-spacing:.05em;animation:cc-combo .35s cubic-bezier(.2,1.6,.4,1)}
@@ -381,8 +398,8 @@ body.cc-locked{overflow:hidden}
 .cc-opt:active:not(:disabled){transform:translateY(3px);box-shadow:0 0 0 var(--line)}
 .cc-opt.is-sel{box-shadow:0 3px 0 var(--ca),0 0 0 4px rgba(91,61,245,.12)}
 .cc-play{box-shadow:0 6px 0 rgba(20,26,51,.2),0 0 26px rgba(91,61,245,.45)}
-.cc-l-foot.is-ok{background:linear-gradient(180deg,#E3F6EC,#D2F5E3)}
-.cc-l-foot.is-bad{background:linear-gradient(180deg,#FDECF0,#FBDDE5)}
+.cc-l-foot.is-ok{background:linear-gradient(180deg,var(--tint-green),var(--tint-green2))}
+.cc-l-foot.is-bad{background:linear-gradient(180deg,var(--tint-red),var(--tint-red2))}
 .cc-l-foot.is-ok .cc-fb strong::before{content:"✓ ";}
 .cc-l-foot.is-bad .cc-fb strong::before{content:"✕ ";}
 .cc-result{position:relative}
@@ -416,8 +433,8 @@ body.cc-locked{overflow:hidden}
 .cc-lia-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .cc-lia-top strong{font-size:17px;color:#fff}
 .cc-lia-tag{font-size:10.5px;font-weight:800;letter-spacing:.1em;color:#1B1060;background:#7CF3FF;border-radius:999px;padding:3px 8px;box-shadow:0 0 12px rgba(124,243,255,.7)}
-.cc-chat{background:radial-gradient(120% 50% at 50% 0%,#EDE9FF 0%,#F4F6FC 60%)}
-.cc-chat-top{display:flex;align-items:center;gap:10px;padding:12px 16px;padding-top:max(12px,env(safe-area-inset-top));border-bottom:1px solid var(--line);background:rgba(255,255,255,.85);backdrop-filter:blur(10px)}
+.cc-chat{background:radial-gradient(120% 50% at 50% 0%,var(--tint-purple) 0%,var(--ink) 60%)}
+.cc-chat-top{display:flex;align-items:center;gap:10px;padding:12px 16px;padding-top:max(12px,env(safe-area-inset-top));border-bottom:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px)}
 .cc-chat-id{display:flex;flex-direction:column;line-height:1.2}
 .cc-chat-id strong{font-size:16px}
 .cc-chat-sub{font-size:12px;color:var(--muted)}
@@ -426,10 +443,10 @@ body.cc-locked{overflow:hidden}
 .cc-chat-hero h2{margin:6px 0 0;font-family:Unbounded,Manrope,sans-serif;font-weight:600;font-size:22px}
 .cc-chat-hero p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5;max-width:420px}
 .cc-chips{display:flex;gap:8px;flex-wrap:wrap}
-.cc-chat .cc-tool{min-width:56px;min-height:42px;border-radius:12px;background:#fff;border:2px solid var(--line);color:var(--text);font-weight:800}
-.cc-chat .cc-tool.is-on{border-color:var(--ca);background:var(--csoft);color:var(--ca)}
+.cc-chat .cc-tool{min-width:56px;min-height:42px;border-radius:12px;background:var(--deck);border:2px solid var(--line);color:var(--text);font-weight:800}
+.cc-chat .cc-tool.is-on{border-color:var(--ca);background:var(--cs);color:var(--ca)}
 .cc-scenes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.cc-scene{display:flex;flex-direction:column;gap:4px;text-align:left;padding:14px;border-radius:16px;border:2px solid var(--line);background:#fff;color:var(--text);box-shadow:0 3px 0 var(--line);min-height:84px}
+.cc-scene{display:flex;flex-direction:column;gap:4px;text-align:left;padding:14px;border-radius:16px;border:2px solid var(--line);background:var(--deck);color:var(--text);box-shadow:0 3px 0 var(--line);min-height:84px}
 .cc-scene strong{font-size:15px}.cc-scene span{font-size:12.5px;color:var(--muted);line-height:1.35}
 .cc-scene:hover{border-color:var(--ca)}
 .cc-chat-note{margin:6px 0 0;font-size:12px;color:var(--muted);line-height:1.45;text-align:center}
@@ -437,94 +454,94 @@ body.cc-locked{overflow:hidden}
 .cc-msg{max-width:84%;padding:12px 14px;border-radius:18px;font-size:16px;line-height:1.45;animation:cc-in .25s ease}
 @keyframes cc-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .cc-msg p{margin:0}
-.cc-msg.is-lia{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:6px;box-shadow:0 6px 18px rgba(20,26,51,.06)}
+.cc-msg.is-lia{align-self:flex-start;background:var(--deck);border:1px solid var(--line);border-bottom-left-radius:6px;box-shadow:0 6px 18px rgba(20,26,51,.06)}
 .cc-msg.is-me{align-self:flex-end;color:#fff;background:linear-gradient(135deg,var(--ca),var(--cb));border-bottom-right-radius:6px;box-shadow:0 6px 18px rgba(91,61,245,.25)}
 .cc-msg.is-me.is-good::after{content:"✓";display:inline-block;margin-left:8px;font-weight:800;color:#9CFFD5}
 .cc-msg-tr{margin-top:8px!important;padding-top:8px;border-top:1px dashed var(--line);color:var(--muted);font-size:14.5px}
 .cc-msg-tools{display:flex;gap:6px;margin-top:8px}
-.cc-msg-tools button{min-height:34px;min-width:34px;padding:0 10px;border-radius:10px;border:none;background:var(--csoft);color:var(--ca);font-weight:700;font-size:13px;display:inline-flex;align-items:center;justify-content:center}
+.cc-msg-tools button{min-height:34px;min-width:34px;padding:0 10px;border-radius:10px;border:none;background:var(--cs);color:var(--ca);font-weight:700;font-size:13px;display:inline-flex;align-items:center;justify-content:center}
 .cc-msg-tools .cc-ico svg{width:18px;height:18px}
-.cc-msg-note{margin-top:8px!important;font-size:13px;color:#8A5A00;background:#FFF4D6;border-radius:10px;padding:8px 10px}
-.cc-fix{margin-top:10px;padding:10px 12px;border-radius:12px;background:#FFF4D6;color:#5A3A00;display:flex;flex-direction:column;gap:2px;font-size:14px;line-height:1.4}
-.cc-fix strong{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#B26B00}
+.cc-msg-note{margin-top:8px!important;font-size:13px;color:var(--yellow-t);background:var(--tint-yellow);border-radius:10px;padding:8px 10px}
+.cc-fix{margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--tint-yellow);color:#5A3A00;display:flex;flex-direction:column;gap:2px;font-size:14px;line-height:1.4}
+.cc-fix strong{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow-t)}
 .cc-msg.is-typing{display:flex;gap:5px;padding:14px 16px}
 .cc-msg.is-typing i{width:8px;height:8px;border-radius:50%;background:var(--ca);opacity:.4;animation:cc-dot 1s infinite}
 .cc-msg.is-typing i:nth-child(2){animation-delay:.15s}.cc-msg.is-typing i:nth-child(3){animation-delay:.3s}
 @keyframes cc-dot{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}
-.cc-chat-foot{flex:0 0 auto;border-top:1px solid var(--line);background:rgba(255,255,255,.92);backdrop-filter:blur(10px);padding:10px 14px;padding-bottom:max(12px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:8px}
+.cc-chat-foot{flex:0 0 auto;border-top:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px);padding:10px 14px;padding-bottom:max(12px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:8px}
 .cc-chat-foot:empty{display:none}
 .cc-sugg{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;max-width:680px;width:100%;margin:0 auto}
 .cc-sugg:empty{display:none}
-.cc-sugg-chip{flex:0 0 auto;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid var(--ca);background:var(--csoft);color:var(--ca);font-weight:700;font-size:14px;white-space:nowrap}
+.cc-sugg-chip{flex:0 0 auto;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid var(--ca);background:var(--cs);color:var(--ca);font-weight:700;font-size:14px;white-space:nowrap}
 .cc-input-row{display:flex;align-items:flex-end;gap:8px;max-width:680px;width:100%;margin:0 auto}
-.cc-input{flex:1 1 auto;min-height:48px;max-height:120px;resize:none;box-sizing:border-box;padding:12px 14px;border-radius:16px;border:2px solid var(--line);font:inherit;font-size:16px;color:var(--text);background:#fff;outline:none}
+.cc-input{flex:1 1 auto;min-height:48px;max-height:120px;resize:none;box-sizing:border-box;padding:12px 14px;border-radius:16px;border:2px solid var(--line);font:inherit;font-size:16px;color:var(--text);background:var(--deck);outline:none}
 .cc-input:focus{border-color:var(--ca)}
 .cc-send,.cc-mic{flex:0 0 auto;width:48px;height:48px;border-radius:16px;border:none;display:flex;align-items:center;justify-content:center}
 .cc-send{color:#fff;background:linear-gradient(135deg,var(--ca),var(--cb));box-shadow:0 0 16px rgba(91,61,245,.35)}
-.cc-send:disabled{background:#DDE2F0;box-shadow:none;color:#8A93B2}
-.cc-mic{background:var(--csoft);color:var(--ca)}
+.cc-send:disabled{background:var(--off);box-shadow:none;color:var(--faint)}
+.cc-mic{background:var(--cs);color:var(--ca)}
 .cc-mic.is-rec{background:#FF5F7E;color:#fff;animation:cc-glow 1s ease-in-out infinite}
 
-.cc-voice-toggle{margin-left:auto;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--ca);background:var(--csoft);color:var(--ca);font-size:12.5px;font-weight:800;white-space:nowrap}
-.cc-voice-toggle[aria-pressed="false"]{border-color:var(--line2);background:#fff;color:var(--muted)}
+.cc-voice-toggle{margin-left:auto;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--ca);background:var(--cs);color:var(--ca);font-size:12.5px;font-weight:800;white-space:nowrap}
+.cc-voice-toggle[aria-pressed="false"]{border-color:var(--line2);background:var(--deck);color:var(--muted)}
 .cc-msg-tools button.is-loading{animation:cc-glow .8s ease-in-out infinite;opacity:.7}
 
 /* etapas premium */
 #faf-course .cc-node.is-premium:not(.is-locked):not(.is-done){background:radial-gradient(circle at 35% 30%,#FFF6C8 0%,#FFD24A 35%,#E08A00 100%);color:#4A2A00;box-shadow:0 7px 0 #9A5A00,0 0 0 4px rgba(255,226,122,.5),0 0 30px rgba(255,200,60,.85)}
 #faf-course .cc-node.is-premium.is-locked{box-shadow:0 7px 0 rgba(16,8,80,.35),inset 0 0 0 2px rgba(255,226,122,.55)}
 .cc-node-tag{font-size:9.5px;font-weight:800;letter-spacing:.14em;color:#3A2400;background:linear-gradient(135deg,#FFE27A,#FFB020);border-radius:999px;padding:2px 8px;box-shadow:0 0 10px rgba(255,200,60,.6)}
-.cc-kicker-premium{color:#B26B00}
+.cc-kicker-premium{color:var(--yellow-t)}
 .cc-premium-actions{display:flex;gap:10px;flex-wrap:wrap}
 .cc-premium-actions .cc-btn{min-height:46px;font-size:15px}
 .cc-vocab.is-dialog li{align-items:flex-start}
 .cc-dlg-who{font-size:12px!important;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ca)!important}
 body.cc-locked #faf-sheet{z-index:96}
 
-.cc-input{width:100%;box-sizing:border-box;min-height:84px;margin-top:14px;padding:14px;border:2px solid var(--line);border-radius:14px;font:inherit;font-size:18px;color:var(--text);background:#fff;resize:none}
+.cc-input{width:100%;box-sizing:border-box;min-height:84px;margin-top:14px;padding:14px;border:2px solid var(--line);border-radius:14px;font:inherit;font-size:18px;color:var(--text);background:var(--deck);resize:none}
 .cc-input:focus{outline:none;border-color:var(--ca,#5B3DF5)}
 .cc-keys{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-.cc-key{min-width:40px;min-height:40px;border-radius:10px;border:2px solid var(--line);background:#fff;color:var(--text);font-size:17px;font-weight:700}
+.cc-key{min-width:40px;min-height:40px;border-radius:10px;border:2px solid var(--line);background:var(--deck);color:var(--text);font-size:17px;font-weight:700}
 .cc-mic-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:22px}
 .cc-bigmic{width:84px;height:84px;border-radius:50%;border:none;color:#fff;background:linear-gradient(135deg,#5B3DF5,#2F6FE0);box-shadow:0 6px 0 #2A178F;display:flex;align-items:center;justify-content:center}
 .cc-bigmic.is-on{animation:cc-pulse 1s ease-in-out infinite;background:linear-gradient(135deg,#E0457B,#B4234A);box-shadow:0 6px 0 #74113A}
-.cc-heard{margin:0;text-align:center;font-size:15px;color:var(--muted,#5D6788);min-height:22px}
+.cc-heard{margin:0;text-align:center;font-size:15px;color:var(--muted);min-height:22px}
 .cc-note{display:block;margin-top:4px;font-size:14px}
-.cc-fill-pt{margin:8px 0 0;font-size:15px;line-height:1.4;color:var(--muted,#5D6788)}
+.cc-fill-pt{margin:8px 0 0;font-size:15px;line-height:1.4;color:var(--muted)}
 /* menu lateral */
-#faf-menu-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));left:max(14px,calc((100vw - 560px) / 2 + 14px));z-index:45;width:44px;height:44px;border-radius:14px;border:1px solid #E1E6F3;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#141A33;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,26,51,.10);cursor:pointer}
+#faf-menu-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));left:max(14px,calc((100vw - 560px) / 2 + 14px));z-index:45;width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--text);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,26,51,.10);cursor:pointer}
 #faf-menu-btn:focus-visible,.fm-item:focus-visible,.fm-close:focus-visible{outline:3px solid #5B3DF5;outline-offset:2px}
 #faf-sheet:not([hidden]) ~ #faf-menu-btn,body.tr-open #faf-menu-btn{display:none}
 #faf-course .cc-head{padding-top:46px}
 #faf-menu{position:fixed;inset:0;z-index:100;display:flex;justify-content:flex-start}
 #faf-menu[hidden]{display:none}
 .fm-backdrop{position:absolute;inset:0;background:rgba(20,26,51,.45);animation:fm-fade .2s ease}
-.fm-panel{position:relative;width:min(320px,86vw);height:100%;background:#F4F6FC;color:#141A33;display:flex;flex-direction:column;box-shadow:12px 0 40px rgba(20,26,51,.22);animation:fm-in .24s cubic-bezier(.2,.8,.2,1);padding:calc(16px + env(safe-area-inset-top)) 14px calc(16px + env(safe-area-inset-bottom));box-sizing:border-box;overflow-y:auto;font-family:Inter,system-ui,sans-serif}
+.fm-panel{position:relative;width:min(320px,86vw);height:100%;background:var(--ink);color:var(--text);display:flex;flex-direction:column;box-shadow:12px 0 40px rgba(20,26,51,.22);animation:fm-in .24s cubic-bezier(.2,.8,.2,1);padding:calc(16px + env(safe-area-inset-top)) 14px calc(16px + env(safe-area-inset-bottom));box-sizing:border-box;overflow-y:auto;font-family:Inter,system-ui,sans-serif}
 .fm-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 6px 14px}
 .fm-brand{display:flex;flex-direction:column;gap:2px}
-.fm-brand span{font-size:13px;font-weight:600;color:#5B3DF5}
+.fm-brand span{font-size:13px;font-weight:600;color:var(--accent-t)}
 .fm-brand strong{font-family:Unbounded,Manrope,system-ui,sans-serif;font-weight:600;font-size:22px}
-.fm-close{width:44px;height:44px;border-radius:14px;border:1px solid #E1E6F3;background:#fff;color:#141A33;display:flex;align-items:center;justify-content:center}
-.fm-sec{margin:14px 8px 6px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#5D6788}
-.fm-item{width:100%;min-height:52px;display:flex;align-items:center;gap:12px;padding:8px 12px;border:none;border-radius:14px;background:transparent;color:#141A33;text-align:left;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
-.fm-item:hover{background:#E9EDF8}
-.fm-item.is-active{background:#EDE9FF;color:#5B3DF5}
-.fm-item .fm-ic{flex:0 0 auto;width:36px;height:36px;border-radius:11px;background:#fff;border:1px solid #E1E6F3;display:flex;align-items:center;justify-content:center;color:inherit}
-.fm-item.is-active .fm-ic{border-color:#CFC4FF}
+.fm-close{width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--deck);color:var(--text);display:flex;align-items:center;justify-content:center}
+.fm-sec{margin:14px 8px 6px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.fm-item{width:100%;min-height:52px;display:flex;align-items:center;gap:12px;padding:8px 12px;border:none;border-radius:14px;background:transparent;color:var(--text);text-align:left;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.fm-item:hover{background:var(--deck2)}
+.fm-item.is-active{background:var(--tint-purple);color:var(--accent-t)}
+.fm-item .fm-ic{flex:0 0 auto;width:36px;height:36px;border-radius:11px;background:var(--deck);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:inherit}
+.fm-item.is-active .fm-ic{border-color:var(--line-purple)}
 .fm-item .fm-txt{display:flex;flex-direction:column;gap:1px;min-width:0}
-.fm-item .fm-txt small{font-size:12.5px;font-weight:500;color:#5D6788}
-.fm-item .fm-tag{margin-left:auto;font-size:11px;font-weight:700;color:#5D6788;background:#E9EDF8;border-radius:999px;padding:3px 8px}
-.fm-item.is-danger{color:#B4234A}
-.fm-item.is-danger .fm-ic{border-color:#F3C6D2;background:#FDECF0}
+.fm-item .fm-txt small{font-size:12.5px;font-weight:500;color:var(--muted)}
+.fm-item .fm-tag{margin-left:auto;font-size:11px;font-weight:700;color:var(--muted);background:var(--deck2);border-radius:999px;padding:3px 8px}
+.fm-item.is-danger{color:var(--red-t)}
+.fm-item.is-danger .fm-ic{border-color:var(--line-red);background:var(--tint-red)}
 .fm-modal{position:fixed;inset:0;z-index:110;background:rgba(20,26,51,.5);display:flex;align-items:center;justify-content:center;padding:20px;font-family:Inter,system-ui,sans-serif}
-.fm-dialog{width:100%;max-width:420px;background:#fff;color:#141A33;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 20px 50px rgba(20,26,51,.3)}
+.fm-dialog{width:100%;max-width:420px;background:var(--deck);color:var(--text);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 20px 50px rgba(20,26,51,.3)}
 .fm-dialog h2{margin:0;font-family:Manrope,system-ui,sans-serif;font-size:21px}
-.fm-dialog p{margin:0;font-size:14.5px;line-height:1.5;color:#323A5C}
-.fm-dialog label{font-size:13px;font-weight:700;color:#5D6788}
-.fm-dialog input{min-height:48px;border-radius:12px;border:2px solid #C9D2EA;padding:0 12px;font:inherit;font-size:16px;letter-spacing:.06em}
+.fm-dialog p{margin:0;font-size:14.5px;line-height:1.5;color:var(--text2)}
+.fm-dialog label{font-size:13px;font-weight:700;color:var(--muted)}
+.fm-dialog input{min-height:48px;border-radius:12px;border:2px solid var(--line2);padding:0 12px;font:inherit;font-size:16px;letter-spacing:.06em}
 .fm-dialog input:focus{outline:none;border-color:#B4234A}
 .fm-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
 .fm-actions button{min-height:48px;padding:0 18px;border-radius:12px;font:inherit;font-size:15px;font-weight:700}
-.fm-cancel{border:1px solid #C9D2EA;background:#fff;color:#141A33}
+.fm-cancel{border:1px solid var(--line2);background:var(--deck);color:var(--text)}
 .fm-danger{border:none;background:#B4234A;color:#fff}
 .fm-danger:disabled{background:#E9C3CD;color:#fff}
 @keyframes fm-in{from{transform:translateX(-100%)}to{transform:none}}
@@ -535,7 +552,7 @@ body.cc-locked #faf-sheet{z-index:96}
 </head>
 <body>
 <template id="app-template">
-<div style="width: 100%; max-width: 560px; margin: 0 auto; height: 100vh; height: 100dvh; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F6FC; color: #141A33; font-family: Inter, system-ui, sans-serif; overflow: hidden">
+<div style="width: 100%; max-width: 560px; margin: 0 auto; height: 100vh; height: 100dvh; box-sizing: border-box; display: flex; flex-direction: column; background: var(--ink); color: var(--text); font-family: Inter, system-ui, sans-serif; overflow: hidden">
 
 <div id="scroller" style="flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: calc(62px + env(safe-area-inset-top)) 20px 28px 20px; box-sizing: border-box">
 
@@ -543,7 +560,7 @@ body.cc-locked #faf-sheet{z-index:96}
 <sc-if value="{{showInicio}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-direction: column; gap: 20px">
   <div style="display: flex; flex-direction: column; gap: 4px; padding-top: 8px">
-    <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.01em; color: #5B3DF5">Frase a Frase</span>
+    <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.01em; color: var(--accent-t)">Frase a Frase</span>
     <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 34px; line-height: 1.1;">¡Hola! Vamos praticar?</h1>
   </div>
 
@@ -556,15 +573,15 @@ body.cc-locked #faf-sheet{z-index:96}
     <span style="font-size: 14px; opacity: 0.9; line-height: 1.4">{{courseSub}}</span>
   </button>
 
-  <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+  <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
     <div style="display: flex; align-items: baseline; justify-content: space-between">
       <span style="font-size: 15px; font-weight: 700">Meta de hoje</span>
-      <span style="font-size: 14px; color: #5D6788">{{goalCount}} de {{goalTotal}} atividades</span>
+      <span style="font-size: 14px; color: var(--muted)">{{goalCount}} de {{goalTotal}} atividades</span>
     </div>
-    <div style="height: 10px; background: #E9EDF8; border-radius: 999px; overflow: hidden">
+    <div style="height: 10px; background: var(--deck2); border-radius: 999px; overflow: hidden">
       <div style="{{goalBar}}"></div>
     </div>
-    <span style="font-size: 13px; color: #5D6788">{{goalMsg}}</span>
+    <span style="font-size: 13px; color: var(--muted)">{{goalMsg}}</span>
   </div>
 
   <div style="background: #3B2DB8; color: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
@@ -581,17 +598,17 @@ body.cc-locked #faf-sheet{z-index:96}
   </div>
 
   <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
-    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E1E6F3">
+    <div style="background: var(--deck); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid var(--line)">
       <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{knownCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #5D6788">de {{phraseTotal}} frases que você sabe</span>
+      <span style="font-size: 12px; line-height: 1.3; color: var(--muted)">de {{phraseTotal}} frases que você sabe</span>
     </div>
-    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E1E6F3">
+    <div style="background: var(--deck); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid var(--line)">
       <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{reviewCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #5D6788">frases para revisar</span>
+      <span style="font-size: 12px; line-height: 1.3; color: var(--muted)">frases para revisar</span>
     </div>
-    <div style="background: #FFFFFF; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid #E1E6F3">
+    <div style="background: var(--deck); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid var(--line)">
       <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{readCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: #5D6788">de {{textTotal}} textos concluídos</span>
+      <span style="font-size: 12px; line-height: 1.3; color: var(--muted)">de {{textTotal}} textos concluídos</span>
     </div>
   </div>
 
@@ -601,53 +618,53 @@ body.cc-locked #faf-sheet{z-index:96}
 
   <div style="display: flex; flex-direction: column; gap: 10px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Continuar</h2>
-    <button onClick="{{goFrases}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 16px; color: #141A33">
+    <button onClick="{{goFrases}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 16px; color: var(--text)">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Frases por situação</span>
-        <span style="font-size: 13px; color: #5D6788">{{homeCatsLine}}</span>
+        <span style="font-size: 13px; color: var(--muted)">{{homeCatsLine}}</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goTextos}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 16px; color: #141A33">
+    <button onClick="{{goTextos}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 16px; color: var(--text)">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Leitura guiada</span>
-        <span style="font-size: 13px; color: #5D6788">{{homeTextsLine}}</span>
+        <span style="font-size: 13px; color: var(--muted)">{{homeTextsLine}}</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goPratica}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 16px; color: #141A33">
+    <button onClick="{{goPratica}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 16px; color: var(--text)">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Prática</span>
-        <span style="font-size: 13px; color: #5D6788">Montar frases, escuta e lacunas</span>
+        <span style="font-size: 13px; color: var(--muted)">Montar frases, escuta e lacunas</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
-    <button onClick="{{goOuvir}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 16px; color: #141A33">
+    <button onClick="{{goOuvir}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 16px; color: var(--text)">
       <span style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-size: 16px; font-weight: 600">Ouvir e assistir</span>
-        <span style="font-size: 13px; color: #5D6788">Podcasts e vídeos reais de falantes nativos</span>
+        <span style="font-size: 13px; color: var(--muted)">Podcasts e vídeos reais de falantes nativos</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
   </div>
 
-  <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
+  <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 14px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Áudio</h2>
     <div style="display: flex; flex-direction: column; gap: 8px">
-      <span style="font-size: 13px; color: #5D6788">Sotaque</span>
+      <span style="font-size: 13px; color: var(--muted)">Sotaque</span>
       <div style="display: flex; gap: 8px">
         <button onClick="{{setSpain}}" style="{{accentSpain}}">Espanha</button>
         <button onClick="{{setMexico}}" style="{{accentMexico}}">México</button>
       </div>
     </div>
     <div style="display: flex; flex-direction: column; gap: 8px">
-      <span style="font-size: 13px; color: #5D6788">Velocidade</span>
+      <span style="font-size: 13px; color: var(--muted)">Velocidade</span>
       <div style="display: flex; gap: 8px">
         <button onClick="{{setNormal}}" style="{{rateNormal}}">Normal</button>
         <button onClick="{{setSlow}}" style="{{rateSlow}}">Lenta</button>
       </div>
     </div>
-    <button onClick="{{resetAll}}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: none; background: transparent; color: #5B3DF5; font-size: 14px; font-weight: 600; text-decoration: underline">Apagar meu progresso</button>
+    <button onClick="{{resetAll}}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: none; background: transparent; color: var(--accent-t); font-size: 14px; font-weight: 600; text-decoration: underline">Apagar meu progresso</button>
   </div>
 </div>
 </sc-if>
@@ -656,7 +673,7 @@ body.cc-locked #faf-sheet{z-index:96}
 <sc-if value="{{showFrases}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 16px">
   <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Frases</h1>
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #E9EDF8; border-radius: 14px">
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: var(--deck2); border-radius: 14px">
     <button onClick="{{viewCats}}" style="{{fseg.cats}}">Categorias</button>
     <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
     <button onClick="{{viewLista}}" style="{{fseg.lista}}">Lista</button>
@@ -668,7 +685,7 @@ body.cc-locked #faf-sheet{z-index:96}
     <button onClick="{{pickReview}}" style="{{reviewPill}}">Revisar ({{reviewCount}})</button>
   </div>
   <div role="group" aria-label="Idioma da tradução" style="display: flex; align-items: center; gap: 8px">
-    <span style="font-size: 13px; color: #5D6788">Tradução em</span>
+    <span style="font-size: 13px; color: var(--muted)">Tradução em</span>
     <button onClick="{{langPt}}" aria-pressed="{{langPtOn}}" style="{{langPtStyle}}">Português</button>
     <button onClick="{{langEn}}" aria-pressed="{{langEnOn}}" style="{{langEnStyle}}">Inglês</button>
   </div>
@@ -680,16 +697,16 @@ body.cc-locked #faf-sheet{z-index:96}
 
   <sc-if value="{{isCatsView}}">
   <div style="display: flex; flex-direction: column; gap: 22px">
-    <span style="font-size: 13px; color: #5D6788">{{catSummary}}</span>
+    <span style="font-size: 13px; color: var(--muted)">{{catSummary}}</span>
     <sc-for list="{{catGroups}}" as="g">
       <section style="display: flex; flex-direction: column; gap: 10px">
-        <h2 style="margin: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; font-size: 16px; font-weight: 700; color: #141A33">{{g.name}}<span style="font-size: 12px; font-weight: 600; color: #5D6788">{{g.meta}}</span></h2>
+        <h2 style="margin: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; font-size: 16px; font-weight: 700; color: var(--text)">{{g.name}}<span style="font-size: 12px; font-weight: 600; color: var(--muted)">{{g.meta}}</span></h2>
         <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
           <sc-for list="{{g.cats}}" as="c">
             <button onClick="{{c.pick}}" style="{{c.style}}">
               <span style="font-size: 15px; font-weight: 700; line-height: 1.25">{{c.name}}</span>
-              <span style="font-size: 12px; color: #5D6788">{{c.meta}}</span>
-              <span style="display: block; height: 4px; border-radius: 999px; background: #E9EDF8; overflow: hidden"><span style="{{c.bar}}"></span></span>
+              <span style="font-size: 12px; color: var(--muted)">{{c.meta}}</span>
+              <span style="display: block; height: 4px; border-radius: 999px; background: var(--deck2); overflow: hidden"><span style="{{c.bar}}"></span></span>
             </button>
           </sc-for>
         </div>
@@ -701,35 +718,35 @@ body.cc-locked #faf-sheet{z-index:96}
   <sc-if value="{{isLista}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 12px">
     <div style="display: flex; flex-direction: column; gap: 6px">
-      <label for="busca-frase" style="font-size: 13px; font-weight: 600; color: #5D6788">Buscar frase</label>
-      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em todas as frases, em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #C9D2EA; border-radius: 12px; background: #FFFFFF; color: #141A33; font-family: inherit; font-size: 16px">
+      <label for="busca-frase" style="font-size: 13px; font-weight: 600; color: var(--muted)">Buscar frase</label>
+      <input id="busca-frase" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Em todas as frases, em espanhol ou português" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid var(--line2); border-radius: 12px; background: var(--deck); color: var(--text); font-family: inherit; font-size: 16px">
     </div>
-    <span style="font-size: 13px; color: #5D6788">{{listCount}} · toque para estudar no cartão</span>
+    <span style="font-size: 13px; color: var(--muted)">{{listCount}} · toque para estudar no cartão</span>
     <sc-for list="{{listItems}}" as="p" hint-placeholder-count="6">
-      <div style="display: flex; align-items: stretch; gap: 8px; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 6px">
-        <button onClick="{{p.open}}" style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 10px; border: none; background: transparent; color: #141A33; border-radius: 12px">
+      <div style="display: flex; align-items: stretch; gap: 8px; background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 6px">
+        <button onClick="{{p.open}}" style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 10px; border: none; background: transparent; color: var(--text); border-radius: 12px">
           <span style="font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 18px; line-height: 1.3">{{p.es}}</span>
-          <span style="font-size: 14px; line-height: 1.4; color: #5D6788">{{p.pt}}</span>
+          <span style="font-size: 14px; line-height: 1.4; color: var(--muted)">{{p.pt}}</span>
           <span style="display: flex; align-items: center; gap: 6px; padding-top: 2px">
-            <span style="font-size: 12px; font-weight: 600; color: #5B3DF5">{{p.cat}}</span>
+            <span style="font-size: 12px; font-weight: 600; color: var(--accent-t)">{{p.cat}}</span>
             <sc-if value="{{p.isKnown}}" hint-placeholder-val="{{ false }}">
-              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #E3F6EC; color: #0E6B45">Já sei</span>
+              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--tint-green); color: var(--green-t)">Já sei</span>
             </sc-if>
             <sc-if value="{{p.isReview}}" hint-placeholder-val="{{ false }}">
-              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #E6EEFF; color: #2547B8">Revisar</span>
+              <span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">Revisar</span>
             </sc-if>
           </span>
         </button>
-        <button onClick="{{p.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; align-self: center; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px">
+        <button onClick="{{p.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; align-self: center; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
         </button>
       </div>
     </sc-for>
     <sc-if value="{{listMore}}">
-      <button onClick="{{showMoreList}}" style="min-height: 48px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 12px; font-size: 14px; font-weight: 600">{{listMoreLabel}}</button>
+      <button onClick="{{showMoreList}}" style="min-height: 48px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 12px; font-size: 14px; font-weight: 600">{{listMoreLabel}}</button>
     </sc-if>
     <sc-if value="{{listEmpty}}" hint-placeholder-val="{{ false }}">
-      <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #5D6788">{{listEmptyMsg}}</div>
+      <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: var(--muted)">{{listEmptyMsg}}</div>
     </sc-if>
   </div>
   </sc-if>
@@ -737,60 +754,60 @@ body.cc-locked #faf-sheet{z-index:96}
   <sc-if value="{{isCards}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
   <sc-if value="{{deckEmpty}}" hint-placeholder-val="{{ false }}">
-    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 24px; padding: 28px 22px; display: flex; flex-direction: column; gap: 10px">
+    <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 24px; padding: 28px 22px; display: flex; flex-direction: column; gap: 10px">
       <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 22px">Nada para revisar.</p>
-      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5D6788">As frases que você marcar como "Revisar depois" aparecem aqui. Escolha um tema acima para continuar.</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted)">As frases que você marcar como "Revisar depois" aparecem aqui. Escolha um tema acima para continuar.</p>
     </div>
   </sc-if>
 
   <sc-if value="{{deckHas}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #5D6788">
+    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: var(--muted)">
       <span>{{deckLabel}} · {{cardPos}} de {{cardTotal}}</span>
       <span>{{deckKnown}} já sei</span>
     </div>
-    <div style="height: 6px; background: #E1E6F3; border-radius: 999px; overflow: hidden">
+    <div style="height: 6px; background: var(--off); border-radius: 999px; overflow: hidden">
       <div style="{{barStyle}}"></div>
     </div>
 
-    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 24px; padding: 26px 22px; min-height: 310px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 24px; padding: 26px 22px; min-height: 310px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
       <div style="display: flex; align-items: center; justify-content: space-between">
-        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5B3DF5">{{card.cat}}</span>
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: var(--accent-t)">{{card.cat}}</span>
         <sc-if value="{{card.isKnown}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E3F6EC; color: #0E6B45">Já sei</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-green); color: var(--green-t)">Já sei</span>
         </sc-if>
         <sc-if value="{{card.isReview}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6EEFF; color: #2547B8">Revisar</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">Revisar</span>
         </sc-if>
       </div>
       <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 30px; line-height: 1.2">{{card.es}}</p>
       <div style="display: flex; gap: 8px">
-        <button onClick="{{speakCard}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">
+        <button onClick="{{speakCard}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 14px; font-weight: 600">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
           Ouvir
         </button>
-        <button onClick="{{speakCardSlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
+        <button onClick="{{speakCardSlow}}" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 14px; font-weight: 600">Bem devagar</button>
       </div>
       <div style="flex: 1 1 auto"></div>
       <sc-if value="{{flipped}}" hint-placeholder-val="{{ false }}">
-        <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid #E1E6F3">
-          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5D6788">{{trLabel}}</span>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid var(--line)">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: var(--muted)">{{trLabel}}</span>
           <p style="margin: 0; font-size: 18px; font-weight: 500">{{card.pt}}</p>
           <sc-if value="{{card.hasNota}}" hint-placeholder-val="{{ true }}">
-            <p style="margin: 0; padding: 10px 12px; background: #E6EEFF; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #2547B8">{{card.nota}}</p>
+            <p style="margin: 0; padding: 10px 12px; background: var(--tint-blue); border-radius: 10px; font-size: 13px; line-height: 1.45; color: var(--blue-t)">{{card.nota}}</p>
           </sc-if>
         </div>
       </sc-if>
       <sc-if value="{{notFlipped}}" hint-placeholder-val="{{ true }}">
-        <button onClick="{{flip}}" style="min-height: 48px; border: none; background: #EEF1FB; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Mostrar tradução</button>
+        <button onClick="{{flip}}" style="min-height: 48px; border: none; background: var(--deck2); color: var(--text); border-radius: 14px; font-size: 15px; font-weight: 600">Mostrar tradução</button>
       </sc-if>
     </div>
 
     <div style="display: grid; grid-template-columns: 52px minmax(0, 1fr) minmax(0, 1fr); gap: 10px">
-      <button onClick="{{prevCard}}" aria-label="Frase anterior" style="min-height: 52px; display: flex; align-items: center; justify-content: center; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px">
+      <button onClick="{{prevCard}}" aria-label="Frase anterior" style="min-height: 52px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 14px">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
       </button>
-      <button onClick="{{markReview}}" style="min-height: 52px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Revisar depois</button>
+      <button onClick="{{markReview}}" style="min-height: 52px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 14px; font-size: 15px; font-weight: 600">Revisar depois</button>
       <button onClick="{{markKnown}}" style="min-height: 52px; border: none; background: #5B3DF5; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Já sei</button>
     </div>
   </div>
@@ -807,8 +824,8 @@ body.cc-locked #faf-sheet{z-index:96}
 
   <sc-if value="{{isCatalog}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 14px">
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5D6788">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
-    <input id="busca-texto" type="search" aria-label="Buscar texto" value="{{tquery}}" onChange="{{onTQuery}}" placeholder="Buscar por título ou palavra" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid #C9D2EA; border-radius: 12px; background: #FFFFFF; color: #141A33; font-family: inherit; font-size: 16px">
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted)">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
+    <input id="busca-texto" type="search" aria-label="Buscar texto" value="{{tquery}}" onChange="{{onTQuery}}" placeholder="Buscar por título ou palavra" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid var(--line2); border-radius: 12px; background: var(--deck); color: var(--text); font-family: inherit; font-size: 16px">
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
       <sc-for list="{{levels}}" as="l" hint-placeholder-count="4">
         <button onClick="{{l.pick}}" style="{{l.style}}">{{l.label}}</button>
@@ -819,59 +836,59 @@ body.cc-locked #faf-sheet{z-index:96}
         <button onClick="{{m.pick}}" style="{{m.style}}">{{m.label}}</button>
       </sc-for>
     </div>
-    <span style="font-size: 13px; color: #5D6788">{{textListCount}}</span>
+    <span style="font-size: 13px; color: var(--muted)">{{textListCount}}</span>
     <sc-for list="{{textList}}" as="t" hint-placeholder-count="4">
-      <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid #E1E6F3; background: #FFFFFF; color: #141A33; border-radius: 18px">
+      <button onClick="{{t.open}}" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 16px; border: 1px solid var(--line); background: var(--deck); color: var(--text); border-radius: 18px">
         <span style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
           <span style="display: flex; align-items: center; gap: 6px; min-width: 0">
-            <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6EEFF; color: #2547B8">{{t.nivel}}</span>
-            <span style="font-size: 12px; font-weight: 600; color: #5D6788; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{t.tema}}</span>
+            <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">{{t.nivel}}</span>
+            <span style="font-size: 12px; font-weight: 600; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{t.tema}}</span>
           </span>
           <span style="{{t.statusStyle}}">{{t.status}}</span>
         </span>
         <span style="font-family: Manrope, system-ui, sans-serif; ; font-size: 20px; font-weight: 700; line-height: 1.25">{{t.title}}</span>
-        <span style="font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 15px; line-height: 1.45; color: #5D6788">{{t.preview}}</span>
-        <span style="font-size: 12px; color: #5D6788">{{t.meta}}</span>
+        <span style="font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 15px; line-height: 1.45; color: var(--muted)">{{t.preview}}</span>
+        <span style="font-size: 12px; color: var(--muted)">{{t.meta}}</span>
       </button>
     </sc-for>
     <sc-if value="{{textMore}}">
-      <button onClick="{{showMoreTexts}}" style="min-height: 48px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 12px; font-size: 14px; font-weight: 600">{{textMoreLabel}}</button>
+      <button onClick="{{showMoreTexts}}" style="min-height: 48px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 12px; font-size: 14px; font-weight: 600">{{textMoreLabel}}</button>
     </sc-if>
     <sc-if value="{{textEmpty}}">
-      <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: #5D6788">Nenhum texto com esses filtros.</div>
+      <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; color: var(--muted)">Nenhum texto com esses filtros.</div>
     </sc-if>
   </div>
   </sc-if>
 
   <sc-if value="{{isReading}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 18px">
-  <button onClick="{{backToList}}" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 8px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">
+  <button onClick="{{backToList}}" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 8px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 14px; font-weight: 600">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
     Todos os textos
   </button>
 
   <div style="display: flex; flex-direction: column; gap: 6px">
-    <span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6EEFF; color: #2547B8">{{text.nivel}}</span>
+    <span style="align-self: flex-start; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">{{text.nivel}}</span>
     <h2 style="margin: 0; font-family: Manrope, system-ui, sans-serif; ; font-size: 24px; font-weight: 700">{{text.title}}</h2>
-    <p style="margin: 0; font-size: 13px; color: #5D6788">Toque numa frase para ver a tradução e ouvir.</p>
+    <p style="margin: 0; font-size: 13px; color: var(--muted)">Toque numa frase para ver a tradução e ouvir.</p>
   </div>
 
   <div style="display: flex; gap: 8px; flex-wrap: wrap">
-    <button onClick="{{speakText}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">
+    <button onClick="{{speakText}}" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 14px; font-weight: 600">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
       Ouvir texto
     </button>
-    <button onClick="{{toggleAll}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600">{{toggleAllLabel}}</button>
+    <button onClick="{{toggleAll}}" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 14px; font-weight: 600">{{toggleAllLabel}}</button>
   </div>
 
-  <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 8px; display: flex; flex-direction: column">
+  <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 8px; display: flex; flex-direction: column">
     <sc-for list="{{sentences}}" as="s" hint-placeholder-count="5">
       <div style="display: flex; flex-direction: column">
         <button onClick="{{s.toggle}}" style="{{s.style}}">{{s.es}}</button>
         <sc-if value="{{s.open}}" hint-placeholder-val="{{ false }}">
           <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 12px 12px 12px">
-            <span style="font-size: 14px; line-height: 1.45; color: #5D6788">{{s.pt}}</span>
-            <button onClick="{{s.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px">
+            <span style="font-size: 14px; line-height: 1.45; color: var(--muted)">{{s.pt}}</span>
+            <button onClick="{{s.speak}}" aria-label="Ouvir frase" style="flex: 0 0 auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
             </button>
           </div>
@@ -884,9 +901,9 @@ body.cc-locked #faf-sheet{z-index:96}
     <h3 style="margin: 0; font-size: 16px; font-weight: 700">Palavras-chave</h3>
     <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
       <sc-for list="{{words}}" as="w" hint-placeholder-count="4">
-        <button onClick="{{w.speak}}" style="text-align: left; background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; color: #141A33">
+        <button onClick="{{w.speak}}" style="text-align: left; background: var(--deck); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; color: var(--text)">
           <span style="font-size: 15px; font-weight: 600">{{w.es}}</span>
-          <span style="font-size: 13px; color: #5D6788">{{w.pt}}</span>
+          <span style="font-size: 13px; color: var(--muted)">{{w.pt}}</span>
         </button>
       </sc-for>
     </div>
@@ -895,8 +912,8 @@ body.cc-locked #faf-sheet{z-index:96}
   <div style="display: flex; flex-direction: column; gap: 12px">
     <h3 style="margin: 0; font-size: 16px; font-weight: 700">Você entendeu?</h3>
     <sc-for list="{{questions}}" as="q" hint-placeholder-count="2">
-      <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5B3DF5">Pergunta {{q.num}}</span>
+      <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: var(--accent-t)">Pergunta {{q.num}}</span>
         <p style="margin: 0; font-size: 16px; font-weight: 600">{{q.text}}</p>
         <sc-for list="{{q.options}}" as="o" hint-placeholder-count="3">
           <button onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
@@ -907,7 +924,7 @@ body.cc-locked #faf-sheet{z-index:96}
       </div>
     </sc-for>
     <sc-if value="{{textDone}}" hint-placeholder-val="{{ false }}">
-      <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 16px; background: #E3F6EC; color: #0E6B45">
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 16px; background: var(--tint-green); color: var(--green-t)">
         <span style="font-size: 15px; font-weight: 700">Texto concluído.</span>
         <sc-if value="{{hasNextText}}" hint-placeholder-val="{{ true }}">
           <button onClick="{{nextText}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border: none; background: #14915D; color: #FFFFFF; border-radius: 12px; font-size: 14px; font-weight: 600">Próximo texto</button>
@@ -924,7 +941,7 @@ body.cc-locked #faf-sheet{z-index:96}
 <sc-if value="{{showPratica}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 18px">
   <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Prática</h1>
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: #E9EDF8; border-radius: 14px">
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: var(--deck2); border-radius: 14px">
     <button onClick="{{modeMontar}}" style="{{seg.montar}}">Montar</button>
     <button onClick="{{modeEscuta}}" style="{{seg.escuta}}">Escuta</button>
     <button onClick="{{modeLacuna}}" style="{{seg.lacuna}}">Lacuna</button>
@@ -933,22 +950,22 @@ body.cc-locked #faf-sheet{z-index:96}
   <!-- Montar -->
   <sc-if value="{{isMontar}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #5D6788">Exercício {{exPos}} de {{exTotal}}</span>
-    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
-      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #5D6788">Traduza para o português</span>
+    <span style="font-size: 13px; color: var(--muted)">Exercício {{exPos}} de {{exTotal}}</span>
+    <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: var(--muted)">Traduza para o português</span>
       <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.25">{{ex.pt}}</p>
     </div>
-    <div style="min-height: 112px; box-sizing: border-box; padding: 14px; border: 2px dashed #C9D2EA; border-radius: 16px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+    <div style="min-height: 112px; box-sizing: border-box; padding: 14px; border: 2px dashed var(--line2); border-radius: 16px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
       <sc-for list="{{built}}" as="b" hint-placeholder-count="2">
         <button onClick="{{b.remove}}" style="min-height: 44px; padding: 0 14px; border: none; background: #3B2DB8; color: #FFFFFF; border-radius: 12px; font-size: 16px; font-weight: 500">{{b.word}}</button>
       </sc-for>
       <sc-if value="{{builtEmpty}}" hint-placeholder-val="{{ false }}">
-        <span style="font-size: 14px; color: #5D6788; padding: 12px 4px">Toque nas palavras abaixo</span>
+        <span style="font-size: 14px; color: var(--muted); padding: 12px 4px">Toque nas palavras abaixo</span>
       </sc-if>
     </div>
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
       <sc-for list="{{pool}}" as="p" hint-placeholder-count="4">
-        <button onClick="{{p.add}}" style="min-height: 44px; padding: 0 14px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 12px; font-size: 16px; font-weight: 500">{{p.word}}</button>
+        <button onClick="{{p.add}}" style="min-height: 44px; padding: 0 14px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 12px; font-size: 16px; font-weight: 500">{{p.word}}</button>
       </sc-for>
     </div>
     <sc-if value="{{exChecked}}" hint-placeholder-val="{{ false }}">
@@ -958,7 +975,7 @@ body.cc-locked #faf-sheet{z-index:96}
       </div>
     </sc-if>
     <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
-      <button onClick="{{resetEx}}" style="min-height: 52px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Limpar</button>
+      <button onClick="{{resetEx}}" style="min-height: 52px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 14px; font-size: 15px; font-weight: 600">Limpar</button>
       <button onClick="{{primaryEx}}" style="{{primaryExStyle}}">{{primaryExLabel}}</button>
     </div>
   </div>
@@ -967,7 +984,7 @@ body.cc-locked #faf-sheet{z-index:96}
   <!-- Escuta -->
   <sc-if value="{{isEscuta}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #5D6788">Exercício {{liPos}} de {{liTotal}} · Ouça e escolha o significado</span>
+    <span style="font-size: 13px; color: var(--muted)">Exercício {{liPos}} de {{liTotal}} · Ouça e escolha o significado</span>
     <div style="background: #3B2DB8; color: #FFFFFF; border-radius: 24px; padding: 26px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px">
       <button onClick="{{liPlay}}" aria-label="Ouvir frase" style="width: 88px; height: 88px; border-radius: 999px; border: none; background: #5B3DF5; color: #FFFFFF; display: flex; align-items: center; justify-content: center">
         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
@@ -997,11 +1014,11 @@ body.cc-locked #faf-sheet{z-index:96}
   <!-- Lacuna -->
   <sc-if value="{{isLacuna}}" hint-placeholder-val="{{ false }}">
   <div style="display: flex; flex-direction: column; gap: 16px">
-    <span style="font-size: 13px; color: #5D6788">Exercício {{gPos}} de {{gTotal}} · Complete a frase</span>
-    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 22px 20px; display: flex; flex-direction: column; gap: 12px">
+    <span style="font-size: 13px; color: var(--muted)">Exercício {{gPos}} de {{gTotal}} · Complete a frase</span>
+    <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 22px 20px; display: flex; flex-direction: column; gap: 12px">
       <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.5">{{gap.before}}<span style="{{gapStyle}}">{{gapText}}</span>{{gap.after}}</p>
       <sc-if value="{{gAnswered}}" hint-placeholder-val="{{ false }}">
-        <p style="margin: 0; font-size: 14px; color: #5D6788">{{gap.pt}}</p>
+        <p style="margin: 0; font-size: 14px; color: var(--muted)">{{gap.pt}}</p>
       </sc-if>
     </div>
     <div style="display: flex; flex-direction: column; gap: 10px">
@@ -1026,7 +1043,7 @@ body.cc-locked #faf-sheet{z-index:96}
 <div style="display: flex; flex-direction: column; gap: 16px">
   <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px">
     <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Ouvir e assistir</h1>
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5D6788">Conteúdo real de falantes nativos, sempre com o texto junto: nos podcasts a transcrição acompanha o áudio, nos vídeos a legenda aparece na tela.</p>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted)">Conteúdo real de falantes nativos, sempre com o texto junto: nos podcasts a transcrição acompanha o áudio, nos vídeos a legenda aparece na tela.</p>
   </div>
 
   <div style="display: flex; flex-wrap: wrap; gap: 8px">
@@ -1034,23 +1051,23 @@ body.cc-locked #faf-sheet{z-index:96}
       <button onClick="{{f.pick}}" style="{{f.style}}">{{f.label}}</button>
     </sc-for>
   </div>
-  <span style="font-size: 13px; color: #5D6788">{{mCount}} · {{heardCount}} marcados como ouvidos</span>
+  <span style="font-size: 13px; color: var(--muted)">{{mCount}} · {{heardCount}} marcados como ouvidos</span>
 
   <sc-for list="{{media}}" as="m" hint-placeholder-count="4">
-    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+    <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
       <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap">
         <span style="{{m.typeStyle}}">{{m.type}}</span>
-        <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6EEFF; color: #2547B8">{{m.nivel}}</span>
+        <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">{{m.nivel}}</span>
         <sc-if value="{{m.heard}}" hint-placeholder-val="{{ false }}">
-          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E3F6EC; color: #0E6B45">Ouvido</span>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-green); color: var(--green-t)">Ouvido</span>
         </sc-if>
       </div>
       <div style="display: flex; flex-direction: column; gap: 2px">
         <span style="font-family: Manrope, system-ui, sans-serif; ; font-size: 20px; font-weight: 700; line-height: 1.25">{{m.title}}</span>
-        <span style="font-size: 13px; color: #5D6788">{{m.source}}</span>
+        <span style="font-size: 13px; color: var(--muted)">{{m.source}}</span>
       </div>
-      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #141A33">{{m.desc}}</p>
-      <p style="margin: 0; padding: 10px 12px; background: #F4F6FC; border-radius: 10px; font-size: 13px; line-height: 1.45; color: #323A5C">{{m.tip}}</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--text)">{{m.desc}}</p>
+      <p style="margin: 0; padding: 10px 12px; background: var(--ink); border-radius: 10px; font-size: 13px; line-height: 1.45; color: var(--text2)">{{m.tip}}</p>
       <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
         <sc-if value="{{m.hasPlayer}}">
         <button onClick="{{m.play}}" style="min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: 12px; background: #3B2DB8; color: #FFFFFF; font-size: 14px; font-weight: 600">
@@ -1086,19 +1103,19 @@ body.cc-locked #faf-sheet{z-index:96}
 <div style="display: flex; flex-direction: column; gap: 18px">
   <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px">
     <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Revisão</h1>
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5D6788">Guarde frases que você encontrou por aí. Elas entram na revisão da tela inicial, junto com as que você marcou para revisar.</p>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted)">Guarde frases que você encontrou por aí. Elas entram na revisão da tela inicial, junto com as que você marcou para revisar.</p>
   </div>
 
-  <form onSubmit="{{addMine}}" style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-    <label for="mine-es" style="font-size: 13px; font-weight: 700; color: #5D6788">Frase em espanhol</label>
-    <textarea id="mine-es" lang="es" rows="2" maxlength="200" value="{{mineEs}}" onInput="{{onMineEs}}" placeholder="Ex.: ¿Me pasas la sal?" style="resize: vertical; min-height: 56px; box-sizing: border-box; padding: 12px; border: 2px solid #C9D2EA; border-radius: 12px; font-family: Manrope, system-ui, sans-serif; font-size: 17px; font-weight: 600; color: #141A33; background: #FFFFFF"></textarea>
-    <label for="mine-pt" style="font-size: 13px; font-weight: 700; color: #5D6788">Tradução</label>
-    <textarea id="mine-pt" rows="2" maxlength="200" value="{{minePt}}" onInput="{{onMinePt}}" placeholder="Ex.: Você me passa o sal?" style="resize: vertical; min-height: 56px; box-sizing: border-box; padding: 12px; border: 2px solid #C9D2EA; border-radius: 12px; font-family: Inter, system-ui, sans-serif; font-size: 16px; color: #141A33; background: #FFFFFF"></textarea>
+  <form onSubmit="{{addMine}}" style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+    <label for="mine-es" style="font-size: 13px; font-weight: 700; color: var(--muted)">Frase em espanhol</label>
+    <textarea id="mine-es" lang="es" rows="2" maxlength="200" value="{{mineEs}}" onInput="{{onMineEs}}" placeholder="Ex.: ¿Me pasas la sal?" style="resize: vertical; min-height: 56px; box-sizing: border-box; padding: 12px; border: 2px solid var(--line2); border-radius: 12px; font-family: Manrope, system-ui, sans-serif; font-size: 17px; font-weight: 600; color: var(--text); background: var(--deck)"></textarea>
+    <label for="mine-pt" style="font-size: 13px; font-weight: 700; color: var(--muted)">Tradução</label>
+    <textarea id="mine-pt" rows="2" maxlength="200" value="{{minePt}}" onInput="{{onMinePt}}" placeholder="Ex.: Você me passa o sal?" style="resize: vertical; min-height: 56px; box-sizing: border-box; padding: 12px; border: 2px solid var(--line2); border-radius: 12px; font-family: Inter, system-ui, sans-serif; font-size: 16px; color: var(--text); background: var(--deck)"></textarea>
     <sc-if value="{{mineMsg}}" hint-placeholder-val="{{ false }}">
       <p role="status" style="{{mineMsgStyle}}">{{mineMsg}}</p>
     </sc-if>
     <div style="display: flex; gap: 10px">
-      <button type="button" onClick="{{speakMineDraft}}" aria-label="Ouvir a frase em espanhol" style="flex: 0 0 auto; min-height: 52px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Ouvir</button>
+      <button type="button" onClick="{{speakMineDraft}}" aria-label="Ouvir a frase em espanhol" style="flex: 0 0 auto; min-height: 52px; padding: 0 16px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 14px; font-size: 15px; font-weight: 600">Ouvir</button>
       <button type="submit" style="flex: 1 1 auto; min-height: 52px; border: none; background: #5B3DF5; color: #FFFFFF; border-radius: 14px; font-size: 15px; font-weight: 600">Adicionar à revisão</button>
     </div>
   </form>
@@ -1109,27 +1126,27 @@ body.cc-locked #faf-sheet{z-index:96}
 
   <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px">
     <h2 style="margin: 0; font-size: 16px; font-weight: 700">Minhas frases</h2>
-    <span style="font-size: 13px; color: #5D6788">{{mineCountLabel}}</span>
+    <span style="font-size: 13px; color: var(--muted)">{{mineCountLabel}}</span>
   </div>
 
   <sc-for list="{{mineList}}" as="m" hint-placeholder-count="2">
-    <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+    <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 10px">
         <span lang="es" style="font-family: Manrope, system-ui, sans-serif; font-size: 17px; font-weight: 600; line-height: 1.35">{{m.es}}</span>
         <span style="{{m.chipStyle}}">{{m.status}}</span>
       </div>
-      <span style="font-size: 14px; line-height: 1.4; color: #5D6788">{{m.pt}}</span>
+      <span style="font-size: 14px; line-height: 1.4; color: var(--muted)">{{m.pt}}</span>
       <div style="display: flex; flex-wrap: wrap; gap: 8px">
-        <button onClick="{{m.speak}}" style="min-height: 40px; padding: 0 14px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 13px; font-weight: 600">Ouvir</button>
+        <button onClick="{{m.speak}}" style="min-height: 40px; padding: 0 14px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 13px; font-weight: 600">Ouvir</button>
         <sc-if value="{{m.canRequeue}}" hint-placeholder-val="{{ false }}">
-          <button onClick="{{m.requeue}}" style="min-height: 40px; padding: 0 14px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 13px; font-weight: 600">Revisar de novo</button>
+          <button onClick="{{m.requeue}}" style="min-height: 40px; padding: 0 14px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 13px; font-weight: 600">Revisar de novo</button>
         </sc-if>
         <button onClick="{{m.remove}}" style="{{m.removeStyle}}">{{m.removeLabel}}</button>
       </div>
     </div>
   </sc-for>
   <sc-if value="{{mineEmpty}}" hint-placeholder-val="{{ false }}">
-    <p style="margin: 0; padding: 18px; border: 1px dashed #C9D2EA; border-radius: 16px; font-size: 14px; line-height: 1.5; color: #5D6788; text-align: center">Nenhuma frase sua ainda. Escreva a primeira acima.</p>
+    <p style="margin: 0; padding: 18px; border: 1px dashed var(--line2); border-radius: 16px; font-size: 14px; line-height: 1.5; color: var(--muted); text-align: center">Nenhuma frase sua ainda. Escreva a primeira acima.</p>
   </sc-if>
 </div>
 </sc-if>
@@ -1138,17 +1155,17 @@ body.cc-locked #faf-sheet{z-index:96}
 <sc-if value="{{showSoon}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 18px">
   <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">{{soonTitle}}</h1>
-  <div style="background: #FFFFFF; border: 1px solid #E1E6F3; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
-    <span style="align-self: flex-start; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: #E9EDF8; color: #323A5C">Em breve</span>
-    <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #323A5C">{{soonText}}</p>
+  <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+    <span style="align-self: flex-start; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--deck2); color: var(--text2)">Em breve</span>
+    <p style="margin: 0; font-size: 15px; line-height: 1.5; color: var(--text2)">{{soonText}}</p>
   </div>
-  <button onClick="{{goInicio}}" style="min-height: 52px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 14px; font-size: 15px; font-weight: 600">Voltar ao início</button>
+  <button onClick="{{goInicio}}" style="min-height: 52px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 14px; font-size: 15px; font-weight: 600">Voltar ao início</button>
 </div>
 </sc-if>
 
 </div>
 
-<nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px; padding: 8px 4px calc(10px + env(safe-area-inset-bottom)) 6px; background: #FFFFFF; border-top: 1px solid #E1E6F3">
+<nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px; padding: 8px 4px calc(10px + env(safe-area-inset-bottom)) 6px; background: var(--deck); border-top: 1px solid var(--line)">
   <button onClick="{{goInicio}}" style="{{nav.inicio}}">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z"></path></svg>
     Início
@@ -3664,28 +3681,28 @@ function dayIndex() {
 function pill(active) {
   return active
     ? 'min-height: 44px; padding: 0 16px; border: 1px solid #3B2DB8; background: #3B2DB8; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600'
-    : 'min-height: 44px; padding: 0 16px; border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33; border-radius: 999px; font-size: 14px; font-weight: 600';
+    : 'min-height: 44px; padding: 0 16px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 14px; font-weight: 600';
 }
 
 function segStyle(active) {
   return 'min-height: 44px; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; ' +
-    (active ? 'background: #FFFFFF; color: #141A33; box-shadow: 0 1px 3px rgba(20,26,51,0.10)' : 'background: transparent; color: #5D6788');
+    (active ? 'background: var(--deck); color: var(--text); box-shadow: 0 1px 3px rgba(20,26,51,0.10)' : 'background: transparent; color: var(--muted)');
 }
 
 function navStyle(active) {
   return 'display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 56px; border: none; border-radius: 12px; font-size: 12px; font-weight: 600; ' +
-    (active ? 'background: #EDE9FF; color: #5B3DF5' : 'background: transparent; color: #5D6788');
+    (active ? 'background: var(--tint-purple); color: var(--accent-t)' : 'background: transparent; color: var(--muted)');
 }
 
 function optStyle(answered, idx, correct, picked) {
   var base = 'text-align: left; min-height: 48px; padding: 10px 14px; border-radius: 12px; font-size: 15px; font-weight: 500; ';
-  if (answered && idx === correct) return base + 'border: 2px solid #14915D; background: #E3F6EC; color: #0E6B45';
-  if (answered && idx === picked) return base + 'border: 2px solid #5B3DF5; background: #FDECF0; color: #B4234A';
-  return base + 'border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33';
+  if (answered && idx === correct) return base + 'border: 2px solid #14915D; background: var(--tint-green); color: var(--green-t)';
+  if (answered && idx === picked) return base + 'border: 2px solid #5B3DF5; background: var(--tint-red); color: var(--red-t)';
+  return base + 'border: 1px solid var(--line2); background: var(--deck); color: var(--text)';
 }
 
 function fbStyle(ok) {
-  return 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (ok ? '#14915D' : '#5B3DF5');
+  return 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (ok ? 'var(--green-t)' : 'var(--accent-t)');
 }
 
 function loadSaved() {
@@ -3870,7 +3887,7 @@ class Component extends DCLogic {
       heardCount: Object.keys(s.heard).length,
       media: mediaList.map(function (m) {
         var heard = !!s.heard[m.id];
-        var typeColors = m.kind === 'video' ? 'background: #E6EEFF; color: #2547B8' : m.kind === 'frases' ? 'background: #E9EDF8; color: #323A5C' : 'background: #EDE9FF; color: #4329D6';
+        var typeColors = m.kind === 'video' ? 'background: var(--tint-blue); color: var(--blue-t)' : m.kind === 'frases' ? 'background: var(--deck2); color: var(--text2)' : 'background: var(--tint-purple); color: var(--accent-t2)';
         return {
           title: m.title, source: m.source, nivel: m.nivel, desc: m.desc, tip: m.tip, url: m.url,
           hasPlayer: !!(m.feed || m.yt),
@@ -3881,7 +3898,7 @@ class Component extends DCLogic {
           typeStyle: 'font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; ' + typeColors,
           heard: heard,
           heardLabel: heard ? 'Desmarcar' : 'Já ouvi',
-          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid #C9D2EA; background: #FFFFFF; color: #141A33' : 'border: none; background: #5B3DF5; color: #FFFFFF'),
+          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid var(--line2); background: var(--deck); color: var(--text)' : 'border: none; background: #5B3DF5; color: #FFFFFF'),
           toggle: function () {
             var h = Object.assign({}, s.heard);
             if (h[m.id]) { delete h[m.id]; self.setState({ heard: h }); }
@@ -3901,7 +3918,7 @@ class Component extends DCLogic {
       onMineEs: function (e) { self.setState({ mineEs: e && e.target ? e.target.value : '', mineMsg: '' }); },
       onMinePt: function (e) { self.setState({ minePt: e && e.target ? e.target.value : '', mineMsg: '' }); },
       mineMsg: s.mineMsg,
-      mineMsgStyle: 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (s.mineOk ? '#14915D' : '#B4234A'),
+      mineMsgStyle: 'margin: 0; font-size: 14px; font-weight: 600; color: ' + (s.mineOk ? 'var(--green-t)' : 'var(--red-t)'),
       speakMineDraft: function () { if (s.mineEs.trim()) speak(s.mineEs.trim()); },
       addMine: function (e) {
         if (e && e.preventDefault) e.preventDefault();
@@ -3922,7 +3939,7 @@ class Component extends DCLogic {
           es: m.es, pt: m.pt,
           status: inReview ? 'Na revisão' : known ? 'Já sei' : 'Fora da revisão',
           chipStyle: 'flex: 0 0 auto; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap; ' +
-            (inReview ? 'background: #E6EEFF; color: #2547B8' : known ? 'background: #E3F6EC; color: #0E6B45' : 'background: #E9EDF8; color: #323A5C'),
+            (inReview ? 'background: var(--tint-blue); color: var(--blue-t)' : known ? 'background: var(--tint-green); color: var(--green-t)' : 'background: var(--deck2); color: var(--text2)'),
           speak: function () { speak(m.es); },
           canRequeue: !inReview,
           requeue: function () {
@@ -3932,7 +3949,7 @@ class Component extends DCLogic {
           },
           removeLabel: confirm ? 'Confirmar exclusão' : 'Excluir',
           removeStyle: 'min-height: 40px; padding: 0 14px; border-radius: 999px; font-size: 13px; font-weight: 600; ' +
-            (confirm ? 'border: none; background: #B4234A; color: #FFFFFF' : 'border: 1px solid #F3C6D2; background: #FFFFFF; color: #B4234A'),
+            (confirm ? 'border: none; background: #B4234A; color: #FFFFFF' : 'border: 1px solid var(--line-red); background: var(--deck); color: var(--red-t)'),
           remove: function () {
             if (!confirm) { self.setState({ mineDel: m.id }); return; }
             var review = Object.assign({}, s.review), known2 = Object.assign({}, s.known);
@@ -3991,7 +4008,7 @@ class Component extends DCLogic {
             meta: k ? k + ' de ' + total + ' já sei' : total + ' frases',
             bar: 'display: block; height: 100%; width: ' + pctc + '%; background: ' + (pctc === 100 ? '#14915D' : '#5B3DF5') + '; border-radius: 999px',
             style: 'display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 14px; min-height: 96px; border-radius: 16px; ' +
-              (s.cat === ci ? 'border: 1px solid #5B3DF5; background: #FFFFFF; color: #141A33' : 'border: 1px solid #E1E6F3; background: #FFFFFF; color: #141A33'),
+              (s.cat === ci ? 'border: 1px solid #5B3DF5; background: var(--deck); color: var(--text)' : 'border: 1px solid var(--line); background: var(--deck); color: var(--text)'),
             pick: function () { self.setState({ cat: ci, card: 0, flipped: false, fview: 'cards' }); }
           });
         });
@@ -4053,7 +4070,7 @@ class Component extends DCLogic {
           preview: x.sentences[0][0],
           meta: x.sentences.length + ' frases · ' + x.words.length + ' palavras-chave · ' + x.questions.length + ' perguntas',
           status: status,
-          statusStyle: 'font-size: 12px; font-weight: 600; ' + (done ? 'color: #14915D' : answered > 0 ? 'color: #5B3DF5' : 'color: #5D6788'),
+          statusStyle: 'font-size: 12px; font-weight: 600; ' + (done ? 'color: var(--green-t)' : answered > 0 ? 'color: var(--accent-t)' : 'color: var(--muted)'),
           open: function () { self.setState({ textIdx: x.idx, reading: true, open: {} }); }
         };
       }),
@@ -4121,7 +4138,7 @@ class Component extends DCLogic {
         var isOpen = !!s.open[idx];
         return {
           es: pair[0], pt: pair[1], open: isOpen,
-          style: 'text-align: left; width: 100%; min-height: 44px; padding: 12px; border: none; border-radius: 12px; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.4; color: #141A33; ' + (isOpen ? 'background: #E6EEFF' : 'background: transparent'),
+          style: 'text-align: left; width: 100%; min-height: 44px; padding: 12px; border: none; border-radius: 12px; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 19px; line-height: 1.4; color: var(--text); ' + (isOpen ? 'background: var(--tint-blue)' : 'background: transparent'),
           toggle: function () {
             var open = Object.assign({}, s.open);
             if (open[idx]) delete open[idx]; else open[idx] = true;
@@ -4191,9 +4208,9 @@ class Component extends DCLogic {
       }),
       exChecked: s.checked,
       exFbTitle: exOk ? '¡Correcto!' : 'Ainda não. A ordem certa é:',
-      exFbStyle: 'display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; ' + (exOk ? 'background: #E3F6EC; color: #0E6B45' : 'background: #FDECF0; color: #B4234A'),
+      exFbStyle: 'display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 14px; ' + (exOk ? 'background: var(--tint-green); color: var(--green-t)' : 'background: var(--tint-red); color: var(--red-t)'),
       primaryExLabel: s.checked && exOk ? 'Próxima' : 'Verificar',
-      primaryExStyle: 'min-height: 52px; border: none; border-radius: 14px; font-size: 15px; font-weight: 600; ' + (primaryReady ? 'background: #5B3DF5; color: #FFFFFF' : 'background: #E1E6F3; color: #5D6788'),
+      primaryExStyle: 'min-height: 52px; border: none; border-radius: 14px; font-size: 15px; font-weight: 600; ' + (primaryReady ? 'background: #5B3DF5; color: #FFFFFF' : 'background: var(--off); color: var(--muted)'),
       primaryEx: function () {
         if (s.checked && exOk) {
           self.setState({ ex: (s.ex + 1) % EXS.length, built: [], checked: false });
@@ -4231,7 +4248,7 @@ class Component extends DCLogic {
       gPos: s.gi + 1,
       gTotal: GAPS.length,
       gapText: gAns ? g.options[s.gpick] : '______',
-      gapStyle: 'padding: 0 6px; border-radius: 8px; ' + (!gAns ? 'background: #E9EDF8; color: #5D6788' : gOk ? 'background: #E3F6EC; color: #0E6B45' : 'background: #FDECF0; color: #B4234A; text-decoration: line-through'),
+      gapStyle: 'padding: 0 6px; border-radius: 8px; ' + (!gAns ? 'background: var(--deck2); color: var(--muted)' : gOk ? 'background: var(--tint-green); color: var(--green-t)' : 'background: var(--tint-red); color: var(--red-t); text-decoration: line-through'),
       gOptions: g.options.map(function (label, oi) {
         return {
           label: label,
