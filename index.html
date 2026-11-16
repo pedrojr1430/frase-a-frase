@@ -659,6 +659,7 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 .cc-opts>*,.cc-options>*{animation:faf-rise .45s var(--ease-out) both}
 .cc-opts>*:nth-child(2),.cc-options>*:nth-child(2){animation-delay:.04s}.cc-opts>*:nth-child(3),.cc-options>*:nth-child(3){animation-delay:.08s}.cc-opts>*:nth-child(4),.cc-options>*:nth-child(4){animation-delay:.12s}
 .cc-chip{animation:faf-chip-in .3s var(--ease-out) both}
+.cc-build.is-live .cc-chip,.cc-bank.is-live .cc-chip{animation:none}
 .cc-l-foot.is-ok,.cc-l-foot.is-bad{animation:faf-sheet-up .4s var(--ease-out) both}
 .cc-l-foot.is-bad .cc-fb{animation:faf-shake .45s var(--ease-io) both}
 .cc-opt.is-ok,.cc-opt.is-right{animation:faf-glow-ok .7s var(--ease-out)}
@@ -3241,6 +3242,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
         }
         paint();
         main.appendChild(area); main.appendChild(bank);
+        setTimeout(function () { area.classList.add('is-live'); bank.classList.add('is-live'); }, 450);
         item.isRight = function (v) { return norm(v) === norm(e.pt); };
         item.explain = e.pt;
       } else if (e.t === 'order') {
@@ -3260,6 +3262,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
         }
         paint2();
         main.appendChild(area2); main.appendChild(bank2);
+        setTimeout(function () { area2.classList.add('is-live'); bank2.classList.add('is-live'); }, 450);
         item.isRight = function (v) { var ok = norm(v) === norm(e.es); if (ok) speak(e.es); return ok; };
         item.explain = e.es;
       } else if (e.t === 'type' || e.t === 'dictation') {
@@ -3368,7 +3371,6 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
         S.errors++; S.combo = 0; comboEl.classList.remove('is-on'); comboEl.textContent = '';
         SFX.bad();
         if (usesHearts()) { regen(); st.hearts.n = Math.max(0, st.hearts.n - 1); if (st.hearts.n === HEART_MAX - 1) st.hearts.ts = Date.now(); S.heartsLost++; }
-        ov.classList.add('is-shake'); setTimeout(function () { ov.classList.remove('is-shake'); }, 400);
       }
       save(); paintTop();
       var editable = !ok && EDITABLE[item.e.t];
