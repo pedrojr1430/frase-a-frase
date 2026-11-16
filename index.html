@@ -737,6 +737,38 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 #faf-course .cc-node-label{color:#E6F4FF;text-shadow:0 0 10px rgba(34,230,255,.55),0 2px 6px rgba(0,0,0,.8);margin-top:16px}
 #faf-course .cc-start{background:linear-gradient(90deg,#22E6FF,#FF3FD8)!important;color:#0B0F3D!important;box-shadow:0 0 18px rgba(34,230,255,.7),0 0 26px rgba(255,63,216,.45)!important}
 @media (prefers-reduced-motion:reduce){#faf-course::after{animation:none}}
+
+/* ===== Curso: cena espacial (disco voador, alien, nave, laser) ===== */
+#faf-course .cc-space{position:sticky;top:0;height:0;z-index:-1;pointer-events:none}
+#faf-course .cc-space-in{position:absolute;left:-20px;right:-20px;top:-20px;height:100vh;overflow:hidden}
+.cc-ufo{position:absolute;top:-8px;left:0;width:96px;animation:cc-ufo-fly 26s linear infinite;filter:drop-shadow(0 0 10px rgba(124,243,255,.55)) drop-shadow(0 0 22px rgba(166,107,255,.45))}
+.cc-ufo-bob{animation:cc-bob 2.6s ease-in-out infinite}
+@keyframes cc-ufo-fly{0%{transform:translateX(-140px) rotate(-4deg)}35%{transform:translateX(calc(50vw - 28px)) rotate(0)}55%{transform:translateX(calc(50vw - 28px)) rotate(0)}100%{transform:translateX(calc(100vw + 160px)) rotate(5deg)}}
+@keyframes cc-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.cc-ufo-beam{opacity:0;animation:cc-beam 26s linear infinite}
+@keyframes cc-beam{0%,36%{opacity:0}40%,51%{opacity:1}55%,100%{opacity:0}}
+.cc-ufo-lights circle{animation:cc-blink 1.2s steps(2,jump-none) infinite}
+.cc-ufo-lights circle:nth-child(2n){animation-delay:.6s}
+@keyframes cc-blink{0%{opacity:1}100%{opacity:.25}}
+.cc-alien-in{animation:cc-peek 3.4s ease-in-out infinite;transform-origin:60px 40px}
+@keyframes cc-peek{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.cc-ship{position:absolute;left:0;top:0;width:96px;animation:cc-ship-fly 17s linear infinite 4s;opacity:0;filter:drop-shadow(0 0 8px rgba(34,230,255,.7))}
+@keyframes cc-ship-fly{0%{opacity:1;transform:translate(-120px,72vh) rotate(-24deg)}38%{opacity:1;transform:translate(calc(100vw + 40px),18vh) rotate(-24deg)}39%,100%{opacity:0;transform:translate(calc(100vw + 40px),18vh) rotate(-24deg)}}
+.cc-ship-flame{animation:cc-flame .12s linear infinite alternate;transform-origin:6px 20px}
+@keyframes cc-flame{from{transform:scaleX(.7)}to{transform:scaleX(1.15)}}
+.cc-ship-laser{position:absolute;left:88px;top:15px;width:46px;height:3px;border-radius:3px;background:linear-gradient(90deg,#fff,#FF3FD8);box-shadow:0 0 8px #FF3FD8,0 0 16px #FF3FD8;opacity:0;animation:cc-pew .9s ease-out infinite}
+.cc-ship-laser.is-2{animation-delay:.45s;background:linear-gradient(90deg,#fff,#22E6FF);box-shadow:0 0 8px #22E6FF,0 0 16px #22E6FF}
+@keyframes cc-pew{0%{opacity:1;transform:translateX(0)}100%{opacity:0;transform:translateX(220px)}}
+.cc-astro{position:absolute;right:40px;top:50vh;animation:cc-float 9s ease-in-out infinite;filter:drop-shadow(0 0 10px rgba(92,255,176,.45));opacity:.9}
+@keyframes cc-float{0%,100%{transform:translate(0,0) rotate(-12deg)}50%{transform:translate(-18px,-26px) rotate(14deg)}}
+.cc-zap{position:absolute;height:2px;width:140px;border-radius:2px;opacity:0;left:0;top:0}
+.cc-zap.is-a{background:linear-gradient(90deg,transparent,#22E6FF,#fff);box-shadow:0 0 10px #22E6FF;animation:cc-zap-a 7s linear infinite 1s}
+.cc-zap.is-b{background:linear-gradient(90deg,transparent,#FF3FD8,#fff);box-shadow:0 0 10px #FF3FD8;animation:cc-zap-b 9s linear infinite 3s}
+.cc-zap.is-c{background:linear-gradient(90deg,transparent,#A66BFF,#fff);box-shadow:0 0 10px #A66BFF;animation:cc-zap-c 11s linear infinite 6s}
+@keyframes cc-zap-a{0%{opacity:1;transform:translate(-160px,32vh) rotate(-14deg)}9%{opacity:1;transform:translate(110vw,8vh) rotate(-14deg)}10%,100%{opacity:0;transform:translate(110vw,8vh) rotate(-14deg)}}
+@keyframes cc-zap-b{0%{opacity:1;transform:translate(110vw,46vh) rotate(194deg)}8%{opacity:1;transform:translate(-160px,30vh) rotate(194deg)}9%,100%{opacity:0;transform:translate(-160px,30vh) rotate(194deg)}}
+@keyframes cc-zap-c{0%{opacity:1;transform:translate(-160px,84vh) rotate(-28deg)}8%{opacity:1;transform:translate(110vw,36vh) rotate(-28deg)}9%,100%{opacity:0;transform:translate(110vw,36vh) rotate(-28deg)}}
+@media (prefers-reduced-motion:reduce){.cc-ship,.cc-zap,.cc-ufo-beam{display:none}.cc-ufo{animation:none;transform:translateX(calc(100vw - 150px))}.cc-ufo-bob,.cc-alien-in,.cc-astro,.cc-ufo-lights circle,.cc-ship-flame{animation:none}}
 </style>
 </head>
 <body>
@@ -2946,7 +2978,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
           h('span', { text: 'Bata papo em espanhol com a IA do Frase a Frase. Ela corrige você e sugere respostas.' })
         ])
       ]);
-      root.replaceChildren(h('div', { class: 'cc-stars-bg', 'aria-hidden': 'true' }), head, lia, body);
+      root.replaceChildren(h('div', { class: 'cc-stars-bg', 'aria-hidden': 'true' }), spaceLayer(), head, lia, body);
       requestAnimationFrame(drawPaths);
       if (scrollToCurrent && currentEl) currentEl.scrollIntoView({ block: 'center' }); else root.scrollTop = prevScroll;
     }, function () {
@@ -2975,6 +3007,40 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   }
   function rank(lv) { return ['Turista', 'Explorador', 'Viajante', 'Conversador', 'Fluente em treino', 'Hispanohablante', 'Leyenda'][Math.min(6, Math.floor((lv - 1) / 2))]; }
   // Linha luminosa ligando os nós da trilha, desenhada depois do layout.
+  // Cena espacial decorativa do mapa: disco voador com alien, nave atirando laser, alien flutuando e rajadas de laser.
+  var SPACE_SVG = '<div class="cc-space-in">'
+    + '<div class="cc-ufo"><div class="cc-ufo-bob"><svg viewBox="0 0 120 120" width="96" height="96">'
+    + '<defs><radialGradient id="ccDome" cx="50%" cy="30%" r="70%"><stop offset="0" stop-color="#E9FDFF" stop-opacity=".85"/><stop offset=".6" stop-color="#22E6FF" stop-opacity=".28"/><stop offset="1" stop-color="#22E6FF" stop-opacity=".12"/></radialGradient>'
+    + '<linearGradient id="ccDisc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9CCFF"/><stop offset=".45" stop-color="#7A5CF0"/><stop offset="1" stop-color="#2A1A7A"/></linearGradient>'
+    + '<linearGradient id="ccBeam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CF3FF" stop-opacity=".75"/><stop offset="1" stop-color="#7CF3FF" stop-opacity="0"/></linearGradient></defs>'
+    + '<polygon class="cc-ufo-beam" points="46,54 74,54 100,120 20,120" fill="url(#ccBeam)"/>'
+    + '<g class="cc-alien-in"><ellipse cx="60" cy="30" rx="9" ry="10" fill="#5CFFB0"/><ellipse cx="56" cy="29" rx="3" ry="4.2" fill="#0B0F3D" transform="rotate(-18 56 29)"/><ellipse cx="64" cy="29" rx="3" ry="4.2" fill="#0B0F3D" transform="rotate(18 64 29)"/><circle cx="55.3" cy="27.6" r=".9" fill="#fff"/><circle cx="63.3" cy="27.6" r=".9" fill="#fff"/><path d="M57 35 Q60 37 63 35" stroke="#0B0F3D" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M56 21 L53 14 M64 21 L67 14" stroke="#5CFFB0" stroke-width="1.6" stroke-linecap="round"/><circle cx="53" cy="13" r="2" fill="#FF3FD8"/><circle cx="67" cy="13" r="2" fill="#FF3FD8"/></g>'
+    + '<path d="M37 42 A23 22 0 0 1 83 42 Z" fill="url(#ccDome)" stroke="#7CF3FF" stroke-width="1.2"/>'
+    + '<ellipse cx="60" cy="45" rx="50" ry="11" fill="url(#ccDisc)" stroke="#B89CFF" stroke-width="1"/>'
+    + '<ellipse cx="60" cy="42.5" rx="44" ry="4" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1"/>'
+    + '<g class="cc-ufo-lights"><circle cx="22" cy="47" r="2.6" fill="#FF3FD8"/><circle cx="40" cy="50" r="2.6" fill="#22E6FF"/><circle cx="60" cy="51" r="2.6" fill="#FFE27A"/><circle cx="80" cy="50" r="2.6" fill="#22E6FF"/><circle cx="98" cy="47" r="2.6" fill="#FF3FD8"/></g>'
+    + '<ellipse cx="60" cy="55" rx="15" ry="3.2" fill="#7CF3FF" opacity=".85"/>'
+    + '</svg></div></div>'
+    + '<div class="cc-ship"><svg viewBox="-20 0 120 40" width="96" height="32">'
+    + '<defs><linearGradient id="ccHull" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FA2FF"/><stop offset=".5" stop-color="#2D3A9E"/><stop offset="1" stop-color="#141B5C"/></linearGradient>'
+    + '<linearGradient id="ccFlame" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#FFF4C2"/><stop offset=".4" stop-color="#FFB547"/><stop offset="1" stop-color="#FF3FD8" stop-opacity="0"/></linearGradient></defs>'
+    + '<path class="cc-ship-flame" d="M6 15 L-18 20 L6 25 Z" fill="url(#ccFlame)"/>'
+    + '<path d="M30 11 L46 0 L54 12 Z M30 29 L46 40 L54 28 Z" fill="#FF3FD8" opacity=".9"/>'
+    + '<path d="M4 20 L30 10 L70 13 L92 20 L70 27 L30 30 Z" fill="url(#ccHull)" stroke="#22E6FF" stroke-width="1.2" stroke-linejoin="round"/>'
+    + '<ellipse cx="60" cy="18" rx="10" ry="4" fill="#7CF3FF" opacity=".9"/>'
+    + '</svg><i class="cc-ship-laser"></i><i class="cc-ship-laser is-2"></i></div>'
+    + '<div class="cc-astro"><svg viewBox="0 0 60 70" width="54" height="63">'
+    + '<rect x="18" y="34" width="24" height="24" rx="9" fill="#7A5CF0" stroke="#C9B8FF" stroke-width="1"/>'
+    + '<rect x="24" y="40" width="12" height="8" rx="2" fill="#22E6FF" opacity=".8"/>'
+    + '<path d="M18 40 L8 33 M42 40 L53 30" stroke="#7A5CF0" stroke-width="5" stroke-linecap="round"/><circle cx="7" cy="32" r="3.2" fill="#5CFFB0"/><circle cx="54" cy="29" r="3.2" fill="#5CFFB0"/>'
+    + '<path d="M24 58 L22 66 M36 58 L38 66" stroke="#7A5CF0" stroke-width="5" stroke-linecap="round"/>'
+    + '<circle cx="30" cy="20" r="17" fill="rgba(124,243,255,.15)" stroke="#7CF3FF" stroke-width="1.2"/>'
+    + '<ellipse cx="30" cy="21" rx="10" ry="11" fill="#5CFFB0"/><ellipse cx="25.5" cy="20" rx="3" ry="4.4" fill="#0B0F3D" transform="rotate(-16 25.5 20)"/><ellipse cx="34.5" cy="20" rx="3" ry="4.4" fill="#0B0F3D" transform="rotate(16 34.5 20)"/><circle cx="25" cy="18.5" r="1" fill="#fff"/><circle cx="34" cy="18.5" r="1" fill="#fff"/><path d="M27 27 Q30 29.5 33 27" stroke="#0B0F3D" stroke-width="1.2" fill="none" stroke-linecap="round"/>'
+    + '<path d="M22 9 Q20 4 24 3" stroke="#7CF3FF" stroke-width="1" fill="none" opacity=".7"/>'
+    + '</svg></div>'
+    + '<i class="cc-zap is-a"></i><i class="cc-zap is-b"></i><i class="cc-zap is-c"></i>'
+    + '</div>';
+  function spaceLayer() { var d = h('div', { class: 'cc-space', 'aria-hidden': 'true' }); d.innerHTML = SPACE_SVG; return d; }
   function drawPaths() {
     root.querySelectorAll('.cc-path').forEach(function (path) {
       var old = path.querySelector('.cc-wire'); if (old) old.remove();
