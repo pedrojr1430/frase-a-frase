@@ -307,7 +307,6 @@ body.cc-locked{overflow:hidden}
 .cc-l-foot.is-bad{background:var(--tint-red);border-color:var(--line-red)}
 .cc-l-foot.is-ok .cc-btn{background:linear-gradient(135deg,#33C08D,#14915D)}
 .cc-l-foot.is-bad .cc-btn{background:linear-gradient(135deg,#FF6B8B,#E0365E)}
-.cc-l-foot.is-bad .cc-btn.cc-fix{background:transparent;color:var(--red-t);border:1.5px solid var(--line-red);box-shadow:none}
 .cc-fb{display:flex;flex-direction:column;gap:4px}
 .cc-fb strong{font-size:19px}
 .cc-l-foot.is-ok .cc-fb strong{color:var(--green-t)}.cc-l-foot.is-bad .cc-fb strong{color:var(--red-t)}
@@ -3182,9 +3181,11 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     function render(item) {
       var e = item.e, answer = null, checkBtn;
       main.replaceChildren();
-      if (item.fix) main.appendChild(h('p', { class: 'cc-kicker is-retry', text: 'Corrija sua resposta' }));
-      else if (item.retry) main.appendChild(h('p', { class: 'cc-kicker is-retry', text: 'Vamos tentar de novo' }));
-      function ready(v) { answer = v; checkBtn.disabled = v == null; }
+      if (item.retry) main.appendChild(h('p', { class: 'cc-kicker is-retry', text: 'Vamos tentar de novo' }));
+      function ready(v) {
+        answer = v; checkBtn.disabled = v == null;
+        if (item.wrong) { item.wrong = false; setFoot([checkBtn]); }
+      }
       checkBtn = h('button', { type: 'button', class: 'cc-btn is-wide', disabled: true, onclick: function () { check(item, answer); }, text: 'Verificar' });
 
       if (e.t === 'choice' || e.t === 'listen' || e.t === 'fill') {
@@ -3238,7 +3239,6 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
           }));
           ready(built.length ? built.map(function (x) { return x.w; }).join(' ') : null);
         }
-        if (item.prev) refill(item.prev, words, built);
         paint();
         main.appendChild(area); main.appendChild(bank);
         item.isRight = function (v) { return norm(v) === norm(e.pt); };
@@ -3258,7 +3258,6 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
           }));
           ready(built2.length ? built2.map(function (x) { return x.w; }).join(' ') : null);
         }
-        if (item.prev) refill(item.prev, words2, built2);
         paint2();
         main.appendChild(area2); main.appendChild(bank2);
         item.isRight = function (v) { var ok = norm(v) === norm(e.es); if (ok) speak(e.es); return ok; };
@@ -3279,7 +3278,6 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
           'aria-label': dict ? 'Escreva o que você ouviu' : 'Sua tradução em espanhol', placeholder: dict ? 'Escreva o que ouviu…' : 'Escreva em espanhol…' });
         inp.addEventListener('input', function () { ready(inp.value.trim() ? inp.value : null); });
         inp.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' && !ev.shiftKey) { ev.preventDefault(); if (inp.value.trim() && !checkBtn.disabled) check(item, inp.value); } });
-        if (item.prev) { inp.value = item.prev; setTimeout(function () { ready(inp.value.trim() ? inp.value : null); }, 0); }
         main.appendChild(inp);
         main.appendChild(h('div', { class: 'cc-keys' }, ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü', '¿', '¡'].map(function (c) {
           return h('button', { type: 'button', class: 'cc-key', 'aria-label': 'Inserir ' + c, onclick: function () {
@@ -3347,44 +3345,19 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
       setFoot([checkBtn]);
     }
 
-    function refill(prev, pool, out) {
-      String(prev).split(' ').forEach(function (w) {
-        for (var k = 0; k < pool.length; k++) if (pool[k].w === w && out.indexOf(pool[k]) < 0) { out.push(pool[k]); return; }
-      });
-    }
-    function canFix(item, v) { return item.e.t !== 'match' && v !== '__skip__'; }
-    function fixBtn(item, v) {
-      return h('button', { type: 'button', class: 'cc-btn is-wide is-ghost cc-fix', onclick: function () {
-        if (item.rq) { var i = S.queue.indexOf(item.rq); if (i >= 0) S.queue.splice(i, 1); }
-        foot.className = 'cc-l-foot';
-        render({ e: item.e, retry: item.retry, fix: true, prev: item.e.t === 'speak' ? null : v });
-      }, text: 'Corrigir minha resposta' });
-    }
-    function checkFix(item, v) {
-      var ok = item.isRight(v);
-      main.querySelectorAll('button, textarea, input').forEach(function (b) { b.disabled = true; });
-      foot.className = 'cc-l-foot is-' + (ok ? 'ok' : 'bad');
-      var cont = h('button', { type: 'button', class: 'cc-btn is-wide', onclick: next, text: 'Continuar' });
-      if (ok) {
-        SFX.ok();
-        foot.replaceChildren(h('div', { class: 'cc-fb' }, [h('strong', { text: 'Corrigido!' }), h('span', { text: item.explain })]), cont);
-      } else {
-        SFX.bad();
-        if (cfg.mode === 'lesson' || cfg.mode === 'premium') { item.rq = { e: item.e, retry: true }; S.queue.push(item.rq); }
-        ov.classList.add('is-shake'); setTimeout(function () { ov.classList.remove('is-shake'); }, 400);
-        foot.replaceChildren(h('div', { class: 'cc-fb' }, [h('strong', { text: 'Ainda não. Resposta certa:' }), h('span', { text: item.explain })]), fixBtn(item, v), cont);
-      }
-      cont.focus();
-    }
-
+    // Montar/ordenar/escrever: depois do erro as fichas e o campo continuam ativos para corrigir na hora.
+    // Escolha/ouvir/completar/falar: "Continuar" repete a mesma questão. Todo erro conta.
+    var EDITABLE = { build: 1, order: 1, type: 1, dictation: 1 };
     function check(item, v) {
-      if (item.fix) return checkFix(item, v);
+      if (item.wrong && v === item.lastWrong) return;
       var ok = item.isRight(v);
-      S.done += item.retry ? 0 : 1;
+      var first = !item.retry && !item.tries;
+      item.tries = (item.tries || 0) + 1;
+      S.done += first ? 1 : 0;
       st.answers++;
       if (ok) {
         st.correct++; S.combo++; S.maxCombo = Math.max(S.maxCombo, S.combo);
-        if (!item.retry) S.right++;
+        if (first) S.right++;
         if (S.combo > st.bestCombo) st.bestCombo = S.combo;
         if (S.combo >= 5) unlock('combo5');
         if (S.combo >= 10) unlock('combo10');
@@ -3395,19 +3368,32 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
         S.errors++; S.combo = 0; comboEl.classList.remove('is-on'); comboEl.textContent = '';
         SFX.bad();
         if (usesHearts()) { regen(); st.hearts.n = Math.max(0, st.hearts.n - 1); if (st.hearts.n === HEART_MAX - 1) st.hearts.ts = Date.now(); S.heartsLost++; }
-        if (cfg.mode === 'lesson' || cfg.mode === 'premium') { item.rq = { e: item.e, retry: true }; S.queue.push(item.rq); }
         ov.classList.add('is-shake'); setTimeout(function () { ov.classList.remove('is-shake'); }, 400);
       }
       save(); paintTop();
-      main.querySelectorAll('button, textarea, input').forEach(function (b) { b.disabled = true; });
+      var editable = !ok && EDITABLE[item.e.t];
+      if (!editable) main.querySelectorAll('button, textarea, input').forEach(function (b) { b.disabled = true; });
       foot.className = 'cc-l-foot is-' + (ok ? 'ok' : 'bad');
-      var msg = ok ? PRAISE[Math.floor(Math.random() * PRAISE.length)] : 'Resposta certa:';
-      var cont = h('button', { type: 'button', class: 'cc-btn is-wide', onclick: next, text: 'Continuar' });
+      var msg = ok ? PRAISE[Math.floor(Math.random() * PRAISE.length)] : editable ? 'Resposta certa (toque nas palavras para corrigir):' : 'Resposta certa:';
+      if (editable && (item.e.t === 'type' || item.e.t === 'dictation')) msg = 'Resposta certa (corrija o texto e verifique):';
+      var onCont = next;
+      if (!ok && item.e.t === 'match') onCont = function () { if (cfg.mode === 'lesson' || cfg.mode === 'premium') S.queue.push({ e: item.e, retry: true }); next(); };
+      else if (!ok) {
+        if (editable) {
+          item.wrong = true; item.lastWrong = v;
+          onCont = function () { if (cfg.mode === 'lesson' || cfg.mode === 'premium') S.queue.push({ e: item.e, retry: true }); next(); };
+        } else {
+          onCont = function () {
+            paintTop();
+            if (cfg.mode === 'lesson' && st.hearts.n <= 0) return outOfHearts();
+            render({ e: item.e, retry: true });
+          };
+        }
+      }
+      var cont = h('button', { type: 'button', class: 'cc-btn is-wide', onclick: onCont, text: 'Continuar' });
       var showExp = !ok || item.e.t === 'build' || item.e.t === 'match' || item.e.t === 'dictation';
       if (ok && v === '__skip__') msg = 'Tudo bem, a fala fica para depois.';
-      foot.replaceChildren(h('div', { class: 'cc-fb' }, [h('strong', { text: msg }), showExp ? h('span', { text: item.explain }) : null, ok && item.note ? h('span', { class: 'cc-note', text: item.note }) : null]));
-      if (!ok && canFix(item, v)) foot.appendChild(fixBtn(item, v));
-      foot.appendChild(cont);
+      foot.replaceChildren(h('div', { class: 'cc-fb' }, [h('strong', { text: msg }), showExp ? h('span', { text: item.explain }) : null, ok && item.note ? h('span', { class: 'cc-note', text: item.note }) : null]), cont);
       if (ok && item.e.t === 'fill') foot.querySelector('.cc-fb').appendChild(h('span', { text: item.e.pt }));
       cont.focus();
     }
