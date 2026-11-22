@@ -1,0 +1,107 @@
+{
+ "id": "esportes",
+ "name": "Esportes",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "Which team do you support?",
+   "pt": "Para qual time você torce?",
+   "nota": "Nos EUA: \"Which team do you root for?\"."
+  },
+  {
+   "es": "I'm a Lakers fan.",
+   "pt": "Sou torcedor dos Lakers.",
+   "nota": "\"Fan\" = torcedor."
+  },
+  {
+   "es": "Goal!",
+   "pt": "Gol!",
+   "nota": "No futebol americano, o ponto principal é \"touchdown\"."
+  },
+  {
+   "es": "The game ended in a tie.",
+   "pt": "A partida terminou empatada.",
+   "nota": "Britânico: \"The match ended in a draw\"."
+  },
+  {
+   "es": "We won two to one.",
+   "pt": "Ganhamos de dois a um.",
+   "nota": "Também: \"We won 2-1\"."
+  },
+  {
+   "es": "The referee gave a penalty.",
+   "pt": "O juiz marcou pênalti.",
+   "nota": "\"Referee\" ou \"ref\" = juiz."
+  },
+  {
+   "es": "I play tennis on Saturdays.",
+   "pt": "Jogo tênis aos sábados.",
+   "nota": "Esportes com bola levam \"play\"."
+  },
+  {
+   "es": "I go to the gym after work.",
+   "pt": "Vou à academia depois do trabalho.",
+   "nota": "\"Gym\" = academia."
+  },
+  {
+   "es": "I run five kilometers every morning.",
+   "pt": "Corro cinco quilômetros toda manhã.",
+   "nota": "Nos EUA muitos usam milhas: 3 milhas ≈ 5 km."
+  },
+  {
+   "es": "Is the game on TV?",
+   "pt": "O jogo vai passar na TV?",
+   "nota": "\"On TV\" = passando na TV."
+  },
+  {
+   "es": "It's the championship final.",
+   "pt": "É a final do campeonato.",
+   "nota": "\"Final\" = final. Nos EUA: \"the finals\"."
+  },
+  {
+   "es": "I signed up for swimming lessons.",
+   "pt": "Me inscrevi em aulas de natação.",
+   "nota": "\"Sign up for\" = se inscrever em."
+  },
+  {
+   "es": "My team got relegated.",
+   "pt": "Meu time caiu para a segunda divisão.",
+   "nota": "\"Relegated\" = rebaixado (futebol europeu)."
+  },
+  {
+   "es": "It was offside.",
+   "pt": "Foi impedimento.",
+   "nota": "\"Offside\" = impedimento."
+  },
+  {
+   "es": "The goalkeeper saved the penalty.",
+   "pt": "O goleiro defendeu o pênalti.",
+   "nota": "\"Goalie\" é a forma informal."
+  },
+  {
+   "es": "Practice is at seven today.",
+   "pt": "Hoje tem treino às sete.",
+   "nota": "Nos EUA: \"practice\". No Reino Unido: \"training\"."
+  },
+  {
+   "es": "I hurt my knee playing soccer.",
+   "pt": "Machuquei o joelho jogando futebol.",
+   "nota": "Nos EUA: \"soccer\". No Reino Unido: \"football\"."
+  },
+  {
+   "es": "She's the league's top scorer.",
+   "pt": "Ela é a artilheira do campeonato.",
+   "nota": "\"Top scorer\" = artilheira."
+  },
+  {
+   "es": "We're going to the stadium on Sunday.",
+   "pt": "Vamos ao estádio no domingo.",
+   "nota": "\"Stadium\" = estádio."
+  },
+  {
+   "es": "We need more practice.",
+   "pt": "Falta mais treino.",
+   "nota": "\"Practice makes perfect\" = a prática leva à perfeição."
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "id": "atendimento",
+ "name": "Atendimento ao cliente",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "How can I help you?",
+   "pt": "Em que posso ajudar?",
+   "nota": "Também: \"What can I do for you?\"."
+  },
+  {
+   "es": "I'll be right with you.",
+   "pt": "Já vou atendê-lo.",
+   "nota": "Dito quando o atendente ainda está ocupado."
+  },
+  {
+   "es": "Sorry for the inconvenience.",
+   "pt": "Desculpe o transtorno.",
+   "nota": "\"Inconvenience\" = transtorno."
+  },
+  {
+   "es": "I'd like to make a complaint.",
+   "pt": "Gostaria de fazer uma reclamação.",
+   "nota": "\"Complaint\" = reclamação. Verbo: \"complain\"."
+  },
+  {
+   "es": "Could you give me your order number?",
+   "pt": "Pode me passar o número do pedido?",
+   "nota": "\"Order number\" = número do pedido."
+  },
+  {
+   "es": "I'll look into it right away.",
+   "pt": "Vou verificar agora mesmo.",
+   "nota": "\"Look into\" = verificar, investigar."
+  },
+  {
+   "es": "We'll refund your money.",
+   "pt": "Devolvemos o seu dinheiro.",
+   "nota": "\"Refund\" = reembolso."
+  },
+  {
+   "es": "We'll fix it within 24 hours.",
+   "pt": "Resolvemos em 24 horas.",
+   "nota": "\"Within\" = dentro de (um prazo)."
+  },
+  {
+   "es": "I understand your situation.",
+   "pt": "Entendo a sua situação.",
+   "nota": "Frase de empatia no atendimento."
+  },
+  {
+   "es": "I'll transfer you to the right department.",
+   "pt": "Vou transferi-lo para o departamento responsável.",
+   "nota": "\"Department\" = setor, departamento."
+  },
+  {
+   "es": "Is there anything else I can help you with?",
+   "pt": "Posso ajudar em mais alguma coisa?",
+   "nota": "Fechamento padrão de atendimento."
+  },
+  {
+   "es": "The product arrived damaged.",
+   "pt": "O produto chegou danificado.",
+   "nota": "\"Damaged\" = danificado."
+  },
+  {
+   "es": "I still haven't received my order.",
+   "pt": "Ainda não recebi o pedido.",
+   "nota": "\"Still\" + negativa = ainda não."
+  },
+  {
+   "es": "We'll send you a new one free of charge.",
+   "pt": "Enviaremos um novo sem custo.",
+   "nota": "\"Free of charge\" = sem custo."
+  },
+  {
+   "es": "Could you fill out this form?",
+   "pt": "Poderia preencher este formulário?",
+   "nota": "Nos EUA: \"fill out\". No Reino Unido: \"fill in\"."
+  },
+  {
+   "es": "Your feedback is very important to us.",
+   "pt": "Sua opinião é muito importante para nós.",
+   "nota": "\"Feedback\" não tem plural."
+  },
+  {
+   "es": "I'm sorry about what happened.",
+   "pt": "Lamento o ocorrido.",
+   "nota": "Desculpa sincera, mais pessoal."
+  },
+  {
+   "es": "Our business hours are nine to six.",
+   "pt": "O horário de atendimento é das nove às seis.",
+   "nota": "\"Business hours\" = horário de funcionamento."
+  },
+  {
+   "es": "We serve customers on a first-come, first-served basis.",
+   "pt": "Atendemos por ordem de chegada.",
+   "nota": "Expressão fixa: quem chega primeiro é atendido primeiro."
+  },
+  {
+   "es": "Thank you for your patience.",
+   "pt": "Obrigado pela paciência.",
+   "nota": "\"Patience\" = paciência."
+  }
+ ]
+}

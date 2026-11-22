@@ -1,0 +1,107 @@
+{
+ "id": "farmacia",
+ "name": "Farmácia",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "Do you have anything for a headache?",
+   "pt": "Tem algo para dor de cabeça?",
+   "nota": "\"Something for\" + problema = algo para."
+  },
+  {
+   "es": "Do I need a prescription for this?",
+   "pt": "Preciso de receita para isto?",
+   "nota": "\"Prescription\" = receita médica."
+  },
+  {
+   "es": "How many times a day do I take it?",
+   "pt": "Quantas vezes por dia eu tomo?",
+   "nota": "Resposta: \"Twice a day\" (duas vezes ao dia)."
+  },
+  {
+   "es": "Take it after meals.",
+   "pt": "Tome depois das refeições.",
+   "nota": "\"After meals\" = depois das refeições."
+  },
+  {
+   "es": "I need some sunscreen.",
+   "pt": "Preciso de protetor solar.",
+   "nota": "Também: \"sunblock\"."
+  },
+  {
+   "es": "Do you have Band-Aids?",
+   "pt": "Tem band-aid?",
+   "nota": "Nos EUA, \"Band-Aid\" virou nome comum. No Reino Unido: \"plasters\"."
+  },
+  {
+   "es": "I have a dry cough.",
+   "pt": "Estou com tosse seca.",
+   "nota": "\"Cough\" se pronuncia \"cóf\"."
+  },
+  {
+   "es": "Something for mosquito bites.",
+   "pt": "Algo para picada de mosquito.",
+   "nota": "\"Bite\" = picada (mosquito). \"Sting\" = picada (abelha)."
+  },
+  {
+   "es": "Do you have any cough syrup?",
+   "pt": "Tem um xarope para tosse?",
+   "nota": "\"Syrup\" = xarope."
+  },
+  {
+   "es": "I'm allergic to penicillin.",
+   "pt": "Sou alérgico a penicilina.",
+   "nota": "\"Allergic to\" sempre com \"to\"."
+  },
+  {
+   "es": "Is there a 24-hour pharmacy?",
+   "pt": "Tem alguma farmácia de plantão?",
+   "nota": "\"24-hour\" = aberta 24 horas."
+  },
+  {
+   "es": "I'm itchy all over.",
+   "pt": "Meu corpo inteiro está coçando.",
+   "nota": "\"Itchy\" = com coceira. \"All over\" = no corpo todo."
+  },
+  {
+   "es": "I need something for motion sickness.",
+   "pt": "Preciso de comprimidos para enjoo.",
+   "nota": "\"Motion sickness\" = enjoo de viagem. No mar: \"seasick\"."
+  },
+  {
+   "es": "Is it a generic?",
+   "pt": "É genérico?",
+   "nota": "\"Brand name\" = de marca."
+  },
+  {
+   "es": "I got sunburned.",
+   "pt": "Me queimei no sol.",
+   "nota": "\"Sunburn\" = queimadura de sol."
+  },
+  {
+   "es": "Do you have anything for diarrhea?",
+   "pt": "Tem algo para diarreia?",
+   "nota": "Britânico: \"diarrhoea\"."
+  },
+  {
+   "es": "You can't drink alcohol with this medicine.",
+   "pt": "Não pode beber álcool com este remédio.",
+   "nota": "\"Medicine\" = remédio."
+  },
+  {
+   "es": "Does this make you drowsy?",
+   "pt": "Isto dá sono?",
+   "nota": "\"Drowsy\" = sonolento."
+  },
+  {
+   "es": "I need a thermometer.",
+   "pt": "Preciso de um termômetro.",
+   "nota": "Nos EUA a temperatura é medida em graus Fahrenheit."
+  },
+  {
+   "es": "Shake well before use.",
+   "pt": "Agite antes de usar.",
+   "nota": "Instrução padrão nos rótulos."
+  }
+ ]
+}

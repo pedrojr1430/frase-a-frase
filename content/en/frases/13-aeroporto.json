@@ -1,0 +1,107 @@
+{
+ "id": "aeroporto",
+ "name": "Aeroporto",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "Where do I check my bags?",
+   "pt": "Onde se despacha a bagagem?",
+   "nota": "\"Check\" a bagagem = despachar."
+  },
+  {
+   "es": "I only have a carry-on.",
+   "pt": "Só levo bagagem de mão.",
+   "nota": "Bagagem de mão: \"carry-on\" ou \"hand luggage\"."
+  },
+  {
+   "es": "Aisle or window?",
+   "pt": "Corredor ou janela?",
+   "nota": "\"Aisle\" (corredor) se pronuncia \"ail\": o \"s\" é mudo."
+  },
+  {
+   "es": "Which gate is it?",
+   "pt": "Qual é o portão de embarque?",
+   "nota": "Portão de embarque = \"gate\"."
+  },
+  {
+   "es": "The flight is delayed by an hour.",
+   "pt": "O voo está uma hora atrasado.",
+   "nota": "\"Delayed\" = atrasado. \"On time\" = no horário."
+  },
+  {
+   "es": "My flight was canceled.",
+   "pt": "Cancelaram meu voo.",
+   "nota": "Britânico: \"cancelled\" com dois \"l\"."
+  },
+  {
+   "es": "I have a layover in Lima.",
+   "pt": "Tenho uma conexão em Lima.",
+   "nota": "\"Layover\" = conexão (escala). \"Connecting flight\" = voo de conexão."
+  },
+  {
+   "es": "Where's your boarding pass?",
+   "pt": "Onde está o cartão de embarque?",
+   "nota": "\"Boarding pass\" = cartão de embarque."
+  },
+  {
+   "es": "My suitcase didn't arrive.",
+   "pt": "Minha mala não chegou.",
+   "nota": "\"Suitcase\" = mala. Ponto de reclamação: \"baggage claim office\"."
+  },
+  {
+   "es": "Do you have anything to declare?",
+   "pt": "Tem algo a declarar?",
+   "nota": "Pergunta da alfândega (\"customs\")."
+  },
+  {
+   "es": "I'm here on vacation.",
+   "pt": "Venho a turismo.",
+   "nota": "Na imigração também se diz: \"I'm here for tourism\"."
+  },
+  {
+   "es": "I'm staying for two weeks.",
+   "pt": "Fico duas semanas.",
+   "nota": "\"Stay\" = ficar, se hospedar."
+  },
+  {
+   "es": "Where's baggage claim?",
+   "pt": "Onde se retira a bagagem?",
+   "nota": "Esteira de bagagens = \"baggage claim\" ou \"carousel\"."
+  },
+  {
+   "es": "Is there a bus downtown?",
+   "pt": "Tem ônibus para o centro?",
+   "nota": "\"Downtown\" = centro (EUA). No Reino Unido: \"city centre\"."
+  },
+  {
+   "es": "Please remove your belt and shoes.",
+   "pt": "Tire o cinto e os sapatos.",
+   "nota": "Instrução comum na revista de segurança."
+  },
+  {
+   "es": "Boarding starts at ten.",
+   "pt": "O embarque começa às dez.",
+   "nota": "\"Boarding\" = embarque."
+  },
+  {
+   "es": "Please fasten your seat belts.",
+   "pt": "Apertem os cintos.",
+   "nota": "\"Fasten\" se pronuncia \"FA-sen\": o \"t\" é mudo."
+  },
+  {
+   "es": "I missed my connection.",
+   "pt": "Perdi a conexão.",
+   "nota": "\"Miss\" também é perder (voo, ônibus, conexão)."
+  },
+  {
+   "es": "Can I bring liquids on board?",
+   "pt": "Posso levar líquidos na cabine?",
+   "nota": "Normalmente o limite é de 100 ml por frasco."
+  },
+  {
+   "es": "I need a luggage cart.",
+   "pt": "Preciso de um carrinho para as malas.",
+   "nota": "Nos EUA: \"cart\". No Reino Unido: \"trolley\"."
+  }
+ ]
+}

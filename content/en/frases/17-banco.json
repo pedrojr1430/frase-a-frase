@@ -1,0 +1,107 @@
+{
+ "id": "banco",
+ "name": "Banco e dinheiro",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "I'd like to open an account.",
+   "pt": "Gostaria de abrir uma conta.",
+   "nota": "Conta corrente: \"checking account\". Poupança: \"savings account\"."
+  },
+  {
+   "es": "Where's an ATM?",
+   "pt": "Onde tem um caixa eletrônico?",
+   "nota": "ATM = caixa eletrônico. No Reino Unido: \"cash machine\"."
+  },
+  {
+   "es": "The ATM ate my card.",
+   "pt": "O caixa eletrônico engoliu meu cartão.",
+   "nota": "\"Ate\" é informal. Mais formal: \"kept my card\"."
+  },
+  {
+   "es": "What's the fee?",
+   "pt": "Qual é a taxa?",
+   "nota": "\"Fee\" = taxa, tarifa."
+  },
+  {
+   "es": "I want to make a transfer.",
+   "pt": "Quero fazer uma transferência.",
+   "nota": "\"Wire transfer\" = transferência bancária."
+  },
+  {
+   "es": "What's the exchange rate?",
+   "pt": "Quanto está o câmbio?",
+   "nota": "\"Exchange rate\" = taxa de câmbio."
+  },
+  {
+   "es": "I need to withdraw some money.",
+   "pt": "Preciso sacar dinheiro.",
+   "nota": "\"Withdraw\" = sacar. \"Deposit\" = depositar."
+  },
+  {
+   "es": "Do you have change for a fifty?",
+   "pt": "Tem troco para cinquenta?",
+   "nota": "\"Change\" = troco. \"Fifty\" = nota de cinquenta."
+  },
+  {
+   "es": "I was charged twice.",
+   "pt": "Me cobraram duas vezes.",
+   "nota": "\"Charge\" = cobrar."
+  },
+  {
+   "es": "I lost my card and want to block it.",
+   "pt": "Perdi meu cartão, quero bloqueá-lo.",
+   "nota": "Também: \"cancel\" ou \"freeze my card\"."
+  },
+  {
+   "es": "What's my account balance?",
+   "pt": "Qual é o saldo da minha conta?",
+   "nota": "\"Balance\" = saldo."
+  },
+  {
+   "es": "I'd like to apply for a loan.",
+   "pt": "Gostaria de pedir um empréstimo.",
+   "nota": "\"Apply for\" = pedir, solicitar."
+  },
+  {
+   "es": "Can I pay in installments?",
+   "pt": "Posso pagar parcelado?",
+   "nota": "\"Installments\" = parcelas."
+  },
+  {
+   "es": "I don't have any cash on me.",
+   "pt": "Não estou com dinheiro vivo.",
+   "nota": "\"On me\" = comigo agora."
+  },
+  {
+   "es": "Sign here, please.",
+   "pt": "Assine aqui, por favor.",
+   "nota": "\"Signature\" = assinatura."
+  },
+  {
+   "es": "I need your ID.",
+   "pt": "Preciso do seu documento de identidade.",
+   "nota": "\"ID\" = documento de identidade."
+  },
+  {
+   "es": "I'd like to speak to the manager.",
+   "pt": "Gostaria de falar com o gerente.",
+   "nota": "\"Manager\" = gerente."
+  },
+  {
+   "es": "We don't accept hundred-dollar bills.",
+   "pt": "Não aceitamos notas de cem dólares.",
+   "nota": "Nos EUA a nota é \"bill\"; no Reino Unido, \"note\"."
+  },
+  {
+   "es": "Is there a fee for paying by card?",
+   "pt": "Tem que pagar pelo cartão?",
+   "nota": "Também: \"a card surcharge\"."
+  },
+  {
+   "es": "I save a little every month.",
+   "pt": "Economizo um pouco todo mês.",
+   "nota": "\"Save\" = economizar e também salvar."
+  }
+ ]
+}

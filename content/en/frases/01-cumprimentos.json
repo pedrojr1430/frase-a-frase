@@ -1,0 +1,107 @@
+{
+ "id": "cumprimentos",
+ "name": "Cumprimentos",
+ "group": "social",
+ "items": [
+  {
+   "es": "How's everything going?",
+   "pt": "Como vão as coisas?",
+   "nota": "Forma informal e muito comum de puxar conversa. Resposta típica: \"Pretty good, thanks!\""
+  },
+  {
+   "es": "What's your name?",
+   "pt": "Como você se chama?",
+   "nota": "Em inglês não se usa \"how do you call yourself\". Para responder: \"My name is...\" ou \"I'm...\"."
+  },
+  {
+   "es": "Nice to meet you.",
+   "pt": "Muito prazer em te conhecer.",
+   "nota": "Usada na primeira vez que você conhece alguém. A resposta pode ser \"Nice to meet you too\"."
+  },
+  {
+   "es": "Long time no see!",
+   "pt": "Quanto tempo sem te ver!",
+   "nota": "Expressão informal e fixa. Não tente \"corrigir\" a gramática: é assim mesmo."
+  },
+  {
+   "es": "Have a nice day.",
+   "pt": "Tenha um bom dia.",
+   "nota": "Muito usada no comércio e no fim de conversas. \"Have a good one\" é a versão mais casual."
+  },
+  {
+   "es": "See you tomorrow.",
+   "pt": "A gente se vê amanhã.",
+   "nota": "Também se diz \"See you\" ou \"See ya\" de forma bem informal."
+  },
+  {
+   "es": "Good morning, how are you?",
+   "pt": "Bom dia, como o senhor está?",
+   "nota": "Em inglês não existe \"o senhor\": o respeito vem do tom e de \"sir\" ou \"ma'am\", quando cabe."
+  },
+  {
+   "es": "Hi! What's new?",
+   "pt": "Oi! Quais as novidades?",
+   "nota": "Resposta comum: \"Not much, you?\". Também se ouve \"What's up?\"."
+  },
+  {
+   "es": "Pleased to meet you.",
+   "pt": "Encantado em conhecê-la.",
+   "nota": "Um pouco mais formal que \"Nice to meet you\". Serve para homem ou mulher, sem mudar nada."
+  },
+  {
+   "es": "This is my friend Laura.",
+   "pt": "Te apresento minha amiga Laura.",
+   "nota": "Para apresentar alguém, o natural é \"This is...\" e não \"I present you\"."
+  },
+  {
+   "es": "Where are you from?",
+   "pt": "De onde você é?",
+   "nota": "A preposição \"from\" vai no fim da pergunta, como é comum em inglês."
+  },
+  {
+   "es": "I'm from Brazil, from São Paulo.",
+   "pt": "Sou do Brasil, de São Paulo.",
+   "nota": "Nacionalidade: \"I'm Brazilian\". Países e nacionalidades sempre com letra maiúscula."
+  },
+  {
+   "es": "What do you do?",
+   "pt": "O que você faz da vida?",
+   "nota": "Pergunta sobre a profissão. Responda: \"I'm a teacher\" (com \"a\" antes da profissão)."
+  },
+  {
+   "es": "Welcome to our home.",
+   "pt": "Bem-vindo à nossa casa.",
+   "nota": "\"Welcome home\" é usado para quem está voltando para a própria casa."
+  },
+  {
+   "es": "Say hi to your family for me.",
+   "pt": "Mande lembranças para sua família.",
+   "nota": "Versão mais formal: \"Give my regards to your family\"."
+  },
+  {
+   "es": "See you later.",
+   "pt": "Até mais.",
+   "nota": "\"Later!\" sozinho é bem informal. \"See you around\" também é comum."
+  },
+  {
+   "es": "Take care.",
+   "pt": "Se cuida.",
+   "nota": "Despedida carinhosa e comum entre amigos e família."
+  },
+  {
+   "es": "Have a great weekend!",
+   "pt": "Bom fim de semana!",
+   "nota": "Na sexta-feira, é a despedida padrão no trabalho."
+  },
+  {
+   "es": "Sorry, I didn't see you there.",
+   "pt": "Desculpa, eu não tinha te visto.",
+   "nota": "\"Sorry\" serve para pedir desculpas e também para chamar atenção."
+  },
+  {
+   "es": "It's good to see you.",
+   "pt": "Que bom te ver.",
+   "nota": "Para quem você já conhece. Para quem é novo, use \"Nice to meet you\"."
+  }
+ ]
+}

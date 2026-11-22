@@ -1,0 +1,107 @@
+{
+ "id": "dia-a-dia",
+ "name": "Dia a dia",
+ "group": "social",
+ "items": [
+  {
+   "es": "What time is it?",
+   "pt": "Que horas são?",
+   "nota": "Resposta: \"It's three o'clock\" ou \"It's half past three\"."
+  },
+  {
+   "es": "I'm in a hurry.",
+   "pt": "Estou com pressa.",
+   "nota": "Em inglês você \"está\" com pressa: \"be in a hurry\"."
+  },
+  {
+   "es": "No worries.",
+   "pt": "Não tem problema.",
+   "nota": "Resposta informal a um pedido de desculpas. \"It's fine\" também serve."
+  },
+  {
+   "es": "Yum, this is delicious!",
+   "pt": "Que delícia!",
+   "nota": "\"Yum\" ou \"Yummy\" é bem informal, quase como falar com crianças."
+  },
+  {
+   "es": "I don't mind.",
+   "pt": "Tanto faz.",
+   "nota": "Também: \"Whatever you prefer\" ou \"Either is fine\"."
+  },
+  {
+   "es": "I'll be right back.",
+   "pt": "Já volto.",
+   "nota": "Em mensagens: \"brb\" (be right back)."
+  },
+  {
+   "es": "I'm sleepy.",
+   "pt": "Estou com sono.",
+   "nota": "\"Sleepy\" = com sono. \"Tired\" = cansado."
+  },
+  {
+   "es": "I'm going to the grocery store. Do you need anything?",
+   "pt": "Vou ao supermercado, precisa de alguma coisa?",
+   "nota": "Nos EUA, \"grocery store\"; no Reino Unido, \"supermarket\"."
+  },
+  {
+   "es": "What are you doing today?",
+   "pt": "O que você vai fazer hoje?",
+   "nota": "O presente contínuo também fala de planos: \"What are you doing tonight?\"."
+  },
+  {
+   "es": "It's really hot.",
+   "pt": "Está muito calor.",
+   "nota": "Para o tempo, use \"it\": \"It's hot\", \"It's cold\". Nunca \"Is hot\"."
+  },
+  {
+   "es": "It's raining.",
+   "pt": "Está chovendo.",
+   "nota": "\"It's pouring\" = está caindo um temporal."
+  },
+  {
+   "es": "I forgot my keys.",
+   "pt": "Esqueci as chaves.",
+   "nota": "\"Forget\" vira \"forgot\" no passado. Também: \"I left my keys at home\"."
+  },
+  {
+   "es": "Can you help me with this?",
+   "pt": "Me ajuda com isso?",
+   "nota": "Também, mais casual: \"Can you give me a hand?\"."
+  },
+  {
+   "es": "I'm exhausted.",
+   "pt": "Estou cansadíssimo.",
+   "nota": "\"Exhausted\" já é muito cansado: não se diz \"very exhausted\"."
+  },
+  {
+   "es": "Okay, sounds good.",
+   "pt": "Tá bom, combinado.",
+   "nota": "Jeito informal de concordar com um plano."
+  },
+  {
+   "es": "What day is it today?",
+   "pt": "Que dia é hoje?",
+   "nota": "Data: \"What's the date today?\"."
+  },
+  {
+   "es": "I'm running a little late.",
+   "pt": "Vou chegar um pouco atrasado.",
+   "nota": "\"Running late\" = atrasado. Muito usado em mensagens."
+  },
+  {
+   "es": "Done!",
+   "pt": "Pronto, já foi.",
+   "nota": "\"All done\" ou \"That's it\" também significam que terminou."
+  },
+  {
+   "es": "That's too bad!",
+   "pt": "Que pena!",
+   "nota": "\"What a shame!\" também é comum."
+  },
+  {
+   "es": "I hope the weather's nice tomorrow.",
+   "pt": "Tomara que faça tempo bom amanhã.",
+   "nota": "\"I hope\" + frase no presente ou no futuro: \"I hope it's sunny\"."
+  }
+ ]
+}

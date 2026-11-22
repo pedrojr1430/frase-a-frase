@@ -1,0 +1,107 @@
+{
+ "id": "comida",
+ "name": "Comida e cozinha",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "How do you make apple pie?",
+   "pt": "Como se faz torta de maçã?",
+   "nota": "Torta de maçã é um clássico dos EUA e do Reino Unido."
+  },
+  {
+   "es": "Let it simmer over low heat.",
+   "pt": "É preciso deixar cozinhar em fogo baixo.",
+   "nota": "\"Simmer\" = cozinhar em fogo baixo, quase fervendo."
+  },
+  {
+   "es": "Peel and chop the potatoes.",
+   "pt": "Descasque e corte as batatas.",
+   "nota": "\"Peel\" = descascar. \"Chop\" = picar."
+  },
+  {
+   "es": "Add a pinch of salt.",
+   "pt": "Acrescente uma pitada de sal.",
+   "nota": "\"A pinch\" = uma pitada."
+  },
+  {
+   "es": "Fish and chips is a typical British dish.",
+   "pt": "Peixe com batata frita é um prato típico britânico.",
+   "nota": "\"Chips\" no Reino Unido são batatas fritas; nos EUA são \"fries\"."
+  },
+  {
+   "es": "I love burgers.",
+   "pt": "Adoro hambúrguer.",
+   "nota": "\"Burger\" é a forma curta de \"hamburger\"."
+  },
+  {
+   "es": "Clam chowder is made with clams and cream.",
+   "pt": "O clam chowder é feito com mariscos e creme.",
+   "nota": "Sopa típica da Nova Inglaterra (EUA)."
+  },
+  {
+   "es": "Can you send me the recipe?",
+   "pt": "Me passa a receita?",
+   "nota": "\"Recipe\" se pronuncia \"RÉ-ci-pi\"."
+  },
+  {
+   "es": "It needs a little more salt.",
+   "pt": "Está um pouco sem sal.",
+   "nota": "Também: \"It's a bit bland\" (sem gosto)."
+  },
+  {
+   "es": "This is way too salty.",
+   "pt": "Isto está salgado demais.",
+   "nota": "\"Way too\" = demais, bem informal."
+  },
+  {
+   "es": "Preheat the oven to 350 degrees.",
+   "pt": "Preaqueça o forno a 350 graus Fahrenheit.",
+   "nota": "Nos EUA o forno é em Fahrenheit: 350 °F ≈ 180 °C."
+  },
+  {
+   "es": "Pies are baked in the oven.",
+   "pt": "As tortas são assadas no forno.",
+   "nota": "\"Bake\" = assar no forno (pães, bolos, tortas)."
+  },
+  {
+   "es": "I'm making pancakes today.",
+   "pt": "Hoje vou fazer panquecas.",
+   "nota": "\"Pancakes\" são panquecas doces, típicas do café da manhã."
+  },
+  {
+   "es": "Do you like spicy food?",
+   "pt": "Você gosta de comida apimentada?",
+   "nota": "\"Spicy\" = apimentado."
+  },
+  {
+   "es": "Mix all the ingredients well.",
+   "pt": "Misture bem todos os ingredientes.",
+   "nota": "\"Mix\" = misturar."
+  },
+  {
+   "es": "I burned the rice.",
+   "pt": "Queimei o arroz.",
+   "nota": "Britânico: \"burnt\"."
+  },
+  {
+   "es": "The avocado is ripe.",
+   "pt": "O abacate está maduro.",
+   "nota": "\"Ripe\" = maduro."
+  },
+  {
+   "es": "For breakfast I have toast with eggs.",
+   "pt": "No café da manhã como torrada com ovos.",
+   "nota": "\"Have\" é o verbo comum para comer e beber."
+  },
+  {
+   "es": "Today is home-cooked meal day.",
+   "pt": "Hoje é dia de comida caseira.",
+   "nota": "\"Home-cooked\" = feito em casa."
+  },
+  {
+   "es": "Serve chilled.",
+   "pt": "Sirva bem gelado.",
+   "nota": "\"Chilled\" = bem gelado."
+  }
+ ]
+}

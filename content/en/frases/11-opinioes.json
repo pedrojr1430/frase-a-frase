@@ -1,0 +1,107 @@
+{
+ "id": "opinioes",
+ "name": "Opiniões",
+ "group": "social",
+ "items": [
+  {
+   "es": "I think you're right.",
+   "pt": "Acho que você tem razão.",
+   "nota": "\"Right\" = ter razão. Também: \"You have a point\"."
+  },
+  {
+   "es": "I don't agree.",
+   "pt": "Não concordo.",
+   "nota": "Mais suave: \"I'm not sure I agree\"."
+  },
+  {
+   "es": "In my opinion, it's a good idea.",
+   "pt": "Na minha opinião, é uma boa ideia.",
+   "nota": "Mais informal: \"I think it's a good idea\"."
+  },
+  {
+   "es": "I don't think it's that easy.",
+   "pt": "Não acho que seja tão fácil.",
+   "nota": "Em inglês a negação vai no \"think\": \"I don't think it is\", não \"I think it isn't\"."
+  },
+  {
+   "es": "It depends on how you look at it.",
+   "pt": "Depende de como você olha.",
+   "nota": "\"Depend on\" sempre com \"on\"."
+  },
+  {
+   "es": "It seems unfair to me.",
+   "pt": "Me parece injusto.",
+   "nota": "\"Unfair\" = injusto. \"Fair\" = justo."
+  },
+  {
+   "es": "You're absolutely right.",
+   "pt": "Você tem toda a razão.",
+   "nota": "Concordância forte."
+  },
+  {
+   "es": "I see it differently.",
+   "pt": "Eu vejo de outra forma.",
+   "nota": "Discordância educada."
+  },
+  {
+   "es": "That's true, but…",
+   "pt": "É verdade, mas…",
+   "nota": "Estrutura clássica para concordar e depois discordar."
+  },
+  {
+   "es": "What do you think?",
+   "pt": "O que você acha?",
+   "nota": "Também: \"What's your take on this?\"."
+  },
+  {
+   "es": "I'm totally against it.",
+   "pt": "Sou totalmente contra.",
+   "nota": "O contrário: \"I'm all for it\" (sou totalmente a favor)."
+  },
+  {
+   "es": "You have to admit it works.",
+   "pt": "Tem que admitir que funciona.",
+   "nota": "\"Admit\" = admitir, reconhecer."
+  },
+  {
+   "es": "Either way is fine with me.",
+   "pt": "Para mim tanto faz uma coisa ou outra.",
+   "nota": "\"Either way\" = de um jeito ou de outro."
+  },
+  {
+   "es": "Honestly, I'm not convinced.",
+   "pt": "Sinceramente, não me convence.",
+   "nota": "\"Honestly\" no começo suaviza a crítica."
+  },
+  {
+   "es": "It'd be best to wait.",
+   "pt": "O melhor seria esperar.",
+   "nota": "\"It'd\" = it would."
+  },
+  {
+   "es": "You might be right.",
+   "pt": "Pode ser que você tenha razão.",
+   "nota": "\"Might\" mostra possibilidade."
+  },
+  {
+   "es": "I'm not sure.",
+   "pt": "Não tenho certeza.",
+   "nota": "Também: \"I'm not certain\"."
+  },
+  {
+   "es": "On the one hand yes, on the other hand no.",
+   "pt": "Por um lado sim, por outro não.",
+   "nota": "\"On the one hand... on the other hand\" organiza prós e contras."
+  },
+  {
+   "es": "That's what I think too.",
+   "pt": "É o que eu também penso.",
+   "nota": "Também: \"I feel the same way\"."
+  },
+  {
+   "es": "It's worth a try.",
+   "pt": "Vale a pena tentar.",
+   "nota": "\"Worth\" = valer a pena. \"It's worth it\" = vale a pena."
+  }
+ ]
+}

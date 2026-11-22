@@ -1,0 +1,107 @@
+{
+ "id": "email-telefone",
+ "name": "E-mail e telefone",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "Dear Mr. Smith,",
+   "pt": "Prezado senhor Smith,",
+   "nota": "Abertura formal. Para mulheres sem saber o estado civil: \"Ms.\"."
+  },
+  {
+   "es": "I'm writing regarding your order.",
+   "pt": "Escrevo a respeito do seu pedido.",
+   "nota": "\"Regarding\" = a respeito de."
+  },
+  {
+   "es": "Please find the contract attached.",
+   "pt": "Segue em anexo o contrato.",
+   "nota": "Também: \"I've attached the contract\"."
+  },
+  {
+   "es": "I look forward to hearing from you.",
+   "pt": "Aguardo sua resposta.",
+   "nota": "\"Look forward to\" + verbo com \"-ing\"."
+  },
+  {
+   "es": "Best regards,",
+   "pt": "Atenciosamente.",
+   "nota": "Fechamento formal. Mais simples: \"Best,\" ou \"Thanks,\"."
+  },
+  {
+   "es": "Sorry for the late reply.",
+   "pt": "Desculpe a demora em responder.",
+   "nota": "Também: \"Apologies for the delay\"."
+  },
+  {
+   "es": "Hello?",
+   "pt": "Alô?",
+   "nota": "Ao atender o telefone. Em empresas: \"Hello, this is Ana speaking\"."
+  },
+  {
+   "es": "May I ask who's calling?",
+   "pt": "Quem gostaria?",
+   "nota": "Forma educada de perguntar quem fala."
+  },
+  {
+   "es": "One moment, I'll put you through.",
+   "pt": "Um momento, vou transferir.",
+   "nota": "\"Put through\" = transferir a ligação."
+  },
+  {
+   "es": "He's not available right now. Can I take a message?",
+   "pt": "Ele não está no momento. Quer deixar recado?",
+   "nota": "\"Take a message\" = anotar recado."
+  },
+  {
+   "es": "I think you have the wrong number.",
+   "pt": "O senhor ligou para o número errado.",
+   "nota": "Frase padrão para ligação errada."
+  },
+  {
+   "es": "I'll call back later.",
+   "pt": "Ligo mais tarde.",
+   "nota": "\"Call back\" = retornar a ligação."
+  },
+  {
+   "es": "I can't hear you well, the signal is bad.",
+   "pt": "Não estou ouvindo bem, o sinal está ruim.",
+   "nota": "Também: \"You're breaking up\" (sua voz está cortando)."
+  },
+  {
+   "es": "Could you spell your last name?",
+   "pt": "Pode soletrar seu sobrenome?",
+   "nota": "\"Last name\" ou \"surname\" = sobrenome."
+  },
+  {
+   "es": "I confirm receipt of the document.",
+   "pt": "Confirmo o recebimento do documento.",
+   "nota": "Formal. Mais simples: \"I got the document, thanks\"."
+  },
+  {
+   "es": "I'm copying my colleague.",
+   "pt": "Coloco minha colega em cópia.",
+   "nota": "\"Cc\" vem de \"carbon copy\". Também: \"I've cc'd my colleague\"."
+  },
+  {
+   "es": "I'm forwarding yesterday's email.",
+   "pt": "Estou reencaminhando o e-mail de ontem.",
+   "nota": "\"Forward\" = encaminhar."
+  },
+  {
+   "es": "I'd appreciate a reply by Friday.",
+   "pt": "Agradeceria uma resposta até sexta.",
+   "nota": "\"By\" + dia = até."
+  },
+  {
+   "es": "If you have any questions, feel free to reach out.",
+   "pt": "Qualquer dúvida, fico à disposição.",
+   "nota": "\"Reach out\" = entrar em contato."
+  },
+  {
+   "es": "I'll text you when I leave.",
+   "pt": "Te mando mensagem quando sair.",
+   "nota": "\"Text\" = mandar mensagem de celular."
+  }
+ ]
+}

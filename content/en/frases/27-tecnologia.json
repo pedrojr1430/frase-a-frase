@@ -1,0 +1,107 @@
+{
+ "id": "tecnologia",
+ "name": "Tecnologia",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "My computer froze.",
+   "pt": "Meu computador travou.",
+   "nota": "\"Freeze\" = travar. Passado: \"froze\"."
+  },
+  {
+   "es": "Have you tried restarting it?",
+   "pt": "Você já tentou reiniciar?",
+   "nota": "Também: \"turning it off and on again\"."
+  },
+  {
+   "es": "My battery died.",
+   "pt": "Fiquei sem bateria.",
+   "nota": "\"Die\" = acabar (bateria). Também: \"My phone is dead\"."
+  },
+  {
+   "es": "Download the app.",
+   "pt": "Baixe o aplicativo.",
+   "nota": "\"Download\" = baixar. \"Upload\" = subir, enviar."
+  },
+  {
+   "es": "I'm not getting any signal.",
+   "pt": "Não está pegando sinal.",
+   "nota": "Também: \"I have no bars\"."
+  },
+  {
+   "es": "I forgot my password.",
+   "pt": "Esqueci minha senha.",
+   "nota": "\"Reset your password\" = redefinir a senha."
+  },
+  {
+   "es": "I need to update my phone.",
+   "pt": "Tenho que atualizar o celular.",
+   "nota": "\"Update\" = atualizar."
+  },
+  {
+   "es": "I'll send it to you on WhatsApp.",
+   "pt": "Te mando pelo WhatsApp.",
+   "nota": "\"On\" para aplicativos e redes sociais."
+  },
+  {
+   "es": "Make a backup.",
+   "pt": "Faça um backup.",
+   "nota": "Também: \"Back it up\"."
+  },
+  {
+   "es": "Artificial intelligence is changing the way we work.",
+   "pt": "A inteligência artificial está mudando o trabalho.",
+   "nota": "\"AI\" = inteligência artificial."
+  },
+  {
+   "es": "This page won't load.",
+   "pt": "Esta página não carrega.",
+   "nota": "\"Won't\" mostra que algo se recusa a funcionar."
+  },
+  {
+   "es": "What's your username?",
+   "pt": "Qual é o seu usuário?",
+   "nota": "\"Username\" = nome de usuário."
+  },
+  {
+   "es": "Share the link in the group.",
+   "pt": "Compartilhe o link no grupo.",
+   "nota": "\"Share\" = compartilhar."
+  },
+  {
+   "es": "The screen is cracked.",
+   "pt": "A tela está quebrada.",
+   "nota": "\"Cracked\" = trincado."
+  },
+  {
+   "es": "I need to delete some files, my storage is full.",
+   "pt": "É preciso apagar arquivos, a memória está cheia.",
+   "nota": "\"Storage\" = armazenamento."
+  },
+  {
+   "es": "My account got hacked.",
+   "pt": "Hackearam minha conta.",
+   "nota": "\"Got hacked\" = foi hackeada."
+  },
+  {
+   "es": "Upload the photos to the cloud.",
+   "pt": "Suba as fotos para a nuvem.",
+   "nota": "\"The cloud\" = a nuvem."
+  },
+  {
+   "es": "The keyboard isn't working.",
+   "pt": "O teclado não funciona.",
+   "nota": "\"Keyboard\" = teclado."
+  },
+  {
+   "es": "He spends way too much time on social media.",
+   "pt": "Ele passa tempo demais nas redes sociais.",
+   "nota": "\"Social media\" é incontável."
+  },
+  {
+   "es": "Turn on two-factor authentication.",
+   "pt": "Ative a verificação em duas etapas.",
+   "nota": "Também: \"2FA\"."
+  }
+ ]
+}

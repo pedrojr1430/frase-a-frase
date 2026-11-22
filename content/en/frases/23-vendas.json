@@ -1,0 +1,107 @@
+{
+ "id": "vendas",
+ "name": "Vendas e negociação",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "What's your best price?",
+   "pt": "Qual é o seu melhor preço?",
+   "nota": "Pergunta típica de negociação."
+  },
+  {
+   "es": "I can give you a ten percent discount.",
+   "pt": "Posso dar dez por cento de desconto.",
+   "nota": "\"Percent\" em uma palavra nos EUA."
+  },
+  {
+   "es": "The price doesn't include tax.",
+   "pt": "O preço não inclui impostos.",
+   "nota": "Nos EUA o imposto (\"sales tax\") é somado no caixa."
+  },
+  {
+   "es": "That's our final offer.",
+   "pt": "É a nossa última oferta.",
+   "nota": "Também: \"That's as low as we can go\"."
+  },
+  {
+   "es": "I need to check with my partner.",
+   "pt": "Preciso consultar meu sócio.",
+   "nota": "\"Business partner\" = sócio."
+  },
+  {
+   "es": "What payment terms do you offer?",
+   "pt": "Que condições de pagamento vocês oferecem?",
+   "nota": "\"Payment terms\" = condições de pagamento."
+  },
+  {
+   "es": "If you buy more units, the price goes down.",
+   "pt": "Se comprarem mais unidades, o preço cai.",
+   "nota": "Também: \"We offer volume discounts\"."
+  },
+  {
+   "es": "I'll send you a quote tomorrow.",
+   "pt": "Envio um orçamento amanhã.",
+   "nota": "\"Quote\" = orçamento (de preço)."
+  },
+  {
+   "es": "I'm sure we can reach an agreement.",
+   "pt": "Podemos chegar a um acordo.",
+   "nota": "\"Reach an agreement\" = chegar a um acordo."
+  },
+  {
+   "es": "That's out of our budget.",
+   "pt": "Isso está fora do nosso orçamento.",
+   "nota": "\"Budget\" = orçamento disponível."
+  },
+  {
+   "es": "When could you deliver?",
+   "pt": "Para quando vocês conseguiriam entregar?",
+   "nota": "\"Deliver\" = entregar."
+  },
+  {
+   "es": "Shipping is free on orders over a hundred dollars.",
+   "pt": "O frete é grátis em pedidos acima de cem dólares.",
+   "nota": "\"Shipping\" = frete."
+  },
+  {
+   "es": "Let me suggest an alternative.",
+   "pt": "Proponho uma alternativa.",
+   "nota": "\"Suggest\" + substantivo, sem \"to you\"."
+  },
+  {
+   "es": "It's a top-quality product.",
+   "pt": "É um produto de ótima qualidade.",
+   "nota": "\"Top-quality\" = de primeira linha."
+  },
+  {
+   "es": "We'll sign the contract next week.",
+   "pt": "Assinamos o contrato na semana que vem.",
+   "nota": "\"Sign\" se pronuncia \"sáin\": o \"g\" é mudo."
+  },
+  {
+   "es": "Does it come with a warranty?",
+   "pt": "Tem garantia?",
+   "nota": "\"Warranty\" ou \"guarantee\" = garantia."
+  },
+  {
+   "es": "We need to close the deal this month.",
+   "pt": "Precisamos fechar a venda este mês.",
+   "nota": "\"Close the deal\" = fechar a venda."
+  },
+  {
+   "es": "It's an investment, not an expense.",
+   "pt": "É um investimento, não um gasto.",
+   "nota": "Argumento clássico de vendas."
+  },
+  {
+   "es": "What's holding you back?",
+   "pt": "O que o deixa em dúvida?",
+   "nota": "\"Hold back\" = segurar, deixar em dúvida."
+  },
+  {
+   "es": "It's a deal.",
+   "pt": "Negócio fechado.",
+   "nota": "Também: \"Deal!\"."
+  }
+ ]
+}

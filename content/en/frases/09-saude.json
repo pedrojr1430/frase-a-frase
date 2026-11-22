@@ -1,0 +1,107 @@
+{
+ "id": "saude",
+ "name": "Saúde",
+ "group": "social",
+ "items": [
+  {
+   "es": "I have a headache.",
+   "pt": "Estou com dor de cabeça.",
+   "nota": "Dores com \"-ache\": headache, stomachache, backache, toothache."
+  },
+  {
+   "es": "I've had a fever since yesterday.",
+   "pt": "Estou com febre desde ontem.",
+   "nota": "Present perfect + \"since\" para algo que começou no passado e continua."
+  },
+  {
+   "es": "I need to make a doctor's appointment.",
+   "pt": "Preciso marcar consulta com o médico.",
+   "nota": "\"Appointment\" = consulta marcada. \"See a doctor\" = ir ao médico."
+  },
+  {
+   "es": "I have a cold.",
+   "pt": "Estou resfriado.",
+   "nota": "Resfriado é \"a cold\". \"I'm cold\" significa \"estou com frio\"."
+  },
+  {
+   "es": "I sprained my ankle.",
+   "pt": "Torci o tornozelo.",
+   "nota": "\"Sprain\" = torcer (articulação). \"Twist\" também é comum."
+  },
+  {
+   "es": "How long have you had these symptoms?",
+   "pt": "Desde quando o senhor tem esses sintomas?",
+   "nota": "Pergunta típica de médico, no present perfect."
+  },
+  {
+   "es": "Take one pill every eight hours.",
+   "pt": "Tome um comprimido a cada oito horas.",
+   "nota": "\"Pill\" ou \"tablet\" = comprimido."
+  },
+  {
+   "es": "I have a sore throat.",
+   "pt": "Estou com dor de garganta.",
+   "nota": "\"Sore\" = dolorido. Também: \"My throat hurts\"."
+  },
+  {
+   "es": "I'm feeling much better.",
+   "pt": "Estou me sentindo muito melhor.",
+   "nota": "\"Much better\" = muito melhor. Nunca \"very better\"."
+  },
+  {
+   "es": "Do you have health insurance?",
+   "pt": "O senhor tem plano de saúde?",
+   "nota": "Nos EUA, o plano de saúde é \"health insurance\"."
+  },
+  {
+   "es": "I'm going to the dentist this afternoon.",
+   "pt": "Vou ao dentista hoje à tarde.",
+   "nota": "\"Go to the dentist\" e \"go to the doctor\" levam \"the\"."
+  },
+  {
+   "es": "I work out three times a week.",
+   "pt": "Faço exercício três vezes por semana.",
+   "nota": "\"Work out\" = fazer exercício físico. Frequência: \"once, twice, three times\"."
+  },
+  {
+   "es": "I haven't been sleeping well lately.",
+   "pt": "Tenho dormido muito mal ultimamente.",
+   "nota": "\"Lately\" = ultimamente, com present perfect."
+  },
+  {
+   "es": "I feel dizzy.",
+   "pt": "Estou tonto.",
+   "nota": "\"Dizzy\" = tonto. \"Lightheaded\" = com a cabeça leve."
+  },
+  {
+   "es": "I have high blood pressure.",
+   "pt": "Estou com a pressão alta.",
+   "nota": "Pressão baixa: \"low blood pressure\"."
+  },
+  {
+   "es": "Take a deep breath.",
+   "pt": "Respire fundo.",
+   "nota": "\"Breath\" (substantivo, som de \"é\") e \"breathe\" (verbo, som de \"i\")."
+  },
+  {
+   "es": "I had a blood test.",
+   "pt": "Fiz um exame de sangue.",
+   "nota": "\"Test\" ou \"work\": \"blood work\" é comum nos EUA."
+  },
+  {
+   "es": "You need to rest.",
+   "pt": "O senhor precisa ficar de repouso.",
+   "nota": "Mais formal: \"You should stay in bed\"."
+  },
+  {
+   "es": "Can you give me a doctor's note?",
+   "pt": "Pode me dar um atestado?",
+   "nota": "Atestado: \"doctor's note\" ou \"sick note\"."
+  },
+  {
+   "es": "Get well soon!",
+   "pt": "Melhoras!",
+   "nota": "Frase fixa para desejar melhoras."
+  }
+ ]
+}

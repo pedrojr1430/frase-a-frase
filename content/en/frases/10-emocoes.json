@@ -1,0 +1,107 @@
+{
+ "id": "emocoes",
+ "name": "Emoções",
+ "group": "social",
+ "items": [
+  {
+   "es": "I'm really happy.",
+   "pt": "Estou muito feliz.",
+   "nota": "\"Really\" é mais natural na fala do que \"very\"."
+  },
+  {
+   "es": "I'm feeling a little down today.",
+   "pt": "Estou me sentindo um pouco triste hoje.",
+   "nota": "\"Down\" ou \"blue\" = triste, desanimado."
+  },
+  {
+   "es": "I'm nervous about the exam.",
+   "pt": "Estou nervoso por causa da prova.",
+   "nota": "\"Nervous about\" + algo. \"Anxious\" é mais forte."
+  },
+  {
+   "es": "That makes me so angry!",
+   "pt": "Que raiva isso me dá!",
+   "nota": "Mais informal: \"That drives me crazy!\"."
+  },
+  {
+   "es": "I'm afraid of driving at night.",
+   "pt": "Tenho medo de dirigir à noite.",
+   "nota": "\"Be afraid of\" + verbo com \"-ing\"."
+  },
+  {
+   "es": "I'm tired of waiting.",
+   "pt": "Estou farto de esperar.",
+   "nota": "\"Tired of\" = farto de. Mais forte: \"sick of\"."
+  },
+  {
+   "es": "I can't wait to see you.",
+   "pt": "Estou muito animado para te ver.",
+   "nota": "\"I can't wait\" mostra muita vontade, não impaciência."
+  },
+  {
+   "es": "Don't worry.",
+   "pt": "Não se preocupe.",
+   "nota": "\"Don't worry about it\" é ainda mais natural."
+  },
+  {
+   "es": "I'm proud of you.",
+   "pt": "Tenho orgulho de você.",
+   "nota": "\"Proud of\" + pessoa. Muito usado entre família e amigos."
+  },
+  {
+   "es": "Sometimes I feel lonely.",
+   "pt": "Às vezes me sinto sozinho.",
+   "nota": "\"Lonely\" = solitário (sentimento). \"Alone\" = sozinho (sem companhia)."
+  },
+  {
+   "es": "What a relief!",
+   "pt": "Que alívio!",
+   "nota": "\"Relief\" = alívio."
+  },
+  {
+   "es": "I got really jealous.",
+   "pt": "Fiquei com muito ciúme.",
+   "nota": "\"Got\" + adjetivo mostra mudança: fiquei com ciúme."
+  },
+  {
+   "es": "I'm overwhelmed with all this work.",
+   "pt": "Estou sobrecarregado com tanto trabalho.",
+   "nota": "\"Overwhelmed\" = sobrecarregado, sem dar conta."
+  },
+  {
+   "es": "I love this song.",
+   "pt": "Adoro esta música.",
+   "nota": "\"Love\" serve para coisas também, não só para pessoas."
+  },
+  {
+   "es": "I can't stand people being late.",
+   "pt": "Não suporto falta de pontualidade.",
+   "nota": "\"Can't stand\" = não suportar."
+  },
+  {
+   "es": "I feel like crying.",
+   "pt": "Tenho vontade de chorar.",
+   "nota": "\"Feel like\" + verbo com \"-ing\" = ter vontade de."
+  },
+  {
+   "es": "I'm in a good mood.",
+   "pt": "Estou de bom humor.",
+   "nota": "Mau humor: \"in a bad mood\"."
+  },
+  {
+   "es": "I'm embarrassed to speak in public.",
+   "pt": "Tenho vergonha de falar em público.",
+   "nota": "Atenção: vergonha é \"embarrassed\". \"Pregnant\" é grávida!"
+  },
+  {
+   "es": "I really miss him.",
+   "pt": "Sinto muita falta dele.",
+   "nota": "\"Miss\" = sentir falta. \"I miss you\" = sinto sua falta."
+  },
+  {
+   "es": "I'm so excited about the trip.",
+   "pt": "Estou empolgado com a viagem.",
+   "nota": "\"Excited\" = empolgado. Não confunda com \"exciting\" (empolgante)."
+  }
+ ]
+}

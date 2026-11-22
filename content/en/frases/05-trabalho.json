@@ -1,0 +1,107 @@
+{
+ "id": "trabalho",
+ "name": "Trabalho",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "Can we schedule a meeting?",
+   "pt": "Podemos marcar uma reunião?",
+   "nota": "\"Schedule\" se pronuncia \"SKED-jool\" nos EUA e \"SHED-yool\" no Reino Unido."
+  },
+  {
+   "es": "I'm writing to confirm our appointment.",
+   "pt": "Escrevo para confirmar o compromisso.",
+   "nota": "Abertura clássica de e-mail formal."
+  },
+  {
+   "es": "I'll send you the report today.",
+   "pt": "Envio o relatório para o senhor hoje.",
+   "nota": "\"I'll\" (I will) é usado para promessas e decisões na hora."
+  },
+  {
+   "es": "I agree with you.",
+   "pt": "Concordo com você.",
+   "nota": "Nunca diga \"I'm agree\": \"agree\" já é verbo."
+  },
+  {
+   "es": "Could you say that again, please?",
+   "pt": "Pode repetir, por favor?",
+   "nota": "Também: \"Sorry, could you repeat that?\"."
+  },
+  {
+   "es": "Please let me know if you need anything else.",
+   "pt": "Fico à sua disposição.",
+   "nota": "Fechamento comum de e-mail, equivalente a \"fico à disposição\"."
+  },
+  {
+   "es": "I work for a tech company.",
+   "pt": "Trabalho numa empresa de tecnologia.",
+   "nota": "\"Work for\" uma empresa; \"work at\" um lugar; \"work in\" uma área."
+  },
+  {
+   "es": "I'm working from home today.",
+   "pt": "Hoje estou trabalhando de casa.",
+   "nota": "Também se diz \"I'm WFH today\" em mensagens informais."
+  },
+  {
+   "es": "What's the deadline?",
+   "pt": "Qual é o prazo de entrega?",
+   "nota": "\"Deadline\" = prazo final. \"Due date\" também é comum."
+  },
+  {
+   "es": "I need more time to finish it.",
+   "pt": "Preciso de mais tempo para terminar.",
+   "nota": "Mais educado: \"Could I have a few more days?\"."
+  },
+  {
+   "es": "I have a lot of work this week.",
+   "pt": "Tenho muito trabalho esta semana.",
+   "nota": "\"Work\" não tem plural nesse sentido. Também: \"I'm swamped\" (atolado)."
+  },
+  {
+   "es": "My boss is away on a business trip.",
+   "pt": "Meu chefe está viajando.",
+   "nota": "\"Away\" = fora, viajando. \"Out of office\" aparece em respostas automáticas."
+  },
+  {
+   "es": "I'm going to ask for a few days off.",
+   "pt": "Vou pedir uns dias de folga.",
+   "nota": "\"Day off\" = dia de folga. \"Time off\" = folga em geral."
+  },
+  {
+   "es": "Who's in charge of this project?",
+   "pt": "Quem é o responsável por este projeto?",
+   "nota": "\"In charge of\" = responsável por."
+  },
+  {
+   "es": "I've been offered a new position.",
+   "pt": "Me ofereceram um novo cargo.",
+   "nota": "Voz passiva comum no trabalho. \"Position\" ou \"role\" = cargo."
+  },
+  {
+   "es": "I'm looking for a job.",
+   "pt": "Estou procurando emprego.",
+   "nota": "\"Job\" é o emprego; \"work\" é o trabalho em geral."
+  },
+  {
+   "es": "How long have you been with the company?",
+   "pt": "Há quanto tempo você está na empresa?",
+   "nota": "Present perfect continuous: ação que começou no passado e continua."
+  },
+  {
+   "es": "I get off work at six.",
+   "pt": "Saio do trabalho às seis.",
+   "nota": "\"Get off work\" = sair do trabalho no fim do expediente."
+  },
+  {
+   "es": "I have a job interview tomorrow.",
+   "pt": "Tenho uma entrevista amanhã.",
+   "nota": "\"Job interview\" = entrevista de emprego."
+  },
+  {
+   "es": "I'll look into it and get back to you.",
+   "pt": "Vou dar uma olhada e te aviso.",
+   "nota": "\"Get back to you\" = te dar um retorno. Muito usado no trabalho."
+  }
+ ]
+}

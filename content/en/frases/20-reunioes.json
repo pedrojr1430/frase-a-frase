@@ -1,0 +1,107 @@
+{
+ "id": "reunioes",
+ "name": "Reuniões",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "Let's get started.",
+   "pt": "Vamos começar a reunião.",
+   "nota": "Abertura padrão de reunião. Também: \"Let's kick things off\"."
+  },
+  {
+   "es": "The first item on the agenda is the budget.",
+   "pt": "O primeiro item da pauta é o orçamento.",
+   "nota": "\"Agenda\" = pauta. \"Item\" = ponto da pauta."
+  },
+  {
+   "es": "Does anyone have any questions?",
+   "pt": "Alguém tem alguma pergunta?",
+   "nota": "\"Anyone\" em perguntas; \"someone\" em afirmações."
+  },
+  {
+   "es": "I'd like to add something.",
+   "pt": "Eu gostaria de acrescentar algo.",
+   "nota": "Educado para pedir a palavra."
+  },
+  {
+   "es": "Sorry to interrupt.",
+   "pt": "Desculpe interromper.",
+   "nota": "Também: \"Sorry, can I jump in?\"."
+  },
+  {
+   "es": "Let's get back to the main topic.",
+   "pt": "Vamos voltar ao assunto principal.",
+   "nota": "\"Get back to\" = voltar a."
+  },
+  {
+   "es": "Can you share your screen?",
+   "pt": "Pode compartilhar a tela?",
+   "nota": "Frase essencial em reuniões on-line."
+  },
+  {
+   "es": "You cut out.",
+   "pt": "Seu áudio cortou.",
+   "nota": "\"Cut out\" = cortar (áudio, ligação)."
+  },
+  {
+   "es": "You're on mute.",
+   "pt": "Seu microfone está no mudo.",
+   "nota": "\"Mute\" = mudo. \"Unmute\" = tirar do mudo."
+  },
+  {
+   "es": "Let's leave it for the next meeting.",
+   "pt": "Deixamos para a próxima reunião.",
+   "nota": "Também: \"Let's table this\" (EUA: adiar o assunto)."
+  },
+  {
+   "es": "Who's taking notes today?",
+   "pt": "Quem faz a ata hoje?",
+   "nota": "Ata formal: \"minutes\"."
+  },
+  {
+   "es": "To sum up, we agreed on three points.",
+   "pt": "Resumindo, concordamos em três pontos.",
+   "nota": "\"To sum up\" = resumindo."
+  },
+  {
+   "es": "We need to make a decision today.",
+   "pt": "Precisamos tomar uma decisão hoje.",
+   "nota": "Decisão se \"make\", nunca \"take\" em inglês americano."
+  },
+  {
+   "es": "I'll email you the minutes.",
+   "pt": "Mando a ata para vocês por e-mail.",
+   "nota": "\"Email\" também é verbo: \"I'll email you\"."
+  },
+  {
+   "es": "Can we postpone the meeting?",
+   "pt": "Podemos adiar a reunião?",
+   "nota": "Também: \"push the meeting back\" (adiar)."
+  },
+  {
+   "es": "We're running a little behind.",
+   "pt": "Estamos um pouco atrasados.",
+   "nota": "\"Behind schedule\" = atrasado em relação ao planejado."
+  },
+  {
+   "es": "Good question, I'll check and get back to you.",
+   "pt": "Boa pergunta, vou verificar e te falo.",
+   "nota": "Resposta segura quando você não sabe algo."
+  },
+  {
+   "es": "What do you think of the proposal?",
+   "pt": "O que vocês acham da proposta?",
+   "nota": "\"Think of\" = achar de, opinar sobre."
+  },
+  {
+   "es": "We need to define the next steps.",
+   "pt": "É preciso definir os próximos passos.",
+   "nota": "\"Next steps\" é expressão muito usada no trabalho."
+  },
+  {
+   "es": "Thank you all for your time.",
+   "pt": "Obrigado a todos pelo tempo.",
+   "nota": "Fechamento educado de reunião."
+  }
+ ]
+}

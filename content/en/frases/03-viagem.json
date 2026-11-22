@@ -1,0 +1,107 @@
+{
+ "id": "viagem",
+ "name": "Viagem",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "Where's the bus stop?",
+   "pt": "Onde fica o ponto de ônibus?",
+   "nota": "\"Bus stop\" é o ponto de ônibus. A estação maior é \"bus station\"."
+  },
+  {
+   "es": "What time does the train leave?",
+   "pt": "A que horas sai o trem?",
+   "nota": "Nas perguntas no presente, o \"does\" aparece com he/she/it: \"does the train leave\"."
+  },
+  {
+   "es": "I have a reservation for tonight.",
+   "pt": "Tenho uma reserva para esta noite.",
+   "nota": "\"Tonight\" = esta noite. Também se diz \"booking\" no Reino Unido."
+  },
+  {
+   "es": "I lost my luggage.",
+   "pt": "Perdi minha bagagem.",
+   "nota": "\"Luggage\" e \"baggage\" não têm plural: nunca \"luggages\"."
+  },
+  {
+   "es": "How much is the ticket?",
+   "pt": "Quanto custa a passagem?",
+   "nota": "\"Ticket\" serve para passagem, ingresso e bilhete."
+  },
+  {
+   "es": "I'm looking for a cheap hotel.",
+   "pt": "Estou procurando um hotel barato.",
+   "nota": "\"Look for\" = procurar. \"Cheap\" pode soar como \"de baixa qualidade\"; \"affordable\" é mais neutro."
+  },
+  {
+   "es": "Where can I exchange money?",
+   "pt": "Onde posso trocar dinheiro?",
+   "nota": "Casa de câmbio: \"currency exchange\" ou \"exchange office\"."
+  },
+  {
+   "es": "Could you take a picture of me?",
+   "pt": "Pode tirar uma foto minha?",
+   "nota": "Tirar foto é \"take a picture\" (ou \"take a photo\"), nunca \"make a photo\"."
+  },
+  {
+   "es": "What do you recommend I visit?",
+   "pt": "O que o senhor recomenda visitar?",
+   "nota": "Também se pergunta: \"What should I see while I'm here?\"."
+  },
+  {
+   "es": "Is it far from here?",
+   "pt": "Fica longe daqui?",
+   "nota": "Resposta comum: \"It's about a ten-minute walk\" (uns dez minutos a pé)."
+  },
+  {
+   "es": "I'd like a map of the city.",
+   "pt": "Eu gostaria de um mapa da cidade.",
+   "nota": "Hoje muita gente diz \"a city map\". \"Downtown\" é o centro, nos EUA."
+  },
+  {
+   "es": "What time does the museum open?",
+   "pt": "A que horas abre o museu?",
+   "nota": "\"Open\" é abrir e também aberto: \"The museum is open\"."
+  },
+  {
+   "es": "Do I need to book in advance?",
+   "pt": "É preciso reservar com antecedência?",
+   "nota": "\"In advance\" = com antecedência."
+  },
+  {
+   "es": "We're on vacation.",
+   "pt": "Estamos de férias.",
+   "nota": "Nos EUA: \"on vacation\". No Reino Unido: \"on holiday\"."
+  },
+  {
+   "es": "It's my first time here.",
+   "pt": "É minha primeira vez aqui.",
+   "nota": "Frase simples e muito usada para pedir ajuda ou dicas."
+  },
+  {
+   "es": "Can I walk there?",
+   "pt": "Dá para ir a pé?",
+   "nota": "Também: \"Is it within walking distance?\" (dá para ir a pé?)."
+  },
+  {
+   "es": "Where's the tourist information office?",
+   "pt": "Onde fica o posto de informações turísticas?",
+   "nota": "Muitas vezes indicado só como \"Tourist Info\" ou com um \"i\" nas placas."
+  },
+  {
+   "es": "I'm lost.",
+   "pt": "Eu me perdi.",
+   "nota": "\"I got lost\" conta o que aconteceu: eu me perdi."
+  },
+  {
+   "es": "How long does it take to get there?",
+   "pt": "Quanto tempo leva para chegar?",
+   "nota": "\"How long does it take\" é a estrutura padrão para perguntar duração."
+  },
+  {
+   "es": "I'd like to rent a bike.",
+   "pt": "Eu gostaria de alugar uma bicicleta.",
+   "nota": "Nos EUA: \"rent\". No Reino Unido também se diz \"hire\". \"Bike\" = \"bicycle\"."
+  }
+ ]
+}

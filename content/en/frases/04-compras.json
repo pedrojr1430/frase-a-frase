@@ -1,0 +1,107 @@
+{
+ "id": "compras",
+ "name": "Compras",
+ "group": "social",
+ "items": [
+  {
+   "es": "How much is this?",
+   "pt": "Quanto custa isto?",
+   "nota": "Para várias coisas: \"How much are these?\"."
+  },
+  {
+   "es": "I'm just looking, thanks.",
+   "pt": "Só estou olhando, obrigado.",
+   "nota": "Resposta padrão quando o vendedor pergunta \"Can I help you?\"."
+  },
+  {
+   "es": "Do you have this in another size?",
+   "pt": "Tem em outro tamanho?",
+   "nota": "Pode ser mais específico: \"in a smaller size\" ou \"in a bigger size\"."
+  },
+  {
+   "es": "Can I pay by card?",
+   "pt": "Posso pagar com cartão?",
+   "nota": "\"By card\" ou \"with a card\". Nos EUA, também \"credit\" ou \"debit\"."
+  },
+  {
+   "es": "Can you give me a discount?",
+   "pt": "Me faz um desconto?",
+   "nota": "Em lojas comuns dos EUA quase não se pede desconto; em feiras, sim."
+  },
+  {
+   "es": "I'll take it.",
+   "pt": "Vou levar.",
+   "nota": "É o jeito natural de dizer que vai comprar."
+  },
+  {
+   "es": "Where are the fitting rooms?",
+   "pt": "Onde ficam os provadores?",
+   "nota": "Nos EUA também se diz \"dressing rooms\"."
+  },
+  {
+   "es": "It's a little big on me.",
+   "pt": "Ficou um pouco grande em mim.",
+   "nota": "\"On me\" mostra em quem a roupa ficou grande. \"Tight\" = apertado."
+  },
+  {
+   "es": "Do you have it in black?",
+   "pt": "Tem na cor preta?",
+   "nota": "Cores não levam artigo: \"in black\", \"in blue\"."
+  },
+  {
+   "es": "Can I exchange it if it doesn't fit?",
+   "pt": "Posso trocar se não ficar bom?",
+   "nota": "\"Fit\" é servir no tamanho. \"Suit\" é combinar com a pessoa."
+  },
+  {
+   "es": "I'd like to return this.",
+   "pt": "Eu gostaria de devolver isto.",
+   "nota": "\"Return\" = devolver para ter o dinheiro de volta (\"refund\")."
+  },
+  {
+   "es": "Do you have the receipt?",
+   "pt": "Você tem o recibo?",
+   "nota": "\"Receipt\" se pronuncia \"ri-SIT\": o \"p\" é mudo."
+  },
+  {
+   "es": "It's on sale.",
+   "pt": "Está em promoção.",
+   "nota": "\"On sale\" = em promoção. \"For sale\" = à venda."
+  },
+  {
+   "es": "Could you gift-wrap it?",
+   "pt": "Pode embrulhar para presente?",
+   "nota": "\"Gift wrap\" = embrulho de presente."
+  },
+  {
+   "es": "What time do you close?",
+   "pt": "A que horas vocês fecham?",
+   "nota": "Para saber o horário completo: \"What are your opening hours?\"."
+  },
+  {
+   "es": "Do you take cash?",
+   "pt": "Aceitam dinheiro?",
+   "nota": "\"Cash\" = dinheiro vivo. \"Take\" aqui quer dizer aceitar."
+  },
+  {
+   "es": "I'm looking for a gift for my mother.",
+   "pt": "Procuro um presente para minha mãe.",
+   "nota": "\"Present\" também significa presente; \"gift\" é mais comum em lojas."
+  },
+  {
+   "es": "It's too expensive for me.",
+   "pt": "É caro demais para mim.",
+   "nota": "\"Too\" = demais. \"Very expensive\" só diz que é muito caro."
+  },
+  {
+   "es": "Could I get a bag, please?",
+   "pt": "Pode me dar uma sacola, por favor?",
+   "nota": "Em alguns lugares a sacola é cobrada: \"Do you need a bag?\"."
+  },
+  {
+   "es": "Do you have anything cheaper?",
+   "pt": "Tem algo mais barato?",
+   "nota": "\"Anything\" aparece em perguntas e negativas; \"something\" em afirmações."
+  }
+ ]
+}

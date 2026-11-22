@@ -1,0 +1,107 @@
+{
+ "id": "transporte",
+ "name": "Transporte",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "A round-trip ticket, please.",
+   "pt": "Uma passagem de ida e volta, por favor.",
+   "nota": "Nos EUA: \"round-trip\". No Reino Unido: \"return ticket\". Só ida: \"one-way\"."
+  },
+  {
+   "es": "Which line goes downtown?",
+   "pt": "Que linha vai para o centro?",
+   "nota": "\"Line\" para metrô; \"route\" para ônibus."
+  },
+  {
+   "es": "Where do I get off?",
+   "pt": "Onde tenho que descer?",
+   "nota": "\"Get off\" = descer. \"Get on\" = subir (ônibus, trem)."
+  },
+  {
+   "es": "Does this bus stop at the square?",
+   "pt": "Este ônibus para na praça?",
+   "nota": "\"Stop at\" = parar em."
+  },
+  {
+   "es": "Take me to this address, please.",
+   "pt": "Me leve a este endereço, por favor.",
+   "nota": "Frase clássica de táxi."
+  },
+  {
+   "es": "How much do I owe you?",
+   "pt": "Quanto deu a corrida?",
+   "nota": "Pergunta educada para saber o valor da corrida."
+  },
+  {
+   "es": "I have to change trains.",
+   "pt": "Tenho que fazer baldeação.",
+   "nota": "\"Change trains\" = fazer baldeação. Também: \"transfer\"."
+  },
+  {
+   "es": "The subway is really crowded.",
+   "pt": "O metrô está muito cheio.",
+   "nota": "Metrô: \"subway\" (EUA), \"underground\" ou \"tube\" (Londres), \"metro\"."
+  },
+  {
+   "es": "How often does the train run?",
+   "pt": "De quanto em quanto tempo passa o trem?",
+   "nota": "\"How often\" = com que frequência."
+  },
+  {
+   "es": "I'd like to rent a car.",
+   "pt": "Gostaria de alugar um carro.",
+   "nota": "\"Car rental\" = locadora de carros."
+  },
+  {
+   "es": "Where's the nearest gas station?",
+   "pt": "Onde fica o posto de gasolina mais próximo?",
+   "nota": "Nos EUA: \"gas station\". No Reino Unido: \"petrol station\"."
+  },
+  {
+   "es": "There's a lot of traffic at this time.",
+   "pt": "Tem muito trânsito a esta hora.",
+   "nota": "\"Traffic\" não tem plural. \"Traffic jam\" = engarrafamento."
+  },
+  {
+   "es": "I missed the last bus.",
+   "pt": "Perdi o último ônibus.",
+   "nota": "\"Missed\" = perdi (não peguei)."
+  },
+  {
+   "es": "Is this seat taken?",
+   "pt": "Este lugar está livre?",
+   "nota": "Pergunta padrão. Resposta: \"No, go ahead\"."
+  },
+  {
+   "es": "Where can I buy tickets?",
+   "pt": "Onde se compram as passagens?",
+   "nota": "Bilheteria: \"ticket office\" ou \"ticket machine\"."
+  },
+  {
+   "es": "Stop here, please.",
+   "pt": "Pare aqui, por favor.",
+   "nota": "Mais educado: \"You can drop me off here\"."
+  },
+  {
+   "es": "I bike to work.",
+   "pt": "Vou de bicicleta para o trabalho.",
+   "nota": "\"Bike to work\" = ir de bicicleta. A pé: \"walk to work\"."
+  },
+  {
+   "es": "The train leaves from platform three.",
+   "pt": "O trem sai da plataforma três.",
+   "nota": "Nos EUA às vezes se diz \"track three\"."
+  },
+  {
+   "es": "Does the taxi take cards?",
+   "pt": "O táxi aceita cartão?",
+   "nota": "\"Take\" = aceitar."
+  },
+  {
+   "es": "There's a transit strike tomorrow.",
+   "pt": "Tem greve de transporte amanhã.",
+   "nota": "\"Strike\" = greve."
+  }
+ ]
+}

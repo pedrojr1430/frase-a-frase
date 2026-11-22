@@ -1,0 +1,107 @@
+{
+ "id": "meio-ambiente",
+ "name": "Meio ambiente",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "We need to recycle plastic.",
+   "pt": "É preciso reciclar o plástico.",
+   "nota": "\"Recycle\" = reciclar."
+  },
+  {
+   "es": "Climate change affects all of us.",
+   "pt": "A mudança climática afeta a todos nós.",
+   "nota": "\"Affect\" (verbo) e \"effect\" (substantivo)."
+  },
+  {
+   "es": "Save water: turn off the faucet.",
+   "pt": "Economize água: feche a torneira.",
+   "nota": "Britânico: \"turn off the tap\"."
+  },
+  {
+   "es": "This summer was really dry.",
+   "pt": "Este verão foi muito seco.",
+   "nota": "\"Drought\" = seca prolongada."
+  },
+  {
+   "es": "I bring my own bag to the grocery store.",
+   "pt": "Levo minha própria sacola ao supermercado.",
+   "nota": "\"Reusable bag\" = sacola reutilizável."
+  },
+  {
+   "es": "Air pollution is worrying.",
+   "pt": "A poluição do ar é preocupante.",
+   "nota": "\"Worrying\" = preocupante."
+  },
+  {
+   "es": "Renewable energy is the future.",
+   "pt": "As energias renováveis são o futuro.",
+   "nota": "\"Energy\" aqui é incontável."
+  },
+  {
+   "es": "They installed solar panels on the building.",
+   "pt": "Instalaram painéis solares no prédio.",
+   "nota": "\"Solar panels\" = painéis solares."
+  },
+  {
+   "es": "The wildfire burned thousands of acres.",
+   "pt": "O incêndio queimou milhares de hectares.",
+   "nota": "Nos EUA a área é medida em acres (1 hectare ≈ 2,5 acres)."
+  },
+  {
+   "es": "We need to protect the Amazon rainforest.",
+   "pt": "É preciso proteger a floresta amazônica.",
+   "nota": "\"Rainforest\" = floresta tropical."
+  },
+  {
+   "es": "Many species are endangered.",
+   "pt": "Muitas espécies estão em perigo de extinção.",
+   "nota": "\"Endangered\" = ameaçado de extinção."
+  },
+  {
+   "es": "I sort my trash at home.",
+   "pt": "Separo o lixo em casa.",
+   "nota": "\"Sort\" = separar."
+  },
+  {
+   "es": "I prefer public transportation.",
+   "pt": "Prefiro o transporte público.",
+   "nota": "Britânico: \"public transport\"."
+  },
+  {
+   "es": "The floods hit the region.",
+   "pt": "As enchentes afetaram a região.",
+   "nota": "\"Flood\" = enchente."
+  },
+  {
+   "es": "Sea levels are rising.",
+   "pt": "O nível do mar está subindo.",
+   "nota": "\"Rise\" = subir."
+  },
+  {
+   "es": "I buy local, seasonal produce.",
+   "pt": "Compro produtos locais e da estação.",
+   "nota": "\"Produce\" = hortifrúti."
+  },
+  {
+   "es": "Turn off the lights you're not using.",
+   "pt": "Apague as luzes que não estiver usando.",
+   "nota": "\"Turn off\" = apagar, desligar."
+  },
+  {
+   "es": "We planted trees in the neighborhood.",
+   "pt": "Plantamos árvores no bairro.",
+   "nota": "Britânico: \"neighbourhood\"."
+  },
+  {
+   "es": "This car is electric.",
+   "pt": "Este carro é elétrico.",
+   "nota": "\"EV\" = electric vehicle."
+  },
+  {
+   "es": "Every little bit counts.",
+   "pt": "Cada pequeno gesto conta.",
+   "nota": "Expressão comum: cada pequeno gesto conta."
+  }
+ ]
+}

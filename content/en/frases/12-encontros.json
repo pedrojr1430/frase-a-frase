@@ -1,0 +1,107 @@
+{
+ "id": "encontros",
+ "name": "Encontros e convites",
+ "group": "social",
+ "items": [
+  {
+   "es": "Do you want to meet up this afternoon?",
+   "pt": "Vamos nos encontrar hoje à tarde?",
+   "nota": "\"Meet up\" = se encontrar (com amigos)."
+  },
+  {
+   "es": "Do you feel like grabbing a drink?",
+   "pt": "Está a fim de tomar alguma coisa?",
+   "nota": "\"Grab a drink/coffee\" = tomar algo, de modo informal."
+  },
+  {
+   "es": "What time should we meet?",
+   "pt": "Que horas a gente se encontra?",
+   "nota": "\"Should\" faz a pergunta soar como combinação."
+  },
+  {
+   "es": "I'll wait for you outside the movie theater.",
+   "pt": "Te espero na porta do cinema.",
+   "nota": "Nos EUA: \"movie theater\". No Reino Unido: \"cinema\"."
+  },
+  {
+   "es": "I'm sorry, I can't make it.",
+   "pt": "Sinto muito, não posso ir.",
+   "nota": "\"Make it\" = conseguir ir."
+  },
+  {
+   "es": "Are you coming to my birthday party on Saturday?",
+   "pt": "Você vem ao meu aniversário no sábado?",
+   "nota": "Presente contínuo para planos já combinados."
+  },
+  {
+   "es": "Of course, count me in!",
+   "pt": "Claro que sim, conte comigo!",
+   "nota": "\"Count me in\" = pode contar comigo. O contrário: \"count me out\"."
+  },
+  {
+   "es": "Let's do it another time.",
+   "pt": "Fica para outro dia.",
+   "nota": "Também: \"Maybe some other time\"."
+  },
+  {
+   "es": "It's on me.",
+   "pt": "Eu pago.",
+   "nota": "Também: \"My treat\". Significa que você paga."
+  },
+  {
+   "es": "Where should we meet?",
+   "pt": "Onde a gente se encontra?",
+   "nota": "Combine com \"What time should we meet?\"."
+  },
+  {
+   "es": "I'll be there in five minutes.",
+   "pt": "Chego em cinco minutos.",
+   "nota": "Em mensagens: \"omw\" (on my way) = estou a caminho."
+  },
+  {
+   "es": "We had a great time.",
+   "pt": "Nos divertimos muito.",
+   "nota": "\"Have a great time\" = se divertir muito."
+  },
+  {
+   "es": "Would you like to dance?",
+   "pt": "Quer dançar?",
+   "nota": "\"Would you like\" é o jeito educado de convidar."
+  },
+  {
+   "es": "I'd like to see you again.",
+   "pt": "Eu gostaria de te ver de novo.",
+   "nota": "Frase comum no fim de um encontro."
+  },
+  {
+   "es": "Do you want me to pick you up?",
+   "pt": "Quer que eu passe para te buscar?",
+   "nota": "\"Pick up\" = buscar alguém."
+  },
+  {
+   "es": "I have plans that night.",
+   "pt": "Tenho um compromisso nessa noite.",
+   "nota": "\"Plans\" no plural = compromissos."
+  },
+  {
+   "es": "Let me know when you get there.",
+   "pt": "Me avisa quando chegar.",
+   "nota": "\"Get there\" = chegar lá. \"Get home\" = chegar em casa."
+  },
+  {
+   "es": "Does Friday work for you?",
+   "pt": "Sexta está bom para você?",
+   "nota": "\"Work for you\" = está bom para você."
+  },
+  {
+   "es": "Let's go for a walk.",
+   "pt": "Vamos dar uma volta.",
+   "nota": "\"Go for a walk\" = dar uma volta a pé. De carro: \"go for a drive\"."
+  },
+  {
+   "es": "Thanks for the invite.",
+   "pt": "Obrigado pelo convite.",
+   "nota": "\"Invite\" informal = convite. Formal: \"invitation\"."
+  }
+ ]
+}

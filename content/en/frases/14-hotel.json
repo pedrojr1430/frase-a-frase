@@ -1,0 +1,107 @@
+{
+ "id": "hotel",
+ "name": "Hotel",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "I have a reservation under the name Lima.",
+   "pt": "Tenho uma reserva em nome de Lima.",
+   "nota": "\"Under the name\" = em nome de."
+  },
+  {
+   "es": "What time is checkout?",
+   "pt": "A que horas é o check-out?",
+   "nota": "Entrada: \"check-in\". Saída: \"checkout\"."
+  },
+  {
+   "es": "Is breakfast included?",
+   "pt": "O café da manhã está incluído?",
+   "nota": "\"Included\" = incluído."
+  },
+  {
+   "es": "I'd like a double room.",
+   "pt": "Gostaria de um quarto de casal.",
+   "nota": "Cama de casal: \"double bed\" ou \"queen bed\". Duas camas: \"twin room\"."
+  },
+  {
+   "es": "Do you have any rooms available for tonight?",
+   "pt": "Tem quartos disponíveis para esta noite?",
+   "nota": "\"Available\" = disponível."
+  },
+  {
+   "es": "What's the Wi-Fi password, please?",
+   "pt": "A senha do wi-fi, por favor.",
+   "nota": "Nos EUA se pronuncia \"wai-fai\"."
+  },
+  {
+   "es": "The air conditioning isn't working.",
+   "pt": "O ar-condicionado não funciona.",
+   "nota": "Também se diz só \"the AC\"."
+  },
+  {
+   "es": "Could I get a wake-up call at seven?",
+   "pt": "Podem me acordar às sete?",
+   "nota": "\"Wake-up call\" = serviço de despertar."
+  },
+  {
+   "es": "Can I leave my bags here?",
+   "pt": "Posso deixar as malas aqui?",
+   "nota": "Guardar bagagem: \"store my luggage\"."
+  },
+  {
+   "es": "I need some more towels.",
+   "pt": "Preciso de mais toalhas.",
+   "nota": "\"Some more\" para pedir mais de algo."
+  },
+  {
+   "es": "My room faces the street and it's noisy.",
+   "pt": "O quarto dá para a rua e tem barulho.",
+   "nota": "\"Face\" = estar de frente para."
+  },
+  {
+   "es": "Is there a safe in the room?",
+   "pt": "Tem cofre no quarto?",
+   "nota": "\"Safe\" = cofre. Também significa seguro."
+  },
+  {
+   "es": "I'd like to stay one more night.",
+   "pt": "Gostaria de ficar mais uma noite.",
+   "nota": "Também: \"extend my stay\"."
+  },
+  {
+   "es": "Where's the elevator?",
+   "pt": "Onde fica o elevador?",
+   "nota": "Nos EUA: \"elevator\". No Reino Unido: \"lift\"."
+  },
+  {
+   "es": "I lost my room key.",
+   "pt": "Perdi a chave do quarto.",
+   "nota": "Muitos hotéis usam \"key card\"."
+  },
+  {
+   "es": "How much is it per night?",
+   "pt": "Quanto custa a diária?",
+   "nota": "\"Per night\" = por noite, a diária."
+  },
+  {
+   "es": "Do you have laundry service?",
+   "pt": "Vocês têm serviço de lavanderia?",
+   "nota": "\"Laundry\" = roupa para lavar ou lavanderia."
+  },
+  {
+   "es": "Could you call a taxi for me?",
+   "pt": "Pode chamar um táxi para mim?",
+   "nota": "Nos EUA também se diz \"cab\"."
+  },
+  {
+   "es": "Everything was perfect, thank you.",
+   "pt": "Foi tudo perfeito, obrigado.",
+   "nota": "Elogio comum no checkout."
+  },
+  {
+   "es": "Is there parking?",
+   "pt": "Tem estacionamento?",
+   "nota": "\"Parking lot\" (EUA) ou \"car park\" (Reino Unido) = estacionamento."
+  }
+ ]
+}

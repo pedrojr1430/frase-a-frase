@@ -1,0 +1,107 @@
+{
+ "id": "restaurante",
+ "name": "Restaurante",
+ "group": "social",
+ "items": [
+  {
+   "es": "Could you bring me the menu, please?",
+   "pt": "Pode me trazer o cardápio, por favor?",
+   "nota": "\"Could you...\" é o jeito educado de pedir. \"Menu\" é o cardápio."
+  },
+  {
+   "es": "I'd like a table for two.",
+   "pt": "Eu gostaria de uma mesa para dois.",
+   "nota": "\"I'd like\" (I would like) é mais educado que \"I want\"."
+  },
+  {
+   "es": "What do you recommend?",
+   "pt": "O que o senhor me recomenda?",
+   "nota": "Muito útil para pedir sugestão ao garçom (\"server\" ou \"waiter\")."
+  },
+  {
+   "es": "I'm allergic to seafood.",
+   "pt": "Sou alérgico a frutos do mar.",
+   "nota": "\"Seafood\" inclui peixes e frutos do mar. Para só camarão etc.: \"shellfish\"."
+  },
+  {
+   "es": "Can I get the check, please?",
+   "pt": "A conta, por favor.",
+   "nota": "Nos EUA se diz \"check\"; no Reino Unido, \"the bill\"."
+  },
+  {
+   "es": "Is the tip included?",
+   "pt": "A gorjeta está incluída?",
+   "nota": "Nos EUA a gorjeta (\"tip\") costuma ser de 15% a 20% e quase nunca vem incluída."
+  },
+  {
+   "es": "Do you have a table outside?",
+   "pt": "Vocês têm mesa na área externa?",
+   "nota": "\"Patio\" ou \"outdoor seating\" também são comuns nos EUA."
+  },
+  {
+   "es": "What's today's special?",
+   "pt": "Qual é o prato do dia?",
+   "nota": "\"Special\" é o prato do dia. \"Soup of the day\" é a sopa do dia."
+  },
+  {
+   "es": "I'll have the roast chicken.",
+   "pt": "Para mim, o frango assado.",
+   "nota": "Para pedir, o natural é \"I'll have...\" ou \"Can I get...\"."
+  },
+  {
+   "es": "Could you bring us some more bread?",
+   "pt": "Pode me trazer um pouco mais de pão?",
+   "nota": "\"Some more\" = um pouco mais. Nos EUA, pão nem sempre vem à mesa."
+  },
+  {
+   "es": "A still water, please.",
+   "pt": "Uma água sem gás, por favor.",
+   "nota": "Água com gás: \"sparkling water\". Nos EUA, \"water\" costuma ser água da torneira com gelo."
+  },
+  {
+   "es": "Is this dish spicy?",
+   "pt": "Este prato é apimentado?",
+   "nota": "\"Spicy\" = apimentado. \"Hot\" também pode significar apimentado, além de quente."
+  },
+  {
+   "es": "I'm vegetarian.",
+   "pt": "Sou vegetariano.",
+   "nota": "Quem não come nada de origem animal é \"vegan\"."
+  },
+  {
+   "es": "The food is amazing.",
+   "pt": "A comida está ótima.",
+   "nota": "\"Delicious\" também serve. \"Tasty\" é mais simples e informal."
+  },
+  {
+   "es": "This isn't what I ordered.",
+   "pt": "Isso não é o que eu pedi.",
+   "nota": "\"To order\" = pedir no restaurante. \"Ask for\" é pedir em geral."
+  },
+  {
+   "es": "Could we see the dessert menu?",
+   "pt": "Pode nos trazer o cardápio de sobremesas?",
+   "nota": "\"Dessert\" (sobremesa) tem dois \"s\". \"Desert\" com um \"s\" é deserto."
+  },
+  {
+   "es": "A coffee with a little milk, please.",
+   "pt": "Um café pingado, por favor.",
+   "nota": "Não existe \"pingado\" em inglês: descreva. Nos cafés, há \"cortado\" e \"flat white\"."
+  },
+  {
+   "es": "Can we pay separately?",
+   "pt": "Podemos pagar separado?",
+   "nota": "Nos EUA também se diz \"Can we split the check?\"."
+  },
+  {
+   "es": "Can I get this to go?",
+   "pt": "Pode embalar para viagem?",
+   "nota": "Nos EUA: \"to go\". No Reino Unido: \"takeaway\". Para sobras: \"a box\"."
+  },
+  {
+   "es": "I'd like to book a table for nine o'clock.",
+   "pt": "Gostaria de reservar para as nove.",
+   "nota": "\"Book\" e \"make a reservation\" são sinônimos. \"Nine o'clock\" = nove em ponto."
+  }
+ ]
+}

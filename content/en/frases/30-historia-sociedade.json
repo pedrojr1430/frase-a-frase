@@ -1,0 +1,107 @@
+{
+ "id": "historia-sociedade",
+ "name": "História e sociedade",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "The United States declared independence in 1776.",
+   "pt": "Os Estados Unidos declararam independência em 1776.",
+   "nota": "Datas: \"in\" + ano."
+  },
+  {
+   "es": "Today is a national holiday.",
+   "pt": "Hoje é feriado nacional.",
+   "nota": "\"Holiday\" = feriado."
+  },
+  {
+   "es": "The elections are next Sunday.",
+   "pt": "As eleições são no próximo domingo.",
+   "nota": "\"Election\" = eleição."
+  },
+  {
+   "es": "The Romans built Hadrian's Wall in Britain.",
+   "pt": "Os romanos construíram a Muralha de Adriano na Grã-Bretanha.",
+   "nota": "Muralha de Adriano, no norte da Inglaterra."
+  },
+  {
+   "es": "English is spoken in more than fifty countries.",
+   "pt": "O inglês é falado em mais de cinquenta países.",
+   "nota": "Voz passiva: \"is spoken\"."
+  },
+  {
+   "es": "Inequality is still a problem.",
+   "pt": "A desigualdade continua sendo um problema.",
+   "nota": "\"Inequality\" = desigualdade."
+  },
+  {
+   "es": "Youth unemployment is very high.",
+   "pt": "O desemprego entre os jovens é muito alto.",
+   "nota": "\"Youth\" = juventude, dos jovens."
+  },
+  {
+   "es": "More and more people live in cities.",
+   "pt": "Cada vez mais gente mora nas cidades.",
+   "nota": "\"More and more\" = cada vez mais."
+  },
+  {
+   "es": "Stonehenge was built thousands of years ago.",
+   "pt": "Stonehenge foi construído há milhares de anos.",
+   "nota": "\"Ago\" = atrás, há (tempo)."
+  },
+  {
+   "es": "Housing prices keep going up.",
+   "pt": "Os preços da moradia não param de subir.",
+   "nota": "\"Keep\" + \"-ing\" = continuar fazendo."
+  },
+  {
+   "es": "Thanksgiving is an American tradition.",
+   "pt": "O Dia de Ação de Graças é uma tradição americana.",
+   "nota": "O Dia de Ação de Graças é na 4ª quinta de novembro."
+  },
+  {
+   "es": "The protest went through downtown.",
+   "pt": "A manifestação percorreu o centro.",
+   "nota": "\"Protest\" = manifestação."
+  },
+  {
+   "es": "The population is aging.",
+   "pt": "A população está envelhecendo.",
+   "nota": "Britânico: \"ageing\"."
+  },
+  {
+   "es": "Today's news is worrying.",
+   "pt": "As notícias de hoje são preocupantes.",
+   "nota": "\"News\" é singular: \"the news is\"."
+  },
+  {
+   "es": "Many young people move abroad to work.",
+   "pt": "Muitos jovens emigram para trabalhar.",
+   "nota": "\"Abroad\" = para o exterior."
+  },
+  {
+   "es": "Martin Luther King Jr. fought for civil rights.",
+   "pt": "Martin Luther King Jr. lutou pelos direitos civis.",
+   "nota": "\"Civil rights\" = direitos civis."
+  },
+  {
+   "es": "It's a very controversial topic.",
+   "pt": "É um assunto muito polêmico.",
+   "nota": "\"Controversial\" = polêmico."
+  },
+  {
+   "es": "Public education is free.",
+   "pt": "A educação pública é gratuita.",
+   "nota": "\"Free\" = gratuito e também livre."
+  },
+  {
+   "es": "The government passed a new law.",
+   "pt": "O governo aprovou uma nova lei.",
+   "nota": "\"Pass a law\" = aprovar uma lei."
+  },
+  {
+   "es": "The Fourth of July is a big deal in the United States.",
+   "pt": "O 4 de Julho é muito importante nos Estados Unidos.",
+   "nota": "\"A big deal\" = algo muito importante."
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "id": "casa",
+ "name": "Casa",
+ "group": "social",
+ "items": [
+  {
+   "es": "I live in a two-bedroom apartment.",
+   "pt": "Moro num apartamento de dois quartos.",
+   "nota": "Nos EUA: \"apartment\". No Reino Unido: \"flat\"."
+  },
+  {
+   "es": "The rent includes utilities.",
+   "pt": "O aluguel inclui as contas.",
+   "nota": "\"Utilities\" = contas de água, luz e gás."
+  },
+  {
+   "es": "The washing machine broke.",
+   "pt": "A máquina de lavar quebrou.",
+   "nota": "Também: \"The washing machine stopped working\"."
+  },
+  {
+   "es": "Can you take out the trash?",
+   "pt": "Pode levar o lixo para fora?",
+   "nota": "Nos EUA: \"trash\" ou \"garbage\". No Reino Unido: \"rubbish\"."
+  },
+  {
+   "es": "It's my turn to clean the bathroom today.",
+   "pt": "Hoje é minha vez de limpar o banheiro.",
+   "nota": "\"It's my turn\" = é a minha vez."
+  },
+  {
+   "es": "The kitchen is small but really practical.",
+   "pt": "A cozinha é pequena, mas muito prática.",
+   "nota": "\"Practical\" ou \"functional\". \"Comfortable\" é para conforto."
+  },
+  {
+   "es": "Turn off the light, please.",
+   "pt": "Apague a luz, por favor.",
+   "nota": "\"Turn off\" = desligar; \"turn on\" = ligar."
+  },
+  {
+   "es": "There's no hot water.",
+   "pt": "Não tem água quente.",
+   "nota": "\"There's\" (there is) = existe, tem."
+  },
+  {
+   "es": "We're looking for an apartment.",
+   "pt": "Estamos procurando apartamento.",
+   "nota": "Também: \"We're apartment hunting\"."
+  },
+  {
+   "es": "My neighbors are really noisy.",
+   "pt": "Meus vizinhos fazem muito barulho.",
+   "nota": "Britânico: \"neighbours\". Americano: \"neighbors\"."
+  },
+  {
+   "es": "Where should I leave my shoes?",
+   "pt": "Onde deixo os sapatos?",
+   "nota": "Em muitas casas dos EUA não se tira o sapato; pergunte."
+  },
+  {
+   "es": "Set the table, dinner's ready.",
+   "pt": "Ponha a mesa, o jantar já está pronto.",
+   "nota": "\"Set the table\" = pôr a mesa."
+  },
+  {
+   "es": "I have to iron my clothes.",
+   "pt": "Tenho que passar a roupa.",
+   "nota": "\"Iron\" = passar roupa e também ferro de passar."
+  },
+  {
+   "es": "The faucet is dripping.",
+   "pt": "A torneira está pingando.",
+   "nota": "Torneira: \"faucet\" nos EUA, \"tap\" no Reino Unido."
+  },
+  {
+   "es": "We're moving next month.",
+   "pt": "Vamos nos mudar no mês que vem.",
+   "nota": "Mudar de casa é \"move\". Mudança de casa: \"a move\"."
+  },
+  {
+   "es": "The heating isn't working.",
+   "pt": "O aquecedor não funciona.",
+   "nota": "\"Heating\" = aquecimento. \"Heater\" = o aparelho."
+  },
+  {
+   "es": "I water the plants every other day.",
+   "pt": "Rego as plantas a cada dois dias.",
+   "nota": "\"Every other day\" = dia sim, dia não."
+  },
+  {
+   "es": "Can I borrow your charger?",
+   "pt": "Me empresta o carregador?",
+   "nota": "\"Borrow\" = pegar emprestado. \"Lend\" = emprestar para alguém."
+  },
+  {
+   "es": "Make your bed before you leave.",
+   "pt": "Arrume a cama antes de sair.",
+   "nota": "\"Make the bed\" = arrumar a cama."
+  },
+  {
+   "es": "This house gets a lot of light.",
+   "pt": "Esta casa é muito iluminada.",
+   "nota": "\"Gets a lot of light\" ou \"has a lot of natural light\"."
+  }
+ ]
+}

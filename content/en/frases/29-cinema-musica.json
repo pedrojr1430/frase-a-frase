@@ -1,0 +1,107 @@
+{
+ "id": "cinema-musica",
+ "name": "Cinema e música",
+ "group": "cultura",
+ "items": [
+  {
+   "es": "What's playing at the movies?",
+   "pt": "O que está passando no cinema?",
+   "nota": "Britânico: \"What's on at the cinema?\"."
+  },
+  {
+   "es": "I prefer watching it in the original language.",
+   "pt": "Prefiro ver no idioma original.",
+   "nota": "\"Dubbed\" = dublado."
+  },
+  {
+   "es": "Does it have subtitles?",
+   "pt": "Tem legenda?",
+   "nota": "\"Subtitles\" = legendas. \"Captions\" = legendas para surdos."
+  },
+  {
+   "es": "I thought the movie was slow.",
+   "pt": "Achei o filme lento.",
+   "nota": "\"Movie\" (EUA) e \"film\" (Reino Unido)."
+  },
+  {
+   "es": "Have you seen that director's latest series?",
+   "pt": "Você viu a última série daquela diretora?",
+   "nota": "\"Series\" é igual no singular e no plural."
+  },
+  {
+   "es": "In the end, the main character dies.",
+   "pt": "No final, o protagonista morre.",
+   "nota": "\"In the end\" = no final."
+  },
+  {
+   "es": "No spoilers!",
+   "pt": "Não me dá spoiler!",
+   "nota": "\"Spoiler\" veio do inglês \"spoil\" (estragar)."
+  },
+  {
+   "es": "Two tickets for the eight o'clock show.",
+   "pt": "Dois ingressos para a sessão das oito.",
+   "nota": "\"Showing\" ou \"show\" = sessão."
+  },
+  {
+   "es": "I love pop music.",
+   "pt": "Adoro música pop.",
+   "nota": "Gêneros musicais sem artigo: \"I love jazz\"."
+  },
+  {
+   "es": "What kind of music do you listen to?",
+   "pt": "Que tipo de música você ouve?",
+   "nota": "\"Listen to\" sempre com \"to\"."
+  },
+  {
+   "es": "I've played the guitar since I was a kid.",
+   "pt": "Toco violão desde criança.",
+   "nota": "\"Play the guitar\" com \"the\" para instrumentos."
+  },
+  {
+   "es": "The concert was amazing.",
+   "pt": "O show foi incrível.",
+   "nota": "\"Gig\" = show, de forma informal."
+  },
+  {
+   "es": "This song is really popular right now.",
+   "pt": "Esta música está na moda.",
+   "nota": "\"Trending\" também se usa."
+  },
+  {
+   "es": "I always sing in the shower.",
+   "pt": "Sempre canto no chuveiro.",
+   "nota": "\"In the shower\" = no chuveiro."
+  },
+  {
+   "es": "Jazz was born in New Orleans.",
+   "pt": "O jazz nasceu em Nova Orleans.",
+   "nota": "O jazz surgiu nos EUA no início do século XX."
+  },
+  {
+   "es": "It won the Oscar for best picture.",
+   "pt": "Ganhou o Oscar de melhor filme.",
+   "nota": "\"Best picture\" = melhor filme."
+  },
+  {
+   "es": "It's a really funny comedy.",
+   "pt": "É uma comédia muito divertida.",
+   "nota": "\"Funny\" = engraçado. \"Fun\" = divertido."
+  },
+  {
+   "es": "The book is better than the movie.",
+   "pt": "O livro é melhor que o filme.",
+   "nota": "Comparativo: \"better than\"."
+  },
+  {
+   "es": "We're going to a music festival this summer.",
+   "pt": "Vamos a um festival de música no verão.",
+   "nota": "\"Festival\" = festival."
+  },
+  {
+   "es": "Can you recommend a good show?",
+   "pt": "Me recomenda uma série boa?",
+   "nota": "\"Show\" nos EUA também significa série de TV."
+  }
+ ]
+}

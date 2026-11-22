@@ -1,0 +1,107 @@
+{
+ "id": "emergencias",
+ "name": "Emergências",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "Help!",
+   "pt": "Socorro!",
+   "nota": "Grito de emergência universal."
+  },
+  {
+   "es": "Call an ambulance!",
+   "pt": "Chame uma ambulância.",
+   "nota": "Nos EUA o número de emergência é 911; no Reino Unido, 999."
+  },
+  {
+   "es": "My wallet was stolen.",
+   "pt": "Roubaram minha carteira.",
+   "nota": "Também: \"Someone stole my wallet\". Bolsa: \"purse\"."
+  },
+  {
+   "es": "Where's the police station?",
+   "pt": "Onde fica a delegacia?",
+   "nota": "\"Police station\" = delegacia."
+  },
+  {
+   "es": "There's been an accident.",
+   "pt": "Houve um acidente.",
+   "nota": "\"There's been\" = there has been."
+  },
+  {
+   "es": "There's a fire!",
+   "pt": "Tem um incêndio.",
+   "nota": "\"Fire\" = incêndio e também fogo."
+  },
+  {
+   "es": "I need a doctor right away.",
+   "pt": "Preciso de um médico com urgência.",
+   "nota": "\"Right away\" = imediatamente."
+  },
+  {
+   "es": "I lost my passport.",
+   "pt": "Perdi meu passaporte.",
+   "nota": "Para tirar outro: \"replace my passport\"."
+  },
+  {
+   "es": "Does anyone speak Portuguese?",
+   "pt": "Alguém fala português?",
+   "nota": "Línguas com maiúscula: Portuguese, English."
+  },
+  {
+   "es": "I want to file a police report.",
+   "pt": "Quero registrar uma ocorrência.",
+   "nota": "\"File a report\" = fazer um boletim de ocorrência."
+  },
+  {
+   "es": "My son is lost.",
+   "pt": "Meu filho se perdeu.",
+   "nota": "Também: \"I can't find my son\"."
+  },
+  {
+   "es": "Watch out!",
+   "pt": "Cuidado!",
+   "nota": "Também: \"Look out!\" e \"Be careful!\"."
+  },
+  {
+   "es": "He's bleeding a lot.",
+   "pt": "Está sangrando muito.",
+   "nota": "\"Bleed\" = sangrar. \"Blood\" = sangue."
+  },
+  {
+   "es": "He can't breathe.",
+   "pt": "Ele não consegue respirar.",
+   "nota": "\"Breathe\" (verbo) se pronuncia \"bríð\"."
+  },
+  {
+   "es": "Call the police!",
+   "pt": "Chame a polícia.",
+   "nota": "Frase direta de emergência."
+  },
+  {
+   "es": "Where's the emergency exit?",
+   "pt": "Onde fica a saída de emergência?",
+   "nota": "\"Exit\" = saída."
+  },
+  {
+   "es": "I need to contact my embassy.",
+   "pt": "Preciso entrar em contato com a minha embaixada.",
+   "nota": "Consulado: \"consulate\"."
+  },
+  {
+   "es": "She fainted.",
+   "pt": "Ela desmaiou.",
+   "nota": "\"Faint\" = desmaiar. \"Pass out\" é mais informal."
+  },
+  {
+   "es": "My car broke down.",
+   "pt": "Meu carro quebrou.",
+   "nota": "\"Break down\" = quebrar (veículo, máquina)."
+  },
+  {
+   "es": "I'm fine, don't worry.",
+   "pt": "Estou bem, não se preocupe.",
+   "nota": "Também: \"I'm okay\"."
+  }
+ ]
+}

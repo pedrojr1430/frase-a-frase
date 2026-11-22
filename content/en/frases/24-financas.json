@@ -1,0 +1,107 @@
+{
+ "id": "financas",
+ "name": "Finanças",
+ "group": "trabalho",
+ "items": [
+  {
+   "es": "Profits went up this quarter.",
+   "pt": "Os lucros subiram neste trimestre.",
+   "nota": "\"Quarter\" = trimestre."
+  },
+  {
+   "es": "We have to cut costs.",
+   "pt": "Temos que reduzir despesas.",
+   "nota": "\"Cut costs\" = reduzir despesas."
+  },
+  {
+   "es": "The invoice is due on the thirtieth.",
+   "pt": "A fatura vence no dia trinta.",
+   "nota": "\"Due\" = com vencimento."
+  },
+  {
+   "es": "We need to issue the invoice.",
+   "pt": "É preciso emitir a nota fiscal.",
+   "nota": "\"Issue\" = emitir."
+  },
+  {
+   "es": "What's the margin on this product?",
+   "pt": "Qual é a margem deste produto?",
+   "nota": "\"Profit margin\" = margem de lucro."
+  },
+  {
+   "es": "Sales dropped five percent.",
+   "pt": "As vendas caíram cinco por cento.",
+   "nota": "\"Drop\" = cair. Também: \"fall\", \"decline\"."
+  },
+  {
+   "es": "We're within budget.",
+   "pt": "Estamos dentro do orçamento.",
+   "nota": "O contrário: \"over budget\"."
+  },
+  {
+   "es": "I have to file my tax return.",
+   "pt": "Tenho que fazer a declaração do imposto de renda.",
+   "nota": "\"Tax return\" = declaração de imposto de renda."
+  },
+  {
+   "es": "The company is in the red.",
+   "pt": "A empresa está no vermelho.",
+   "nota": "No vermelho = \"in the red\". No azul = \"in the black\"."
+  },
+  {
+   "es": "Inflation is still high.",
+   "pt": "A inflação continua alta.",
+   "nota": "\"Still\" = ainda."
+  },
+  {
+   "es": "We received the payment.",
+   "pt": "Recebemos o pagamento.",
+   "nota": "\"Payment\" = pagamento."
+  },
+  {
+   "es": "The client still hasn't paid.",
+   "pt": "O cliente ainda não pagou.",
+   "nota": "\"Client\" para serviços; \"customer\" para lojas."
+  },
+  {
+   "es": "We need to go over the numbers.",
+   "pt": "É preciso revisar as contas.",
+   "nota": "\"Go over\" = revisar."
+  },
+  {
+   "es": "The annual results are positive.",
+   "pt": "O balanço do ano é positivo.",
+   "nota": "\"Annual\" = anual."
+  },
+  {
+   "es": "We're looking for investors.",
+   "pt": "Procuramos investidores.",
+   "nota": "\"Investor\" = investidor."
+  },
+  {
+   "es": "Stocks went down.",
+   "pt": "As ações caíram.",
+   "nota": "Também: \"shares\". \"Stock market\" = bolsa de valores."
+  },
+  {
+   "es": "Salaries are paid at the end of the month.",
+   "pt": "O salário é pago no fim do mês.",
+   "nota": "Nos EUA é comum receber a cada duas semanas."
+  },
+  {
+   "es": "We're going to apply for a loan.",
+   "pt": "Vamos pedir um crédito.",
+   "nota": "\"Credit line\" = linha de crédito."
+  },
+  {
+   "es": "Interest rates are very high.",
+   "pt": "Os juros estão muito altos.",
+   "nota": "\"Interest\" = juros."
+  },
+  {
+   "es": "We need to keep an eye on cash flow.",
+   "pt": "É preciso controlar o fluxo de caixa.",
+   "nota": "\"Keep an eye on\" = ficar de olho."
+  }
+ ]
+}

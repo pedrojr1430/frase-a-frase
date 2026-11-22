@@ -28,22 +28,31 @@
   var listeners = [];
 
   function tracked(k) { return k && k.indexOf('fraseafrase.') === 0 && !SKIP[k]; }
-  function meta() { try { return JSON.parse(localStorage.getItem(META_KEY) || '{}') || {}; } catch (e) { return {}; } }
+  function meta() { try { return JSON.parse(_get.call(localStorage, META_KEY) || '{}') || {}; } catch (e) { return {}; } }
   function saveMeta(m) { try { _set.call(localStorage, META_KEY, JSON.stringify(m)); } catch (e) {} }
   function emit() { listeners.forEach(function (f) { try { f(); } catch (e) {} }); }
 
   // ---------- registro de alterações locais ----------
-  var _set = Storage.prototype.setItem, _rem = Storage.prototype.removeItem;
+  // Acesso direto ao armazenamento (sem a separação por idioma) e chave física de cada chave lógica.
+  // No inglês, "fraseafrase.v2" é gravada como "fraseafrase.en.v2" (ver o script de idioma no index.html).
+  var RAW = window.__fafRaw || { get: Storage.prototype.getItem, set: Storage.prototype.setItem, rem: Storage.prototype.removeItem };
+  var _get = RAW.get, _set = RAW.set, _rem = RAW.rem;
+  var prevSet = Storage.prototype.setItem, prevRem = Storage.prototype.removeItem;
+  var phys = window.__fafPhys || function (k) { return k; };
   Storage.prototype.setItem = function (k, v) {
-    if (frozen && this === localStorage && tracked(k)) return;
-    var before = this === localStorage && tracked(k) ? localStorage.getItem(k) : null;
-    _set.call(this, k, v);
-    if (this === localStorage && tracked(k) && !applying && before !== String(v)) touch(k);
+    if (this !== localStorage) return prevSet.call(this, k, v);
+    var pk = phys(k);
+    if (frozen && tracked(pk)) return;
+    var before = tracked(pk) ? _get.call(this, pk) : null;
+    _set.call(this, pk, v);
+    if (tracked(pk) && !applying && before !== String(v)) touch(pk);
   };
   Storage.prototype.removeItem = function (k) {
-    if (frozen && this === localStorage && tracked(k)) return;
-    _rem.call(this, k);
-    if (this === localStorage && tracked(k) && !applying) touch(k);
+    if (this !== localStorage) return prevRem.call(this, k);
+    var pk = phys(k);
+    if (frozen && tracked(pk)) return;
+    _rem.call(this, pk);
+    if (tracked(pk) && !applying) touch(pk);
   };
   function touch(k) {
     if (!tracking || !user || window.__fafWiping) return;
@@ -75,7 +84,7 @@
     var m = meta(); m.m = m.m || {};
     var rows = [], gone = [];
     keys.forEach(function (k) {
-      var v = localStorage.getItem(k);
+      var v = _get.call(localStorage, k);
       var t = new Date(m.m[k] || Date.now()).toISOString();
       if (v === null) gone.push(k); else rows.push({ user_id: user.id, chave: k, dados: v, atualizado_em: t });
     });
@@ -138,7 +147,7 @@
       rows.forEach(function (r) {
         cloudKeys[r.chave] = 1;
         var tc = Date.parse(r.atualizado_em) || 0, tl = m.m[r.chave] || 0;
-        if (tc > tl && localStorage.getItem(r.chave) !== r.dados) take.push(r);
+        if (tc > tl && _get.call(localStorage, r.chave) !== r.dados) take.push(r);
         else if (tl > tc) dirty[r.chave] = 1;
       });
       localKeys().forEach(function (k) { if (!cloudKeys[k]) { if (!m.m[k]) { m.m[k] = Date.now(); saveMeta(m); } dirty[k] = 1; } });

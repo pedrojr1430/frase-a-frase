@@ -1,0 +1,107 @@
+{
+ "id": "direcoes",
+ "name": "Direções",
+ "group": "viagem",
+ "items": [
+  {
+   "es": "How do I get to the station?",
+   "pt": "Como chego à estação?",
+   "nota": "\"Get to\" = chegar a."
+  },
+  {
+   "es": "Go straight ahead.",
+   "pt": "Siga em frente.",
+   "nota": "\"Straight\" = reto, em frente."
+  },
+  {
+   "es": "Turn right at the traffic light.",
+   "pt": "Vire à direita no semáforo.",
+   "nota": "Também se diz só \"at the light\"."
+  },
+  {
+   "es": "It's on the left, next to the bank.",
+   "pt": "Fica à esquerda, ao lado do banco.",
+   "nota": "\"On the left/right\" = à esquerda/direita."
+  },
+  {
+   "es": "Cross the street.",
+   "pt": "Atravesse a rua.",
+   "nota": "\"Cross\" = atravessar."
+  },
+  {
+   "es": "It's right across the street.",
+   "pt": "Fica bem em frente.",
+   "nota": "\"Across from\" = em frente a, do outro lado."
+  },
+  {
+   "es": "It's the second street on the right.",
+   "pt": "É a segunda rua à direita.",
+   "nota": "Ordinais: first, second, third."
+  },
+  {
+   "es": "Is there a pharmacy around here?",
+   "pt": "Tem uma farmácia por aqui?",
+   "nota": "Nos EUA também se diz \"drugstore\"."
+  },
+  {
+   "es": "It's a ten-minute walk.",
+   "pt": "Fica a dez minutos a pé.",
+   "nota": "\"Ten-minute\" com hífen e sem \"s\" quando funciona como adjetivo."
+  },
+  {
+   "es": "At the end of the street.",
+   "pt": "No fim da rua.",
+   "nota": "\"At the end of\" = no fim de."
+  },
+  {
+   "es": "There's a café on the corner.",
+   "pt": "Na esquina tem um café.",
+   "nota": "\"On the corner\" = na esquina."
+  },
+  {
+   "es": "Behind the church.",
+   "pt": "Atrás da igreja.",
+   "nota": "Preposições de lugar: behind, in front of, next to, between."
+  },
+  {
+   "es": "It's not this way, it's the other way.",
+   "pt": "Não é por aqui, é na outra direção.",
+   "nota": "\"This way\" = por aqui."
+  },
+  {
+   "es": "Can you show me on the map?",
+   "pt": "Pode me mostrar no mapa?",
+   "nota": "\"On the map\" = no mapa."
+  },
+  {
+   "es": "Go up this street to the square.",
+   "pt": "Suba por esta rua até a praça.",
+   "nota": "\"Go up\" = subir (a rua)."
+  },
+  {
+   "es": "It's near the harbor.",
+   "pt": "Fica perto do porto.",
+   "nota": "Britânico: \"harbour\"."
+  },
+  {
+   "es": "Cross the bridge and then ask again.",
+   "pt": "Passe a ponte e depois pergunte.",
+   "nota": "\"Ask again\" = perguntar de novo."
+  },
+  {
+   "es": "Sorry, I'm not from around here.",
+   "pt": "Desculpe, não sou daqui.",
+   "nota": "Resposta educada quando você não sabe o caminho."
+  },
+  {
+   "es": "Am I going the right way to the museum?",
+   "pt": "Estou no caminho certo para o museu?",
+   "nota": "\"The right way\" = o caminho certo."
+  },
+  {
+   "es": "It's between the bakery and the bank.",
+   "pt": "Fica entre a padaria e o banco.",
+   "nota": "\"Between\" = entre (duas coisas)."
+  }
+ ]
+}
