@@ -569,6 +569,29 @@ body.tr-open .hm-premium{display:none}
 .hm-day-btn{border-color:#8A6A3A;background:transparent}
 }
 
+
+/* boas-vindas (novos usuários) */
+.fw{position:fixed;inset:0;z-index:104;display:flex;flex-direction:column;background:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-y:auto;animation:fm-fade .25s ease}
+.fw.is-out{opacity:0;transition:opacity .3s}
+body.fw-open #faf-menu-btn,body.fw-open .hm-premium{display:none}
+.fw-top{position:relative;flex:1 0 auto;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:calc(34px + env(safe-area-inset-top)) 26px 30px;color:#fff;background:radial-gradient(120% 80% at 100% 0%,#2A4C93 0%,rgba(42,76,147,0) 60%),linear-gradient(160deg,#1A2E5C 0%,#0F1D3D 100%);border-radius:0 0 32px 32px;overflow:hidden}
+.fw-top::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;border:28px solid rgba(242,179,61,.12)}
+.fw-bubbles{display:flex;flex-direction:column;gap:10px;margin-bottom:auto;padding-top:6px}
+.fw-b{max-width:70%;padding:12px 16px;border-radius:20px;font-size:17px;font-weight:600;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.fw-b.is-es{align-self:flex-start;background:#F2B33D;color:#0F1B3D;border-bottom-left-radius:6px;animation:fw-pop .5s .15s both cubic-bezier(.2,.8,.2,1)}
+.fw-b.is-pt{align-self:flex-end;background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.25);border-bottom-right-radius:6px;animation:fw-pop .5s .45s both cubic-bezier(.2,.8,.2,1)}
+@keyframes fw-pop{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
+.fw-brand{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:#F5C66A;margin-top:18px}
+.fw-logo{width:34px;height:34px;border-radius:11px;background:#F2B33D;color:#0F1B3D;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+.fw-top h1{margin:0;font-size:34px;line-height:1.1;font-weight:800;letter-spacing:-.025em}
+.fw-list{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.fw-list li{position:relative;padding-left:26px;font-size:15px;line-height:1.4;color:rgba(255,255,255,.85)}
+.fw-list li::before{content:"";position:absolute;left:2px;top:5px;width:12px;height:7px;border-left:2.5px solid #F2B33D;border-bottom:2.5px solid #F2B33D;transform:rotate(-45deg)}
+.fw-card{flex:0 0 auto;width:100%;max-width:520px;margin:0 auto;box-sizing:border-box;padding:22px 22px calc(22px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:12px}
+.fw-skip{align-self:center;min-height:44px;padding:0 12px;border:none;background:transparent;color:var(--text);font:inherit;font-size:15px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.fw-card .fa-small{text-align:center}
+.fw-err{margin:0;padding:10px 12px;border-radius:12px;font-size:14px;background:var(--tint-red);color:var(--red-t)}
+@media (prefers-reduced-motion:reduce){.fw,.fw-b{animation:none}}
 /* conta (login) */
 .fa-wrap{position:fixed;inset:0;z-index:105;display:flex;align-items:flex-end;justify-content:center;font-family:Inter,system-ui,sans-serif}
 .fa-wrap[hidden]{display:none}
@@ -1713,7 +1736,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   }
 })();
 </script>
-<script src="conta.js?v=2"></script>
+<script src="conta.js?v=3"></script>
 <script>/* Frase a Frase — botão voltar (Android e navegador): fecha a camada de cima ou volta à tela anterior, em vez de sair do app */
 (function () {
   'use strict';
@@ -1725,6 +1748,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   // Camadas, da mais alta para a mais baixa. Cada uma devolve true se fechou algo.
   var LAYERS = [
     function () { if (!window.FAF_ACCOUNT || !window.FAF_ACCOUNT.isOpen()) return false; window.FAF_ACCOUNT.close(); return true; },
+    function () { if (!window.FAF_ACCOUNT || !window.FAF_ACCOUNT.welcomeOpen()) return false; window.FAF_ACCOUNT.skipWelcome(); return true; },
     function () { var m = last('.fm-modal'); if (!m) return false; var b = m.querySelector('.fm-cancel'); if (b) b.click(); else m.remove(); return true; },
     function () { var m = document.getElementById('faf-menu'); if (!visible(m)) return false; var b = m.querySelector('.fm-close'); if (b) b.click(); else m.hidden = true; return true; },
     function () { var m = last('.cc-modal'); if (!m) return false; m.click(); if (m.isConnected) m.remove(); return true; },
