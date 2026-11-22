@@ -621,6 +621,20 @@ html[data-theme="dark"] .hm-day-btn{border-color:#8A6A3A;background:transparent}
 
 
 
+
+/* aviso: toque em Categorias */
+.ch-tip{position:relative;display:flex;align-items:center;gap:10px;margin-top:-6px;padding:12px 12px 12px 14px;border-radius:16px;background:var(--brand);color:#fff;box-shadow:0 10px 24px rgba(15,27,61,.22);animation:ch-in .5s cubic-bezier(.2,.8,.2,1) both,ch-float 2.6s ease-in-out .6s infinite}
+.ch-arrow{position:absolute;top:-7px;right:calc(16.66% - 7px);width:14px;height:14px;background:var(--brand);transform:rotate(45deg);border-radius:3px}
+.ch-ic{flex:0 0 auto;width:34px;height:34px;border-radius:11px;background:rgba(255,255,255,.14);color:var(--gold,#F2B33D);display:flex;align-items:center;justify-content:center;animation:ch-tap 1.6s ease-in-out .8s infinite}
+.ch-txt{flex:1 1 auto;font-size:14px;line-height:1.4}
+.ch-txt b{color:var(--gold,#F2B33D)}
+.ch-x{flex:0 0 auto;width:36px;height:36px;border:none;border-radius:999px;background:rgba(255,255,255,.12);color:#fff;font-size:20px;line-height:1}
+.ch-pulse{position:relative;animation:ch-pulse 1.8s ease-in-out infinite}
+@keyframes ch-in{from{opacity:0;transform:translateY(-8px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes ch-float{0%,100%{translate:0 0}50%{translate:0 3px}}
+@keyframes ch-tap{0%,100%{transform:scale(1)}50%{transform:scale(.86)}}
+@keyframes ch-pulse{0%,100%{box-shadow:0 0 0 0 rgba(242,179,61,0)}50%{box-shadow:0 0 0 4px rgba(242,179,61,.55)}}
+@media (prefers-reduced-motion:reduce){.ch-tip,.ch-ic,.ch-pulse{animation:none}}
 /* boas-vindas (novos usuários) */
 .fw{position:fixed;inset:0;z-index:104;display:flex;flex-direction:column;background:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-y:auto;animation:fm-fade .25s ease}
 .fw.is-out{opacity:0;transition:opacity .3s}
@@ -1104,8 +1118,16 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
   <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: var(--deck2); border-radius: 14px">
     <button onClick="{{viewLista}}" style="{{fseg.lista}}">Lista</button>
     <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
-    <button onClick="{{viewCats}}" style="{{fseg.cats}}">Categorias</button>
+    <button onClick="{{viewCats}}" style="{{fseg.cats}}" class="{{catBtnClass}}">Categorias</button>
   </div>
+  <sc-if value="{{showCatHint}}" hint-placeholder-val="{{ false }}">
+  <div class="ch-tip" role="status">
+    <span class="ch-arrow" aria-hidden="true"></span>
+    <span class="ch-ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5a2 2 0 0 1 4 0v5"/><path d="M13 10V8a2 2 0 0 1 4 0v3"/><path d="M17 11a2 2 0 0 1 4 0v3a7 7 0 0 1-7 7h-1a7 7 0 0 1-5.6-2.8L4.6 15a2 2 0 0 1 3-2.6L9 14"/></svg></span>
+    <span class="ch-txt"><strong>Quer frases novas?</strong> Toque em <b>Categorias</b> e escolha um assunto.</span>
+    <button onClick="{{closeCatHint}}" class="ch-x" aria-label="Fechar aviso">×</button>
+  </div>
+  </sc-if>
   <sc-if value="{{notCatsView}}">
   <div style="display: flex; flex-wrap: wrap; gap: 8px">
     <button onClick="{{viewCats}}" style="{{curPill}}">{{curCatLabel}}</button>
@@ -1124,21 +1146,21 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
   </sc-if>
 
   <sc-if value="{{isCatsView}}">
-  <div style="display: flex; flex-direction: column; gap: 22px">
+  <div style="display: flex; flex-direction: column; gap: 12px">
     <span style="font-size: 13px; color: var(--muted)">{{catSummary}}</span>
-    <sc-for list="{{catGroups}}" as="g">
-      <section style="display: flex; flex-direction: column; gap: 10px">
-        <h2 style="margin: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; font-size: 16px; font-weight: 700; color: var(--text)">{{g.name}}<span style="font-size: 12px; font-weight: 600; color: var(--muted)">{{g.meta}}</span></h2>
-        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-          <sc-for list="{{g.cats}}" as="c">
-            <button onClick="{{c.pick}}" style="{{c.style}}">
-              <span style="font-size: 15px; font-weight: 700; line-height: 1.25">{{c.name}}</span>
-              <span style="font-size: 12px; color: var(--muted)">{{c.meta}}</span>
-              <span style="display: block; height: 4px; border-radius: 999px; background: var(--deck2); overflow: hidden"><span style="{{c.bar}}"></span></span>
-            </button>
-          </sc-for>
-        </div>
-      </section>
+    <sc-for list="{{catMain}}" as="g">
+      <button onClick="{{g.pick}}" style="{{g.style}}">
+        <span style="flex: 0 0 auto; width: 46px; height: 46px; border-radius: 14px; background: var(--tint-purple); color: var(--accent-t); display: flex; align-items: center; justify-content: center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{g.icon}}"></path></svg>
+        </span>
+        <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 17px; font-weight: 700; line-height: 1.25">{{g.name}}</span>
+          <span style="font-size: 13px; color: var(--muted)">{{g.count}}</span>
+          <span style="font-size: 12.5px; line-height: 1.45; color: var(--text2)">{{g.topics}}</span>
+          <span style="display: block; height: 5px; margin-top: 4px; border-radius: 999px; background: var(--deck2); overflow: hidden"><span style="{{g.bar}}"></span></span>
+          <span style="font-size: 12px; color: var(--muted)">{{g.known}}</span>
+        </span>
+      </button>
     </sc-for>
   </div>
   </sc-if>
@@ -1701,7 +1723,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     { id: 'aparencia', label: 'Aparência', sub: 'Tema claro ou escuro', icon: 'sun', go: { tab: 'aparencia' } },
     { sec: 'Estudar' },
     { id: 'revisao', label: 'Revisão', sub: 'Adicione suas frases', icon: 'review', go: { tab: 'revisao', mineMsg: '', mineDel: null } },
-    { id: 'frases', label: 'Frases', sub: 'Frases por situação', icon: 'chat', go: function (s) { return { tab: 'frases', fview: 'lista', cat: s.cat === -1 ? 0 : s.cat }; } },
+    { id: 'frases', label: 'Frases', sub: 'Frases por situação', icon: 'chat', go: function (s) { return { tab: 'frases', fview: 'lista', cat: s.cat === -1 ? -10 : s.cat }; } },
     { id: 'textos', label: 'Textos', sub: 'Leitura com tradução', icon: 'book', go: { tab: 'textos', reading: false } },
     { id: 'podcasts', label: 'Podcasts', sub: 'Ouvir com transcrição', icon: 'headphones', go: { tab: 'ouvir', mfilter: 'podcast' } },
     { sec: 'Conta' },
@@ -4053,6 +4075,15 @@ var GROUPS = [
   { id: 'trabalho', name: 'Trabalho e negócios', short: 'Trabalho' },
   { id: 'cultura', name: 'Cultura e atualidade', short: 'Cultura' }
 ];
+// Categoria principal (grupo) como "cat": -10 = 1º grupo, -11 = 2º... (-1 = Revisão, -2 = Todas, 0+ = subcategoria)
+function groupCat(gi) { return -10 - gi; }
+function isGroupCat(c) { return typeof c === 'number' && c <= -10 && GROUPS[-10 - c]; }
+function catLabel(c, full) {
+  if (c === -1) return 'Revisão';
+  if (c === -2) return full ? 'Todas as frases' : 'Todas';
+  if (isGroupCat(c)) return GROUPS[-10 - c].short;
+  return (CATS[c] || CATS[0]).name;
+}
 var GROUP_SHORT = {};
 GROUPS.forEach(function (g) { GROUP_SHORT[g.id] = g.short; });
 ['social', 'social', 'viagem', 'social', 'trabalho', 'social'].forEach(function (g, i) { if (CATS[i]) CATS[i].group = g; });
@@ -4338,7 +4369,7 @@ class Component extends DCLogic {
       theme: window.fafTheme ? window.fafTheme() : 'auto',
       fview: 'lista', query: '', reading: false, level: 'all', tema: 'all', tquery: '', listLimit: 60, textLimit: 20, flang: savedFlang(), voz: (function () { try { return localStorage.getItem('fraseafrase.voz') || 'natural'; } catch (e) { return 'natural'; } })(),
       mfilter: 'all', heard: saved.heard || {},
-      cat: 0, card: 0, flipped: false,
+      cat: -10, card: 0, flipped: false, catHintSeen: (function () { try { return !!localStorage.getItem('fraseafrase.hintcats'); } catch (e) { return false; } })(),
       known: saved.known || {}, review: saved.review || {},
       textIdx: 0, open: {}, answers: saved.answers || {}, read: saved.read || {},
       pmode: 'montar', ex: 0, built: [], checked: false,
@@ -4396,6 +4427,10 @@ class Component extends DCLogic {
     if (s.cat === -1) return ALL.filter(function (p) { return s.review[p.key]; })
       .concat(this.mineItems().filter(function (p) { return s.review[p.key]; }));
     if (s.cat === -2) return ALL.slice();
+    if (isGroupCat(s.cat)) {
+      var gid = GROUPS[-10 - s.cat].id;
+      return ALL.filter(function (p) { return (CATS[p.ci].group || 'social') === gid; });
+    }
     return ALL.filter(function (p) { return p.ci === s.cat; });
   }
 
@@ -4543,12 +4578,12 @@ class Component extends DCLogic {
         };
       }),
       goInicio: function () { self.setState({ tab: 'inicio' }); },
-      goFrases: function () { self.setState({ tab: 'frases', fview: 'lista', cat: s.cat === -1 ? 0 : s.cat }); },
+      goFrases: function () { self.setState({ tab: 'frases', fview: 'lista', cat: s.cat === -1 ? -10 : s.cat }); },
       goTextos: function () { self.setState({ tab: 'textos', reading: false }); },
       lsel: { textos: String(s.tab === 'textos'), frases: String(s.tab === 'frases') },
       lseg: { textos: lsegStyle(s.tab === 'textos'), frases: lsegStyle(s.tab === 'frases') },
       goLeituraTextos: function () { if (s.tab !== 'textos') self.setState({ tab: 'textos', reading: false }); },
-      goLeituraFrases: function () { if (s.tab !== 'frases') self.setState({ tab: 'frases', fview: 'lista', cat: s.cat === -1 ? 0 : s.cat }); },
+      goLeituraFrases: function () { if (s.tab !== 'frases') self.setState({ tab: 'frases', fview: 'lista', cat: s.cat === -1 ? -10 : s.cat }); },
       goPratica: function () { self.setState({ tab: 'pratica' }); },
       goReview: function () { self.setState({ tab: 'frases', fview: 'cards', cat: -1, card: 0, flipped: false }); },
 
@@ -4611,7 +4646,7 @@ class Component extends DCLogic {
       readDeck: function () {
         if (!window.FAF || !window.FAF.read || !deck.length) return;
         var start = s.fview === 'cards' ? Math.min(s.card, deck.length - 1) : 0;
-        window.FAF.read({ title: s.cat === -1 ? 'Revisão' : s.cat === -2 ? 'Todas as frases' : (CATS[s.cat] || CATS[0]).name, sub: 'Frases', lang: s.lang,
+        window.FAF.read({ title: catLabel(s.cat, true), sub: 'Frases', lang: s.lang,
           items: deck.map(function (p) { return { es: p.es, pt: p.pt }; }), start: start });
       },
       langPtOn: s.flang === 'pt' ? 'true' : 'false',
@@ -4620,11 +4655,14 @@ class Component extends DCLogic {
       langEnStyle: pill(s.flang === 'en') + '; min-height: 36px; padding: 0 14px; font-size: 13px',
       langPt: function () { try { localStorage.setItem('fraseafrase.flang', 'pt'); } catch (e) {} self.setState({ flang: 'pt' }); },
       langEn: function () { try { localStorage.setItem('fraseafrase.flang', 'en'); } catch (e) {} self.setState({ flang: 'en' }); },
-      viewCats: function () { self.setState({ fview: 'cats' }); },
+      viewCats: function () { try { localStorage.setItem('fraseafrase.hintcats', '1'); } catch (e) {} self.setState({ fview: 'cats', catHintSeen: true }); },
+      showCatHint: s.fview !== 'cats' && !s.catHintSeen,
+      catBtnClass: s.fview !== 'cats' && !s.catHintSeen ? 'ch-pulse' : '',
+      closeCatHint: function () { try { localStorage.setItem('fraseafrase.hintcats', '1'); } catch (e) {} self.setState({ catHintSeen: true }); },
       isCatsView: s.fview === 'cats',
       notCatsView: s.fview !== 'cats',
-      curPill: pill(s.cat >= 0),
-      curCatLabel: s.cat >= 0 && CATS[s.cat] ? CATS[s.cat].name : 'Escolher categoria',
+      curPill: pill(s.cat >= 0 || !!isGroupCat(s.cat)),
+      curCatLabel: s.cat >= 0 || isGroupCat(s.cat) ? catLabel(s.cat) : 'Escolher categoria',
       showCurso: (function () { if (window.FAF_COURSE) window.FAF_COURSE.sync(s.tab === 'curso'); return s.tab === 'curso'; })(),
       goCurso: function () { self.setState({ tab: 'curso' }); },
       courseTitle: courseSum && courseSum.lessons ? 'Continuar o curso' : 'Começar o curso',
@@ -4634,28 +4672,26 @@ class Component extends DCLogic {
       courseStats: courseSum ? courseSum.streak + (courseSum.streak === 1 ? ' dia' : ' dias') + ' · ' + courseSum.xp + ' XP' : '',
       homeCatsLine: CATS.length + ' categorias, do restaurante às finanças',
       homeTextsLine: TEXTS.length + ' textos, do básico ao avançado',
-      catSummary: CATS.length + ' categorias · ' + ALL.length + ' frases · ' + knownCount + ' você já sabe',
-      catGroups: GROUPS.map(function (g) {
-        var list = [];
-        var gTotal = 0, gKnown = 0;
+      catSummary: GROUPS.length + ' categorias · ' + ALL.length + ' frases · ' + knownCount + ' você já sabe',
+      catMain: GROUPS.map(function (g, gi) {
+        var total = 0, k = 0, names = [];
         CATS.forEach(function (c, ci) {
           if ((c.group || 'social') !== g.id) return;
-          var total = c.items.length;
-          var k = 0;
-          for (var ii = 0; ii < total; ii++) if (s.known[ci + '-' + ii]) k++;
-          gTotal += total; gKnown += k;
-          var pctc = total ? Math.round(k / total * 100) : 0;
-          list.push({
-            name: c.name,
-            meta: k ? k + ' de ' + total + ' já sei' : total + ' frases',
-            bar: 'display: block; height: 100%; width: ' + pctc + '%; background: ' + (pctc === 100 ? 'var(--green-bg)' : 'var(--brand)') + '; border-radius: 999px',
-            style: 'display: flex; flex-direction: column; align-items: stretch; gap: 8px; text-align: left; padding: 14px; min-height: 96px; border-radius: 16px; ' +
-              (s.cat === ci ? 'border: 1px solid #5B3DF5; background: var(--deck); color: var(--text)' : 'border: 1px solid var(--line); background: var(--deck); color: var(--text)'),
-            pick: function () { self.setState({ cat: ci, card: 0, flipped: false, fview: 'cards' }); }
-          });
+          names.push(c.name);
+          total += c.items.length;
+          for (var ii = 0; ii < c.items.length; ii++) if (s.known[ci + '-' + ii]) k++;
         });
-        return { name: g.name, meta: gKnown + '/' + gTotal, cats: list };
-      }).filter(function (g) { return g.cats.length; }),
+        var pctc = total ? Math.round(k / total * 100) : 0;
+        var on = s.cat === groupCat(gi);
+        return {
+          name: g.name, icon: catIcon(names[0] || ''), count: total + ' frases · ' + names.length + ' temas',
+          known: k ? k + ' de ' + total + ' já sei' : 'Nenhuma marcada ainda',
+          topics: names.join(' · '),
+          bar: 'display: block; height: 100%; width: ' + pctc + '%; background: ' + (pctc === 100 ? 'var(--green-bg)' : 'var(--gold, var(--brand))') + '; border-radius: 999px',
+          style: 'display: flex; align-items: flex-start; gap: 14px; text-align: left; padding: 16px; border-radius: 18px; background: var(--deck); color: var(--text); border: ' + (on ? '1.5px solid var(--brand)' : '1px solid var(--line)'),
+          pick: function () { self.setState({ cat: groupCat(gi), card: 0, flipped: false, fview: 'lista', listLimit: 60, query: '' }); }
+        };
+      }).filter(function (g) { return g.topics; }),
       viewCards: function () { self.setState({ fview: 'cards' }); },
       viewLista: function () { self.setState({ fview: 'lista' }); },
       isCards: s.fview === 'cards',
@@ -4739,7 +4775,7 @@ class Component extends DCLogic {
       setNormal: function () { self.setState({ rate: 0.9 }); },
       setSlow: function () { self.setState({ rate: 0.7 }); },
       resetAll: function () {
-        self.setState({ known: {}, review: {}, answers: {}, read: {}, goalCount: 0, card: 0, cat: 0, flipped: false });
+        self.setState({ known: {}, review: {}, answers: {}, read: {}, goalCount: 0, card: 0, cat: -10, flipped: false });
       },
 
       // Frases
@@ -4749,7 +4785,7 @@ class Component extends DCLogic {
       reviewPill: pill(s.cat === -1),
       deckEmpty: deck.length === 0,
       deckHas: deck.length > 0,
-      deckLabel: s.cat === -1 ? 'Revisão' : s.cat === -2 ? 'Todas' : (CATS[s.cat] || CATS[0]).name,
+      deckLabel: catLabel(s.cat),
       card: { es: c.es, pt: trOf(c, s.flang), nota: c.nota, hasNota: !!c.nota, cat: c.cat, isKnown: !!s.known[c.key], isReview: !!s.review[c.key] },
       cardPos: cardIdx + 1,
       cardTotal: deck.length,
