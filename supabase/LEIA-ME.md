@@ -1,5 +1,7 @@
 # Login do Frase a Frase — como ligar
 
+**Situação (22/11/2026): tudo configurado e no ar.** Projeto Supabase `ladrodxlghsfkebimisi`, Google Cloud `frase-a-frase-515514` (app em produção), e-mails enviados pelo Gmail pedrolima1430@gmail.com (smtp.gmail.com:465 com senha de app "Frase a Frase"), modelos de e-mail de confirmação e de nova senha em português. O passo a passo abaixo fica como referência.
+
 O código do login já está no app (`conta.js`). Enquanto `CONFIG.url` e `CONFIG.anonKey` estiverem vazios, o menu mostra "Entrar" com o aviso de que o login está sendo configurado, e tudo continua funcionando só no aparelho.
 
 Endereço do app: `https://pedrojr1430.github.io/frase-a-frase/`
