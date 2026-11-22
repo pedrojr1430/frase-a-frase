@@ -1065,8 +1065,8 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
     </button>
     <button onClick="{{goOuvir}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; background: var(--deck); border: 1px solid var(--line); border-radius: 16px; padding: 16px; color: var(--text)">
       <span style="display: flex; flex-direction: column; gap: 2px">
-        <span style="font-size: 16px; font-weight: 600">Ouvir e assistir</span>
-        <span style="font-size: 13px; color: var(--muted)">Podcasts e vídeos reais de falantes nativos</span>
+        <span style="font-size: 16px; font-weight: 600">Podcasts</span>
+        <span style="font-size: 13px; color: var(--muted)">Espanhol real de falantes nativos, com transcrição</span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
     </button>
@@ -1470,15 +1470,10 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 <sc-if value="{{showOuvir}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 16px">
   <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px">
-    <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Ouvir e assistir</h1>
-    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted)">Conteúdo real de falantes nativos, sempre com o texto junto: nos podcasts a transcrição acompanha o áudio, nos vídeos a legenda aparece na tela.</p>
+    <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Podcasts</h1>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted)">Espanhol real de falantes nativos, com a transcrição acompanhando o áudio frase a frase.</p>
   </div>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 8px">
-    <sc-for list="{{mFilters}}" as="f" hint-placeholder-count="4">
-      <button onClick="{{f.pick}}" style="{{f.style}}">{{f.label}}</button>
-    </sc-for>
-  </div>
   <span style="font-size: 13px; color: var(--muted)">{{mCount}} · {{heardCount}} marcados como ouvidos</span>
 
   <sc-for list="{{media}}" as="m" hint-placeholder-count="4">
@@ -1517,8 +1512,8 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
   <div style="background: var(--brand-deep); color: #FFFFFF; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
     <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #FFD34D">Como estudar com áudio real</span>
     <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; color: #E7E9FF">
-      <li>Ouça uma vez sem legenda, só para pegar a ideia geral.</li>
-      <li>Ouça de novo com legenda em espanhol, pausando nas partes difíceis.</li>
+      <li>Ouça uma vez com o texto escondido, só para pegar a ideia geral.</li>
+      <li>Ouça de novo acompanhando a transcrição, pausando nas partes difíceis.</li>
       <li>Anote 3 frases úteis e procure por elas na aba Frases.</li>
       <li>Repita as frases em voz alta, imitando o ritmo do falante.</li>
     </ol>
@@ -4213,16 +4208,7 @@ var MEDIA = [
     tip: 'Repare como o "ll" e o "y" soam diferente aqui.', url: '' },
   { id: 'avanzado', kind: 'podcast', title: 'Español Avanzado', source: 'Spanish Language Coach · podcast', nivel: 'Avançado', feed: 'https://rss.buzzsprout.com/2531655.rss',
     desc: 'Conversas com convidados nativos sobre cultura, sociedade e língua, em velocidade real.',
-    tip: 'Use a velocidade 0,9x se estiver rápido demais.', url: 'https://www.spanishlanguagecoach.com' },
-  { id: 'easyyt', kind: 'video', title: 'Easy Spanish', source: 'YouTube · @EasySpanish', nivel: 'Intermediário', yt: 'UUAL4AMMMXKxHDu3FqZV6CbQ',
-    desc: 'Entrevistas de rua na Espanha e na América Latina, com legenda em espanhol na tela.',
-    tip: 'Pause e repita as frases que você entender.', url: 'https://www.youtube.com/@EasySpanish' },
-  { id: 'juan', kind: 'video', title: 'Español con Juan', source: 'YouTube · Español con Juan', nivel: 'Intermediário', yt: 'UUoHJ7PkM6T92LwgJgrnDhWA',
-    desc: 'Professor espanhol explicando gramática e expressões do dia a dia com humor, tudo em espanhol e com legendas.',
-    tip: 'Bom para ouvir espanhol da Espanha falado com calma.', url: 'https://www.youtube.com/channel/UCoHJ7PkM6T92LwgJgrnDhWA' },
-  { id: 'tatoeba', kind: 'frases', title: 'Tatoeba', source: 'tatoeba.org · banco de frases', nivel: 'Todos os níveis',
-    desc: 'Banco colaborativo com milhares de frases traduzidas, muitas com áudio de falantes nativos.',
-    tip: 'Procure uma palavra e ouça como ela aparece em frases reais.', url: 'https://tatoeba.org' }
+    tip: 'Use a velocidade 0,9x se estiver rápido demais.', url: 'https://www.spanishlanguagecoach.com' }
 ];
 
 var KIND_LABEL = { podcast: 'Podcast', video: 'Vídeo', frases: 'Frases' };
@@ -4439,7 +4425,7 @@ class Component extends DCLogic {
     var c = deck[cardIdx] || ALL[0];
     var deckKnown = deck.filter(function (p) { return s.known[p.key]; }).length;
     var pct = deck.length ? Math.round(((cardIdx + 1) / deck.length) * 100) : 0;
-    var mediaList = MEDIA.filter(function (m) { return s.mfilter === 'all' || m.kind === s.mfilter; });
+    var mediaList = MEDIA.filter(function (m) { return m.kind === 'podcast'; }); // aba Ouvir: só podcasts (22/11/2026)
     var q = norm(s.query.trim());
     var listAll = q ? ALL.filter(function (p) { return norm(p.es).indexOf(q) >= 0 || norm(p.pt).indexOf(q) >= 0; }) : deck;
     var listItems = listAll.slice(0, s.listLimit);
@@ -4519,8 +4505,8 @@ class Component extends DCLogic {
       mFilters: [{ id: 'all', label: 'Todos' }, { id: 'podcast', label: 'Podcasts' }, { id: 'video', label: 'Vídeos' }, { id: 'frases', label: 'Frases' }].map(function (f) {
         return { label: f.label, style: pill(s.mfilter === f.id), pick: function () { self.setState({ mfilter: f.id }); } };
       }),
-      mCount: mediaList.length === 1 ? '1 item' : mediaList.length + ' itens',
-      heardCount: Object.keys(s.heard).length,
+      mCount: mediaList.length === 1 ? '1 podcast' : mediaList.length + ' podcasts',
+      heardCount: mediaList.filter(function (m) { return s.heard[m.id]; }).length,
       media: mediaList.map(function (m) {
         var heard = !!s.heard[m.id];
         var typeColors = m.kind === 'video' ? 'background: var(--tint-blue); color: var(--blue-t)' : m.kind === 'frases' ? 'background: var(--deck2); color: var(--text2)' : 'background: var(--tint-purple); color: var(--accent-t2)';
@@ -4534,7 +4520,7 @@ class Component extends DCLogic {
           typeStyle: 'font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; ' + typeColors,
           heard: heard,
           heardLabel: heard ? 'Desmarcar' : 'Já ouvi',
-          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid var(--line2); background: var(--deck); color: var(--text)' : 'border: none; background: var(--brand); color: #FFFFFF'),
+          heardStyle: 'min-height: 48px; border-radius: 12px; font-size: 14px; font-weight: 600; ' + (heard ? 'border: 1px solid var(--line-green); background: var(--tint-green); color: var(--green-t)' : 'border: 1px solid var(--line2); background: var(--deck); color: var(--text)'),
           toggle: function () {
             var h = Object.assign({}, s.heard);
             if (h[m.id]) { delete h[m.id]; self.setState({ heard: h }); }
