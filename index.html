@@ -1373,6 +1373,31 @@ html[data-theme="dark"] .cx-road-edge{stroke:#26365F}html[data-theme="dark"] .cx
 @media (hover:hover){.cx-fab:hover .cx-fab-tip{opacity:1;transform:none}}
 #faf-course[hidden] .cx-fab{display:none}
 @media (prefers-reduced-motion:reduce){.cx-fab-av::after,.cx-mcell.is-chest.is-ready,.cx-mcell.is-chest.is-ready .cx-mchest-ic{animation:none}.cx-fab.is-hello .cx-fab-tip{animation:none;opacity:1}}
+
+/* Lía perto da montanha (no cartão da unidade) */
+.cx-hero-in{position:static}
+.cx-hero-in>*{position:relative;z-index:1}
+.cx-hero-lia{position:absolute!important;right:14px;bottom:14px;z-index:2!important;display:flex;align-items:center;gap:8px;padding:0;border:none;background:transparent;font:inherit;cursor:pointer}
+.cx-hl-av{position:relative;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;font-weight:800;background:linear-gradient(145deg,#FF5FA2,#7B5CFF);border:3px solid #fff;box-shadow:0 8px 22px rgba(123,92,255,.55);animation:cx-bob 2.6s ease-in-out infinite}
+.cx-hl-av::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(255,255,255,.55);animation:cx-fabpulse 2.4s ease-out infinite}
+.cx-hl-tip{position:relative;display:flex;flex-direction:column;align-items:flex-end;padding:6px 11px;border-radius:14px 14px 4px 14px;background:#fff;color:#14244A;box-shadow:0 6px 16px rgba(15,29,61,.3);text-align:right;line-height:1.15}
+.cx-hl-tip strong{font-size:13px;font-weight:800}
+.cx-hl-tip span{font-size:11.5px;color:#4A5679;white-space:nowrap}
+@media (max-width:389px){.cx-hl-tip{display:none}}
+@media (prefers-reduced-motion:reduce){.cx-hl-av,.cx-hl-av::after{animation:none}}
+.cx-hero-lia{bottom:78px;right:16px;flex-direction:column;align-items:flex-end;gap:6px}
+.cx-hl-tip{border-radius:14px 14px 4px 14px}
+@media (max-width:389px){.cx-hl-tip{display:flex}.cx-hero-lia{bottom:84px}}
+.cx-hero-lia{bottom:12px!important;right:14px!important;display:block;width:96px;height:72px}
+.cx-hero-lia .cx-hl-av{position:absolute;right:20px;top:0}
+.cx-hl-dots{position:absolute;right:-2px;top:-6px;display:flex;gap:3px;padding:6px 8px;border-radius:12px 12px 12px 3px;background:#fff;box-shadow:0 4px 12px rgba(15,29,61,.3)}
+.cx-hl-dots i{width:5px;height:5px;border-radius:50%;background:#7B5CFF;animation:cx-dot 1.2s ease-in-out infinite}
+.cx-hl-dots i:nth-child(2){animation-delay:.15s}.cx-hl-dots i:nth-child(3){animation-delay:.3s}
+@keyframes cx-dot{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-3px);opacity:1}}
+.cx-hl-name{position:absolute;left:0;right:0;bottom:0;text-align:center;font-size:11px;font-weight:800;color:#fff;white-space:nowrap;text-shadow:0 1px 6px rgba(15,29,61,.8)}
+@media (prefers-reduced-motion:reduce){.cx-hl-dots i{animation:none}}
+.cx-hero .cx-prog{margin-right:100px}
+.cx-hero .cx-pct{font-size:13px}
 @media (max-width:370px){.cx-hero-t{font-size:26px}.cx-stat-v strong{font-size:22px}.cx-stat>.cx-i:first-child svg{width:28px;height:28px}.cx-prem{padding:0 12px;font-size:15px}}
 @media (prefers-reduced-motion:reduce){.cx-mt *,.cx-goal-art,.cx-item.is-current .cx-dot,.cx-stat.is-flame>.cx-i:first-child{animation:none!important}.cx-mt .cx-birds{display:none}}
 html[data-theme="dark"] #faf-course.cx{--cxg:#F5C66A}
@@ -3913,6 +3938,11 @@ function fafLang() {
           focus.desc ? h('p', { class: 'cx-hero-d', text: focus.desc }) : null,
           focus.lessons.length ? h('div', { class: 'cx-prog' }, [h('span', { class: 'cx-bar' }, [h('i', { style: 'width:' + Math.max(pct, 4) + '%' })]), h('span', { class: 'cx-pct', text: pct + '% concluído' })]) :
             h('p', { class: 'cx-soon', text: 'Em breve' }),
+          h('button', { type: 'button', class: 'cx-hero-lia', onclick: openChat, 'aria-label': 'Conversar com a Lía, a IA do Frase a Frase' }, [
+            h('span', { class: 'cx-hl-av', text: 'L' }),
+            h('span', { class: 'cx-hl-dots', 'aria-hidden': 'true' }, [h('i'), h('i'), h('i')]),
+            h('span', { class: 'cx-hl-name', text: 'Fale com a Lía' })
+          ]),
           h('button', { type: 'button', class: 'cx-jump', onclick: function () { var el = root.querySelector('.cx-step[data-u="' + focus.id + '"]:not(.is-done)') || root.querySelector('.cx-step[data-u="' + focus.id + '"]') || root.querySelector('.cx-trail'); if (el) el.scrollIntoView({ block: 'center', behavior: 'smooth' }); } }, [cxi('play'), h('span', { text: pct === 0 ? 'Começar na trilha' : 'Continuar na trilha' })])
         ])
       ]);
@@ -4105,8 +4135,7 @@ function fafLang() {
         h('span', { class: 'cx-fab-tip' }, [h('strong', { text: 'Lía' }), h('span', { text: 'Converse comigo' })])
       ]);
       if (!VIEW.fabTip) { VIEW.fabTip = true; fab.classList.add('is-hello'); }
-      root.replaceChildren(head, stats, hero, strip, lvlCard, h('h3', { class: 'cx-sec', text: 'Trilha do ' + LV.id + ' · ' + LV.name }), list, trailEnd, tools, fab);
-      placeFab();
+      root.replaceChildren(head, stats, hero, strip, lvlCard, h('h3', { class: 'cx-sec', text: 'Trilha do ' + LV.id + ' · ' + LV.name }), list, trailEnd, tools);
       var jump = scrollToCurrent || VIEW.jump; VIEW.jump = false;
       if (jump && currentEl) currentEl.scrollIntoView({ block: 'center' }); else root.scrollTop = prevScroll;
     }, function () {
