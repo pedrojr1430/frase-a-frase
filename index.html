@@ -1580,9 +1580,9 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 </sc-if>
 
 <!-- ============ PERFIL / CONFIGURAÇÕES (em breve) ============ -->
-<sc-if value="{{showConfig}}" hint-placeholder-val="{{ false }}">
+<sc-if value="{{showAparencia}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 18px">
-  <h1 style="margin: 0; padding-top: 8px; font-family: Inter, system-ui, sans-serif; font-weight: 700; letter-spacing: -0.02em; font-size: 30px;">Configurações</h1>
+  <h1 style="margin: 0; padding-top: 8px; font-family: Inter, system-ui, sans-serif; font-weight: 700; letter-spacing: -0.02em; font-size: 30px;">Aparência</h1>
   <section style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 12px">
     <div style="display: flex; flex-direction: column; gap: 2px">
       <h2 style="margin: 0; font-size: 16px; font-weight: 700">Tema</h2>
@@ -1686,6 +1686,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     book: '<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2V4Z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7V4Z"/>',
     headphones: '<path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z"/>',
     login: '<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
+    sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
     trash: '<path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/>'
   };
   function svg(n, size) { return '<svg width="' + (size || 20) + '" height="' + (size || 20) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + SVG[n] + '</svg>'; }
@@ -1693,7 +1694,8 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   var ITEMS = [
     { sec: 'Você' },
     { id: 'perfil', label: 'Perfil', icon: 'user', tag: 'Em breve', go: { tab: 'perfil' } },
-    { id: 'config', label: 'Configurações', sub: 'Tema claro ou escuro', icon: 'gear', go: { tab: 'config' } },
+    { id: 'config', label: 'Configurações', icon: 'gear', tag: 'Em breve', go: { tab: 'config' } },
+    { id: 'aparencia', label: 'Aparência', sub: 'Tema claro ou escuro', icon: 'sun', go: { tab: 'aparencia' } },
     { sec: 'Estudar' },
     { id: 'revisao', label: 'Revisão', sub: 'Adicione suas frases', icon: 'review', go: { tab: 'revisao', mineMsg: '', mineDel: null } },
     { id: 'frases', label: 'Frases', sub: 'Frases por situação', icon: 'chat', go: function (s) { return { tab: 'frases', cat: s.cat === -1 ? 0 : s.cat }; } },
@@ -1719,7 +1721,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   function activeId() {
     var s = window.__fafApp && window.__fafApp.state; if (!s) return '';
     if (s.tab === 'ouvir') return s.mfilter === 'podcast' ? 'podcasts' : '';
-    return { perfil: 'perfil', config: 'config', revisao: 'revisao', frases: 'frases', textos: 'textos' }[s.tab] || '';
+    return { perfil: 'perfil', config: 'config', aparencia: 'aparencia', revisao: 'revisao', frases: 'frases', textos: 'textos' }[s.tab] || '';
   }
 
   function paint() {
@@ -4486,8 +4488,8 @@ class Component extends DCLogic {
       showPratica: s.tab === 'pratica',
       showOuvir: s.tab === 'ouvir',
       showRevisao: s.tab === 'revisao',
-      showSoon: s.tab === 'perfil',
-      showConfig: s.tab === 'config',
+      showSoon: s.tab === 'perfil' || s.tab === 'config',
+      showAparencia: s.tab === 'aparencia',
       themeOn: { auto: String(s.theme === 'auto'), light: String(s.theme === 'light'), dark: String(s.theme === 'dark') },
       themeSeg: { auto: segStyle(s.theme === 'auto'), light: segStyle(s.theme === 'light'), dark: segStyle(s.theme === 'dark') },
       themeHint: s.theme === 'auto' ? 'Automático: segue o tema do celular.' : s.theme === 'light' ? 'Sempre claro, mesmo com o celular no modo escuro.' : 'Sempre escuro, mesmo com o celular no modo claro.',
