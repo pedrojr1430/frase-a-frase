@@ -1,0 +1,401 @@
+### 0 | A Day in Madrid
+Lucía has lived in Madrid for two years.
+Every morning she has a coffee with milk at the café on the corner.
+Then she takes the subway to the office, which is downtown.
+In the afternoon she likes to walk in Retiro Park.
+On Sundays she has dinner with her friends and they talk about the week.
+w: for (two years) ; the corner ; to walk / stroll ; to have dinner
+### 1 | My First Week
+On Monday I started working at a new company.
+My coworkers are very kind and help me a lot.
+I still don't know the system well, but I'm learning fast.
+At noon we have lunch together at a restaurant near the office.
+On Friday my boss told me she was happy with my work.
+w: still ; coworkers ; at noon ; the boss
+### 2 | At the Market
+On Saturday, Andrés went to the market with a very long list.
+He wanted to buy tomatoes, onions and a good piece of cheese.
+The vendor told him tomatoes were more expensive this week.
+In the end, Andrés took half and asked for a discount.
+He went home happy, even though he forgot the bread.
+w: a piece ; a discount ; half ; even though
+### 3 | A Trip to Buenos Aires
+A few months ago, Marta decided to spend two weeks in Buenos Aires.
+When she arrived, she was surprised that everyone used "vos" instead of "tú".
+She also had to get used to taking the "colectivo", the local bus, to get around the city.
+If she had known how cheap the theater was, she would have gone more often.
+Now, every time someone offers her mate, she remembers that trip.
+w: the city bus ; to get used to ; instead of ; to remember
+### 4 | The Weekend
+I don't have any plans this weekend.
+On Saturday I want to sleep in and read a book.
+In the afternoon I'm going to call my mother.
+On Sunday, if the weather is nice, I'm going to go to the beach.
+If it rains, I'll stay home and watch a movie.
+w: late (sleep in) ; the weather is nice ; to rain ; to stay
+### 5 | An Important Call
+This morning Carlos got a call from a very angry customer.
+The customer said his order hadn't arrived on time.
+Carlos apologized and checked the system while they talked.
+He found out that the package was being held at customs.
+He promised to call him as soon as he had any news.
+w: angry ; the order ; to apologize ; as soon as
+### 6 | My Family
+My name is Andrés and I'm thirty years old.
+I live in Bogotá with my wife, Carolina, and our daughter, Sofía.
+Sofía is four years old and goes to daycare.
+My parents live nearby, in the same neighborhood.
+On Sundays we all have lunch together at their house.
+My mother always makes ajiaco, a typical soup from here.
+w: daycare ; the neighborhood ; together ; typical
+### 7 | Marta's Routine
+Marta gets up every day at seven.
+First she takes a shower and then she has toast and coffee for breakfast.
+At eight she leaves home and takes the bus to the university.
+She studies medicine and has classes until two.
+In the afternoon she works at a bookstore.
+At night she has dinner with her roommate and goes to bed early.
+w: to get up ; to take a shower ; the bookstore ; to go to bed ; early
+### 8 | Pablo's Birthday
+Today is Pablo's birthday and he's turning ten.
+His mother has made a chocolate cake.
+His friends from school arrive at five.
+They play in the yard and listen to music.
+Then everyone sings "Happy Birthday".
+Pablo blows out the candles and makes a wish.
+w: to turn (an age) ; the cake ; school ; to blow out ; the candles
+### 9 | My New Apartment
+Last week I moved into a new apartment.
+It's downtown, near the market.
+It has two bedrooms, a small living room and a very bright kitchen.
+The best part is the balcony, which overlooks a square.
+The bad part is that there's no elevator and I live on the fourth floor.
+But climbing the stairs is good exercise.
+w: to move ; the living room ; bright ; the elevator ; the stairs
+### 10 | Dinner with Friends
+On Friday I invited four friends over for dinner.
+I made lasagna and a big salad.
+Lucía brought the wine and Tomás brought dessert.
+We talked about trips, work and movies.
+We laughed a lot at Tomás's stories.
+My friends left at one in the morning.
+w: to invite ; to bring ; dessert ; to laugh ; to leave
+### 11 | At the Doctor's
+Yesterday Luis woke up with a fever and a sore throat.
+He called the health center and made an appointment.
+The doctor asked him how long he had been feeling sick.
+She told him he had a mild infection.
+She prescribed an antibiotic and lots of rest.
+Today Luis is at home, drinking tea and watching shows.
+w: to wake up ; the health center ; mild ; to prescribe ; rest
+### 12 | The Saturday Market
+Every Saturday I go to the market with my grandmother.
+She knows all the vendors by name.
+We buy fruit, vegetables and fresh fish.
+My grandmother always asks for a discount and almost always gets it.
+At the end we have an orange juice at a stall.
+For me it's the best moment of the week.
+w: the vendor ; fresh ; a discount ; juice ; the stall
+### 13 | My Best Friend
+My best friend's name is Valeria.
+We met at school when we were six years old.
+Now she lives in Mexico and I live in Madrid.
+We talk on video calls every week.
+Valeria is funny, smart and very generous.
+This summer I'm going to visit her for the first time.
+w: to meet (each other) ; a video call ; generous ; to visit
+### 14 | A Rainy Day
+It's raining hard today and we can't go out.
+The kids are bored in the living room.
+We decide to make cookies together.
+We mix flour, sugar, butter and eggs.
+While the cookies are in the oven, we play cards.
+In the end, the afternoon is a lot of fun.
+w: bored ; cookies ; flour ; butter ; the oven
+### 15 | My Dog Toby
+I have a dog named Toby.
+He's small, brown and very playful.
+In the morning I take him for a walk before work.
+He loves running after the pigeons in the park.
+When I get home, he's waiting for me at the door.
+Toby is part of the family.
+w: the dog ; playful ; to take for a walk ; the pigeons
+### 16 | Arriving in Lima
+Ana arrives at Lima airport at six in the morning.
+She picks up her suitcase and looks for the exit.
+Outside, there are lots of taxi drivers offering their services.
+Ana prefers to order an official taxi at the counter.
+The ride to the hotel takes forty minutes.
+From the taxi window she sees the ocean for the first time.
+w: to pick up ; the exit ; the taxi driver ; the counter
+### 17 | At the Hotel
+Carlos walks into the hotel and goes to the front desk.
+"Good afternoon, I have a reservation under the name Carlos Ruiz."
+"Welcome. It's a single room for three nights."
+The receptionist gives him the key and the Wi-Fi password.
+Breakfast is from seven to ten on the first floor.
+The room is small, but clean and quiet.
+w: the front desk ; single ; the key ; clean
+### 18 | The Train to Seville
+Today I'm traveling from Madrid to Seville by train.
+The train leaves at nine from Atocha station.
+My seat is in car five, next to the window.
+The trip only takes two and a half hours.
+Out the window I see fields of olive trees.
+I get to Seville in time for lunch.
+w: the seat ; the train car ; the window ; olive trees ; in time
+### 19 | A Lost Suitcase
+After the flight, Laura waits for her suitcase, but it doesn't come out.
+She goes to the baggage office and explains the problem.
+The clerk asks for her boarding pass and a description.
+"It's a big red suitcase with a green ribbon."
+The clerk tells her the suitcase is in Barcelona.
+The next day they bring it to her hotel.
+w: baggage ; the clerk ; a ribbon ; the next day
+### 20 | Tourists in Cusco
+Pedro and Elena are on vacation in Cusco.
+The city is more than three thousand meters above sea level.
+On the first day they rest and drink coca tea.
+On the second day they visit the Plaza de Armas and the markets.
+They buy alpaca wool clothes for the winter.
+On the third day they take the train to Machu Picchu.
+w: the altitude ; to rest ; wool ; the winter
+### 21 | Asking for Directions
+Tom is in Valencia and he's looking for the Central Market.
+He asks a woman on the street.
+"Excuse me, is the Central Market far?"
+"No, it's five minutes away. Go straight ahead and turn left at the square."
+"Thank you so much, that's very kind of you."
+Three minutes later, Tom sees the market building.
+w: far ; straight ahead ; to turn ; kind ; the building
+### 22 | At the Pharmacy
+At the beach, Julia burns her back in the sun.
+In the afternoon she goes to a pharmacy near the hotel.
+The pharmacist recommends a cream with aloe vera.
+He also sells her a stronger sunscreen.
+He tells her not to sunbathe between twelve and four.
+Julia pays by card and goes back to the hotel.
+w: to get burned ; the back ; the pharmacist ; to sunbathe
+### 23 | A Bike Ride
+Barcelona is a perfect city for biking.
+We rent two bikes for the whole day.
+First we ride along the seafront.
+Then we go up to Ciutadella Park.
+We eat a sandwich on a bench in the shade.
+In the afternoon we return the bikes, tired but happy.
+w: to rent ; the seafront ; a sandwich ; the shade ; to return
+### 24 | Buying Tickets
+Marina wants to go from Buenos Aires to Mendoza.
+The plane is expensive, so she decides to take the bus.
+At the terminal she asks about the schedules.
+There's an overnight bus that leaves at nine at night.
+The seats turn into something close to beds.
+Marina sleeps the whole trip and arrives in the morning.
+w: so ; the terminal ; overnight ; to turn into
+### 25 | My First Day at Work
+Today is my first day at an advertising agency.
+I get there at ten to nine so I'm not late.
+My boss, Clara, introduces me to the whole team.
+They give me a computer, an email account and a desk by the window.
+At lunchtime, my coworkers take me out to a restaurant.
+I end the day tired, but happy.
+w: the agency ; the team ; the coworker ; happy
+### 26 | A Job Interview
+Sergio has a job interview at ten.
+He puts on a white shirt and a jacket.
+The interviewer asks him about his experience.
+Sergio explains that he worked at a store for three years.
+He also says that he speaks Spanish and a little Portuguese.
+At the end she tells him: "We'll call you next week."
+w: the interview ; the jacket ; experience ; the store
+### 27 | Working from Home
+Raquel has been working from home for a year.
+Her office is a small table in the living room.
+She starts at eight thirty with a video call meeting.
+She likes not wasting time commuting.
+But sometimes she feels lonely and misses her coworkers.
+That's why she goes to the office once a week.
+w: for (a year) ; the meeting ; to waste time ; to miss
+### 28 | Rosa's Café
+Rosa has a small café in Montevideo.
+She opens every day at seven in the morning.
+She makes croissants and homemade cakes.
+Many customers come in before going to work.
+Rosa knows what they like: a latte, a cortado, a mate.
+She works a lot, but she loves her business.
+w: the café ; croissants ; homemade ; the business
+### 29 | A Problem with the Computer
+This morning my computer won't turn on.
+I have to send a report before twelve.
+I call the company's IT technician.
+He comes in ten minutes and checks the cable.
+The problem is simple: the cable is unplugged.
+I send the report at eleven thirty, with plenty of time to spare.
+w: to turn on ; the report ; the technician ; unplugged ; to spare
+### 30 | Daniel's Schedule
+Daniel is a nurse at a hospital in Quito.
+This week he's working the night shift.
+He starts at eight at night and gets off at eight in the morning.
+During the day he sleeps with the curtains closed.
+It isn't easy, but next week he has three days off.
+He wants to go to the mountains with his girlfriend.
+w: the nurse ; the shift ; the curtains ; days off
+### 31 | An Important Meeting
+Today there's an important meeting with a new client.
+My coworker and I prepared the presentation yesterday.
+The client arrives right on time at eleven.
+We present our ideas and our prices.
+He asks a lot of questions, but he seems interested.
+At the end he says he'll think about it and email us on Monday.
+w: the presentation ; on time ; interested ; to think about it
+### 32 | August Vacation
+In Spain, a lot of people take their vacation in August.
+In my office, half the team goes to the beach.
+I prefer to work in August because there's less work.
+The streets of Madrid are quiet and there's no traffic.
+My vacation is in September, when everything is cheaper.
+This year I'm going to Portugal with my sister.
+w: half ; quiet ; traffic ; cheap
+### 33 | The New Coworker
+A new coworker started at the office this week.
+His name is Kenji and he's from Japan.
+He speaks English very well because he lived in Canada.
+He's a designer and works on the website team.
+On Thursday we take him out for tacos.
+He tells us the tacos in Mexico are better, of course.
+w: the designer ; the website ; to invite ; better
+### 34 | My Grandmother's Tortilla
+My grandmother makes the best Spanish omelet in the world.
+First she peels the potatoes and cuts them into thin pieces.
+She fries them slowly in lots of olive oil, with onion.
+Then she mixes them with beaten eggs.
+The hardest part is flipping it over with a plate.
+My grandmother does it without fear, and it never breaks.
+w: to peel ; pieces ; to fry ; slowly ; to flip over
+### 35 | The Day of the Dead
+In Mexico, the Day of the Dead is celebrated on November 1 and 2.
+Families remember their loved ones who are gone.
+At home they make altars with orange flowers and candles.
+They also put out photos and the favorite foods of the dead.
+It's a cheerful celebration, with music and "pan de muerto", a sweet bread.
+It isn't a sad day, but a day to remember.
+w: loved ones ; the altar ; candles ; the dead ; but (rather)
+### 36 | A Soccer Game
+On Sunday I went to the stadium with my dad.
+Our team was playing against the league leader.
+In the first half, the other team scored a goal.
+But in the second half we tied it with a penalty.
+In the last minute, our striker scored the second goal.
+The whole stadium cheered with joy.
+w: the leader ; to score a goal ; to tie ; the striker
+### 37 | My Favorite Singer
+My favorite singer is from Colombia.
+She sings in Spanish and in English.
+Her songs mix pop, rock and Latin rhythms.
+I listen to her music when I work out.
+Last year I went to one of her concerts in São Paulo.
+I sang every song, even though I didn't understand all the words.
+w: the singer ; to mix ; the concert ; even though
+### 38 | Recycling at Home
+At home we sort our trash into four bins.
+The yellow one is for plastic and cans.
+The blue one is for paper and cardboard.
+The green one is for glass.
+And the last one is for food scraps.
+It was hard at first, but now it's a habit.
+w: trash ; the bin ; cans ; cardboard ; glass
+### 39 | An Afternoon at the Movies
+On Saturday afternoon we went to the movies.
+We saw an Argentine movie about two brothers.
+The movie was in the original language with subtitles.
+At first it was hard to understand the accent.
+But then we got used to it and liked it a lot.
+On the way out, we had ice cream and talked about the ending.
+w: the original language ; subtitles ; the accent ; to get used to ; ice cream
+### 40 | My New Phone
+Yesterday I bought a new cell phone.
+The old one was very slow and the battery didn't last at all.
+The new one has an excellent camera.
+I spent the whole afternoon setting it up.
+I had to download my apps and copy my photos.
+Now my sister wants my old phone.
+w: the cell phone ; slow ; the battery ; to set up ; to download
+### 41 | Christmas in Argentina
+In Argentina, Christmas is in the summer.
+It's very hot, sometimes over thirty degrees.
+Families have dinner on the night of the 24th, often outdoors.
+They eat grilled meat, salads and sweet bread.
+At midnight there are fireworks and everyone makes a toast.
+The kids open their presents before going to sleep.
+w: outdoors ; sweet bread ; fireworks ; to make a toast
+### 42 | A Science Museum
+Today we're visiting the science museum with our school.
+There's a huge room dedicated to space.
+We see a piece of a real meteorite.
+In another room we do experiments with water and light.
+What I like best is the dinosaur skeleton.
+It's twelve meters long.
+w: space ; real ; the experiment ; the skeleton ; long
+### 43 | Sharing an Apartment
+When I started college, I decided to share an apartment with two girls I didn't know.
+At first everything was fine, but soon the first problems came up.
+One of them never washed the dishes and the other played music until three in the morning.
+One Sunday the three of us sat down in the kitchen to talk calmly.
+We made a list of chores and agreed on some basic house rules.
+Since then, the house has worked much better.
+Today, five years later, we're still great friends.
+w: to share an apartment ; to come up ; to wash the dishes ; to agree on ; living together
+### 44 | My Cousin's Wedding
+Last month my cousin Lucía got married in a village in Andalusia.
+The ceremony was in a small church, and then there was a banquet at a country estate.
+There were almost two hundred guests, many of them from out of town.
+Dinner started at ten and didn't end until midnight.
+Then the bride and groom opened the dance with a waltz.
+We danced sevillanas, salsa and even reggaeton.
+I got back to the hotel at six in the morning, with no voice and my feet destroyed.
+w: to get married ; the banquet ; the country estate ; the bride and groom ; destroyed
+### 45 | Learning to Cook
+Until I was thirty, I couldn't even fry an egg.
+I almost always ate out or ordered delivery.
+One day I realized I was spending too much money and eating terribly.
+I signed up for a cooking class on Tuesday afternoons.
+I learned to make rice dishes, stews and a few pasta recipes.
+Now I cook almost every day and sometimes I invite my friends over.
+The best part is that cooking relaxes me after work.
+w: delivery ; to realize ; terribly ; to sign up ; a stew
+### 46 | Noisy Neighbors
+A few months ago a new family moved into the apartment upstairs.
+From the first day we started hearing noise at all hours.
+The kids ran down the hallway and they moved furniture at night.
+After two weeks without sleeping well, I went up to talk to them.
+The mother opened the door, very friendly, and apologized.
+She explained they were still putting the furniture together and would put down rugs.
+Now there's much less noise and, every once in a while, they bring us a piece of cake.
+w: the apartment upstairs ; the hallway ; furniture ; to apologize ; the rug
+### 47 | A Long-Distance Friendship
+I met Inés at a language exchange in Lisbon eight years ago.
+She wanted to improve her Portuguese and I wanted to improve my Spanish, so we met every week.
+When her scholarship ended, she went back to Salamanca and I thought we'd lose touch.
+However, we started writing each other long emails almost every week.
+Over time, we visited each other several times and traveled together around Morocco.
+Today we speak more Spanish than Portuguese, because she says I need more practice.
+For me, it's proof that distance doesn't break a good friendship.
+w: the exchange ; the scholarship ; however ; proof
+### 48 | The January Gym
+Every year, on January 2, the gym in my neighborhood fills up with new people.
+Everyone shows up in brand-new workout clothes and full of motivation.
+There are lines for the treadmills and the classes are fully booked.
+However, by mid-February the gym is almost empty again.
+The trainer says the problem is wanting results too fast.
+His advice is to start with two days a week and increase little by little.
+This year I followed it and, for the first time, I'm still going in April.
+w: to fill up ; the treadmill ; by mid- ; advice ; little by little
+### 49 | An Unexpected Visit
+On Saturday morning the doorbell rang while I was still in my pajamas.
+It was my uncle Ernesto, who had come from Rosario without warning.
+He had a box of alfajores and a suitcase that looked like it was for a month.
+He told me he wanted to surprise me for my birthday.
+The problem was that my birthday had been the week before.
+We laughed a lot and decided to celebrate it again that night.
+In the end, it was one of the best weekends of the year.
+w: the doorbell ; without warning ; alfajores (cookies) ; the surprise ; again

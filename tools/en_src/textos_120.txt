@@ -1,0 +1,300 @@
+### 120 | At the Bakery
+Baker: Good morning! What can I get you?
+Clara: Good morning. I'd like a loaf of bread, please.
+Baker: Anything else?
+Clara: Yes, four croissants. Are they freshly baked?
+Baker: Yes, they came out of the oven ten minutes ago.
+Clara: Perfect! How much is everything?
+Baker: That's five euros twenty.
+Clara: Here you go. Have a nice day!
+w: the loaf of bread ; freshly baked ; the oven ; What can I get you?
+### 121 | A Call to Mom
+Mom: Hello?
+Diego: Hi, Mom. It's me, Diego. How are you?
+Mom: Hi, sweetie! I'm doing great. And you? How's work going?
+Diego: Good, but I'm really tired this week.
+Mom: You need to sleep more. Are you coming for lunch on Sunday?
+Diego: Yes, of course. Should I bring anything?
+Mom: Bring dessert. Your dad loves flan.
+Diego: OK. Love you, Mom. See you Sunday.
+w: Hello? (phone) ; tired ; dessert ; flan
+### 122 | Want to Meet Up on Friday?
+Laura: Hey, Marcos, do you have any plans for Friday?
+Marcos: No, nothing special. Why?
+Laura: There's a new Mexican restaurant downtown. Want to go?
+Marcos: I love Mexican food! What time should we meet?
+Laura: Does nine work for you?
+Marcos: Nine thirty is better. I get off work late.
+Laura: OK. See you at the restaurant entrance.
+Marcos: Perfect. See you Friday!
+w: to meet up ; Does it work for you? ; to get off work ; see you
+### 123 | At the Hair Salon
+Hairdresser: Hi, do you have an appointment?
+Sergio: Yes, at five. My name is Sergio.
+Hairdresser: Have a seat here. What are we doing today?
+Sergio: I want a haircut, but not too much.
+Hairdresser: Shall I cut the sides and leave the top long?
+Sergio: Yes, that's fine. Just a little on top.
+Hairdresser: All done. What do you think?
+Sergio: I really like it! Thank you so much.
+w: the appointment ; to get a haircut ; the sides ; long
+### 124 | The New Neighbor
+Elena: Hi, are you the new neighbor on the third floor?
+Tomás: Yes, I moved in yesterday. My name is Tomás.
+Elena: Nice to meet you. I'm Elena, I live on the second floor.
+Tomás: Pleased to meet you. Hey, do you know where there's a supermarket?
+Elena: Yes, there's one at the end of the street, on the right.
+Tomás: And is it open on Sundays?
+Elena: Yes, in the morning. If you need anything, knock on my door.
+Tomás: That's very kind of you. Thanks, Elena!
+w: the neighbor ; to move (in) ; the third floor ; kind
+### 125 | At the Supermarket Checkout
+Cashier: Hi, good afternoon. Do you need a bag?
+Javier: No, thanks, I brought my own.
+Cashier: Do you have a store card?
+Javier: No, I don't. Is it free?
+Cashier: Yes, and with it you get discounts every week.
+Javier: Well, maybe next time. Can I pay by card?
+Cashier: Of course. That's thirty-two euros. Tap your card, please.
+Javier: Done. Thanks, see you!
+w: the bag ; free ; the discount ; to tap / bring close
+### 126 | Ordering a Pizza
+Employee: Napoli Pizzeria, how can I help you?
+Irene: Hi, I'd like to order a pizza for delivery.
+Employee: Sure. Which pizza would you like?
+Irene: A large ham and mushroom, no onion.
+Employee: Anything to drink?
+Irene: Yes, two lemon sodas. How long will it take?
+Employee: About forty minutes. Can I have your address?
+Irene: Twelve Main Street, apartment 1B.
+w: to go / for delivery ; ham ; mushrooms ; to take (time)
+### 127 | At the Restaurant
+Waiter: Good evening. Table for how many?
+Rocío: For two, please.
+Waiter: Here's the menu. What will you have?
+Rocío: For the first course, a vegetable soup. For the main course, grilled fish.
+Andrés: I'd like the salad and the chicken with potatoes.
+Waiter: And to drink?
+Rocío: A large bottle of water, please.
+Andrés: And at the end, the check, please.
+w: the menu ; for the first course ; grilled ; the check
+### 128 | At the Clothing Store
+Salesperson: Hi, can I help you?
+Paula: Yes, I'm looking for a winter jacket.
+Salesperson: We have these. What size do you wear?
+Paula: Medium. Do you have it in black?
+Salesperson: Yes, here it is. The fitting rooms are at the back.
+Paula: It's a little big on me. Do you have a small?
+Salesperson: Yes. And today it's twenty percent off.
+Paula: Great! I'll take it.
+w: the jacket ; the size ; the fitting room ; I'll take it
+### 129 | Where Are My Keys?
+Pedro: Ana, have you seen my keys? I can't find them.
+Ana: Did you look on the table by the door?
+Pedro: Yes, and in the kitchen too. I'm late for work.
+Ana: What about in the pocket of yesterday's jacket?
+Pedro: Wait... Yes, here they are!
+Ana: It's always the same thing. You need a set place for your keys.
+Pedro: You're right. This afternoon I'll buy a hook for the wall.
+Ana: Good idea. Hurry, or you'll miss the bus!
+w: the keys ; the pocket ; to be right ; the hook
+### 130 | What Should We Do Tonight?
+Lucía: What should we do tonight? Go out or stay home?
+Raúl: I'm a little tired. I'd rather stay home.
+Lucía: OK. Should we watch a movie?
+Raúl: Yes. A comedy? I don't want anything scary.
+Lucía: Sounds good. And for dinner?
+Raúl: We can make Spanish omelets. We have eggs.
+Lucía: Perfect. I'll peel the potatoes and you make popcorn.
+Raúl: Deal!
+w: to stay home ; scary ; to peel ; popcorn
+### 131 | At the Gym
+Receptionist: Hi, how can I help you?
+Mario: Hi. I'd like some information about joining the gym.
+Receptionist: The monthly fee is thirty euros.
+Mario: Does it include group classes?
+Receptionist: Yes, there's yoga, spinning and dance. They're all included.
+Mario: And what time do you open?
+Receptionist: Monday to Friday, from seven in the morning to ten at night.
+Mario: Great. I'll sign up today.
+w: to sign up ; the fee ; to include ; today (this very day)
+### 132 | A Present for Lucas
+Carmen: Saturday is Lucas's birthday. What should we get him?
+Óscar: I don't know. A book? He loves reading.
+Carmen: We always give him books. I want something different.
+Óscar: What about some concert tickets?
+Carmen: Good idea! His favorite band is playing in March.
+Óscar: Are the tickets expensive?
+Carmen: About forty euros each. We'll split it.
+Óscar: OK. I'll buy them online tonight.
+w: to give (a present) ; the tickets ; the band ; to split
+### 133 | Breakfast
+Grandma: Good morning, Nico. Did you sleep well?
+Nico: Yes, Grandma. I'm really hungry.
+Grandma: What do you want for breakfast? Toast or cereal?
+Nico: Toast with butter and jam, please.
+Grandma: And do you want milk or orange juice?
+Nico: Juice. Do you make it with real oranges?
+Grandma: Of course, they're from the tree in the garden.
+Nico: Yum! You're the best, Grandma.
+w: to have breakfast ; toast ; jam ; juice
+### 134 | A Taxi to the Airport
+Taxi driver: Good morning. Where to?
+Beatriz: To the airport, please. Terminal two.
+Taxi driver: Sure. What time is your flight?
+Beatriz: At eleven. How long will it take?
+Taxi driver: With this traffic, about thirty-five minutes.
+Beatriz: Perfect. Can I pay by card?
+Taxi driver: Yes, no problem. Here we are: that's twenty-eight euros.
+Beatriz: Here you go. Can I have a receipt, please?
+w: Where to? ; the flight ; traffic ; the receipt
+### 135 | At the Bus Station
+Traveler: Excuse me, what time does the next bus to Valencia leave?
+Employee: It leaves at a quarter past three.
+Traveler: And how long is the trip?
+Employee: About four hours. It stops in Cuenca.
+Traveler: A one-way ticket, please.
+Employee: That's twenty-five euros. Window or aisle?
+Traveler: Window. Which platform does it leave from?
+Employee: Platform seven. Have a good trip!
+w: the one-way ticket ; the stop ; the aisle ; the platform
+### 136 | At the Tourist Office
+Employee: Hi, welcome to Granada. How can I help you?
+Tourist: Hi. Do you have a map of the city?
+Employee: Yes, here you go. It's free.
+Tourist: Thanks. What do you recommend I visit today?
+Employee: The Alhambra, but you have to buy tickets in advance.
+Tourist: Oh no, I don't have tickets. Is there another option?
+Employee: You can walk around the Albaicín and watch the sunset from the viewpoint.
+Tourist: That sounds perfect! Thank you so much.
+w: the map ; in advance ; the sunset ; the viewpoint
+### 137 | At the Airport
+Agent: Good morning. Your passport, please.
+Gabriel: Here you go. I'm going to Mexico City.
+Agent: Are you going to check this suitcase?
+Gabriel: Yes, this big one. I'll carry the small one with me.
+Agent: It weighs twenty-two kilos. That's fine.
+Gabriel: Can I have an aisle seat?
+Agent: Yes. Boarding is at ten ten at gate B12.
+Gabriel: Thank you very much. See you!
+w: to check (luggage) ; the suitcase ; the seat ; boarding
+### 138 | Exchanging Money
+Customer: Hi, I'd like to change reais into Argentine pesos.
+Employee: Sure. How much would you like to change?
+Customer: Five hundred reais. What's the exchange rate today?
+Employee: I'll calculate it for you now. May I see your passport?
+Customer: Of course. Do you charge a commission?
+Employee: No, we don't charge a commission.
+Customer: Perfect. Could I have it in small bills, please?
+Employee: No problem. Here you go. Please count it.
+w: to exchange money ; the exchange rate ; the commission ; the bills
+### 139 | A Noisy Room
+Receptionist: Good evening. Is there a problem?
+Guest: Yes. My room is 305 and there's a lot of noise from the street.
+Receptionist: I'm very sorry. There's a party in the square tonight.
+Guest: Can I change rooms? I'm getting up very early tomorrow.
+Receptionist: I have one free on the fifth floor, facing the courtyard.
+Guest: Is it quieter?
+Receptionist: Yes, much quieter. Here's the key to 512.
+Guest: Thank you so much. That's very kind.
+w: the noise ; the guest ; to get up early ; to face the courtyard
+### 140 | A Day at the Beach
+Sofía: It's so hot! Should we go for a swim?
+Hugo: Yes, but put on sunscreen first. The sun is really strong.
+Sofía: You're right. Can you put some on my back?
+Hugo: Sure. Hey, should we rent an umbrella?
+Sofía: Yes, it's only five euros for the whole day.
+Hugo: Look, the flag is yellow. We have to be careful.
+Sofía: OK, we won't go out too far. Should we eat at the beach bar afterwards?
+Hugo: Yes! They have amazing sardines.
+w: to go for a swim ; sunscreen ; the beach umbrella ; the beach bar
+### 141 | Lost in the Subway
+Tourist: Excuse me, does this line go to the Prado Museum?
+Woman: No, this is line five. You need to take line one.
+Tourist: And where do I change lines?
+Woman: At the next station, Callao. Follow the blue signs.
+Tourist: Which stop do I get off at?
+Woman: At Atocha. The museum is a five-minute walk away.
+Tourist: Thank you so much. It's my first day here.
+Woman: You're welcome. Enjoy the city!
+w: the line ; to change lines ; the sign ; to get off
+### 142 | Calling in to Work
+Boss: Yes? Go ahead, Alberto.
+Alberto: Hi, Marta. I'm sorry, I can't come into the office today.
+Boss: What's wrong?
+Alberto: I have a fever and my throat really hurts.
+Boss: Oh no. Stay home and rest.
+Alberto: Thanks. Can someone go to my ten o'clock meeting?
+Boss: Yes, Carlos will go. Email him your notes.
+Alberto: I'll send them right now. See you tomorrow!
+w: What's wrong? ; the fever ; the throat ; to rest
+### 143 | At Reception
+Receptionist: Good morning. Can I help you?
+Visitor: Yes, I have an appointment with Ms. Ruiz at nine.
+Receptionist: Your name, please?
+Visitor: Felipe Ortega, from Sol Verde.
+Receptionist: One moment, I'll call her... Ms. Ruiz will be down in five minutes.
+Visitor: Great. Where can I wait?
+Receptionist: Over there, on the sofa. Here's your visitor badge.
+Visitor: Thank you. Is there guest Wi-Fi?
+w: the appointment ; to come down ; to wait ; the visitor badge
+### 144 | Asking a Coworker for Help
+Inés: Excuse me, Jorge, do you have a minute?
+Jorge: Yes, sure. What do you need?
+Inés: I don't know how to print on the new printer.
+Jorge: It's easy. First you enter your code here.
+Inés: What code? I don't have one.
+Jorge: It's in your email. The IT guy sent it to you yesterday.
+Inés: Oh, yes, here it is! It works now. Thanks a lot.
+Jorge: You're welcome. That's what we're here for.
+w: the coworker ; to print ; the printer ; the IT guy
+### 145 | Setting Up a Meeting
+Sara: Hi, Luis. We need to talk about the new project.
+Luis: Yes. When works for you?
+Sara: Tuesday morning?
+Luis: I can't on Tuesday, I'm with a client. Wednesday?
+Sara: Wednesday at eleven, OK?
+Luis: Perfect. In your office or in the big room?
+Sara: In the big room. The sales team is coming too.
+Luis: Great. I'll send you the invite now.
+w: When works for you? ; the office ; the team ; the invite
+### 146 | Asking for a Day Off
+Pablo: Boss, could I talk to you for a moment?
+Boss: Of course, Pablo. Have a seat.
+Pablo: My sister is getting married next Friday. Could I have the day off?
+Boss: Congratulations! Do you have any pending work for that day?
+Pablo: Yes, the monthly report. But I'll finish it on Thursday.
+Boss: Then there's no problem. Let HR know too.
+Pablo: I'll write to them now. Thank you very much.
+Boss: You're welcome. Have a great time at the wedding!
+w: the day off ; to get married ; Congratulations! ; the wedding
+### 147 | Shall We Go to the Concert?
+Daniela: Did you know Manu is playing in the park on Saturday?
+Iván: Really? How much are the tickets?
+Daniela: It's free. It's the city festival.
+Iván: Awesome! What time does it start?
+Daniela: At eight, but we need to get there early. Lots of people are going.
+Iván: OK. Should we meet at seven at the fountain?
+Daniela: Yes. And I'll bring something to eat, because the concert is long.
+Iván: I'll bring the water. I can't wait!
+w: to play (music) ; really ; early ; I can't wait!
+### 148 | Cooking Together
+Valeria: Today I'm going to teach you how to make guacamole. It's really easy.
+Leo: Great! What do we need?
+Valeria: Two ripe avocados, a tomato, onion, cilantro and a lime.
+Leo: Should I cut the onion?
+Valeria: Yes, really small. I'll mash the avocados with a fork.
+Leo: Done. And now?
+Valeria: We mix everything with the lime juice and a little salt.
+Leo: Mmm, it's delicious! Should we eat it with tortilla chips?
+w: the avocado ; ripe ; to mash ; to mix
+### 149 | The Village Festival
+Rosa: Are you coming to my village's festival this weekend?
+Marina: What do people do at the festival?
+Rosa: There's music in the square, dancing and a meal for the whole village.
+Marina: How lovely! And where would I sleep?
+Rosa: At my grandparents' house. They have a spare room.
+Marina: How do I get there? I don't have a car.
+Rosa: There's a bus on Saturday at ten. I'll wait for you at the stop.
+Marina: Perfect! I'll be there.
+w: the village ; the square ; dancing ; the stop

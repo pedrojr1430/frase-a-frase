@@ -1,0 +1,702 @@
+[
+ {
+  "tema": "social",
+  "title": "Unwanted Loneliness",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Unwanted loneliness has become one of the great challenges of Western societies.",
+    "A solidão indesejada se tornou um dos grandes desafios das sociedades ocidentais."
+   ],
+   [
+    "Although we tend to associate it with old age, it increasingly affects young people living in big cities.",
+    "Embora costumemos associá-la à velhice, ela afeta cada vez mais jovens que moram em grandes cidades."
+   ],
+   [
+    "Ironically, we have never been so connected nor felt so isolated.",
+    "Paradoxalmente, nunca estivemos tão conectados nem nos sentimos tão isolados."
+   ],
+   [
+    "Several studies show that prolonged isolation harms health as much as smoking.",
+    "Diversos estudos indicam que o isolamento prolongado prejudica a saúde tanto quanto o cigarro."
+   ],
+   [
+    "For this reason, some city councils have launched neighborhood companionship programs.",
+    "Por isso, algumas prefeituras implantaram programas de acompanhamento entre vizinhos."
+   ],
+   [
+    "Volunteers visit people who live alone, go with them to the doctor or simply chat with them.",
+    "Voluntários visitam pessoas que moram sozinhas, as acompanham ao médico ou simplesmente conversam com elas."
+   ],
+   [
+    "Those who take part agree that the benefit is mutual.",
+    "Quem participa concorda que o benefício é mútuo."
+   ]
+  ],
+  "words": [
+   [
+    "the challenge",
+    "o desafio"
+   ],
+   [
+    "old age",
+    "a velhice"
+   ],
+   [
+    "isolated",
+    "isolado"
+   ],
+   [
+    "to harm",
+    "prejudicar"
+   ],
+   [
+    "the city council",
+    "a prefeitura"
+   ],
+   [
+    "to launch",
+    "implantar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Segundo o texto, quem a solidão afeta cada vez mais?",
+    "options": [
+     "Também jovens de grandes cidades",
+     "Só os idosos",
+     "Moradores do campo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "A que os estudos comparam o isolamento prolongado?",
+    "options": [
+     "Ao cigarro",
+     "Ao estresse no trabalho",
+     "Ao sedentarismo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que dizem os participantes dos programas?",
+    "options": [
+     "Que o benefício é mútuo",
+     "Que é cansativo",
+     "Que não funciona"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Raising Bilingual Children",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "When Sara, from Brazil, and Diego, from Uruguay, had their first child, they decided to raise him in two languages.",
+    "Quando Sara, brasileira, e Diego, uruguaio, tiveram o primeiro filho, decidiram criá-lo em duas línguas."
+   ],
+   [
+    "They followed the method known as \"one parent, one language\": she spoke Portuguese to him and he spoke Spanish.",
+    "Seguiram o método conhecido como \"um pai, uma língua\": ela falava com ele em português e ele em espanhol."
+   ],
+   [
+    "During the first years, the boy mixed both languages in the same sentence.",
+    "Durante os primeiros anos, o menino misturava as duas línguas na mesma frase."
+   ],
+   [
+    "Some relatives feared this would delay his development, but the specialists reassured them.",
+    "Alguns parentes temiam que isso atrasasse o desenvolvimento dele, mas os especialistas os tranquilizaram."
+   ],
+   [
+    "According to them, mixing is a normal stage that disappears over time.",
+    "Segundo eles, a mistura é uma fase normal que desaparece com o tempo."
+   ],
+   [
+    "Today, at eight, the boy switches languages completely naturally depending on who he's talking to.",
+    "Hoje, com oito anos, o menino muda de língua com total naturalidade conforme com quem fala."
+   ],
+   [
+    "What was hardest for them wasn't teaching him, but being consistent when they were tired.",
+    "O mais difícil não foi ensiná-lo, mas ser constantes quando estavam cansados."
+   ]
+  ],
+  "words": [
+   [
+    "to raise",
+    "criar (filhos)"
+   ],
+   [
+    "both",
+    "ambos"
+   ],
+   [
+    "to delay",
+    "atrasar"
+   ],
+   [
+    "development",
+    "o desenvolvimento"
+   ],
+   [
+    "the stage",
+    "a fase"
+   ],
+   [
+    "to be hard",
+    "ser difícil"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual foi o método escolhido?",
+    "options": [
+     "Só espanhol em casa",
+     "Escola bilíngue",
+     "Um pai, uma língua"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que os especialistas disseram sobre a mistura de línguas?",
+    "options": [
+     "Que é uma fase normal",
+     "Que era preocupante",
+     "Que exigia terapia"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que foi mais difícil para os pais?",
+    "options": [
+     "Ser constantes quando cansados",
+     "Ensinar a gramática",
+     "Encontrar livros"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "The Price of Housing",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "In many European and Latin American capitals, getting a home has become a privilege.",
+    "Em muitas capitais europeias e latino-americanas, ter acesso a uma moradia se tornou um privilégio."
+   ],
+   [
+    "Rents have risen much faster than wages over the last decade.",
+    "Os aluguéis subiram muito mais rápido que os salários na última década."
+   ],
+   [
+    "As a result, many thirty-year-olds still live with their parents or share apartments.",
+    "Como resultado, muitos jovens de trinta anos continuam morando com os pais ou dividem apartamento."
+   ],
+   [
+    "Causes cited include tourism, speculation and a lack of public housing.",
+    "Entre as causas citam-se o turismo, a especulação e a escassez de moradia pública."
+   ],
+   [
+    "Some governments have limited tourist rentals or set maximum prices.",
+    "Alguns governos limitaram os aluguéis por temporada ou fixaram preços máximos."
+   ],
+   [
+    "Their critics argue that these measures reduce supply and don't solve the underlying problem.",
+    "Os críticos sustentam que essas medidas reduzem a oferta e não resolvem o problema de fundo."
+   ],
+   [
+    "What no one disputes is that, without a solution, inequality between generations will keep growing.",
+    "O que ninguém discute é que, sem uma solução, a desigualdade entre gerações continuará crescendo."
+   ]
+  ],
+  "words": [
+   [
+    "housing",
+    "a moradia"
+   ],
+   [
+    "to get access to",
+    "ter acesso a"
+   ],
+   [
+    "speculation",
+    "a especulação"
+   ],
+   [
+    "to argue",
+    "sustentar"
+   ],
+   [
+    "underlying",
+    "de fundo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que aconteceu com os aluguéis na última década?",
+    "options": [
+     "Ficaram estáveis",
+     "Subiram mais rápido que os salários",
+     "Caíram"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual destas NÃO aparece como causa?",
+    "options": [
+     "Especulação",
+     "Turismo",
+     "Imigração"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que os críticos dizem dos preços máximos?",
+    "options": [
+     "Reduzem a oferta",
+     "Aumentam a construção",
+     "Resolvem o problema"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "A Letter to My Twenty-Year-Old Self",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Dear me: now that I'm fifty, I'd like to tell you a few things I wish I had known sooner.",
+    "Querida eu: agora que tenho cinquenta, gostaria de te contar algumas coisas que eu queria ter sabido antes."
+   ],
+   [
+    "Don't worry so much about what other people think; most of them are too busy thinking about themselves.",
+    "Não se preocupe tanto com o que os outros pensam; a maioria está ocupada demais pensando em si mesma."
+   ],
+   [
+    "Travel whenever you can, even with little money and to places nearby.",
+    "Viaje sempre que puder, mesmo com pouco dinheiro e para lugares próximos."
+   ],
+   [
+    "Call Grandma more often: one day she'll be gone and you'll miss her voice.",
+    "Ligue mais vezes para a vovó: um dia ela não estará mais e você vai sentir falta da voz dela."
+   ],
+   [
+    "Making mistakes isn't failing; it's the only way I know to really learn something.",
+    "Errar não é fracassar; é a única forma que conheço de aprender algo de verdade."
+   ],
+   [
+    "Take care of your back and your friendships, because both are very hard to get back.",
+    "Cuide das suas costas e das suas amizades, porque as duas são muito difíceis de recuperar."
+   ],
+   [
+    "And above all, don't be in such a hurry: almost everything good comes when it's meant to.",
+    "E, acima de tudo, não tenha tanta pressa: quase tudo de bom chega quando tem que chegar."
+   ]
+  ],
+  "words": [
+   [
+    "often",
+    "com frequência"
+   ],
+   [
+    "to make mistakes",
+    "errar"
+   ],
+   [
+    "to fail",
+    "fracassar"
+   ],
+   [
+    "to get back",
+    "recuperar"
+   ],
+   [
+    "to be in a hurry",
+    "ter pressa"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantos anos tem a autora da carta?",
+    "options": [
+     "Cinquenta",
+     "Vinte",
+     "Trinta"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Segundo a carta, o que é errar?",
+    "options": [
+     "A única forma de aprender de verdade",
+     "Algo a evitar",
+     "Fracassar"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual é o último conselho?",
+    "options": [
+     "Economizar dinheiro",
+     "Não ter tanta pressa",
+     "Trabalhar mais"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "The Sandwich Generation",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "The sandwich generation is the name given to people who care for their children and their elderly parents at the same time.",
+    "Chama-se geração sanduíche as pessoas que cuidam ao mesmo tempo dos filhos e dos pais idosos."
+   ],
+   [
+    "The phenomenon has spread because people are having children later and later, and life expectancy is longer.",
+    "O fenômeno se espalhou porque se tem filhos cada vez mais tarde e a expectativa de vida é maior."
+   ],
+   [
+    "Mercedes, forty-seven, sums it up like this: \"I leave my daughter's school and go straight to the doctor with my mother.\"",
+    "Mercedes, de quarenta e sete anos, resume assim: \"Saio da escola da minha filha e vou direto ao médico com minha mãe\"."
+   ],
+   [
+    "Most of the people who take on this double care are women.",
+    "A maioria de quem assume esse duplo cuidado são mulheres."
+   ],
+   [
+    "Many cut back their working hours or turn down promotions, which affects their future pensions.",
+    "Muitas reduzem a jornada de trabalho ou abrem mão de promoções, o que afeta suas futuras aposentadorias."
+   ],
+   [
+    "Experts are calling for more public elder-care services and more flexible work schedules.",
+    "Os especialistas reivindicam mais serviços públicos de atenção a idosos e horários de trabalho mais flexíveis."
+   ],
+   [
+    "Meanwhile, exhaustion and guilt become their daily companions.",
+    "Enquanto isso, o cansaço e a culpa se tornam companheiros diários."
+   ]
+  ],
+  "words": [
+   [
+    "at the same time",
+    "ao mesmo tempo"
+   ],
+   [
+    "life expectancy",
+    "a expectativa de vida"
+   ],
+   [
+    "to turn down",
+    "abrir mão de"
+   ],
+   [
+    "the promotion",
+    "a promoção"
+   ],
+   [
+    "the pension",
+    "a aposentadoria"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que caracteriza a geração sanduíche?",
+    "options": [
+     "Morar com os pais",
+     "Trabalhar em dois empregos",
+     "Cuidar ao mesmo tempo dos filhos e dos pais"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Quem mais assume esse duplo cuidado?",
+    "options": [
+     "Avós",
+     "Mulheres",
+     "Homens"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que os especialistas reivindicam?",
+    "options": [
+     "Salários mais altos",
+     "Serviços para idosos e horários flexíveis",
+     "Mais escolas particulares"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Pets as Family",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "In recent decades, pets have gone from living in the backyard to sleeping in their owners' beds.",
+    "Nas últimas décadas, os animais de estimação passaram de viver no quintal a dormir na cama dos donos."
+   ],
+   [
+    "In many city homes there are already more dogs than children.",
+    "Em muitas casas urbanas já há mais cachorros do que crianças."
+   ],
+   [
+    "This change has driven a huge market: insurance, daycare, clothes and even dog psychologists.",
+    "Essa mudança impulsionou um mercado enorme: seguros, creches, roupas e até psicólogos caninos."
+   ],
+   [
+    "Some recent laws recognize animals as sentient beings and not as mere objects.",
+    "Algumas leis recentes reconhecem os animais como seres sencientes e não como simples objetos."
+   ],
+   [
+    "In a divorce, for example, a judge can decide who the dog lives with based on its well-being.",
+    "Em caso de divórcio, por exemplo, um juiz pode decidir com quem o cachorro mora conforme o bem-estar dele."
+   ],
+   [
+    "Some sociologists see this trend as a response to loneliness.",
+    "Há sociólogos que interpretam essa tendência como uma resposta à solidão."
+   ],
+   [
+    "Others, on the other hand, simply see it as a natural evolution of our relationship with animals.",
+    "Outros, por outro lado, a veem simplesmente como uma evolução natural da nossa relação com os animais."
+   ]
+  ],
+  "words": [
+   [
+    "the pet",
+    "o animal de estimação"
+   ],
+   [
+    "the home",
+    "o lar"
+   ],
+   [
+    "to drive / boost",
+    "impulsionar"
+   ],
+   [
+    "sentient",
+    "senciente"
+   ],
+   [
+    "well-being",
+    "o bem-estar"
+   ],
+   [
+    "on the other hand",
+    "por outro lado"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde muitos animais dormem hoje, segundo o texto?",
+    "options": [
+     "Em canis",
+     "Na cama dos donos",
+     "No quintal"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como algumas leis recentes veem os animais?",
+    "options": [
+     "Como patrimônio",
+     "Como objetos",
+     "Como seres sencientes"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como alguns sociólogos interpretam a tendência?",
+    "options": [
+     "Como resposta à solidão",
+     "Como moda passageira",
+     "Como problema econômico"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Disconnecting on Vacation",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "A couple of years ago, while I was on vacation, my boss messaged me at eleven at night to ask for a report.",
+    "Há uns dois anos, durante umas férias, meu chefe me escreveu às onze da noite pedindo um relatório."
+   ],
+   [
+    "I answered right away, as always, without thinking twice.",
+    "Respondi na hora, como sempre, sem pensar duas vezes."
+   ],
+   [
+    "That's when my partner asked me if I was really on vacation.",
+    "Foi então que meu parceiro me perguntou se eu estava mesmo de férias."
+   ],
+   [
+    "I realized I hadn't fully disconnected in years.",
+    "Percebi que fazia anos que eu não me desligava totalmente."
+   ],
+   [
+    "Several countries now have a right to disconnect, which protects workers outside their working hours.",
+    "Em vários países já existe o direito à desconexão digital, que protege os trabalhadores fora do expediente."
+   ],
+   [
+    "Now, before I leave, I set up an automatic reply and turn off email notifications.",
+    "Agora, antes de sair, deixo uma mensagem automática e desligo as notificações do e-mail."
+   ],
+   [
+    "At first I felt guilty; today I come back with more energy and, interestingly, I work better.",
+    "No começo me sentia culpada; hoje volto com mais energia e, curiosamente, trabalho melhor."
+   ]
+  ],
+  "words": [
+   [
+    "a couple of",
+    "uns dois"
+   ],
+   [
+    "right away",
+    "na hora"
+   ],
+   [
+    "to disconnect",
+    "desligar-se"
+   ],
+   [
+    "working hours",
+    "o expediente"
+   ],
+   [
+    "guilty",
+    "culpado"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que o chefe pediu durante as férias?",
+    "options": [
+     "Uma reunião",
+     "Que ela voltasse",
+     "Um relatório"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que o direito à desconexão protege?",
+    "options": [
+     "O trabalhador fora do expediente",
+     "O salário",
+     "As férias pagas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual foi o resultado de desligar-se?",
+    "options": [
+     "Sente culpa até hoje",
+     "Perdeu o emprego",
+     "Volta com mais energia e trabalha melhor"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "The Art of the Sobremesa",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "In Spain and much of Latin America there's a word that's hard to translate: \"sobremesa\".",
+    "Na Espanha e em boa parte da América Latina existe uma palavra difícil de traduzir: \"sobremesa\"."
+   ],
+   [
+    "It means the time spent chatting around the table after the meal is over.",
+    "Designa o tempo que se passa conversando em volta da mesa depois de terminar de comer."
+   ],
+   [
+    "It's not unusual for a Sunday lunch to start at two and the sobremesa to go on until six.",
+    "Não é raro que um almoço de domingo comece às duas e a conversa se estenda até as seis."
+   ],
+   [
+    "During those hours people argue about politics, remember family stories or fix the world's problems.",
+    "Durante essas horas se discute política, relembram-se histórias de família ou resolvem-se os problemas do mundo."
+   ],
+   [
+    "For many foreigners, used to getting up as soon as they finish dessert, it's surprising.",
+    "Para muitos estrangeiros, acostumados a se levantar assim que terminam o doce, é surpreendente."
+   ],
+   [
+    "Some people consider it a waste of time, but its defenders see it as a pillar of social life.",
+    "Há quem a considere uma perda de tempo, mas seus defensores a veem como um pilar da vida social."
+   ],
+   [
+    "After all, what matters isn't always what you eat, but who you share it with.",
+    "Afinal, o importante nem sempre é o que se come, e sim com quem se divide."
+   ]
+  ],
+  "words": [
+   [
+    "the after-meal chat",
+    "a conversa à mesa após a refeição"
+   ],
+   [
+    "to go on (longer)",
+    "estender-se"
+   ],
+   [
+    "the anecdote",
+    "a história curiosa"
+   ],
+   [
+    "as soon as",
+    "assim que"
+   ],
+   [
+    "after all",
+    "afinal de contas"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que significa \"sobremesa\" em espanhol?",
+    "options": [
+     "O doce depois da refeição",
+     "O café da tarde",
+     "A conversa à mesa depois de comer"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como muitos estrangeiros reagem a esse costume?",
+    "options": [
+     "Acham surpreendente",
+     "Não percebem",
+     "Acham normal"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Segundo a conclusão, o que importa mais?",
+    "options": [
+     "Com quem se divide a mesa",
+     "O horário",
+     "O que se come"
+    ],
+    "correct": 0
+   }
+  ]
+ }
+]

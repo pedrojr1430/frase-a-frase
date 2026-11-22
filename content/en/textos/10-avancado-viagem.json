@@ -1,0 +1,812 @@
+[
+ {
+  "tema": "viagem",
+  "title": "Mass Tourism",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Cities like Barcelona, Venice and Cartagena de Indias receive millions of visitors every year.",
+    "Cidades como Barcelona, Veneza ou Cartagena das Índias recebem todo ano milhões de visitantes."
+   ],
+   [
+    "Tourism creates jobs and wealth, but also tensions that are more and more visible.",
+    "O turismo gera emprego e riqueza, mas também tensões cada vez mais visíveis."
+   ],
+   [
+    "Residents of historic centers complain that their neighborhoods have turned into theme parks.",
+    "Os moradores dos centros históricos denunciam que seus bairros viraram parques temáticos."
+   ],
+   [
+    "Long-established shops have given way to chains and souvenir stores.",
+    "As lojas tradicionais deram lugar a franquias e lojas de souvenirs."
+   ],
+   [
+    "Some cities have imposed tourist taxes or limited cruise ship arrivals.",
+    "Algumas cidades impuseram taxas turísticas ou limitaram a chegada de cruzeiros."
+   ],
+   [
+    "Others are betting on spreading visitors out to less crowded neighborhoods and seasons.",
+    "Outras apostam em distribuir os visitantes para bairros e temporadas menos saturados."
+   ],
+   [
+    "The challenge is for tourism to benefit the people who live there, not just those who visit.",
+    "O desafio é fazer o turismo beneficiar quem mora lá, e não só quem o visita."
+   ]
+  ],
+  "words": [
+   [
+    "wealth",
+    "a riqueza"
+   ],
+   [
+    "long-established",
+    "tradicional, de sempre"
+   ],
+   [
+    "to give way to",
+    "dar lugar a"
+   ],
+   [
+    "the tax",
+    "a taxa"
+   ],
+   [
+    "to bet on",
+    "apostar em"
+   ],
+   [
+    "the challenge",
+    "o desafio"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Do que os moradores dos centros históricos reclamam?",
+    "options": [
+     "Da falta de turistas",
+     "Do transporte",
+     "De os bairros virarem parques temáticos"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Que medida algumas cidades adotaram?",
+    "options": [
+     "Proibir o turismo",
+     "Fechar museus",
+     "Taxas turísticas ou limite de cruzeiros"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual é o desafio, segundo o texto?",
+    "options": [
+     "Que o turismo beneficie os moradores",
+     "Construir mais hotéis",
+     "Atrair mais turistas"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Traveling Without Flying",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "When Clara decided to go from Madrid to Istanbul without getting on a plane, her friends thought she was joking.",
+    "Quando Clara decidiu ir de Madri a Istambul sem entrar num avião, os amigos acharam que era brincadeira."
+   ],
+   [
+    "It took her twelve days, combining night trains, buses and a ferry across the Adriatic.",
+    "Levou doze dias, combinando trens noturnos, ônibus e uma balsa pelo Adriático."
+   ],
+   [
+    "Her motivation was to reduce her carbon footprint, although she soon discovered other advantages.",
+    "Sua motivação era reduzir sua pegada de carbono, mas logo descobriu outras vantagens."
+   ],
+   [
+    "By traveling slowly, she noticed how the landscape, the food and the languages changed gradually.",
+    "Viajando devagar, percebia como mudavam gradualmente a paisagem, a comida e as línguas."
+   ],
+   [
+    "Not everything was idyllic: she missed a connection in Belgrade and had to sleep in a station.",
+    "Nem tudo foi idílico: perdeu uma conexão em Belgrado e teve que dormir numa estação."
+   ],
+   [
+    "Even so, she says it was the most memorable trip of her life.",
+    "Mesmo assim, garante que foi a viagem mais memorável da vida dela."
+   ],
+   [
+    "She admits, though, that not everyone can afford to spend so much time getting from place to place.",
+    "Reconhece, porém, que nem todo mundo pode se dar ao luxo de dedicar tanto tempo para se deslocar."
+   ]
+  ],
+  "words": [
+   [
+    "to joke",
+    "brincar"
+   ],
+   [
+    "the carbon footprint",
+    "a pegada de carbono"
+   ],
+   [
+    "to notice",
+    "perceber"
+   ],
+   [
+    "even so",
+    "mesmo assim"
+   ],
+   [
+    "to afford",
+    "dar-se ao luxo"
+   ],
+   [
+    "to get around",
+    "deslocar-se"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quanto tempo durou a viagem de Clara?",
+    "options": [
+     "Doze semanas",
+     "Doze horas",
+     "Doze dias"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual era a motivação principal?",
+    "options": [
+     "Medo de avião",
+     "Economizar dinheiro",
+     "Reduzir a pegada de carbono"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Que limitação Clara reconhece?",
+    "options": [
+     "É perigoso",
+     "Viajar devagar exige tempo",
+     "É mais caro"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Patagonia",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Patagonia, shared by Argentina and Chile, is one of the least populated regions on the planet.",
+    "A Patagônia, dividida entre Argentina e Chile, é uma das regiões menos povoadas do planeta."
+   ],
+   [
+    "Its landscapes alternate between endless steppes, glaciers, turquoise lakes and granite mountains.",
+    "Suas paisagens alternam estepes intermináveis, geleiras, lagos turquesa e montanhas de granito."
+   ],
+   [
+    "The wind is so constant and violent that the trees grow at an angle.",
+    "O vento é tão constante e violento que as árvores crescem inclinadas."
+   ],
+   [
+    "For centuries it was inhabited by peoples such as the Tehuelche and the Mapuche.",
+    "Durante séculos foi habitada por povos como os tehuelches e os mapuches."
+   ],
+   [
+    "In the late nineteenth century Welsh settlers arrived, and their heritage can still be seen in some towns.",
+    "No final do século XIX chegaram colonos galeses, cuja herança ainda se percebe em algumas cidades."
+   ],
+   [
+    "Today it attracts climbers and travelers looking for nature in its purest form.",
+    "Hoje atrai montanhistas e viajantes em busca de natureza em estado puro."
+   ],
+   [
+    "However, the retreat of the glaciers is a reminder that even this remote corner suffers from climate change.",
+    "No entanto, o recuo das geleiras lembra que até este canto remoto sofre com a mudança climática."
+   ]
+  ],
+  "words": [
+   [
+    "populated",
+    "povoado"
+   ],
+   [
+    "the steppe",
+    "a estepe"
+   ],
+   [
+    "the glacier",
+    "a geleira"
+   ],
+   [
+    "settlers",
+    "os colonos"
+   ],
+   [
+    "whose",
+    "cujo"
+   ],
+   [
+    "the retreat",
+    "o recuo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que as árvores crescem inclinadas?",
+    "options": [
+     "Pela neve",
+     "Pelo vento constante",
+     "Pelo solo"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Que colonos chegaram no século XIX?",
+    "options": [
+     "Alemães",
+     "Galeses",
+     "Italianos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que mostra que a região sofre com a mudança climática?",
+    "options": [
+     "A falta de chuva",
+     "O aumento do turismo",
+     "O recuo das geleiras"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Expats and Digital Nomads",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Cities like Medellín, Lisbon and Mexico City have become favorite destinations for digital nomads.",
+    "Cidades como Medellín, Lisboa ou Cidade do México se tornaram destinos favoritos dos nômades digitais."
+   ],
+   [
+    "Drawn by the climate, the cost of living and good internet, they arrive with salaries from richer countries.",
+    "Atraídos pelo clima, pelo custo de vida e pela boa conexão, chegam com salários de países mais ricos."
+   ],
+   [
+    "For the local economy, they mean income for cafés, coworking spaces and accommodation.",
+    "Para a economia local representam renda em cafés, espaços de coworking e hospedagens."
+   ],
+   [
+    "Nevertheless, their massive arrival has sent rents soaring in certain neighborhoods.",
+    "No entanto, a chegada em massa fez disparar os aluguéis em certos bairros."
+   ],
+   [
+    "Many residents are forced to move far from the place where they grew up.",
+    "Muitos moradores se veem obrigados a se mudar para longe do lugar onde cresceram."
+   ],
+   [
+    "Some governments offer special visas to attract them, while others try to regulate their impact.",
+    "Alguns governos oferecem vistos especiais para atraí-los, enquanto outros tentam regular seu impacto."
+   ],
+   [
+    "The phenomenon raises an uncomfortable question: who has the right to live in a city?",
+    "O fenômeno levanta uma pergunta incômoda: quem tem direito a viver numa cidade?"
+   ]
+  ],
+  "words": [
+   [
+    "the cost of living",
+    "o custo de vida"
+   ],
+   [
+    "to mean / represent",
+    "representar"
+   ],
+   [
+    "income",
+    "a renda"
+   ],
+   [
+    "nevertheless",
+    "no entanto"
+   ],
+   [
+    "to send soaring",
+    "disparar"
+   ],
+   [
+    "the visa",
+    "o visto"
+   ],
+   [
+    "to raise",
+    "levantar (uma questão)"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que atrai os nômades digitais a essas cidades?",
+    "options": [
+     "Clima, custo de vida e conexão",
+     "Universidades",
+     "Empregos locais"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que efeito negativo o texto aponta?",
+    "options": [
+     "Falta de internet",
+     "Aumento da criminalidade",
+     "Aumento dos aluguéis"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como alguns governos reagem?",
+    "options": [
+     "Proibindo estrangeiros",
+     "Ignorando o tema",
+     "Com vistos especiais ou regulação"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "A Night in the ER",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "We were in Oaxaca when, at midnight, my brother started feeling a sharp pain in his abdomen.",
+    "Estávamos em Oaxaca quando, à meia-noite, meu irmão começou a sentir uma dor aguda no abdômen."
+   ],
+   [
+    "The hotel receptionist called us a taxi and told us where the nearest hospital was.",
+    "O recepcionista do hotel chamou um táxi e nos indicou o hospital mais próximo."
+   ],
+   [
+    "In the ER, a nurse asked us a series of questions that I could barely understand because I was so nervous.",
+    "No pronto-socorro, uma enfermeira nos fez uma série de perguntas que mal consegui entender de nervoso."
+   ],
+   [
+    "I had to explain the symptoms, when they had started and whether my brother was allergic to any medication.",
+    "Tive que explicar os sintomas, quando tinham começado e se meu irmão era alérgico a algum remédio."
+   ],
+   [
+    "After several tests, the doctor diagnosed appendicitis and decided to operate that same night.",
+    "Depois de vários exames, o médico diagnosticou apendicite e decidiu operá-lo naquela mesma noite."
+   ],
+   [
+    "Fortunately, we had bought travel insurance that covered all the costs.",
+    "Felizmente, tínhamos contratado um seguro-viagem que cobriu todas as despesas."
+   ],
+   [
+    "Since then, I never travel without insurance or without knowing how to describe basic symptoms in the local language.",
+    "Desde então, nunca viajo sem seguro e sem saber descrever sintomas básicos na língua local."
+   ]
+  ],
+  "words": [
+   [
+    "sharp",
+    "agudo"
+   ],
+   [
+    "the ER",
+    "o pronto-socorro"
+   ],
+   [
+    "barely",
+    "mal"
+   ],
+   [
+    "to manage to",
+    "conseguir"
+   ],
+   [
+    "tests",
+    "os exames"
+   ],
+   [
+    "to cover",
+    "cobrir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que o irmão do narrador sentiu?",
+    "options": [
+     "Dor de cabeça",
+     "Febre alta",
+     "Dor aguda no abdômen"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual foi o diagnóstico?",
+    "options": [
+     "Apendicite",
+     "Intoxicação alimentar",
+     "Gastrite"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que cobriu as despesas?",
+    "options": [
+     "O hospital público",
+     "O seguro-viagem",
+     "O hotel"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Spain's Paradores",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "The paradores are a state-run chain of hotels, many of them located in historic buildings.",
+    "Os paradores são uma rede pública de hotéis situados, em muitos casos, em edifícios históricos."
+   ],
+   [
+    "The idea came about in 1910, with the goal of promoting tourism in little-known areas.",
+    "A ideia surgiu em 1910, com o objetivo de promover o turismo em áreas pouco conhecidas."
+   ],
+   [
+    "Today you can sleep in a medieval castle, a former convent or a Renaissance palace.",
+    "Hoje é possível dormir num castelo medieval, num antigo convento ou num palácio renascentista."
+   ],
+   [
+    "Restoring these buildings has saved an extremely valuable heritage from ruin.",
+    "A restauração desses edifícios permitiu salvar da ruína um patrimônio valiosíssimo."
+   ],
+   [
+    "Their restaurants also work hard to bring back the traditional cuisine of each region.",
+    "Além disso, seus restaurantes se esforçam para recuperar a gastronomia tradicional de cada região."
+   ],
+   [
+    "Although they aren't cheap, they offer discounts for young people and those over fifty-five.",
+    "Embora não sejam baratos, oferecem descontos para jovens e maiores de cinquenta e cinco anos."
+   ],
+   [
+    "For many travelers, staying in one of them is a way of traveling through time as well.",
+    "Hospedar-se num deles é, para muitos viajantes, uma forma de viajar também no tempo."
+   ]
+  ],
+  "words": [
+   [
+    "the network",
+    "a rede"
+   ],
+   [
+    "the convent",
+    "o convento"
+   ],
+   [
+    "Renaissance",
+    "renascentista"
+   ],
+   [
+    "ruin",
+    "a ruína"
+   ],
+   [
+    "to work hard",
+    "esforçar-se"
+   ],
+   [
+    "to stay",
+    "hospedar-se"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que são os paradores?",
+    "options": [
+     "Museus",
+     "Restaurantes privados",
+     "Uma rede pública de hotéis em edifícios históricos"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual era o objetivo original em 1910?",
+    "options": [
+     "Promover o turismo em áreas pouco conhecidas",
+     "Abrigar soldados",
+     "Hospedar a realeza"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que descontos eles oferecem?",
+    "options": [
+     "Para famílias grandes",
+     "Para estudantes estrangeiros",
+     "Para jovens e maiores de 55 anos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Language Tourism",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Every year, hundreds of thousands of students travel to Spanish-speaking countries to learn the language.",
+    "Todo ano, centenas de milhares de estudantes viajam para países de língua espanhola para aprender o idioma."
+   ],
+   [
+    "Salamanca, for example, has been attracting students from all over the world for centuries.",
+    "Salamanca, por exemplo, atrai estudantes do mundo todo há séculos."
+   ],
+   [
+    "Total immersion, living with a local family, usually speeds up learning considerably.",
+    "A imersão total, morando com uma família local, costuma acelerar notavelmente o aprendizado."
+   ],
+   [
+    "However, many students fall into the trap of only spending time with classmates from their own country.",
+    "No entanto, muitos alunos caem na armadilha de se relacionar só com colegas do próprio país."
+   ],
+   [
+    "Teachers recommend joining local activities, like a sports club or a choir.",
+    "Os professores recomendam entrar em atividades locais, como um clube esportivo ou um coral."
+   ],
+   [
+    "Today, online classes with native teachers compete with this model.",
+    "Hoje concorrem com esse modelo as aulas on-line com professores nativos."
+   ],
+   [
+    "Even so, for many people nothing replaces the experience of making mistakes in a real bakery.",
+    "Mesmo assim, para muitos, nada substitui a experiência de errar numa padaria de verdade."
+   ]
+  ],
+  "words": [
+   [
+    "Spanish-speaking",
+    "de língua espanhola"
+   ],
+   [
+    "immersion",
+    "a imersão"
+   ],
+   [
+    "the trap",
+    "a armadilha"
+   ],
+   [
+    "the choir",
+    "o coral"
+   ],
+   [
+    "to replace",
+    "substituir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que costuma acelerar o aprendizado?",
+    "options": [
+     "Estudar sozinho",
+     "A imersão morando com uma família local",
+     "Assistir a filmes"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é a armadilha comum?",
+    "options": [
+     "Estudar demais",
+     "Conviver só com colegas do próprio país",
+     "Gastar muito"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que os professores recomendam?",
+    "options": [
+     "Mais horas de aula",
+     "Aplicativos",
+     "Atividades locais como clube ou coral"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "A Train Across the Altiplano",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "The train that links Cusco with Lake Titicaca runs along one of the highest railway routes in the world.",
+    "O trem que liga Cusco ao lago Titicaca percorre um dos trajetos ferroviários mais altos do mundo."
+   ],
+   [
+    "For about ten hours, it crosses the high plateau at more than four thousand meters above sea level.",
+    "Durante cerca de dez horas, atravessa o altiplano a mais de quatro mil metros acima do nível do mar."
+   ],
+   [
+    "Herds of llamas, adobe villages and snowy peaks go by the window.",
+    "Pela janela desfilam rebanhos de lhamas, vilarejos de adobe e picos nevados."
+   ],
+   [
+    "At the highest point, La Raya pass, the train stops for a few minutes so passengers can get off.",
+    "No ponto mais alto, a passagem de La Raya, o trem para alguns minutos para os passageiros descerem."
+   ],
+   [
+    "There, Quechua women sell handmade textiles to tourists, who are struggling to breathe.",
+    "Ali, vendedoras quíchuas oferecem tecidos feitos à mão aos turistas, que respiram com dificuldade."
+   ],
+   [
+    "On board, lunch is served with Andean products and there are traditional music shows.",
+    "A bordo serve-se um almoço com produtos andinos e há apresentações de música tradicional."
+   ],
+   [
+    "The price is high, but those who have done it say the scenery is worth every sol spent.",
+    "O preço é alto, mas quem fez garante que a paisagem justifica cada sol gasto."
+   ]
+  ],
+  "words": [
+   [
+    "the route",
+    "o trajeto"
+   ],
+   [
+    "the high plateau",
+    "o altiplano"
+   ],
+   [
+    "herds",
+    "os rebanhos"
+   ],
+   [
+    "peaks",
+    "os picos"
+   ],
+   [
+    "textiles",
+    "os tecidos"
+   ],
+   [
+    "the sol (Peruvian currency)",
+    "o sol (moeda peruana)"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Que trecho o trem percorre?",
+    "options": [
+     "De Lima a Cusco",
+     "De Cusco ao lago Titicaca",
+     "De La Paz a Santiago"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que acontece na passagem de La Raya?",
+    "options": [
+     "Serve-se o almoço",
+     "O trem muda de trilho",
+     "O trem para e os passageiros descem"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que justifica o preço, segundo quem fez a viagem?",
+    "options": [
+     "O conforto",
+     "O almoço",
+     "A paisagem"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "viagem",
+  "title": "Complaining Like a Pro",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Many travelers don't bother to complain because they think it's useless or that it'll take too much time.",
+    "Muitos viajantes desistem de reclamar porque acham que é inútil ou que vão perder tempo demais."
+   ],
+   [
+    "However, a well-made complaint usually gets results.",
+    "No entanto, uma reclamação bem feita costuma dar resultado."
+   ],
+   [
+    "The first thing is to keep all the evidence: tickets, invoices, photos and emails.",
+    "O primeiro passo é guardar todas as provas: passagens, notas, fotos e e-mails."
+   ],
+   [
+    "It's a good idea to lay out the facts in chronological order, without insults and in a firm but polite tone.",
+    "Convém expor os fatos em ordem cronológica, sem ofensas e com tom firme mas educado."
+   ],
+   [
+    "It also helps to cite the applicable rules, for example, air passenger rights.",
+    "Também é útil citar a norma aplicável, por exemplo, os direitos dos passageiros aéreos."
+   ],
+   [
+    "If the company doesn't respond by the deadline, you can go to a consumer protection agency.",
+    "Se a empresa não responder no prazo estabelecido, pode-se recorrer a um órgão de defesa do consumidor."
+   ],
+   [
+    "In most cases, however, it's enough to show that you know your rights.",
+    "Na maioria dos casos, porém, basta mostrar que se conhecem os próprios direitos."
+   ]
+  ],
+  "words": [
+   [
+    "to not bother / give up",
+    "desistir de"
+   ],
+   [
+    "the complaint",
+    "a reclamação"
+   ],
+   [
+    "to keep",
+    "guardar"
+   ],
+   [
+    "it's a good idea",
+    "convém"
+   ],
+   [
+    "the rules",
+    "a norma"
+   ],
+   [
+    "to go to",
+    "recorrer a"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual é o primeiro passo para reclamar?",
+    "options": [
+     "Procurar um advogado",
+     "Guardar todas as provas",
+     "Ligar irritado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Que tom o texto recomenda?",
+    "options": [
+     "Agressivo",
+     "Informal",
+     "Firme mas educado"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que basta na maioria dos casos?",
+    "options": [
+     "Publicar nas redes",
+     "Ameaçar processar",
+     "Mostrar que conhece seus direitos"
+    ],
+    "correct": 2
+   }
+  ]
+ }
+]

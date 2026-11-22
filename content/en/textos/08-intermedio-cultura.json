@@ -1,0 +1,776 @@
+[
+ {
+  "tema": "cultura",
+  "title": "The Origins of Tango",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Tango was born in the late nineteenth century in the poor neighborhoods of Buenos Aires and Montevideo.",
+    "O tango nasceu no final do século XIX nos bairros pobres de Buenos Aires e Montevidéu."
+   ],
+   [
+    "European immigrants, people of African descent and people from the countryside lived there.",
+    "Ali viviam imigrantes europeus, descendentes de africanos e gente do interior."
+   ],
+   [
+    "From that mix of cultures came a new kind of music, melancholic and sensual.",
+    "Dessa mistura de culturas surgiu uma música nova, melancólica e sensual."
+   ],
+   [
+    "At first, high society considered it a vulgar dance.",
+    "No começo, a alta sociedade o considerava uma dança vulgar."
+   ],
+   [
+    "Everything changed when tango became a hit in the ballrooms of Paris, around 1913.",
+    "Tudo mudou quando o tango fez sucesso nos salões de Paris, por volta de 1913."
+   ],
+   [
+    "From then on, the Argentine elite accepted it with pride.",
+    "A partir de então, as elites argentinas o aceitaram com orgulho."
+   ],
+   [
+    "Today tango is part of the Intangible Cultural Heritage of Humanity.",
+    "Hoje o tango é Patrimônio Cultural Imaterial da Humanidade."
+   ]
+  ],
+  "words": [
+   [
+    "in the late",
+    "no final de"
+   ],
+   [
+    "the mix",
+    "a mistura"
+   ],
+   [
+    "to come from / emerge",
+    "surgir"
+   ],
+   [
+    "to become a hit",
+    "fazer sucesso"
+   ],
+   [
+    "pride",
+    "o orgulho"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde nasceu o tango?",
+    "options": [
+     "Em Buenos Aires e Montevidéu",
+     "Em Paris",
+     "Em Madri"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como a alta sociedade via o tango no início?",
+    "options": [
+     "Com indiferença",
+     "Como arte refinada",
+     "Como uma dança vulgar"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que fez a elite argentina aceitar o tango?",
+    "options": [
+     "Um filme famoso",
+     "O sucesso em Paris",
+     "Uma lei do governo"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "The Mediterranean Diet",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "The Mediterranean diet is based on the eating habits of southern European countries.",
+    "A dieta mediterrânea se baseia nos hábitos dos países do sul da Europa."
+   ],
+   [
+    "Its main ingredients are olive oil, vegetables, legumes and fish.",
+    "Seus ingredientes principais são o azeite, as verduras, as leguminosas e o peixe."
+   ],
+   [
+    "Red meat and sweets are eaten only once in a while.",
+    "A carne vermelha e os doces são consumidos só de vez em quando."
+   ],
+   [
+    "Many studies link it to a longer life and fewer heart diseases.",
+    "Muitos estudos a relacionam a uma vida mais longa e menos doenças do coração."
+   ],
+   [
+    "But it isn't just about food: it also includes eating slowly and with company.",
+    "Mas não se trata só de comida: também inclui comer devagar e em companhia."
+   ],
+   [
+    "Ironically, people in Spain are eating more and more fast food.",
+    "Paradoxalmente, na Espanha se come cada vez mais fast food."
+   ],
+   [
+    "That's why many schools now teach children to cook traditional dishes.",
+    "Por isso, muitas escolas agora ensinam as crianças a cozinhar pratos tradicionais."
+   ]
+  ],
+  "words": [
+   [
+    "legumes",
+    "as leguminosas"
+   ],
+   [
+    "once in a while",
+    "de vez em quando"
+   ],
+   [
+    "to be about",
+    "tratar-se de"
+   ],
+   [
+    "fast food",
+    "o fast food"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual destes é ingrediente principal da dieta?",
+    "options": [
+     "Carne vermelha",
+     "Azeite de oliva",
+     "Açúcar"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Além da comida, o que a dieta inclui?",
+    "options": [
+     "Comer devagar e em companhia",
+     "Exercício intenso",
+     "Jejum"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que acontece na Espanha hoje?",
+    "options": [
+     "Come-se cada vez mais fast food",
+     "Todos seguem a dieta",
+     "A carne foi proibida"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Social Media and Young People",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "According to a recent survey, teenagers spend an average of four hours a day on social media.",
+    "Segundo uma pesquisa recente, os adolescentes passam em média quatro horas por dia nas redes sociais."
+   ],
+   [
+    "Many say they use it to talk to friends and discover music.",
+    "Muitos dizem que as usam para falar com amigos e descobrir músicas."
+   ],
+   [
+    "However, psychologists warn that it can increase anxiety.",
+    "No entanto, os psicólogos alertam que elas podem aumentar a ansiedade."
+   ],
+   [
+    "Constantly comparing yourself to others affects your self-esteem.",
+    "Comparar-se o tempo todo com os outros afeta a autoestima."
+   ],
+   [
+    "Some high schools have banned phones during class.",
+    "Algumas escolas proibiram o celular durante as aulas."
+   ],
+   [
+    "Teachers say students now talk to each other more at recess.",
+    "Os professores garantem que os alunos agora conversam mais entre si no recreio."
+   ],
+   [
+    "The debate is still open: should we ban it or teach how to use it better?",
+    "O debate continua aberto: proibir ou ensinar a usá-las melhor?"
+   ]
+  ],
+  "words": [
+   [
+    "the survey",
+    "a pesquisa"
+   ],
+   [
+    "on average",
+    "em média"
+   ],
+   [
+    "to warn",
+    "alertar"
+   ],
+   [
+    "self-esteem",
+    "a autoestima"
+   ],
+   [
+    "recess",
+    "o recreio"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quanto tempo os adolescentes passam nas redes?",
+    "options": [
+     "Quatro horas por dia",
+     "Uma hora por dia",
+     "Oito horas por dia"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que os psicólogos alertam?",
+    "options": [
+     "Que as redes aumentam a ansiedade",
+     "Que as redes melhoram as notas",
+     "Que as redes são inofensivas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que mudou nas escolas que proibiram o celular?",
+    "options": [
+     "Os alunos conversam mais no recreio",
+     "As notas caíram",
+     "Os alunos faltam mais"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Frida Kahlo",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Frida Kahlo was born in 1907 in Coyoacán, in the house now known as the Blue House.",
+    "Frida Kahlo nasceu em 1907 em Coyoacán, na casa hoje conhecida como Casa Azul."
+   ],
+   [
+    "At eighteen she was in a serious bus accident that left her with lifelong after-effects.",
+    "Aos dezoito anos sofreu um grave acidente de ônibus que lhe deixou sequelas para a vida toda."
+   ],
+   [
+    "During her long recovery in bed, she started to paint.",
+    "Durante a longa recuperação na cama, começou a pintar."
+   ],
+   [
+    "Her mother put a mirror on the ceiling so she could paint herself.",
+    "A mãe instalou um espelho no teto para que ela pudesse se pintar."
+   ],
+   [
+    "That's why many of her paintings are self-portraits.",
+    "Por isso muitos de seus quadros são autorretratos."
+   ],
+   [
+    "She married the muralist Diego Rivera, with whom she had a very intense relationship.",
+    "Casou-se com o muralista Diego Rivera, com quem teve uma relação muito intensa."
+   ],
+   [
+    "Today she is one of the most recognized symbols of Mexican culture.",
+    "Hoje é um dos símbolos mais reconhecidos da cultura mexicana."
+   ]
+  ],
+  "words": [
+   [
+    "after-effects",
+    "as sequelas"
+   ],
+   [
+    "recovery",
+    "a recuperação"
+   ],
+   [
+    "the mirror",
+    "o espelho"
+   ],
+   [
+    "the self-portrait",
+    "o autorretrato"
+   ],
+   [
+    "the muralist",
+    "o muralista"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que aconteceu com Frida aos dezoito anos?",
+    "options": [
+     "Casou-se",
+     "Mudou-se para Paris",
+     "Sofreu um grave acidente"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Por que muitos quadros dela são autorretratos?",
+    "options": [
+     "Por encomenda",
+     "Por causa do espelho no teto",
+     "Porque não tinha modelos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Com quem Frida se casou?",
+    "options": [
+     "Pablo Picasso",
+     "Octavio Paz",
+     "Diego Rivera"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Water in Mexico City",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Mexico City was built on top of an ancient lake.",
+    "A Cidade do México foi construída sobre um antigo lago."
+   ],
+   [
+    "Ironically, today it suffers from a serious water shortage.",
+    "Paradoxalmente, hoje sofre uma grave falta de água."
+   ],
+   [
+    "For decades, too much water has been pumped from underground.",
+    "Durante décadas se extraiu água demais do subsolo."
+   ],
+   [
+    "As a result, the city sinks several centimeters every year.",
+    "Como consequência, a cidade afunda vários centímetros por ano."
+   ],
+   [
+    "On top of that, almost forty percent of the water is lost through leaks in the pipes.",
+    "Além disso, perde-se quase quarenta por cento da água por vazamentos nos canos."
+   ],
+   [
+    "Some neighborhoods only get water a few hours a week.",
+    "Alguns bairros só recebem água algumas horas por semana."
+   ],
+   [
+    "Experts propose collecting rainwater and repairing the distribution network.",
+    "Os especialistas propõem coletar água da chuva e consertar a rede de distribuição."
+   ]
+  ],
+  "words": [
+   [
+    "the lake",
+    "o lago"
+   ],
+   [
+    "the shortage",
+    "a escassez"
+   ],
+   [
+    "underground",
+    "o subsolo"
+   ],
+   [
+    "to sink",
+    "afundar"
+   ],
+   [
+    "leaks",
+    "os vazamentos"
+   ],
+   [
+    "the pipes",
+    "os canos"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Sobre o que a cidade foi construída?",
+    "options": [
+     "Sobre um antigo lago",
+     "Sobre uma montanha",
+     "Sobre um vulcão"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que a cidade afunda?",
+    "options": [
+     "Por terremotos",
+     "Pela extração de água do subsolo",
+     "Pelo peso dos prédios"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quanta água se perde em vazamentos?",
+    "options": [
+     "Mais de setenta por cento",
+     "Quase quarenta por cento",
+     "Cerca de dez por cento"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "The April Fair",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Two weeks after Easter, Seville celebrates its famous April Fair.",
+    "Duas semanas depois da Semana Santa, Sevilha celebra sua famosa Feira de Abril."
+   ],
+   [
+    "For a week, a huge fairground is set up with more than a thousand tents.",
+    "Durante uma semana, monta-se um recinto enorme com mais de mil barracas."
+   ],
+   [
+    "Many of them are private, and you can only get in if you're invited.",
+    "Muitas são privadas e só se pode entrar se for convidado."
+   ],
+   [
+    "Women wear flamenco dresses and men wear short riding suits.",
+    "As mulheres usam vestidos de flamenca e os homens, traje curto."
+   ],
+   [
+    "People dance sevillanas, eat fried fish and drink \"rebujito\".",
+    "Dança-se sevilhanas, come-se peixinho frito e bebe-se rebujito."
+   ],
+   [
+    "During the day, horses and carriages ride through the fairground.",
+    "De dia, cavalos e carruagens percorrem as ruas do recinto."
+   ],
+   [
+    "The party starts with the lighting of thousands of lights on Monday at midnight.",
+    "A festa começa com o acendimento de milhares de luzes na segunda à meia-noite."
+   ]
+  ],
+  "words": [
+   [
+    "the fairground",
+    "o recinto"
+   ],
+   [
+    "the tent",
+    "a barraca"
+   ],
+   [
+    "the flamenco dress",
+    "o vestido de flamenca"
+   ],
+   [
+    "the carriages",
+    "as carruagens"
+   ],
+   [
+    "the lighting",
+    "o acendimento"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando acontece a Feira de Abril?",
+    "options": [
+     "Duas semanas depois da Semana Santa",
+     "Em agosto",
+     "No Natal"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como se entra numa barraca privada?",
+    "options": [
+     "Comprando ingresso",
+     "Sendo convidado",
+     "Chegando cedo"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como a festa começa?",
+    "options": [
+     "Com o acendimento das luzes",
+     "Com uma missa",
+     "Com fogos"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Video Games at School",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "A school in Barcelona has started using video games in history class.",
+    "Uma escola de Barcelona começou a usar videogames nas aulas de história."
+   ],
+   [
+    "Students explore ancient cities that have been rebuilt digitally.",
+    "Os alunos exploram cidades antigas reconstruídas digitalmente."
+   ],
+   [
+    "This way they can walk through Rome or Tenochtitlan as if they were there.",
+    "Assim podem caminhar por Roma ou por Tenochtitlan como se estivessem lá."
+   ],
+   [
+    "Teachers say students participate more and remember the facts better.",
+    "Os professores dizem que os alunos participam mais e lembram melhor as informações."
+   ],
+   [
+    "Some parents, however, worry that kids spend too much time in front of screens.",
+    "Alguns pais, porém, temem que as crianças passem tempo demais diante de telas."
+   ],
+   [
+    "That's why the school limits video games to one hour a week.",
+    "Por isso, a escola limita os videogames a uma hora por semana."
+   ],
+   [
+    "Afterwards, students write and debate about what they've seen.",
+    "Depois, os alunos escrevem e debatem sobre o que viram."
+   ]
+  ],
+  "words": [
+   [
+    "to explore",
+    "explorar"
+   ],
+   [
+    "to rebuild",
+    "reconstruir"
+   ],
+   [
+    "as if",
+    "como se"
+   ],
+   [
+    "the facts",
+    "as informações"
+   ],
+   [
+    "the screen",
+    "a tela"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Em que matéria se usam os videogames?",
+    "options": [
+     "História",
+     "Inglês",
+     "Matemática"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que preocupa alguns pais?",
+    "options": [
+     "A violência",
+     "O preço dos jogos",
+     "O tempo diante de telas"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Quanto tempo por semana se usa videogame?",
+    "options": [
+     "Três horas",
+     "Uma hora",
+     "Todos os dias"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "The Vinyl Revival",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "In the age of streaming, more and more people are buying vinyl records again.",
+    "Na era do streaming, cada vez mais gente volta a comprar discos de vinil."
+   ],
+   [
+    "In recent years, vinyl sales have multiplied.",
+    "Nos últimos anos, as vendas de vinis se multiplicaram."
+   ],
+   [
+    "Many buyers are young people who never knew their parents' record players.",
+    "Muitos compradores são jovens que nunca conheceram as vitrolas dos pais."
+   ],
+   [
+    "They say they like the warm sound and the ritual of putting on a record.",
+    "Dizem que gostam do som quente e do ritual de pôr um disco."
+   ],
+   [
+    "They also value having something physical: the cover, the printed lyrics, the smell of the cardboard.",
+    "Também valorizam ter algo físico: a capa, as letras impressas, o cheiro do papelão."
+   ],
+   [
+    "The record stores that survived now host concerts and signings.",
+    "As lojas de discos que sobreviveram agora organizam shows e sessões de autógrafos."
+   ],
+   [
+    "For many, vinyl doesn't compete with streaming; it complements it.",
+    "Para muitos, o vinil não compete com o streaming, e sim o complementa."
+   ]
+  ],
+  "words": [
+   [
+    "the record player",
+    "a vitrola"
+   ],
+   [
+    "warm",
+    "quente, caloroso"
+   ],
+   [
+    "the cover",
+    "a capa"
+   ],
+   [
+    "to survive",
+    "sobreviver"
+   ],
+   [
+    "the signing",
+    "a sessão de autógrafos"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quem são muitos compradores de vinil?",
+    "options": [
+     "Colecionadores idosos",
+     "Lojas",
+     "Jovens"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que eles valorizam?",
+    "options": [
+     "Ter algo físico e o ritual",
+     "O preço baixo",
+     "A portabilidade"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como muitos veem a relação com o streaming?",
+    "options": [
+     "São inimigos",
+     "O vinil vai substituí-lo",
+     "Um complementa o outro"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Tapas",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Going out for tapas is one of the most typical customs in Spain.",
+    "Sair para comer tapas é um dos costumes mais típicos da Espanha."
+   ],
+   [
+    "It means going from bar to bar having a drink and a small dish at each one.",
+    "Consiste em ir de bar em bar tomando uma bebida e um pratinho em cada um."
+   ],
+   [
+    "There are several theories about where the word \"tapa\" comes from.",
+    "Há várias teorias sobre a origem da palavra \"tapa\"."
+   ],
+   [
+    "The most popular one says a slice of ham was used to cover the glass so flies wouldn't get in.",
+    "A mais popular diz que se tampava o copo com uma fatia de presunto para não entrarem moscas."
+   ],
+   [
+    "In cities like Granada, the tapa is still free with every drink.",
+    "Em cidades como Granada, a tapa ainda é grátis com cada bebida."
+   ],
+   [
+    "In others, like San Sebastián, they're called pintxos and usually have a toothpick.",
+    "Em outras, como San Sebastián, se chamam pintxos e costumam ter um palito."
+   ],
+   [
+    "More than a meal, it's a way to socialize with friends.",
+    "Mais que uma refeição, é uma forma de socializar com amigos."
+   ]
+  ],
+  "words": [
+   [
+    "to go out for tapas",
+    "sair para petiscar"
+   ],
+   [
+    "to cover",
+    "tampar, cobrir"
+   ],
+   [
+    "the slice",
+    "a fatia"
+   ],
+   [
+    "the toothpick",
+    "o palito"
+   ],
+   [
+    "to usually do",
+    "costumar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Em que consiste \"ir de tapas\"?",
+    "options": [
+     "Ir de bar em bar com bebida e um pratinho",
+     "Comer num só restaurante",
+     "Cozinhar em casa"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Segundo a teoria popular, para que servia a tapa?",
+    "options": [
+     "Para pagar menos",
+     "Para evitar moscas no copo",
+     "Para decorar"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como se chamam as tapas em San Sebastián?",
+    "options": [
+     "Raciones",
+     "Pintxos",
+     "Montaditos"
+    ],
+    "correct": 1
+   }
+  ]
+ }
+]

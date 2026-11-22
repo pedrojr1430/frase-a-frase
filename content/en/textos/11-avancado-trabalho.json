@@ -1,0 +1,878 @@
+[
+ {
+  "tema": "trabalho",
+  "title": "Artificial Intelligence at the Office",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "The arrival of generative AI has transformed tasks that until recently seemed exclusively human.",
+    "A chegada da inteligência artificial generativa transformou tarefas que até pouco tempo pareciam exclusivamente humanas."
+   ],
+   [
+    "Today, a program can write a report, summarize a meeting or translate a contract in seconds.",
+    "Hoje, um programa pode redigir um relatório, resumir uma reunião ou traduzir um contrato em segundos."
+   ],
+   [
+    "Many workers fear these tools will end up replacing them.",
+    "Muitos trabalhadores temem que essas ferramentas acabem substituindo-os."
+   ],
+   [
+    "Economists, however, don't agree on the real impact on jobs.",
+    "Os economistas, porém, não chegam a um acordo sobre o impacto real no emprego."
+   ],
+   [
+    "Some argue that new professions will be created, as happened with other technological revolutions.",
+    "Alguns sustentam que surgirão novas profissões, como já aconteceu em outras revoluções tecnológicas."
+   ],
+   [
+    "Others warn that the transition could be too fast for workers to adapt.",
+    "Outros alertam que a transição pode ser rápida demais para que os trabalhadores se adaptem."
+   ],
+   [
+    "What almost everyone agrees on is that knowing how to use these tools wisely will be a key skill.",
+    "No que quase todos concordam é que saber usar essas ferramentas com critério será uma competência-chave."
+   ]
+  ],
+  "words": [
+   [
+    "to write / draft",
+    "redigir"
+   ],
+   [
+    "the tool",
+    "a ferramenta"
+   ],
+   [
+    "to end up doing",
+    "acabar + gerúndio"
+   ],
+   [
+    "to agree",
+    "chegar a um acordo"
+   ],
+   [
+    "the skill",
+    "a competência"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que muitos trabalhadores temem?",
+    "options": [
+     "Trabalhar mais horas",
+     "Ganhar menos",
+     "Ser substituídos pelas ferramentas"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual é a posição dos economistas?",
+    "options": [
+     "Não chegam a um acordo",
+     "Todos são otimistas",
+     "Todos acham que haverá desemprego"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Em que quase todos concordam?",
+    "options": [
+     "Que a IA deve ser proibida",
+     "Que a IA vai acabar",
+     "Que usar essas ferramentas com critério será essencial"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "The Gig Economy",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Bike couriers, app drivers and gig workers are part of the urban landscape.",
+    "Entregadores de bicicleta, motoristas de aplicativo e trabalhadores por demanda fazem parte da paisagem urbana."
+   ],
+   [
+    "The platforms present them as independent entrepreneurs who decide when and how much to work.",
+    "As plataformas os apresentam como empreendedores independentes que decidem quando e quanto trabalhar."
+   ],
+   [
+    "Nevertheless, many of them depend entirely on a single company and its algorithm.",
+    "No entanto, muitos dependem completamente de uma única empresa e do seu algoritmo."
+   ],
+   [
+    "They have no paid vacation, no sick leave and, in many cases, no accident insurance.",
+    "Não têm férias remuneradas, licença médica e, em muitos casos, seguro contra acidentes."
+   ],
+   [
+    "In Spain, the so-called \"rider law\" required companies to hire delivery riders as employees.",
+    "Na Espanha, a chamada \"lei rider\" obrigou a contratar os entregadores como assalariados."
+   ],
+   [
+    "The companies argued they would lose flexibility and that prices would go up for customers.",
+    "As empresas argumentaram que perderiam flexibilidade e que os preços subiriam para os clientes."
+   ],
+   [
+    "The underlying debate is whether twentieth-century labor laws work for regulating twenty-first-century work.",
+    "O debate de fundo é se as leis trabalhistas do século XX servem para regular o trabalho do século XXI."
+   ]
+  ],
+  "words": [
+   [
+    "the courier",
+    "o entregador"
+   ],
+   [
+    "gig (on demand)",
+    "por demanda"
+   ],
+   [
+    "the entrepreneur",
+    "o empreendedor"
+   ],
+   [
+    "to lack",
+    "não ter"
+   ],
+   [
+    "the salaried employee",
+    "o assalariado"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como as plataformas apresentam esses trabalhadores?",
+    "options": [
+     "Como funcionários",
+     "Como estagiários",
+     "Como empreendedores independentes"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que a \"lei rider\" determinou na Espanha?",
+    "options": [
+     "Contratar entregadores como assalariados",
+     "Reduzir impostos",
+     "Proibir os aplicativos"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual é o debate de fundo?",
+    "options": [
+     "Quanto custa uma entrega",
+     "Se as leis do século XX servem para o trabalho atual",
+     "Se as bicicletas são seguras"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Leading Remote Teams",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Managing a team spread across Buenos Aires, Madrid and Mexico City requires skills that aren't taught in business schools.",
+    "Dirigir uma equipe espalhada entre Buenos Aires, Madri e Cidade do México exige habilidades que não se ensinam nas escolas de negócios."
+   ],
+   [
+    "The first difficulty is the time difference, which cuts the shared hours down to barely three or four a day.",
+    "A primeira dificuldade é a diferença de fuso, que reduz as horas em comum a apenas três ou quatro por dia."
+   ],
+   [
+    "That's why many leaders prioritize asynchronous communication: clear documents and decisions in writing.",
+    "Por isso, muitos líderes priorizam a comunicação assíncrona: documentos claros e decisões por escrito."
+   ],
+   [
+    "Another difficulty is that, without daily contact, misunderstandings easily get worse.",
+    "Outra dificuldade é que, sem o contato diário, os mal-entendidos se agravam facilmente."
+   ],
+   [
+    "Even within the same language, an expression that's neutral in one country can sound blunt in another.",
+    "Mesmo dentro da mesma língua, uma expressão neutra num país pode soar brusca em outro."
+   ],
+   [
+    "The teams that work best usually meet in person at least once a year.",
+    "As equipes que funcionam melhor costumam se reunir pessoalmente pelo menos uma vez por ano."
+   ],
+   [
+    "Trust, the experts conclude, is built from a distance, but it's strengthened face to face.",
+    "A confiança, concluem os especialistas, se constrói a distância, mas se consolida cara a cara."
+   ]
+  ],
+  "words": [
+   [
+    "spread out",
+    "espalhado"
+   ],
+   [
+    "the time difference",
+    "a diferença de fuso"
+   ],
+   [
+    "asynchronous",
+    "assíncrono"
+   ],
+   [
+    "the misunderstanding",
+    "o mal-entendido"
+   ],
+   [
+    "blunt",
+    "brusco"
+   ],
+   [
+    "face to face",
+    "cara a cara"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual é a primeira dificuldade citada?",
+    "options": [
+     "A diferença de fuso",
+     "O salário",
+     "A língua"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que os mal-entendidos se agravam?",
+    "options": [
+     "Por excesso de reuniões",
+     "Pela falta de contato diário",
+     "Por falta de internet"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como se consolida a confiança, segundo os especialistas?",
+    "options": [
+     "Por e-mail",
+     "Cara a cara",
+     "Com bônus"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Social Entrepreneurship",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "In a neighborhood on the outskirts of Medellín, a women's cooperative makes bags from recycled materials.",
+    "Num bairro periférico de Medellín, uma cooperativa de mulheres fabrica bolsas com materiais reciclados."
+   ],
+   [
+    "The project started ten years ago with five partners and a borrowed sewing machine.",
+    "O projeto nasceu há dez anos com cinco sócias e uma máquina de costura emprestada."
+   ],
+   [
+    "Today it employs forty people and exports to several European countries.",
+    "Hoje emprega quarenta pessoas e exporta para vários países europeus."
+   ],
+   [
+    "Unlike a conventional company, its profits are reinvested in training and daycare for the workers' children.",
+    "Diferentemente de uma empresa convencional, seus lucros são reinvestidos em capacitação e creche para os filhos das trabalhadoras."
+   ],
+   [
+    "This kind of initiative, known as social entrepreneurship, seeks to solve social problems with sustainable models.",
+    "Esse tipo de iniciativa, conhecido como empreendedorismo social, busca resolver problemas sociais com modelos sustentáveis."
+   ],
+   [
+    "Its biggest challenge is growing without losing the values it was founded on.",
+    "Seu maior desafio é crescer sem perder os valores que lhe deram origem."
+   ],
+   [
+    "As one of the founders says, \"Here we don't just sew bags, we sew opportunities.\"",
+    "Como diz uma das fundadoras, \"aqui não costuramos só bolsas, costuramos oportunidades\"."
+   ]
+  ],
+  "words": [
+   [
+    "on the outskirts",
+    "periférico"
+   ],
+   [
+    "the sewing machine",
+    "a máquina de costura"
+   ],
+   [
+    "to reinvest",
+    "reinvestir"
+   ],
+   [
+    "training",
+    "a capacitação"
+   ],
+   [
+    "sustainable",
+    "sustentável"
+   ],
+   [
+    "to sew",
+    "costurar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Com que a cooperativa começou?",
+    "options": [
+     "Um empréstimo bancário",
+     "Cinco sócias e uma máquina emprestada",
+     "Uma doação europeia"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Em que os lucros são reinvestidos?",
+    "options": [
+     "Em capacitação e creche",
+     "Em publicidade",
+     "Em novas lojas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual é o maior desafio?",
+    "options": [
+     "Crescer sem perder os valores",
+     "Achar clientes",
+     "Pagar impostos"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Competency-Based Interviews",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "More and more companies are replacing classic questions with competency-based interviews.",
+    "Cada vez mais empresas substituem as perguntas clássicas por entrevistas baseadas em competências."
+   ],
+   [
+    "Instead of asking \"What are your weaknesses?\", they ask the candidate to describe specific situations.",
+    "Em vez de perguntar \"quais são seus defeitos?\", pedem ao candidato que descreva situações concretas."
+   ],
+   [
+    "For example: \"Tell me about a time you had to resolve a conflict with a coworker.\"",
+    "Por exemplo: \"Conte uma ocasião em que teve que resolver um conflito com um colega\"."
+   ],
+   [
+    "The idea is that past behavior predicts future performance better than theoretical answers.",
+    "A ideia é que o comportamento passado prevê melhor o desempenho futuro do que as respostas teóricas."
+   ],
+   [
+    "To prepare, the STAR method is recommended: situation, task, action and result.",
+    "Para se preparar, recomenda-se o método STAR: situação, tarefa, ação e resultado."
+   ],
+   [
+    "Recruiters especially value candidates who admit their mistakes and explain what they learned.",
+    "Os recrutadores valorizam especialmente que o candidato reconheça seus erros e explique o que aprendeu."
+   ],
+   [
+    "Made-up stories, they warn, can usually be spotted with two or three follow-up questions.",
+    "Inventar histórias, alertam, costuma ser detectado com duas ou três perguntas de acompanhamento."
+   ]
+  ],
+  "words": [
+   [
+    "the candidate",
+    "o candidato"
+   ],
+   [
+    "to predict",
+    "prever"
+   ],
+   [
+    "performance",
+    "o desempenho"
+   ],
+   [
+    "the recruiter",
+    "o recrutador"
+   ],
+   [
+    "follow-up",
+    "de acompanhamento"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que as entrevistas por competências pedem?",
+    "options": [
+     "Situações concretas vividas",
+     "Testes de lógica",
+     "Defeitos e qualidades"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que significa o \"A\" do método STAR?",
+    "options": [
+     "Ação",
+     "Ambiente",
+     "Atitude"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que os recrutadores valorizam especialmente?",
+    "options": [
+     "Ter muitas certificações",
+     "Reconhecer erros e o que aprendeu",
+     "Respostas curtas"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "The Pay Gap",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Despite legal progress, women still earn less than men on average in almost every country.",
+    "Apesar dos avanços legais, as mulheres continuam recebendo em média menos que os homens em quase todos os países."
+   ],
+   [
+    "Part of the difference is explained by the fact that they more often work in lower-paid sectors.",
+    "Parte da diferença se explica porque ocupam com mais frequência setores mais mal pagos."
+   ],
+   [
+    "Another part is due to the so-called \"motherhood penalty\": after having children, their income drops significantly.",
+    "Outra parte se deve à chamada \"penalidade da maternidade\": depois de ter filhos, sua renda cai de forma notável."
+   ],
+   [
+    "Men's income, on the other hand, is barely affected by fatherhood.",
+    "A renda dos homens, por outro lado, mal é afetada pela paternidade."
+   ],
+   [
+    "Some countries have made maternity and paternity leave equal to share caregiving more fairly.",
+    "Alguns países igualaram as licenças-maternidade e paternidade para dividir melhor os cuidados."
+   ],
+   [
+    "Others require large companies to publish salaries by gender.",
+    "Outros obrigam as grandes empresas a publicar os salários por gênero."
+   ],
+   [
+    "Transparency, according to studies, reduces the gap because it forces companies to justify the differences.",
+    "A transparência, segundo os estudos, reduz a desigualdade porque obriga a justificar as diferenças."
+   ]
+  ],
+  "words": [
+   [
+    "the gap",
+    "a desigualdade, a lacuna"
+   ],
+   [
+    "on average",
+    "em média"
+   ],
+   [
+    "the penalty",
+    "a penalidade"
+   ],
+   [
+    "leave",
+    "a licença"
+   ],
+   [
+    "transparency",
+    "a transparência"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que é a \"penalidade da maternidade\"?",
+    "options": [
+     "Uma multa",
+     "Uma licença mais curta",
+     "A queda de renda das mães depois dos filhos"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que acontece com a renda dos homens após a paternidade?",
+    "options": [
+     "Mal é afetada",
+     "Sobe muito",
+     "Cai muito"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que a transparência reduz a desigualdade?",
+    "options": [
+     "Diminui impostos",
+     "Aumenta todos os salários",
+     "Obriga a justificar as diferenças"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "When a Family Business Changes Generations",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "The Álvarez winery has been making wine in La Rioja for four generations.",
+    "A vinícola Álvarez produz vinho há quatro gerações em La Rioja."
+   ],
+   [
+    "When the founder retired, his three children had very different visions for the future.",
+    "Quando o fundador se aposentou, seus três filhos tiveram visões muito diferentes sobre o futuro."
+   ],
+   [
+    "The oldest wanted to modernize the brand and sell online; the middle one, to keep the tradition; and the youngest, to sell the company.",
+    "A mais velha queria modernizar a marca e vender pela internet; o do meio, manter a tradição; e o caçula, vender a empresa."
+   ],
+   [
+    "The arguments came close to endangering the family relationship.",
+    "As discussões chegaram a pôr em risco a relação familiar."
+   ],
+   [
+    "In the end, they hired a mediator and wrote a family agreement that separated management from ownership.",
+    "Finalmente, contrataram um mediador e redigiram um protocolo familiar que separava a gestão da propriedade."
+   ],
+   [
+    "It's estimated that only a third of family businesses survive the move to the second generation.",
+    "Estima-se que só um terço das empresas familiares sobrevive à passagem para a segunda geração."
+   ],
+   [
+    "The Álvarez family made it because they understood in time that the business and the family needed different rules.",
+    "Os Álvarez conseguiram porque entenderam a tempo que o negócio e a família precisavam de regras diferentes."
+   ]
+  ],
+  "words": [
+   [
+    "the winery",
+    "a vinícola"
+   ],
+   [
+    "to make / produce",
+    "produzir"
+   ],
+   [
+    "to retire",
+    "aposentar-se"
+   ],
+   [
+    "the mediator",
+    "o mediador"
+   ],
+   [
+    "management",
+    "a gestão"
+   ],
+   [
+    "to make it",
+    "conseguir"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que o filho caçula queria?",
+    "options": [
+     "Manter a tradição",
+     "Modernizar a marca",
+     "Vender a empresa"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como resolveram o conflito?",
+    "options": [
+     "Venderam a empresa",
+     "O pai voltou a comandar",
+     "Com um mediador e um protocolo familiar"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Quantas empresas familiares sobrevivem à segunda geração?",
+    "options": [
+     "Só um terço",
+     "Cerca de metade",
+     "Quase todas"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Work Less, Live Better",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "In many Latin cultures, working long hours has traditionally been seen as a sign of commitment.",
+    "Em muitas culturas latinas, trabalhar longas jornadas foi tradicionalmente considerado um sinal de compromisso."
+   ],
+   [
+    "However, Spain and several Latin American countries are among those that work the most hours without being the most productive.",
+    "No entanto, a Espanha e vários países latino-americanos estão entre os que mais trabalham horas sem ser os mais produtivos."
+   ],
+   [
+    "One reason is so-called \"presenteeism\": staying at the office to be seen, even when there's no work.",
+    "Uma das razões é o chamado \"presenteísmo\": ficar no escritório para ser visto, mesmo sem trabalho."
+   ],
+   [
+    "Some companies have started measuring results instead of hours.",
+    "Algumas empresas começaram a medir resultados em vez de horas."
+   ],
+   [
+    "Moving up the end of the workday would also make it easier to balance work and family life.",
+    "Além disso, antecipar o horário de saída permitiria conciliar melhor a vida profissional e familiar."
+   ],
+   [
+    "Critics fear that flexibility will turn into being available all the time.",
+    "Os críticos temem que a flexibilidade se transforme numa disponibilidade permanente."
+   ],
+   [
+    "Perhaps the key isn't working less or more, but working with purpose.",
+    "Talvez a chave não esteja em trabalhar menos ou mais, mas em trabalhar com propósito."
+   ]
+  ],
+  "words": [
+   [
+    "the workday",
+    "a jornada"
+   ],
+   [
+    "commitment",
+    "o compromisso"
+   ],
+   [
+    "presenteeism",
+    "o presenteísmo"
+   ],
+   [
+    "to balance",
+    "conciliar"
+   ],
+   [
+    "critics",
+    "os críticos"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que é o \"presenteísmo\"?",
+    "options": [
+     "Trabalhar de casa",
+     "Ficar no escritório só para ser visto",
+     "Faltar ao trabalho"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que algumas empresas começaram a medir?",
+    "options": [
+     "Faltas",
+     "Resultados",
+     "Horas"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que os críticos da flexibilidade temem?",
+    "options": [
+     "Disponibilidade permanente",
+     "Mais reuniões",
+     "Salários menores"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "The Feedback Culture",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "Giving and receiving criticism at work is never easy, and even less so across different cultures.",
+    "Dar e receber críticas no trabalho nunca é simples, e menos ainda entre culturas diferentes."
+   ],
+   [
+    "In some northern European countries, directness is valued, even in front of others.",
+    "Em alguns países do norte da Europa valoriza-se a franqueza direta, mesmo diante de outros."
+   ],
+   [
+    "In much of Latin America, on the other hand, criticism tends to be softened so as not to hurt feelings.",
+    "Em grande parte da América Latina, por outro lado, as críticas costumam ser suavizadas para não ferir sensibilidades."
+   ],
+   [
+    "A \"it might be good to go over a couple of things\" can actually mean the work is far from acceptable.",
+    "Um \"seria bom revisar umas coisinhas\" pode significar, na verdade, que o trabalho está longe de ser aceitável."
+   ],
+   [
+    "These nuances cause frequent misunderstandings in international teams.",
+    "Essas nuances provocam mal-entendidos frequentes em equipes internacionais."
+   ],
+   [
+    "Experts advise agreeing explicitly on how feedback will be given within each team.",
+    "Os especialistas aconselham combinar explicitamente como o feedback será dado dentro de cada equipe."
+   ],
+   [
+    "They also recommend focusing on specific behaviors and not on the person.",
+    "Também recomendam focar em comportamentos concretos e não na pessoa."
+   ]
+  ],
+  "words": [
+   [
+    "directness",
+    "a franqueza"
+   ],
+   [
+    "to soften",
+    "suavizar"
+   ],
+   [
+    "to hurt",
+    "ferir"
+   ],
+   [
+    "nuances",
+    "as nuances"
+   ],
+   [
+    "to agree on",
+    "combinar"
+   ],
+   [
+    "to focus on",
+    "focar em"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como as críticas costumam ser na América Latina, segundo o texto?",
+    "options": [
+     "Muito diretas",
+     "Públicas",
+     "Suavizadas"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que pode significar \"seria bom revisar umas coisinhas\"?",
+    "options": [
+     "Que é um elogio",
+     "Que o trabalho está longe de ser aceitável",
+     "Que está quase perfeito"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que os especialistas recomendam?",
+    "options": [
+     "Evitar o feedback",
+     "Combinar como dar feedback e focar em comportamentos",
+     "Dar feedback só por escrito"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "A Startup That Failed",
+  "nivel": "Avançado",
+  "sentences": [
+   [
+    "In 2019, three friends from Santiago founded an app for sharing tools between neighbors.",
+    "Em 2019, três amigos de Santiago fundaram um aplicativo para compartilhar ferramentas entre vizinhos."
+   ],
+   [
+    "They got a funding round and grew to twenty employees.",
+    "Conseguiram uma rodada de investimento e chegaram a ter vinte funcionários."
+   ],
+   [
+    "The problem was that people downloaded the app, but almost no one used it more than once.",
+    "O problema era que as pessoas baixavam o aplicativo, mas quase ninguém o usava mais de uma vez."
+   ],
+   [
+    "For months they refused to accept it and spent the money on advertising instead of listening to users.",
+    "Durante meses se recusaram a aceitar isso e gastaram o dinheiro em publicidade em vez de ouvir os usuários."
+   ],
+   [
+    "When they finally did interviews, they found out most people preferred to borrow from a friend.",
+    "Quando finalmente fizeram entrevistas, descobriram que a maioria preferia pedir emprestado a um amigo."
+   ],
+   [
+    "The company shut down two years after its launch.",
+    "A empresa fechou dois anos depois do lançamento."
+   ],
+   [
+    "One of the founders now says that failure taught him more than any master's degree.",
+    "Um dos fundadores afirma hoje que aquele fracasso lhe ensinou mais do que qualquer mestrado."
+   ]
+  ],
+  "words": [
+   [
+    "the funding round",
+    "a rodada de investimento"
+   ],
+   [
+    "to refuse to",
+    "recusar-se a"
+   ],
+   [
+    "to borrow",
+    "pedir emprestado"
+   ],
+   [
+    "the launch",
+    "o lançamento"
+   ],
+   [
+    "the failure",
+    "o fracasso"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era a ideia do aplicativo?",
+    "options": [
+     "Compartilhar ferramentas entre vizinhos",
+     "Compartilhar carros",
+     "Vender roupas usadas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual foi o principal erro dos fundadores?",
+    "options": [
+     "Contratar pouca gente",
+     "Não ouvir os usuários",
+     "Cobrar caro"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que um dos fundadores diz hoje?",
+    "options": [
+     "Que o fracasso lhe ensinou mais que um mestrado",
+     "Que vai tentar de novo",
+     "Que se arrepende de tudo"
+    ],
+    "correct": 0
+   }
+  ]
+ }
+]

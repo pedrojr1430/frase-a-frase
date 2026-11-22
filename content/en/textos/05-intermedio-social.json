@@ -1,0 +1,772 @@
+[
+ {
+  "tema": "social",
+  "title": "Sharing an Apartment",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "When I started college, I decided to share an apartment with two girls I didn't know.",
+    "Quando comecei a faculdade, decidi dividir apartamento com duas garotas que eu não conhecia."
+   ],
+   [
+    "At first everything was fine, but soon the first problems came up.",
+    "No começo tudo ia bem, mas logo surgiram os primeiros problemas."
+   ],
+   [
+    "One of them never washed the dishes and the other played music until three in the morning.",
+    "Uma delas nunca lavava a louça e a outra punha música até as três da manhã."
+   ],
+   [
+    "One Sunday the three of us sat down in the kitchen to talk calmly.",
+    "Num domingo nos sentamos as três na cozinha para conversar com calma."
+   ],
+   [
+    "We made a list of chores and agreed on some basic house rules.",
+    "Fizemos uma lista de tarefas e combinamos algumas regras básicas de convivência."
+   ],
+   [
+    "Since then, the house has worked much better.",
+    "Desde então, a casa funciona muito melhor."
+   ],
+   [
+    "Today, five years later, we're still great friends.",
+    "Hoje, cinco anos depois, continuamos sendo grandes amigas."
+   ]
+  ],
+  "words": [
+   [
+    "to share an apartment",
+    "dividir apartamento"
+   ],
+   [
+    "to come up",
+    "surgir"
+   ],
+   [
+    "to wash the dishes",
+    "lavar a louça"
+   ],
+   [
+    "to agree on",
+    "combinar"
+   ],
+   [
+    "living together",
+    "a convivência"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era o problema de uma das colegas?",
+    "options": [
+     "Nunca lavava a louça",
+     "Não pagava o aluguel",
+     "Levava visitas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como elas resolveram os problemas?",
+    "options": [
+     "Conversaram e criaram regras",
+     "Uma delas se mudou",
+     "Chamaram o proprietário"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como é a relação delas hoje?",
+    "options": [
+     "Não se falam",
+     "São apenas conhecidas",
+     "Continuam grandes amigas"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "My Cousin's Wedding",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Last month my cousin Lucía got married in a village in Andalusia.",
+    "No mês passado minha prima Lucía se casou numa cidadezinha da Andaluzia."
+   ],
+   [
+    "The ceremony was in a small church, and then there was a banquet at a country estate.",
+    "A cerimônia foi numa pequena igreja e depois houve um banquete numa fazenda."
+   ],
+   [
+    "There were almost two hundred guests, many of them from out of town.",
+    "Éramos quase duzentos convidados, muitos deles de fora."
+   ],
+   [
+    "Dinner started at ten and didn't end until midnight.",
+    "O jantar começou às dez e só terminou à meia-noite."
+   ],
+   [
+    "Then the bride and groom opened the dance with a waltz.",
+    "Depois os noivos abriram a pista com uma valsa."
+   ],
+   [
+    "We danced sevillanas, salsa and even reggaeton.",
+    "Dançamos sevilhanas, salsa e até reggaeton."
+   ],
+   [
+    "I got back to the hotel at six in the morning, with no voice and my feet destroyed.",
+    "Voltei ao hotel às seis da manhã, sem voz e com os pés destruídos."
+   ]
+  ],
+  "words": [
+   [
+    "to get married",
+    "casar-se"
+   ],
+   [
+    "the banquet",
+    "o banquete"
+   ],
+   [
+    "the country estate",
+    "a fazenda andaluza"
+   ],
+   [
+    "the bride and groom",
+    "os noivos"
+   ],
+   [
+    "destroyed",
+    "destruído"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde foi o banquete?",
+    "options": [
+     "Na praia",
+     "Num hotel",
+     "Numa fazenda"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Quantos convidados havia?",
+    "options": [
+     "Mais de quinhentos",
+     "Quase duzentos",
+     "Cerca de cinquenta"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como o narrador voltou ao hotel?",
+    "options": [
+     "Cedo e descansado",
+     "De táxi com a prima",
+     "Sem voz e com os pés destruídos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Learning to Cook",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Until I was thirty, I couldn't even fry an egg.",
+    "Até os trinta anos, eu não sabia fritar nem um ovo."
+   ],
+   [
+    "I almost always ate out or ordered delivery.",
+    "Comia quase sempre fora ou pedia comida em casa."
+   ],
+   [
+    "One day I realized I was spending too much money and eating terribly.",
+    "Um dia percebi que gastava dinheiro demais e comia muito mal."
+   ],
+   [
+    "I signed up for a cooking class on Tuesday afternoons.",
+    "Me inscrevi num curso de culinária às terças à tarde."
+   ],
+   [
+    "I learned to make rice dishes, stews and a few pasta recipes.",
+    "Aprendi a fazer arrozes, ensopados e algumas receitas de massa."
+   ],
+   [
+    "Now I cook almost every day and sometimes I invite my friends over.",
+    "Agora cozinho quase todo dia e às vezes convido meus amigos."
+   ],
+   [
+    "The best part is that cooking relaxes me after work.",
+    "O melhor é que cozinhar me relaxa depois do trabalho."
+   ]
+  ],
+  "words": [
+   [
+    "delivery",
+    "em domicílio, delivery"
+   ],
+   [
+    "to realize",
+    "perceber"
+   ],
+   [
+    "terribly",
+    "muito mal"
+   ],
+   [
+    "to sign up",
+    "inscrever-se"
+   ],
+   [
+    "a stew",
+    "o ensopado"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Por que o narrador decidiu aprender a cozinhar?",
+    "options": [
+     "Para impressionar alguém",
+     "Gastava muito e comia mal",
+     "Perdeu o emprego"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quando era o curso?",
+    "options": [
+     "Aos sábados",
+     "Todos os dias",
+     "Às terças à tarde"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que cozinhar faz pelo narrador hoje?",
+    "options": [
+     "Relaxa depois do trabalho",
+     "Cansa muito",
+     "Dá dinheiro"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Noisy Neighbors",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "A few months ago a new family moved into the apartment upstairs.",
+    "Há alguns meses uma família nova se mudou para o apartamento de cima."
+   ],
+   [
+    "From the first day we started hearing noise at all hours.",
+    "Desde o primeiro dia começamos a ouvir barulhos a toda hora."
+   ],
+   [
+    "The kids ran down the hallway and they moved furniture at night.",
+    "As crianças corriam pelo corredor e mudavam móveis de lugar à noite."
+   ],
+   [
+    "After two weeks without sleeping well, I went up to talk to them.",
+    "Depois de duas semanas sem dormir direito, subi para falar com eles."
+   ],
+   [
+    "The mother opened the door, very friendly, and apologized.",
+    "A mãe me atendeu, muito gentil, e me pediu desculpas."
+   ],
+   [
+    "She explained they were still putting the furniture together and would put down rugs.",
+    "Explicou que ainda estavam montando os móveis e que iam pôr tapetes."
+   ],
+   [
+    "Now there's much less noise and, every once in a while, they bring us a piece of cake.",
+    "Agora há muito menos barulho e, de vez em quando, eles nos trazem um pedaço de bolo."
+   ]
+  ],
+  "words": [
+   [
+    "the apartment upstairs",
+    "o apartamento de cima"
+   ],
+   [
+    "the hallway",
+    "o corredor"
+   ],
+   [
+    "furniture",
+    "os móveis"
+   ],
+   [
+    "to apologize",
+    "pedir desculpas"
+   ],
+   [
+    "the rug",
+    "o tapete"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De onde vinha o barulho?",
+    "options": [
+     "Da rua",
+     "Do apartamento de cima",
+     "Do apartamento ao lado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como a mãe reagiu?",
+    "options": [
+     "Foi gentil e pediu desculpas",
+     "Não abriu a porta",
+     "Ficou brava"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que a família prometeu fazer?",
+    "options": [
+     "Mudar-se",
+     "Pôr tapetes",
+     "Vender os móveis"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "A Long-Distance Friendship",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "I met Inés at a language exchange in Lisbon eight years ago.",
+    "Conheci Inés num intercâmbio de idiomas em Lisboa há oito anos."
+   ],
+   [
+    "She wanted to improve her Portuguese and I wanted to improve my Spanish, so we met every week.",
+    "Ela queria melhorar o português e eu o espanhol, então nos encontrávamos toda semana."
+   ],
+   [
+    "When her scholarship ended, she went back to Salamanca and I thought we'd lose touch.",
+    "Quando a bolsa dela terminou, ela voltou para Salamanca e pensei que perderíamos o contato."
+   ],
+   [
+    "However, we started writing each other long emails almost every week.",
+    "No entanto, começamos a trocar e-mails longos quase toda semana."
+   ],
+   [
+    "Over time, we visited each other several times and traveled together around Morocco.",
+    "Com o tempo, nos visitamos várias vezes e viajamos juntas pelo Marrocos."
+   ],
+   [
+    "Today we speak more Spanish than Portuguese, because she says I need more practice.",
+    "Hoje falamos mais em espanhol que em português, porque ela diz que eu preciso de mais prática."
+   ],
+   [
+    "For me, it's proof that distance doesn't break a good friendship.",
+    "Para mim, é a prova de que a distância não rompe uma boa amizade."
+   ]
+  ],
+  "words": [
+   [
+    "the exchange",
+    "o intercâmbio"
+   ],
+   [
+    "the scholarship",
+    "a bolsa de estudos"
+   ],
+   [
+    "however",
+    "no entanto"
+   ],
+   [
+    "proof",
+    "a prova"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde as amigas se conheceram?",
+    "options": [
+     "Em Salamanca",
+     "Em Lisboa",
+     "No Marrocos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Por que Inés voltou para Salamanca?",
+    "options": [
+     "A bolsa terminou",
+     "Arrumou um namorado",
+     "Não gostou de Lisboa"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Em que idioma conversam mais hoje?",
+    "options": [
+     "Inglês",
+     "Espanhol",
+     "Português"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "The January Gym",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Every year, on January 2, the gym in my neighborhood fills up with new people.",
+    "Todo ano, no dia 2 de janeiro, a academia do meu bairro fica cheia de gente nova."
+   ],
+   [
+    "Everyone shows up in brand-new workout clothes and full of motivation.",
+    "Todos chegam com roupa esportiva recém-comprada e muita vontade."
+   ],
+   [
+    "There are lines for the treadmills and the classes are fully booked.",
+    "Há filas para usar as esteiras e não sobram vagas nas aulas."
+   ],
+   [
+    "However, by mid-February the gym is almost empty again.",
+    "No entanto, em meados de fevereiro a academia volta a ficar quase vazia."
+   ],
+   [
+    "The trainer says the problem is wanting results too fast.",
+    "O treinador diz que o problema é querer resultados rápido demais."
+   ],
+   [
+    "His advice is to start with two days a week and increase little by little.",
+    "O conselho dele é começar com dois dias por semana e aumentar aos poucos."
+   ],
+   [
+    "This year I followed it and, for the first time, I'm still going in April.",
+    "Este ano segui o conselho e, pela primeira vez, continuo indo em abril."
+   ]
+  ],
+  "words": [
+   [
+    "to fill up",
+    "encher-se"
+   ],
+   [
+    "the treadmill",
+    "a esteira"
+   ],
+   [
+    "by mid-",
+    "em meados de"
+   ],
+   [
+    "advice",
+    "o conselho"
+   ],
+   [
+    "little by little",
+    "aos poucos"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que acontece na academia em janeiro?",
+    "options": [
+     "Fica cheia de gente nova",
+     "Fecha para reforma",
+     "Fica vazia"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Qual é o problema, segundo o treinador?",
+    "options": [
+     "O preço alto",
+     "Querer resultados rápido demais",
+     "Falta de equipamentos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é o conselho do treinador?",
+    "options": [
+     "Treinar todos os dias",
+     "Fazer só aulas em grupo",
+     "Começar com dois dias e aumentar aos poucos"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "An Unexpected Visit",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "On Saturday morning the doorbell rang while I was still in my pajamas.",
+    "No sábado de manhã a campainha tocou enquanto eu ainda estava de pijama."
+   ],
+   [
+    "It was my uncle Ernesto, who had come from Rosario without warning.",
+    "Era meu tio Ernesto, que tinha vindo de Rosário sem avisar."
+   ],
+   [
+    "He had a box of alfajores and a suitcase that looked like it was for a month.",
+    "Trazia uma caixa de alfajores e uma mala que parecia ser para um mês."
+   ],
+   [
+    "He told me he wanted to surprise me for my birthday.",
+    "Me contou que queria me fazer uma surpresa pelo meu aniversário."
+   ],
+   [
+    "The problem was that my birthday had been the week before.",
+    "O problema era que meu aniversário tinha sido na semana anterior."
+   ],
+   [
+    "We laughed a lot and decided to celebrate it again that night.",
+    "Rimos muito e decidimos comemorar de novo naquela noite."
+   ],
+   [
+    "In the end, it was one of the best weekends of the year.",
+    "No final, foi um dos melhores fins de semana do ano."
+   ]
+  ],
+  "words": [
+   [
+    "the doorbell",
+    "a campainha"
+   ],
+   [
+    "without warning",
+    "sem avisar"
+   ],
+   [
+    "alfajores (cookies)",
+    "os alfajores"
+   ],
+   [
+    "the surprise",
+    "a surpresa"
+   ],
+   [
+    "again",
+    "de novo"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quem chegou sem avisar?",
+    "options": [
+     "O primo",
+     "Um amigo",
+     "O tio Ernesto"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual era o erro do tio?",
+    "options": [
+     "O aniversário já tinha passado",
+     "Errou o endereço",
+     "Chegou no dia errado da semana"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que fizeram naquela noite?",
+    "options": [
+     "O tio voltou para casa",
+     "Comemoraram de novo",
+     "Foram ao cinema"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "The Value of Grandparents",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "In many Latin American countries, grandparents play a key role in the family.",
+    "Em muitos países da América Latina, os avós têm um papel fundamental na família."
+   ],
+   [
+    "When parents are at work, they're the ones who pick the kids up from school.",
+    "Quando os pais trabalham, são eles que buscam as crianças na escola."
+   ],
+   [
+    "They make them an afternoon snack, help them with their homework and tell them stories.",
+    "Preparam o lanche, ajudam com a lição de casa e contam histórias."
+   ],
+   [
+    "Many grandchildren learn recipes, songs and traditions from their grandparents.",
+    "Muitos netos aprendem com os avós receitas, músicas e tradições."
+   ],
+   [
+    "This help also lets families save money on daycare.",
+    "Essa ajuda também permite às famílias economizar com creche."
+   ],
+   [
+    "However, some experts warn that we shouldn't ask too much of them.",
+    "No entanto, alguns especialistas alertam que não se deve exigir demais deles."
+   ],
+   [
+    "Grandparents also need time to rest and enjoy their retirement.",
+    "Os avós também precisam de tempo para descansar e aproveitar a aposentadoria."
+   ]
+  ],
+  "words": [
+   [
+    "the role",
+    "o papel"
+   ],
+   [
+    "the afternoon snack",
+    "o lanche da tarde"
+   ],
+   [
+    "homework",
+    "a lição de casa"
+   ],
+   [
+    "to warn",
+    "alertar"
+   ],
+   [
+    "retirement",
+    "a aposentadoria"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "O que os avós fazem quando os pais trabalham?",
+    "options": [
+     "Buscam as crianças e cuidam delas",
+     "Limpam a casa",
+     "Trabalham também"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que economia essa ajuda permite?",
+    "options": [
+     "Com comida",
+     "Com creche",
+     "Com transporte"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que alguns especialistas alertam?",
+    "options": [
+     "Que os avós mimam demais",
+     "Que as crianças aprendem pouco",
+     "Que não se deve exigir demais deles"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "social",
+  "title": "Going Back to the Village",
+  "nivel": "Intermediário",
+  "sentences": [
+   [
+    "Every summer, Javier goes back to his parents' village in Galicia.",
+    "Todo verão, Javier volta à cidadezinha dos pais, na Galícia."
+   ],
+   [
+    "In winter barely two hundred people live there, almost all of them elderly.",
+    "No inverno moram lá apenas duzentas pessoas, quase todas idosas."
+   ],
+   [
+    "But in August the population triples and the streets fill up with kids.",
+    "Mas em agosto a população triplica e as ruas se enchem de crianças."
+   ],
+   [
+    "Javier gets together again with childhood friends who now live in Madrid, London or Buenos Aires.",
+    "Javier reencontra amigos de infância que agora moram em Madri, Londres ou Buenos Aires."
+   ],
+   [
+    "At night there are open-air parties in the square and everyone dances until late.",
+    "À noite há festas populares na praça e todos dançam até tarde."
+   ],
+   [
+    "Javier would like to live there all year, but there's no work for him.",
+    "Javier gostaria de morar lá o ano todo, mas não há trabalho para ele."
+   ],
+   [
+    "Maybe someday, with remote work, he'll be able to.",
+    "Talvez algum dia, com o trabalho remoto, ele consiga."
+   ]
+  ],
+  "words": [
+   [
+    "barely",
+    "apenas, mal"
+   ],
+   [
+    "to triple",
+    "triplicar"
+   ],
+   [
+    "to reunite",
+    "reencontrar-se"
+   ],
+   [
+    "the open-air party",
+    "a festa popular"
+   ],
+   [
+    "maybe",
+    "talvez"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quantas pessoas moram na cidadezinha no inverno?",
+    "options": [
+     "Cerca de duzentas",
+     "Duas mil",
+     "Vinte mil"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que acontece em agosto?",
+    "options": [
+     "A população triplica",
+     "A cidade fica vazia",
+     "Há uma eleição"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que Javier não mora lá o ano todo?",
+    "options": [
+     "Não gosta do frio",
+     "Não há trabalho para ele",
+     "A casa é pequena"
+    ],
+    "correct": 1
+   }
+  ]
+ }
+]

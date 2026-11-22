@@ -4006,7 +4006,7 @@ function fafLang() {
       function listen(Rec) {
         try {
           if (window.FAF && window.FAF.stopAudio) window.FAF.stopAudio(); speechSynthesis.cancel();
-          var r = new Rec(); r.lang = 'es-MX'; r.interimResults = true; r.maxAlternatives = 1;
+          var r = new Rec(); r.lang = fafLang(); r.interimResults = true; r.maxAlternatives = 1;
           micBtn.classList.add('is-rec');
           r.onresult = function (e) { var txt = ''; for (var i = 0; i < e.results.length; i++) txt += e.results[i][0].transcript; input.value = txt; input.onInputFix(); };
           r.onend = r.onerror = function () { micBtn.classList.remove('is-rec'); input.focus(); };
@@ -4647,7 +4647,7 @@ class Component extends DCLogic {
         return { es: st(window.FAF_IDIOMA !== 'en'), en: st(window.FAF_IDIOMA === 'en') };
       })(),
       idiTag: { es: window.FAF_IDIOMA !== 'en' ? 'Atual' : 'Trocar', en: window.FAF_IDIOMA === 'en' ? 'Atual' : 'Trocar' },
-      idiEnSub: 'Frases e podcasts prontos · textos e curso em construção',
+      idiEnSub: 'Frases, textos e podcasts prontos · curso em construção',
       setIdiomaEs: function () { if (window.FAF_IDIOMA !== 'es') window.fafSetIdioma('es'); },
       setIdiomaEn: function () { if (window.FAF_IDIOMA !== 'en') window.fafSetIdioma('en'); },
       themeOn: { auto: String(s.theme === 'auto'), light: String(s.theme === 'light'), dark: String(s.theme === 'dark') },

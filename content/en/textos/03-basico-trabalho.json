@@ -1,0 +1,708 @@
+[
+ {
+  "tema": "trabalho",
+  "title": "My First Day at Work",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Today is my first day at an advertising agency.",
+    "Hoje é meu primeiro dia numa agência de publicidade."
+   ],
+   [
+    "I get there at ten to nine so I'm not late.",
+    "Chego às quinze para as nove para não me atrasar."
+   ],
+   [
+    "My boss, Clara, introduces me to the whole team.",
+    "Minha chefe, Clara, me apresenta para toda a equipe."
+   ],
+   [
+    "They give me a computer, an email account and a desk by the window.",
+    "Me dão um computador, um e-mail e uma mesa ao lado da janela."
+   ],
+   [
+    "At lunchtime, my coworkers take me out to a restaurant.",
+    "Na hora do almoço, meus colegas me convidam para um restaurante."
+   ],
+   [
+    "I end the day tired, but happy.",
+    "Termino o dia cansado, mas contente."
+   ]
+  ],
+  "words": [
+   [
+    "the agency",
+    "a agência"
+   ],
+   [
+    "the team",
+    "a equipe"
+   ],
+   [
+    "the coworker",
+    "o colega"
+   ],
+   [
+    "happy",
+    "contente"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde o narrador começa a trabalhar?",
+    "options": [
+     "Numa escola",
+     "Numa agência de publicidade",
+     "Num banco"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quem é Clara?",
+    "options": [
+     "A recepcionista",
+     "Uma cliente",
+     "A chefe"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que os colegas fazem na hora do almoço?",
+    "options": [
+     "Comem na mesa",
+     "Vão para casa",
+     "Convidam o narrador a um restaurante"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "A Job Interview",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Sergio has a job interview at ten.",
+    "Sergio tem uma entrevista de emprego às dez."
+   ],
+   [
+    "He puts on a white shirt and a jacket.",
+    "Veste uma camisa branca e um paletó."
+   ],
+   [
+    "The interviewer asks him about his experience.",
+    "A entrevistadora pergunta sobre a experiência dele."
+   ],
+   [
+    "Sergio explains that he worked at a store for three years.",
+    "Sergio explica que trabalhou três anos numa loja."
+   ],
+   [
+    "He also says that he speaks Spanish and a little Portuguese.",
+    "Também diz que fala inglês e um pouco de português."
+   ],
+   [
+    "At the end she tells him: \"We'll call you next week.\"",
+    "No final ela diz: \"Ligamos para o senhor na semana que vem\"."
+   ]
+  ],
+  "words": [
+   [
+    "the interview",
+    "a entrevista"
+   ],
+   [
+    "the jacket",
+    "o paletó, a jaqueta"
+   ],
+   [
+    "experience",
+    "a experiência"
+   ],
+   [
+    "the store",
+    "a loja"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "A que horas é a entrevista?",
+    "options": [
+     "Às dez",
+     "Às onze",
+     "Às nove"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde Sergio trabalhou antes?",
+    "options": [
+     "Numa loja",
+     "Num hotel",
+     "Num escritório"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Que idiomas Sergio fala além do espanhol?",
+    "options": [
+     "Inglês e um pouco de português",
+     "Italiano",
+     "Francês"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Working from Home",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Raquel has been working from home for a year.",
+    "Há um ano Raquel trabalha de casa."
+   ],
+   [
+    "Her office is a small table in the living room.",
+    "O escritório dela é uma mesa pequena na sala."
+   ],
+   [
+    "She starts at eight thirty with a video call meeting.",
+    "Começa às oito e meia com uma reunião por videochamada."
+   ],
+   [
+    "She likes not wasting time commuting.",
+    "Ela gosta de não perder tempo no transporte."
+   ],
+   [
+    "But sometimes she feels lonely and misses her coworkers.",
+    "Mas às vezes se sente sozinha e sente falta dos colegas."
+   ],
+   [
+    "That's why she goes to the office once a week.",
+    "Por isso, uma vez por semana vai ao escritório."
+   ]
+  ],
+  "words": [
+   [
+    "for (a year)",
+    "há"
+   ],
+   [
+    "the meeting",
+    "a reunião"
+   ],
+   [
+    "to waste time",
+    "perder tempo"
+   ],
+   [
+    "to miss",
+    "sentir falta"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Há quanto tempo Raquel trabalha de casa?",
+    "options": [
+     "Seis meses",
+     "Dois anos",
+     "Um ano"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que Raquel gosta no trabalho em casa?",
+    "options": [
+     "Trabalhar menos",
+     "Ganhar mais",
+     "Não perder tempo no transporte"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Com que frequência ela vai ao escritório?",
+    "options": [
+     "Nunca",
+     "Uma vez por semana",
+     "Todo dia"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Rosa's Café",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Rosa has a small café in Montevideo.",
+    "Rosa tem um pequeno café em Montevidéu."
+   ],
+   [
+    "She opens every day at seven in the morning.",
+    "Abre todos os dias às sete da manhã."
+   ],
+   [
+    "She makes croissants and homemade cakes.",
+    "Prepara croissants e bolos caseiros."
+   ],
+   [
+    "Many customers come in before going to work.",
+    "Muitos clientes vêm antes de ir trabalhar."
+   ],
+   [
+    "Rosa knows what they like: a latte, a cortado, a mate.",
+    "Rosa conhece os gostos deles: um café com leite, um pingado, um mate."
+   ],
+   [
+    "She works a lot, but she loves her business.",
+    "Trabalha muito, mas adora o seu negócio."
+   ]
+  ],
+  "words": [
+   [
+    "the café",
+    "o café, a lanchonete"
+   ],
+   [
+    "croissants",
+    "os croissants"
+   ],
+   [
+    "homemade",
+    "caseiro"
+   ],
+   [
+    "the business",
+    "o negócio"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Onde fica o café de Rosa?",
+    "options": [
+     "Em Santiago",
+     "Em Montevidéu",
+     "Em Buenos Aires"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A que horas o café abre?",
+    "options": [
+     "Às sete",
+     "Às oito",
+     "Às seis"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que Rosa sente pelo trabalho?",
+    "options": [
+     "Está cansada dele",
+     "Quer vendê-lo",
+     "Adora o negócio"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "A Problem with the Computer",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "This morning my computer won't turn on.",
+    "Hoje de manhã meu computador não liga."
+   ],
+   [
+    "I have to send a report before twelve.",
+    "Tenho que enviar um relatório antes do meio-dia."
+   ],
+   [
+    "I call the company's IT technician.",
+    "Ligo para o técnico da empresa."
+   ],
+   [
+    "He comes in ten minutes and checks the cable.",
+    "Ele vem em dez minutos e verifica o cabo."
+   ],
+   [
+    "The problem is simple: the cable is unplugged.",
+    "O problema é simples: o cabo está desconectado."
+   ],
+   [
+    "I send the report at eleven thirty, with plenty of time to spare.",
+    "Envio o relatório às onze e meia, com tempo de sobra."
+   ]
+  ],
+  "words": [
+   [
+    "to turn on",
+    "ligar"
+   ],
+   [
+    "the report",
+    "o relatório"
+   ],
+   [
+    "the technician",
+    "o técnico"
+   ],
+   [
+    "unplugged",
+    "desconectado"
+   ],
+   [
+    "to spare",
+    "de sobra"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era o prazo do relatório?",
+    "options": [
+     "Amanhã",
+     "Meio-dia",
+     "Fim do dia"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual era o problema do computador?",
+    "options": [
+     "Cabo desconectado",
+     "Vírus",
+     "Tela quebrada"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "A que horas o relatório foi enviado?",
+    "options": [
+     "Às onze e meia",
+     "Ao meio-dia e meia",
+     "Às dez"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "Daniel's Schedule",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Daniel is a nurse at a hospital in Quito.",
+    "Daniel é enfermeiro num hospital de Quito."
+   ],
+   [
+    "This week he's working the night shift.",
+    "Esta semana trabalha no turno da noite."
+   ],
+   [
+    "He starts at eight at night and gets off at eight in the morning.",
+    "Entra às oito da noite e sai às oito da manhã."
+   ],
+   [
+    "During the day he sleeps with the curtains closed.",
+    "Durante o dia dorme com as cortinas fechadas."
+   ],
+   [
+    "It isn't easy, but next week he has three days off.",
+    "Não é fácil, mas na semana que vem tem três dias de folga."
+   ],
+   [
+    "He wants to go to the mountains with his girlfriend.",
+    "Quer ir à montanha com a namorada."
+   ]
+  ],
+  "words": [
+   [
+    "the nurse",
+    "o enfermeiro"
+   ],
+   [
+    "the shift",
+    "o turno"
+   ],
+   [
+    "the curtains",
+    "as cortinas"
+   ],
+   [
+    "days off",
+    "dias de folga"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual é a profissão de Daniel?",
+    "options": [
+     "Médico",
+     "Enfermeiro",
+     "Motorista"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Em que turno ele trabalha esta semana?",
+    "options": [
+     "Manhã",
+     "Noite",
+     "Tarde"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que ele quer fazer nos dias de folga?",
+    "options": [
+     "Ir à montanha com a namorada",
+     "Trabalhar mais",
+     "Dormir"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "An Important Meeting",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Today there's an important meeting with a new client.",
+    "Hoje há uma reunião importante com um cliente novo."
+   ],
+   [
+    "My coworker and I prepared the presentation yesterday.",
+    "Minha colega e eu preparamos a apresentação ontem."
+   ],
+   [
+    "The client arrives right on time at eleven.",
+    "O cliente chega pontualmente às onze."
+   ],
+   [
+    "We present our ideas and our prices.",
+    "Apresentamos nossas ideias e os preços."
+   ],
+   [
+    "He asks a lot of questions, but he seems interested.",
+    "Ele faz muitas perguntas, mas parece interessado."
+   ],
+   [
+    "At the end he says he'll think about it and email us on Monday.",
+    "No final diz que vai pensar e nos escreve na segunda."
+   ]
+  ],
+  "words": [
+   [
+    "the presentation",
+    "a apresentação"
+   ],
+   [
+    "on time",
+    "pontual"
+   ],
+   [
+    "interested",
+    "interessado"
+   ],
+   [
+    "to think about it",
+    "pensar no assunto"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando prepararam a apresentação?",
+    "options": [
+     "Ontem",
+     "Na semana passada",
+     "Hoje cedo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Como o cliente parece?",
+    "options": [
+     "Irritado",
+     "Interessado",
+     "Com pressa"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Quando o cliente vai responder?",
+    "options": [
+     "Na segunda",
+     "No mês que vem",
+     "Hoje à tarde"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "August Vacation",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "In Spain, a lot of people take their vacation in August.",
+    "Na Espanha, muita gente tira férias em agosto."
+   ],
+   [
+    "In my office, half the team goes to the beach.",
+    "No meu escritório, metade da equipe vai para a praia."
+   ],
+   [
+    "I prefer to work in August because there's less work.",
+    "Eu prefiro trabalhar em agosto porque há menos trabalho."
+   ],
+   [
+    "The streets of Madrid are quiet and there's no traffic.",
+    "As ruas de Madri ficam tranquilas e não há trânsito."
+   ],
+   [
+    "My vacation is in September, when everything is cheaper.",
+    "Minhas férias são em setembro, quando tudo é mais barato."
+   ],
+   [
+    "This year I'm going to Portugal with my sister.",
+    "Este ano vou a Portugal com minha irmã."
+   ]
+  ],
+  "words": [
+   [
+    "half",
+    "a metade"
+   ],
+   [
+    "quiet",
+    "tranquilo"
+   ],
+   [
+    "traffic",
+    "o trânsito"
+   ],
+   [
+    "cheap",
+    "barato"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando muitos espanhóis tiram férias?",
+    "options": [
+     "Em agosto",
+     "Em julho",
+     "Em dezembro"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que o narrador prefere trabalhar em agosto?",
+    "options": [
+     "Ganha mais",
+     "Faz frio",
+     "Há menos trabalho"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Para onde ele vai nas férias?",
+    "options": [
+     "Portugal",
+     "França",
+     "Itália"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "trabalho",
+  "title": "The New Coworker",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "A new coworker started at the office this week.",
+    "Esta semana chegou um colega novo ao escritório."
+   ],
+   [
+    "His name is Kenji and he's from Japan.",
+    "Ele se chama Kenji e é do Japão."
+   ],
+   [
+    "He speaks English very well because he lived in Canada.",
+    "Fala espanhol muito bem porque morou no México."
+   ],
+   [
+    "He's a designer and works on the website team.",
+    "É designer e trabalha na equipe do site."
+   ],
+   [
+    "On Thursday we take him out for tacos.",
+    "Na quinta o convidamos para comer tacos."
+   ],
+   [
+    "He tells us the tacos in Mexico are better, of course.",
+    "Ele nos diz que os tacos do México são melhores, claro."
+   ]
+  ],
+  "words": [
+   [
+    "the designer",
+    "o designer"
+   ],
+   [
+    "the website",
+    "o site"
+   ],
+   [
+    "to invite",
+    "convidar"
+   ],
+   [
+    "better",
+    "melhores"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De onde é Kenji?",
+    "options": [
+     "Do Japão",
+     "Da Coreia",
+     "Da China"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Por que Kenji fala bem espanhol?",
+    "options": [
+     "Estudou na Espanha",
+     "A mãe é argentina",
+     "Morou no México"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Qual é o trabalho de Kenji?",
+    "options": [
+     "Designer",
+     "Vendedor",
+     "Contador"
+    ],
+    "correct": 0
+   }
+  ]
+ }
+]

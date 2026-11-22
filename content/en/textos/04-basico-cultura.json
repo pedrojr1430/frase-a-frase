@@ -1,0 +1,728 @@
+[
+ {
+  "tema": "cultura",
+  "title": "My Grandmother's Tortilla",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "My grandmother makes the best Spanish omelet in the world.",
+    "Minha avó faz a melhor tortilha de batatas do mundo."
+   ],
+   [
+    "First she peels the potatoes and cuts them into thin pieces.",
+    "Primeiro descasca as batatas e corta em pedaços finos."
+   ],
+   [
+    "She fries them slowly in lots of olive oil, with onion.",
+    "Frita devagar em bastante azeite, com cebola."
+   ],
+   [
+    "Then she mixes them with beaten eggs.",
+    "Depois mistura com ovos batidos."
+   ],
+   [
+    "The hardest part is flipping it over with a plate.",
+    "O mais difícil é virar com um prato."
+   ],
+   [
+    "My grandmother does it without fear, and it never breaks.",
+    "Minha avó faz sem medo, e ela nunca quebra."
+   ]
+  ],
+  "words": [
+   [
+    "to peel",
+    "descascar"
+   ],
+   [
+    "pieces",
+    "os pedaços"
+   ],
+   [
+    "to fry",
+    "fritar"
+   ],
+   [
+    "slowly",
+    "devagar"
+   ],
+   [
+    "to flip over",
+    "virar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Como as batatas são cortadas?",
+    "options": [
+     "Em cubos grandes",
+     "Raladas",
+     "Em pedaços finos"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Em que se fritam as batatas?",
+    "options": [
+     "Manteiga",
+     "Azeite de oliva",
+     "Óleo de soja"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual é a parte mais difícil?",
+    "options": [
+     "Virar a tortilha com um prato",
+     "Bater os ovos",
+     "Descascar as batatas"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "The Day of the Dead",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "In Mexico, the Day of the Dead is celebrated on November 1 and 2.",
+    "No México, o Dia dos Mortos é celebrado em 1 e 2 de novembro."
+   ],
+   [
+    "Families remember their loved ones who are gone.",
+    "As famílias lembram dos entes queridos que já se foram."
+   ],
+   [
+    "At home they make altars with orange flowers and candles.",
+    "Nas casas fazem altares com flores laranja e velas."
+   ],
+   [
+    "They also put out photos and the favorite foods of the dead.",
+    "Também colocam fotos e a comida favorita dos falecidos."
+   ],
+   [
+    "It's a cheerful celebration, with music and \"pan de muerto\", a sweet bread.",
+    "É uma festa alegre, com música e pão de morto."
+   ],
+   [
+    "It isn't a sad day, but a day to remember.",
+    "Não é um dia triste, e sim um dia para lembrar."
+   ]
+  ],
+  "words": [
+   [
+    "loved ones",
+    "os entes queridos"
+   ],
+   [
+    "the altar",
+    "o altar"
+   ],
+   [
+    "candles",
+    "as velas"
+   ],
+   [
+    "the dead",
+    "os falecidos"
+   ],
+   [
+    "but (rather)",
+    "e sim"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Quando se celebra o Dia dos Mortos?",
+    "options": [
+     "25 de dezembro",
+     "31 de outubro",
+     "1 e 2 de novembro"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que se coloca nos altares?",
+    "options": [
+     "Só flores brancas",
+     "Flores, velas, fotos e comida",
+     "Presentes de Natal"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como é o clima da festa?",
+    "options": [
+     "Triste e silencioso",
+     "Formal",
+     "Alegre, com música"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "A Soccer Game",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "On Sunday I went to the stadium with my dad.",
+    "No domingo fui ao estádio com meu pai."
+   ],
+   [
+    "Our team was playing against the league leader.",
+    "Nosso time jogava contra o líder do campeonato."
+   ],
+   [
+    "In the first half, the other team scored a goal.",
+    "No primeiro tempo, o outro time fez um gol."
+   ],
+   [
+    "But in the second half we tied it with a penalty.",
+    "Mas no segundo tempo empatamos com um pênalti."
+   ],
+   [
+    "In the last minute, our striker scored the second goal.",
+    "No último minuto, nosso atacante fez o segundo gol."
+   ],
+   [
+    "The whole stadium cheered with joy.",
+    "O estádio inteiro gritou de alegria."
+   ]
+  ],
+  "words": [
+   [
+    "the leader",
+    "o líder"
+   ],
+   [
+    "to score a goal",
+    "fazer um gol"
+   ],
+   [
+    "to tie",
+    "empatar"
+   ],
+   [
+    "the striker",
+    "o atacante"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Contra quem o time jogava?",
+    "options": [
+     "Um time estrangeiro",
+     "O último colocado",
+     "O líder do campeonato"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Como o time empatou?",
+    "options": [
+     "De cabeça",
+     "Com um pênalti",
+     "De falta"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Qual foi o resultado final?",
+    "options": [
+     "Derrota",
+     "Vitória do time do narrador",
+     "Empate"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "My Favorite Singer",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "My favorite singer is from Colombia.",
+    "Minha cantora favorita é da Colômbia."
+   ],
+   [
+    "She sings in Spanish and in English.",
+    "Ela canta em espanhol e em inglês."
+   ],
+   [
+    "Her songs mix pop, rock and Latin rhythms.",
+    "As músicas dela misturam pop, rock e ritmos latinos."
+   ],
+   [
+    "I listen to her music when I work out.",
+    "Ouço a música dela quando faço exercício."
+   ],
+   [
+    "Last year I went to one of her concerts in São Paulo.",
+    "No ano passado fui a um show dela em São Paulo."
+   ],
+   [
+    "I sang every song, even though I didn't understand all the words.",
+    "Cantei todas as músicas, embora não entendesse todas as palavras."
+   ]
+  ],
+  "words": [
+   [
+    "the singer",
+    "o cantor"
+   ],
+   [
+    "to mix",
+    "misturar"
+   ],
+   [
+    "the concert",
+    "o show"
+   ],
+   [
+    "even though",
+    "embora"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De onde é a cantora?",
+    "options": [
+     "Da Colômbia",
+     "Do México",
+     "Da Espanha"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quando o narrador ouve a música dela?",
+    "options": [
+     "Quando faz exercício",
+     "Quando dorme",
+     "Quando cozinha"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Onde foi o show?",
+    "options": [
+     "Em Bogotá",
+     "Em São Paulo",
+     "Em Madri"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Recycling at Home",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "At home we sort our trash into four bins.",
+    "Em casa separamos o lixo em quatro lixeiras."
+   ],
+   [
+    "The yellow one is for plastic and cans.",
+    "A amarela é para plástico e latas."
+   ],
+   [
+    "The blue one is for paper and cardboard.",
+    "A azul é para papel e papelão."
+   ],
+   [
+    "The green one is for glass.",
+    "A verde é para vidro."
+   ],
+   [
+    "And the last one is for food scraps.",
+    "E a última é para restos de comida."
+   ],
+   [
+    "It was hard at first, but now it's a habit.",
+    "No começo era difícil, mas agora é um hábito."
+   ]
+  ],
+  "words": [
+   [
+    "trash",
+    "o lixo"
+   ],
+   [
+    "the bin",
+    "o balde, a lixeira"
+   ],
+   [
+    "cans",
+    "as latas"
+   ],
+   [
+    "cardboard",
+    "o papelão"
+   ],
+   [
+    "glass",
+    "o vidro"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Em quantas lixeiras se separa o lixo?",
+    "options": [
+     "Quatro",
+     "Três",
+     "Duas"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Para que serve a lixeira verde?",
+    "options": [
+     "Plástico",
+     "Vidro",
+     "Papel"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Como é a reciclagem agora para a família?",
+    "options": [
+     "Algo novo",
+     "Muito difícil",
+     "Um hábito"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "An Afternoon at the Movies",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "On Saturday afternoon we went to the movies.",
+    "No sábado à tarde fomos ao cinema."
+   ],
+   [
+    "We saw an Argentine movie about two brothers.",
+    "Vimos um filme argentino sobre dois irmãos."
+   ],
+   [
+    "The movie was in the original language with subtitles.",
+    "O filme era na versão original com legendas."
+   ],
+   [
+    "At first it was hard to understand the accent.",
+    "No começo foi difícil entender o sotaque."
+   ],
+   [
+    "But then we got used to it and liked it a lot.",
+    "Mas depois nos acostumamos e gostamos muito."
+   ],
+   [
+    "On the way out, we had ice cream and talked about the ending.",
+    "Na saída, tomamos um sorvete e falamos do final."
+   ]
+  ],
+  "words": [
+   [
+    "the original language",
+    "a versão original"
+   ],
+   [
+    "subtitles",
+    "as legendas"
+   ],
+   [
+    "the accent",
+    "o sotaque"
+   ],
+   [
+    "to get used to",
+    "acostumar-se"
+   ],
+   [
+    "ice cream",
+    "o sorvete"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "De onde era o filme?",
+    "options": [
+     "Da Espanha",
+     "Da Argentina",
+     "Do México"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que foi difícil no começo?",
+    "options": [
+     "Entender o sotaque",
+     "Ler as legendas",
+     "Achar o cinema"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que fizeram depois do filme?",
+    "options": [
+     "Jantaram",
+     "Foram para casa",
+     "Tomaram sorvete"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "My New Phone",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Yesterday I bought a new cell phone.",
+    "Ontem comprei um celular novo."
+   ],
+   [
+    "The old one was very slow and the battery didn't last at all.",
+    "O antigo era muito lento e a bateria não durava nada."
+   ],
+   [
+    "The new one has an excellent camera.",
+    "O novo tem uma câmera excelente."
+   ],
+   [
+    "I spent the whole afternoon setting it up.",
+    "Passei a tarde toda configurando."
+   ],
+   [
+    "I had to download my apps and copy my photos.",
+    "Tive que baixar meus aplicativos e copiar minhas fotos."
+   ],
+   [
+    "Now my sister wants my old phone.",
+    "Agora minha irmã quer meu celular antigo."
+   ]
+  ],
+  "words": [
+   [
+    "the cell phone",
+    "o celular"
+   ],
+   [
+    "slow",
+    "lento"
+   ],
+   [
+    "the battery",
+    "a bateria"
+   ],
+   [
+    "to set up",
+    "configurar"
+   ],
+   [
+    "to download",
+    "baixar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Qual era o problema do celular antigo?",
+    "options": [
+     "Sem câmera",
+     "Lento e com pouca bateria",
+     "A tela quebrada"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "O que o novo tem de melhor?",
+    "options": [
+     "A câmera",
+     "O preço",
+     "O tamanho"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quem quer o celular antigo?",
+    "options": [
+     "Um amigo",
+     "A irmã",
+     "O pai"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "Christmas in Argentina",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "In Argentina, Christmas is in the summer.",
+    "Na Argentina, o Natal é no verão."
+   ],
+   [
+    "It's very hot, sometimes over thirty degrees.",
+    "Faz muito calor, às vezes mais de trinta graus."
+   ],
+   [
+    "Families have dinner on the night of the 24th, often outdoors.",
+    "As famílias jantam no dia 24 à noite, muitas vezes ao ar livre."
+   ],
+   [
+    "They eat grilled meat, salads and sweet bread.",
+    "Comem carne assada, saladas e panetone."
+   ],
+   [
+    "At midnight there are fireworks and everyone makes a toast.",
+    "À meia-noite há fogos de artifício e todos brindam."
+   ],
+   [
+    "The kids open their presents before going to sleep.",
+    "As crianças abrem os presentes antes de dormir."
+   ]
+  ],
+  "words": [
+   [
+    "outdoors",
+    "ao ar livre"
+   ],
+   [
+    "sweet bread",
+    "o panetone"
+   ],
+   [
+    "fireworks",
+    "os fogos de artifício"
+   ],
+   [
+    "to make a toast",
+    "brindar"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Em que estação é o Natal na Argentina?",
+    "options": [
+     "Inverno",
+     "Outono",
+     "Verão"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "O que se come no jantar?",
+    "options": [
+     "Carne assada, saladas e panetone",
+     "Peixe",
+     "Peru e purê"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que acontece à meia-noite?",
+    "options": [
+     "Todos vão dormir",
+     "Missa",
+     "Fogos e brindes"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ {
+  "tema": "cultura",
+  "title": "A Science Museum",
+  "nivel": "Básico",
+  "sentences": [
+   [
+    "Today we're visiting the science museum with our school.",
+    "Hoje visitamos o museu de ciências com a escola."
+   ],
+   [
+    "There's a huge room dedicated to space.",
+    "Há uma sala enorme dedicada ao espaço."
+   ],
+   [
+    "We see a piece of a real meteorite.",
+    "Vemos um pedaço de meteorito de verdade."
+   ],
+   [
+    "In another room we do experiments with water and light.",
+    "Em outra sala fazemos experimentos com água e luz."
+   ],
+   [
+    "What I like best is the dinosaur skeleton.",
+    "O que eu mais gosto é o esqueleto de dinossauro."
+   ],
+   [
+    "It's twelve meters long.",
+    "Mede doze metros de comprimento."
+   ]
+  ],
+  "words": [
+   [
+    "space",
+    "o espaço"
+   ],
+   [
+    "real",
+    "de verdade"
+   ],
+   [
+    "the experiment",
+    "o experimento"
+   ],
+   [
+    "the skeleton",
+    "o esqueleto"
+   ],
+   [
+    "long",
+    "de comprimento"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Com quem o narrador visita o museu?",
+    "options": [
+     "Com a escola",
+     "Com a família",
+     "Sozinho"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "O que há de verdade na sala do espaço?",
+    "options": [
+     "Um pedaço de meteorito",
+     "Um astronauta",
+     "Um foguete"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Quanto mede o esqueleto?",
+    "options": [
+     "Vinte metros",
+     "Doze metros",
+     "Cinco metros"
+    ],
+    "correct": 1
+   }
+  ]
+ }
+]
