@@ -1102,9 +1102,9 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
     <button role="tab" aria-selected="{{lsel.frases}}" onClick="{{goLeituraFrases}}" style="{{lseg.frases}}">Praticar com frases</button>
   </div>
   <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: var(--deck2); border-radius: 14px">
-    <button onClick="{{viewCats}}" style="{{fseg.cats}}">Categorias</button>
-    <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
     <button onClick="{{viewLista}}" style="{{fseg.lista}}">Lista</button>
+    <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
+    <button onClick="{{viewCats}}" style="{{fseg.cats}}">Categorias</button>
   </div>
   <sc-if value="{{notCatsView}}">
   <div style="display: flex; flex-wrap: wrap; gap: 8px">
@@ -1701,7 +1701,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     { id: 'aparencia', label: 'Aparência', sub: 'Tema claro ou escuro', icon: 'sun', go: { tab: 'aparencia' } },
     { sec: 'Estudar' },
     { id: 'revisao', label: 'Revisão', sub: 'Adicione suas frases', icon: 'review', go: { tab: 'revisao', mineMsg: '', mineDel: null } },
-    { id: 'frases', label: 'Frases', sub: 'Frases por situação', icon: 'chat', go: function (s) { return { tab: 'frases', cat: s.cat === -1 ? 0 : s.cat }; } },
+    { id: 'frases', label: 'Frases', sub: 'Frases por situação', icon: 'chat', go: function (s) { return { tab: 'frases', fview: 'lista', cat: s.cat === -1 ? 0 : s.cat }; } },
     { id: 'textos', label: 'Textos', sub: 'Leitura com tradução', icon: 'book', go: { tab: 'textos', reading: false } },
     { id: 'podcasts', label: 'Podcasts', sub: 'Ouvir com transcrição', icon: 'headphones', go: { tab: 'ouvir', mfilter: 'podcast' } },
     { sec: 'Conta' },
@@ -4336,7 +4336,7 @@ class Component extends DCLogic {
     this.state = {
       tab: 'inicio',
       theme: window.fafTheme ? window.fafTheme() : 'auto',
-      fview: 'cats', query: '', reading: false, level: 'all', tema: 'all', tquery: '', listLimit: 60, textLimit: 20, flang: savedFlang(), voz: (function () { try { return localStorage.getItem('fraseafrase.voz') || 'natural'; } catch (e) { return 'natural'; } })(),
+      fview: 'lista', query: '', reading: false, level: 'all', tema: 'all', tquery: '', listLimit: 60, textLimit: 20, flang: savedFlang(), voz: (function () { try { return localStorage.getItem('fraseafrase.voz') || 'natural'; } catch (e) { return 'natural'; } })(),
       mfilter: 'all', heard: saved.heard || {},
       cat: 0, card: 0, flipped: false,
       known: saved.known || {}, review: saved.review || {},
@@ -4543,12 +4543,12 @@ class Component extends DCLogic {
         };
       }),
       goInicio: function () { self.setState({ tab: 'inicio' }); },
-      goFrases: function () { self.setState({ tab: 'frases', cat: s.cat === -1 ? 0 : s.cat }); },
+      goFrases: function () { self.setState({ tab: 'frases', fview: 'lista', cat: s.cat === -1 ? 0 : s.cat }); },
       goTextos: function () { self.setState({ tab: 'textos', reading: false }); },
       lsel: { textos: String(s.tab === 'textos'), frases: String(s.tab === 'frases') },
       lseg: { textos: lsegStyle(s.tab === 'textos'), frases: lsegStyle(s.tab === 'frases') },
       goLeituraTextos: function () { if (s.tab !== 'textos') self.setState({ tab: 'textos', reading: false }); },
-      goLeituraFrases: function () { if (s.tab !== 'frases') self.setState({ tab: 'frases', cat: s.cat === -1 ? 0 : s.cat }); },
+      goLeituraFrases: function () { if (s.tab !== 'frases') self.setState({ tab: 'frases', fview: 'lista', cat: s.cat === -1 ? 0 : s.cat }); },
       goPratica: function () { self.setState({ tab: 'pratica' }); },
       goReview: function () { self.setState({ tab: 'frases', fview: 'cards', cat: -1, card: 0, flipped: false }); },
 
