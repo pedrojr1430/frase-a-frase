@@ -993,6 +993,166 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 @keyframes cc-zap-b{0%{opacity:1;transform:translate(110vw,46vh) rotate(194deg)}8%{opacity:1;transform:translate(-160px,30vh) rotate(194deg)}9%,100%{opacity:0;transform:translate(-160px,30vh) rotate(194deg)}}
 @keyframes cc-zap-c{0%{opacity:1;transform:translate(-160px,84vh) rotate(-28deg)}8%{opacity:1;transform:translate(110vw,36vh) rotate(-28deg)}9%,100%{opacity:0;transform:translate(110vw,36vh) rotate(-28deg)}}
 @media (prefers-reduced-motion:reduce){.cc-ship,.cc-zap,.cc-ufo-beam{display:none}.cc-ufo{animation:none;transform:translateX(calc(100vw - 150px))}.cc-ufo-bob,.cc-alien-in,.cc-astro,.cc-ufo-lights circle,.cc-ship-flame{animation:none}}
+
+/* ===== Curso: layout navy e dourado (22/11/2026) ===== */
+#faf-course.cx{background:radial-gradient(90% 320px at 85% 0%,rgba(242,179,61,.16) 0%,rgba(242,179,61,0) 70%),linear-gradient(180deg,#0E1B3B 0px,#18295A 230px,var(--ink) 560px)!important;background-attachment:local!important;color:var(--text);padding:16px 18px 120px}
+#faf-course.cx::before,#faf-course.cx::after{display:none!important}
+.cx-loading{padding:120px 10px;text-align:center;color:var(--muted)}
+.cx-i{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.cx-i svg{display:block}
+.cx-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding-left:64px;min-height:56px;position:relative;z-index:5}
+.cx-head-l{min-width:0;display:flex;flex-direction:column;gap:8px;padding-top:2px}
+.cx-title{margin:0;font-size:26px;line-height:1.1;font-weight:800;letter-spacing:-.02em;color:#fff}
+.cx-title span{background:linear-gradient(180deg,#FFD978,#F2B33D);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cx-lvwrap{position:relative;align-self:flex-start}
+.cx-lvbtn{display:flex;align-items:center;gap:7px;height:34px;padding:0 10px 0 12px;border-radius:999px;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.07);color:#fff;font-size:14.5px;font-weight:600;cursor:pointer}
+.cx-lvbtn[aria-expanded="true"] .cx-i:last-child{transform:rotate(180deg)}
+.cx-lvmenu{position:absolute;top:42px;left:0;z-index:30;min-width:230px;display:flex;flex-direction:column;padding:6px;border-radius:18px;background:var(--deck);border:1px solid var(--line);box-shadow:0 18px 40px rgba(15,27,61,.28);animation:cx-pop .18s ease-out}
+.cx-lvopt{display:grid;grid-template-columns:40px 1fr;grid-template-rows:auto auto;column-gap:10px;align-items:center;text-align:left;padding:9px 10px;border:none;border-radius:12px;background:transparent;color:var(--text);cursor:pointer}
+.cx-lvopt strong{grid-row:1/3;width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#14244A;color:#F2B33D;font-size:15px}
+.cx-lvopt span{font-size:15px;font-weight:700}
+.cx-lvopt em{font-style:normal;font-size:12.5px;color:var(--muted)}
+.cx-lvopt.is-on{background:rgba(242,179,61,.14)}
+.cx-prem{flex:0 0 auto;display:flex;align-items:center;gap:7px;height:46px;padding:0 18px 0 14px;border-radius:999px;border:1.5px solid #F8DC94;background:linear-gradient(180deg,#FAD372 0%,#EFA92E 100%);color:#3B2604;font-size:17px;font-weight:800;box-shadow:0 8px 20px rgba(239,169,46,.35),inset 0 1px 0 rgba(255,255,255,.55)}
+.cx-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:16px}
+.cx-stat{display:flex;align-items:center;gap:8px;min-width:0;padding:11px 10px;border-radius:18px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;text-align:left;font:inherit}
+button.cx-stat{cursor:pointer}
+.cx-stat-t{display:flex;flex-direction:column;min-width:0;flex:1 1 auto}
+.cx-stat-v{display:flex;align-items:baseline;gap:4px;white-space:nowrap}
+.cx-stat-v strong{font-size:26px;line-height:1;font-weight:800}
+.cx-stat-v em{font-style:normal;font-size:15px;font-weight:700;color:#fff}
+.cx-stat.is-xp .cx-stat-v em{color:#F2B33D;font-weight:800}
+.cx-stat-l{font-size:12.5px;line-height:1.2;color:rgba(255,255,255,.82);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cx-stat>.cx-i:last-child{color:rgba(255,255,255,.75)}
+.cx-stat.is-flame>.cx-i:first-child{animation:cx-flick 1.4s ease-in-out infinite alternate;transform-origin:50% 90%}
+.cx-hero{position:relative;overflow:hidden;margin-top:16px;border-radius:26px;padding:18px 18px 18px;color:#fff;background:radial-gradient(120% 90% at 85% 10%,#2A4583 0%,rgba(42,69,131,0) 60%),linear-gradient(165deg,#1A2F60 0%,#0F1D3D 75%);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 40px rgba(15,29,61,.32)}
+.cx-art{position:absolute;top:0;right:0;bottom:0;width:66%;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 32%);mask-image:linear-gradient(90deg,transparent 0%,#000 32%)}
+.cx-art svg{width:100%;height:100%;display:block}
+.cx-hero-in{position:relative;z-index:1}
+.cx-badge{display:inline-block;padding:3px 12px;border-radius:999px;border:1.5px solid #F2B33D;color:#F7C55A;background:rgba(15,29,61,.45);font-size:13px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.cx-hero-t{margin:10px 0 6px;max-width:72%;font-size:30px;line-height:1.1;font-weight:800;letter-spacing:-.02em;color:#fff;text-shadow:0 2px 12px rgba(15,29,61,.5)}
+.cx-hero-d{margin:0;max-width:62%;font-size:15px;line-height:1.38;color:rgba(255,255,255,.85);text-shadow:0 1px 8px rgba(15,29,61,.6)}
+.cx-prog{display:flex;align-items:center;gap:12px;margin:16px 0 14px}
+.cx-bar{position:relative;flex:1 1 auto;display:block;height:12px;border-radius:999px;background:rgba(255,255,255,.16);overflow:hidden}
+.cx-bar i{position:absolute;left:0;top:0;bottom:0;border-radius:999px;background:linear-gradient(90deg,#F7C55A,#EFA92E);box-shadow:0 0 12px rgba(242,179,61,.5)}
+.cx-bar.is-thin{height:8px}
+.cx-pct{flex:0 0 auto;font-size:14px;font-weight:600;color:#fff}
+.cx-go{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;height:58px;border:none;border-radius:999px;background:linear-gradient(180deg,#FAD372 0%,#EFA92E 100%);color:#14244A;font-size:19px;font-weight:800;letter-spacing:-.01em;box-shadow:0 10px 24px rgba(239,169,46,.35),inset 0 1px 0 rgba(255,255,255,.6);cursor:pointer}
+.cx-go .cx-i svg{width:24px;height:24px}
+.cx-go:active{transform:translateY(2px)}
+.cx-soon{margin:14px 0 0;font-weight:700;color:#F7C55A}
+/* montanha animada */
+.cx-mt .cx-stars circle{fill:#fff;animation:cx-twinkle 2.6s ease-in-out infinite alternate}
+.cx-mt .cx-stars circle:nth-child(2n){animation-delay:1.1s}.cx-mt .cx-stars circle:nth-child(3n){animation-delay:.5s}
+.cx-mt .cx-sun{transform-box:fill-box;transform-origin:center;animation:cx-glow 4.5s ease-in-out infinite alternate}
+.cx-mt .cx-rays{transform-origin:0 0;animation:cx-spin 50s linear infinite}
+.cx-mt .cx-flag{transform-box:fill-box;transform-origin:0% 50%;animation:cx-wave 1.3s ease-in-out infinite alternate}
+.cx-mt .cx-c1{animation:cx-drift 11s ease-in-out infinite alternate}
+.cx-mt .cx-c2{animation:cx-drift 14s ease-in-out -5s infinite alternate-reverse}
+.cx-mt .cx-sparks circle{fill:#FFF6D8;animation:cx-twinkle 1.8s ease-in-out infinite alternate}
+.cx-mt .cx-sparks circle:nth-child(2){animation-delay:.6s}.cx-mt .cx-sparks circle:nth-child(3){animation-delay:1.2s}
+.cx-mt .cx-birds{fill:none;stroke:#DDE4F4;stroke-width:1.3;stroke-linecap:round;animation:cx-fly 16s linear infinite}
+.cx-mt .cx-birds path{transform-box:fill-box;transform-origin:center;animation:cx-flap .5s ease-in-out infinite alternate}
+@keyframes cx-twinkle{from{opacity:.2}to{opacity:1}}
+@keyframes cx-glow{from{opacity:.8;transform:scale(.92)}to{opacity:1;transform:scale(1.08)}}
+@keyframes cx-spin{to{transform:rotate(360deg)}}
+@keyframes cx-wave{0%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-5deg) scaleX(.94)}100%{transform:skewY(4deg) scaleX(1.03)}}
+@keyframes cx-drift{from{transform:translateX(-12px)}to{transform:translateX(16px)}}
+@keyframes cx-fly{0%{transform:translate(310px,60px)}100%{transform:translate(-40px,20px)}}
+@keyframes cx-flap{from{transform:scaleY(1)}to{transform:scaleY(.4)}}
+@keyframes cx-flick{from{transform:scale(1) rotate(-2deg)}to{transform:scale(1.08) rotate(2deg)}}
+@keyframes cx-pop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@keyframes cx-ring{0%{box-shadow:0 0 0 0 rgba(242,179,61,.55),0 8px 18px rgba(239,169,46,.4)}100%{box-shadow:0 0 0 12px rgba(242,179,61,0),0 8px 18px rgba(239,169,46,.4)}}
+@keyframes cx-float{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+/* etapas */
+.cx-list{list-style:none;margin:20px 0 0;padding:0}
+.cx-item{position:relative;display:grid;grid-template-columns:58px minmax(0,1fr);align-items:center;column-gap:8px;margin-bottom:12px}
+.cx-item::before{content:"";position:absolute;left:27px;top:-12px;bottom:-12px;width:4px;border-radius:2px;background:var(--line2,#D5DAE6)}
+.cx-item:first-child::before{top:50%}.cx-item:last-child::before{bottom:50%}
+.cx-item.is-done::before{background:linear-gradient(180deg,#F2B33D,#E09A20)}
+.cx-dot{position:relative;z-index:1;justify-self:center;width:46px;height:46px;border-radius:50%;border:3px solid var(--deck,#fff);display:flex;align-items:center;justify-content:center;padding:0 0 0 2px;color:#fff;background:linear-gradient(180deg,#9AA6C0,#6B7895);box-shadow:0 6px 14px rgba(15,27,61,.18);cursor:pointer}
+.cx-dot .cx-ico svg{width:20px;height:20px}
+.cx-item.is-current .cx-dot{width:58px;height:58px;background:linear-gradient(180deg,#F7C55A,#D98E16);animation:cx-ring 1.8s ease-out infinite}
+.cx-item.is-current .cx-dot .cx-ico svg{width:26px;height:26px}
+.cx-item.is-done .cx-dot{background:linear-gradient(180deg,#22386E,#14244A);color:#F7C55A;padding:0}
+.cx-item.is-locked .cx-dot{background:linear-gradient(180deg,#C6CCDA,#A3ACC0);cursor:default;padding:0}
+.cx-item.is-chest .cx-dot{width:36px;height:36px}
+.cx-card{display:flex;align-items:center;gap:12px;width:100%;min-width:0;text-align:left;font:inherit;color:var(--text);background:var(--deck);border:1px solid var(--line);border-radius:20px;padding:12px;box-shadow:0 6px 18px rgba(15,27,61,.07);cursor:pointer;transition:transform .12s}
+.cx-card:active:not(:disabled){transform:scale(.985)}
+.cx-item.is-current .cx-card{border:2px solid #F2B33D;box-shadow:0 10px 26px rgba(242,179,61,.22)}
+.cx-item.is-locked .cx-card{cursor:default;opacity:.78}
+.cx-tile{flex:0 0 auto;width:62px;height:62px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;background:linear-gradient(145deg,#22386E,#0F1D3D);box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.cx-tile b{font-size:21px;font-weight:800;letter-spacing:-.02em}
+.cx-tile.is-chest{background:linear-gradient(145deg,#FAD372,#E09A20);color:#14244A}
+.cx-item.is-chest .cx-tile{width:48px;height:48px;border-radius:14px}
+.cx-item.is-chest .cx-tile svg{width:24px;height:24px}
+.cx-card-b{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px}
+.cx-card-t{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.cx-card-t strong{font-size:17px;line-height:1.2;font-weight:800;letter-spacing:-.01em}
+.cx-card-s{font-size:13.5px;line-height:1.32;color:var(--muted)}
+.cx-tag{display:inline-block;padding:1px 8px;border-radius:999px;background:rgba(242,179,61,.16);color:#9A6514;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.cx-stars{display:flex;gap:4px;margin-top:3px;color:#C3C9D6}
+.cx-stars .cx-ico svg{width:17px;height:17px}
+.cx-stars .is-on{color:#F2B33D}
+.cx-card-side{flex:0 0 auto;align-self:stretch;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;gap:8px;color:var(--muted)}
+.cx-min{display:inline-flex;align-items:center;gap:5px;padding:4px 10px 4px 8px;border-radius:999px;background:rgba(20,36,74,.08);color:var(--text);font-size:13px;font-weight:700;white-space:nowrap}
+.cx-min .cx-ico svg{width:13px;height:13px}
+.cx-min.is-done{background:rgba(51,192,141,.14);color:#14915D;padding:4px 10px}
+.cx-lockt{display:inline-flex;align-items:center;gap:5px;font-size:13px;color:var(--text);white-space:nowrap}
+.cx-lockt .cx-ico svg{width:15px;height:15px}
+/* objetivo */
+.cx-goal{display:flex;align-items:center;gap:14px;margin-top:20px;padding:14px 16px;border-radius:22px;color:#fff;background:radial-gradient(90% 120% at 0% 50%,rgba(242,179,61,.14),rgba(242,179,61,0) 60%),linear-gradient(165deg,#1A2F60,#0F1D3D);border:1.5px solid rgba(242,179,61,.6);box-shadow:0 14px 30px rgba(15,29,61,.25)}
+.cx-goal-art{flex:0 0 auto;display:flex;animation:cx-float 2.4s ease-in-out infinite alternate}
+.cx-goal-sep{flex:0 0 auto;width:1px;align-self:stretch;background:rgba(255,255,255,.18)}
+.cx-goal-b{flex:1 1 auto;min-width:0}
+.cx-goal-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.cx-goal-top strong{font-size:18px;font-weight:800}
+.cx-xp{display:inline-flex;align-items:center;gap:3px;padding:4px 10px;border-radius:999px;border:1.5px solid #F2B33D;color:#F7C55A;font-size:15px;font-weight:800;white-space:nowrap}
+.cx-xp .cx-i svg{width:18px;height:18px}
+.cx-goal p{margin:4px 0 0;font-size:13.5px;line-height:1.35;color:rgba(255,255,255,.85)}
+.cx-goal .cx-prog{margin:10px 0 0}
+/* Lía, unidades e ferramentas */
+.cx-lia{display:flex;align-items:center;gap:12px;width:100%;margin-top:16px;padding:12px 14px;text-align:left;font:inherit;color:var(--text);background:var(--deck);border:1px solid var(--line);border-radius:20px;box-shadow:0 6px 18px rgba(15,27,61,.06);cursor:pointer}
+.cx-lia-av{flex:0 0 auto;width:50px;height:50px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;font-weight:800;background:linear-gradient(145deg,#FF5FA2,#7B5CFF)}
+.cx-lia-b{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px}
+.cx-lia-t{display:flex;align-items:center;gap:8px}
+.cx-lia-t strong{font-size:16.5px;font-weight:800}
+.cx-lia>.cx-i{color:var(--muted)}
+.cx-sec{margin:26px 0 10px;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.cx-units{display:flex;flex-direction:column;gap:8px}
+.cx-urow{display:flex;align-items:center;gap:12px;width:100%;padding:10px 12px;text-align:left;font:inherit;color:var(--text);background:var(--deck);border:1px solid var(--line);border-radius:16px;cursor:pointer}
+.cx-urow.is-on{border:2px solid #F2B33D}
+.cx-urow:disabled{opacity:.6;cursor:default}
+.cx-un{flex:0 0 auto;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#14244A;color:#F7C55A;font-size:14px;font-weight:800}
+.cx-urow.is-done .cx-un{background:linear-gradient(180deg,#F7C55A,#D98E16);color:#14244A}
+.cx-ub{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:6px}
+.cx-ub strong{font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cx-ub .cx-bar{background:var(--line2,#E3E7F0)}
+.cx-up{flex:0 0 auto;font-size:13px;font-weight:700;color:var(--muted)}
+.cx-tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.cx-tool{padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--deck);color:var(--text);font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.cx-tool b{color:#9A6514}
+
+.cx-title{white-space:nowrap;font-size:clamp(20px,6vw,26px)}
+.cx-lvbtn{white-space:nowrap}
+.cx-stat{gap:6px;padding:10px 8px}
+.cx-stat>.cx-i:first-child svg{width:28px;height:28px}
+.cx-stat-v strong{font-size:24px}
+.cx-art{width:72%;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 40%);mask-image:linear-gradient(90deg,transparent 0%,#000 40%)}
+.cx-card{display:flex;align-items:flex-start}
+.cx-card-t{flex-wrap:nowrap}
+.cx-card-t strong{flex:0 1 auto;min-width:0}
+.cx-chev{margin-left:auto;flex:0 0 auto;color:var(--muted);display:flex}
+.cx-card-f{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px}
+.cx-card-f .cx-stars{margin-top:0}
+
+.cx-head-l{flex:1 1 auto}
+.cx-title{font-size:clamp(19px,5.6vw,24px)}
+.cx-prem{height:40px;padding:0 13px 0 11px;font-size:15px;gap:5px}
+.cx-prem .cx-i svg{width:18px;height:18px}
+.cx-stat-l{white-space:normal;font-size:11.5px}
+@media (max-width:370px){.cx-hero-t{font-size:26px}.cx-stat-v strong{font-size:22px}.cx-stat>.cx-i:first-child svg{width:28px;height:28px}.cx-prem{padding:0 12px;font-size:15px}}
+@media (prefers-reduced-motion:reduce){.cx-mt *,.cx-goal-art,.cx-item.is-current .cx-dot,.cx-stat.is-flame>.cx-i:first-child{animation:none!important}.cx-mt .cx-birds{display:none}}
 </style>
 </head>
 <body>
@@ -3224,100 +3384,238 @@ function fafLang() {
   function statChip(ic, value, label, cls) {
     return h('div', { class: 'cc-stat ' + (cls || ''), title: label }, [icon(ic), h('strong', { text: String(value) }), h('span', { class: 'cc-stat-l', text: label })]);
   }
+  // ---------- mapa do curso: layout navy e dourado (22/11/2026) ----------
+  var VIEW = { lv: null, unit: null, menu: false };
+  var CX_ICON = {
+    bars: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 15h3v5H4zM10.5 10h3v10h-3zM17 4h3v16h-3z"/></svg>',
+    chev: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>',
+    right: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></svg>',
+    crown: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M3 7.5 7.5 11 12 4l4.5 7L21 7.5 19 18H5L3 7.5Zm2 12h14v2H5v-2Z"/></svg>',
+    flame: '<svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><defs><linearGradient id="cxF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC93C"/><stop offset="1" stop-color="#F2721F"/></linearGradient></defs><path fill="url(#cxF)" d="M16 2c1.5 5-3.5 7.2-3.5 11 0 1.8 1 3 2.4 3.4-.4-2.6 1.1-4.6 3.2-6 .4 3.4 4.4 5 4.4 9.3A6.5 6.5 0 0 1 16 30c-5 0-8.5-3.6-8.5-8.4C7.5 13.4 15.5 9.6 16 2Z"/><path fill="#FFE27A" d="M16 30c-2.6 0-4.4-1.9-4.4-4.3 0-3 3-4.6 3.6-7.2 2 1.6 5.2 3.6 5.2 7 0 2.6-1.9 4.5-4.4 4.5Z"/></svg>',
+    bolt: '<svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><path fill="#F2B33D" d="M18 2 5 19h9l-2 11 14-18h-9l1-10Z"/></svg>',
+    heart: '<svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><defs><linearGradient id="cxH" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B6B"/><stop offset="1" stop-color="#E02A3C"/></linearGradient></defs><path fill="url(#cxH)" d="M16 28S3.5 20.4 3.5 11.6A6.6 6.6 0 0 1 16 8.2a6.6 6.6 0 0 1 12.5 3.4C28.5 20.4 16 28 16 28Z"/><path fill="#fff" opacity=".35" d="M8.5 9.5c1.2-1.2 3-1.4 4.2-.6-1.6.3-3 1.4-3.6 3-.6-.6-.9-1.6-.6-2.4Z"/></svg>',
+    trophy: '<svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true"><defs><linearGradient id="cxT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE08A"/><stop offset=".55" stop-color="#F2B33D"/><stop offset="1" stop-color="#C98516"/></linearGradient></defs><path fill="none" stroke="#E0A12E" stroke-width="3" d="M17 14H9c0 9 4 14 10 15M47 14h8c0 9-4 14-10 15"/><path fill="url(#cxT)" d="M16 8h32v10c0 11-7 18-16 18S16 29 16 18V8Z"/><path fill="#FFF3C4" d="m32 13 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.6-4.8 2.6.9-5.4-3.9-3.8 5.4-.8Z"/><path fill="url(#cxT)" d="M28 36h8v8h-8zM20 46h24l2 8H18l2-8Z"/><path fill="#D99A25" d="M10 40c-3 4-2 9 2 12 0-5 1-8-2-12Zm44 0c3 4 2 9-2 12 0-5-1-8 2-12Z" opacity=".8"/></svg>',
+    hand: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M8.2 11.3V5.6a1.4 1.4 0 0 1 2.8 0v5V4.2a1.4 1.4 0 0 1 2.8 0v6.4V5.3a1.4 1.4 0 0 1 2.8 0v6.9-4.1a1.4 1.4 0 0 1 2.8 0V14c0 4.4-3 7.8-7.2 7.8-2.6 0-4.4-1-5.8-3.2l-2.6-4.3a1.4 1.4 0 0 1 2.3-1.6l2.1 2.6v-4Z"/></svg>',
+    idcard: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 21 19H3a1.5 1.5 0 0 1-1.5-1.5v-11A1.5 1.5 0 0 1 3 5Zm5 3.2a2.3 2.3 0 1 0 0 4.6 2.3 2.3 0 0 0 0-4.6ZM4 16.4h8c-.3-1.8-1.9-2.8-4-2.8s-3.7 1-4 2.8ZM14 9h6v1.6h-6zm0 3h6v1.6h-6zm0 3h4v1.6h-4z"/></svg>',
+    chat: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 3c5.2 0 9.5 3.6 9.5 8s-4.3 8-9.5 8c-1 0-2-.1-2.9-.4L4 21l1.3-4.2C3.6 15.3 2.5 13.3 2.5 11 2.5 6.6 6.8 3 12 3Zm-4.5 6.6a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Zm4.5 0a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Zm4.5 0a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Z"/></svg>',
+    cup: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M4 8h13v5a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V8Zm13 1.5h1.2a2.8 2.8 0 0 1 0 5.6H17v-1.8h1.2a1 1 0 0 0 0-2H17V9.5ZM3 20.5h16V22H3zM8 2.5c1 1-.8 2 .2 3.2M12 2.5c1 1-.8 2 .2 3.2"/><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M8 2.5c1 1-.8 2 .2 3.2M12 2.5c1 1-.8 2 .2 3.2"/></svg>',
+    house: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 3 2 11.5l1.2 1.4L5 11.4V21h5.5v-6h3v6H19v-9.6l1.8 1.5 1.2-1.4L12 3Z"/></svg>',
+    clock: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm-1 4v7l5.5 3.3.9-1.5-4.6-2.7V6H11Z"/></svg>',
+    plane: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M21.5 15.5v-2L13.5 9V3.5a1.5 1.5 0 0 0-3 0V9l-8 4.5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5l-2-1.5v-5l8 2.5Z"/></svg>',
+    case: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M9 3h6a1.5 1.5 0 0 1 1.5 1.5V6H21a1.5 1.5 0 0 1 1.5 1.5V12H14v-1h-4v1H1.5V7.5A1.5 1.5 0 0 1 3 6h4.5V4.5A1.5 1.5 0 0 1 9 3Zm0 1.6V6h6V4.6H9ZM1.5 13.5H10V15h4v-1.5h8.5v5A1.5 1.5 0 0 1 21 20H3a1.5 1.5 0 0 1-1.5-1.5v-5Z"/></svg>',
+    pulse: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 21S2.5 15.4 2.5 8.8A5 5 0 0 1 12 6a5 5 0 0 1 9.5 2.8C21.5 15.4 12 21 12 21Z"/><path fill="none" stroke="#14244A" stroke-width="1.8" stroke-linejoin="round" d="M5 11.5h3.5l1.5-3 2.5 6 1.5-3H19"/></svg>',
+    sun: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>',
+    cart: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M2 3h3l2.6 11.2h10.6L21 7H7.1l-.4-2H2V3Zm7 15.5a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6Zm8 0a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6Z"/></svg>',
+    pin: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7Zm0 4.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/></svg>',
+    globe: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm-1.6 2.2A8 8 0 0 0 4.1 11h3.8c.1-2.6.9-5 2.5-6.8Zm3.2 0c1.6 1.8 2.4 4.2 2.5 6.8h3.8a8 8 0 0 0-6.3-6.8ZM12 4.6c-1.4 1.6-2 3.9-2.1 6.4h4.2c-.1-2.5-.7-4.8-2.1-6.4ZM4.1 13a8 8 0 0 0 6.3 6.8C8.8 18 8 15.6 7.9 13H4.1Zm5.8 0c.1 2.5.7 4.8 2.1 6.4 1.4-1.6 2-3.9 2.1-6.4H9.9Zm6.2 0c-.1 2.6-.9 5-2.5 6.8a8 8 0 0 0 6.3-6.8h-3.8Z"/></svg>',
+    pencil: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="m14.7 4.3 5 5L8.5 20.5H3.5v-5L14.7 4.3Zm1.4-1.4 1.6-1.6a1.4 1.4 0 0 1 2 0l3 3a1.4 1.4 0 0 1 0 2l-1.6 1.6-5-5Z"/></svg>',
+    mic: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 14a3.5 3.5 0 0 0 3.5-3.5v-5a3.5 3.5 0 0 0-7 0v5A3.5 3.5 0 0 0 12 14Zm-6.5-3.5h1.8a4.7 4.7 0 0 0 9.4 0h1.8a6.5 6.5 0 0 1-5.6 6.4V20h3v1.8H8.1V20h3v-3.1a6.5 6.5 0 0 1-5.6-6.4Z"/></svg>',
+    quote: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 5v2h10V9H7Zm0 4v2h7v-2H7Z"/></svg>',
+    book: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M3 4.5C5.5 3.3 8.6 3.4 11 5v15c-2.4-1.6-5.5-1.7-8-.5v-15Zm18 0v15c-2.5-1.2-5.6-1.1-8 .5V5c2.4-1.6 5.5-1.7 8-.5Z"/></svg>',
+    exam: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M6 2h9l5 5v13.5A1.5 1.5 0 0 1 18.5 22h-12A1.5 1.5 0 0 1 5 20.5v-17A1.5 1.5 0 0 1 6.5 2H6Zm8 1.5V8h4.5L14 3.5ZM8 12.2l1.3-1.2 1.7 1.8 3.7-4 1.3 1.2-5 5.4-3-3.2ZM8 17h8v1.6H8V17Z"/></svg>',
+    chest: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M3 10h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9Zm2-5h14a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2Zm5.5 6.5h3V15h-3v-3.5Z"/></svg>'
+  };
+  function cxi(n) { var s = h('span', { class: 'cx-i', 'aria-hidden': 'true' }); s.innerHTML = CX_ICON[n] || ICON[n] || ''; return s; }
+  // Ícone da lição pelo assunto do título.
+  function lessonIcon(t) {
+    t = (t || '').toLowerCase();
+    var M = [[/sauda|cumpriment|olá|hello|cortesia|educad/, 'hand'], [/como você está|sentimento|emoç|sente/, 'chat'], [/apresent|nome|quem/, 'idcard'], [/número|preço|quanto custa|pagar|dinheiro|finan|econom|imposto|consumo|empresa/, 'num'],
+      [/comida|bebida|café|restaurante|receita|ingredient|cozinha|refeiç|aliment/, 'cup'], [/casa|cômodo|móve|tarefa/, 'house'], [/hora|dia|semana|rotina|data|mes|frequência|quando/, 'clock'],
+      [/viagem|aeroporto|hotel|transporte|turís|hospedagem/, 'plane'], [/trabalho|emprego|escritório|entrevista|profiss|experiência|e-mail|condiç|pontos fortes/, 'case'],
+      [/saúde|corpo|médico|farmácia|sintoma|medicina/, 'pulse'], [/tempo|clima|estaç|planeta|energia|ambiente|recicl/, 'sun'], [/roupa|cores|compra|provador/, 'cart'],
+      [/cidade|direç|lugar|perto|rua|caminho/, 'pin'], [/mundo|cultura|língua|variedade|sotaque|origem|festa|música|global/, 'globe'],
+      [/escrever|resenha|formal|trâmite|reclama|carta/, 'pencil'], [/falar|público|debate|opini|argument|concord|conversa|convite|pedido|favor|conselho|disse|perguntas/, 'chat']];
+    for (var i = 0; i < M.length; i++) if (M[i][0].test(t)) return M[i][1];
+    return 'book';
+  }
+  function nodeXP(n) { return n.kind === 'lesson' ? 15 : n.premium ? 20 : n.kind === 'test' ? 30 : n.big ? 40 : 20; }
+  function nodeMin(n) {
+    if (n.kind === 'chest') return 1;
+    if (n.kind === 'test') return 8;
+    var ex = n.lesson && n.lesson.ex ? n.lesson.ex.length : 10;
+    return Math.max(3, Math.round(ex * 28 / 60));
+  }
+  function nodeSub(n) {
+    if (n.kind === 'lesson') {
+      var v = (n.lesson.vocab || []).slice(0, 3).map(function (x) { return x[0]; });
+      return v.length ? 'Vocabulário: ' + v.join(', ') + '…' : 'Lição';
+    }
+    if (n.kind === 'frases') return 'Frases mais longas para ouvir e repetir.';
+    if (n.kind === 'texto') return /Leitura/.test(n.lesson.tip || '') || (n.lesson.lines && !n.lesson.lines[0][0]) ? 'Texto narrativo com perguntas.' : 'Diálogo para ler, ouvir e responder.';
+    if (n.kind === 'test') return 'Mostre o que aprendeu na unidade.';
+    return n.big ? 'Recompensa final: XP e tema novo.' : 'Recompensa: XP e vidas cheias.';
+  }
+  function nodeTitle(n) { return n.kind === 'texto' ? n.lesson.title : n.label; }
+  // Ilustração da montanha (com bandeira, sol, nuvens e estrelas animados).
+  var MOUNT_SVG = '<svg class="cx-mt" viewBox="0 0 300 220" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">'
+    + '<defs><radialGradient id="cxSun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF6D2"/><stop offset=".22" stop-color="#FFD36A"/><stop offset=".55" stop-color="#F2B33D" stop-opacity=".35"/><stop offset="1" stop-color="#F2B33D" stop-opacity="0"/></radialGradient>'
+    + '<linearGradient id="cxRock" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2B4277"/><stop offset=".5" stop-color="#40598F"/><stop offset=".5" stop-color="#22386A"/><stop offset="1" stop-color="#16295A"/></linearGradient>'
+    + '<linearGradient id="cxSnow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFF4DC"/><stop offset=".5" stop-color="#FFE3A6"/><stop offset=".5" stop-color="#C9D3EA"/><stop offset="1" stop-color="#A9B6D6"/></linearGradient>'
+    + '<linearGradient id="cxBack" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B5388"/><stop offset="1" stop-color="#1B2D5C"/></linearGradient>'
+    + '<linearGradient id="cxFront" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E3263"/><stop offset="1" stop-color="#0F1D3D"/></linearGradient>'
+    + '<linearGradient id="cxMist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9D3EA" stop-opacity="0"/><stop offset="1" stop-color="#C9D3EA" stop-opacity=".35"/></linearGradient>'
+    + '<linearGradient id="cxFlag" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFD978"/><stop offset="1" stop-color="#E9A22B"/></linearGradient><filter id="cxBlur" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="3.2"/></filter></defs>'
+    + '<g class="cx-stars"><circle cx="40" cy="34" r="1.2"/><circle cx="110" cy="20" r="1"/><circle cx="150" cy="46" r="1.1"/><circle cx="270" cy="24" r="1.1"/><circle cx="288" cy="62" r="1"/><circle cx="84" cy="70" r="1"/><circle cx="236" cy="44" r=".9"/></g>'
+    + '<g transform="translate(250 132)"><g class="cx-rays"><path d="M0 0 L-80 -46 L-76 -38Z M0 0 L-30 -90 L-22 -90Z M0 0 L30 -88 L38 -84Z M0 0 L84 -40 L86 -32Z M0 0 L-96 -6 L-94 2Z M0 0 L60 60 L54 64Z" fill="#FFE7A0" opacity=".09"/></g></g>'
+    + '<circle class="cx-sun" cx="250" cy="132" r="56" fill="url(#cxSun)"/>'
+    + '<path d="M60 220 L118 138 L138 150 L160 120 L186 146 L214 128 L246 156 L268 142 L300 166 L300 220Z" fill="url(#cxBack)"/>'
+    + '<path d="M96 220 L150 128 L170 104 L186 84 L198 66 L206 70 L214 60 L230 86 L250 112 L276 150 L300 172 L300 220Z" fill="url(#cxRock)"/>'
+    + '<path d="M198 66 L206 70 L214 60 L230 86 L222 90 L214 82 L208 92 L201 84 L192 94 L186 84Z" fill="url(#cxSnow)"/>'
+    + '<path d="M214 60 L214 140 L230 86Z" fill="#0F1D3D" opacity=".12"/>'
+    + '<path d="M170 104 L176 112 L162 128Z M236 96 L242 108 L252 116Z" fill="#E7EDF8" opacity=".55"/>'
+    + '<rect x="96" y="160" width="204" height="40" fill="url(#cxMist)" filter="url(#cxBlur)"/>'
+    + '<g class="cx-cloud cx-c1" filter="url(#cxBlur)"><ellipse cx="150" cy="170" rx="50" ry="8" fill="#DDE4F4" opacity=".4"/><ellipse cx="172" cy="165" rx="24" ry="7" fill="#EEF2FA" opacity=".45"/></g>'
+    + '<g class="cx-cloud cx-c2" filter="url(#cxBlur)"><ellipse cx="262" cy="186" rx="48" ry="9" fill="#DDE4F4" opacity=".35"/><ellipse cx="240" cy="181" rx="20" ry="6" fill="#EEF2FA" opacity=".4"/></g>'
+    + '<path d="M80 220 L120 196 L160 206 L200 188 L240 202 L272 190 L300 198 L300 220Z" fill="url(#cxFront)"/>'
+    + '<g class="cx-flag-g"><rect x="213.2" y="34" width="1.8" height="27" rx=".9" fill="#F3E4C2"/><path class="cx-flag" d="M215 35 C222 32.5 227 38 234 35.5 L234 47 C227 49.5 222 44 215 46.5Z" fill="url(#cxFlag)"/></g>'
+    + '<g class="cx-birds"><path class="cx-b1" d="M0 0 q3 -3.5 6 0 q3 -3.5 6 0" /><path class="cx-b2" d="M14 8 q2.5 -3 5 0 q2.5 -3 5 0" /></g>'
+    + '<g class="cx-sparks"><circle cx="209" cy="74" r="1.5"/><circle cx="196" cy="88" r="1.1"/><circle cx="222" cy="80" r="1.1"/></g>'
+    + '</svg>';
+
+  function cxStat(ic, big, small, label, cls, onclick) {
+    return h(onclick ? 'button' : 'div', { type: onclick ? 'button' : null, class: 'cx-stat ' + (cls || ''), onclick: onclick || null }, [
+      cxi(ic),
+      h('span', { class: 'cx-stat-t' }, [h('span', { class: 'cx-stat-v' }, [h('strong', { text: String(big) }), small ? h('em', { text: small }) : null]), label ? h('span', { class: 'cx-stat-l', text: label }) : null]),
+    ]);
+  }
+
   function renderMap(scrollToCurrent) {
     ensureRoot(); applyTheme(root); regen();
+    root.classList.add('cx');
     var prevScroll = root.scrollTop;
-    root.replaceChildren(h('div', { class: 'cc-loading', text: 'Carregando o curso…' }));
+    if (!course) root.replaceChildren(h('div', { class: 'cx-loading', text: 'Carregando o curso…' }));
     loadCourse().then(function () {
-      var lvl = levelOf(st.xp), dxp = dayXP(), goalPct = Math.min(100, Math.round(dxp / DAILY_GOAL * 100));
-      var head = h('header', { class: 'cc-head' }, [
-        h('div', { class: 'cc-title-row' }, [
-          h('div', {}, [h('h1', { class: 'cc-title', text: 'Curso' }), h('p', { class: 'cc-sub', text: 'Do zero à conversa, uma lição por vez.' })]),
-          h('span', { class: 'cc-premium', text: 'Premium' })
+      var units = allUnits();
+      // unidade em foco: a escolhida, senão a primeira não concluída
+      var firstTodo = units.filter(function (e) { return e.u.lessons.length && !unitDone(e.u); })[0] || units[0];
+      var lvIdx = VIEW.lv != null ? VIEW.lv : course.levels.indexOf(firstTodo.lv);
+      var LV = course.levels[lvIdx];
+      var focus = (VIEW.unit && LV.units.filter(function (u) { return u.id === VIEW.unit; })[0]) ||
+        LV.units.filter(function (u) { return u.lessons.length && !unitDone(u); })[0] || LV.units[LV.units.length - 1];
+      var uIdx = LV.units.indexOf(focus), nodes = nodesOf(focus);
+      var doneN = nodes.filter(nodeDone).length, pct = nodes.length ? Math.round(doneN / nodes.length * 100) : 0;
+      var lang = window.FAF_IDIOMA === 'en' ? 'Inglês' : 'Espanhol';
+
+      // cabeçalho
+      var lvMenu = VIEW.menu ? h('div', { class: 'cx-lvmenu', role: 'menu' }, course.levels.map(function (lv, i) {
+        var us = lv.units.filter(function (u) { return u.lessons.length; }), d = us.filter(unitDone).length;
+        return h('button', { type: 'button', role: 'menuitemradio', 'aria-checked': i === lvIdx ? 'true' : 'false', class: 'cx-lvopt' + (i === lvIdx ? ' is-on' : ''),
+          onclick: function () { VIEW.lv = i; VIEW.unit = null; VIEW.menu = false; renderMap(); root.scrollTop = 0; } }, [
+          h('strong', { text: lv.id }), h('span', { text: lv.name }), h('em', { text: d + '/' + us.length + ' unidades' })
+        ]);
+      })) : null;
+      var head = h('header', { class: 'cx-head' }, [
+        h('div', { class: 'cx-head-l' }, [
+          h('h1', { class: 'cx-title' }, ['Curso de ', h('span', { 'data-keep': '', text: lang })]),
+          h('div', { class: 'cx-lvwrap' }, [
+            h('button', { type: 'button', class: 'cx-lvbtn', 'aria-expanded': VIEW.menu ? 'true' : 'false', 'aria-haspopup': 'menu',
+              onclick: function () { VIEW.menu = !VIEW.menu; renderMap(); } }, [cxi('bars'), h('span', { text: LV.id + ' · ' + LV.name }), cxi('chev')]),
+            lvMenu
+          ])
         ]),
-        h('div', { class: 'cc-stats' }, [
-          statChip('flame', streakNow(), streakNow() === 1 ? 'dia seguido' : 'dias seguidos', 'is-flame' + (st.streak.last === today() ? ' is-lit' : '')),
-          statChip('bolt', st.xp, 'XP', 'is-xp'),
-          statChip('heart', st.hearts.n, st.hearts.n < HEART_MAX ? '+1 em ' + nextHeartIn() + ' min' : 'vidas', 'is-heart')
-        ]),
-        h('div', { class: 'cc-level' }, [
-          h('div', { class: 'cc-hud' }, [
-            ring(lvl.cur / lvl.need, lvl.lv),
-            h('div', { class: 'cc-hud-txt' }, [
-              h('span', { class: 'cc-hud-k', text: 'NÍVEL ' + lvl.lv }),
-              h('strong', { text: rank(lvl.lv) }),
-              h('span', { class: 'cc-hud-s', text: (lvl.need - lvl.cur) + ' XP para o nível ' + (lvl.lv + 1) })
+        h('span', { class: 'cx-prem' }, [cxi('crown'), 'Premium'])
+      ]);
+      var full = st.hearts.n >= HEART_MAX;
+      var stats = h('div', { class: 'cx-stats' }, [
+        cxStat('flame', streakNow(), '', streakNow() === 1 ? 'dia seguido' : 'dias seguidos', 'is-flame'),
+        cxStat('bolt', st.xp, 'XP', 'total', 'is-xp'),
+        cxStat('heart', st.hearts.n, full ? 'vidas' : '', full ? '' : '+1 em ' + nextHeartIn() + ' min', 'is-heart', function () {
+          toast(st.hearts.n + (st.hearts.n === 1 ? ' vida' : ' vidas'), full ? 'Vidas cheias. Cada erro numa lição gasta uma vida.' : 'Uma vida volta a cada 30 minutos. A próxima em ' + nextHeartIn() + ' min. Revisar também devolve vidas.');
+        })
+      ]);
+
+      // cartão da unidade com a montanha
+      var nextNode = nodes.filter(function (n) { return !nodeDone(n); })[0];
+      var hero = h('section', { class: 'cx-hero' + (pct === 100 ? ' is-done' : '') }, [
+        h('div', { class: 'cx-art', 'aria-hidden': 'true', html: MOUNT_SVG }),
+        h('div', { class: 'cx-hero-in' }, [
+          h('span', { class: 'cx-badge', text: 'Unidade ' + (uIdx + 1) }),
+          h('h2', { class: 'cx-hero-t', text: focus.title }),
+          focus.desc ? h('p', { class: 'cx-hero-d', text: focus.desc }) : null,
+          h('div', { class: 'cx-prog' }, [h('span', { class: 'cx-bar' }, [h('i', { style: 'width:' + Math.max(pct, 4) + '%' })]), h('span', { class: 'cx-pct', text: pct + '% concluído' })]),
+          focus.lessons.length ? h('button', { type: 'button', class: 'cx-go', onclick: function () { openNode(nextNode || nodes[0], focus); } }, [
+            cxi('play'), h('span', { text: pct === 0 ? 'Começar unidade' : pct === 100 ? 'Revisar unidade' : 'Continuar unidade' })
+          ]) : h('p', { class: 'cx-soon', text: 'Em breve' })
+        ])
+      ]);
+
+      // lista de etapas da unidade
+      var list = h('ol', { class: 'cx-list', 'aria-label': 'Etapas da unidade' }), currentEl = null, seenCurrent = false;
+      nodes.forEach(function (n, i) {
+        var isDone = nodeDone(n), prevDone = i === 0 || nodeDone(nodes[i - 1]);
+        var state = isDone ? 'done' : (CURSO_LIVRE || prevDone) ? 'open' : 'locked';
+        if (state === 'open' && !seenCurrent) { state = 'current'; seenCurrent = true; }
+        var locked = state === 'locked';
+        var stars = (n.kind === 'lesson' || n.premium) && st.lessons[n.id] ? st.lessons[n.id].stars : 0;
+        var go = function () { if (!locked) openNode(n, focus); };
+        var ic = n.kind === 'lesson' ? lessonIcon(n.label) : n.kind === 'frases' ? 'quote' : n.kind === 'texto' ? 'book' : n.kind === 'test' ? 'exam' : 'chest';
+        var tile = h('span', { class: 'cx-tile' + (n.kind === 'chest' ? ' is-chest' : '') }, ic === 'num' ? [h('b', { text: '123' })] : [cxi(ic)]);
+        var li = h('li', { class: 'cx-item is-' + state + (n.kind === 'chest' ? ' is-chest' : '') }, [
+          h('button', { type: 'button', class: 'cx-dot', tabindex: '-1', 'aria-hidden': 'true', disabled: locked, onclick: go }, [cxi(state === 'done' ? 'check' : locked ? 'lock' : 'play')]),
+          h('button', { type: 'button', class: 'cx-card', disabled: locked, onclick: go,
+            'aria-label': nodeTitle(n) + (state === 'done' ? ', concluída' : locked ? ', bloqueada' : ', disponível') }, [
+            tile,
+            h('span', { class: 'cx-card-b' }, [
+              h('span', { class: 'cx-card-t' }, [h('strong', { text: nodeTitle(n) }), n.premium ? h('span', { class: 'cx-tag', text: 'Premium' }) : null, h('span', { class: 'cx-chev' }, [cxi('right')])]),
+              h('span', { class: 'cx-card-s', text: nodeSub(n) }),
+              h('span', { class: 'cx-card-f' }, [
+                n.kind === 'lesson' || n.premium ? h('span', { class: 'cx-stars', 'aria-label': stars + ' de 3 estrelas' }, [0, 1, 2].map(function (k) { return icon('star', k < stars ? 'is-on' : ''); })) : h('span'),
+                locked ? h('span', { class: 'cx-lockt' }, [icon('lock'), 'Bloqueado']) :
+                  state === 'done' ? h('span', { class: 'cx-min is-done', text: 'Feito' }) :
+                  h('span', { class: 'cx-min' }, [cxi('play'), nodeMin(n) + ' min'])
+              ])
             ])
-          ]),
-          h('div', { class: 'cc-level-top' }, [h('span', { text: 'Meta de hoje' }), h('span', { text: Math.min(dxp, DAILY_GOAL) + ' / ' + DAILY_GOAL + ' XP' + (dxp >= DAILY_GOAL ? ' · cumprida' : '') })]),
-          h('div', { class: 'cc-bar is-goal' }, [h('i', { style: 'width:' + goalPct + '%' })])
-        ]),
-        h('div', { class: 'cc-tools' }, [
-          h('button', { type: 'button', class: 'cc-tool', onclick: showAchievements }, ['Conquistas ', h('b', { text: Object.keys(st.ach).length + '/' + ACH.length })]),
-          h('button', { type: 'button', class: 'cc-tool', onclick: showThemes, text: 'Temas' }),
-          h('button', { type: 'button', class: 'cc-tool', onclick: showAccount, text: 'Conta e backup' }),
-          h('button', { type: 'button', class: 'cc-tool', 'aria-pressed': st.sound ? 'true' : 'false', onclick: function () { st.sound = !st.sound; save(); renderMap(); }, text: st.sound ? 'Som ligado' : 'Som desligado' })
-        ])
-      ]);
-      var body = h('div', { class: 'cc-levels' });
-      var units = allUnits(), currentEl = null, anyTodo = true;
-      course.levels.forEach(function (lv) {
-        var sec = h('section', { class: 'cc-lv' }, [h('h2', { class: 'cc-lv-title' }, [h('span', { class: 'cc-lv-code', text: lv.id }), lv.name])]);
-        lv.units.forEach(function (u) {
-          var idx = units.findIndex(function (e) { return e.u === u; });
-          var open = unitOpen(units[idx], idx, units), done = unitDone(u);
-          var card = h('article', { class: 'cc-unit' + (open ? ' is-open' : ' is-locked') + (done ? ' is-done' : '') });
-          var num = (idx % 10) + 1;
-          card.appendChild(h('div', { class: 'cc-unit-head' }, [
-            h('div', {}, [h('span', { class: 'cc-unit-n', text: 'Unidade ' + num }), h('h3', { text: u.title }), u.desc && open ? h('p', { text: u.desc }) : null]),
-            open ? (done ? h('span', { class: 'cc-badge is-done', text: 'Concluída' }) : null) :
-              h('span', { class: 'cc-badge' }, [icon('lock'), u.lessons.length ? ' Bloqueada' : ' Em breve'])
-          ]));
-          if (open) {
-            var path = h('ol', { class: 'cc-path' }), firstTodo = true;
-            nodesOf(u).forEach(function (n, i, all) {
-              var isDone = nodeDone(n), prevDone = i === 0 || nodeDone(all[i - 1]);
-              var state = isDone ? 'done' : prevDone ? 'current' : 'locked';
-              if (state === 'current' && !firstTodo) state = 'locked';
-              if (state === 'current') firstTodo = false;
-              if (CURSO_LIVRE && !isDone) {
-                state = anyTodo ? 'current' : 'free';
-                anyTodo = false;
-              }
-              var stars = (n.kind === 'lesson' || n.premium) && st.lessons[n.id] ? st.lessons[n.id].stars : 0;
-              var btn = h('button', { type: 'button', class: 'cc-node is-' + n.kind + ' is-' + state + (n.big ? ' is-big' : '') + (n.premium ? ' is-premium' : ''), disabled: state === 'locked',
-                'aria-label': n.label + (state === 'done' ? ', concluída' : state === 'locked' ? ', bloqueada' : ', disponível'),
-                onclick: function () { openNode(n, u); } }, [
-                icon(n.kind === 'chest' ? 'chest' : n.kind === 'test' ? 'trophy' : state === 'done' ? 'check' : state === 'locked' ? 'lock' : n.kind === 'texto' ? 'book' : n.kind === 'frases' ? 'quote' : 'play')
-              ]);
-              var li = h('li', { class: 'cc-step', style: '--x:' + [0, 1, 2, 1, 0, -1, -2, -1][i % 8] }, [
-                btn,
-                n.premium ? h('span', { class: 'cc-node-tag', text: 'PREMIUM' }) : null,
-                h('span', { class: 'cc-node-label', text: n.label }),
-                n.kind === 'lesson' || n.premium ? h('span', { class: 'cc-stars', 'aria-label': stars + ' de 3 estrelas' }, [0, 1, 2].map(function (k) { return icon('star', k < stars ? 'is-on' : ''); })) : null,
-                state === 'current' ? h('span', { class: 'cc-start', text: n.kind === 'chest' ? 'Abrir' : 'Começar' }) : null
-              ]);
-              if (state === 'current') currentEl = li;
-              path.appendChild(li);
-            });
-            card.appendChild(path);
-          }
-          sec.appendChild(card);
-        });
-        body.appendChild(sec);
+          ])
+        ]);
+        if (state === 'current') currentEl = li;
+        list.appendChild(li);
       });
-      var lia = h('button', { type: 'button', class: 'cc-lia-card', onclick: openChat, 'aria-label': 'Conversar com a Lía, a IA do Frase a Frase' }, [
-        h('span', { class: 'cc-lia-avatar', 'aria-hidden': 'true', text: 'L' }),
-        h('span', { class: 'cc-lia-txt' }, [
-          h('span', { class: 'cc-lia-top' }, [h('strong', { text: 'Converse com a Lía' }), h('span', { class: 'cc-lia-tag', text: 'IA · TESTE' })]),
-          h('span', { text: 'Bata papo em espanhol com a IA do Frase a Frase. Ela corrige você e sugere respostas.' })
+
+      // objetivo da unidade
+      var total = nodes.length, xpAll = nodes.reduce(function (a, n) { return a + nodeXP(n); }, 0);
+      var goal = h('section', { class: 'cx-goal' }, [
+        h('span', { class: 'cx-goal-art', html: CX_ICON.trophy }),
+        h('span', { class: 'cx-goal-sep' }),
+        h('div', { class: 'cx-goal-b' }, [
+          h('div', { class: 'cx-goal-top' }, [h('strong', { text: 'Objetivo da unidade' }), h('span', { class: 'cx-xp' }, [cxi('bolt'), '+' + xpAll + ' XP'])]),
+          h('p', { text: 'Concluir as ' + total + ' etapas e conquistar até ' + xpAll + ' XP.' }),
+          h('div', { class: 'cx-prog' }, [h('span', { class: 'cx-bar is-thin' }, [h('i', { style: 'width:' + pct + '%' })]), h('span', { class: 'cx-pct', text: doneN + ' / ' + total + ' etapas' })])
         ])
       ]);
-      root.replaceChildren(h('div', { class: 'cc-stars-bg', 'aria-hidden': 'true' }), spaceLayer(), head, lia, body);
-      requestAnimationFrame(drawPaths);
+
+      // Lía
+      var lia = h('button', { type: 'button', class: 'cx-lia', onclick: openChat, 'aria-label': 'Conversar com a Lía, a IA do Frase a Frase' }, [
+        h('span', { class: 'cx-lia-av', 'aria-hidden': 'true', text: 'L' }),
+        h('span', { class: 'cx-lia-b' }, [
+          h('span', { class: 'cx-lia-t' }, [h('strong', { text: 'Converse com a Lía' }), h('span', { class: 'cx-tag', text: 'IA · teste' })]),
+          h('span', { class: 'cx-card-s', text: 'Bata papo em espanhol com a IA do Frase a Frase. Ela corrige você e sugere respostas.' })
+        ]),
+        cxi('right')
+      ]);
+
+      // outras unidades do nível
+      var ulist = h('div', { class: 'cx-units' }, LV.units.map(function (u, i) {
+        var ns = nodesOf(u), d = ns.filter(nodeDone).length, p = ns.length ? Math.round(d / ns.length * 100) : 0, soon = !u.lessons.length;
+        return h('button', { type: 'button', class: 'cx-urow' + (u === focus ? ' is-on' : '') + (p === 100 ? ' is-done' : ''), disabled: soon,
+          onclick: function () { VIEW.lv = lvIdx; VIEW.unit = u.id; renderMap(); root.scrollTo({ top: 0, behavior: 'smooth' }); } }, [
+          h('span', { class: 'cx-un', text: String(i + 1) }),
+          h('span', { class: 'cx-ub' }, [h('strong', { text: u.title }), h('span', { class: 'cx-bar is-thin' }, [h('i', { style: 'width:' + p + '%' })])]),
+          h('span', { class: 'cx-up', text: soon ? 'Em breve' : p === 100 ? 'Concluída' : p + '%' })
+        ]);
+      }));
+
+      var tools = h('div', { class: 'cx-tools' }, [
+        h('button', { type: 'button', class: 'cx-tool', onclick: showAchievements }, ['Conquistas ', h('b', { text: Object.keys(st.ach).length + '/' + ACH.length })]),
+        h('button', { type: 'button', class: 'cx-tool', onclick: showThemes, text: 'Temas' }),
+        h('button', { type: 'button', class: 'cx-tool', onclick: showAccount, text: 'Conta e backup' }),
+        h('button', { type: 'button', class: 'cx-tool', 'aria-pressed': st.sound ? 'true' : 'false', onclick: function () { st.sound = !st.sound; save(); renderMap(); }, text: st.sound ? 'Som ligado' : 'Som desligado' })
+      ]);
+
+      root.replaceChildren(head, stats, hero, list, goal, lia,
+        h('h3', { class: 'cx-sec', text: 'Unidades do ' + LV.id + ' · ' + LV.name }), ulist, tools);
       if (scrollToCurrent && currentEl) currentEl.scrollIntoView({ block: 'center' }); else root.scrollTop = prevScroll;
     }, function () {
-      root.replaceChildren(h('div', { class: 'cc-loading' }, ['Não foi possível carregar o curso. Verifique a conexão e ', h('button', { type: 'button', class: 'cc-link', onclick: function () { renderMap(); }, text: 'tente de novo' }), '.']));
+      root.replaceChildren(h('div', { class: 'cx-loading' }, ['Não foi possível carregar o curso. Verifique a conexão e ', h('button', { type: 'button', class: 'cc-link', onclick: function () { renderMap(); }, text: 'tente de novo' }), '.']));
     });
   }
 
