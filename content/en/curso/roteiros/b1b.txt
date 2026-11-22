@@ -1,0 +1,472 @@
+// B1 — unidades 6 a 10 (inglês)
+
+# b1u6 | Meio ambiente | Falar de problemas ambientais, soluções e hábitos sustentáveis.
+
+## O planeta | "Environment" é meio ambiente; "climate change", mudança climática; "pollution", poluição; "global warming", aquecimento global. "Drought" é seca e "flood", enchente.
+v environment = meio ambiente; climate change = mudança climática; pollution = poluição; global warming = aquecimento global; drought = seca; flood = enchente; species = espécie
+f Air [pollution] is a big problem in big cities. = A poluição do ar é um grande problema nas cidades grandes. ~ environment, drought
+f Many [species] are in danger of extinction. = Muitas espécies estão em perigo de extinção. ~ special, floods
+b Climate change affects everyone. = A mudança climática afeta todo mundo.
+b The floods destroyed hundreds of houses. = As enchentes destruíram centenas de casas.
+l The drought has lasted for two years. = A seca já dura dois anos. ~ A enchente durou dois dias. | A seca terminou há dois anos.
+q Não chove há meses e os rios estão secos. Qual é o problema? = A drought | A flood | Air pollution
+
+## Reciclar | "Recycle" é reciclar; "waste" ou "trash" (EUA) / "rubbish" (Reino Unido) é o lixo; "bin" é a lixeira. "Reduce, reuse, recycle" é o lema dos três Rs.
+v to recycle = reciclar; trash = lixo; bin = lixeira; plastic = plástico; glass = vidro; to reuse = reutilizar; to throw away = jogar fora
+f We [recycle] paper, plastic and glass. = Reciclamos papel, plástico e vidro. ~ throw, reuse away
+f Don't [throw] away that bottle. = Não jogue fora essa garrafa. ~ recycle, put
+b I always reuse plastic bags. = Sempre reutilizo sacolas plásticas.
+b The glass goes in the green bin. = O vidro vai na lixeira verde.
+l We produce too much trash. = Produzimos lixo demais. ~ Reciclamos lixo demais. | Produzimos pouco lixo.
+q Onde você coloca uma garrafa de vidro? = In the recycling bin for glass | In the sea | In the plastic bag
+
+## O que é preciso fazer | Para soluções: "we need to" (precisamos), "we have to" (temos que), "we must" (devemos, mais forte), "governments should" (os governos deveriam).
+v we need to = precisamos; we must = devemos; to protect = proteger; to reduce = reduzir; to save energy = economizar energia; to plant trees = plantar árvores; waste = desperdício
+f We [need] to reduce plastic use. = Precisamos reduzir o uso de plástico. ~ needs, must to
+f We [must] protect the forests. = Devemos proteger as florestas. ~ must to, have
+b Governments should invest in clean energy. = Os governos deveriam investir em energia limpa.
+b Turn off the lights to save energy. = Desligue as luzes para economizar energia.
+l We have to stop wasting water. = Temos que parar de desperdiçar água. ~ Temos que começar a usar mais água. | Paramos de desperdiçar água.
+q Qual destas é uma solução para a poluição? = Use public transportation more. | Drive alone every day. | Throw trash in the river.
+
+## Energia e consumo | "Renewable energy" é energia renovável; "solar panels", painéis solares; "wind power", energia eólica; "fossil fuels", combustíveis fósseis. "Electric car" é carro elétrico.
+v renewable energy = energia renovável; solar panels = painéis solares; wind power = energia eólica; fossil fuels = combustíveis fósseis; electric car = carro elétrico; consumption = consumo; bill = conta
+f We installed [solar] panels on the roof. = Instalamos painéis solares no telhado. ~ sun, wind
+f [Fossil] fuels pollute the air. = Os combustíveis fósseis poluem o ar. ~ Renewable, Electric
+b Our electricity bill is much lower now. = Nossa conta de luz está muito mais baixa agora.
+b Wind power is growing in Brazil. = A energia eólica está crescendo no Brasil.
+l Electric cars are becoming cheaper. = Os carros elétricos estão ficando mais baratos. ~ Os carros elétricos estão ficando mais caros. | Os carros a gasolina estão ficando mais baratos.
+q Qual destas é energia renovável? = Solar power | Coal | Oil
+
+## O futuro do planeta | Use condicionais para consequências: "If we don't act now, it will be too late" (se não agirmos agora, será tarde demais). "Unless" é a menos que.
+v if we don't act = se não agirmos; too late = tarde demais; unless = a menos que; future generations = as gerações futuras; to get worse = piorar; sea level = nível do mar; to rise = subir
+f If we don't act now, it [will] be too late. = Se não agirmos agora, será tarde demais. ~ would, is
+f The situation will get worse [unless] we change. = A situação vai piorar a menos que mudemos. ~ if, so
+b Sea levels are rising every year. = O nível do mar está subindo todo ano.
+b We must think about future generations. = Devemos pensar nas gerações futuras.
+l If temperatures keep rising, many cities will flood. = Se as temperaturas continuarem subindo, muitas cidades vão inundar. ~ Se as temperaturas caírem, muitas cidades vão inundar. | Mesmo que as temperaturas subam, as cidades não vão inundar.
+q Como você diz "A menos que reduzamos as emissões, o planeta vai aquecer"? = Unless we reduce emissions, the planet will get warmer. | If we reduce emissions, the planet will get warmer. | Unless we don't reduce emissions, it's warm.
+
+### frases
+fr Climate change is one of the biggest problems of our time. = A mudança climática é um dos maiores problemas do nosso tempo.
+fr We should recycle more and throw away less. = Deveríamos reciclar mais e jogar fora menos.
+fr In my building, we separate paper, plastic and glass. = No meu prédio, separamos papel, plástico e vidro.
+fr Governments [must] invest in renewable energy. = Os governos devem investir em energia renovável. ~ must to, have
+fr We installed solar panels and our bill went down. = Instalamos painéis solares e nossa conta baixou.
+fr Turn off the tap while you brush your teeth. = Feche a torneira enquanto escova os dentes.
+fr The floods last year were the worst in history. = As enchentes do ano passado foram as piores da história.
+fr If we don't protect the forests, many species [will] disappear. = Se não protegermos as florestas, muitas espécies vão desaparecer. ~ would, are
+fr Electric cars are becoming more popular every year. = Os carros elétricos estão ficando mais populares a cada ano.
+fr We must think about the planet we'll leave to our children. = Devemos pensar no planeta que vamos deixar para nossos filhos.
+
+### texto | A casa sustentável
+t Tim | Your house looks different. What happened? = Sua casa está diferente. O que aconteceu?
+t Rosa | We installed solar panels last month. = Instalamos painéis solares no mês passado.
+t Tim | Really? Were they expensive? = Sério? Foram caros?
+t Rosa | Yes, but our electricity bill is sixty percent lower now. = Sim, mas nossa conta de luz está sessenta por cento mais baixa agora.
+t Tim | Wow! So they'll pay for themselves. = Nossa! Então eles vão se pagar.
+t Rosa | Exactly. In about five years. = Exatamente. Em uns cinco anos.
+t Tim | What else have you changed? = O que mais vocês mudaram?
+t Rosa | We collect rainwater for the garden, and we compost food waste. = Coletamos água da chuva para o jardim e fazemos compostagem dos restos de comida.
+t Tim | That's impressive. I don't even recycle properly. = Que impressionante. Eu nem reciclo direito.
+t Rosa | It's easy! You just need three bins. = É fácil! Você só precisa de três lixeiras.
+t Tim | OK, I'll start this week. I promise. = Tá, vou começar nesta semana. Prometo.
+tq O que a Rosa instalou? = Painéis solares | Um carro elétrico | Uma piscina
+tq Quanto baixou a conta de luz? = Sessenta por cento | Dez por cento | Metade
+tq Para que usam a água da chuva? = Para o jardim | Para beber | Para lavar o carro
+tq O que o Tim promete? = Começar a reciclar nesta semana | Instalar painéis | Comprar um carro elétrico
+
+### leitura | Uma cidade sem carros no centro
+n Five years ago, a medium-sized European city made a bold decision. = Há cinco anos, uma cidade europeia de porte médio tomou uma decisão ousada.
+n It banned private cars from the historic center. = Proibiu carros particulares no centro histórico.
+n At first, many shop owners were against the idea. = No começo, muitos donos de lojas eram contra a ideia.
+n They thought customers wouldn't come if they couldn't park. = Achavam que os clientes não viriam se não pudessem estacionar.
+n The city invested in buses, bike lanes and wider sidewalks. = A cidade investiu em ônibus, ciclovias e calçadas mais largas.
+n After one year, air pollution had dropped by forty percent. = Depois de um ano, a poluição do ar tinha caído quarenta por cento.
+n Surprisingly, shops sold more, because more people walked by. = Surpreendentemente, as lojas venderam mais, porque mais gente passava a pé.
+n Children started playing in squares that used to be parking lots. = As crianças começaram a brincar em praças que antes eram estacionamentos.
+n Not everyone is happy: some residents complain about deliveries. = Nem todos estão felizes: alguns moradores reclamam das entregas.
+n However, most citizens say they would never go back. = Porém, a maioria dos cidadãos diz que nunca voltaria atrás.
+n Other cities are now studying the same model. = Outras cidades agora estão estudando o mesmo modelo.
+tq O que a cidade proibiu? = Carros particulares no centro histórico | Ônibus | Bicicletas
+tq Quanto caiu a poluição do ar? = Quarenta por cento | Dez por cento | Nada
+tq O que aconteceu com as lojas? = Venderam mais | Fecharam | Mudaram de lugar
+tv No começo, todos os comerciantes apoiaram a ideia. = F
+tv Algumas praças antes eram estacionamentos. = V
+
+# b1u7 | Entrevistas de emprego | Apresentar-se, falar de experiência, pontos fortes e condições.
+
+## Apresentar-se | Numa entrevista, seja claro: formação, experiência e objetivo. "Tell me about yourself" é a pergunta clássica. "Background" é a formação e o histórico.
+v tell me about yourself = fale sobre você; background = formação, histórico; I graduated in = me formei em; currently = atualmente; to be responsible for = ser responsável por; position = cargo, vaga; goal = objetivo
+f I [graduated] in business in 2018. = Me formei em administração em 2018. ~ graduate, graduating
+f I'm [currently] working as a sales manager. = Atualmente trabalho como gerente de vendas. ~ actually, current
+b I'm responsible for a team of ten people. = Sou responsável por uma equipe de dez pessoas.
+b My goal is to grow in a big company. = Meu objetivo é crescer numa empresa grande.
+l I have a background in finance. = Tenho formação em finanças. ~ Não tenho experiência em finanças. | Tenho interesse em finanças.
+q Cuidado com o falso amigo: como se diz "atualmente" em inglês? = Currently | Actually | Actual
+
+## Experiência | Para tempo de experiência, use o "present perfect continuous": "I've been working here for five years" (trabalho aqui há cinco anos). "For" para duração; "since" para o início.
+v I've been working = trabalho (há); for five years = há cinco anos; since 2019 = desde 2019; experience = experiência; previous job = emprego anterior; skills = habilidades; to manage = gerenciar
+f I've been working here [for] five years. = Trabalho aqui há cinco anos. ~ since, during
+f She's been teaching [since] 2015. = Ela dá aulas desde 2015. ~ for, from
+b In my previous job, I managed a small team. = No meu emprego anterior, gerenciei uma pequena equipe.
+b I have a lot of experience with customers. = Tenho muita experiência com clientes.
+l I've been studying English for three years. = Estudo inglês há três anos. ~ Estudei inglês por três anos. | Estudo inglês desde os três anos.
+q Você começou na empresa em 2020 e continua lá. Como diz? = I've been working here since 2020. | I work here since 2020. | I'm working here for 2020.
+
+## Pontos fortes e fracos | "Strength" é ponto forte e "weakness", ponto fraco. Para um ponto fraco, mostre como está melhorando: "I'm working on it" (estou trabalhando nisso).
+v strength = ponto forte; weakness = ponto fraco; organized = organizado; reliable = confiável; to work under pressure = trabalhar sob pressão; I'm working on it = estou trabalhando nisso; team player = pessoa que trabalha bem em equipe
+f My greatest [strength] is communication. = Meu maior ponto forte é a comunicação. ~ weakness, strong
+f I work well [under] pressure. = Trabalho bem sob pressão. ~ in, on
+b I'm very organized and reliable. = Sou muito organizado e confiável.
+b Sometimes I'm too detail-oriented, but I'm working on it. = Às vezes sou detalhista demais, mas estou trabalhando nisso.
+l I'm a team player. = Trabalho bem em equipe. ~ Prefiro trabalhar sozinho. | Sou o líder da equipe.
+q O entrevistador pergunta sobre seu ponto fraco. Qual é a melhor resposta? = I'm sometimes impatient, but I'm working on it. | I have no weaknesses. | I'm always late.
+
+## Perguntas do entrevistador | Perguntas comuns: "Why do you want to work here?", "Where do you see yourself in five years?", "Why should we hire you?". "To hire" é contratar e "to fire", demitir.
+v why do you want to work here? = por que você quer trabalhar aqui?; to hire = contratar; to fire = demitir; to see yourself = se ver; challenge = desafio; to achieve = conquistar; achievement = conquista
+f Why should we [hire] you? = Por que deveríamos contratar você? ~ fire, hiring
+f What has been your biggest [challenge]? = Qual foi seu maior desafio? ~ chance, achieve
+b Where do you see yourself in five years? = Onde você se vê daqui a cinco anos?
+b My biggest achievement was opening a new store. = Minha maior conquista foi abrir uma nova loja.
+l I admire this company's values. = Admiro os valores desta empresa. ~ Não conheço os valores desta empresa. | Admiro os produtos desta empresa.
+q Perguntam "Why do you want to work here?". Qual é a melhor resposta? = Because I admire your work and I can contribute to the team. | Because I need money. | I don't know.
+
+## Condições | "Salary" é salário; "benefits", benefícios; "health insurance", plano de saúde. "Remote" é remoto e "hybrid", híbrido. "When can you start?" é quando você pode começar?
+v salary = salário; benefits = benefícios; health insurance = plano de saúde; vacation days = dias de férias; remote = remoto; hybrid = híbrido; when can you start? = quando você pode começar?
+f What are the [benefits]? = Quais são os benefícios? ~ salary's, vacations day
+f Is the position [remote] or in the office? = A vaga é remota ou presencial? ~ hybrid office, remoted
+b The job includes health insurance. = O emprego inclui plano de saúde.
+b I can start in two weeks. = Posso começar em duas semanas.
+l It's a hybrid position: three days in the office. = É uma vaga híbrida: três dias no escritório. ~ É uma vaga remota: nenhum dia no escritório. | É uma vaga presencial: cinco dias no escritório.
+q O entrevistador pergunta "When can you start?". Você precisa avisar seu chefe atual. O que diz? = I can start in two weeks. | I started yesterday. | I don't want to start.
+
+### frases
+fr Tell me a little about yourself and your experience. = Fale um pouco sobre você e sua experiência.
+fr I graduated in engineering and I've been working in the field for six years. = Me formei em engenharia e trabalho na área há seis anos.
+fr In my previous job, I was responsible for the online store. = No meu emprego anterior, eu era responsável pela loja online.
+fr My greatest [strength] is that I learn very quickly. = Meu maior ponto forte é que aprendo muito rápido. ~ weakness, strong
+fr Sometimes I'm too perfectionist, but I'm working on it. = Às vezes sou perfeccionista demais, mas estou trabalhando nisso.
+fr Why do you want to work for our company? = Por que você quer trabalhar na nossa empresa?
+fr In five years, I see myself leading a team. = Daqui a cinco anos, me vejo liderando uma equipe.
+fr I've been studying English [since] I was a teenager. = Estudo inglês desde a adolescência. ~ for, during
+fr Does the job include health insurance? = O emprego inclui plano de saúde?
+fr Thank you for your time. When can I expect an answer? = Obrigado pelo seu tempo. Quando posso esperar uma resposta?
+
+### texto | A entrevista
+t Interviewer | Good morning, Ms. Santos. Please, tell me about yourself. = Bom dia, senhora Santos. Por favor, fale sobre você.
+t Ana | Good morning. I graduated in marketing and I've been working in digital marketing for four years. = Bom dia. Me formei em marketing e trabalho com marketing digital há quatro anos.
+t Interviewer | What do you do in your current job? = O que você faz no seu emprego atual?
+t Ana | I'm responsible for the company's social media. = Sou responsável pelas redes sociais da empresa.
+t Interviewer | What's your greatest strength? = Qual é seu maior ponto forte?
+t Ana | I'm creative, and I work well under pressure. = Sou criativa e trabalho bem sob pressão.
+t Interviewer | And a weakness? = E um ponto fraco?
+t Ana | I find it hard to say no, but I'm learning to set priorities. = Tenho dificuldade de dizer não, mas estou aprendendo a definir prioridades.
+t Interviewer | Why do you want to work here? = Por que você quer trabalhar aqui?
+t Ana | I admire your campaigns, and I'd like to work with international brands. = Admiro as campanhas de vocês e gostaria de trabalhar com marcas internacionais.
+t Interviewer | Very good. When could you start? = Muito bem. Quando você poderia começar?
+t Ana | In a month. I need to give notice at my current job. = Em um mês. Preciso avisar no meu emprego atual.
+tq Há quanto tempo a Ana trabalha com marketing digital? = Quatro anos | Dois anos | Dez anos
+tq Pelo que ela é responsável hoje? = Pelas redes sociais da empresa | Pelas vendas | Pelo atendimento
+tq Qual é o ponto fraco dela? = Tem dificuldade de dizer não | Chega atrasada | Não gosta de equipe
+tq Quando ela poderia começar? = Em um mês | Amanhã | Em uma semana
+
+### leitura | O que aprendi recrutando pessoas
+n I've been working as a recruiter for twelve years. = Trabalho como recrutadora há doze anos.
+n In that time, I've interviewed more than three thousand candidates. = Nesse tempo, entrevistei mais de três mil candidatos.
+n The first thing I notice is whether the person has researched the company. = A primeira coisa que noto é se a pessoa pesquisou sobre a empresa.
+n Candidates who know our products always make a better impression. = Candidatos que conhecem nossos produtos sempre causam uma impressão melhor.
+n The second thing is honesty. = A segunda coisa é honestidade.
+n I prefer someone who admits a weakness to someone who says they're perfect. = Prefiro alguém que admite um ponto fraco a alguém que diz ser perfeito.
+n Specific examples are also very important. = Exemplos concretos também são muito importantes.
+n Saying "I'm a good leader" is not enough; you need to tell a story that shows it. = Dizer "sou um bom líder" não basta; você precisa contar uma história que mostre isso.
+n Finally, I always pay attention to the questions candidates ask me. = Por fim, sempre presto atenção às perguntas que os candidatos me fazem.
+n Good questions show interest and intelligence. = Boas perguntas mostram interesse e inteligência.
+n My advice: prepare, be honest, and be yourself. = Meu conselho: prepare-se, seja honesto e seja você mesmo.
+tq Há quanto tempo a autora é recrutadora? = Doze anos | Três anos | Trinta anos
+tq O que ela nota primeiro? = Se a pessoa pesquisou sobre a empresa | A roupa | O currículo
+tq Por que exemplos concretos são importantes? = Mostram o que a pessoa diz | São curtos | São engraçados
+tv Ela prefere candidatos que dizem ser perfeitos. = F
+tv Boas perguntas mostram interesse e inteligência. = V
+
+# b1u8 | Cultura de língua inglesa | Festas, comida, música, sotaques e costumes de países que falam inglês.
+
+## Festas | Thanksgiving (Dia de Ação de Graças) é na quarta quinta-feira de novembro nos EUA, com peru assado. Halloween é em 31 de outubro. No Reino Unido, Bonfire Night é em 5 de novembro, com fogueiras e fogos.
+v Thanksgiving = Dia de Ação de Graças; turkey = peru; Halloween = Dia das Bruxas; costume = fantasia; trick or treat = gostosuras ou travessuras; fireworks = fogos de artifício; holiday = feriado
+f On Thanksgiving, families eat [turkey]. = No Dia de Ação de Graças, as famílias comem peru. ~ chicken, costume
+f Children wear [costumes] on Halloween. = As crianças usam fantasias no Halloween. ~ customs, turkeys
+b Kids go from house to house saying "trick or treat". = As crianças vão de casa em casa dizendo "gostosuras ou travessuras".
+b There are fireworks on the Fourth of July. = Há fogos de artifício no Quatro de Julho.
+l Thanksgiving is a family holiday. = O Dia de Ação de Graças é um feriado em família. ~ O Dia de Ação de Graças é um feriado religioso. | O Halloween é um feriado em família.
+q Em que mês é o Thanksgiving nos EUA? = November | October | December
+
+## Comida | Comidas típicas: "fish and chips" (peixe empanado com batata frita, Reino Unido), "barbecue" (churrasco, EUA), "Sunday roast" (assado de domingo, Reino Unido), "meat pie" (torta de carne, Austrália).
+v fish and chips = peixe com batata frita; barbecue = churrasco; Sunday roast = assado de domingo; pie = torta; pancakes = panquecas; maple syrup = xarope de bordo; brunch = brunch
+f In Canada, people put maple [syrup] on pancakes. = No Canadá, as pessoas põem xarope de bordo nas panquecas. ~ sugar cane, pie
+f [Fish] and chips is a classic British dish. = Peixe com batata frita é um prato clássico britânico. ~ Meat, Turkey
+b Many families have a Sunday roast in England. = Muitas famílias comem um assado de domingo na Inglaterra.
+b Texas is famous for its barbecue. = O Texas é famoso pelo seu churrasco.
+l Let's have brunch on Sunday. = Vamos tomar um brunch no domingo. ~ Vamos fazer um churrasco no domingo. | Vamos almoçar no sábado.
+q Qual destes pratos é típico do Reino Unido? = Fish and chips | Tacos | Sushi
+
+## Música | Gêneros nascidos em países de língua inglesa: jazz e blues (EUA, com raízes afro-americanas), rock and roll, country, hip-hop (Nova York) e o britpop (Reino Unido).
+v jazz = jazz; blues = blues; country music = música country; hip-hop = hip-hop; band = banda; lyrics = letra (de música); to be born = nascer
+f Jazz was [born] in New Orleans. = O jazz nasceu em Nova Orleans. ~ bear, borned
+f The [lyrics] of this song are very sad. = A letra desta música é muito triste. ~ lyric's, letters
+b Hip-hop started in New York in the seventies. = O hip-hop começou em Nova York nos anos setenta.
+b The Beatles are the most famous British band. = Os Beatles são a banda britânica mais famosa.
+l Country music is very popular in Tennessee. = A música country é muito popular no Tennessee. ~ O jazz é muito popular no Tennessee. | A música country é pouco conhecida no Tennessee.
+q Onde nasceu o hip-hop? = New York | London | Sydney
+
+## Um idioma, muitos sotaques | Inglês americano e britânico têm palavras diferentes: "apartment/flat", "elevator/lift", "cookie/biscuit", "vacation/holiday", "truck/lorry". Ambos estão certos.
+v flat = apartamento (Reino Unido); lift = elevador (Reino Unido); biscuit = biscoito (Reino Unido); holiday = férias (Reino Unido); queue = fila (Reino Unido); line = fila (EUA); accent = sotaque
+f In London, I live in a small [flat]. = Em Londres, moro num pequeno apartamento. ~ lift, queue
+f Americans stand in [line]; the British stand in a queue. = Americanos fazem fila ("line"); britânicos, "queue". ~ lift, flat
+b The lift is out of order. = O elevador está quebrado.
+b I love the Australian accent. = Adoro o sotaque australiano.
+l We're going on holiday in August. = Vamos sair de férias em agosto. ~ Vamos trabalhar em agosto. | Voltamos das férias em agosto.
+q Um britânico diz "Let's take the lift". O que ele quer dizer? = Vamos pegar o elevador. | Vamos pegar uma carona. | Vamos levantar a caixa.
+
+## Costumes sociais | Nos países de língua inglesa, cumprimenta-se com aperto de mão; beijo no rosto só entre amigos próximos. "Small talk" (conversa leve sobre o tempo, o fim de semana) é muito comum. Pontualidade é importante.
+v handshake = aperto de mão; small talk = conversa leve; on time = pontual, na hora; to queue = fazer fila; to tip = dar gorjeta; polite = educado; rude = mal-educado
+f Being [on] time is very important in the UK. = Ser pontual é muito importante no Reino Unido. ~ in, at
+f In the US, people usually [tip] fifteen to twenty percent. = Nos EUA, as pessoas costumam dar de quinze a vinte por cento de gorjeta. ~ tips, tipping
+b People usually greet with a handshake. = As pessoas geralmente se cumprimentam com um aperto de mão.
+b It's rude to cut in line. = É falta de educação furar a fila.
+l The British love talking about the weather. = Os britânicos adoram falar do tempo. ~ Os britânicos odeiam falar do tempo. | Os americanos adoram falar de política.
+q Você vai conhecer o chefe britânico do seu amigo. Como cumprimenta? = With a handshake | With two kisses | With a hug
+### frases
+fr Thanksgiving is the most important family holiday in the United States. = O Dia de Ação de Graças é o feriado familiar mais importante dos Estados Unidos.
+fr On Halloween, children wear costumes and go trick-or-treating. = No Halloween, as crianças usam fantasias e pedem doces de porta em porta.
+fr Fish and chips is usually eaten with salt and vinegar. = Peixe com batata frita costuma ser comido com sal e vinagre.
+fr Jazz was [born] in New Orleans at the beginning of the twentieth century. = O jazz nasceu em Nova Orleans no começo do século vinte. ~ bear, borned
+fr In Britain, "flat" means apartment and "lift" means elevator. = Na Grã-Bretanha, "flat" quer dizer apartamento e "lift", elevador.
+fr English is spoken with many different accents around the world. = O inglês é falado com muitos sotaques diferentes pelo mundo.
+fr The British are famous for queuing patiently. = Os britânicos são famosos por fazer fila com paciência.
+fr In the US, it's customary to [tip] in restaurants. = Nos EUA, é costume dar gorjeta nos restaurantes. ~ tips, tipping
+fr Small talk about the weather is a way to be polite. = Conversar sobre o tempo é uma forma de ser educado.
+fr Many Australians celebrate Christmas with a barbecue on the beach. = Muitos australianos celebram o Natal com um churrasco na praia.
+
+### texto | Intercâmbio em Londres
+t Gabi | I've been in London for a month and I still get confused. = Estou em Londres há um mês e ainda fico confusa.
+t Oliver | Why? What's confusing? = Por quê? O que é confuso?
+t Gabi | Yesterday I asked for the elevator and nobody understood. = Ontem pedi o "elevator" e ninguém entendeu.
+t Oliver | Ha! Here we say "lift". "Elevator" is American. = Ha! Aqui dizemos "lift". "Elevator" é americano.
+t Gabi | And people apologize all the time, even when I step on them! = E as pessoas pedem desculpas o tempo todo, mesmo quando eu piso no pé delas!
+t Oliver | That's very British. We say sorry for everything. = Isso é muito britânico. Pedimos desculpas por tudo.
+t Gabi | And why does everyone talk about the weather? = E por que todo mundo fala do tempo?
+t Oliver | It's small talk. It's a polite way to start a conversation. = É conversa leve. É um jeito educado de começar uma conversa.
+t Gabi | In Brazil we greet with a kiss. Here I never know what to do. = No Brasil cumprimentamos com beijo. Aqui nunca sei o que fazer.
+t Oliver | A handshake is always safe. Kisses only with close friends. = Aperto de mão é sempre seguro. Beijos só com amigos próximos.
+t Gabi | Good to know. And what should I eat? = Bom saber. E o que eu devo comer?
+t Oliver | A Sunday roast at a pub. You'll love it! = Um assado de domingo num pub. Você vai adorar!
+tq Há quanto tempo a Gabi está em Londres? = Um mês | Uma semana | Um ano
+tq Como se diz "elevador" no Reino Unido? = Lift | Elevator | Escalator
+tq Por que os britânicos falam do tempo? = É um jeito educado de começar uma conversa | Porque chove muito sempre | Porque não têm outro assunto
+tq O que o Oliver recomenda comer? = Um assado de domingo num pub | Fish and chips na praia | Peru
+
+### leitura | Bonfire Night
+n Every year on November 5th, the British celebrate Bonfire Night. = Todo ano, em 5 de novembro, os britânicos celebram a Bonfire Night.
+n The festival remembers a famous event from 1605. = A festa lembra um famoso acontecimento de 1605.
+n That year, a group of men planned to blow up the Parliament in London. = Naquele ano, um grupo de homens planejou explodir o Parlamento em Londres.
+n One of them, Guy Fawkes, was arrested while he was guarding the explosives. = Um deles, Guy Fawkes, foi preso enquanto vigiava os explosivos.
+n The plan failed, and people lit bonfires to celebrate the king's survival. = O plano fracassou, e as pessoas acenderam fogueiras para comemorar a sobrevivência do rei.
+n Today, towns organize big bonfires and firework displays. = Hoje, as cidades organizam grandes fogueiras e queimas de fogos.
+n Traditionally, people burn a doll that represents Guy Fawkes. = Tradicionalmente, as pessoas queimam um boneco que representa Guy Fawkes.
+n Families eat hot food like sausages, soup and toffee apples. = As famílias comem comidas quentes, como linguiça, sopa e maçã do amor.
+n It's usually cold and rainy, but nobody seems to care. = Normalmente está frio e chuvoso, mas ninguém parece se importar.
+n For many, it's one of the most fun nights of the year. = Para muitos, é uma das noites mais divertidas do ano.
+tq Quando é a Bonfire Night? = Em 5 de novembro | Em 31 de outubro | Em 25 de dezembro
+tq O que o grupo planejava em 1605? = Explodir o Parlamento | Roubar o rei | Fazer uma festa
+tq O que as pessoas queimam tradicionalmente? = Um boneco de Guy Fawkes | Livros antigos | Fotos
+tv O plano de Guy Fawkes deu certo. = F
+tv Costuma fazer frio e chover na Bonfire Night. = V
+
+# b1u9 | Tecnologia | Dispositivos, internet, problemas técnicos e segurança digital.
+
+## Dispositivos | "Cell phone" (EUA) ou "mobile phone" (Reino Unido) é celular; "laptop" é notebook; "charger", carregador; "screen", tela. "Device" é qualquer aparelho.
+v cell phone = celular; laptop = notebook; charger = carregador; screen = tela; device = aparelho, dispositivo; battery = bateria; headphones = fones de ouvido
+f I forgot my phone [charger] at home. = Esqueci o carregador do celular em casa. ~ battery, screen
+f My [battery] is almost dead. = Minha bateria está quase acabando. ~ charger, device
+b The screen of my laptop is broken. = A tela do meu notebook está quebrada.
+b Can I borrow your headphones? = Posso pegar seus fones emprestados?
+l This device has a very long battery life. = Este aparelho tem uma bateria que dura muito. ~ Este aparelho tem uma bateria que dura pouco. | Este aparelho tem uma tela muito grande.
+q Seu celular está com 2% de bateria. O que você precisa? = A charger | Headphones | A screen
+
+## Internet | "Download" é baixar; "upload", subir, enviar; "password", senha; "to log in", entrar (na conta); "Wi-Fi" é a rede sem fio. "Link" e "app" são iguais.
+v to download = baixar; to upload = enviar, subir; password = senha; to log in = entrar (na conta); to log out = sair (da conta); website = site; search engine = buscador
+f I need to [download] the app. = Preciso baixar o aplicativo. ~ upload, log
+f I forgot my [password]. = Esqueci minha senha. ~ website, link
+b I uploaded the photos to the cloud. = Subi as fotos para a nuvem.
+b Don't forget to log out. = Não esqueça de sair da conta.
+l What's the Wi-Fi password? = Qual é a senha do Wi-Fi? ~ Qual é o nome do Wi-Fi? | Qual é a senha do e-mail?
+q Você quer acessar seu e-mail num computador novo. O que faz? = Log in with my password. | Log out. | Download the screen.
+
+## Problemas técnicos | Para problemas: "it doesn't work" (não funciona), "it froze" / "it crashed" (travou), "it won't turn on" (não liga). "Have you tried turning it off and on again?" é a pergunta clássica.
+v it doesn't work = não funciona; it froze = travou; the screen is black = a tela está preta; it won't turn on = não liga; to restart = reiniciar; to update = atualizar; slow = lento
+f My computer [froze] again. = Meu computador travou de novo. ~ freeze, frozen
+f My phone won't turn [on]. = Meu celular não liga. ~ off, up
+b Have you tried restarting it? = Você tentou reiniciar?
+b You need to update the software. = Você precisa atualizar o software.
+l The internet is very slow today. = A internet está muito lenta hoje. ~ A internet está muito rápida hoje. | A internet caiu hoje.
+q Seu notebook travou. Qual é a primeira coisa que o suporte pergunta? = Have you tried restarting it? | Have you bought a new one? | Is it raining?
+
+## Prós e contras | Para avaliar: "The good thing is that..." (o bom é que), "the bad thing is that..." (o ruim é que), "the advantage/disadvantage is..." (a vantagem/desvantagem é).
+v advantage = vantagem; disadvantage = desvantagem; the good thing is = o bom é que; the bad thing is = o ruim é que; addictive = viciante; useful = útil; to depend on = depender de
+f The [advantage] is that it's very fast. = A vantagem é que é muito rápido. ~ disadvantage, good
+f The bad [thing] is that it's expensive. = O ruim é que é caro. ~ think, point of
+b Social media can be very addictive. = As redes sociais podem ser muito viciantes.
+b We depend too much on our phones. = Dependemos demais dos nossos celulares.
+l The good thing is that it saves time. = O bom é que economiza tempo. ~ O ruim é que perde tempo. | O bom é que é barato.
+q Você quer falar de um ponto negativo da tecnologia. Como começa? = The disadvantage is that... | The advantage is that... | The good thing is that...
+
+## Segurança digital | "Strong password" é senha forte; "scam", golpe; "hacker", hacker; "to hack", invadir; "phishing" é o golpe de e-mails falsos. "Two-factor authentication" é a verificação em duas etapas.
+v strong password = senha forte; scam = golpe; to hack = invadir (conta); fake = falso; to share = compartilhar; personal data = dados pessoais; two-factor authentication = verificação em duas etapas
+f My account was [hacked]. = Minha conta foi invadida. ~ hacker, hack
+f Never [share] your password with anyone. = Nunca compartilhe sua senha com ninguém. ~ shared, sharing
+b That email is a scam. Don't click the link. = Esse e-mail é golpe. Não clique no link.
+b Use a strong password with numbers and symbols. = Use uma senha forte com números e símbolos.
+l Turn on two-factor authentication. = Ative a verificação em duas etapas. ~ Desative a verificação em duas etapas. | Mude sua senha agora.
+q Você recebe um e-mail do "banco" pedindo sua senha. O que é isso? = A scam | A strong password | Two-factor authentication
+
+### frases
+fr I always carry a charger because my battery dies quickly. = Sempre levo um carregador porque minha bateria acaba rápido.
+fr Can you send me the link? I'll download the file later. = Pode me mandar o link? Vou baixar o arquivo depois.
+fr My laptop froze and I lost the whole document. = Meu notebook travou e perdi o documento inteiro.
+fr Have you tried turning it off and on [again]? = Você tentou desligar e ligar de novo? ~ yet, already
+fr The good thing about this app is that it's free. = O bom deste aplicativo é que é gratuito.
+fr The bad thing is that it uses a lot of battery. = O ruim é que gasta muita bateria.
+fr My email account was hacked last week. = Minha conta de e-mail foi invadida na semana passada.
+fr Never [share] your personal data with strangers. = Nunca compartilhe seus dados pessoais com desconhecidos. ~ shared, sharing
+fr Use a different password for each website. = Use uma senha diferente para cada site.
+fr I think we depend too much on technology. = Acho que dependemos demais da tecnologia.
+
+### texto | Suporte técnico
+t Support | Tech support, this is Kevin. How can I help you? = Suporte técnico, aqui é o Kevin. Como posso ajudar?
+t Mrs. Hall | Hi. My laptop won't turn on. = Oi. Meu notebook não liga.
+t Support | OK. Is the charger connected? = Certo. O carregador está conectado?
+t Mrs. Hall | Yes, and the light is on. = Sim, e a luz está acesa.
+t Support | Have you tried holding the power button for ten seconds? = Você tentou segurar o botão de ligar por dez segundos?
+t Mrs. Hall | No. Wait... Oh! It's turning on now. = Não. Espere... Ah! Está ligando agora.
+t Support | Great. Did anything happen before it stopped working? = Ótimo. Aconteceu alguma coisa antes de parar de funcionar?
+t Mrs. Hall | It froze while I was updating the system. = Travou enquanto eu atualizava o sistema.
+t Support | That explains it. Let the update finish and don't turn it off. = Isso explica. Deixe a atualização terminar e não desligue.
+t Mrs. Hall | And I got a strange email asking for my password. = E recebi um e-mail estranho pedindo minha senha.
+t Support | That's a scam. Delete it and never share your password. = É golpe. Apague e nunca compartilhe sua senha.
+t Mrs. Hall | Thank you so much, Kevin! = Muito obrigada, Kevin!
+tq Qual era o problema do notebook? = Não ligava | A tela quebrou | Estava lento
+tq O que resolveu o problema? = Segurar o botão de ligar por dez segundos | Trocar o carregador | Comprar outro
+tq Quando o notebook travou? = Durante uma atualização do sistema | Enquanto ela via um filme | Quando caiu no chão
+tq O que o Kevin diz sobre o e-mail estranho? = É golpe | É do banco | Precisa responder
+
+### leitura | Uma semana sem celular
+n Last month I decided to spend a week without my smartphone. = No mês passado decidi passar uma semana sem meu smartphone.
+n I was checking my phone more than a hundred times a day. = Eu estava olhando o celular mais de cem vezes por dia.
+n The first two days were very difficult. = Os dois primeiros dias foram muito difíceis.
+n I kept reaching for my pocket, and I felt anxious all the time. = Eu vivia levando a mão ao bolso e me sentia ansioso o tempo todo.
+n I used an old phone that could only make calls and send texts. = Usei um celular antigo que só fazia ligações e mandava mensagens.
+n On the third day, something changed: I started to notice things around me. = No terceiro dia, algo mudou: comecei a reparar nas coisas ao meu redor.
+n I read two books and had long conversations with my family. = Li dois livros e tive longas conversas com minha família.
+n I also slept much better, because I didn't look at a screen before bed. = Também dormi muito melhor, porque não olhava para uma tela antes de dormir.
+n Of course, there were disadvantages: I got lost twice without a map app. = Claro que houve desvantagens: me perdi duas vezes sem um aplicativo de mapa.
+n Now I use my smartphone again, but I've turned off most notifications. = Agora uso o smartphone de novo, mas desativei a maioria das notificações.
+n The good thing is that I feel much calmer. = O bom é que me sinto muito mais calmo.
+tq Quantas vezes por dia a pessoa olhava o celular? = Mais de cem | Dez | Trinta
+tq O que mudou no terceiro dia? = Começou a reparar nas coisas ao redor | Desistiu | Comprou outro celular
+tq Qual foi uma desvantagem? = Se perdeu duas vezes sem mapa | Perdeu o emprego | Brigou com a família
+tv A pessoa dormiu pior durante a semana. = F
+tv Hoje ela desativou a maioria das notificações. = V
+
+# b1u10 | Emoções e relações | Expressar sentimentos, falar de relações e resolver conflitos.
+
+## Como você se sente | Para emoções: "I feel..." ou "I'm...": "I'm worried" (estou preocupado), "I feel lonely" (me sinto sozinho). Cuidado: "excited" é animado, empolgado.
+v worried = preocupado; upset = chateado; excited = animado, empolgado; lonely = sozinho, solitário; proud = orgulhoso; relieved = aliviado; disappointed = decepcionado
+f I'm really [excited] about the trip! = Estou muito animado com a viagem! ~ exciting, excite
+f I felt so [relieved] when she called. = Fiquei tão aliviado quando ela ligou. ~ relief, relieving
+b My parents are very proud of me. = Meus pais estão muito orgulhosos de mim.
+b She feels lonely in the new city. = Ela se sente sozinha na cidade nova.
+l I'm a little disappointed with the results. = Estou um pouco decepcionado com os resultados. ~ Estou muito feliz com os resultados. | Estou um pouco preocupado com os resultados.
+q Seu filho passou no vestibular. Como você se sente? = I'm so proud of him! | I'm so lonely. | I'm disappointed.
+
+## O que me deixa… | "It makes me..." (me deixa...): "It makes me nervous". "It drives me crazy" é me deixa louco. "I can't stand" é não suporto. "I'm afraid of" é tenho medo de.
+v it makes me = me deixa; it drives me crazy = me deixa louco; I can't stand = não suporto; I'm afraid of = tenho medo de; annoying = irritante; nervous = nervoso; it bothers me = me incomoda
+f Loud music [makes] me nervous. = Música alta me deixa nervoso. ~ does, gets
+f I can't [stand] people who are always late. = Não suporto gente que está sempre atrasada. ~ stay, support
+b It drives me crazy when the internet is slow. = Me deixa louco quando a internet está lenta.
+b I'm afraid of flying. = Tenho medo de voar.
+l It really bothers me when people lie. = Me incomoda muito quando as pessoas mentem. ~ Não me incomoda quando as pessoas mentem. | Me incomoda quando as pessoas gritam.
+q Cuidado com o falso amigo: como se diz "suportar" no sentido de tolerar? = Stand | Support | Hold on
+
+## Relações | "To get along with" é se dar bem com; "to fall in love with", apaixonar-se por; "to break up", terminar (namoro); "to make up", fazer as pazes. "Boyfriend/girlfriend" é namorado(a).
+v to get along with = dar-se bem com; to fall in love = apaixonar-se; to break up = terminar (relação); to make up = fazer as pazes; to trust = confiar; relationship = relacionamento; close friend = amigo próximo
+f I [get] along very well with my sister. = Me dou muito bem com minha irmã. ~ go, take
+f They [broke] up after five years. = Eles terminaram depois de cinco anos. ~ break, broken
+b They fell in love on a trip to Italy. = Eles se apaixonaram numa viagem à Itália.
+b I trust my close friends completely. = Confio completamente nos meus amigos próximos.
+l They had a fight, but they made up the next day. = Eles brigaram, mas fizeram as pazes no dia seguinte. ~ Eles brigaram e terminaram no dia seguinte. | Eles fizeram as pazes e brigaram de novo.
+q Seu amigo e a namorada terminaram. Como você conta isso? = They broke up. | They made up. | They fell in love.
+
+## Conflitos e desculpas | Para pedir desculpas: "I'm really sorry", "I apologize", "It was my fault" (a culpa foi minha), "I didn't mean to..." (não foi minha intenção). Para aceitar: "It's OK", "Don't worry about it".
+v I'm sorry = sinto muito, desculpe; it was my fault = a culpa foi minha; I didn't mean to = não foi minha intenção; to forgive = perdoar; to argue = discutir; misunderstanding = mal-entendido; apology = desculpa, pedido de desculpas
+f I'm really sorry. It was my [fault]. = Desculpe mesmo. A culpa foi minha. ~ guilt, mistake of
+f I didn't [mean] to hurt you. = Não foi minha intenção te magoar. ~ want, means
+b It was just a misunderstanding. = Foi só um mal-entendido.
+b Can you forgive me? = Você pode me perdoar?
+l We argued about money again. = Discutimos por causa de dinheiro de novo. ~ Concordamos sobre dinheiro de novo. | Discutimos por causa do trabalho.
+q Você esqueceu o aniversário do seu amigo. O que diz? = I'm so sorry I forgot. It was my fault. | Don't worry about it. | It's your fault.
+
+## Empatia | Para apoiar alguém: "I understand how you feel", "That must be hard" (deve ser difícil), "I'm here for you" (estou aqui para você), "Take your time" (leve o tempo que precisar).
+v I understand = eu entendo; that must be hard = deve ser difícil; I'm here for you = estou aqui para você; take your time = leve o tempo que precisar; to listen = escutar; to support = apoiar; to cheer up = animar
+f That must [be] really hard. = Isso deve ser muito difícil. ~ is, being
+f I'm here [for] you, whatever you need. = Estou aqui para você, para o que precisar. ~ to, with
+b I understand how you feel. = Entendo como você se sente.
+b Let's go out. It will cheer you up. = Vamos sair. Vai te animar.
+l Take your time, there's no hurry. = Leve o tempo que precisar, não há pressa. ~ Vá rápido, há pressa. | Sem tempo, temos pressa.
+q Sua amiga perdeu o emprego. O que você diz? = I'm sorry. That must be hard. I'm here for you. | That's great news! | It was your fault.
+
+### frases
+fr I'm really worried about my father's health. = Estou muito preocupado com a saúde do meu pai.
+fr I was so relieved when I heard the news. = Fiquei tão aliviado quando ouvi a notícia.
+fr It drives me crazy when people talk during the movie. = Me deixa louco quando as pessoas falam durante o filme.
+fr I [get] along very well with my coworkers. = Me dou muito bem com meus colegas de trabalho. ~ go, take
+fr They fell in love at university and got married five years later. = Eles se apaixonaram na faculdade e se casaram cinco anos depois.
+fr I'm sorry, I didn't mean to be rude. = Desculpe, não foi minha intenção ser grosseiro.
+fr It was just a misunderstanding. Let's forget it. = Foi só um mal-entendido. Vamos esquecer isso.
+fr That must [be] very hard for you. = Isso deve ser muito difícil para você. ~ is, being
+fr If you need to talk, I'm here for you. = Se precisar conversar, estou aqui para você.
+fr My grandmother always knows how to cheer me up. = Minha avó sempre sabe como me animar.
+
+### texto | A briga
+t Ellie | Hi. Can we talk about yesterday? = Oi. Podemos conversar sobre ontem?
+t Josh | Sure. I'm still a little upset. = Claro. Ainda estou um pouco chateado.
+t Ellie | I know. I'm really sorry I shouted at you. = Eu sei. Desculpe mesmo por ter gritado com você.
+t Josh | It really hurt me. I felt like you didn't trust me. = Isso me magoou muito. Senti que você não confiava em mim.
+t Ellie | I didn't mean to hurt you. I was stressed about work. = Não foi minha intenção te magoar. Eu estava estressada com o trabalho.
+t Josh | I understand, but you could have told me. = Entendo, mas você poderia ter me contado.
+t Ellie | You're right. It was my fault. I should have talked to you. = Você tem razão. A culpa foi minha. Eu deveria ter conversado com você.
+t Josh | And I'm sorry I left without saying anything. = E desculpe por eu ter saído sem dizer nada.
+t Ellie | It was a misunderstanding. Can you forgive me? = Foi um mal-entendido. Você pode me perdoar?
+t Josh | Of course. Let's make up. = Claro. Vamos fazer as pazes.
+t Ellie | Thank you. How about dinner tonight? My treat. = Obrigada. Que tal jantar hoje à noite? Eu pago.
+tq Por que o Josh estava chateado? = A Ellie gritou com ele | Ela esqueceu o aniversário | Ela chegou atrasada
+tq Por que a Ellie gritou? = Estava estressada com o trabalho | Estava doente | Estava com ciúmes
+tq Pelo que o Josh pede desculpas? = Por ter saído sem dizer nada | Por ter gritado | Por ter mentido
+tq Como termina a conversa? = Fazem as pazes e combinam jantar | Terminam o namoro | Brigam de novo
+
+### leitura | Uma amizade que voltou
+n Laura and Beth were best friends in high school. = Laura e Beth eram melhores amigas no ensino médio.
+n They did everything together and told each other all their secrets. = Faziam tudo juntas e contavam todos os segredos uma para a outra.
+n After graduation, Beth moved to another country to study. = Depois da formatura, Beth se mudou para outro país para estudar.
+n At first they talked every day, but slowly they lost touch. = No começo conversavam todo dia, mas aos poucos perderam o contato.
+n Years later, Laura felt lonely and missed her old friend. = Anos depois, Laura se sentia sozinha e sentia falta da velha amiga.
+n She was afraid that Beth had forgotten her. = Tinha medo de que Beth a tivesse esquecido.
+n One day, she found Beth on social media and sent her a message. = Um dia, encontrou Beth nas redes sociais e mandou uma mensagem.
+n Beth answered immediately: she had been thinking about Laura too! = Beth respondeu na hora: ela também andava pensando na Laura!
+n They apologized to each other for not keeping in touch. = Pediram desculpas uma à outra por não terem mantido contato.
+n Now they call each other every week, and they're planning a trip together. = Agora se ligam toda semana e estão planejando uma viagem juntas.
+n Laura says she's never been so happy to make a call. = Laura diz que nunca ficou tão feliz por fazer uma ligação.
+tq Por que a Beth se mudou? = Para estudar em outro país | Por causa de uma briga | Para se casar
+tq Como a Laura reencontrou a Beth? = Pelas redes sociais | Na rua | Por um amigo em comum
+tq O que elas estão planejando? = Uma viagem juntas | Um casamento | Morar juntas
+tv A Beth tinha esquecido a Laura. = F
+tv Hoje elas se ligam toda semana. = V

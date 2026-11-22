@@ -1,0 +1,192 @@
+{
+ "version": 1,
+ "ai": {
+  "url": "https://lia.pedrolima1430.workers.dev"
+ },
+ "levels": [
+  {
+   "id": "A1",
+   "name": "Iniciante",
+   "units": [
+    {
+     "id": "a1u1",
+     "title": "Primeiros passos"
+    },
+    {
+     "id": "a1u2",
+     "title": "Pessoas e família"
+    },
+    {
+     "id": "a1u3",
+     "title": "Comida e bebida"
+    },
+    {
+     "id": "a1u4",
+     "title": "A casa"
+    },
+    {
+     "id": "a1u5",
+     "title": "Rotina diária"
+    },
+    {
+     "id": "a1u6",
+     "title": "Na cidade"
+    },
+    {
+     "id": "a1u7",
+     "title": "Compras"
+    },
+    {
+     "id": "a1u8",
+     "title": "Tempo e clima"
+    },
+    {
+     "id": "a1u9",
+     "title": "Tempo livre"
+    },
+    {
+     "id": "a1u10",
+     "title": "Primeira viagem"
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "name": "Básico",
+   "units": [
+    {
+     "id": "a2u1",
+     "title": "O que você fez hoje"
+    },
+    {
+     "id": "a2u2",
+     "title": "Histórias do passado"
+    },
+    {
+     "id": "a2u3",
+     "title": "Como era antes"
+    },
+    {
+     "id": "a2u4",
+     "title": "Saúde e corpo"
+    },
+    {
+     "id": "a2u5",
+     "title": "Trabalho e estudos"
+    },
+    {
+     "id": "a2u6",
+     "title": "Planos e futuro"
+    },
+    {
+     "id": "a2u7",
+     "title": "Receitas e restaurantes"
+    },
+    {
+     "id": "a2u8",
+     "title": "Viagens e hotéis"
+    },
+    {
+     "id": "a2u9",
+     "title": "Comparações"
+    },
+    {
+     "id": "a2u10",
+     "title": "Pedidos e conselhos"
+    }
+   ]
+  },
+  {
+   "id": "B1",
+   "name": "Intermediário",
+   "units": [
+    {
+     "id": "b1u1",
+     "title": "Desejos e esperanças"
+    },
+    {
+     "id": "b1u2",
+     "title": "Opiniões e debates"
+    },
+    {
+     "id": "b1u3",
+     "title": "Notícias"
+    },
+    {
+     "id": "b1u4",
+     "title": "Hipóteses"
+    },
+    {
+     "id": "b1u5",
+     "title": "Contar o que outros disseram"
+    },
+    {
+     "id": "b1u6",
+     "title": "Meio ambiente"
+    },
+    {
+     "id": "b1u7",
+     "title": "Entrevistas de emprego"
+    },
+    {
+     "id": "b1u8",
+     "title": "Cultura de língua inglesa"
+    },
+    {
+     "id": "b1u9",
+     "title": "Tecnologia"
+    },
+    {
+     "id": "b1u10",
+     "title": "Emoções e relações"
+    }
+   ]
+  },
+  {
+   "id": "B2",
+   "name": "Avançado",
+   "units": [
+    {
+     "id": "b2u1",
+     "title": "Se eu tivesse…"
+    },
+    {
+     "id": "b2u2",
+     "title": "Arrependimentos"
+    },
+    {
+     "id": "b2u3",
+     "title": "Argumentar bem"
+    },
+    {
+     "id": "b2u4",
+     "title": "Registro formal"
+    },
+    {
+     "id": "b2u5",
+     "title": "Expressões idiomáticas"
+    },
+    {
+     "id": "b2u6",
+     "title": "Economia"
+    },
+    {
+     "id": "b2u7",
+     "title": "Sociedade"
+    },
+    {
+     "id": "b2u8",
+     "title": "Ciência"
+    },
+    {
+     "id": "b2u9",
+     "title": "Literatura"
+    },
+    {
+     "id": "b2u10",
+     "title": "O inglês pelo mundo"
+    }
+   ]
+  }
+ ]
+}

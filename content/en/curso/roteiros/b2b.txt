@@ -1,0 +1,481 @@
+// B2 — unidades 6 a 10 (inglês)
+
+# b2u6 | Economia | Finanças pessoais, empresas, mercado, inflação e impostos.
+
+## Finanças pessoais | "To save" é economizar; "savings", poupança; "mortgage", financiamento imobiliário; "loan", empréstimo; "debt", dívida; "to be broke", estar sem dinheiro.
+v to save = economizar; savings = economias, poupança; mortgage = financiamento imobiliário; loan = empréstimo; debt = dívida; to be broke = estar duro; budget = orçamento
+f I'm trying to [save] money for a trip. = Estou tentando economizar dinheiro para uma viagem. ~ spare, safe
+f They took out a [mortgage] to buy the house. = Eles fizeram um financiamento para comprar a casa. ~ debt, savings
+b I can't go out tonight, I'm broke. = Não posso sair hoje, estou duro.
+b We need to make a monthly budget. = Precisamos fazer um orçamento mensal.
+l She paid off all her debts last year. = Ela quitou todas as dívidas no ano passado. ~ Ela fez novas dívidas no ano passado. | Ela vai quitar as dívidas no ano que vem.
+q Você pegou dinheiro no banco e vai pagar em parcelas. O que você tem? = A loan | Savings | A budget
+
+## Empresas e mercado | "Company" ou "firm" é empresa; "profit", lucro; "loss", prejuízo; "revenue", receita; "shareholder", acionista; "stock market", bolsa de valores; "startup", empresa nova.
+v profit = lucro; loss = prejuízo; revenue = receita, faturamento; shareholder = acionista; stock market = bolsa de valores; to invest = investir; growth = crescimento
+f The company made a [profit] of two million. = A empresa teve um lucro de dois milhões. ~ loss of, revenue of
+f I want to [invest] in the stock market. = Quero investir na bolsa de valores. ~ invent, spend in
+b The firm reported losses this quarter. = A empresa registrou prejuízo neste trimestre.
+b Shareholders are worried about the results. = Os acionistas estão preocupados com os resultados.
+l Revenue grew by fifteen percent. = A receita cresceu quinze por cento. ~ A receita caiu quinze por cento. | O lucro cresceu cinquenta por cento.
+q A empresa gastou mais do que ganhou. O que ela teve? = A loss | A profit | Growth
+
+## Crise e inflação | "Inflation" é a alta geral dos preços; "recession", recessão; "unemployment", desemprego; "interest rates", taxa de juros; "cost of living", custo de vida.
+v inflation = inflação; recession = recessão; unemployment = desemprego; interest rates = taxa de juros; cost of living = custo de vida; to rise = subir; to fall = cair
+f [Inflation] reached ten percent last year. = A inflação chegou a dez por cento no ano passado. ~ Interest, Inflate
+f The central bank raised interest [rates]. = O banco central subiu a taxa de juros. ~ taxes, rating
+b Unemployment is falling slowly. = O desemprego está caindo lentamente.
+b The country is in a recession. = O país está em recessão.
+l The cost of living has risen sharply. = O custo de vida subiu muito. ~ O custo de vida caiu muito. | O custo de vida está estável.
+q Os preços de tudo sobem todo mês. Qual é o problema? = Inflation | Unemployment | Profit
+
+## Consumo e comércio | "Consumer" é consumidor; "supply and demand", oferta e procura; "imports/exports", importações/exportações; "to afford", ter dinheiro para; "bargain", pechincha.
+v consumer = consumidor; supply and demand = oferta e procura; exports = exportações; imports = importações; to afford = ter condições de pagar; bargain = pechincha; brand = marca
+f I can't [afford] a new car. = Não tenho dinheiro para um carro novo. ~ effort, buy for
+f Brazil's main [exports] are soy and iron. = As principais exportações do Brasil são soja e ferro. ~ imports, exits
+b Prices depend on supply and demand. = Os preços dependem da oferta e da procura.
+b At that price, it's a real bargain. = Por esse preço, é uma verdadeira pechincha.
+l Consumers prefer cheaper brands during a crisis. = Os consumidores preferem marcas mais baratas durante uma crise. ~ Os consumidores preferem marcas caras durante uma crise. | As empresas preferem marcas baratas.
+q Você encontrou um sofá ótimo pela metade do preço. O que diz? = It's a bargain! | I can't afford it. | It's an export.
+
+## Impostos e serviços públicos | "Taxes" são impostos; "income tax", imposto de renda; "tax return", declaração de imposto; "public services", serviços públicos; "welfare", assistência social.
+v taxes = impostos; income tax = imposto de renda; tax return = declaração de imposto; public services = serviços públicos; welfare = assistência social; to fund = financiar; pension = aposentadoria
+f I have to file my tax [return] this week. = Tenho que entregar minha declaração de imposto nesta semana. ~ back, form tax
+f Taxes [fund] public services. = Os impostos financiam os serviços públicos. ~ found, fun
+b Income tax is higher for the rich. = O imposto de renda é mais alto para os ricos.
+b The government will raise taxes next year. = O governo vai aumentar os impostos no ano que vem.
+l Many people worry about their pension. = Muitas pessoas se preocupam com a aposentadoria. ~ Poucas pessoas pensam na aposentadoria. | Muitas pessoas se preocupam com o imposto.
+q Você precisa informar à Receita quanto ganhou no ano. O que faz? = I file my tax return. | I fund welfare. | I raise taxes.
+
+### frases
+fr I'm saving money to buy an apartment. = Estou economizando para comprar um apartamento.
+fr They're paying a thirty-year mortgage. = Eles estão pagando um financiamento de trinta anos.
+fr The company made a big profit despite the crisis. = A empresa teve um grande lucro apesar da crise.
+fr Inflation has [risen] for six months in a row. = A inflação subiu por seis meses seguidos. ~ raised, rose
+fr High interest rates make loans more expensive. = Juros altos deixam os empréstimos mais caros.
+fr Many families can't afford basic food anymore. = Muitas famílias não conseguem mais pagar alimentos básicos.
+fr Prices are determined by supply and demand. = Os preços são determinados pela oferta e pela procura.
+fr I have to [file] my tax return before April. = Tenho que entregar minha declaração de imposto antes de abril. ~ fill, feel
+fr Taxes are used to fund schools and hospitals. = Os impostos são usados para financiar escolas e hospitais.
+fr If you save a little every month, you'll have a good pension. = Se você economizar um pouco todo mês, vai ter uma boa aposentadoria.
+
+### texto | Conversa sobre dinheiro
+t Lucy | I need some advice. I'm always broke at the end of the month. = Preciso de um conselho. Estou sempre dura no fim do mês.
+t Ethan | Do you have a budget? = Você tem um orçamento?
+t Lucy | Not really. I just spend and hope for the best. = Na verdade, não. Só gasto e torço pelo melhor.
+t Ethan | That's the problem. First, write down all your expenses for a month. = Esse é o problema. Primeiro, anote todos os seus gastos por um mês.
+t Lucy | OK. And then? = Tá. E depois?
+t Ethan | Then decide how much you can save. Even ten percent makes a difference. = Depois decida quanto pode economizar. Até dez por cento faz diferença.
+t Lucy | But with inflation, everything is so expensive! = Mas com a inflação, tudo está tão caro!
+t Ethan | I know. That's why it's important to compare prices and look for bargains. = Eu sei. Por isso é importante comparar preços e procurar pechinchas.
+t Lucy | I also have a credit card debt. = Também tenho uma dívida no cartão de crédito.
+t Ethan | Pay that first. Credit card interest rates are the highest. = Pague isso primeiro. Os juros do cartão de crédito são os mais altos.
+t Lucy | Should I invest in the stock market? = Devo investir na bolsa?
+t Ethan | Only after you pay your debts and have some savings. = Só depois de pagar as dívidas e ter alguma poupança.
+tq Qual é o problema da Lucy? = Está sempre sem dinheiro no fim do mês | Ganha pouco | Perdeu o emprego
+tq Qual é o primeiro conselho do Ethan? = Anotar todos os gastos por um mês | Investir na bolsa | Pedir um empréstimo
+tq O que a Lucy deve pagar primeiro? = A dívida do cartão de crédito | O aluguel | O financiamento
+tq Quando ela deve investir na bolsa? = Depois de pagar as dívidas e ter poupança | Agora mesmo | Nunca
+
+### leitura | A economia das pequenas coisas
+n Behavioral economists study how people really make decisions about money. = Economistas comportamentais estudam como as pessoas realmente tomam decisões sobre dinheiro.
+n Traditional economics assumed that consumers always acted rationally. = A economia tradicional supunha que os consumidores sempre agiam de forma racional.
+n However, research shows that emotions influence most of our choices. = No entanto, pesquisas mostram que as emoções influenciam a maioria das nossas escolhas.
+n For example, we feel the pain of a loss more strongly than the pleasure of a gain. = Por exemplo, sentimos a dor de uma perda com mais força que o prazer de um ganho.
+n That's why many investors keep bad stocks for too long. = É por isso que muitos investidores mantêm ações ruins por tempo demais.
+n Another common mistake is ignoring small daily expenses. = Outro erro comum é ignorar pequenos gastos diários.
+n A coffee every morning may seem cheap, but it adds up to hundreds of dollars a year. = Um café toda manhã pode parecer barato, mas soma centenas de dólares por ano.
+n Stores also use our psychology: prices ending in .99 seem much lower. = As lojas também usam nossa psicologia: preços terminados em ,99 parecem muito mais baixos.
+n Free shipping makes us buy more, even when the total is higher. = Frete grátis nos faz comprar mais, mesmo quando o total é mais alto.
+n Some governments now use these ideas to encourage people to save. = Alguns governos agora usam essas ideias para incentivar as pessoas a poupar.
+n In some countries, workers are automatically enrolled in pension plans. = Em alguns países, os trabalhadores são inscritos automaticamente em planos de aposentadoria.
+n As a result, many more people save for the future without even thinking about it. = Como resultado, muito mais pessoas poupam para o futuro sem nem pensar nisso.
+tq O que a economia tradicional supunha? = Que os consumidores agiam racionalmente | Que as emoções decidiam tudo | Que ninguém poupava
+tq O que sentimos com mais força? = A dor de uma perda | O prazer de um ganho | Os dois igualmente
+tq Como alguns governos incentivam a poupança? = Inscrevendo trabalhadores automaticamente em planos | Aumentando impostos | Proibindo o crédito
+tv Pequenos gastos diários não fazem diferença no fim do ano. = F
+tv Preços terminados em ,99 parecem mais baixos. = V
+
+# b2u7 | Sociedade | Desigualdade, migração, igualdade de gênero, envelhecimento e participação.
+
+## Desigualdade | "Inequality" é desigualdade; "gap", diferença, abismo; "poverty", pobreza; "wealth", riqueza; "the poor/the rich", os pobres/os ricos; "access to", acesso a.
+v inequality = desigualdade; gap = abismo, diferença; poverty = pobreza; wealth = riqueza; access to = acesso a; opportunities = oportunidades; to reduce = reduzir
+f The [gap] between rich and poor is growing. = O abismo entre ricos e pobres está crescendo. ~ gape, gate
+f Millions of people live in [poverty]. = Milhões de pessoas vivem na pobreza. ~ poor, wealth
+b Education reduces inequality. = A educação reduz a desigualdade.
+b Not everyone has access to clean water. = Nem todos têm acesso a água potável.
+l Wealth is concentrated in very few hands. = A riqueza está concentrada em muito poucas mãos. ~ A riqueza está bem distribuída. | A pobreza está concentrada em poucas regiões.
+q Qual é o oposto de "poverty"? = Wealth | Gap | Access
+
+## Migração | "To emigrate" é sair do país; "to immigrate", chegar a outro; "immigrant", imigrante; "refugee", refugiado; "integration", integração; "to settle", estabelecer-se.
+v to emigrate = emigrar; immigrant = imigrante; refugee = refugiado; integration = integração; to settle = estabelecer-se; border = fronteira; homeland = terra natal
+f My grandparents [emigrated] from Italy in 1950. = Meus avós emigraram da Itália em 1950. ~ immigrated from to, emigrate
+f Many [refugees] crossed the border. = Muitos refugiados cruzaram a fronteira. ~ refuges, borders
+b They settled in a small town in the south. = Eles se estabeleceram numa cidadezinha no sul.
+b Language is key to integration. = A língua é essencial para a integração.
+l Immigrants contribute a lot to the economy. = Os imigrantes contribuem muito para a economia. ~ Os imigrantes não contribuem para a economia. | Os emigrantes saem por causa da economia.
+q Uma pessoa foge da guerra e pede proteção em outro país. Como ela é chamada? = A refugee | A tourist | An emigrant tourist
+
+## Igualdade de gênero | "Gender equality" é igualdade de gênero; "pay gap", diferença salarial; "parental leave", licença parental; "glass ceiling", teto de vidro (barreira invisível); "to discriminate", discriminar.
+v gender equality = igualdade de gênero; pay gap = diferença salarial; parental leave = licença parental; glass ceiling = teto de vidro; to discriminate = discriminar; leadership = liderança; rights = direitos
+f Women still face a [pay] gap. = As mulheres ainda enfrentam diferença salarial. ~ paid, wage of
+f Fathers should also take parental [leave]. = Os pais também deveriam tirar licença parental. ~ live, left
+b Few women reach leadership positions. = Poucas mulheres chegam a cargos de liderança.
+b It's illegal to discriminate against workers. = É ilegal discriminar trabalhadores.
+l She broke the glass ceiling in her company. = Ela quebrou o teto de vidro na empresa dela. ~ Ela quebrou uma janela na empresa. | Ela não conseguiu promoção na empresa.
+q Homem e mulher fazem o mesmo trabalho, mas ela ganha menos. Como se chama isso? = The pay gap | Parental leave | Integration
+
+## Envelhecimento | "Aging population" é população envelhecida; "birth rate", taxa de natalidade; "life expectancy", expectativa de vida; "the elderly", os idosos; "caregiver", cuidador; "retirement", aposentadoria.
+v aging population = população envelhecida; birth rate = taxa de natalidade; life expectancy = expectativa de vida; the elderly = os idosos; caregiver = cuidador; retirement = aposentadoria; to retire = aposentar-se
+f The [birth] rate is falling in many countries. = A taxa de natalidade está caindo em muitos países. ~ born, birthday
+f Life [expectancy] has increased a lot. = A expectativa de vida aumentou muito. ~ expectation, hope
+b Many countries have an aging population. = Muitos países têm uma população envelhecida.
+b My aunt works as a caregiver for the elderly. = Minha tia trabalha como cuidadora de idosos.
+l People are retiring later than before. = As pessoas estão se aposentando mais tarde do que antes. ~ As pessoas estão se aposentando mais cedo do que antes. | As pessoas estão trabalhando menos do que antes.
+q Nascem menos bebês e as pessoas vivem mais. Qual é a consequência? = An aging population | A higher birth rate | Less retirement
+
+## Participação | "Volunteering" é trabalho voluntário; "NGO", ONG; "to vote", votar; "protest", manifestação; "community", comunidade; "to make a difference", fazer a diferença; "citizen", cidadão.
+v volunteering = voluntariado; NGO = ONG; to vote = votar; protest = protesto; community = comunidade; to make a difference = fazer a diferença; citizen = cidadão
+f I do [volunteer] work on weekends. = Faço trabalho voluntário nos fins de semana. ~ volunteering, voluntary of
+f Every citizen should [vote]. = Todo cidadão deveria votar. ~ voting, vow
+b She works for an NGO that helps children. = Ela trabalha para uma ONG que ajuda crianças.
+b Thousands of people joined the protest. = Milhares de pessoas participaram do protesto.
+l Small actions can make a big difference. = Pequenas ações podem fazer uma grande diferença. ~ Grandes ações não fazem diferença. | Pequenas ações não mudam nada.
+q Você ajuda num abrigo de animais sem receber salário. O que você faz? = Volunteer work | A protest | Voting
+
+### frases
+fr Inequality is one of the biggest challenges of our society. = A desigualdade é um dos maiores desafios da nossa sociedade.
+fr Millions of people still don't have access to basic health care. = Milhões de pessoas ainda não têm acesso a saúde básica.
+fr My great-grandparents emigrated from Japan and settled in São Paulo. = Meus bisavós emigraram do Japão e se estabeleceram em São Paulo.
+fr Learning the language is essential for [integration]. = Aprender a língua é essencial para a integração. ~ integrate, integrated
+fr Women still earn less than men for the same job. = As mulheres ainda ganham menos que os homens pelo mesmo trabalho.
+fr More and more fathers are taking parental leave. = Cada vez mais pais estão tirando licença parental.
+fr The birth rate has fallen and the population is aging. = A taxa de natalidade caiu e a população está envelhecendo.
+fr Life [expectancy] in Japan is among the highest in the world. = A expectativa de vida no Japão está entre as mais altas do mundo. ~ expectation, hope
+fr Volunteering is a great way to meet people and help others. = O voluntariado é uma ótima forma de conhecer pessoas e ajudar os outros.
+fr If every citizen did a little, we could make a big difference. = Se cada cidadão fizesse um pouco, poderíamos fazer uma grande diferença.
+
+### texto | O projeto do bairro
+t Maya | Did you hear about the new community project? = Você ouviu falar do novo projeto comunitário?
+t Leo | No, what is it? = Não, o que é?
+t Maya | Young volunteers will visit elderly neighbors who live alone. = Jovens voluntários vão visitar vizinhos idosos que moram sozinhos.
+t Leo | That's a great idea. Loneliness is a serious problem. = Que ótima ideia. A solidão é um problema sério.
+t Maya | Exactly. With an aging population, there are more people living alone. = Exatamente. Com a população envelhecendo, há mais gente morando sozinha.
+t Leo | What do the volunteers do? = O que os voluntários fazem?
+t Maya | They chat, help with shopping, and teach them to use their phones. = Conversam, ajudam com as compras e ensinam a usar o celular.
+t Leo | And who organizes it? = E quem organiza?
+t Maya | A local NGO, with support from the city council. = Uma ONG local, com apoio da prefeitura.
+t Leo | I'd like to help. Do you need any special training? = Eu gostaria de ajudar. Precisa de algum treinamento especial?
+t Maya | Just a two-hour course. They say the benefit is mutual. = Só um curso de duas horas. Dizem que o benefício é mútuo.
+t Leo | Sign me up. I think it could really make a difference. = Me inscreva. Acho que pode realmente fazer a diferença.
+tq Quem os voluntários vão visitar? = Vizinhos idosos que moram sozinhos | Crianças | Imigrantes
+tq O que os voluntários fazem? = Conversam, ajudam com compras e ensinam a usar o celular | Limpam as casas | Cozinham
+tq Quem organiza o projeto? = Uma ONG local com apoio da prefeitura | Uma empresa | A escola
+tq O que é preciso para ser voluntário? = Um curso de duas horas | Um diploma | Experiência profissional
+
+### leitura | Avós e netos num mesmo prédio
+n In a Dutch city, an unusual housing project has attracted international attention. = Numa cidade holandesa, um projeto de moradia incomum atraiu atenção internacional.
+n University students live for free in a nursing home. = Estudantes universitários moram de graça numa casa de repouso.
+n In exchange, they spend at least thirty hours a month with the elderly residents. = Em troca, passam pelo menos trinta horas por mês com os moradores idosos.
+n They watch soccer together, cook, celebrate birthdays and simply talk. = Assistem a futebol juntos, cozinham, comemoram aniversários e simplesmente conversam.
+n The idea emerged as a response to two problems: loneliness among the elderly and expensive housing for students. = A ideia surgiu como resposta a dois problemas: a solidão dos idosos e a moradia cara para estudantes.
+n According to the director, the residents' mood has improved significantly. = Segundo a diretora, o humor dos moradores melhorou significativamente.
+n Some of them had not had visitors for months before the project began. = Alguns deles não recebiam visitas havia meses antes de o projeto começar.
+n The students also say they have learned a lot. = Os estudantes também dizem que aprenderam muito.
+n One of them explains that the residents taught him patience and gave him a new view of life. = Um deles explica que os moradores lhe ensinaram paciência e lhe deram uma nova visão da vida.
+n Not everything is easy: sometimes a resident dies, and the young people have to deal with grief. = Nem tudo é fácil: às vezes um morador morre, e os jovens precisam lidar com o luto.
+n Despite this, similar projects have appeared in Spain, France and the United States. = Apesar disso, projetos parecidos surgiram na Espanha, na França e nos Estados Unidos.
+n Experts believe that bringing generations together benefits the whole of society. = Especialistas acreditam que aproximar as gerações beneficia a sociedade como um todo.
+tq O que os estudantes recebem? = Moradia gratuita | Um salário | Uma bolsa de estudos
+tq Que dois problemas o projeto tenta resolver? = A solidão dos idosos e a moradia cara para estudantes | O desemprego e a violência | A poluição e o trânsito
+tq O que é difícil para os jovens às vezes? = Lidar com o luto quando um morador morre | Cozinhar | Acordar cedo
+tv Os estudantes passam só duas horas por mês com os idosos. = F
+tv Projetos parecidos surgiram em outros países. = V
+
+# b2u8 | Ciência | Método científico, saúde, espaço, inteligência artificial e divulgação científica.
+
+## O método científico | "Hypothesis" é hipótese; "experiment", experimento; "research", pesquisa (incontável); "researcher", pesquisador; "evidence", evidência, provas; "findings", resultados; "to prove", provar.
+v hypothesis = hipótese; experiment = experimento; research = pesquisa; researcher = pesquisador; evidence = evidências; findings = resultados, descobertas; to prove = provar
+f There's no [evidence] that it works. = Não há evidências de que funcione. ~ evidences, proof of
+f The [researchers] published their findings. = Os pesquisadores publicaram seus resultados. ~ researches, searchers
+b They did an experiment to test the hypothesis. = Fizeram um experimento para testar a hipótese.
+b More research is needed. = É necessária mais pesquisa.
+l The results prove the hypothesis was wrong. = Os resultados provam que a hipótese estava errada. ~ Os resultados provam que a hipótese estava certa. | Não há resultados sobre a hipótese.
+q Atenção: qual frase está correta? = I'm doing research on bees. | I'm doing a researches on bees. | I'm doing researchs on bees.
+
+## Saúde e medicina | "Vaccine" é vacina; "clinical trial", ensaio clínico; "treatment", tratamento; "side effects", efeitos colaterais; "cure", cura; "disease", doença.
+v vaccine = vacina; clinical trial = ensaio clínico; treatment = tratamento; side effects = efeitos colaterais; cure = cura; disease = doença; breakthrough = avanço, descoberta importante
+f The new [vaccine] is safe and effective. = A nova vacina é segura e eficaz. ~ vacation, vaccinate
+f There is still no [cure] for this disease. = Ainda não há cura para essa doença. ~ care, cured
+b The clinical trial lasted three years. = O ensaio clínico durou três anos.
+b The treatment has few side effects. = O tratamento tem poucos efeitos colaterais.
+l It's a major breakthrough in cancer research. = É um grande avanço na pesquisa sobre câncer. ~ É um grande fracasso na pesquisa sobre câncer. | É uma pequena descoberta na pesquisa sobre câncer.
+q Antes de ser aprovado, um remédio é testado em voluntários. Como se chama isso? = A clinical trial | A side effect | A cure
+
+## O espaço | "Space" é o espaço; "planet", planeta; "spacecraft", nave espacial; "astronaut", astronauta; "orbit", órbita; "telescope", telescópio; "to launch", lançar.
+v space = espaço; planet = planeta; spacecraft = nave espacial; astronaut = astronauta; orbit = órbita; telescope = telescópio; to launch = lançar
+f The rocket was [launched] this morning. = O foguete foi lançado hoje de manhã. ~ lunched, launch
+f The satellite is in [orbit] around the Earth. = O satélite está em órbita ao redor da Terra. ~ space, planet
+b The telescope discovered a new planet. = O telescópio descobriu um novo planeta.
+b Astronauts live on the space station for months. = Os astronautas vivem na estação espacial por meses.
+l One day, humans will live on Mars. = Um dia, os humanos vão viver em Marte. ~ Os humanos já vivem em Marte. | Os humanos nunca vão chegar a Marte.
+q Qual instrumento se usa para observar estrelas distantes? = A telescope | A spacecraft | An orbit
+
+## Inteligência artificial | "Artificial intelligence" (AI) é inteligência artificial; "algorithm", algoritmo; "data", dados; "machine learning", aprendizado de máquina; "to train", treinar; "bias", viés.
+v artificial intelligence = inteligência artificial; algorithm = algoritmo; data = dados; machine learning = aprendizado de máquina; to train = treinar; bias = viés; privacy = privacidade
+f The [algorithm] decides what we see online. = O algoritmo decide o que vemos na internet. ~ algebra, logarithm
+f AI models are trained on huge amounts of [data]. = Modelos de IA são treinados com enormes quantidades de dados. ~ dates, datas
+b Some algorithms can have bias. = Alguns algoritmos podem ter viés.
+b Privacy is a growing concern. = A privacidade é uma preocupação crescente.
+l Machine learning is used in medicine. = O aprendizado de máquina é usado na medicina. ~ O aprendizado de máquina é proibido na medicina. | A medicina não usa computadores.
+q Um sistema de IA prejudica um grupo porque aprendeu com dados desequilibrados. Qual é o problema? = Bias | Privacy | Orbit
+
+## Divulgação científica | Para relatar ciência: "According to a study..." (segundo um estudo), "scientists have found that..." (cientistas descobriram que), "it is believed that..." (acredita-se que), "the study suggests..." (o estudo sugere).
+v according to a study = segundo um estudo; scientists have found = cientistas descobriram; it is believed that = acredita-se que; the study suggests = o estudo sugere; peer-reviewed = revisado por pares; sample = amostra; reliable = confiável
+f [According] to a recent study, sleep improves memory. = Segundo um estudo recente, o sono melhora a memória. ~ Accorded, Agree
+f The study [suggests] a link between diet and mood. = O estudo sugere uma relação entre dieta e humor. ~ proves totally, suggest
+b Scientists have found water on the moon. = Cientistas descobriram água na lua.
+b The sample was too small to be reliable. = A amostra era pequena demais para ser confiável.
+l The article was published in a peer-reviewed journal. = O artigo foi publicado numa revista revisada por pares. ~ O artigo foi publicado num blog. | O artigo não foi revisado.
+q Um estudo com apenas 10 pessoas diz que café cura tudo. O que você pensa? = The sample is too small to be reliable. | It's a proven fact. | It's a breakthrough.
+
+### frases
+fr The researchers did several experiments to test their hypothesis. = Os pesquisadores fizeram vários experimentos para testar a hipótese.
+fr There's no scientific evidence that this diet works. = Não há evidência científica de que esta dieta funcione.
+fr The new vaccine was tested in a clinical trial with thousands of volunteers. = A nova vacina foi testada num ensaio clínico com milhares de voluntários.
+fr The [treatment] has very few side effects. = O tratamento tem pouquíssimos efeitos colaterais. ~ treat, treating
+fr The space telescope has sent incredible images of distant galaxies. = O telescópio espacial enviou imagens incríveis de galáxias distantes.
+fr Artificial intelligence is changing the way we work. = A inteligência artificial está mudando a forma como trabalhamos.
+fr Algorithms can reproduce the bias in their training data. = Algoritmos podem reproduzir o viés dos dados de treinamento.
+fr [According] to the study, people who sleep less get sick more often. = Segundo o estudo, pessoas que dormem menos ficam doentes com mais frequência. ~ Accorded, Agree
+fr It is believed that there may be life on other planets. = Acredita-se que possa haver vida em outros planetas.
+fr Always check if a study is peer-reviewed before sharing it. = Sempre verifique se um estudo é revisado por pares antes de compartilhar.
+
+### texto | Entrevista com uma cientista
+t Host | Dr. Patel, what is your research about? = Dra. Patel, sobre o que é sua pesquisa?
+t Dr. Patel | I study how sleep affects memory. = Estudo como o sono afeta a memória.
+t Host | And what have you found? = E o que a senhora descobriu?
+t Dr. Patel | Our findings suggest that the brain organizes memories while we sleep. = Nossos resultados sugerem que o cérebro organiza as memórias enquanto dormimos.
+t Host | How did you test that hypothesis? = Como a senhora testou essa hipótese?
+t Dr. Patel | We asked two groups to learn a list of words. One group slept and the other stayed awake. = Pedimos a dois grupos que aprendessem uma lista de palavras. Um grupo dormiu e o outro ficou acordado.
+t Host | And the results? = E os resultados?
+t Dr. Patel | The group that slept remembered forty percent more words. = O grupo que dormiu lembrou quarenta por cento mais palavras.
+t Host | That's impressive. Is the evidence reliable? = Impressionante. As evidências são confiáveis?
+t Dr. Patel | Yes, the study was peer-reviewed, but we need larger samples. = Sim, o estudo foi revisado por pares, mas precisamos de amostras maiores.
+t Host | What's your advice for students? = Qual é seu conselho para os estudantes?
+t Dr. Patel | Don't stay up all night before an exam. Sleep is part of learning. = Não passem a noite em claro antes de uma prova. O sono faz parte do aprendizado.
+tq Sobre o que é a pesquisa da Dra. Patel? = Como o sono afeta a memória | Vacinas | Inteligência artificial
+tq Quantos grupos participaram? = Dois | Um | Cinco
+tq Quanto a mais o grupo que dormiu lembrou? = Quarenta por cento | Dez por cento | O dobro
+tq Qual é o conselho dela? = Não passar a noite em claro antes de uma prova | Estudar à noite | Tomar café
+
+### leitura | O que a ciência sabe sobre aprender idiomas
+n For decades, people believed that only children could learn languages well. = Por décadas, acreditou-se que só as crianças conseguiam aprender bem uma língua.
+n Recent research suggests that this idea is only partly true. = Pesquisas recentes sugerem que essa ideia é só parcialmente verdadeira.
+n Children usually achieve a more native-like accent. = As crianças geralmente conseguem um sotaque mais parecido com o nativo.
+n However, adults often learn grammar and vocabulary faster at the beginning. = No entanto, os adultos muitas vezes aprendem gramática e vocabulário mais rápido no início.
+n According to several studies, the key factor is not age, but exposure. = Segundo vários estudos, o fator principal não é a idade, mas a exposição.
+n The more hours we spend listening and speaking, the more we learn. = Quanto mais horas passamos ouvindo e falando, mais aprendemos.
+n Scientists have also found that sleep helps the brain store new words. = Cientistas também descobriram que o sono ajuda o cérebro a armazenar palavras novas.
+n Another finding is that spaced repetition is much more effective than cramming. = Outra descoberta é que a repetição espaçada é muito mais eficaz do que estudar tudo de uma vez.
+n Reviewing a word after one day, then after a week, then after a month makes it stick. = Revisar uma palavra depois de um dia, depois de uma semana e depois de um mês faz com que ela fique.
+n Emotions matter too: we remember better what we find interesting or funny. = As emoções também importam: lembramos melhor o que achamos interessante ou engraçado.
+n Learning a second language may even protect the brain as we age. = Aprender uma segunda língua pode até proteger o cérebro com o envelhecimento.
+n In short, it's never too late to start, as long as you practice regularly. = Em resumo, nunca é tarde para começar, desde que você pratique com regularidade.
+tq Em que as crianças costumam ser melhores? = No sotaque | Na gramática | No vocabulário
+tq Qual é o fator principal, segundo os estudos? = A exposição | A idade | O talento
+tq O que é mais eficaz que estudar tudo de uma vez? = A repetição espaçada | Estudar à noite | Ler o dicionário
+tv O texto diz que adultos não conseguem aprender línguas. = F
+tv O sono ajuda a armazenar palavras novas. = V
+
+# b2u9 | Literatura | Gêneros, falar de livros, autores de língua inglesa e figuras de linguagem.
+
+## Gêneros literários | Falso amigo: "novel" é romance (livro), não novela de TV ("soap opera"). "Short story" é conto; "poetry", poesia; "play", peça de teatro; "fiction/non-fiction", ficção/não ficção.
+v novel = romance; short story = conto; poetry = poesia; play = peça de teatro; fiction = ficção; non-fiction = não ficção; biography = biografia
+f I'm reading a [novel] by Jane Austen. = Estou lendo um romance de Jane Austen. ~ soap opera, novelty
+f Shakespeare wrote many [plays]. = Shakespeare escreveu muitas peças. ~ games, plates
+b I prefer non-fiction, like biographies. = Prefiro não ficção, como biografias.
+b This book is a collection of short stories. = Este livro é uma coletânea de contos.
+l Poetry is hard to translate. = Poesia é difícil de traduzir. ~ Poesia é fácil de traduzir. | Romances são difíceis de traduzir.
+q Cuidado com o falso amigo: como se diz "novela" (de TV) em inglês? = Soap opera | Novel | Short story
+
+## Falar de um livro | Para comentar: "It's about..." (é sobre), "it's set in..." (se passa em), "the main character" (o protagonista), "the plot" (o enredo), "a page-turner" (um livro que prende), "the ending" (o final).
+v it's about = é sobre; it's set in = se passa em; main character = protagonista; plot = enredo; ending = final; page-turner = livro que prende; spoiler = spoiler
+f The novel is [set] in London in 1890. = O romance se passa em Londres em 1890. ~ sat, placed in
+f The [plot] is very complicated. = O enredo é muito complicado. ~ plant, plate
+b The main character is a young detective. = O protagonista é um jovem detetive.
+b It's a real page-turner. = É um livro que prende do começo ao fim.
+l I didn't like the ending at all. = Não gostei nada do final. ~ Adorei o final. | Não gostei do começo.
+q Alguém pergunta sobre o que é o livro. Como você começa? = It's about a family that... | It's set... | It's an ending of...
+
+## Autores de língua inglesa | Shakespeare (Inglaterra, séc. XVI–XVII) escreveu "Hamlet" e "Romeu e Julieta". Jane Austen escreveu "Orgulho e Preconceito". Mark Twain, Toni Morrison e Margaret Atwood são outros grandes nomes.
+v playwright = dramaturgo; author = autor; masterpiece = obra-prima; classic = clássico; to publish = publicar; Nobel Prize = Prêmio Nobel; century = século
+f Shakespeare was an English [playwright]. = Shakespeare foi um dramaturgo inglês. ~ player, playwrite
+f "Pride and Prejudice" was [published] in 1813. = "Orgulho e Preconceito" foi publicado em 1813. ~ publicated, public
+b Toni Morrison won the Nobel Prize in 1993. = Toni Morrison ganhou o Prêmio Nobel em 1993.
+b "Hamlet" is considered a masterpiece. = "Hamlet" é considerado uma obra-prima.
+l Mark Twain is a classic of American literature. = Mark Twain é um clássico da literatura americana. ~ Mark Twain é um autor contemporâneo britânico. | Mark Twain é um poeta francês.
+q Quem escreveu "Romeu e Julieta"? = Shakespeare | Jane Austen | Mark Twain
+
+## Figuras de linguagem | "Metaphor" (metáfora): "time is money". "Simile" (comparação): "as brave as a lion". "Irony" (ironia). "Alliteration" (aliteração): "Peter Piper picked...". "Personification": "the wind whispered".
+v metaphor = metáfora; simile = comparação, símile; irony = ironia; alliteration = aliteração; personification = personificação; symbol = símbolo; image = imagem
+f "Time is money" is a [metaphor]. = "Tempo é dinheiro" é uma metáfora. ~ simile, irony
+f "As cold as ice" is a [simile]. = "Frio como gelo" é uma comparação. ~ metaphor, symbol
+b The wind whispered through the trees. = O vento sussurrava entre as árvores.
+b The dove is a symbol of peace. = A pomba é um símbolo da paz.
+l The author uses a lot of irony. = O autor usa muita ironia. ~ O autor não usa ironia. | O autor usa muitas comparações.
+q "Her eyes were stars." Que figura de linguagem é essa? = A metaphor | A simile | Alliteration
+
+## Escrever uma resenha | Para uma resenha: "What I liked most was..." (o que mais gostei foi), "I would recommend it to..." (eu recomendaria a), "it's well worth reading" (vale muito a pena ler), "it falls short" (deixa a desejar).
+v review = resenha, crítica; what I liked most = o que mais gostei; I would recommend it = eu recomendaria; worth reading = vale a pena ler; it falls short = deixa a desejar; gripping = envolvente; slow-paced = lento
+f What I liked [most] was the main character. = O que mais gostei foi o protagonista. ~ more, much
+f It's well [worth] reading. = Vale muito a pena ler. ~ worthy, worse
+b I would recommend it to young readers. = Eu recomendaria para leitores jovens.
+b The beginning is a little slow-paced. = O começo é um pouco lento.
+l The ending falls short, but the story is gripping. = O final deixa a desejar, mas a história é envolvente. ~ O final é ótimo, mas a história é chata. | O final é envolvente e a história também.
+q Você vai concluir uma resenha positiva. O que escreve? = All in all, it's well worth reading. | It falls short in every way. | I wouldn't recommend it to anyone.
+
+### frases
+fr I've just finished a novel that's set in New York in the twenties. = Acabei de terminar um romance que se passa em Nova York nos anos vinte.
+fr The plot is simple, but the characters are fascinating. = O enredo é simples, mas os personagens são fascinantes.
+fr Shakespeare wrote thirty-nine plays and more than a hundred and fifty sonnets. = Shakespeare escreveu trinta e nove peças e mais de cento e cinquenta sonetos.
+fr "Pride and Prejudice" is considered a [masterpiece]. = "Orgulho e Preconceito" é considerado uma obra-prima. ~ masterclass, master
+fr Toni Morrison was the first Black woman to win the Nobel Prize in Literature. = Toni Morrison foi a primeira mulher negra a ganhar o Prêmio Nobel de Literatura.
+fr The author uses the sea as a symbol of freedom. = O autor usa o mar como símbolo de liberdade.
+fr Don't tell me the ending, no spoilers! = Não me conte o final, nada de spoilers!
+fr It's a real [page-turner]: I read it in two days. = É um livro que prende: li em dois dias. ~ page-runner, best-turner
+fr What I liked most was the way the author describes the city. = O que mais gostei foi a forma como o autor descreve a cidade.
+fr I'd recommend it to anyone who enjoys historical fiction. = Eu recomendaria para qualquer pessoa que goste de ficção histórica.
+
+### texto | O clube de leitura
+t Anna | So, what did everyone think of "The Great Gatsby"? = Então, o que todos acharam de "O Grande Gatsby"?
+t Ben | I loved it. It's short, but every sentence is beautiful. = Adorei. É curto, mas cada frase é linda.
+t Clara | I agree. It's set in the twenties, but it feels very modern. = Concordo. Se passa nos anos vinte, mas parece muito moderno.
+t Anna | What did you think of the main character? = O que vocês acharam do protagonista?
+t Ben | Gatsby is fascinating. He's rich, but he's so lonely. = Gatsby é fascinante. É rico, mas é muito solitário.
+t Clara | And the green light is such a powerful symbol. = E a luz verde é um símbolo tão forte.
+t Anna | What does it represent for you? = O que ela representa para você?
+t Clara | His dream, the future he can never reach. = O sonho dele, o futuro que ele nunca consegue alcançar.
+t Ben | For me, the ending falls a little short. It's too sad. = Para mim, o final deixa um pouco a desejar. É triste demais.
+t Anna | Really? I think it's perfect. It shows the irony of the American dream. = Sério? Acho perfeito. Mostra a ironia do sonho americano.
+t Clara | All in all, it's well worth reading. What's next month's book? = De modo geral, vale muito a pena ler. Qual é o livro do mês que vem?
+t Anna | "To Kill a Mockingbird". Get ready for a page-turner! = "O Sol é para Todos". Preparem-se para um livro que prende!
+tq Em que época se passa "O Grande Gatsby"? = Nos anos vinte | No século XIX | Hoje
+tq Como o Ben descreve o Gatsby? = Rico, mas muito solitário | Pobre e feliz | Malvado
+tq O que a luz verde representa para a Clara? = O sonho de Gatsby | O dinheiro | A natureza
+tq O que o Ben não gostou? = Do final, triste demais | Do protagonista | Das frases
+
+### leitura | O livro que mudou minha vida
+n When I was fifteen, my English teacher gave me a copy of "To Kill a Mockingbird". = Quando eu tinha quinze anos, minha professora de inglês me deu um exemplar de "O Sol é para Todos".
+n The novel, published by Harper Lee in 1960, is set in a small town in Alabama. = O romance, publicado por Harper Lee em 1960, se passa numa cidadezinha do Alabama.
+n It's told by Scout, a young girl whose father, Atticus, is a lawyer. = É narrado por Scout, uma menina cujo pai, Atticus, é advogado.
+n Atticus defends a Black man who has been falsely accused of a crime. = Atticus defende um homem negro que foi acusado falsamente de um crime.
+n Through the eyes of a child, the book shows the injustice and racism of that time. = Pelos olhos de uma criança, o livro mostra a injustiça e o racismo daquela época.
+n What I liked most was Atticus's courage and his calm sense of justice. = O que mais gostei foi a coragem de Atticus e seu senso calmo de justiça.
+n The mockingbird of the title is a symbol of innocence. = O sabiá do título é um símbolo da inocência.
+n At first, I found the beginning a little slow-paced. = No começo, achei o início um pouco lento.
+n But after a few chapters, it became a real page-turner. = Mas depois de alguns capítulos, virou um livro que prende de verdade.
+n The book made me think about how I treat people who are different from me. = O livro me fez pensar em como trato pessoas diferentes de mim.
+n Years later, I became a lawyer, and I still have that old copy on my desk. = Anos depois, me tornei advogado, e ainda tenho aquele exemplar antigo na minha mesa.
+n I would recommend it to everyone, especially teenagers. = Eu recomendaria a todos, especialmente aos adolescentes.
+tq Quem deu o livro ao autor? = A professora de inglês | O pai | Um amigo
+tq Quem narra a história? = Scout, uma menina | Atticus | O homem acusado
+tq O que o sabiá simboliza? = A inocência | A liberdade | A justiça
+tv O autor achou o começo do livro muito rápido. = F
+tv O autor se tornou advogado. = V
+
+# b2u10 | O inglês pelo mundo | Quantos falam inglês, variedades, origem do idioma e seu papel global.
+
+## Uma língua global | O inglês tem cerca de 400 milhões de falantes nativos, mas mais de um bilhão o falam como segunda língua ou língua estrangeira. É a "lingua franca" de negócios, ciência e internet.
+v native speaker = falante nativo; second language = segunda língua; lingua franca = língua franca; worldwide = no mundo todo; official language = língua oficial; to spread = espalhar-se; global = global
+f English is spoken [worldwide]. = O inglês é falado no mundo todo. ~ worldwise, overworld
+f English is an [official] language in India. = O inglês é uma língua oficial na Índia. ~ officer, office
+b There are more non-native speakers than native speakers. = Há mais falantes não nativos do que nativos.
+b English is the lingua franca of science. = O inglês é a língua franca da ciência.
+l English spread with the British Empire. = O inglês se espalhou com o Império Britânico. ~ O inglês surgiu nos Estados Unidos. | O inglês desapareceu com o Império Britânico.
+q Num congresso, um japonês e um brasileiro conversam em inglês. Que papel o inglês cumpre? = Lingua franca | Native language | Dialect
+
+## As variedades | Há muitas variedades: americana, britânica, australiana, irlandesa, indiana, sul-africana... Diferem em sotaque, vocabulário e ortografia ("color/colour", "center/centre"). Nenhuma é mais correta.
+v variety = variedade; spelling = ortografia; pronunciation = pronúncia; vocabulary = vocabulário; dialect = dialeto; standard = padrão; correct = correto
+f "Colour" is the British [spelling]. = "Colour" é a grafia britânica. ~ spelled, speaking
+f Australians have their own [vocabulary]. = Os australianos têm um vocabulário próprio. ~ vocabularies, vocal
+b No variety is more correct than another. = Nenhuma variedade é mais correta que outra.
+b Indian English has a very particular pronunciation. = O inglês indiano tem uma pronúncia muito particular.
+l The Scottish accent can be hard to understand. = O sotaque escocês pode ser difícil de entender. ~ O sotaque escocês é muito fácil de entender. | O sotaque irlandês pode ser difícil de entender.
+q Qual destas é a grafia americana? = Color | Colour | Coloure
+
+## Contato com outras línguas | O inglês pega palavras de muitas línguas: "ketchup" (do chinês), "safari" (do suaíli), "shampoo" (do hindi), "jaguar" e "piranha" (do tupi, via português). E empresta palavras ao mundo: "e-mail", "shopping", "marketing".
+v to borrow = tomar emprestado; loanword = empréstimo linguístico; origin = origem; Tupi = tupi; to come from = vir de; Spanglish = espanglês; influence = influência
+f "Piranha" [comes] from Tupi. = "Piranha" vem do tupi. ~ come, came of
+f English has [borrowed] many words from French. = O inglês pegou emprestadas muitas palavras do francês. ~ lent, borrowing
+b "Shampoo" is a loanword from Hindi. = "Shampoo" é um empréstimo do hindi.
+b Spanglish is common in Miami. = O espanglês é comum em Miami.
+l Portuguese has a lot of English influence. = O português tem muita influência do inglês. ~ O português não tem influência do inglês. | O inglês tem muita influência do português.
+q De onde vem a palavra inglesa "jaguar"? = Do tupi | Do francês | Do alemão
+
+## A origem do inglês | O inglês é uma língua germânica, trazida para a Grã-Bretanha pelos anglos e saxões no século V. Depois de 1066, com a conquista normanda, recebeu milhares de palavras do francês e do latim.
+v Germanic = germânico; Old English = inglês antigo; Anglo-Saxons = anglo-saxões; Norman conquest = conquista normanda; Latin = latim; to evolve = evoluir; ancestor = ancestral
+f English is a [Germanic] language. = O inglês é uma língua germânica. ~ Latin, German
+f After 1066, English borrowed many words from [French]. = Depois de 1066, o inglês pegou muitas palavras do francês. ~ Greek, Tupi
+b Old English is very different from modern English. = O inglês antigo é muito diferente do inglês moderno.
+b The language evolved over many centuries. = A língua evoluiu ao longo de muitos séculos.
+l "Pig" is Germanic, but "pork" comes from French. = "Pig" é germânico, mas "pork" vem do francês. ~ "Pig" vem do francês, mas "pork" é germânico. | "Pig" e "pork" vêm do latim.
+q Que povos trouxeram o inglês para a Grã-Bretanha? = The Anglo-Saxons | The Romans | The Normans
+
+## O futuro da língua e o seu | Para fechar o curso: o inglês continua crescendo como língua global, e cada falante contribui com seu sotaque. O mais importante é se comunicar com confiança.
+v confidence = confiança; fluent = fluente; to keep practicing = continuar praticando; goal = objetivo, meta; progress = progresso; journey = jornada; to be proud of = orgulhar-se de
+f You should be [proud] of your progress. = Você deveria se orgulhar do seu progresso. ~ pride, proudly
+f Keep [practicing] every day. = Continue praticando todos os dias. ~ practice, to practice
+b Speak with confidence, even with an accent. = Fale com confiança, mesmo com sotaque.
+b Learning a language is a long journey. = Aprender uma língua é uma longa jornada.
+l My goal is to become fluent. = Minha meta é ficar fluente. ~ Já estou fluente. | Minha meta é parar de estudar.
+q Você terminou o curso B2. Qual é a melhor atitude agora? = Keep practicing and use English in real life. | Stop studying, you're done. | Forget everything.
+
+### frases
+fr More than a billion people speak English as a second language. = Mais de um bilhão de pessoas falam inglês como segunda língua.
+fr English is the lingua franca of business and science. = O inglês é a língua franca dos negócios e da ciência.
+fr British and American English differ in spelling and vocabulary. = O inglês britânico e o americano diferem na ortografia e no vocabulário.
+fr No variety of English is more [correct] than another. = Nenhuma variedade do inglês é mais correta que outra. ~ correctly, corrected
+fr Words like "jaguar" and "piranha" came into English from Tupi. = Palavras como "jaguar" e "piranha" entraram no inglês vindas do tupi.
+fr English is a Germanic language with a lot of French vocabulary. = O inglês é uma língua germânica com muito vocabulário francês.
+fr Old English is almost impossible to read without studying it. = O inglês antigo é quase impossível de ler sem estudá-lo.
+fr Your accent is part of who you are: be [proud] of it. = Seu sotaque faz parte de quem você é: tenha orgulho dele. ~ pride, proudly
+fr Learning a language is a journey, not a destination. = Aprender uma língua é uma jornada, não um destino.
+fr Congratulations on finishing the course! Keep practicing! = Parabéns por terminar o curso! Continue praticando!
+
+### texto | Formatura
+t Teacher | Welcome to our graduation ceremony, everyone! = Bem-vindos à nossa cerimônia de formatura, pessoal!
+t Teacher | Today you finish level B2. You should be very proud. = Hoje vocês terminam o nível B2. Vocês deveriam estar muito orgulhosos.
+t Rafael | Thank you! When I started, I couldn't even introduce myself. = Obrigado! Quando comecei, não sabia nem me apresentar.
+t Teacher | And now you can debate, write formal letters and understand idioms. = E agora você consegue debater, escrever cartas formais e entender expressões.
+t Mei | The hardest part for me was the phrasal verbs. = A parte mais difícil para mim foram os phrasal verbs.
+t Rafael | For me, it was understanding different accents. = Para mim, foi entender os diferentes sotaques.
+t Teacher | That's normal. English has many varieties, and they are all valid. = Isso é normal. O inglês tem muitas variedades, e todas são válidas.
+t Mei | I'm still a little afraid of making mistakes. = Ainda tenho um pouco de medo de errar.
+t Teacher | Don't be. Native speakers make mistakes too. What matters is communicating. = Não tenha. Os nativos também erram. O que importa é se comunicar.
+t Rafael | What should we do now? = O que devemos fazer agora?
+t Teacher | Keep reading, watching series and talking to people. A language is a journey. = Continuem lendo, vendo séries e conversando com pessoas. Uma língua é uma jornada.
+t Mei | Thank you for everything. We'll miss your classes! = Obrigada por tudo. Vamos sentir falta das suas aulas!
+tq Que nível os alunos terminam? = B2 | B1 | A2
+tq Qual foi a parte mais difícil para a Mei? = Os phrasal verbs | Os sotaques | A pronúncia
+tq O que a professora diz sobre os erros? = Os nativos também erram; o importante é se comunicar | Não se pode errar | Erros mostram que você não aprendeu
+tq Que conselho a professora dá? = Continuar lendo, vendo séries e conversando | Parar de estudar | Fazer outro curso imediatamente
+
+### leitura | Uma língua, muitas vozes
+n In a café in Singapore, a waiter takes orders in English, Mandarin and Malay. = Num café em Singapura, um garçom anota pedidos em inglês, mandarim e malaio.
+n In Lagos, millions of people mix English with local languages every day. = Em Lagos, milhões de pessoas misturam o inglês com línguas locais todos os dias.
+n In Dublin, the English spoken in the streets carries traces of Irish. = Em Dublin, o inglês falado nas ruas carrega traços do irlandês.
+n These are just a few examples of how English has become a global language. = Esses são apenas alguns exemplos de como o inglês se tornou uma língua global.
+n It began fifteen centuries ago as the language of a few Germanic tribes. = Começou há quinze séculos como a língua de algumas tribos germânicas.
+n After the Norman conquest, it absorbed thousands of French and Latin words. = Depois da conquista normanda, absorveu milhares de palavras francesas e latinas.
+n Later, colonization and trade took it to every continent. = Mais tarde, a colonização e o comércio o levaram a todos os continentes.
+n Today, it's the main language of science, aviation and the internet. = Hoje, é a principal língua da ciência, da aviação e da internet.
+n Some experts worry that its dominance threatens smaller languages. = Alguns especialistas temem que seu domínio ameace línguas menores.
+n Others argue that English can coexist with local languages, as a bridge between cultures. = Outros argumentam que o inglês pode conviver com as línguas locais, como uma ponte entre culturas.
+n What is certain is that English no longer belongs only to Britain or the United States. = O certo é que o inglês não pertence mais só à Grã-Bretanha ou aos Estados Unidos.
+n It belongs to everyone who speaks it, including you. = Pertence a todos que o falam, incluindo você.
+tq Em quais línguas o garçom de Singapura anota pedidos? = Inglês, mandarim e malaio | Só inglês | Inglês e espanhol
+tq Como o inglês começou? = Como língua de tribos germânicas | Como língua do Império Romano | Na América
+tq Qual é a preocupação de alguns especialistas? = Que o domínio do inglês ameace línguas menores | Que o inglês desapareça | Que o inglês fique difícil demais
+tv O texto diz que o inglês pertence só aos britânicos e americanos. = F
+tv A conquista normanda trouxe palavras francesas e latinas. = V

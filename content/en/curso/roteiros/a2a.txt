@@ -1,0 +1,458 @@
+// A2 — unidades 1 a 5 (inglês)
+
+# a2u1 | O que você fez hoje | Contar o que você fez hoje e nesta semana e falar de experiências.
+
+## Hoje eu… | O "present perfect" (have/has + particípio) liga o passado ao presente: "I've worked a lot today" (trabalhei muito hoje). Com "he/she/it" se usa "has": "she has finished".
+v I've worked = eu trabalhei; I've finished = eu terminei; I've cleaned = eu limpei; today = hoje; this morning = hoje de manhã; this week = nesta semana; a lot = muito
+f I [have] worked a lot this week. = Trabalhei muito nesta semana. ~ has, am
+f She [has] finished her homework. = Ela terminou a lição de casa. ~ have, is
+b I've cleaned the whole house today. = Limpei a casa inteira hoje.
+b We've talked to the teacher this morning. = Falamos com a professora hoje de manhã.
+l He has called three times today. = Ele ligou três vezes hoje. ~ Ele ligou duas vezes ontem. | Ela ligou três vezes hoje.
+q Você quer dizer que já terminou o relatório. O que diz? = I've finished the report. | I finish the report tomorrow. | I'm finishing the report yesterday.
+
+## Já e ainda não | "Already" é já, em frases afirmativas: "I've already eaten". "Yet" aparece no fim de perguntas (já?) e negativas (ainda não): "Have you eaten yet?" — "No, not yet".
+v already = já (afirmativa); yet = já (pergunta), ainda (negativa); not yet = ainda não; just = acabou de; to eat = comer; to arrive = chegar; to start = começar
+f I've [already] had lunch. = Já almocei. ~ yet, still
+f Have you called your mother [yet]? = Você já ligou para sua mãe? ~ already, just
+b The movie hasn't started yet. = O filme ainda não começou.
+b She has just arrived. = Ela acabou de chegar.
+l Have you finished yet? — Not yet. = Você já terminou? — Ainda não. ~ Você já terminou? — Sim, já. | Você vai terminar? — Ainda não.
+q Seu chefe pergunta se você já mandou o e-mail. Você não mandou. O que diz? = Not yet, sorry. | Yes, already. | I've just sent it.
+
+## Particípios irregulares | Muitos particípios são irregulares e é preciso decorar: do → done, see → seen, write → written, eat → eaten, go → gone/been, buy → bought, make → made.
+v done = feito, realizado; seen = visto; written = escrito; eaten = comido; bought = comprado; made = fabricado, preparado; been = estado, ido
+f I've [seen] that movie twice. = Já vi esse filme duas vezes. ~ saw, see
+f Have you [done] your homework? = Você fez sua lição de casa? ~ did, do
+b She has written a long email. = Ela escreveu um e-mail longo.
+b We've bought a new car. = Compramos um carro novo.
+l I've made a cake for your birthday. = Fiz um bolo para o seu aniversário. ~ Comprei um bolo para o seu aniversário. | Comi um bolo no seu aniversário.
+q Qual é o particípio de "eat"? = eaten | ate | eated
+
+## Experiências | Para experiências na vida, use "ever" (alguma vez) e "never" (nunca): "Have you ever been to London?" — "No, I've never been there". "Been to" é ter ido a um lugar.
+v have you ever...? = você já...?; never = nunca; been to = ido a, estado em; once = uma vez; twice = duas vezes; many times = muitas vezes; in my life = na minha vida
+f Have you [ever] been to Mexico? = Você já foi ao México? ~ never, yet
+f I've [never] eaten sushi. = Nunca comi sushi. ~ ever, already
+b I've been to Paris twice. = Já fui a Paris duas vezes.
+b Have you ever met a famous person? = Você já conheceu uma pessoa famosa?
+l I've never seen snow in my life. = Nunca vi neve na minha vida. ~ Vi neve muitas vezes na vida. | Nunca vi o mar na minha vida.
+q Alguém pergunta "Have you ever been to Canada?". Você nunca foi. O que responde? = No, I've never been there. | Yes, I've been there twice. | No, I'm not Canada.
+
+## Meu dia em detalhe | Use o "present perfect" para o resultado ("I've had a busy day") e organize com "first", "then", "after that". Para dizer quando foi exatamente, você vai usar o passado simples (próxima unidade).
+v busy = ocupado, cheio; a busy day = um dia cheio; meeting = reunião; email = e-mail; to answer = responder; tired = cansado; so far = até agora
+f I've had a very [busy] day. = Tive um dia muito cheio. ~ tired, meeting
+f I've answered twenty emails so [far]. = Respondi vinte e-mails até agora. ~ long, much
+b I've had three meetings today. = Tive três reuniões hoje.
+b I haven't eaten anything since breakfast. = Não comi nada desde o café da manhã.
+l It has been a long week. = Foi uma semana longa. ~ Vai ser uma semana longa. | Foi um dia longo.
+q Um amigo pergunta "How was your day?". Foi cheio. O que diz? = I've had a very busy day. | I'm going to have a busy day. | I have busy every day.
+
+### frases
+fr I've worked a lot today and I'm very tired. = Trabalhei muito hoje e estou muito cansado.
+fr Have you had lunch yet? — Not yet, I'm starving. = Você já almoçou? — Ainda não, estou morrendo de fome.
+fr We've just bought tickets for the concert. = Acabamos de comprar ingressos para o show.
+fr I've [never] been to Europe, but I'd love to go. = Nunca fui à Europa, mas adoraria ir. ~ ever, yet
+fr She has already finished the report. = Ela já terminou o relatório.
+fr Have you ever eaten Indian food? = Você já comeu comida indiana?
+fr This week I've read two books. = Nesta semana li dois livros.
+fr My brother hasn't called me [yet]. = Meu irmão ainda não me ligou. ~ already, never
+fr I've seen this movie three times: it's my favorite. = Já vi este filme três vezes: é meu favorito.
+fr It has been a busy morning: I've had four meetings. = Foi uma manhã cheia: tive quatro reuniões.
+
+### texto | Que dia!
+t Kate | Hi, Tom! You look exhausted. = Oi, Tom! Você parece exausto.
+t Tom | I am. I've had a terrible day. = Estou. Tive um dia horrível.
+t Kate | Why? What's happened? = Por quê? O que aconteceu?
+t Tom | First, I missed the bus this morning, so I arrived late to work. = Primeiro, perdi o ônibus hoje de manhã, então cheguei atrasado ao trabalho.
+t Kate | Oh no. And then? = Ah, não. E depois?
+t Tom | Then my computer crashed twice. = Depois meu computador travou duas vezes.
+t Kate | Have you finished your project at least? = Você pelo menos terminou seu projeto?
+t Tom | Not yet. I have to finish it tomorrow. = Ainda não. Tenho que terminar amanhã.
+t Kate | Have you eaten anything? = Você comeu alguma coisa?
+t Tom | Only a sandwich. I haven't had time for lunch. = Só um sanduíche. Não tive tempo para almoçar.
+t Kate | Come on, I'll buy you dinner. = Vamos, eu te pago um jantar.
+tq Por que o Tom chegou atrasado? = Perdeu o ônibus | Acordou tarde | O carro quebrou
+tq O que aconteceu com o computador? = Travou duas vezes | Foi roubado | Funcionou bem
+tq O Tom terminou o projeto? = Ainda não | Sim, já terminou | Ele não tem projeto
+tq O que a Kate propõe? = Pagar um jantar para o Tom | Ajudar no projeto | Ir ao cinema
+
+### leitura | Um sábado cheio
+n Today is Saturday, but I haven't rested at all. = Hoje é sábado, mas não descansei nada.
+n I've cleaned the whole apartment and I've done the laundry. = Limpei o apartamento inteiro e lavei a roupa.
+n I've also been to the supermarket and I've bought food for the week. = Também fui ao supermercado e comprei comida para a semana.
+n My parents have come to visit, so I've cooked lunch for them. = Meus pais vieram me visitar, então cozinhei o almoço para eles.
+n After lunch we've walked in the park and we've had ice cream. = Depois do almoço caminhamos no parque e tomamos sorvete.
+n I've also called my best friend, who lives in Australia. = Também liguei para minha melhor amiga, que mora na Austrália.
+n I haven't watched TV or read my book yet. = Ainda não vi TV nem li meu livro.
+n Now I'm tired, but it has been a really nice day. = Agora estou cansado, mas foi um dia muito bom.
+tq O que a pessoa limpou? = O apartamento inteiro | Só a cozinha | O carro
+tq Quem veio visitar? = Os pais | A melhor amiga | O irmão
+tq Onde mora a melhor amiga? = Na Austrália | No Canadá | Na mesma cidade
+tv A pessoa descansou muito no sábado. = F
+tv Ela ainda não leu o livro. = V
+
+# a2u2 | Histórias do passado | Contar o que aconteceu ontem, no ano passado e em outras épocas.
+
+## Ontem (verbos regulares) | O "simple past" é usado para um momento terminado (ontem, no ano passado). Os verbos regulares ganham -ed: work → worked, play → played, study → studied. É igual para todas as pessoas.
+v yesterday = ontem; last night = ontem à noite; worked = trabalhou; played = jogou; studied = estudou; watched = assistiu; walked = caminhou
+f Yesterday I [worked] until nine. = Ontem trabalhei até as nove. ~ work, have worked
+f They [played] tennis last Sunday. = Eles jogaram tênis no domingo passado. ~ play, plays
+b We watched a movie last night. = Assistimos a um filme ontem à noite.
+b She studied English for two hours. = Ela estudou inglês por duas horas.
+l I walked to work yesterday. = Fui a pé para o trabalho ontem. ~ Vou a pé para o trabalho amanhã. | Fui de ônibus para o trabalho ontem.
+q Como fica "study" no passado? = studied | studyed | studed
+
+## Irregulares importantes | Muitos verbos comuns são irregulares no passado: go → went, have → had, see → saw, buy → bought, eat → ate, get → got. O verbo "to be" vira "was/were".
+v went = foi (ir); had = teve; saw = viu; bought = comprou; ate = comeu; got = conseguiu, recebeu, chegou; was = era, estava (eu/ele)
+f Last summer we [went] to the beach. = No verão passado fomos à praia. ~ go, gone
+f I [saw] Maria at the supermarket. = Vi a Maria no supermercado. ~ see, seen
+b She bought a new phone last week. = Ela comprou um celular novo na semana passada.
+b We had dinner at a Japanese restaurant. = Jantamos num restaurante japonês.
+l I was very tired yesterday. = Eu estava muito cansado ontem. ~ Eu estou muito cansado hoje. | Eles estavam muito cansados ontem.
+q Qual é o passado de "go"? = went | goed | gone
+
+## Perguntas e negativas | No passado, perguntas e negativas usam "did" e o verbo volta à forma normal: "Did you go?", "I didn't go" (nunca "I didn't went").
+v did you...? = você...? (passado); I didn't = eu não (passado); to call = ligar; to see = ver; to like = gostar; to understand = entender; anything = nada, alguma coisa
+f [Did] you call your mother? = Você ligou para sua mãe? ~ Do, Were
+f I didn't [go] to the party. = Não fui à festa. ~ went, gone
+b Did you like the movie? = Você gostou do filme?
+b He didn't understand the question. = Ele não entendeu a pergunta.
+l We didn't see anything. = Não vimos nada. ~ Vimos tudo. | Não vemos nada.
+q Você quer perguntar se seu amigo comprou pão. O que diz? = Did you buy bread? | Did you bought bread? | Do you bought bread?
+
+## Quando aconteceu | "Ago" é há (tempo atrás) e vem depois: "two years ago" (há dois anos). "Last" é passado: "last week", "last year". "In 2010" é em 2010.
+v ago = atrás; two years ago = há dois anos; last week = na semana passada; last year = no ano passado; in 2015 = em 2015; when = quando; born = nascido
+f I moved to Rio ten years [ago]. = Mudei para o Rio há dez anos. ~ last, before
+f We met [last] year. = Nos conhecemos no ano passado. ~ ago, past
+b I was born in 1995. = Nasci em 1995.
+b When did you start your job? = Quando você começou no seu emprego?
+l She graduated three years ago. = Ela se formou há três anos. ~ Ela vai se formar em três anos. | Ela se formou há treze anos.
+q Alguém pergunta "When did you arrive?". Você chegou há uma hora. O que diz? = An hour ago. | Last hour. | In an hour.
+
+## Contar uma história | Para contar uma história: "One day..." (um dia), "suddenly" (de repente), "then" (então), "in the end" (no final). "Luckily" é por sorte.
+v one day = um dia; suddenly = de repente; then = então; in the end = no final; luckily = por sorte; unfortunately = infelizmente; to happen = acontecer
+f [Suddenly], the lights went out. = De repente, as luzes se apagaram. ~ Luckily, In the end
+f What [happened] next? = O que aconteceu depois? ~ happen, happens
+b One day I found a cat in the street. = Um dia encontrei um gato na rua.
+b In the end, everything was fine. = No final, deu tudo certo.
+l Unfortunately, we missed the train. = Infelizmente, perdemos o trem. ~ Por sorte, pegamos o trem. | Infelizmente, perdemos o avião.
+q Você quer começar uma história. O que diz? = One day, I was at the beach and... | In the end, I went home. | Yesterday is a long day.
+
+### frases
+fr Yesterday I worked until late and I didn't have dinner. = Ontem trabalhei até tarde e não jantei.
+fr Last summer we went to Portugal and loved it. = No verão passado fomos a Portugal e adoramos.
+fr I saw a great movie on Saturday. = Vi um filme ótimo no sábado.
+fr Did you [go] to the party last night? = Você foi à festa ontem à noite? ~ went, gone
+fr I met my husband ten years ago, in college. = Conheci meu marido há dez anos, na faculdade.
+fr She was born in a small town in the south. = Ela nasceu numa cidadezinha no sul.
+fr Suddenly, it started to rain and we ran home. = De repente, começou a chover e corremos para casa.
+fr We [didn't] understand the instructions. = Não entendemos as instruções. ~ don't, weren't
+fr Luckily, someone found my phone and called me. = Por sorte, alguém encontrou meu celular e me ligou.
+fr In the end, the trip was amazing. = No final, a viagem foi incrível.
+
+### texto | Uma viagem complicada
+t Nina | How was your trip to Chile? = Como foi sua viagem ao Chile?
+t Paul | Great in the end, but it started badly. = Ótima no final, mas começou mal.
+t Nina | Why? What happened? = Por quê? O que aconteceu?
+t Paul | First, the flight left four hours late. = Primeiro, o voo saiu quatro horas atrasado.
+t Nina | Four hours! What did you do at the airport? = Quatro horas! O que você fez no aeroporto?
+t Paul | I read a book and ate a terrible sandwich. = Li um livro e comi um sanduíche horrível.
+t Nina | And when you arrived? = E quando você chegou?
+t Paul | My suitcase didn't arrive! It went to Lima. = Minha mala não chegou! Foi para Lima.
+t Nina | No way! Did they find it? = Não acredito! Eles encontraram?
+t Paul | Yes, they brought it to the hotel two days later. = Sim, levaram ao hotel dois dias depois.
+t Nina | And the rest of the trip? = E o resto da viagem?
+t Paul | Perfect. I saw the mountains, the desert and the ocean. = Perfeito. Vi as montanhas, o deserto e o oceano.
+tq Quanto tempo o voo atrasou? = Quatro horas | Duas horas | Um dia
+tq Para onde foi a mala? = Para Lima | Para o Chile | Para casa
+tq Quando a mala chegou ao hotel? = Dois dias depois | No mesmo dia | Nunca chegou
+tq Como foi o resto da viagem? = Perfeito | Horrível | Muito caro
+
+### leitura | Como meus avós se conheceram
+n My grandparents met in 1965, at a dance in a small town. = Meus avós se conheceram em 1965, num baile numa cidadezinha.
+n My grandfather was a shy young man and he didn't like dancing. = Meu avô era um rapaz tímido e não gostava de dançar.
+n That night his friends took him to the dance almost by force. = Naquela noite os amigos o levaram ao baile quase à força.
+n Suddenly, he saw a girl with a yellow dress. = De repente, ele viu uma moça de vestido amarelo.
+n He walked to her and asked her to dance. = Ele foi até ela e a convidou para dançar.
+n Unfortunately, he stepped on her feet three times! = Infelizmente, pisou no pé dela três vezes!
+n But she laughed a lot and they talked all night. = Mas ela riu muito e eles conversaram a noite toda.
+n They got married two years later and they're still together. = Eles se casaram dois anos depois e ainda estão juntos.
+tq Onde os avós se conheceram? = Num baile | Na escola | No trabalho
+tq Como era o avô? = Tímido e não gostava de dançar | Muito extrovertido | Um ótimo dançarino
+tq O que aconteceu na dança? = Ele pisou no pé dela três vezes | Ela caiu | A música parou
+tv A moça usava um vestido amarelo. = V
+tv Eles se casaram no ano seguinte. = F
+
+# a2u3 | Como era antes | Descrever como as coisas eram e falar de costumes do passado.
+
+## Quando eu era criança | "Used to" + verbo fala de hábitos e situações passadas que não existem mais: "I used to live in a small town" (eu morava numa cidade pequena).
+v used to = costumava; when I was a child = quando eu era criança; to live = morar; to play = brincar, jogar; toys = brinquedos; school = escola; neighbor = vizinho
+f When I was a child, I [used] to play in the street. = Quando eu era criança, brincava na rua. ~ use, using
+f We used to [live] near the beach. = Morávamos perto da praia. ~ lived, living
+b I used to have a lot of toys. = Eu tinha muitos brinquedos.
+b My father used to work in a bank. = Meu pai trabalhava num banco.
+l We used to visit my grandmother every Sunday. = Visitávamos minha avó todo domingo. ~ Visitamos minha avó no domingo. | Visitávamos meu avô todo sábado.
+q Você quer dizer que tinha um cachorro quando era criança. O que diz? = I used to have a dog. | I use to have a dog. | I'm used to a dog.
+
+## Costumes antigos | Na negativa e na pergunta, "used to" perde o "d": "I didn't use to like vegetables", "Did you use to walk to school?".
+v didn't use to = não costumava; did you use to...? = você costumava...?; every summer = todo verão; to walk = andar, caminhar; vegetables = legumes; to be afraid of = ter medo de; the dark = o escuro
+f I didn't [use] to like vegetables. = Eu não gostava de legumes. ~ used, using
+f [Did] you use to walk to school? = Você ia a pé para a escola? ~ Do, Were
+b Every summer we used to go camping. = Todo verão a gente acampava.
+b I used to be afraid of the dark. = Eu tinha medo do escuro.
+l She didn't use to wear glasses. = Ela não usava óculos. ~ Ela sempre usava óculos. | Ela não usa óculos.
+q Alguém pergunta "Did you use to play sports?". Você jogava futebol. O que diz? = Yes, I used to play soccer. | Yes, I use to play soccer. | Yes, I'm playing soccer.
+
+## Descrever o passado | Para descrever cenários e ações em andamento no passado, use "was/were" + -ing: "It was raining" (estava chovendo), "we were watching TV" (estávamos vendo TV).
+v it was raining = estava chovendo; I was sleeping = eu estava dormindo; were = estavam, eram; dark = escuro; quiet = tranquilo; crowded = lotado; everybody = todo mundo
+f It [was] raining when I left home. = Estava chovendo quando saí de casa. ~ were, is
+f We [were] watching TV at ten. = Estávamos vendo TV às dez. ~ was, are
+b The streets were very quiet. = As ruas eram muito tranquilas.
+b Everybody was dancing at the party. = Todo mundo estava dançando na festa.
+l I was sleeping when you called. = Eu estava dormindo quando você ligou. ~ Eu estava cozinhando quando você ligou. | Eu dormi quando você ligou.
+q Você quer dizer que estava trabalhando às oito. O que diz? = I was working at eight. | I worked at eight yesterday always. | I am working at eight.
+
+## Estava fazendo ou fez? | O "past continuous" descreve o cenário (I was walking) e o "simple past" conta o que aconteceu no meio dele (I saw an accident). "While" é enquanto.
+v while = enquanto; when = quando; to break = quebrar; to fall = cair; accident = acidente; to ring = tocar (telefone); to cut = cortar
+f I [was] cooking when the phone rang. = Eu estava cozinhando quando o telefone tocou. ~ did, am
+f While I was walking, I [saw] an accident. = Enquanto eu caminhava, vi um acidente. ~ was seeing, see
+b She fell while she was running. = Ela caiu enquanto corria.
+b He cut his finger while he was cooking. = Ele cortou o dedo enquanto cozinhava.
+l The phone rang while I was taking a shower. = O telefone tocou enquanto eu tomava banho. ~ O telefone tocou quando eu saí do banho. | A campainha tocou enquanto eu tomava banho.
+q Como você diz que perdeu as chaves enquanto corria? = I lost my keys while I was running. | I was losing my keys while I ran always. | I lose my keys while I run.
+
+## Antes e agora | "Not anymore" (não mais) e "still" (ainda) ajudam a comparar: "I don't smoke anymore" (não fumo mais), "I still live here" (ainda moro aqui). "Nowadays" é hoje em dia.
+v anymore = mais (não... mais); still = ainda; nowadays = hoje em dia; before = antes; now = agora; to change = mudar; different = diferente
+f I don't eat meat [anymore]. = Não como mais carne. ~ still, yet
+f My parents [still] live in the same house. = Meus pais ainda moram na mesma casa. ~ anymore, yet
+b Nowadays everybody has a phone. = Hoje em dia todo mundo tem celular.
+b The city has changed a lot. = A cidade mudou muito.
+l Before, there were no cars here. = Antes, não havia carros aqui. ~ Antes, havia muitos carros aqui. | Agora não há carros aqui.
+q Você jogava tênis, mas parou. O que diz? = I don't play tennis anymore. | I still play tennis. | I play tennis anymore.
+
+### frases
+fr When I was a child, I used to spend my summers at my grandparents' farm. = Quando eu era criança, passava os verões na fazenda dos meus avós.
+fr We didn't use to have a TV at home. = A gente não tinha TV em casa.
+fr It was snowing and the streets were empty. = Estava nevando e as ruas estavam vazias.
+fr I [was] reading when the lights went out. = Eu estava lendo quando as luzes se apagaram. ~ did, am
+fr My father used to tell us stories before bed. = Meu pai nos contava histórias antes de dormir.
+fr I used to be very shy, but not anymore. = Eu era muito tímido, mas não sou mais.
+fr Nowadays people work more from home. = Hoje em dia as pessoas trabalham mais de casa.
+fr She broke her arm while she [was] skiing. = Ela quebrou o braço enquanto esquiava. ~ is, were
+fr Do you still live in the same neighborhood? = Você ainda mora no mesmo bairro?
+fr The city was very different twenty years ago. = A cidade era muito diferente há vinte anos.
+
+### texto | As fotos antigas
+t Grandma | Look at this photo. This was our house in 1970. = Olha esta foto. Esta era nossa casa em 1970.
+t Leo | Wow! It was so small. = Nossa! Era tão pequena.
+t Grandma | Yes, but we were very happy there. = Sim, mas éramos muito felizes lá.
+t Leo | Did you use to have a car? = Vocês tinham carro?
+t Grandma | No, we used to go everywhere by bus or on foot. = Não, íamos a todo lugar de ônibus ou a pé.
+t Leo | And what did you use to do in your free time? = E o que vocês faziam no tempo livre?
+t Grandma | We used to listen to the radio and play cards. = Ouvíamos rádio e jogávamos cartas.
+t Leo | Who's this girl with the bike? = Quem é esta menina com a bicicleta?
+t Grandma | It's me! I was riding my bike when your grandfather took this photo. = Sou eu! Eu estava andando de bicicleta quando seu avô tirou esta foto.
+t Leo | Do you still have the bike? = Você ainda tem a bicicleta?
+t Grandma | No, not anymore. But I still have the photo! = Não, não mais. Mas ainda tenho a foto!
+tq Como era a casa em 1970? = Pequena | Muito grande | Moderna
+tq Como a família ia aos lugares? = De ônibus ou a pé | De carro | De bicicleta
+tq O que faziam no tempo livre? = Ouviam rádio e jogavam cartas | Viam TV | Iam ao cinema
+tq Quem tirou a foto da menina? = O avô do Leo | A avó | O irmão da avó
+
+### leitura | A cidade de antes
+n My city was very different when I was a child. = Minha cidade era muito diferente quando eu era criança.
+n There weren't any tall buildings, only small houses with gardens. = Não havia prédios altos, só casas pequenas com jardins.
+n Children used to play in the street until it got dark. = As crianças brincavam na rua até escurecer.
+n Everybody knew everybody, and nobody locked their doors. = Todo mundo se conhecia, e ninguém trancava a porta.
+n My mother used to buy bread every morning at the corner bakery. = Minha mãe comprava pão toda manhã na padaria da esquina.
+n Nowadays there are shopping malls and a lot of traffic. = Hoje em dia há shoppings e muito trânsito.
+n The bakery isn't there anymore: it's a pharmacy now. = A padaria não existe mais: agora é uma farmácia.
+n But the old church is still in the square, just like before. = Mas a igreja antiga ainda está na praça, como antes.
+tq Como eram as casas antes? = Pequenas, com jardins | Prédios altos | Apartamentos modernos
+tq Até quando as crianças brincavam na rua? = Até escurecer | Até o almoço | Até as oito da manhã
+tq O que existe hoje no lugar da padaria? = Uma farmácia | Um shopping | Uma igreja
+tv Antes, as pessoas trancavam a porta. = F
+tv A igreja antiga ainda está na praça. = V
+
+# a2u4 | Saúde e corpo | Partes do corpo, dizer o que dói, ir ao médico e à farmácia.
+
+## O corpo | Para dizer que algo dói: "My head hurts" ou "I have a headache". Com "ache": "headache" (dor de cabeça), "stomachache" (dor de barriga), "toothache" (dor de dente).
+v head = cabeça; back = costas; stomach = estômago, barriga; arm = braço; leg = perna; foot = pé; it hurts = dói
+f My [back] hurts. = Minhas costas doem. ~ head ache, feet
+f I have a [headache]. = Estou com dor de cabeça. ~ head, hurts
+b My feet hurt after the walk. = Meus pés doem depois da caminhada.
+b She has a stomachache. = Ela está com dor de barriga.
+l My left leg hurts a lot. = Minha perna esquerda dói muito. ~ Meu braço esquerdo dói muito. | Minha perna direita dói um pouco.
+q Você comeu demais e está com dor de barriga. O que diz? = I have a stomachache. | I have a headache. | My back hurts.
+
+## Sintomas | "I have a fever" (estou com febre), "I have a cough" (estou com tosse), "I have a cold" (estou resfriado), "I feel sick" (estou enjoado/passando mal).
+v fever = febre; cough = tosse; cold = resfriado; sore throat = dor de garganta; I feel sick = estou passando mal; dizzy = tonto; flu = gripe
+f I think I have the [flu]. = Acho que estou com gripe. ~ sick, dizzy
+f I have a [sore] throat. = Estou com dor de garganta. ~ cold, sick
+b I've had a fever since yesterday. = Estou com febre desde ontem.
+b I feel a little dizzy. = Estou um pouco tonto.
+l He has a bad cough and a cold. = Ele está com uma tosse forte e resfriado. ~ Ele está com febre e resfriado. | Ela está com uma tosse forte.
+q Você está com o nariz escorrendo e espirrando. O que diz? = I have a cold. | I have a toothache. | I feel great.
+
+## No médico | O médico pergunta "What's wrong?" (o que você tem?) e "How long have you had it?" (há quanto tempo?). "Appointment" é a consulta marcada. "Prescription" é a receita.
+v what's wrong? = o que você tem?; appointment = consulta; how long...? = há quanto tempo...?; since = desde; for three days = há três dias; prescription = receita médica; to rest = descansar
+f I'd like to make an [appointment]. = Gostaria de marcar uma consulta. ~ prescription, doctor
+f I've had this pain [for] three days. = Estou com essa dor há três dias. ~ since, ago
+b What's wrong with you? = O que você tem?
+b You need to rest for a few days. = Você precisa descansar por alguns dias.
+l Here's your prescription. = Aqui está sua receita. ~ Aqui está sua consulta. | Aqui está seu remédio.
+q A médica pergunta há quanto tempo você está com tosse. Começou segunda. O que diz? = Since Monday. | For Monday. | Monday ago.
+
+## Conselhos de saúde | Para aconselhar: "You should..." (você deveria) e "you shouldn't..." (você não deveria). Para obrigação: "you have to" (você tem que).
+v you should = você deveria; you shouldn't = você não deveria; you have to = você tem que; to drink water = beber água; to sleep = dormir; to exercise = fazer exercício; healthy = saudável
+f You [should] drink more water. = Você deveria beber mais água. ~ shoulds, have
+f You [shouldn't] smoke. = Você não deveria fumar. ~ should, don't should
+b You have to take this medicine twice a day. = Você tem que tomar este remédio duas vezes por dia.
+b I should exercise more. = Eu deveria fazer mais exercício.
+l You should sleep at least eight hours. = Você deveria dormir pelo menos oito horas. ~ Você deveria dormir no máximo seis horas. | Você dorme pelo menos oito horas.
+q Seu amigo está sempre cansado. O que você aconselha? = You should go to bed earlier. | You shouldn't sleep. | You have to drink more coffee.
+
+## Na farmácia | Na farmácia: "Do you have anything for...?" (tem algo para...?). "Over the counter" é sem receita. "Pills" são comprimidos; "tablets" também.
+v do you have anything for...? = tem algo para...?; pills = comprimidos; medicine = remédio; cream = pomada, creme; twice a day = duas vezes por dia; side effects = efeitos colaterais; pharmacist = farmacêutico
+f Do you have anything [for] a headache? = Tem algo para dor de cabeça? ~ to, of
+f Take two [pills] after meals. = Tome dois comprimidos depois das refeições. ~ creams, doctors
+b Do I need a prescription? = Preciso de receita?
+b Use this cream twice a day. = Use esta pomada duas vezes por dia.
+l It can make you sleepy. = Pode dar sono. ~ Pode dar fome. | Não dá sono.
+q Você quer algo para dor de garganta. O que pergunta ao farmacêutico? = Do you have anything for a sore throat? | Do you have a sore throat? | Where is my throat?
+
+### frases
+fr I've had a terrible headache since this morning. = Estou com uma dor de cabeça horrível desde hoje de manhã.
+fr My back hurts because I sit at a computer all day. = Minhas costas doem porque fico sentado no computador o dia todo.
+fr I think I have the flu: I have a fever and a cough. = Acho que estou com gripe: tenho febre e tosse.
+fr I'd like to make an [appointment] with Dr. Evans. = Gostaria de marcar uma consulta com o Dr. Evans. ~ prescription, medicine
+fr How long have you felt like this? = Há quanto tempo você está se sentindo assim?
+fr You should drink a lot of water and rest. = Você deveria beber muita água e descansar.
+fr Do you have anything for a sore throat? = Tem algo para dor de garganta?
+fr You [shouldn't] go to work with a fever. = Você não deveria ir trabalhar com febre. ~ should, don't
+fr Take one pill every eight hours. = Tome um comprimido a cada oito horas.
+fr I feel much better today, thank you. = Estou me sentindo muito melhor hoje, obrigado.
+
+### texto | No consultório
+t Doctor | Good morning. What's wrong? = Bom dia. O que você tem?
+t Mr. Silva | I feel terrible. I have a fever and my throat hurts. = Estou me sentindo péssimo. Estou com febre e minha garganta dói.
+t Doctor | How long have you had these symptoms? = Há quanto tempo você está com esses sintomas?
+t Mr. Silva | Since Tuesday. = Desde terça.
+t Doctor | Do you have a cough? = Você está com tosse?
+t Mr. Silva | Yes, a little, especially at night. = Sim, um pouco, principalmente à noite.
+t Doctor | Let me see your throat... Yes, it's very red. It's an infection. = Deixe-me ver sua garganta... Sim, está muito vermelha. É uma infecção.
+t Mr. Silva | Is it serious? = É grave?
+t Doctor | No, but you have to take this antibiotic for a week. = Não, mas você tem que tomar este antibiótico por uma semana.
+t Mr. Silva | Can I go to work? = Posso ir trabalhar?
+t Doctor | You should stay home for two or three days and drink a lot of fluids. = Você deveria ficar em casa por dois ou três dias e beber muito líquido.
+tq Quais são os sintomas do senhor Silva? = Febre e dor de garganta | Dor nas costas | Dor de dente
+tq Desde quando ele está doente? = Desde terça | Desde ontem | Há um mês
+tq O que a médica receita? = Um antibiótico por uma semana | Uma pomada | Nada
+tq O que ele deve fazer? = Ficar em casa e beber muito líquido | Ir trabalhar normalmente | Fazer exercício
+
+### leitura | Uma semana doente
+n Last Monday I woke up with a terrible headache. = Na segunda passada acordei com uma dor de cabeça horrível.
+n I also had a fever and I felt very tired. = Também estava com febre e me sentia muito cansado.
+n I called my boss and said I couldn't go to work. = Liguei para o meu chefe e disse que não podia ir trabalhar.
+n In the afternoon I went to the doctor. = À tarde fui ao médico.
+n She said I had the flu and gave me a prescription. = Ela disse que eu estava com gripe e me deu uma receita.
+n I stayed in bed for four days, drinking tea and watching series. = Fiquei na cama quatro dias, tomando chá e vendo séries.
+n My neighbor was very kind: she brought me soup every day. = Minha vizinha foi muito gentil: me trouxe sopa todos os dias.
+n On Friday I felt much better and I went back to work. = Na sexta me senti muito melhor e voltei a trabalhar.
+tq O que a pessoa sentiu na segunda? = Dor de cabeça, febre e cansaço | Dor nas costas | Dor de barriga
+tq O que a médica disse? = Que era gripe | Que era uma infecção grave | Que não era nada
+tq Quem levou sopa? = A vizinha | A mãe | O chefe
+tv A pessoa ficou na cama por uma semana inteira. = F
+tv Na sexta ela voltou ao trabalho. = V
+
+# a2u5 | Trabalho e estudos | Profissões, rotina de trabalho, estudos e procurar emprego.
+
+## Profissões | Em inglês, antes da profissão se usa "a" ou "an": "I'm a teacher", "she's an engineer" (nunca "I'm teacher"). A maioria não muda no feminino.
+v teacher = professor(a); engineer = engenheiro(a); lawyer = advogado(a); nurse = enfermeiro(a); salesperson = vendedor(a); manager = gerente; what do you do? = o que você faz?
+f She's [an] engineer. = Ela é engenheira. ~ a, the
+f What do you [do]? — I'm a nurse. = O que você faz? — Sou enfermeira. ~ work, make
+b My brother is a lawyer in Boston. = Meu irmão é advogado em Boston.
+b I work as a manager in a hotel. = Trabalho como gerente num hotel.
+l My mother is a retired teacher. = Minha mãe é uma professora aposentada. ~ Minha mãe é uma enfermeira aposentada. | Minha mãe é professora há pouco tempo.
+q Alguém pergunta "What do you do?". Você é vendedor. O que responde? = I'm a salesperson. | I'm salesperson. | I do sales every day.
+
+## No escritório | "Office" é escritório. "Coworker" (ou "colleague") é colega de trabalho e "boss", chefe. "Deadline" é o prazo final.
+v office = escritório; coworker = colega de trabalho; boss = chefe; meeting = reunião; deadline = prazo; report = relatório; to work from home = trabalhar de casa
+f I have a [meeting] with my boss at ten. = Tenho uma reunião com meu chefe às dez. ~ deadline, report
+f The [deadline] is next Friday. = O prazo é na próxima sexta. ~ boss, office
+b My coworkers are very friendly. = Meus colegas de trabalho são muito simpáticos.
+b I work from home twice a week. = Trabalho de casa duas vezes por semana.
+l I have to finish the report today. = Tenho que terminar o relatório hoje. ~ Terminei o relatório hoje. | Tenho que começar o relatório hoje.
+q Seu chefe quer o relatório amanhã. O que é amanhã? = The deadline | The meeting | The coworker
+
+## Os estudos | "College" ou "university" é a faculdade; "degree" é o diploma, a graduação. "To major in" (EUA) é cursar: "she majored in law". "Course" é curso.
+v college = faculdade; degree = diploma, graduação; to study = estudar; exam = prova, exame; to pass = passar (na prova); to fail = reprovar; to graduate = formar-se
+f I [passed] all my exams! = Passei em todas as provas! ~ failed, past
+f She has a [degree] in economics. = Ela é formada em economia. ~ college, course
+b He graduated last year. = Ele se formou no ano passado.
+b I'm studying for an important exam. = Estou estudando para uma prova importante.
+l She studied medicine at a public university. = Ela estudou medicina numa universidade pública. ~ Ela estuda medicina numa faculdade particular. | Ela estudou direito numa universidade pública.
+q Você não passou na prova. O que diz? = I failed the exam. | I passed the exam. | I graduated the exam.
+
+## Procurar emprego | "Résumé" (EUA) ou "CV" (Reino Unido) é o currículo. "Job opening" é a vaga. "To apply for" é se candidatar a. "Interview" é entrevista.
+v résumé = currículo; job opening = vaga; to apply for = candidatar-se a; interview = entrevista; experience = experiência; salary = salário; full-time = em tempo integral
+f I'm going to [apply] for that job. = Vou me candidatar a essa vaga. ~ apply to, applied
+f I have a job [interview] tomorrow. = Tenho uma entrevista de emprego amanhã. ~ résumé, salary
+b I sent my résumé to five companies. = Mandei meu currículo para cinco empresas.
+b It's a full-time job with a good salary. = É um emprego em tempo integral com um bom salário.
+l Do you have any experience in sales? = Você tem alguma experiência em vendas? ~ Você tem experiência em marketing? | Você gosta de trabalhar com vendas?
+q Você viu um anúncio de vaga e quer participar. O que faz? = Apply for the job | Fail the job | Graduate the job
+
+## E-mails de trabalho | Para começar um e-mail formal: "Dear Mr. Smith" ou "Dear Ms. Jones". Para terminar: "Best regards" ou "Kind regards". "Attached" é em anexo.
+v Dear = Prezado(a); I'm writing to = escrevo para; attached = em anexo; please find attached = segue em anexo; I look forward to = aguardo; best regards = atenciosamente; as soon as possible = o quanto antes
+f [Dear] Ms. Brown, = Prezada senhora Brown, ~ Hi there, Hey
+f Please find my résumé [attached]. = Segue meu currículo em anexo. ~ attaching, attach
+b I'm writing to ask about the job opening. = Escrevo para perguntar sobre a vaga.
+b I look forward to hearing from you. = Aguardo seu retorno.
+l Please reply as soon as possible. = Por favor, responda o quanto antes. ~ Por favor, não responda. | Por favor, ligue o quanto antes.
+q Como você termina um e-mail formal? = Best regards, | See you later! | Kisses,
+
+### frases
+fr I'm an engineer and I work for a big company. = Sou engenheiro e trabalho para uma empresa grande.
+fr My boss is very demanding, but fair. = Meu chefe é muito exigente, mas justo.
+fr We have a meeting every Monday at nine. = Temos uma reunião toda segunda às nove.
+fr The [deadline] for the project is next week. = O prazo do projeto é na semana que vem. ~ meeting, report
+fr She graduated in law and now works as a lawyer. = Ela se formou em direito e agora trabalha como advogada.
+fr I'm studying for my final exams. = Estou estudando para as provas finais.
+fr I've applied for three jobs this month. = Me candidatei a três vagas neste mês.
+fr Do you have any [experience] with customers? = Você tem alguma experiência com clientes? ~ salary, interview
+fr Please find my résumé attached. = Segue meu currículo em anexo.
+fr I look forward to hearing from you. Best regards, Ana. = Aguardo seu retorno. Atenciosamente, Ana.
+
+### texto | O novo emprego
+t Mike | Congratulations on the new job! How is it? = Parabéns pelo novo emprego! Como está?
+t Julia | Thanks! I'm really happy. It's a big marketing company. = Obrigada! Estou muito feliz. É uma grande empresa de marketing.
+t Mike | What do you do there? = O que você faz lá?
+t Julia | I'm a project manager. I work with a team of six people. = Sou gerente de projetos. Trabalho com uma equipe de seis pessoas.
+t Mike | And how are your coworkers? = E como são seus colegas?
+t Julia | They're great. Very friendly and helpful. = São ótimos. Muito simpáticos e prestativos.
+t Mike | What about your boss? = E sua chefe?
+t Julia | She's demanding, but she's fair. = É exigente, mas justa.
+t Mike | Do you work from home? = Você trabalha de casa?
+t Julia | Yes, on Mondays and Fridays. = Sim, às segundas e sextas.
+t Mike | That's perfect. And the salary? = Isso é perfeito. E o salário?
+t Julia | Better than in my old job! = Melhor que no meu emprego antigo!
+tq Que tipo de empresa é? = De marketing | Um banco | Uma escola
+tq Qual é o cargo da Julia? = Gerente de projetos | Vendedora | Secretária
+tq Como é a chefe dela? = Exigente, mas justa | Muito simpática e tranquila | Injusta
+tq Quando ela trabalha de casa? = Às segundas e sextas | Todos os dias | Nunca
+
+### leitura | Do estágio ao primeiro emprego
+n When I was in college, I studied computer science. = Quando eu estava na faculdade, estudei ciência da computação.
+n In my last year, I did an internship at a small tech company. = No último ano, fiz um estágio numa pequena empresa de tecnologia.
+n I learned a lot there, especially about teamwork. = Aprendi muito lá, principalmente sobre trabalho em equipe.
+n After I graduated, I sent my résumé to twenty companies. = Depois que me formei, mandei meu currículo para vinte empresas.
+n I had five interviews, and I was very nervous in all of them. = Tive cinco entrevistas e fiquei muito nervoso em todas.
+n Finally, the company where I did my internship called me. = Finalmente, a empresa onde fiz estágio me ligou.
+n They offered me a full-time job as a developer. = Me ofereceram um emprego em tempo integral como desenvolvedor.
+n I accepted immediately, and I've worked there for three years now. = Aceitei na hora, e já trabalho lá há três anos.
+tq O que a pessoa estudou? = Ciência da computação | Direito | Marketing
+tq Para quantas empresas mandou o currículo? = Vinte | Cinco | Três
+tq Quem ofereceu o emprego? = A empresa do estágio | Uma empresa grande | Um amigo
+tv A pessoa ficou tranquila nas entrevistas. = F
+tv Ela trabalha na empresa há três anos. = V

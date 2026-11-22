@@ -3037,11 +3037,17 @@ function fafLang() {
     return el;
   }
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
-  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-zñ0-9 ]/g, '').replace(/\s+/g, ' ').trim(); }
+  // Inglês: "I'm" e "I am" valem igual na correção (expande as contrações nos dois lados).
+  function enExpand(s) {
+    if (window.FAF_IDIOMA !== 'en') return s;
+    return String(s).toLowerCase().replace(/[’‘]/g, "'").replace(/\bwon't\b/g, 'will not').replace(/\bcan't\b/g, 'can not').replace(/\bcannot\b/g, 'can not')
+      .replace(/\bshan't\b/g, 'shall not').replace(/n't\b/g, ' not').replace(/\bi'm\b/g, 'i am').replace(/'re\b/g, ' are').replace(/'ll\b/g, ' will').replace(/'ve\b/g, ' have').replace(/'d\b/g, ' would');
+  }
+  function norm(s) { return enExpand(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-zñ0-9 ]/g, '').replace(/\s+/g, ' ').trim(); }
   function tokens(s) { return s.split(/\s+/).filter(Boolean); }
   // Comparação tolerante para respostas digitadas e faladas.
   var SUBJ = { yo: 1, tu: 1, el: 0, ella: 1, usted: 1, nosotros: 1, nosotras: 1, vosotros: 1, vosotras: 1, ellos: 1, ellas: 1, ustedes: 1 };
-  function strictNorm(s) { return String(s).toLowerCase().replace(/[¿?¡!.,;:«»"()…\-]/g, ' ').replace(/\s+/g, ' ').trim(); }
+  function strictNorm(s) { return enExpand(String(s)).toLowerCase().replace(/[¿?¡!.,;:«»"()…\-]/g, ' ').replace(/\s+/g, ' ').trim(); }
   function looseWords(s, dropSubj) {
     var w = norm(String(s)).split(' ').filter(Boolean);
     if (dropSubj) w = w.filter(function (x, i) { return !(SUBJ[x] && i === 0); });
@@ -3141,7 +3147,7 @@ function fafLang() {
     var my = ++liaReq;
     if (btn) btn.classList.add('is-loading');
     var key = level + '|' + text;
-    var body = { tts: text, level: level };
+    var body = { tts: text, level: level, lang: window.FAF_IDIOMA === 'en' ? 'en' : 'es' };
     var p = liaCache[key] || (liaCache[key] = fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); })
       .then(function (b) { return URL.createObjectURL(b); }));
@@ -3311,13 +3317,6 @@ function fafLang() {
       requestAnimationFrame(drawPaths);
       if (scrollToCurrent && currentEl) currentEl.scrollIntoView({ block: 'center' }); else root.scrollTop = prevScroll;
     }, function () {
-      if (window.FAF_IDIOMA === 'en') {
-        root.replaceChildren(h('div', { class: 'cc-loading' }, [
-          h('strong', { text: 'Curso de inglês em construção' }), h('br'),
-          'O curso A1–B2 em inglês, com lições, leituras, provas e conversa com a Lía, está sendo preparado e aparece aqui assim que ficar pronto. Enquanto isso, pratique com as frases, a leitura e os podcasts em inglês.'
-        ]));
-        return;
-      }
       root.replaceChildren(h('div', { class: 'cc-loading' }, ['Não foi possível carregar o curso. Verifique a conexão e ', h('button', { type: 'button', class: 'cc-link', onclick: function () { renderMap(); }, text: 'tente de novo' }), '.']));
     });
   }
@@ -3965,7 +3964,7 @@ function fafLang() {
         main.replaceChildren(
           h('div', { class: 'cc-chat-hero' }, [
             h('span', { class: 'cc-lia-avatar is-xl', 'aria-hidden': 'true', text: 'L' }),
-            h('h2', { text: '¡Hola! Soy Lía.' }),
+            h('h2', { 'data-keep': '', text: window.FAF_IDIOMA === 'en' ? "Hi! I'm Lía." : '¡Hola! Soy Lía.' }),
             h('p', { text: 'Sou a inteligência artificial do Frase a Frase. Escolha o seu nível e um cenário para conversar comigo em espanhol.' })
           ]),
           h('p', { class: 'cc-kicker', text: 'Seu nível' }),
@@ -4054,7 +4053,7 @@ function fafLang() {
         C.busy = true; sendBtn.disabled = true;
         var typing = h('div', { class: 'cc-msg is-lia is-typing', 'aria-label': 'Lía está escrevendo' }, [h('i'), h('i'), h('i')]);
         list.appendChild(typing); typing.scrollIntoView({ block: 'end' });
-        fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ level: C.level, scenario: C.scene, messages: C.msgs }) })
+        fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ level: C.level, scenario: C.scene, messages: C.msgs, lang: window.FAF_IDIOMA === 'en' ? 'en' : 'es' }) })
           .then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.error || r.status); return d; }); })
           .then(function (d) {
             typing.remove();
@@ -4647,7 +4646,7 @@ class Component extends DCLogic {
         return { es: st(window.FAF_IDIOMA !== 'en'), en: st(window.FAF_IDIOMA === 'en') };
       })(),
       idiTag: { es: window.FAF_IDIOMA !== 'en' ? 'Atual' : 'Trocar', en: window.FAF_IDIOMA === 'en' ? 'Atual' : 'Trocar' },
-      idiEnSub: 'Frases, textos e podcasts prontos · curso em construção',
+      idiEnSub: 'Curso A1–B2, frases, textos e podcasts',
       setIdiomaEs: function () { if (window.FAF_IDIOMA !== 'es') window.fafSetIdioma('es'); },
       setIdiomaEn: function () { if (window.FAF_IDIOMA !== 'en') window.fafSetIdioma('en'); },
       themeOn: { auto: String(s.theme === 'auto'), light: String(s.theme === 'light'), dark: String(s.theme === 'dark') },

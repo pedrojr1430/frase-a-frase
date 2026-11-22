@@ -1,0 +1,449 @@
+// A1 — unidades 6 a 10 (inglês)
+
+# a1u6 | Na cidade | Lugares da cidade, transporte e como pedir e entender direções.
+
+## Lugares da cidade | Falso amigo: "library" é biblioteca; livraria é "bookstore" (ou "bookshop"). "Pharmacy" e "drugstore" são farmácia.
+v bank = banco; supermarket = supermercado; pharmacy = farmácia; library = biblioteca; bookstore = livraria; post office = correio; square = praça
+f I need money. Where is the [bank]? = Preciso de dinheiro. Onde fica o banco? ~ library, square
+f I buy books at the [bookstore]. = Compro livros na livraria. ~ pharmacy, bank
+b The library is closed on Sundays. = A biblioteca fica fechada aos domingos.
+b There is a pharmacy in the square. = Há uma farmácia na praça.
+l The post office is near the station. = O correio fica perto da estação. ~ O correio fica longe da estação. | O banco fica perto da estação.
+q Você está com dor de cabeça e precisa de um remédio. Aonde vai? = To the pharmacy | To the library | To the post office
+
+## Direções | "Go straight ahead" é siga em frente. "Turn left" é vire à esquerda e "turn right", à direita. "It's on the corner" é fica na esquina.
+v go straight ahead = siga em frente; turn left = vire à esquerda; turn right = vire à direita; the corner = a esquina; the street = a rua; the first street = a primeira rua; on the left = à esquerda
+f [Turn] right at the corner. = Vire à direita na esquina. ~ Go, Take
+f Go straight [ahead] for two blocks. = Siga em frente por duas quadras. ~ right, corner
+b Take the second street on the left. = Pegue a segunda rua à esquerda.
+b The bank is on the corner. = O banco fica na esquina.
+l Turn left and go straight ahead. = Vire à esquerda e siga em frente. ~ Vire à direita e siga em frente. | Siga em frente e vire à esquerda.
+q Alguém diz "Turn right". Para onde você vai? = Para a direita | Para a esquerda | Em frente
+
+## Transporte | Com meios de transporte se usa "by": "by bus", "by train", "by car". Mas a pé é "on foot". "Subway" é metrô nos EUA; no Reino Unido, "the underground" ou "the tube".
+v bus = ônibus; train = trem; subway = metrô; car = carro; bike = bicicleta; on foot = a pé; ticket = passagem, bilhete
+f I go to work [by] bus. = Vou para o trabalho de ônibus. ~ on, in
+f She goes to school on [foot]. = Ela vai para a escola a pé. ~ bus, car
+b I take the subway every day. = Pego o metrô todos os dias.
+b A ticket to the airport, please. = Uma passagem para o aeroporto, por favor.
+l We go to the beach by car. = Vamos à praia de carro. ~ Vamos à praia de ônibus. | Vamos à praia a pé.
+q Você quer dizer que vai de bicicleta. O que diz? = I go by bike. | I go on bike. | I go in foot.
+
+## Perto e longe | "Near" é perto e "far" é longe. "Is it far?" é uma pergunta muito útil. Para dar distância: "It's ten minutes on foot" ou "It's a ten-minute walk".
+v near = perto; far = longe; is it far? = é longe?; minutes = minutos; block = quarteirão, quadra; here = aqui; there = ali, lá
+f The station is very [near]. = A estação é muito perto. ~ far, there
+f Is the museum [far] from here? = O museu fica longe daqui? ~ near, here
+b It's five minutes on foot. = São cinco minutos a pé.
+b My house is far from the center. = Minha casa fica longe do centro.
+l The hotel is two blocks from here. = O hotel fica a duas quadras daqui. ~ O hotel fica a dois minutos daqui. | O hotel fica longe daqui.
+q Você quer saber se o restaurante é longe. O que pergunta? = Is the restaurant far? | Is the restaurant near you? | Where is the restaurant?
+
+## Pedir ajuda na rua | Para abordar alguém: "Excuse me". Para pedir o caminho: "How do I get to...?" (como chego a...?). Se não entender: "Can you say that again, please?".
+v excuse me = com licença; how do I get to...? = como chego a...?; I'm lost = estou perdido; map = mapa; can you repeat? = pode repetir?; slowly = devagar; thank you so much = muito obrigado
+f [How] do I get to the station? = Como chego à estação? ~ What, Where
+f Can you speak more [slowly], please? = Pode falar mais devagar, por favor? ~ slow, map
+b Excuse me, I'm lost. = Com licença, estou perdido.
+b Is there a subway station near here? = Tem uma estação de metrô perto daqui?
+l Can you show me on the map? = Pode me mostrar no mapa? ~ Pode me dar um mapa? | Pode repetir, por favor?
+q Você não entendeu as direções. O que diz? = Can you say that again, please? | Turn left, please. | I'm from Brazil.
+
+### frases
+fr Excuse me, how do I get to the train station? = Com licença, como chego à estação de trem?
+fr Go straight ahead and turn left at the square. = Siga em frente e vire à esquerda na praça.
+fr The pharmacy is on the corner, next to the bank. = A farmácia fica na esquina, ao lado do banco.
+fr I go to work [by] subway every day. = Vou para o trabalho de metrô todos os dias. ~ on, in
+fr Is it far? — No, it's ten minutes on foot. = É longe? — Não, são dez minutos a pé.
+fr The library is closed today, it's Sunday. = A biblioteca está fechada hoje, é domingo.
+fr Sorry, I'm lost. Can you help me? = Desculpe, estou perdido. Pode me ajudar?
+fr Take the [first] street on the right. = Pegue a primeira rua à direita. ~ one, once
+fr There is a nice bookstore near my house. = Há uma livraria legal perto da minha casa.
+fr Can you show me on the map, please? = Pode me mostrar no mapa, por favor?
+
+### texto | Como chego à estação?
+t Tourist | Excuse me, can you help me? = Com licença, pode me ajudar?
+t Woman | Of course. What do you need? = Claro. Do que você precisa?
+t Tourist | How do I get to the train station? = Como chego à estação de trem?
+t Woman | It's not far. Go straight ahead for two blocks. = Não é longe. Siga em frente por duas quadras.
+t Tourist | Two blocks, OK. And then? = Duas quadras, certo. E depois?
+t Woman | Then turn right at the square, next to the bank. = Depois vire à direita na praça, ao lado do banco.
+t Tourist | Sorry, can you say that again, more slowly? = Desculpe, pode repetir mais devagar?
+t Woman | Sure. Straight ahead, two blocks, then right at the square. = Claro. Em frente, duas quadras, depois à direita na praça.
+t Tourist | Is it far on foot? = É longe a pé?
+t Woman | No, it's about ten minutes. = Não, são uns dez minutos.
+t Tourist | Thank you so much! = Muito obrigado!
+tq Aonde o turista quer ir? = À estação de trem | Ao banco | À praça
+tq Quantas quadras ele precisa andar em frente? = Duas | Dez | Uma
+tq Onde ele vira à direita? = Na praça, ao lado do banco | Na primeira rua | Na estação
+tq Quanto tempo leva a pé? = Uns dez minutos | Duas horas | Cinco minutos
+
+### leitura | Meu bairro
+n I live in a quiet neighborhood near the city center. = Moro num bairro tranquilo perto do centro.
+n On my street there is a supermarket, a pharmacy and a small café. = Na minha rua há um supermercado, uma farmácia e um pequeno café.
+n The library is on the corner, and I go there on Saturdays. = A biblioteca fica na esquina, e vou lá aos sábados.
+n The subway station is five minutes on foot. = A estação de metrô fica a cinco minutos a pé.
+n I go to work by subway, but sometimes I go by bike. = Vou para o trabalho de metrô, mas às vezes vou de bicicleta.
+n There is a big park behind my building. = Há um parque grande atrás do meu prédio.
+n I love my neighborhood because everything is near. = Adoro meu bairro porque tudo é perto.
+tq O que fica na esquina? = A biblioteca | O supermercado | O café
+tq Como a pessoa vai para o trabalho? = De metrô ou de bicicleta | De carro | De ônibus
+tq O que há atrás do prédio? = Um parque grande | Uma estação | Uma farmácia
+tv A estação de metrô fica longe. = F
+tv A pessoa vai à biblioteca aos sábados. = V
+
+# a1u7 | Compras | Roupas, cores e preços; pedir tamanho e pagar.
+
+## Roupas | "Shirt" é camisa e "T-shirt", camiseta. "Pants" (EUA) ou "trousers" (Reino Unido) é calça. Cuidado: no Reino Unido, "pants" é cueca!
+v shirt = camisa; T-shirt = camiseta; pants = calça; dress = vestido; skirt = saia; shoes = sapatos; jacket = jaqueta
+f I need a new [jacket] for the winter. = Preciso de uma jaqueta nova para o inverno. ~ skirt, T-shirt
+f She's wearing a red [dress]. = Ela está usando um vestido vermelho. ~ shoes, pants
+b I like your shoes. = Gosto dos seus sapatos.
+b These pants are too long. = Esta calça está comprida demais.
+l I'm looking for a white shirt. = Estou procurando uma camisa branca. ~ Estou procurando uma camiseta preta. | Estou usando uma camisa branca.
+q Você quer comprar uma camiseta. O que diz? = I'm looking for a T-shirt. | I'm looking for a skirt. | I'm wearing a jacket.
+
+## Cores | As cores vêm antes da roupa e não mudam: "a red dress", "red shoes". "Gray" (EUA) e "grey" (Reino Unido) estão certos.
+v red = vermelho; blue = azul; green = verde; black = preto; white = branco; yellow = amarelo; gray = cinza
+f I want the [black] shoes. = Quero os sapatos pretos. ~ blacks, blue's
+f The sky is [blue] today. = O céu está azul hoje. ~ red, black
+b Do you have this in green? = Vocês têm isto em verde?
+b My favorite color is yellow. = Minha cor favorita é amarelo.
+l A gray jacket and black pants. = Uma jaqueta cinza e uma calça preta. ~ Uma jaqueta preta e uma calça cinza. | Uma camisa cinza e uma calça azul.
+q Você gostou da camisa, mas quer em azul. O que pergunta? = Do you have it in blue? | Is it blue? | I'm blue.
+
+## Quanto custa? | "How much is it?" para uma coisa e "how much are they?" para várias. Para preços: "It's twenty dollars" ou "it's twenty-five ninety-nine" ($25,99).
+v how much is it? = quanto custa?; how much are they? = quanto custam?; price = preço; cheap = barato; expensive = caro; dollars = dólares; on sale = em promoção
+f How much [is] this skirt? = Quanto custa esta saia? ~ are, does
+f How much [are] these shoes? = Quanto custam estes sapatos? ~ is, do
+b It's too expensive for me. = É caro demais para mim.
+b These T-shirts are on sale. = Estas camisetas estão em promoção.
+l The dress is forty-five dollars. = O vestido custa quarenta e cinco dólares. ~ O vestido custa cinquenta e quatro dólares. | A saia custa quarenta e cinco dólares.
+q Você quer saber o preço de um par de tênis. O que pergunta? = How much are they? | How old are they? | How much is she?
+
+## No provador | "Size" é o tamanho (S, M, L) e também o número do sapato. "Can I try it on?" é posso experimentar? "Fitting room" é o provador.
+v size = tamanho, número; small = pequeno; medium = médio; large = grande; can I try it on? = posso experimentar?; fitting room = provador; it's too big = está grande demais
+f Can I [try] it on? = Posso experimentar? ~ wear, put
+f What [size] are you? = Qual é o seu tamanho? ~ color, price
+b The fitting rooms are at the back. = Os provadores ficam no fundo.
+b It's too small. Do you have a large? = Está pequeno demais. Tem um G?
+l It fits me perfectly. = Ficou perfeito em mim. ~ Ficou grande em mim. | Não serve em mim.
+q A calça ficou grande. O que diz à vendedora? = It's too big. Do you have a smaller size? | It's too small. | It fits me perfectly.
+
+## Pagar | "I'll take it" é vou levar. "In cash" é em dinheiro e "by card", com cartão. "Receipt" é o recibo, a nota fiscal.
+v I'll take it = vou levar; to pay = pagar; in cash = em dinheiro; by card = com cartão; receipt = recibo; bag = sacola; change = troco
+f Can I pay [by] card? = Posso pagar com cartão? ~ in, on
+f I'll [take] it. = Vou levar. ~ pay, try
+b Do you need a bag? = Você precisa de uma sacola?
+b Here's your change and your receipt. = Aqui está seu troco e seu recibo.
+l I'll pay in cash. = Vou pagar em dinheiro. ~ Vou pagar com cartão. | Vou levar em dinheiro.
+q A vendedora pergunta "Cash or card?". Você quer pagar com cartão. O que diz? = By card, please. | In cash, please. | I'll try it on.
+
+### frases
+fr I'm looking for a jacket for the winter. = Estou procurando uma jaqueta para o inverno.
+fr Do you have this T-shirt in blue? = Vocês têm esta camiseta em azul?
+fr How much are these black shoes? = Quanto custam estes sapatos pretos?
+fr The dress is very pretty, but it's too [expensive]. = O vestido é muito bonito, mas é caro demais. ~ cheap, small
+fr Excuse me, where are the fitting rooms? = Com licença, onde ficam os provadores?
+fr This shirt is too big. Do you have a medium? = Esta camisa está grande demais. Tem uma M?
+fr Everything in this store is on sale today. = Tudo nesta loja está em promoção hoje.
+fr I'll take it. Can I pay [by] card? = Vou levar. Posso pagar com cartão? ~ in, on
+fr My favorite color is green, but I always wear black. = Minha cor favorita é verde, mas sempre uso preto.
+fr Here's your receipt. Have a nice day! = Aqui está seu recibo. Tenha um bom dia!
+
+### texto | Na loja de roupas
+t Clerk | Hello! Can I help you? = Olá! Posso ajudar?
+t Paula | Yes, I'm looking for a jacket for the winter. = Sim, estou procurando uma jaqueta para o inverno.
+t Clerk | We have these. What size are you? = Temos estas. Qual é o seu tamanho?
+t Paula | Medium. Do you have it in black? = Médio. Vocês têm em preto?
+t Clerk | Yes, here it is. The fitting rooms are at the back. = Sim, aqui está. Os provadores ficam no fundo.
+t Paula | It's a little big. Do you have a small? = Está um pouco grande. Tem um P?
+t Clerk | Yes, here you go. How is it? = Sim, aqui está. Como ficou?
+t Paula | It's perfect! How much is it? = Ficou perfeita! Quanto custa?
+t Clerk | It's eighty dollars, but today it's on sale: sixty. = Custa oitenta dólares, mas hoje está em promoção: sessenta.
+t Paula | Great! I'll take it. Can I pay by card? = Ótimo! Vou levar. Posso pagar com cartão?
+t Clerk | Of course. Do you need a bag? = Claro. Precisa de uma sacola?
+tq O que a Paula procura? = Uma jaqueta para o inverno | Um vestido | Sapatos pretos
+tq Qual tamanho fica bem nela? = P (small) | M (medium) | G (large)
+tq Quanto ela paga pela jaqueta? = Sessenta dólares | Oitenta dólares | Cinquenta dólares
+tq Como ela paga? = Com cartão | Em dinheiro | Não paga
+
+### leitura | Um dia de compras
+n On Saturday I go shopping with my sister. = No sábado vou às compras com minha irmã.
+n First we go to a big store in the city center. = Primeiro vamos a uma loja grande no centro.
+n My sister buys a red dress and white shoes. = Minha irmã compra um vestido vermelho e sapatos brancos.
+n I'm looking for jeans, but they are too expensive. = Procuro uma calça jeans, mas é cara demais.
+n In another store, the jeans are on sale. = Em outra loja, as calças jeans estão em promoção.
+n I try on two pairs and I take the blue ones. = Experimento duas e levo a azul.
+n Then we have a coffee and go home, tired but happy. = Depois tomamos um café e voltamos para casa, cansadas mas contentes.
+tq Com quem a pessoa vai às compras? = Com a irmã | Com a mãe | Sozinha
+tq O que a irmã compra? = Um vestido vermelho e sapatos brancos | Uma jaqueta | Uma calça jeans
+tq Por que ela não compra a calça na primeira loja? = Era cara demais | Não tinha o tamanho | Não gostou da cor
+tv A pessoa leva a calça jeans azul. = V
+tv Elas voltam para casa tristes. = F
+
+# a1u8 | Tempo e clima | Falar do tempo, das estações, dos meses e das datas.
+
+## Como está o tempo? | Para o clima se usa "it's": "it's hot" (está calor), "it's cold" (está frio), "it's sunny" (está ensolarado), "it's raining" (está chovendo).
+v what's the weather like? = como está o tempo?; hot = quente; cold = frio; sunny = ensolarado; cloudy = nublado; windy = com vento; it's raining = está chovendo
+f It's very [hot] today. = Está muito quente hoje. ~ rain, weather
+f Take an umbrella, it's [raining]. = Leve um guarda-chuva, está chovendo. ~ sunny, hot
+b What's the weather like in London? = Como está o tempo em Londres?
+b It's cold and cloudy. = Está frio e nublado.
+l It's sunny but windy. = Está ensolarado, mas com vento. ~ Está nublado e com vento. | Está chovendo e com vento.
+q Seu amigo pergunta como está o tempo. Está fazendo 35 graus. O que diz? = It's very hot! | It's very cold! | It's snowing!
+
+## As estações | As estações: "spring" (primavera), "summer" (verão), "fall" ou "autumn" (outono) e "winter" (inverno). Com estações se usa "in": "in summer".
+v spring = primavera; summer = verão; fall = outono; winter = inverno; snow = neve; it's snowing = está nevando; season = estação
+f It snows a lot [in] winter. = Neva muito no inverno. ~ on, at
+f My favorite season is [summer]. = Minha estação favorita é o verão. ~ snow, weather
+b In spring there are a lot of flowers. = Na primavera há muitas flores.
+b In Brazil it doesn't snow much. = No Brasil não neva muito.
+l In fall the leaves are yellow and red. = No outono as folhas ficam amarelas e vermelhas. ~ Na primavera as folhas ficam verdes. | No inverno as folhas caem.
+q Em que estação faz mais frio? = Winter | Summer | Spring
+
+## Meses e datas | Os meses também começam com maiúscula: January, February... Com meses se usa "in" ("in May") e com datas, "on" ("on May 5th"). Nos EUA, a data se escreve mês/dia: 05/12 é 12 de maio.
+v January = janeiro; March = março; May = maio; July = julho; September = setembro; December = dezembro; date = data
+f My birthday is [in] April. = Meu aniversário é em abril. ~ on, at
+f Christmas is [on] December 25th. = O Natal é em 25 de dezembro. ~ in, at
+b What's the date today? = Qual é a data de hoje?
+b School starts in September. = As aulas começam em setembro.
+l My birthday is on July 10th. = Meu aniversário é em 10 de julho. ~ Meu aniversário é em 7 de outubro. | Meu aniversário é em julho.
+q Alguém pergunta "When is your birthday?". Seu aniversário é em março. O que responde? = It's in March. | It's on March. | It's at March.
+
+## Roupa para o tempo | "Wear" é usar (roupa). "Coat" é casaco pesado; "sweater", suéter. "Umbrella" é guarda-chuva e "sunglasses", óculos de sol.
+v to wear = usar (roupa); coat = casaco; sweater = suéter, blusa de frio; scarf = cachecol; umbrella = guarda-chuva; sunglasses = óculos de sol; shorts = bermuda, short
+f In winter I [wear] a coat. = No inverno uso casaco. ~ take, put
+f Take your [umbrella], it's going to rain. = Leve o guarda-chuva, vai chover. ~ sunglasses, shorts
+b In summer I wear shorts and T-shirts. = No verão uso bermuda e camiseta.
+b Don't forget your sunglasses. = Não esqueça seus óculos de sol.
+l It's cold. Wear a scarf. = Está frio. Use um cachecol. ~ Está calor. Use um chapéu. | Está frio. Use um guarda-chuva.
+q Está muito frio e nevando. O que você veste? = A coat and a scarf | Shorts and sunglasses | A T-shirt
+## Vai chover? | Para previsões e planos, use "going to": "it's going to rain" (vai chover), "I'm going to stay home" (vou ficar em casa). "Tomorrow" é amanhã.
+v it's going to rain = vai chover; tomorrow = amanhã; tonight = hoje à noite; this weekend = este fim de semana; forecast = previsão do tempo; degrees = graus; storm = tempestade
+f It's [going] to rain tomorrow. = Vai chover amanhã. ~ go, goes
+f I'm going [to] stay home tonight. = Vou ficar em casa hoje à noite. ~ for, at
+b The forecast says it's going to be sunny. = A previsão diz que vai fazer sol.
+b It's twenty degrees today. = Está fazendo vinte graus hoje.
+l There's going to be a storm tonight. = Vai ter uma tempestade hoje à noite. ~ Teve uma tempestade ontem à noite. | Vai fazer sol hoje à noite.
+q A previsão diz que vai chover amanhã. Como você conta isso? = It's going to rain tomorrow. | It's raining tomorrow yesterday. | It rains yesterday.
+
+### frases
+fr What's the weather like today? — It's sunny and hot. = Como está o tempo hoje? — Está ensolarado e quente.
+fr In winter it's very cold and sometimes it snows. = No inverno faz muito frio e às vezes neva.
+fr My favorite season is spring because of the flowers. = Minha estação favorita é a primavera por causa das flores.
+fr My birthday is [in] October. = Meu aniversário é em outubro. ~ on, at
+fr Take an umbrella, it's going to rain this afternoon. = Leve um guarda-chuva, vai chover hoje à tarde.
+fr In summer we go to the beach every weekend. = No verão vamos à praia todo fim de semana.
+fr The forecast says it's going to be cold tomorrow. = A previsão diz que vai fazer frio amanhã.
+fr It's raining, so I'm [going] to stay home. = Está chovendo, então vou ficar em casa. ~ go, goes
+fr Today is March 3rd and it's still hot. = Hoje é 3 de março e ainda está calor.
+fr Wear a sweater, it's windy outside. = Vista um suéter, está ventando lá fora.
+
+### texto | Planos para o fim de semana
+t Mia | What are you going to do this weekend? = O que você vai fazer neste fim de semana?
+t Jake | I want to go to the beach. And you? = Quero ir à praia. E você?
+t Mia | The beach? But the forecast says it's going to rain! = À praia? Mas a previsão diz que vai chover!
+t Jake | Really? On Saturday too? = Sério? No sábado também?
+t Mia | Yes, Saturday and Sunday. And it's going to be cold. = Sim, sábado e domingo. E vai fazer frio.
+t Jake | Oh no. What's the temperature going to be? = Ah, não. Qual vai ser a temperatura?
+t Mia | About twelve degrees. = Uns doze graus.
+t Jake | OK, so no beach. Do you want to go to the movies? = Tá, então nada de praia. Quer ir ao cinema?
+t Mia | Good idea! On Saturday afternoon? = Boa ideia! No sábado à tarde?
+t Jake | Perfect. And don't forget your umbrella! = Perfeito. E não esqueça o guarda-chuva!
+tq Aonde o Jake quer ir primeiro? = À praia | Ao cinema | Ao parque
+tq Como vai estar o tempo no fim de semana? = Chuvoso e frio | Ensolarado e quente | Com neve
+tq Qual vai ser a temperatura? = Uns doze graus | Vinte graus | Trinta graus
+tq O que eles decidem fazer? = Ir ao cinema no sábado à tarde | Ficar em casa | Ir à praia no domingo
+
+### leitura | O tempo na minha cidade
+n I live in Chicago, a city with four very different seasons. = Moro em Chicago, uma cidade com quatro estações muito diferentes.
+n In winter it's very cold and it snows a lot. = No inverno faz muito frio e neva muito.
+n Sometimes it's ten degrees below zero! = Às vezes faz dez graus abaixo de zero!
+n In spring the weather is nice, but it rains often. = Na primavera o tempo é agradável, mas chove com frequência.
+n Summer is hot and people go to the lake. = O verão é quente e as pessoas vão ao lago.
+n My favorite season is fall, because the trees are red and yellow. = Minha estação favorita é o outono, porque as árvores ficam vermelhas e amarelas.
+n It's also very windy here. = Também venta muito aqui.
+tq Onde a pessoa mora? = Em Chicago | Em Londres | Em Miami
+tq Como é a primavera? = Agradável, mas chove com frequência | Muito fria | Muito quente
+tq Qual é a estação favorita da pessoa? = O outono | O verão | O inverno
+tv No inverno às vezes faz dez graus abaixo de zero. = V
+tv No verão as pessoas vão à montanha. = F
+
+# a1u9 | Tempo livre | Hobbies, esportes, convites e planos para o fim de semana.
+
+## Hobbies | Depois de "like", "love" e "hate", o verbo geralmente vai com -ing: "I like reading", "she loves cooking". "Hobby" é passatempo.
+v reading = ler, leitura; cooking = cozinhar; dancing = dançar; painting = pintar; free time = tempo livre; to take photos = tirar fotos; hobby = passatempo
+f I like [reading] in my free time. = Gosto de ler no meu tempo livre. ~ read, reads
+f My mother loves [cooking]. = Minha mãe adora cozinhar. ~ cooks, cook
+b What do you do in your free time? = O que você faz no seu tempo livre?
+b I don't like dancing. = Não gosto de dançar.
+l My hobby is taking photos. = Meu passatempo é tirar fotos. ~ Meu passatempo é pintar. | Meu passatempo é ler.
+q Alguém pergunta "What are your hobbies?". O que você responde? = I like painting and reading. | I'm a painter. | I'm fine, thanks.
+
+## Esportes | Com esportes de bola, use "play": "play soccer", "play tennis". Com esportes em -ing, use "go": "go swimming", "go running". Nos EUA, futebol é "soccer"; no Reino Unido, "football".
+v to play soccer = jogar futebol; to play tennis = jogar tênis; to go swimming = nadar; to go running = correr; to do yoga = fazer ioga; gym = academia; team = time
+f I [play] soccer on Saturdays. = Jogo futebol aos sábados. ~ go, do
+f We [go] swimming every summer. = Nadamos todo verão. ~ play, do
+b She does yoga twice a week. = Ela faz ioga duas vezes por semana.
+b What's your favorite team? = Qual é o seu time favorito?
+l I go running in the park. = Corro no parque. ~ Jogo tênis no parque. | Nado no parque.
+q Como você diz que joga basquete? = I play basketball. | I go basketball. | I do basketball.
+
+## Convites | Para convidar: "Do you want to...?" ou, mais educado, "Would you like to...?". Para aceitar: "Sure!", "I'd love to!". Para recusar: "Sorry, I can't".
+v would you like to...? = você gostaria de...?; do you want to...? = você quer...?; I'd love to = eu adoraria; sure = claro; sorry, I can't = desculpe, não posso; maybe = talvez; another day = outro dia
+f [Would] you like to have dinner with me? = Você gostaria de jantar comigo? ~ Do, Are
+f I'd [love] to! = Eu adoraria! ~ like, want
+b Do you want to go to the movies? = Você quer ir ao cinema?
+b Sorry, I can't. Maybe another day. = Desculpe, não posso. Talvez outro dia.
+l Sure! What time? = Claro! A que horas? ~ Desculpe, não posso. | Talvez amanhã.
+q Seu amigo convida para um café, e você aceita. O que diz? = I'd love to! | Sorry, I can't. | Maybe another day.
+
+## Música e filmes | "Movie" (EUA) ou "film" (Reino Unido) é filme. "Series" é série (igual no singular e no plural). "Singer" é cantor ou cantora.
+v movie = filme; series = série; singer = cantor, cantora; song = música, canção; concert = show; to watch = assistir; to listen to = ouvir
+f I [listen] to music every day. = Ouço música todos os dias. ~ hear, watch
+f Do you [watch] series on TV? = Você assiste a séries na TV? ~ listen, look
+b My favorite singer is from Canada. = Meu cantor favorito é do Canadá.
+b This song is very beautiful. = Esta música é muito bonita.
+l We're going to a concert on Friday. = Vamos a um show na sexta. ~ Fomos a um show na sexta. | Vamos ao cinema na sexta.
+q Você quer convidar alguém para ver um filme. O que diz? = Would you like to watch a movie? | Would you like to listen to a movie? | Do you watch a song?
+
+## O fim de semana | Para planos, use "going to" + verbo: "I'm going to visit my parents". Para perguntar: "What are you going to do on Saturday?".
+v this weekend = neste fim de semana; on Saturday = no sábado; to visit = visitar; to relax = descansar, relaxar; to go out = sair; with friends = com amigos; plans = planos
+f I'm going to [visit] my grandparents. = Vou visitar meus avós. ~ visiting, visits
+f What are you going to [do] on Sunday? = O que você vai fazer no domingo? ~ does, doing
+b I'm going to relax at home. = Vou descansar em casa.
+b Do you have any plans for the weekend? = Você tem planos para o fim de semana?
+l On Saturday I'm going out with friends. = No sábado vou sair com amigos. ~ No domingo vou sair com amigos. | No sábado vou ficar em casa.
+q Alguém pergunta seus planos. Você vai ficar em casa. O que responde? = I'm going to stay home. | I stay home yesterday. | I'm going to home stay.
+
+### frases
+fr In my free time I like reading and taking photos. = No meu tempo livre gosto de ler e tirar fotos.
+fr I play soccer with my friends every Saturday morning. = Jogo futebol com meus amigos todo sábado de manhã.
+fr Would you like to go to the movies on Friday? = Você gostaria de ir ao cinema na sexta?
+fr I'd love to! What [time] does the movie start? = Eu adoraria! A que horas começa o filme? ~ hour, day
+fr My sister goes swimming three times a week. = Minha irmã nada três vezes por semana.
+fr Sorry, I can't go tonight. Maybe tomorrow? = Desculpe, não posso ir hoje à noite. Talvez amanhã?
+fr This weekend I'm going to visit my parents. = Neste fim de semana vou visitar meus pais.
+fr I love [listening] to music in the car. = Adoro ouvir música no carro. ~ listen, hearing
+fr What's your favorite series? I need a new one. = Qual é a sua série favorita? Preciso de uma nova.
+fr We're going to a concert in the park on Sunday. = Vamos a um show no parque no domingo.
+
+### texto | Um convite
+t Lily | Hi, Sam! Do you have any plans for Saturday? = Oi, Sam! Você tem planos para sábado?
+t Sam | Not really. Why? = Na verdade, não. Por quê?
+t Lily | There's a jazz concert in the park. Would you like to come? = Tem um show de jazz no parque. Você gostaria de vir?
+t Sam | I'd love to! What time is it? = Eu adoraria! A que horas é?
+t Lily | It starts at six. = Começa às seis.
+t Sam | Oh, at six I have soccer practice. = Ah, às seis tenho treino de futebol.
+t Lily | Can you come after practice? = Você pode vir depois do treino?
+t Sam | Yes, I finish at seven. Is that OK? = Sim, termino às sete. Tudo bem?
+t Lily | Sure, the concert is long. = Claro, o show é longo.
+t Sam | Great. Should I bring something? = Ótimo. Devo levar alguma coisa?
+t Lily | Bring a blanket. We can sit on the grass. = Leve uma manta. Podemos sentar na grama.
+tq O que tem no parque no sábado? = Um show de jazz | Um jogo de futebol | Um piquenique
+tq A que horas começa o show? = Às seis | Às sete | Às cinco
+tq Por que o Sam vai chegar atrasado? = Tem treino de futebol | Vai trabalhar | Vai visitar os pais
+tq O que o Sam deve levar? = Uma manta | Comida | Cadeiras
+
+### leitura | O fim de semana do Daniel
+n Daniel works a lot during the week, so he loves weekends. = O Daniel trabalha muito durante a semana, então adora os fins de semana.
+n On Saturday morning he plays tennis with his brother. = No sábado de manhã ele joga tênis com o irmão.
+n In the afternoon he reads or watches a series at home. = À tarde ele lê ou assiste a uma série em casa.
+n On Saturday night he usually goes out with friends. = No sábado à noite ele normalmente sai com os amigos.
+n On Sunday he has lunch with his parents. = No domingo ele almoça com os pais.
+n This Sunday he's going to cook for them for the first time. = Neste domingo ele vai cozinhar para eles pela primeira vez.
+n He's a little nervous, but very excited. = Ele está um pouco nervoso, mas muito animado.
+tq Com quem o Daniel joga tênis? = Com o irmão | Com o pai | Com um amigo
+tq O que ele faz no sábado à noite? = Sai com os amigos | Fica em casa | Vai ao cinema sozinho
+tq O que ele vai fazer de novo neste domingo? = Cozinhar para os pais | Jogar futebol | Viajar
+tv Daniel trabalha pouco durante a semana. = F
+tv Ele está nervoso e animado. = V
+
+# a1u10 | Primeira viagem | Aeroporto, hotel, restaurante e informações turísticas.
+
+## No aeroporto | "Flight" é voo, "gate" é o portão de embarque e "check in" é fazer o check-in e despachar a mala. "Boarding pass" é o cartão de embarque.
+v flight = voo; gate = portão; passport = passaporte; boarding pass = cartão de embarque; suitcase = mala; to check in = fazer o check-in; departure = partida
+f Your [passport], please. = Seu passaporte, por favor. ~ gate, flight
+f The flight leaves from [gate] twelve. = O voo sai do portão doze. ~ door, room
+b I'd like to check in this suitcase. = Gostaria de despachar esta mala.
+b What time is boarding? = A que horas é o embarque?
+l The flight is delayed. = O voo está atrasado. ~ O voo está cancelado. | O voo está no horário.
+q A funcionária pede seu cartão de embarque. O que ela diz? = Your boarding pass, please. | Your suitcase, please. | Your flight, please.
+
+## No hotel | "Single room" é quarto para uma pessoa e "double room", para duas. "Reservation" (ou "booking") é a reserva. "Is breakfast included?" pergunta se o café está incluído.
+v reservation = reserva; single room = quarto de solteiro; double room = quarto duplo; key = chave; front desk = recepção; is breakfast included? = o café está incluído?; night = noite
+f I have a [reservation] under the name Silva. = Tenho uma reserva no nome Silva. ~ room, key
+f A double room for three [nights], please. = Um quarto duplo para três noites, por favor. ~ days off, night
+b Is breakfast included? = O café da manhã está incluído?
+b Here's your key. You're in room 204. = Aqui está sua chave. Você está no quarto 204.
+l Breakfast is from seven to ten. = O café é das sete às dez. ~ O café é das dez às sete. | O jantar é das sete às dez.
+q Você chega ao hotel e já reservou. O que diz? = I have a reservation. | I want a reservation tomorrow. | Where is the reservation?
+
+## No restaurante | "Menu" é o cardápio. "Starter" (ou "appetizer") é a entrada e "main course", o prato principal. Para pedir: "I'll have the fish, please".
+v menu = cardápio; table for two = mesa para dois; starter = entrada; main course = prato principal; dessert = sobremesa; I'll have = vou querer; waiter = garçom
+f A table [for] two, please. = Uma mesa para dois, por favor. ~ to, of
+f I'll [have] the chicken, please. = Vou querer o frango, por favor. ~ take, am
+b Can we see the menu, please? = Podemos ver o cardápio, por favor?
+b For dessert, a chocolate cake. = De sobremesa, um bolo de chocolate.
+l The soup is very good today. = A sopa está muito boa hoje. ~ A salada está muito boa hoje. | A sopa não está boa hoje.
+q O garçom pergunta "Are you ready to order?". Você quer o peixe. O que diz? = I'll have the fish, please. | I'm fish, please. | The fish is ready.
+
+## Informação turística | "Tourist information" é o centro de informações turísticas. "Opening hours" é o horário de funcionamento. "Guided tour" é a visita guiada.
+v tourist information = informação turística; opening hours = horário de funcionamento; open = aberto; closed = fechado; guided tour = visita guiada; museum = museu; ticket = ingresso
+f What time does the museum [open]? = A que horas o museu abre? ~ close, opens
+f Is there a [guided] tour in Portuguese? = Tem visita guiada em português? ~ guide, guiding
+b The museum is closed on Mondays. = O museu fecha às segundas.
+b How much is a ticket? = Quanto custa um ingresso?
+l The tour starts at eleven. = A visita começa às onze. ~ A visita termina às onze. | A visita começa às sete.
+q Você quer saber o horário do castelo. O que pergunta? = What are the opening hours? | Where are the hours? | How much is the castle?
+
+## Problemas na viagem | Para pedir ajuda: "Can you help me?". "I've lost my..." é perdi meu...: "I've lost my passport". "There's a problem with..." é há um problema com...
+v can you help me? = pode me ajudar?; I've lost = eu perdi; wallet = carteira; police = polícia; doctor = médico; emergency = emergência; there's a problem = há um problema
+f I've [lost] my wallet. = Perdi minha carteira. ~ lose, losing
+f There's a [problem] with my room. = Há um problema com meu quarto. ~ help, doctor
+b Can you call a doctor, please? = Pode chamar um médico, por favor?
+b Where is the police station? = Onde fica a delegacia?
+l The air conditioning doesn't work. = O ar-condicionado não funciona. ~ O chuveiro não funciona. | O ar-condicionado funciona muito bem.
+q Você não encontra o passaporte. O que diz? = I've lost my passport. | I've found my passport. | My passport is here.
+
+### frases
+fr Excuse me, where is gate fifteen? = Com licença, onde fica o portão quinze?
+fr I have a reservation for two nights under the name Costa. = Tenho uma reserva para duas noites no nome Costa.
+fr Is breakfast included in the price? = O café da manhã está incluído no preço?
+fr A table [for] four, please. Do you have a menu in English? = Uma mesa para quatro, por favor. Vocês têm cardápio em inglês? ~ to, of
+fr For the main course I'll have the grilled fish. = De prato principal vou querer o peixe grelhado.
+fr What time does the museum open on Sundays? = A que horas o museu abre aos domingos?
+fr Is there a guided tour this afternoon? = Tem visita guiada hoje à tarde?
+fr Sorry, I've [lost] my key. Can you help me? = Desculpe, perdi minha chave. Pode me ajudar? ~ lose, losing
+fr Our flight is delayed two hours. = Nosso voo está atrasado duas horas.
+fr There's a problem with my room: there's no hot water. = Há um problema com meu quarto: não tem água quente.
+
+### texto | Chegada ao hotel
+t Receptionist | Good evening! Welcome to the Park Hotel. = Boa noite! Bem-vindo ao Park Hotel.
+t Carlos | Good evening. I have a reservation under the name Carlos Lima. = Boa noite. Tenho uma reserva no nome Carlos Lima.
+t Receptionist | Let me see... Yes, a single room for three nights. = Deixe-me ver... Sim, um quarto de solteiro para três noites.
+t Carlos | That's right. Is breakfast included? = Isso mesmo. O café da manhã está incluído?
+t Receptionist | Yes, it's from seven to ten in the restaurant. = Sim, é das sete às dez no restaurante.
+t Carlos | Great. And is there Wi-Fi in the room? = Ótimo. E tem Wi-Fi no quarto?
+t Receptionist | Yes, the password is on the card. Can I see your passport? = Sim, a senha está no cartão. Posso ver seu passaporte?
+t Carlos | Here you go. = Aqui está.
+t Receptionist | Thank you. Here's your key. You're in room 305, on the third floor. = Obrigado. Aqui está sua chave. Você está no quarto 305, no terceiro andar.
+t Carlos | Is there an elevator? = Tem elevador?
+t Receptionist | Yes, it's on the left. Enjoy your stay! = Sim, fica à esquerda. Boa estadia!
+tq Por quantas noites é a reserva? = Três | Duas | Uma
+tq Até que horas é o café da manhã? = Até as dez | Até as sete | Até o meio-dia
+tq Onde está a senha do Wi-Fi? = No cartão | Na parede | Com a recepcionista
+tq Em que andar fica o quarto? = No terceiro | No primeiro | No quinto
+
+### leitura | Primeira viagem a Nova York
+n Last week I traveled to New York for the first time. = Na semana passada viajei a Nova York pela primeira vez.
+n The flight from São Paulo was long, but comfortable. = O voo de São Paulo foi longo, mas confortável.
+n My hotel was in Manhattan, near Central Park. = Meu hotel ficava em Manhattan, perto do Central Park.
+n On the first day I took a guided tour of the city. = No primeiro dia fiz uma visita guiada pela cidade.
+n I ate pizza and hot dogs, and I visited a lot of museums. = Comi pizza e cachorro-quente e visitei muitos museus.
+n On the last day I lost my wallet in the subway! = No último dia perdi minha carteira no metrô!
+n Luckily, a woman found it and gave it back to me. = Por sorte, uma mulher a encontrou e me devolveu.
+tq Onde ficava o hotel? = Em Manhattan, perto do Central Park | Perto do aeroporto | No Brooklyn
+tq O que a pessoa fez no primeiro dia? = Uma visita guiada | Foi à praia | Ficou no hotel
+tq O que aconteceu no último dia? = Perdeu a carteira no metrô | Perdeu o voo | Ficou doente
+tv O voo foi curto e desconfortável. = F
+tv Uma mulher devolveu a carteira. = V

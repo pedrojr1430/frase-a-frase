@@ -55,12 +55,46 @@ const SCENARIOS = {
   entrevista: 'Você é recrutador numa entrevista de emprego em Bogotá. Faça perguntas sobre experiência, pontos fortes e objetivos do aluno.'
 };
 
+const SCENARIOS_EN = {
+  livre: 'Conversa livre sobre o dia a dia do aluno: rotina, família, trabalho, gostos e planos.',
+  apresentar: 'O aluno acabou de conhecer você numa festa. Pergunte nome, de onde é, o que faz e do que gosta.',
+  cafe: 'Você é atendente de um café em Londres. O aluno quer pedir algo para comer e beber e depois pagar.',
+  hotel: 'Você é recepcionista de um hotel em Nova York. O aluno chega para fazer check-in e tem perguntas sobre o quarto e o café da manhã.',
+  caminho: 'Você é uma pessoa na rua em Chicago. O aluno está perdido e pede direções para chegar a um museu.',
+  entrevista: 'Você é recrutador numa entrevista de emprego em Toronto. Faça perguntas sobre experiência, pontos fortes e objetivos do aluno.'
+};
+
+const LEVELS_EN = {
+  A1: 'A1 (iniciante): frases muito curtas (até 10 palavras), vocabulário básico, presente simples e "to be". Fale devagar e com palavras frequentes.',
+  A2: 'A2 (básico): frases curtas, presente, passado simples, present perfect e futuro com "going to" e "will". Vocabulário do cotidiano.',
+  B1: 'B1 (intermediário): frases naturais, todos os tempos verbais comuns, condicionais simples e phrasal verbs frequentes.',
+  B2: 'B2 (avançado): inglês natural e variado, com expressões idiomáticas, condicionais e voz passiva.'
+};
+
 const LEVELS = {
   A1: 'A1 (iniciante): frases muito curtas (até 10 palavras), vocabulário básico, só presente do indicativo. Fale devagar e com palavras frequentes.',
   A2: 'A2 (básico): frases curtas, presente, pretérito perfeito e indefinido, futuro com "ir a". Vocabulário do cotidiano.',
   B1: 'B1 (intermediário): frases naturais, todos os tempos do indicativo e subjuntivo presente simples. Pode usar expressões comuns.',
   B2: 'B2 (avançado): espanhol natural e variado, com expressões idiomáticas e subjuntivo.'
 };
+
+function systemPromptEn(level, scenario) {
+  return [
+    'Você é Lía, a tutora de conversação do app Frase a Frase, que ensina inglês para brasileiros.',
+    'Você é uma inteligência artificial: nunca diga ou finja que é humana.',
+    'Identidade: você é a Lía, a IA do Frase a Frase. Não cite empresas nem nomes de modelos de IA. Se perguntarem se você é o ChatGPT ou outra IA específica, não confirme nem negue: diga que é a Lía, a IA do Frase a Frase, e que funciona com modelos de linguagem de parceiros. Nunca afirme que não usa tecnologia de terceiros.',
+    'Nível do aluno: ' + LEVELS_EN[level],
+    'Cenário: ' + SCENARIOS_EN[scenario],
+    'Regras:',
+    '- Escreva "reply" SEMPRE em inglês claro e natural (americano), no nível do aluno, em no máximo 2 ou 3 frases curtas, e termine com uma pergunta para manter a conversa.',
+    '- Se a última mensagem do aluno tiver erro de inglês, preencha "correction" em português, curto: a forma certa entre aspas e uma explicação de uma frase. Se não houver erro, deixe "correction" vazio.',
+    '- Se o aluno escrever em português, responda em inglês simples e mostre em "correction" como dizer a mensagem dele em inglês.',
+    '- "suggestions": duas respostas curtas e diferentes que o aluno poderia dar agora, em inglês, no nível dele.',
+    '- Elogie progressos de vez em quando, com naturalidade.',
+    '- Assuntos impróprios ou fora do aprendizado: recuse com gentileza, em inglês simples, e volte ao cenário.',
+    'Responda somente com JSON válido no formato {"reply": "...", "correction": "...", "suggestions": ["...", "..."]}.'
+  ].join('\n');
+}
 
 function systemPrompt(level, scenario) {
   return [
@@ -147,6 +181,7 @@ export default {
     let body;
     try { body = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
     const level = LEVELS[body.level] ? body.level : 'A1';
+    const en = body.lang === 'en';
 
     // Voz da Lía: transforma o texto da resposta em áudio (mp3).
     if (typeof body.tts === 'string') {
@@ -160,7 +195,9 @@ export default {
           model: env.TTS_MODEL || 'gpt-4o-mini-tts',
           voice: ttsVoice,
           input,
-          instructions: 'Você é a Lía, professora de espanhol simpática e acolhedora. Fale em espanhol latino-americano neutro, com voz calorosa, sorridente e encorajadora. ' + VOICE_STYLE[level],
+          instructions: (en
+            ? 'Você é a Lía, professora de inglês simpática e acolhedora. Fale em inglês americano claro e natural, com voz calorosa, sorridente e encorajadora. '
+            : 'Você é a Lía, professora de espanhol simpática e acolhedora. Fale em espanhol latino-americano neutro, com voz calorosa, sorridente e encorajadora. ') + VOICE_STYLE[level],
           response_format: 'mp3'
         })
       });
@@ -180,7 +217,7 @@ export default {
     const model = env.MODEL || 'gpt-5-mini';
     const payload = {
       model,
-      messages: [{ role: 'system', content: systemPrompt(level, scenario) }, ...history],
+      messages: [{ role: 'system', content: en ? systemPromptEn(level, scenario) : systemPrompt(level, scenario) }, ...history],
       response_format: { type: 'json_object' },
       max_completion_tokens: 700
     };

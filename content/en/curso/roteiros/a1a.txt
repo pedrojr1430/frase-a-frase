@@ -1,0 +1,452 @@
+// A1 — unidades 1 a 5 (inglês)
+
+# a1u1 | Primeiros passos | Cumprimentar, apresentar-se, contar até dez e ser educado.
+
+## Saudações | "Good morning" vai até o meio-dia; à tarde se diz "good afternoon" e, à noite, "good evening". "Good night" só se usa para se despedir ou ir dormir.
+v hello = olá, oi; welcome = bem-vindo; good morning = bom dia; good afternoon = boa tarde; good evening = boa noite (ao chegar); goodbye = tchau; see you later = até logo
+f Good [morning], Mr. Brown. = Bom dia, senhor Brown. ~ night, evening
+f It's three o'clock: "Good [afternoon]!" = São três horas: "Boa tarde!" ~ morning, night
+b Hi, good morning. = Oi, bom dia.
+b Goodbye, see you tomorrow. = Tchau, até amanhã.
+l See you later! = Até logo! ~ Até amanhã! | Boa noite!
+q São 21h e você chega numa festa. O que diz? = Good evening! | Good morning! | Good afternoon!
+
+## Apresentar-se | Para dizer o nome: "My name is..." ou "I'm...". Para dizer de onde você é: "I'm from Brazil". O "I" (eu) é sempre maiúsculo.
+v my name is = meu nome é; I'm = eu sou, eu estou; I'm from = eu sou de; what's your name? = qual é o seu nome?; where are you from? = de onde você é?; nice to meet you = prazer em conhecer; Brazil = Brasil
+f My [name] is Ana. = Meu nome é Ana. ~ from, are
+f I'm [from] Brazil. = Eu sou do Brasil. ~ name, is
+b What's your name? = Qual é o seu nome?
+b Nice to meet you, Tom. = Prazer em conhecer você, Tom.
+l I'm from São Paulo. = Eu sou de São Paulo. ~ Eu moro em São Paulo. | Eu estou em São Paulo.
+q Alguém pergunta "Where are you from?". Como você responde? = I'm from Brazil. | My name is Paulo. | I'm fine, thanks.
+
+## Números de 0 a 10 | Em inglês, "zero" também se diz "oh" em números de telefone. Repare na pronúncia de "three" (com a língua entre os dentes) e de "eight" (parece "eit").
+v one = um; two = dois; three = três; four = quatro; five = cinco; six = seis; eight = oito
+f I have [two] sisters. = Eu tenho duas irmãs. ~ one, zero
+f Room number [ten], please. = Quarto número dez, por favor. ~ tea, then
+b I have three brothers. = Eu tenho três irmãos.
+b My phone number is five, four, eight. = Meu número de telefone é cinco, quatro, oito.
+l Seven, eight, nine, ten. = Sete, oito, nove, dez. ~ Seis, sete, oito, nove. | Um, dois, três, quatro.
+q Como se diz o número 6? = six | seven | sixteen
+
+## Como você está? | "How are you?" é a pergunta mais comum. A resposta típica é "I'm fine, thanks. And you?". Para algo mais informal: "How's it going?".
+v how are you? = como você está?; fine = bem; very well = muito bem; tired = cansado; happy = feliz, contente; not bad = nada mal; and you? = e você?
+f I'm [fine], thanks. = Estou bem, obrigado. ~ name, from
+f I'm a little [tired] today. = Hoje estou um pouco cansado. ~ from, nice
+b How are you today? = Como você está hoje?
+b I'm very well, and you? = Estou muito bem, e você?
+l Not bad, thanks. = Nada mal, obrigado. ~ Muito mal, obrigado. | Estou cansado, obrigado.
+q Um colega pergunta "How are you?". O que você responde? = Fine, thanks. And you? | I'm from Brazil. | My name is Rita.
+
+## Cortesia | "Please" é por favor e "thank you" (ou "thanks"), obrigado. "Excuse me" serve para chamar a atenção ou pedir licença; "sorry" é para pedir desculpas.
+v please = por favor; thank you = obrigado(a); you're welcome = de nada; excuse me = com licença; sorry = desculpe; no problem = sem problema; of course = claro
+f Thank you very much! — You're [welcome]. = Muito obrigado! — De nada. ~ sorry, please
+f [Excuse] me, where is the bank? = Com licença, onde fica o banco? ~ Sorry, Please
+b Sorry, I don't speak much English. = Desculpe, não falo muito inglês.
+b Can you help me, please? = Você pode me ajudar, por favor?
+l No problem, of course. = Sem problema, claro. ~ Que problema, claro. | Sem problema, obrigado.
+q Você quer passar entre duas pessoas num corredor. O que diz? = Excuse me. | You're welcome. | Good night.
+
+### frases
+fr Hello, good morning. My name is Ana and I'm from Brazil. = Olá, bom dia. Meu nome é Ana e sou do Brasil.
+fr Nice to meet you, Mr. Smith. How are you? = Prazer em conhecê-lo, senhor Smith. Como o senhor está?
+fr I'm very well, thank you. And you? = Estou muito bem, obrigado. E você?
+fr Excuse me, what's your name? = Com licença, qual é o seu nome?
+fr I'm from São Paulo, but I live in London. = Sou de São Paulo, mas moro em Londres.
+fr I have three brothers and two sisters. = Tenho três irmãos e duas irmãs.
+fr Today I'm a little [tired], but happy. = Hoje estou um pouco cansado, mas contente. ~ from, name
+fr Good night, everyone. See you tomorrow! = Boa noite a todos. Até amanhã!
+fr Thank you for everything. You're very kind. = Obrigado por tudo. Você é muito gentil.
+fr Sorry, I don't [speak] much English yet. = Desculpe, ainda não falo muito inglês. ~ name, live
+fr Where are you from? Are you from Canada? = De onde você é? Você é do Canadá?
+
+### texto | Primeiro dia de aula
+t Teacher | Good morning, everyone! I'm Mrs. Taylor, your teacher. = Bom dia a todos! Eu sou a senhora Taylor, a professora de vocês.
+t Lucas | Good morning! My name is Lucas. = Bom dia! Meu nome é Lucas.
+t Teacher | Nice to meet you, Lucas. Where are you from? = Prazer em conhecer você, Lucas. De onde você é?
+t Lucas | I'm from Brazil, from Recife. = Sou do Brasil, de Recife.
+t Teacher | Welcome! And you? What's your name? = Bem-vindo! E você? Qual é o seu nome?
+t Yuki | Hi, I'm Yuki. I'm from Japan. = Oi, eu sou a Yuki. Sou do Japão.
+t Teacher | How are you today, Yuki? = Como você está hoje, Yuki?
+t Yuki | I'm fine, thanks, but a little nervous. = Estou bem, obrigada, mas um pouco nervosa.
+t Teacher | Don't worry. This is a very friendly class. = Não se preocupe. Esta turma é muito simpática.
+t Lucas | Excuse me, can you repeat your name, please? = Com licença, a senhora pode repetir seu nome, por favor?
+t Teacher | Of course. Taylor, T-A-Y-L-O-R. = Claro. Taylor, T-A-Y-L-O-R.
+tq Qual é o nome da professora? = Taylor | Yuki | Lucas
+tq De onde é o Lucas? = Do Brasil | Do Japão | Da Inglaterra
+tq Como está a Yuki? = Bem, mas um pouco nervosa | Muito cansada | Triste
+tq O que o Lucas pede à professora? = Que repita o nome dela | Que fale mais devagar | Que abra a janela
+
+### leitura | Eu sou a Emma
+n Hello, my name is Emma. = Olá, meu nome é Emma.
+n I'm from Canada, from Toronto. = Sou do Canadá, de Toronto.
+n I'm twenty years old and I'm a student. = Tenho vinte anos e sou estudante.
+n I speak English and a little Portuguese. = Falo inglês e um pouco de português.
+n My teacher's name is Carla and she's very nice. = Minha professora se chama Carla e é muito simpática.
+n Today I'm very happy: it's my first day of class. = Hoje estou muito contente: é meu primeiro dia de aula.
+n Nice to meet you! = Prazer em conhecer você!
+tq De onde é a Emma? = Do Canadá | Do Brasil | Da Inglaterra
+tq Quantos anos ela tem? = Vinte | Dez | Trinta
+tq Como ela está hoje? = Muito contente | Cansada | Triste
+tv Emma fala um pouco de português. = V
+tv A professora se chama Emma. = F
+
+# a1u2 | Pessoas e família | Falar da família, dizer a idade e descrever pessoas.
+
+## A família | "Parents" quer dizer pais (pai e mãe), não "parentes"; parentes são "relatives". "Brother" é irmão e "sister", irmã.
+v father = pai; mother = mãe; brother = irmão; sister = irmã; grandfather = avô; grandmother = avó; son = filho
+f My [mother]'s name is Rose. = O nome da minha mãe é Rose. ~ father, brother
+f They [are] my parents. = Eles são meus pais. ~ is, am
+b I have two brothers. = Eu tenho dois irmãos.
+b My grandmother lives in Lima. = Minha avó mora em Lima.
+l My father's name is John. = O nome do meu pai é John. ~ O nome do meu avô é John. | O nome do meu irmão é John.
+q Você quer apresentar sua irmã a um amigo. O que diz? = This is my sister. | This is my grandfather. | I have a son.
+
+## Quantos anos você tem? | Em inglês, a idade se diz com o verbo "to be" (ser/estar), não com "ter": "I'm twenty" ou "I'm twenty years old". Nunca "I have twenty years".
+v how old are you? = quantos anos você tem?; years old = anos (de idade); twenty = vinte; thirty = trinta; forty = quarenta; birthday = aniversário; age = idade
+f I [am] twenty-five years old. = Eu tenho vinte e cinco anos. ~ have, is
+f My son is ten years [old]. = Meu filho tem dez anos. ~ age, days
+b How old is your mother? = Quantos anos tem sua mãe?
+b Today is my birthday. = Hoje é meu aniversário.
+l My grandfather is eighty years old. = Meu avô tem oitenta anos. ~ Meu avô tem dezoito anos. | Minha avó tem oito anos.
+q Alguém pergunta "How old are you?". Como você responde? = I'm thirty. | I'm from Brazil. | I'm very well.
+
+## Como é a pessoa | Em inglês, o adjetivo vem antes do substantivo e não muda para masculino, feminino ou plural: "a tall man", "a tall woman", "tall people".
+v tall = alto; short = baixo; thin = magro; blond = loiro; dark hair = cabelo escuro; hair = cabelo; eyes = olhos
+f My brother is very [tall]. = Meu irmão é muito alto. ~ hair, eyes
+f She has [blond] hair. = Ela tem cabelo loiro. ~ tall, thin
+b My mother is short and thin. = Minha mãe é baixa e magra.
+b He has blue eyes. = Ele tem olhos azuis.
+l My father is tall and thin. = Meu pai é alto e magro. ~ Meu pai é baixo e forte. | Minha mãe é alta e magra.
+q Você quer dizer que sua amiga tem olhos verdes. O que diz? = She has green eyes. | She has green hair. | She is very green.
+
+## Jeito de ser | Cuidado com os falsos amigos: "nice" é simpático, legal. "Sympathetic" quer dizer compreensivo, solidário. E "funny" é engraçado.
+v nice = simpático, legal; funny = engraçado; shy = tímido; hardworking = trabalhador; serious = sério; smart = inteligente; kind = gentil
+f My grandmother is very [kind]. = Minha avó é muito gentil. ~ tall, old
+f My brothers [are] funny. = Meus irmãos são engraçados. ~ is, am
+b My father is serious but nice. = Meu pai é sério, mas simpático.
+b She is shy and smart. = Ela é tímida e inteligente.
+l My sister is very hardworking. = Minha irmã é muito trabalhadora. ~ Minha irmã é muito tímida. | Minha mãe trabalha muito.
+q Seu amigo faz todo mundo rir. Como você o descreve? = He's very funny. | He's very serious. | He's very shy.
+
+## Meu, seu, dele | "My" (meu, minha), "your" (seu, sua), "his" (dele), "her" (dela), "our" (nosso), "their" (deles). Não mudam no plural: "my brothers".
+v my = meu, minha; your = seu, sua; his = dele; her = dela; our = nosso, nossa; family = família; married = casado
+f [My] parents live in Boston. = Meus pais moram em Boston. ~ His, Her
+f What's [your] brother's name? = Qual é o nome do seu irmão? ~ my, our
+b Our family is big. = Nossa família é grande.
+b Her son is very nice. = O filho dela é muito simpático.
+l My sister is married. = Minha irmã é casada. ~ Minha irmã está cansada. | Minha mãe é casada.
+q Você quer perguntar o nome da mãe de um amigo. O que diz? = What's your mother's name? | Where is my mother? | My mother's name is Ann.
+
+### frases
+fr This is my family: my father, my mother and my sister. = Esta é minha família: meu pai, minha mãe e minha irmã.
+fr My brother is twenty years old and he's very tall. = Meu irmão tem vinte anos e é muito alto.
+fr My grandparents live in the countryside. = Meus avós moram no campo.
+fr My mother [is] a teacher and my father is a doctor. = Minha mãe é professora e meu pai é médico. ~ are, has
+fr I have a big family: there are six of us. = Tenho uma família grande: somos seis.
+fr My sister is blond and she has green eyes. = Minha irmã é loira e tem olhos verdes.
+fr Do you have any brothers or sisters? = Você tem irmãos?
+fr My grandmother is very funny and she [cooks] very well. = Minha avó é muito engraçada e cozinha muito bem. ~ eats, lives
+fr My uncle Carl is married and has two children. = Meu tio Carl é casado e tem dois filhos.
+fr Today is my father's birthday: he's fifty. = Hoje é o aniversário do meu pai: ele faz cinquenta anos.
+
+### texto | A foto da família
+t Sophie | Look, this is a photo of my family. = Olha, esta é uma foto da minha família.
+t Mark | It's lovely! Who is this man? = Que bonita! Quem é este homem?
+t Sophie | He's my father. His name is Andrew and he's fifty-two. = É meu pai. O nome dele é Andrew e ele tem cinquenta e dois anos.
+t Mark | And the blond woman? = E a mulher loira?
+t Sophie | She's my mother. She's very nice and hardworking. = É minha mãe. Ela é muito simpática e trabalhadora.
+t Mark | And the tall boy? Is he your boyfriend? = E o rapaz alto? É seu namorado?
+t Sophie | No! He's my brother Leo. He's nineteen. = Não! É meu irmão Leo. Ele tem dezenove anos.
+t Mark | He looks a lot like your father. = Ele se parece muito com seu pai.
+t Sophie | Yes, everybody says that. And this is my grandmother Kate. = Sim, todos dizem isso. E esta é minha avó Kate.
+t Mark | Does she live with you? = Ela mora com vocês?
+t Sophie | No, she lives in a small town by the sea. = Não, ela mora numa cidadezinha perto do mar.
+tq Quantos anos tem o pai da Sophie? = Cinquenta e dois | Dezenove | Cinquenta
+tq Quem é o rapaz alto da foto? = O irmão da Sophie | O namorado da Sophie | O pai da Sophie
+tq Como é a mãe da Sophie? = Simpática e trabalhadora | Séria e tímida | Alta e morena
+tq Onde mora a avó Kate? = Numa cidadezinha perto do mar | Com a família da Sophie | Na capital
+
+### leitura | A família do Paul
+n My name is Paul and I have a big family. = Meu nome é Paul e tenho uma família grande.
+n My father's name is George. He's tall and he has dark hair. = O nome do meu pai é George. Ele é alto e tem cabelo escuro.
+n My mother's name is Anne. She's a teacher and she's very funny. = O nome da minha mãe é Anne. Ela é professora e é muito engraçada.
+n I have two sisters: Sarah is twelve and Eve is eight. = Tenho duas irmãs: Sarah tem doze anos e Eve tem oito.
+n My grandparents live with us. = Meus avós moram com a gente.
+n My grandfather is serious, but my grandmother is very nice. = Meu avô é sério, mas minha avó é muito simpática.
+n We also have a dog. His name is Toby. = Também temos um cachorro. O nome dele é Toby.
+tq Qual é a profissão da mãe do Paul? = Professora | Médica | Cozinheira
+tq Quantos anos tem a Eve? = Oito | Doze | Dez
+tq Quem mora com a família? = Os avós | Um tio | Uma prima
+tv O pai do Paul é baixo e loiro. = F
+tv A família tem um cachorro chamado Toby. = V
+
+# a1u3 | Comida e bebida | Nomes de alimentos, pedir no café e dizer do que você gosta.
+
+## Alimentos | Alguns alimentos não têm plural em inglês: "bread" (pão), "rice" (arroz), "cheese" (queijo). Para uma unidade, diga "a piece of cheese".
+v bread = pão; cheese = queijo; egg = ovo; meat = carne; fish = peixe; rice = arroz; apple = maçã
+f I eat [bread] with cheese. = Como pão com queijo. ~ water, coffee
+f I want rice with [fish]. = Quero arroz com peixe. ~ apple, milk
+b I don't eat meat. = Eu não como carne.
+b I love apples. = Eu adoro maçãs.
+l Today we have eggs and rice. = Hoje temos ovos e arroz. ~ Hoje temos queijo e pão. | Amanhã temos ovos e carne.
+q Você é vegetariano. O que diz no restaurante? = I don't eat meat or fish. | I want a lot of meat. | I love fish.
+
+## Bebidas | "Juice" é suco e "soda" é refrigerante (no Reino Unido, "soft drink" ou "fizzy drink"). "Water" é água e "sparkling water", água com gás.
+v water = água; coffee = café; tea = chá; milk = leite; juice = suco; beer = cerveja; wine = vinho
+f A coffee with [milk], please. = Um café com leite, por favor. ~ bread, rice
+f I drink a lot of [water]. = Eu bebo muita água. ~ cheese, meat
+b An orange juice, please. = Um suco de laranja, por favor.
+b I don't drink coffee at night. = Não bebo café à noite.
+l A glass of red wine, please. = Uma taça de vinho tinto, por favor. ~ Uma garrafa de vinho branco, por favor. | Um copo de água, por favor.
+q Você quer água sem gás. O que pede? = Still water, please. | Sparkling water, please. | A beer, please.
+
+## No café | O garçom costuma perguntar "What can I get you?" (o que vai querer?). Para pedir com educação: "Can I have...?" ou "I'd like...".
+v what can I get you? = o que vai querer?; I'd like = eu gostaria de; can I have...? = pode me trazer...?; a sandwich = um sanduíche; a cake = um bolo; the bill = a conta; anything else? = mais alguma coisa?
+f Can I [have] a coffee, please? = Pode me trazer um café, por favor? ~ eat, want
+f I'd [like] a cheese sandwich. = Eu gostaria de um sanduíche de queijo. ~ want, have
+b Anything else? — No, thank you. = Mais alguma coisa? — Não, obrigado.
+b Can I have the bill, please? = Pode me trazer a conta, por favor?
+l A tea and a piece of cake, please. = Um chá e um pedaço de bolo, por favor. ~ Um café e um sanduíche, por favor. | Um chá com leite, por favor.
+q Você terminou e quer pagar. O que diz? = Can I have the bill, please? | Can I have a cake, please? | Anything else?
+
+## Do que você gosta | "I like" + coisa: "I like coffee". Para dizer que não gosta: "I don't like". Com ele ou ela, o verbo ganha "s": "she likes".
+v I like = eu gosto de; I don't like = eu não gosto de; I love = eu adoro; I hate = eu odeio; chocolate = chocolate; vegetables = legumes, verduras; fruit = fruta
+f I [like] coffee very much. = Eu gosto muito de café. ~ likes, liking
+f My sister [likes] chocolate. = Minha irmã gosta de chocolate. ~ like, love
+b I don't like vegetables. = Não gosto de legumes.
+b Do you like fish? = Você gosta de peixe?
+l I love fruit, but I hate milk. = Adoro fruta, mas odeio leite. ~ Odeio fruta, mas adoro leite. | Gosto de fruta e de leite.
+q Alguém pergunta "Do you like tea?". Você não gosta. O que responde? = No, I don't. | Yes, I do. | I like it.
+
+## As refeições do dia | "Breakfast" é o café da manhã, "lunch" é o almoço e "dinner", o jantar. Para dizer que faz a refeição, use "have": "I have lunch at one".
+v breakfast = café da manhã; lunch = almoço; dinner = jantar; to have lunch = almoçar; to have dinner = jantar (verbo); hungry = com fome; thirsty = com sede
+f I have [breakfast] at seven. = Tomo café da manhã às sete. ~ dinner, hungry
+f I'm very [hungry]! = Estou com muita fome! ~ breakfast, lunch
+b We have lunch at one. = Almoçamos à uma.
+b What do you have for dinner? = O que você come no jantar?
+l I'm not hungry, but I'm thirsty. = Não estou com fome, mas estou com sede. ~ Estou com fome e com sede. | Não estou com sede, mas estou com fome.
+q São oito da noite e você vai comer com a família. Que refeição é? = Dinner | Breakfast | Lunch
+
+### frases
+fr For breakfast I have coffee with milk and toast. = No café da manhã tomo café com leite e torrada.
+fr I don't eat meat, but I love fish. = Não como carne, mas adoro peixe.
+fr Can I have a glass of water, please? = Pode me trazer um copo de água, por favor?
+fr My children [like] pizza very much. = Meus filhos gostam muito de pizza. ~ likes, liking
+fr We have lunch at home every day at one. = Almoçamos em casa todos os dias à uma.
+fr I'd like an orange juice and a cheese sandwich. = Eu gostaria de um suco de laranja e um sanduíche de queijo.
+fr I'm very hungry. What's for dinner today? = Estou com muita fome. O que tem para o jantar hoje?
+fr My father doesn't [drink] coffee at night. = Meu pai não bebe café à noite. ~ eat, likes
+fr I like vegetables, but I hate onions. = Gosto de legumes, mas odeio cebola.
+fr Excuse me, can I have the bill, please? = Com licença, pode me trazer a conta, por favor?
+
+### texto | Na cafeteria
+t Waiter | Good morning! What can I get you? = Bom dia! O que vão querer?
+t Clare | A coffee with milk, please. = Um café com leite, por favor.
+t Waiter | And for you, sir? = E para o senhor?
+t Daniel | An orange juice and a cheese sandwich. = Um suco de laranja e um sanduíche de queijo.
+t Waiter | Anything to eat for you, madam? = Algo para comer para a senhora?
+t Clare | Yes, a piece of chocolate cake. = Sim, um pedaço de bolo de chocolate.
+t Waiter | Sorry, we don't have chocolate cake today. = Desculpe, hoje não temos bolo de chocolate.
+t Clare | No problem. Then a croissant, please. = Sem problema. Então um croissant, por favor.
+t Waiter | Anything else? = Mais alguma coisa?
+t Daniel | No, thank you. Can we have the bill? = Não, obrigado. Pode nos trazer a conta?
+t Waiter | Of course. That's twelve dollars. = Claro. São doze dólares.
+tq O que a Clare bebe? = Café com leite | Suco de laranja | Chá
+tq O que o Daniel come? = Um sanduíche de queijo | Um croissant | Bolo de chocolate
+tq Por que a Clare não come bolo? = Não tem bolo de chocolate hoje | Ela não gosta de bolo | É muito caro
+tq Quanto é a conta? = Doze dólares | Dez dólares | Vinte dólares
+
+### leitura | O que eu como num dia
+n In the morning I have coffee with milk and bread with butter. = De manhã tomo café com leite e pão com manteiga.
+n At one I have lunch at work with my friends. = À uma almoço no trabalho com meus amigos.
+n We usually eat rice, salad and chicken. = Normalmente comemos arroz, salada e frango.
+n I don't like meat very much, but I love fish. = Não gosto muito de carne, mas adoro peixe.
+n In the afternoon I have a tea and a piece of fruit. = À tarde tomo um chá e como uma fruta.
+n I have dinner at eight: soup or an omelet. = Janto às oito: uma sopa ou uma omelete.
+n I drink a lot of water every day. = Bebo muita água todos os dias.
+tq O que a pessoa come no almoço? = Arroz, salada e frango | Sopa | Pão com manteiga
+tq O que ela toma à tarde? = Um chá e uma fruta | Um café | Um suco
+tq A que horas ela janta? = Às oito | À uma | Às sete
+tv A pessoa adora carne. = F
+tv Ela bebe muita água. = V
+
+# a1u4 | A casa | Os cômodos e os móveis, dizer onde estão as coisas e falar das tarefas.
+
+## Os cômodos | "Bedroom" é o quarto, "bathroom" é o banheiro e "living room", a sala. "Flat" é apartamento no Reino Unido; nos EUA se diz "apartment".
+v house = casa; apartment = apartamento; bedroom = quarto; bathroom = banheiro; kitchen = cozinha; living room = sala; garden = jardim, quintal
+f My apartment has two [bedrooms]. = Meu apartamento tem dois quartos. ~ kitchen, garden
+f We have dinner in the [kitchen]. = Jantamos na cozinha. ~ bathroom, bedroom
+b My house is small but nice. = Minha casa é pequena, mas bonita.
+b The bathroom is next to the bedroom. = O banheiro fica ao lado do quarto.
+l The living room is very big. = A sala é muito grande. ~ A cozinha é muito pequena. | O quarto é muito grande.
+q Você quer dizer onde cozinha. Que cômodo é? = The kitchen | The bathroom | The garden
+
+## Os móveis | Cuidado: "furniture" (móveis) não tem plural; para um móvel, diga "a piece of furniture". "Closet" é armário embutido, e "wardrobe", guarda-roupa.
+v table = mesa; chair = cadeira; bed = cama; sofa = sofá; wardrobe = guarda-roupa; lamp = luminária; shelf = prateleira
+f There are four [chairs] in the kitchen. = Há quatro cadeiras na cozinha. ~ beds, lamps
+f The [sofa] is very comfortable. = O sofá é muito confortável. ~ shelf, lamp
+b My bed is next to the window. = Minha cama fica ao lado da janela.
+b I need a new table. = Preciso de uma mesa nova.
+l The books are on the shelf. = Os livros estão na prateleira. ~ Os livros estão na mesa. | As roupas estão no guarda-roupa.
+q Onde você guarda suas roupas? = In the wardrobe | On the sofa | Under the lamp
+
+## Onde fica? | "In" é dentro de, "on" é em cima de, "under" é embaixo de, "next to" é ao lado de e "between", entre. "Where is the cat?" — "It's under the bed."
+v in = em, dentro de; on = em cima de; under = embaixo de; next to = ao lado de; between = entre; behind = atrás de; in front of = em frente a
+f The cat is [under] the bed. = O gato está embaixo da cama. ~ on, between
+f The keys are [on] the table. = As chaves estão em cima da mesa. ~ under, behind
+b The lamp is next to the sofa. = A luminária fica ao lado do sofá.
+b Where is my phone? = Onde está meu celular?
+l The garden is behind the house. = O jardim fica atrás da casa. ~ O jardim fica em frente à casa. | A garagem fica atrás da casa.
+q Seus óculos estão sobre a mesa. Como você diz isso? = My glasses are on the table. | My glasses are under the table. | My glasses are next to the table.
+
+## Há (there is / there are) | "There is" (há, tem) é para uma coisa e "there are", para várias: "there is a sofa", "there are two beds". Na pergunta: "Is there...?" / "Are there...?".
+v there is = há (singular); there are = há (plural); is there...? = tem...?; any = algum, nenhum; a lot of = muitos; window = janela; door = porta
+f [There] is a big window in the living room. = Há uma janela grande na sala. ~ It, They
+f There [are] three bedrooms. = Há três quartos. ~ is, am
+b Is there a bathroom here? = Tem um banheiro aqui?
+b There aren't any chairs in the garden. = Não há cadeiras no jardim.
+l There is a table and four chairs. = Há uma mesa e quatro cadeiras. ~ Há duas mesas e uma cadeira. | Não há mesa nem cadeiras.
+q Você quer saber se o apartamento tem garagem. O que pergunta? = Is there a garage? | There is a garage. | Where is the garage?
+
+## Tarefas de casa | Muitas tarefas usam "do" ou "make": "do the dishes" (lavar a louça), "do the laundry" (lavar a roupa), "make the bed" (arrumar a cama).
+v to clean = limpar; to cook = cozinhar; to do the dishes = lavar a louça; to make the bed = arrumar a cama; to do the laundry = lavar a roupa; to tidy up = arrumar, organizar; every day = todo dia
+f I [make] the bed every morning. = Arrumo a cama toda manhã. ~ do, clean
+f My brother [does] the dishes after dinner. = Meu irmão lava a louça depois do jantar. ~ makes, cooks
+b I clean the bathroom on Saturdays. = Limpo o banheiro aos sábados.
+b Who cooks in your house? = Quem cozinha na sua casa?
+l My father does the laundry on Sundays. = Meu pai lava a roupa aos domingos. ~ Meu pai cozinha aos domingos. | Minha mãe lava a louça aos domingos.
+q Seu quarto está bagunçado. O que você precisa fazer? = Tidy up my room. | Do the dishes. | Cook dinner.
+
+### frases
+fr My apartment is small: it has a bedroom, a kitchen and a bathroom. = Meu apartamento é pequeno: tem um quarto, uma cozinha e um banheiro.
+fr There is a big sofa in the living room. = Há um sofá grande na sala.
+fr The cat is always under my bed. = O gato está sempre embaixo da minha cama.
+fr There [are] a lot of books on the shelf. = Há muitos livros na prateleira. ~ is, has
+fr The kitchen is next to the living room. = A cozinha fica ao lado da sala.
+fr Excuse me, is there a bathroom on this floor? = Com licença, tem um banheiro neste andar?
+fr I make the bed every morning before work. = Arrumo a cama toda manhã antes do trabalho.
+fr My brother never [does] the dishes. = Meu irmão nunca lava a louça. ~ makes, cleans
+fr The garden is behind the house and it's very pretty. = O jardim fica atrás da casa e é muito bonito.
+fr We clean the house together on Saturdays. = Limpamos a casa juntos aos sábados.
+
+### texto | Visitando um apartamento
+t Agent | Good afternoon. This is the apartment. Come in, please. = Boa tarde. Este é o apartamento. Entrem, por favor.
+t Laura | Thank you. Oh, the living room is very bright! = Obrigada. Nossa, a sala é muito clara!
+t Agent | Yes, there are two big windows. = Sim, há duas janelas grandes.
+t Tom | How many bedrooms are there? = Quantos quartos há?
+t Agent | There are two bedrooms and one bathroom. = Há dois quartos e um banheiro.
+t Laura | Is there a wardrobe in the bedrooms? = Tem guarda-roupa nos quartos?
+t Agent | Yes, there's a big wardrobe in each bedroom. = Sim, há um guarda-roupa grande em cada quarto.
+t Tom | And where is the kitchen? = E onde fica a cozinha?
+t Agent | It's next to the living room. It's small but new. = Fica ao lado da sala. É pequena, mas nova.
+t Laura | Is there a washing machine? = Tem máquina de lavar?
+t Agent | Yes, it's in the kitchen, under the counter. = Sim, fica na cozinha, embaixo da bancada.
+tq Como é a sala? = Muito clara | Pequena e escura | Sem janelas
+tq Quantos quartos há? = Dois | Um | Três
+tq Onde fica a cozinha? = Ao lado da sala | Atrás do banheiro | Em frente ao quarto
+tq Onde está a máquina de lavar? = Na cozinha | No banheiro | No quarto
+
+### leitura | Minha casa nova
+n Last month I moved to a new apartment. = No mês passado me mudei para um apartamento novo.
+n It's on the third floor and it has a small balcony. = Fica no terceiro andar e tem uma pequena varanda.
+n There are two bedrooms, a kitchen, a bathroom and a living room. = Há dois quartos, uma cozinha, um banheiro e uma sala.
+n The living room is my favorite room: there's a blue sofa and a lot of plants. = A sala é meu cômodo favorito: há um sofá azul e muitas plantas.
+n The kitchen is small, but it's very bright. = A cozinha é pequena, mas é muito clara.
+n My desk is in the second bedroom, next to the window. = Minha escrivaninha fica no segundo quarto, ao lado da janela.
+n I clean the apartment on Saturdays and I cook on Sundays. = Limpo o apartamento aos sábados e cozinho aos domingos.
+tq Em que andar fica o apartamento? = No terceiro | No primeiro | No quinto
+tq Qual é o cômodo favorito da pessoa? = A sala | A cozinha | O quarto
+tq Onde fica a escrivaninha? = No segundo quarto, ao lado da janela | Na sala | Na varanda
+tv A cozinha é grande e escura. = F
+tv A pessoa limpa o apartamento aos sábados. = V
+
+# a1u5 | Rotina diária | Dizer as horas, os dias da semana e contar o que você faz no dia a dia.
+
+## Que horas são? | "What time is it?" — "It's seven o'clock" (hora cheia), "it's half past seven" (7h30), "it's a quarter to eight" (7h45). Também se pode dizer "it's seven thirty".
+v what time is it? = que horas são?; o'clock = em ponto; half past = e meia; a quarter past = e quinze; a quarter to = quinze para; at = às; noon = meio-dia
+f It's seven [o'clock]. = São sete em ponto. ~ half, quarter
+f The class starts [at] nine. = A aula começa às nove. ~ in, on
+b What time is it, please? = Que horas são, por favor?
+b It's half past ten. = São dez e meia.
+l It's a quarter to eight. = São quinze para as oito. ~ São oito e quinze. | São sete e meia.
+q São 15h15. Como você diz isso? = It's a quarter past three. | It's a quarter to three. | It's half past three.
+
+## Levantar e se vestir | No presente simples, com "he", "she" e "it" o verbo ganha "s": "I get up", "she gets up". "Get up" é levantar-se e "get dressed", vestir-se.
+v to wake up = acordar; to get up = levantar-se; to take a shower = tomar banho; to brush my teeth = escovar os dentes; to get dressed = vestir-se; to go to bed = ir dormir; early = cedo
+f I [get] up at six thirty. = Eu me levanto às seis e meia. ~ gets, wake
+f She [takes] a shower in the morning. = Ela toma banho de manhã. ~ take, taking
+b I brush my teeth after breakfast. = Escovo os dentes depois do café da manhã.
+b He goes to bed very late. = Ele vai dormir muito tarde.
+l I wake up early every day. = Acordo cedo todos os dias. ~ Acordo tarde todos os dias. | Durmo cedo todos os dias.
+q Você quer dizer que sua irmã se levanta às sete. O que diz? = My sister gets up at seven. | My sister get up at seven. | My sister goes to bed at seven.
+
+## Os dias da semana | Os dias da semana em inglês sempre começam com letra maiúscula: Monday, Tuesday... Para "na segunda", use "on": "on Monday". "Weekend" é o fim de semana.
+v Monday = segunda-feira; Tuesday = terça-feira; Wednesday = quarta-feira; Thursday = quinta-feira; Friday = sexta-feira; Saturday = sábado; Sunday = domingo
+f I go to the gym [on] Mondays. = Vou à academia às segundas. ~ in, at
+f [Thursday] comes after Wednesday. = Quinta-feira vem depois de quarta-feira. ~ Tuesday, Monday
+b I don't work on Sundays. = Não trabalho aos domingos.
+b What day is it today? = Que dia é hoje?
+l On Wednesday I have an English class. = Na quarta tenho aula de inglês. ~ Na quinta tenho aula de inglês. | Na terça tenho aula de inglês.
+q Que dia vem depois de terça? = Wednesday | Thursday | Monday
+
+## Com que frequência | Os advérbios de frequência vêm antes do verbo: "I always walk", "she never drinks coffee". Mas depois de "to be": "I'm always late".
+v always = sempre; usually = normalmente; often = com frequência; sometimes = às vezes; never = nunca; every day = todos os dias; once a week = uma vez por semana
+f I [always] have breakfast at home. = Sempre tomo café da manhã em casa. ~ every, once
+f She [never] drinks coffee. = Ela nunca bebe café. ~ ever, every
+b I sometimes walk to work. = Às vezes vou a pé para o trabalho.
+b We go to the cinema once a week. = Vamos ao cinema uma vez por semana.
+l My brother is always late. = Meu irmão está sempre atrasado. ~ Meu irmão nunca está atrasado. | Meu irmão às vezes está atrasado.
+q Você vai à academia segunda, quarta e sexta. Como descreve isso? = I often go to the gym. | I never go to the gym. | I go to the gym once a year.
+
+## Meu dia | Para contar a rotina em ordem: "first" (primeiro), "then" (depois), "after that" (depois disso) e "finally" (por fim). Nas perguntas, use "do/does": "What time do you get up?".
+v first = primeiro; then = em seguida; before = antes; finally = por fim; to work = trabalhar; to go home = ir para casa; in the evening = à noite (fim do dia)
+f [First] I take a shower, then I have breakfast. = Primeiro tomo banho, depois tomo café. ~ Finally, After
+f What time [do] you start work? = A que horas você começa a trabalhar? ~ does, are
+b After that I go to work by bus. = Depois disso vou para o trabalho de ônibus.
+b I go home at six. = Vou para casa às seis.
+l In the evening I watch TV and read. = À noite vejo TV e leio. ~ De manhã vejo TV e leio. | À noite trabalho e estudo.
+q Alguém pergunta "What time does your class start?". Como responde? = It starts at nine. | I start at nine. | Yes, it does.
+
+### frases
+fr I get up at seven and take a shower. = Levanto às sete e tomo banho.
+fr What time is it? — It's half past eight. = Que horas são? — São oito e meia.
+fr I work from Monday to Friday, from nine to five. = Trabalho de segunda a sexta, das nove às cinco.
+fr My sister [goes] to the gym three times a week. = Minha irmã vai à academia três vezes por semana. ~ go, going
+fr On Saturdays I usually sleep late. = Aos sábados normalmente durmo até tarde.
+fr First I have breakfast, then I brush my teeth. = Primeiro tomo café, depois escovo os dentes.
+fr I never drink coffee after six. = Nunca bebo café depois das seis.
+fr What time [does] the bus leave? = A que horas o ônibus sai? ~ do, is
+fr In the evening I cook dinner and watch a series. = À noite faço o jantar e vejo uma série.
+fr I go to bed at eleven because I wake up early. = Vou dormir às onze porque acordo cedo.
+
+### texto | Um dia normal
+t Anna | Hi, Ben! You look tired. = Oi, Ben! Você parece cansado.
+t Ben | Yes, I get up very early for my new job. = Sim, eu me levanto muito cedo por causa do meu novo emprego.
+t Anna | What time do you get up? = A que horas você se levanta?
+t Ben | At five thirty, from Monday to Friday. = Às cinco e meia, de segunda a sexta.
+t Anna | Wow! And what time do you start work? = Nossa! E a que horas você começa a trabalhar?
+t Ben | At seven. I take the train at six fifteen. = Às sete. Pego o trem às seis e quinze.
+t Anna | Do you have breakfast at home? = Você toma café da manhã em casa?
+t Ben | No, I usually have a coffee at the station. = Não, normalmente tomo um café na estação.
+t Anna | And what time do you finish? = E a que horas você termina?
+t Ben | At three. In the afternoon I go to the gym or I sleep a little. = Às três. À tarde vou à academia ou durmo um pouco.
+t Anna | Well, at least you have free afternoons! = Bom, pelo menos você tem as tardes livres!
+tq A que horas o Ben se levanta? = Às cinco e meia | Às sete | Às seis e quinze
+tq Como ele vai para o trabalho? = De trem | De ônibus | A pé
+tq Onde ele toma café? = Na estação | Em casa | No trabalho
+tq O que ele faz à tarde? = Vai à academia ou dorme | Trabalha mais | Estuda inglês
+
+### leitura | A rotina da Martha
+n Martha is a nurse and she works at a hospital. = A Martha é enfermeira e trabalha num hospital.
+n She gets up at six every day. = Ela se levanta às seis todos os dias.
+n First she takes a shower, then she has breakfast with her husband. = Primeiro toma banho, depois toma café da manhã com o marido.
+n She goes to work by bike because the hospital is near her house. = Ela vai para o trabalho de bicicleta porque o hospital fica perto de casa.
+n She works from seven to three. = Ela trabalha das sete às três.
+n In the afternoon she goes to the park with her dog. = À tarde ela vai ao parque com o cachorro.
+n She never goes to bed after ten. = Ela nunca vai dormir depois das dez.
+tq Qual é a profissão da Martha? = Enfermeira | Professora | Médica
+tq Como ela vai para o trabalho? = De bicicleta | De ônibus | De carro
+tq O que ela faz à tarde? = Vai ao parque com o cachorro | Trabalha | Dorme
+tv Martha toma café da manhã sozinha. = F
+tv Ela trabalha das sete às três. = V
