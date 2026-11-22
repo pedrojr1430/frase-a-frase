@@ -1220,6 +1220,75 @@ button.cx-stat{cursor:pointer}
 .cx-title{white-space:normal;overflow-wrap:anywhere;font-size:clamp(20px,5.6vw,24px)}
 .cx-title span{white-space:nowrap}
 .cx-prem{margin-top:4px}
+
+/* ===== Curso: trilha na neve (22/11/2026) ===== */
+.cx-hero{padding:16px 18px 16px}
+.cx-kick{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#F7C55A}
+.cx-hero-t{margin:6px 0 4px;font-size:27px;max-width:66%}
+.cx-hero .cx-prog{margin:14px 0 2px}
+.cx-art{width:62%}
+.cx-trail{position:relative;margin:16px -18px 0;overflow:hidden;background:linear-gradient(180deg,rgba(214,226,244,.0) 0%,#E6EDF8 6%,#EEF3FA 50%,#E6EDF8 100%)}
+html[data-theme="dark"] .cx-trail{background:linear-gradient(180deg,rgba(20,30,58,0) 0%,#16203A 6%,#141C33 100%)}
+@media (prefers-color-scheme:dark){html:not([data-theme="light"]) .cx-trail{background:linear-gradient(180deg,rgba(20,30,58,0) 0%,#16203A 6%,#141C33 100%)}}
+.cx-snow{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 12% 8%,#fff,transparent),radial-gradient(2.5px 2.5px at 80% 14%,#fff,transparent),radial-gradient(2px 2px at 60% 30%,#fff,transparent),radial-gradient(1.5px 1.5px at 30% 44%,#fff,transparent),radial-gradient(2px 2px at 88% 58%,#fff,transparent),radial-gradient(2.5px 2.5px at 18% 72%,#fff,transparent),radial-gradient(2px 2px at 70% 86%,#fff,transparent);background-size:100% 520px;animation:cx-snowfall 18s linear infinite;opacity:.9}
+@keyframes cx-snowfall{from{background-position:0 0}to{background-position:30px 520px}}
+.cx-road{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.cx-road path{fill:none;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.cx-road-edge{stroke:#C7D5EC;stroke-width:34}
+.cx-road-in{stroke:#F7FAFF;stroke-width:24}
+.cx-road-done{stroke:#F6D58A;stroke-width:10;opacity:.9}
+html[data-theme="dark"] .cx-road-edge{stroke:#26365F}html[data-theme="dark"] .cx-road-in{stroke:#1E2B4F}
+@media (prefers-color-scheme:dark){html:not([data-theme="light"]) .cx-road-edge{stroke:#26365F}html:not([data-theme="light"]) .cx-road-in{stroke:#1E2B4F}}
+.cx-uflag{position:absolute;left:14px;top:4px;width:150px;height:110px;z-index:2;pointer-events:none}
+.cx-pole{position:absolute;left:14px;top:6px;width:6px;height:96px;border-radius:3px;background:linear-gradient(90deg,#8B5A33,#5E3A1E)}
+.cx-pole::before{content:"";position:absolute;left:-2px;top:-6px;width:10px;height:10px;border-radius:50%;background:#E0A12E}
+.cx-cloth{position:absolute;left:20px;top:12px;padding:9px 26px 9px 14px;font-size:14px;font-weight:800;color:#fff;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;background:linear-gradient(180deg,#24418A,#14244A);clip-path:polygon(0 0,100% 0,88% 50%,100% 100%,0 100%);transform-origin:left center;animation:cx-cloth 2.4s ease-in-out infinite alternate;box-shadow:0 6px 14px rgba(15,27,61,.25)}
+@keyframes cx-cloth{from{transform:skewY(0)}to{transform:skewY(-3deg) scaleX(.97)}}
+.cx-flag-rock{position:absolute;left:0;top:94px;width:34px;height:16px;border-radius:50% 50% 30% 30%;background:linear-gradient(180deg,#C2CFE6,#97A8C8)}
+.cx-scn{position:absolute;z-index:1;pointer-events:none;opacity:.95}
+.cx-scn.is-r{right:-6px}.cx-scn.is-l{left:-6px}
+.cx-scn svg{display:block}
+.cx-steps{list-style:none;margin:0;padding:0;position:absolute;inset:0;z-index:3}
+.cx-step{position:absolute;left:var(--x);display:flex;align-items:center;gap:10px;transform:translateX(-46px)}
+.cx-coin{position:relative;flex:0 0 auto;width:92px;height:92px;border-radius:50%;border:none;padding:0;cursor:pointer;background:transparent}
+.cx-coin::before{content:"";position:absolute;left:8px;right:8px;bottom:-10px;height:18px;border-radius:50%;background:rgba(40,60,110,.22);filter:blur(4px)}
+.cx-coin-face{position:absolute;inset:4px 4px 14px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#3B4A6E;
+  background:radial-gradient(circle at 35% 28%,#FFFFFF 0%,#E7ECF5 45%,#C8D1E2 100%);box-shadow:0 10px 0 #A7B2C9,0 10px 0 1px #95A2BC,inset 0 -3px 6px rgba(0,0,0,.08),inset 0 3px 4px rgba(255,255,255,.9);transition:transform .12s}
+.cx-coin:active:not(:disabled) .cx-coin-face{transform:translateY(5px);box-shadow:0 5px 0 #A7B2C9,inset 0 -3px 6px rgba(0,0,0,.08)}
+.cx-coin-face b{font-size:26px;font-weight:800;color:#3B4A6E;letter-spacing:-.02em}
+.cx-coin-face svg{width:34px;height:34px}
+.cx-step.is-done .cx-coin-face{color:#fff;background:radial-gradient(circle at 35% 28%,#FFE7A3 0%,#F7C55A 40%,#E09A20 100%);box-shadow:0 10px 0 #B87818,0 10px 0 1px #A86C12,inset 0 3px 4px rgba(255,255,255,.6)}
+.cx-step.is-current .cx-coin-face{color:#fff;background:radial-gradient(circle at 35% 28%,#6AA2FF 0%,#2F6FE0 45%,#1A47B0 100%);box-shadow:0 10px 0 #14307A,0 0 0 5px #F7C55A,0 10px 0 6px #D98E16,inset 0 3px 4px rgba(255,255,255,.4)}
+.cx-step.is-current .cx-coin::after{content:"";position:absolute;inset:-22px;border-radius:50%;background:radial-gradient(circle,rgba(247,197,90,.55) 0%,rgba(247,197,90,0) 65%);z-index:-1;animation:cx-halo 1.8s ease-in-out infinite alternate}
+@keyframes cx-halo{from{opacity:.55;transform:scale(.9)}to{opacity:1;transform:scale(1.08)}}
+.cx-step.is-current .cx-coin{animation:cx-bob 2.2s ease-in-out infinite}
+@keyframes cx-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.cx-step.is-chest .cx-coin-face{color:#3B4A6E}
+.cx-step.is-chest.is-done .cx-coin-face{color:#fff}
+.cx-step.is-premium:not(.is-done):not(.is-current) .cx-coin-face{color:#6A4BD8}
+.cx-step.is-locked .cx-coin{cursor:default}
+.cx-step.is-locked .cx-coin-face{color:#8A96B2}
+.cx-coin-lock{position:absolute;right:-2px;bottom:6px;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#2B3A63;color:#fff;border:3px solid #EEF3FA}
+.cx-coin-lock svg{width:15px;height:15px}
+.cx-bub{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:5px;max-width:calc(100vw - 150px);min-width:120px;padding:10px 16px;border-radius:18px;border:none;text-align:left;font:inherit;color:var(--text);background:var(--deck,#fff);box-shadow:0 8px 22px rgba(40,60,110,.12);cursor:pointer}
+.cx-bub::before{content:"";position:absolute;left:-7px;top:50%;width:14px;height:14px;margin-top:-7px;background:inherit;transform:rotate(45deg);border-radius:2px}
+.cx-bub strong{font-size:16px;line-height:1.2;font-weight:800;letter-spacing:-.01em}
+.cx-bub .cx-stars{margin:0}
+.cx-bub-s{font-size:12.5px;color:var(--muted)}
+.cx-bub-go{display:inline-flex;align-items:center;gap:5px;margin-top:2px;padding:4px 10px 4px 7px;border-radius:999px;background:linear-gradient(180deg,#FAD372,#EFA92E);color:#14244A;font-size:12.5px;font-weight:800}
+.cx-bub-go .cx-i svg{width:13px;height:13px}
+.cx-step.is-current .cx-bub{box-shadow:0 0 0 2px rgba(47,111,224,.35),0 10px 26px rgba(47,111,224,.22)}
+.cx-step.is-locked .cx-bub{cursor:default;opacity:.85}
+.cx-bub .cx-tag{font-size:9.5px}
+@media (min-width:520px){.cx-bub{max-width:260px}}
+@media (prefers-reduced-motion:reduce){.cx-snow,.cx-cloth,.cx-step.is-current .cx-coin,.cx-step.is-current .cx-coin::after{animation:none}}
+
+.cx-bub-go{white-space:nowrap}
+.cx-hero-t{max-width:80%}
+
+.cx-step{right:-34px}
+.cx-bub{max-width:none;flex:0 1 auto;min-width:0}
+@media (min-width:520px){.cx-bub{max-width:260px}}
 @media (max-width:370px){.cx-hero-t{font-size:26px}.cx-stat-v strong{font-size:22px}.cx-stat>.cx-i:first-child svg{width:28px;height:28px}.cx-prem{padding:0 12px;font-size:15px}}
 @media (prefers-reduced-motion:reduce){.cx-mt *,.cx-goal-art,.cx-item.is-current .cx-dot,.cx-stat.is-flame>.cx-i:first-child{animation:none!important}.cx-mt .cx-birds{display:none}}
 html[data-theme="dark"] #faf-course.cx{--cxg:#F5C66A}
@@ -3613,6 +3682,7 @@ function fafLang() {
     shield: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#5BA8F5" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path fill="#fff" d="M12 7.2v9.6M7.2 12h9.6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>',
     target: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/></svg>',
     snow: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 2 3-2M9 20l3-2 3 2"/></svg>',
+    check3: '<svg viewBox="0 0 24 24" width="40" height="40" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
     check2: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></svg>'
   };
   function cxi(n) { var s = h('span', { class: 'cx-i', 'aria-hidden': 'true' }); s.innerHTML = CX_ICON[n] || ICON[n] || ''; return s; }
@@ -3672,6 +3742,12 @@ function fafLang() {
     + '<g class="cx-sparks"><circle cx="209" cy="74" r="1.5"/><circle cx="196" cy="88" r="1.1"/><circle cx="222" cy="80" r="1.1"/></g>'
     + '</svg>';
 
+  var SCENE_SVG = {
+    tree1: '<svg viewBox="0 0 60 90" width="52" height="78"><ellipse cx="30" cy="84" rx="22" ry="5" fill="#C9D5EA" opacity=".7"/><rect x="27" y="62" width="6" height="20" rx="2" fill="#7A4E2E"/><path d="M30 4 52 36H40L56 60H4L20 36H8Z" fill="#2E8A6E"/><path d="M30 4 52 36H40L56 60H30Z" fill="#1F6E57"/><path d="M30 4 38 15 34 14 30 18 26 14 22 15Z" fill="#fff" opacity=".9"/></svg>',
+    tree2: '<svg viewBox="0 0 90 90" width="80" height="80"><ellipse cx="45" cy="84" rx="40" ry="6" fill="#C9D5EA" opacity=".7"/><rect x="58" y="60" width="5" height="22" rx="2" fill="#7A4E2E"/><path d="M60 8 80 40H70L84 64H36L50 40H40Z" fill="#2E8A6E"/><path d="M60 8 80 40H70L84 64H60Z" fill="#1F6E57"/><rect x="24" y="66" width="4" height="16" rx="2" fill="#7A4E2E"/><path d="M26 34 40 56H32L42 70H10L20 56H12Z" fill="#3A9C7D"/><path d="M8 84C10 70 22 66 30 72 36 66 48 70 50 84Z" fill="#E4EBF7"/><path d="M60 8 66 17 63 16 60 19 57 16 54 17Z" fill="#fff"/></svg>',
+    tree3: '<svg viewBox="0 0 80 100" width="66" height="84"><path d="M4 96C6 76 24 70 36 78 46 70 66 74 72 96Z" fill="#E4EBF7"/><path d="M10 96C14 84 26 82 34 88" fill="none" stroke="#C9D5EA" stroke-width="3"/><rect x="45" y="66" width="6" height="24" rx="2" fill="#7A4E2E"/><path d="M48 6 70 40H58L74 66H22L38 40H26Z" fill="#2E8A6E"/><path d="M48 6 70 40H58L74 66H48Z" fill="#1F6E57"/><rect x="18" y="74" width="4" height="14" rx="2" fill="#7A4E2E"/><path d="M20 46 32 64H26L34 76H6L14 64H8Z" fill="#3A9C7D"/></svg>',
+    rock: '<svg viewBox="0 0 90 60" width="84" height="56"><path d="M6 56 18 26 34 18 48 30 60 22 80 40 86 56Z" fill="#9FB0CF"/><path d="M34 18 48 30 40 56H6L18 26Z" fill="#B9C7E0"/><path d="M18 26 34 18 30 24 22 28Z M60 22 80 40 70 36Z" fill="#fff" opacity=".85"/></svg>'
+  };
   function cxStat(ic, big, small, label, cls, onclick) {
     return h(onclick ? 'button' : 'div', { type: onclick ? 'button' : null, class: 'cx-stat ' + (cls || ''), onclick: onclick || null }, [
       cxi(ic),
@@ -3741,18 +3817,31 @@ function fafLang() {
       var hero = h('section', { class: 'cx-hero' + (pct === 100 ? ' is-done' : '') }, [
         h('div', { class: 'cx-art', 'aria-hidden': 'true', html: MOUNT_SVG }),
         h('div', { class: 'cx-hero-in' }, [
-          h('span', { class: 'cx-badges' }, [h('span', { class: 'cx-badge', text: 'Unidade ' + (uIdx + 1) }), pct === 100 ? h('span', { class: 'cx-badge is-crown' }, [cxi('crown'), 'Concluída']) : null]),
+          h('span', { class: 'cx-kick' }, ['Unidade ' + (uIdx + 1), pct === 100 ? h('span', { class: 'cx-badge is-crown' }, [cxi('crown'), 'Concluída']) : null]),
           h('h2', { class: 'cx-hero-t', text: focus.title }),
           focus.desc ? h('p', { class: 'cx-hero-d', text: focus.desc }) : null,
-          h('div', { class: 'cx-prog' }, [h('span', { class: 'cx-bar' }, [h('i', { style: 'width:' + Math.max(pct, 4) + '%' })]), h('span', { class: 'cx-pct', text: pct + '% concluído' })]),
-          focus.lessons.length ? h('button', { type: 'button', class: 'cx-go', onclick: function () { openNode(nextNode || nodes[0], focus); } }, [
-            cxi('play'), h('span', { text: pct === 0 ? 'Começar unidade' : pct === 100 ? 'Revisar unidade' : 'Continuar unidade' })
-          ]) : h('p', { class: 'cx-soon', text: 'Em breve' })
+          focus.lessons.length ? h('div', { class: 'cx-prog' }, [h('span', { class: 'cx-bar' }, [h('i', { style: 'width:' + Math.max(pct, 4) + '%' })]), h('span', { class: 'cx-pct', text: pct + '% concluído' })]) :
+            h('p', { class: 'cx-soon', text: 'Em breve' })
         ])
       ]);
 
-      // lista de etapas da unidade
-      var list = h('ol', { class: 'cx-list', 'aria-label': 'Etapas da unidade' }), currentEl = null, seenCurrent = false;
+      // trilha na neve: moedas 3D em zigue-zague, balões com nome e estrelas
+      var ROW = 124, XS = [0.46, 0.33, 0.42, 0.28, 0.36, 0.47, 0.38, 0.27, 0.35, 0.45, 0.33, 0.25, 0.37];
+      var currentEl = null, seenCurrent = false, pts = [];
+      var trail = h('section', { class: 'cx-trail', 'aria-label': 'Etapas da unidade', style: 'height:' + (nodes.length * ROW + 70) + 'px' });
+      trail.appendChild(h('div', { class: 'cx-snow', 'aria-hidden': 'true' }));
+      trail.appendChild(h('div', { class: 'cx-uflag', 'aria-hidden': 'true' }, [h('span', { class: 'cx-pole' }), h('span', { class: 'cx-cloth', text: 'Unidade ' + (uIdx + 1) }), h('span', { class: 'cx-flag-rock' })]));
+      // cenário: pinheiros e pedras nas laterais
+      var SCN = [[1.1, 'r', 'tree2'], [2.6, 'l', 'tree3'], [4.7, 'r', 'tree1'], [6.4, 'l', 'rock'], [7.6, 'r', 'tree3'], [9.2, 'l', 'tree2'], [10.6, 'r', 'rock']];
+      SCN.forEach(function (sc) {
+        if (sc[0] > nodes.length + 0.2) return;
+        trail.appendChild(h('span', { class: 'cx-scn is-' + sc[1] + ' is-' + sc[2], 'aria-hidden': 'true', style: 'top:' + Math.round(sc[0] * ROW) + 'px', html: SCENE_SVG[sc[2]] }));
+      });
+      var svgNS = 'http://www.w3.org/2000/svg', path = document.createElementNS(svgNS, 'svg');
+      path.setAttribute('class', 'cx-road'); path.setAttribute('aria-hidden', 'true');
+      path.setAttribute('viewBox', '0 0 100 ' + (nodes.length * ROW + 70)); path.setAttribute('preserveAspectRatio', 'none');
+      trail.appendChild(path);
+      var ol = h('ol', { class: 'cx-steps' });
       nodes.forEach(function (n, i) {
         var isDone = nodeDone(n), prevDone = i === 0 || nodeDone(nodes[i - 1]);
         var state = isDone ? 'done' : (CURSO_LIVRE || prevDone) ? 'open' : 'locked';
@@ -3761,27 +3850,34 @@ function fafLang() {
         var stars = (n.kind === 'lesson' || n.premium) && st.lessons[n.id] ? st.lessons[n.id].stars : 0;
         var go = function () { if (!locked) openNode(n, focus); };
         var ic = n.kind === 'lesson' ? lessonIcon(n.label) : n.kind === 'frases' ? 'quote' : n.kind === 'texto' ? 'book' : n.kind === 'test' ? 'exam' : 'chest';
-        var tile = h('span', { class: 'cx-tile' + (n.kind === 'chest' ? ' is-chest' : '') }, ic === 'num' ? [h('b', { text: '123' })] : [cxi(ic)]);
-        var li = h('li', { class: 'cx-item is-' + state + (n.kind === 'chest' ? ' is-chest' : '') }, [
-          h('button', { type: 'button', class: 'cx-dot', tabindex: '-1', 'aria-hidden': 'true', disabled: locked, onclick: go }, [cxi(state === 'done' ? 'check' : locked ? 'lock' : 'play')]),
-          h('button', { type: 'button', class: 'cx-card', disabled: locked, onclick: go,
-            'aria-label': nodeTitle(n) + (state === 'done' ? ', concluída' : locked ? ', bloqueada' : ', disponível') }, [
-            tile,
-            h('span', { class: 'cx-card-b' }, [
-              h('span', { class: 'cx-card-t' }, [h('strong', { text: nodeTitle(n) }), n.premium ? h('span', { class: 'cx-tag', text: 'Premium' }) : null, h('span', { class: 'cx-chev' }, [cxi('right')])]),
-              h('span', { class: 'cx-card-s', text: nodeSub(n) }),
-              h('span', { class: 'cx-card-f' }, [
-                n.kind === 'lesson' || n.premium ? h('span', { class: 'cx-stars', 'aria-label': stars + ' de 3 estrelas' }, [0, 1, 2].map(function (k) { return icon('star', k < stars ? 'is-on' : ''); })) : h('span'),
-                locked ? h('span', { class: 'cx-lockt' }, [icon('lock'), 'Bloqueado']) :
-                  state === 'done' ? h('span', { class: 'cx-min is-done', text: 'Feito' }) :
-                  h('span', { class: 'cx-min' }, [cxi('play'), nodeMin(n) + ' min'])
-              ])
-            ])
+        var x = XS[i % XS.length], y = 40 + i * ROW + ROW / 2;
+        pts.push([x * 100, y]);
+        var face = state === 'done' ? [cxi('check3')] : ic === 'num' ? [h('b', { text: '123' })] : [cxi(ic)];
+        var li = h('li', { class: 'cx-step is-' + state + ' is-' + n.kind + (n.premium ? ' is-premium' : ''), style: 'top:' + (y - 46) + 'px;--x:' + (x * 100) + '%' }, [
+          h('button', { type: 'button', class: 'cx-coin', disabled: locked, onclick: go,
+            'aria-label': nodeTitle(n) + (state === 'done' ? ', concluída' : locked ? ', bloqueada' : ', ' + nodeMin(n) + ' minutos') }, [
+            h('span', { class: 'cx-coin-face' }, face),
+            locked ? h('span', { class: 'cx-coin-lock' }, [icon('lock')]) : null
+          ]),
+          h('button', { type: 'button', class: 'cx-bub', tabindex: '-1', 'aria-hidden': 'true', disabled: locked, onclick: go }, [
+            n.premium ? h('span', { class: 'cx-tag', text: 'Premium' }) : null,
+            h('strong', { text: nodeTitle(n) }),
+            n.kind === 'lesson' || n.premium ? h('span', { class: 'cx-stars' }, [0, 1, 2].map(function (k) { return icon('star', k < stars ? 'is-on' : ''); })) :
+              h('span', { class: 'cx-bub-s', text: n.kind === 'test' ? 'Prova · ' + nodeMin(n) + ' min' : isDone ? 'Aberto' : n.big ? 'Recompensa final' : 'Recompensa' }),
+            state === 'current' ? h('span', { class: 'cx-bub-go' }, [cxi('play'), (pct === 0 ? 'Começar' : 'Continuar') + ' · ' + nodeMin(n) + ' min']) : null
           ])
         ]);
         if (state === 'current') currentEl = li;
-        list.appendChild(li);
+        ol.appendChild(li);
       });
+      // caminho curvo ligando as moedas (parte feita em dourado)
+      function curve(list) { return list.map(function (p, i) { if (!i) return 'M' + p[0] + ' ' + p[1]; var q = list[i - 1], my = (q[1] + p[1]) / 2; return 'C' + q[0] + ' ' + my + ' ' + p[0] + ' ' + my + ' ' + p[0] + ' ' + p[1]; }).join(' '); }
+      var full = [[pts[0][0] + 6, 0]].concat(pts), dn = nodes.filter(nodeDone).length;
+      var lastDone = -1; nodes.forEach(function (n, i) { if (nodeDone(n)) lastDone = i; });
+      path.innerHTML = '<path class="cx-road-edge" d="' + curve(full) + '"/><path class="cx-road-in" d="' + curve(full) + '"/>' +
+        (lastDone > 0 ? '<path class="cx-road-done" d="' + curve(pts.slice(0, lastDone + 1)) + '"/>' : '');
+      trail.appendChild(ol);
+      var list = trail;
 
       // objetivo da unidade
       var total = nodes.length, xpAll = nodes.reduce(function (a, n) { return a + nodeXP(n); }, 0);
@@ -3861,7 +3957,7 @@ function fafLang() {
         h('button', { type: 'button', class: 'cx-tool', 'aria-pressed': st.sound ? 'true' : 'false', onclick: function () { st.sound = !st.sound; save(); renderMap(); }, text: st.sound ? 'Som ligado' : 'Som desligado' })
       ]);
 
-      root.replaceChildren(head, stats, lvlCard, hero, list, goal, mis, streakBox, lia,
+      root.replaceChildren(head, stats, hero, list, goal, lvlCard, mis, streakBox, lia,
         h('h3', { class: 'cx-sec', text: 'Unidades do ' + LV.id + ' · ' + LV.name }), ulist, tools);
       if (scrollToCurrent && currentEl) currentEl.scrollIntoView({ block: 'center' }); else root.scrollTop = prevScroll;
     }, function () {
