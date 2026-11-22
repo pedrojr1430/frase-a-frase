@@ -8,8 +8,9 @@
   'use strict';
 
   var CONFIG = {
-    url: '',      // ex.: https://xxxxxxxx.supabase.co
-    anonKey: ''   // chave pública "anon" (pode ficar no site)
+    url: 'https://ladrodxlghsfkebimisi.supabase.co',
+    // chave pública "anon": pode ficar no site (a segurança vem das regras RLS do banco)
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhZHJvZHhsZ2hzZmtlYmltaXNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUzNDkxOTMsImV4cCI6MjExMDkyNTE5M30.s9mJk6rdOZbcV1CzkaRNlESMzQCFErrafVYNiRDHDvA'
   };
   var LIB = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js';
   var SKIP = { 'fraseafrase.trcache': 1, 'fraseafrase.sync': 1 };

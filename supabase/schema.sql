@@ -23,6 +23,10 @@ create policy "criar o proprio progresso"   on public.progresso for insert to au
 create policy "alterar o proprio progresso" on public.progresso for update to authenticated using ((select auth.uid()) = user_id) with check ((select auth.uid()) = user_id);
 create policy "apagar o proprio progresso"  on public.progresso for delete to authenticated using ((select auth.uid()) = user_id);
 
+-- Só quem está logado acessa a tabela (as regras acima limitam ao próprio progresso).
+revoke all on public.progresso from anon;
+grant select, insert, update, delete on public.progresso to authenticated;
+
 -- Excluir conta: apaga o usuário (o progresso some junto, pelo "on delete cascade").
 create or replace function public.excluir_minha_conta()
 returns void
