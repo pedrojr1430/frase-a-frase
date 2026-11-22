@@ -568,6 +568,55 @@ body.tr-open .hm-premium{display:none}
 .hm-day-nota{color:#C9B48E}
 .hm-day-btn{border-color:#8A6A3A;background:transparent}
 }
+
+/* conta (login) */
+.fa-wrap{position:fixed;inset:0;z-index:105;display:flex;align-items:flex-end;justify-content:center;font-family:Inter,system-ui,sans-serif}
+.fa-wrap[hidden]{display:none}
+.fa-back{position:absolute;inset:0;background:rgba(15,27,61,.45);animation:fm-fade .2s ease}
+.fa-sheet{position:relative;width:100%;max-width:520px;max-height:94vh;max-height:94dvh;overflow-y:auto;box-sizing:border-box;background:var(--ink);color:var(--text);border-radius:26px 26px 0 0;padding:12px 22px calc(26px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:14px;animation:fa-up .28s cubic-bezier(.2,.8,.2,1)}
+@keyframes fa-up{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+@media (min-width:600px){.fa-wrap{align-items:center}.fa-sheet{border-radius:26px}}
+.fa-top{display:flex;justify-content:flex-end}
+.fa-x{width:42px;height:42px;border-radius:999px;border:1px solid var(--line2);background:var(--deck);color:var(--text);display:flex;align-items:center;justify-content:center}
+.fa-hero{width:56px;height:56px;border-radius:18px;background:var(--brand-grad);color:var(--gold,#F2B33D);display:flex;align-items:center;justify-content:center;margin-top:-8px}
+.fa-hero svg{width:28px;height:28px}
+.fa-sheet h2{margin:0;font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.fa-lead{margin:-4px 0 4px;font-size:15.5px;line-height:1.5;color:var(--text2)}
+.fa-small{margin:0;font-size:13px;line-height:1.5;color:var(--muted)}
+.fa-small a{color:var(--text);font-weight:600}
+.fa-btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:54px;width:100%;border-radius:16px;font:inherit;font-size:16px;font-weight:700;border:none;cursor:pointer}
+.fa-btn:disabled{opacity:.55;cursor:default}
+.fa-btn.is-main{background:var(--brand);color:#fff}
+.fa-btn.is-google{background:var(--deck);color:var(--text);border:1.5px solid var(--line2);box-shadow:0 2px 8px rgba(15,27,61,.06)}
+.fa-btn.is-light{background:var(--deck);color:var(--text);border:1px solid var(--line2)}
+.fa-or{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px}
+.fa-or::before,.fa-or::after{content:"";flex:1;height:1px;background:var(--line2)}
+.fa-seg{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;background:var(--deck2);border-radius:14px}
+.fa-seg button{min-height:42px;border:none;border-radius:10px;background:transparent;color:var(--muted);font:inherit;font-size:14.5px;font-weight:600}
+.fa-seg button[aria-selected="true"]{background:var(--deck);color:var(--text);box-shadow:0 1px 3px rgba(15,27,61,.12)}
+.fa-form{display:flex;flex-direction:column;gap:12px}
+.fa-field{display:flex;flex-direction:column;gap:6px}
+.fa-field>span:first-child{font-size:13px;font-weight:600;color:var(--muted)}
+.fa-inp{position:relative;display:flex}
+.fa-inp input{flex:1;min-width:0;min-height:52px;box-sizing:border-box;border:1.5px solid var(--line2);border-radius:14px;background:var(--deck);color:var(--text);padding:0 14px;font:inherit;font-size:16px}
+.fa-inp input:focus{outline:none;border-color:var(--brand)}
+.fa-eye{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:none;background:transparent;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.fa-msg{margin:0;padding:10px 12px;border-radius:12px;font-size:14px;line-height:1.45;background:var(--tint-red);color:var(--red-t)}
+.fa-msg.is-ok{background:var(--tint-green);color:var(--green-t)}
+.fa-link{align-self:center;min-height:44px;padding:0 10px;border:none;background:transparent;color:var(--text);font:inherit;font-size:14.5px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.fa-link.is-danger{color:var(--red-t)}
+.fa-user{display:flex;align-items:center;gap:14px}
+.fa-user img,.fa-ini{flex:0 0 auto;width:64px;height:64px;border-radius:999px;object-fit:cover}
+.fa-ini{display:flex;align-items:center;justify-content:center;background:var(--brand-grad);color:#fff;font-size:26px;font-weight:700}
+.fa-user h2{font-size:22px}
+.fa-user p{margin:2px 0 0;font-size:14.5px;color:var(--text2);word-break:break-all}
+.fa-user small{font-size:12.5px;color:var(--muted)}
+.fa-sync{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:var(--tint-green);color:var(--green-t);font-size:14px;font-weight:600}
+.fa-sync.is-err{background:var(--tint-yellow);color:var(--yellow-t)}
+.fa-choice{display:flex;flex-direction:column;gap:10px}
+.fa-note{position:fixed;left:50%;bottom:calc(100px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:120;background:var(--solid);color:#fff;padding:12px 18px;border-radius:14px;font:600 14px Inter,system-ui,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.2);transition:opacity .4s}
+.fa-note.is-out{opacity:0}
+body.fa-open #faf-menu-btn{display:none}
 /* menu lateral */
 #faf-menu-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));left:max(16px,calc((100vw - 560px) / 2 + 16px));z-index:45;width:50px;height:50px;border-radius:16px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--text);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,26,51,.10);cursor:pointer}
 #faf-menu-btn:focus-visible,.fm-item:focus-visible,.fm-close:focus-visible{outline:3px solid #5B3DF5;outline-offset:2px}
@@ -1541,6 +1590,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     chat: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/>',
     book: '<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2V4Z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7V4Z"/>',
     headphones: '<path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z"/>',
+    login: '<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
     trash: '<path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/>'
   };
   function svg(n, size) { return '<svg width="' + (size || 20) + '" height="' + (size || 20) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + SVG[n] + '</svg>'; }
@@ -1555,6 +1605,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     { id: 'textos', label: 'Textos', sub: 'Leitura com tradução', icon: 'book', go: { tab: 'textos', reading: false } },
     { id: 'podcasts', label: 'Podcasts', sub: 'Ouvir com transcrição', icon: 'headphones', go: { tab: 'ouvir', mfilter: 'podcast' } },
     { sec: 'Conta' },
+    { id: 'conta', label: 'Entrar', sub: 'Google ou e-mail', icon: 'login' },
     { id: 'excluir', label: 'Excluir conta', sub: 'Apagar todo o progresso', icon: 'trash', danger: true }
   ];
 
@@ -1581,6 +1632,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     var html = '<div class="fm-head"><div class="fm-brand"><span>Frase a Frase</span><strong>Menu</strong></div>' +
       '<button type="button" class="fm-close" aria-label="Fechar menu">' + svg('close', 18) + '</button></div>';
     ITEMS.forEach(function (it) {
+      if (it.id === 'conta' && window.FAF_ACCOUNT) { var lb = window.FAF_ACCOUNT.label(); it = Object.assign({}, it, { label: lb.label, sub: lb.sub, icon: window.FAF_ACCOUNT.user() ? 'user' : 'login' }); }
       if (it.sec) { html += '<div class="fm-sec">' + it.sec + '</div>'; return; }
       html += '<button type="button" class="fm-item' + (it.id === act ? ' is-active' : '') + (it.danger ? ' is-danger' : '') + '" data-id="' + it.id + '"' + (it.id === act ? ' aria-current="page"' : '') + '>' +
         '<span class="fm-ic">' + svg(it.icon) + '</span><span class="fm-txt"><span>' + it.label + '</span>' + (it.sub ? '<small>' + it.sub + '</small>' : '') + '</span>' +
@@ -1604,6 +1656,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     var it = ITEMS.filter(function (x) { return x.id === id; })[0];
     if (!it) return;
     if (id === 'excluir') { close(true); confirmDelete(); return; }
+    if (id === 'conta') { close(true); if (window.FAF_ACCOUNT) window.FAF_ACCOUNT.open(); return; }
     var app = window.__fafApp;
     close(true);
     if (app) app.setState(typeof it.go === 'function' ? it.go(app.state) : it.go);
@@ -1616,13 +1669,15 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) close(); });
 
-  // Excluir conta: ainda não há conta na nuvem, então apaga tudo o que o app guardou neste aparelho.
+  window.FAF_MENU = { confirmDelete: function () { confirmDelete(); }, repaint: function () { if (!menu.hidden) paint(); } };
+  // Excluir conta: apaga a conta na nuvem (se estiver conectado) e tudo o que o app guardou neste aparelho.
   function confirmDelete() {
+    var logged = !!(window.FAF_ACCOUNT && window.FAF_ACCOUNT.user());
     var wrap = document.createElement('div');
     wrap.className = 'fm-modal';
     wrap.innerHTML = '<div class="fm-dialog" role="alertdialog" aria-modal="true" aria-labelledby="fm-del-t" aria-describedby="fm-del-d">' +
       '<h2 id="fm-del-t">Excluir conta</h2>' +
-      '<p id="fm-del-d">Isso apaga todo o seu progresso salvo neste aparelho: frases marcadas, suas frases da Revisão, textos lidos, curso (XP, vidas e conquistas) e preferências. Não dá para desfazer.</p>' +
+      '<p id="fm-del-d">' + (logged ? 'Isso apaga a sua conta e todo o progresso salvo na nuvem e neste aparelho' : 'Isso apaga todo o seu progresso salvo neste aparelho') + ': frases marcadas, suas frases da Revisão, textos lidos, curso (XP, vidas e conquistas) e preferências. Não dá para desfazer.</p>' +
       '<p>Para guardar uma cópia antes, use "Conta e backup" no Curso.</p>' +
       '<label for="fm-del-in">Digite EXCLUIR para confirmar</label>' +
       '<input id="fm-del-in" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false">' +
@@ -1639,7 +1694,13 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
       if (ok.disabled) return;
       ok.disabled = true; ok.textContent = 'Excluindo…';
       var cloud = window.FAF_SYNC && typeof window.FAF_SYNC.deleteAccount === 'function' ? window.FAF_SYNC.deleteAccount() : null;
-      Promise.resolve(cloud).catch(function () {}).then(function () {
+      Promise.resolve(cloud).then(function () { return true; }, function () {
+        if (!logged) return true;
+        ok.disabled = false; ok.textContent = 'Excluir tudo';
+        window.alert('Não foi possível excluir a conta agora. Verifique a internet e tente de novo.');
+        return false;
+      }).then(function (go) {
+        if (!go) return;
         window.__fafWiping = true;
         try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {}
         var keys = [];
@@ -1652,6 +1713,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   }
 })();
 </script>
+<script src="conta.js?v=1"></script>
 <script>/* Frase a Frase — botão voltar (Android e navegador): fecha a camada de cima ou volta à tela anterior, em vez de sair do app */
 (function () {
   'use strict';
@@ -1662,6 +1724,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
 
   // Camadas, da mais alta para a mais baixa. Cada uma devolve true se fechou algo.
   var LAYERS = [
+    function () { if (!window.FAF_ACCOUNT || !window.FAF_ACCOUNT.isOpen()) return false; window.FAF_ACCOUNT.close(); return true; },
     function () { var m = last('.fm-modal'); if (!m) return false; var b = m.querySelector('.fm-cancel'); if (b) b.click(); else m.remove(); return true; },
     function () { var m = document.getElementById('faf-menu'); if (!visible(m)) return false; var b = m.querySelector('.fm-close'); if (b) b.click(); else m.hidden = true; return true; },
     function () { var m = last('.cc-modal'); if (!m) return false; m.click(); if (m.isConnected) m.remove(); return true; },
