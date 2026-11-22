@@ -6,7 +6,7 @@
 <title>Frase a Frase</title>
 <meta name="description" content="Aprenda espanhol frase a frase: cartões, leitura guiada, prática e podcasts reais.">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#F4F6FC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#FBFBFD" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121318" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -19,10 +19,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#F4F6FC;--deck:#FFFFFF;--deck2:#ECEFFB;--off:#DDE2F0;--line:#E1E6F3;--line2:#C9D2EA;--text:#141A33;--text2:#3E4770;--muted:#5D6788;--faint:#8A93B2;--red:#5B3DF5;--saffron:#5B3DF5;--cyan:#2F6FE0;--tr-size:18px;
---accent-t:#5B3DF5;--accent-t2:#3B2DB8;--blue-t:#2547B8;--green-t:#0E6B45;--red-t:#B4234A;--yellow-t:#B26B00;
---tint-purple:#EDE9FF;--tint-blue:#E6EEFF;--tint-green:#E3F6EC;--tint-green2:#D2F5E3;--tint-red:#FDECF0;--tint-red2:#FBDDE5;--tint-yellow:#FFF4D6;
---line-red:#F3C6D2;--line-green:#BFE8D3;--line-purple:#CFC4FF;--glass:rgba(255,255,255,.94);--glass-ink:rgba(244,246,252,.94);--solid:#141A33;--star-off:#DDE2F0;--brand:#5B3DF5;--brand-deep:#3B2DB8;--brand-grad:linear-gradient(135deg,#5B3DF5,#2F6FE0);--green-bg:#14915D;--card-shadow:none;color-scheme:light dark}
+:root{--ink:#FBFBFD;--deck:#FFFFFF;--deck2:#F1F3F8;--off:#E4E8F1;--line:#E8EBF2;--line2:#D3D9E6;--text:#0F1B3D;--text2:#3A4566;--muted:#5B6684;--faint:#8A93AD;--red:#14244A;--saffron:#E3A126;--cyan:#2F6FE0;--gold:#F2B33D;--gold-deep:#B07A1C;--cream:#FDF3E3;--tr-size:18px;
+--accent-t:#9A6514;--accent-t2:#7A4E0E;--blue-t:#2547B8;--green-t:#0E6B45;--red-t:#B4234A;--yellow-t:#B26B00;
+--tint-purple:#FFF3DC;--tint-blue:#E6EEFF;--tint-green:#E3F6EC;--tint-green2:#D2F5E3;--tint-red:#FDECF0;--tint-red2:#FBDDE5;--tint-yellow:#FFF4D6;
+--line-red:#F3C6D2;--line-green:#BFE8D3;--line-purple:#F0D9A8;--glass:rgba(255,255,255,.94);--glass-ink:rgba(251,251,253,.94);--solid:#0F1B3D;--star-off:#E4E8F1;--brand:#14244A;--brand-deep:#0F1D3D;--brand-grad:linear-gradient(135deg,#1E3466,#0F1D3D);--green-bg:#14915D;--card-shadow:none;color-scheme:light dark}
 *{--cs:var(--csoft,#EDE9FF)}
 /* modo escuro: segue o tema do celular; grafite neutro, minimalista, um só destaque violeta */
 @media (prefers-color-scheme:dark){
@@ -515,8 +515,61 @@ body.cc-locked #faf-sheet{z-index:96}
 .cc-heard{margin:0;text-align:center;font-size:15px;color:var(--muted);min-height:22px}
 .cc-note{display:block;margin-top:4px;font-size:14px}
 .cc-fill-pt{margin:8px 0 0;font-size:15px;line-height:1.4;color:var(--muted)}
+
+/* tela inicial (modelo navy + dourado) */
+.hm{position:relative}
+.hm button{font-family:Inter,system-ui,sans-serif}
+.hm-premium{position:fixed;top:calc(17px + env(safe-area-inset-top));right:max(16px,calc((100vw - 560px) / 2 + 16px));z-index:25;display:flex;align-items:center;gap:8px;height:44px;padding:0 18px 0 14px;border-radius:999px;border:1.5px solid #EBC274;background:#FFF9EC;color:var(--gold-deep,#B07A1C);font-size:16px;font-weight:600;box-shadow:0 4px 14px rgba(176,122,28,.10)}
+body.tr-open .hm-premium{display:none}
+.hm-hello{padding-top:14px}
+.hm-hello h1{margin:0;font-family:Inter,system-ui,sans-serif;font-weight:800;font-size:52px;line-height:1.05;letter-spacing:-.025em;color:var(--text)}
+.hm-hello p{margin:2px 0 0;font-size:32px;line-height:1.2;font-weight:500;letter-spacing:-.015em;color:#38466E}
+.hm-course{display:flex;align-items:center;gap:14px;width:100%;text-align:left;border:none;border-radius:22px;padding:14px 16px 14px 14px;color:#fff;background:radial-gradient(120% 140% at 100% 0%,#24407A 0%,rgba(36,64,122,0) 55%),linear-gradient(135deg,#1A2E5C 0%,#0F1D3D 100%);box-shadow:0 14px 30px rgba(15,29,61,.28)}
+.hm-course-art{flex:0 0 auto;width:78px;height:72px;border-radius:16px;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center}
+.hm-course-sep{flex:0 0 auto;width:1px;align-self:stretch;margin:6px 0;background:rgba(255,255,255,.16)}
+.hm-course-body{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:5px}
+.hm-course-title{font-size:19px;font-weight:700;letter-spacing:-.01em}
+.hm-course-sub{font-size:13.5px;color:rgba(255,255,255,.78);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hm-course-bar{display:block;height:7px;margin-top:8px;border-radius:999px;background:rgba(255,255,255,.28);overflow:hidden}
+.hm-course-side{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:10px}
+.hm-play{width:50px;height:50px;border-radius:999px;background:linear-gradient(180deg,#F7C55A,#EFA92E);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(242,179,61,.35);padding-left:3px;box-sizing:border-box}
+.hm-pct{font-size:14px;font-weight:600;color:#fff}
+.hm-goal{display:flex;align-items:center;gap:16px;width:100%;text-align:left;background:var(--deck);border:1px solid var(--line);border-radius:22px;padding:16px 16px 16px 20px;color:var(--text);box-shadow:0 6px 20px rgba(15,27,61,.05)}
+.hm-goal-ic{flex:0 0 auto;display:flex}
+.hm-sep{flex:0 0 auto;width:1px;height:40px;background:var(--line2)}
+.hm-sep.is-gold{height:28px;background:#E6C38A}
+.hm-goal-body{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px}
+.hm-goal-title{font-size:18px;font-weight:700}
+.hm-goal-sub{font-size:15px;color:var(--muted)}
+.hm-chev{flex:0 0 auto;color:var(--faint)}
+.hm-day{position:relative;overflow:hidden;border-radius:22px;padding:20px 20px 22px;background:linear-gradient(135deg,#FDF6EA 0%,#FBEEDB 100%);border:1px solid #F3E2C4;display:flex;flex-direction:column;gap:8px}
+.hm-day-deco{position:absolute;right:-46px;bottom:-34px;color:#E8CFA3;opacity:.4;pointer-events:none}
+.hm-day-head{position:relative;display:flex;align-items:center;gap:12px;color:#B07A1C;font-size:14.5px;font-weight:600;margin-bottom:6px}
+.hm-day-es{position:relative;margin:0;font-size:25px;font-weight:700;line-height:1.2;letter-spacing:-.01em;color:var(--text);max-width:88%}
+.hm-day-pt{position:relative;margin:0;font-size:16px;color:var(--muted)}
+.hm-day-nota{position:relative;margin:0;font-size:13px;line-height:1.45;color:#8A6A3A;max-width:80%}
+.hm-day-btn{position:relative;align-self:flex-start;display:flex;align-items:center;gap:10px;min-height:48px;margin-top:10px;padding:0 24px 0 20px;border:1.5px solid #C9A065;background:rgba(255,255,255,.35);color:var(--text);border-radius:999px;font-size:16px;font-weight:600}
+.hm-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:12px 0 6px}
+.hm-stats>div{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;padding:0 8px}
+.hm-stats>div+div{border-left:1px solid var(--line2)}
+.hm-stats strong{font-size:36px;font-weight:800;line-height:1.1;color:var(--text)}
+.hm-stats span{font-size:14px;line-height:1.3;color:var(--muted)}
+#app nav.hm-nav{margin:0 12px calc(8px + env(safe-area-inset-bottom));padding:6px 4px;border:1px solid var(--line)!important;border-radius:26px;box-shadow:0 8px 28px rgba(15,27,61,.10);background:var(--glass)!important}
+.hm-nav button{position:relative}
+.hm-nav button.is-on::after{content:"";position:absolute;bottom:2px;left:22%;right:22%;height:4px;border-radius:999px;background:var(--gold,#F2B33D)}
+@media (prefers-color-scheme:dark){
+.hm-hello p{color:var(--text2)}
+.hm-premium{background:rgba(242,179,61,.12);border-color:rgba(242,179,61,.45);color:#F5C66A}
+.hm-goal-ic circle,.hm-goal-ic path[stroke="#0F1B3D"]{stroke:var(--text)}
+.hm-goal-ic circle[fill="#0F1B3D"]{fill:var(--text)}
+.hm-day{background:linear-gradient(135deg,#2A2418,#221D14);border-color:#3A3020}
+.hm-day-deco{color:#5A4A2C}
+.hm-day-head{color:#F5C66A}
+.hm-day-nota{color:#C9B48E}
+.hm-day-btn{border-color:#8A6A3A;background:transparent}
+}
 /* menu lateral */
-#faf-menu-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));left:max(14px,calc((100vw - 560px) / 2 + 14px));z-index:45;width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--text);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,26,51,.10);cursor:pointer}
+#faf-menu-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));left:max(16px,calc((100vw - 560px) / 2 + 16px));z-index:45;width:50px;height:50px;border-radius:16px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--text);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,26,51,.10);cursor:pointer}
 #faf-menu-btn:focus-visible,.fm-item:focus-visible,.fm-close:focus-visible{outline:3px solid #5B3DF5;outline-offset:2px}
 #faf-sheet:not([hidden]) ~ #faf-menu-btn,body.tr-open #faf-menu-btn{display:none}
 #faf-course .cc-head{padding-top:46px}
@@ -779,58 +832,82 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 
 <!-- ============ INÍCIO ============ -->
 <sc-if value="{{showInicio}}" hint-placeholder-val="{{ true }}">
-<div style="display: flex; flex-direction: column; gap: 20px">
-  <div style="display: flex; flex-direction: column; gap: 4px; padding-top: 8px">
-    <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.01em; color: var(--accent-t)">Frase a Frase</span>
-    <h1 style="margin: 0; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 34px; line-height: 1.1;">¡Hola! Vamos praticar?</h1>
-  </div>
-
-  <button onClick="{{goCurso}}" aria-label="Abrir o Curso Premium" style="display: flex; flex-direction: column; gap: 10px; text-align: left; border: none; border-radius: 20px; padding: 18px; color: #FFFFFF; background: var(--brand-grad); box-shadow: 0 12px 28px rgba(59,45,184,0.25)">
-    <span style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%">
-      <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.04em; background: rgba(255,255,255,0.2); border-radius: 999px; padding: 4px 10px">PREMIUM</span>
-      <span style="font-size: 13px; font-weight: 700; opacity: 0.9">{{courseStats}}</span>
-    </span>
-    <span style="font-size: 20px; font-weight: 800">{{courseTitle}}</span>
-    <span style="font-size: 14px; opacity: 0.9; line-height: 1.4">{{courseSub}}</span>
+<div class="hm" style="display: flex; flex-direction: column; gap: 18px">
+  <button onClick="{{goCurso}}" class="hm-premium" aria-label="Abrir o Curso Premium">
+    <svg width="24" height="20" viewBox="0 0 24 20" aria-hidden="true"><path fill="#F2B33D" d="M2 5.5 7 9.5 12 2l5 7.5 5-4-2 11.5H4L2 5.5Z"/><rect x="4" y="17.5" width="16" height="2.2" rx="1.1" fill="#E3A126"/><circle cx="2" cy="5" r="1.6" fill="#F2B33D"/><circle cx="12" cy="1.8" r="1.6" fill="#F2B33D"/><circle cx="22" cy="5" r="1.6" fill="#F2B33D"/></svg>
+    Premium
   </button>
 
-  <div style="background: var(--deck); border: 1px solid var(--line); border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
-    <div style="display: flex; align-items: baseline; justify-content: space-between">
-      <span style="font-size: 15px; font-weight: 700">Meta de hoje</span>
-      <span style="font-size: 14px; color: var(--muted)">{{goalCount}} de {{goalTotal}} atividades</span>
-    </div>
-    <div style="height: 10px; background: var(--deck2); border-radius: 999px; overflow: hidden">
-      <div style="{{goalBar}}"></div>
-    </div>
-    <span style="font-size: 13px; color: var(--muted)">{{goalMsg}}</span>
+  <div class="hm-hello">
+    <h1>¡Hola!</h1>
+    <p>Vamos praticar?</p>
   </div>
 
-  <div style="background: var(--brand-deep); color: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
-    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: #FFD34D">Frase do dia · {{dia.cat}}</span>
-    <p style="margin: 0; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2">{{dia.es}}</p>
-    <p style="margin: 0; font-size: 15px; color: #D9DCFF">{{dia.pt}}</p>
+  <button onClick="{{goCurso}}" class="hm-course" aria-label="{{courseTitle}}">
+    <span class="hm-course-art" aria-hidden="true">
+      <svg width="68" height="64" viewBox="2 8 60 46">
+        <defs>
+          <linearGradient id="hmb1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5D86D6"/><stop offset="1" stop-color="#2A4C93"/></linearGradient>
+          <linearGradient id="hmb2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4C74C4"/><stop offset="1" stop-color="#1F3B78"/></linearGradient>
+        </defs>
+        <path d="M6 34 40 26 58 32 24 41Z" fill="url(#hmb2)"/>
+        <path d="M6 34v8l18 7v-8Z" fill="#E9EDF6"/>
+        <path d="M24 41v8l34-9v-8Z" fill="#1A3266"/>
+        <path d="M6 42l18 7" stroke="#C9D1E3" stroke-width="1"/>
+        <path d="M8 20 42 12 58 18 24 27Z" fill="url(#hmb1)"/>
+        <path d="M8 20v8l16 7v-8Z" fill="#F4F6FB"/>
+        <path d="M24 27v8l34-9v-8Z" fill="#22407F"/>
+        <path d="M10 23.5l13 5.6M10 26.5l13 5.6" stroke="#CDD5E6" stroke-width=".9"/>
+        <path d="M40 29.8v19l4-3 4 4.5V28.6Z" fill="#F2B33D"/>
+        <path d="M40 29.8 48 28.6" stroke="#D8961F" stroke-width="1"/>
+      </svg>
+    </span>
+    <span class="hm-course-sep" aria-hidden="true"></span>
+    <span class="hm-course-body">
+      <span class="hm-course-title">{{courseTitle}}</span>
+      <span class="hm-course-sub">{{courseSub}}</span>
+      <span class="hm-course-bar"><span style="{{courseBar}}"></span></span>
+    </span>
+    <span class="hm-course-side">
+      <span class="hm-play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#0F1B3D" d="M8 5.2v13.6a1 1 0 0 0 1.5.86l10.6-6.8a1 1 0 0 0 0-1.72L9.5 4.34A1 1 0 0 0 8 5.2Z"/></svg></span>
+      <span class="hm-pct">{{coursePct}}</span>
+    </span>
+  </button>
+
+  <button onClick="{{goFrases}}" class="hm-goal" aria-label="Meta de hoje: {{goalCount}} de {{goalTotal}} atividades">
+    <span class="hm-goal-ic" aria-hidden="true">
+      <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="22" cy="26" r="18" fill="none" stroke="#0F1B3D" stroke-width="5"/><circle cx="22" cy="26" r="9.5" fill="none" stroke="#0F1B3D" stroke-width="5"/><circle cx="22" cy="26" r="3" fill="#0F1B3D"/><path d="M22 26 40 8" stroke="#0F1B3D" stroke-width="3" stroke-linecap="round"/><path d="M36 4.5l1.2 5.3 5.3 1.2L46 7.5l-4.3-1.2L40.5 2Z" fill="#F2B33D"/><path d="M37 9.5 42.5 4" stroke="#F2B33D" stroke-width="2"/></svg>
+    </span>
+    <span class="hm-sep" aria-hidden="true"></span>
+    <span class="hm-goal-body">
+      <span class="hm-goal-title">Meta de hoje</span>
+      <span class="hm-goal-sub">{{goalCount}} de {{goalTotal}} atividades</span>
+    </span>
+    <svg class="hm-chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+  </button>
+
+  <div class="hm-day">
+    <svg class="hm-day-deco" width="190" height="190" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{dia.icon}}"></path></svg>
+    <div class="hm-day-head">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{dia.icon}}"></path></svg>
+      <span class="hm-sep is-gold" aria-hidden="true"></span>
+      <span>Frase do dia · {{dia.cat}}</span>
+    </div>
+    <p class="hm-day-es">{{dia.es}}</p>
+    <p class="hm-day-pt">{{dia.pt}}</p>
     <sc-if value="{{dia.hasNota}}" hint-placeholder-val="{{ true }}">
-      <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #B9BEF0">{{dia.nota}}</p>
+      <p class="hm-day-nota">{{dia.nota}}</p>
     </sc-if>
-    <button onClick="{{speakDia}}" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid rgba(255,255,255,0.45); background: transparent; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
+    <button onClick="{{speakDia}}" class="hm-day-btn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
       Ouvir
     </button>
   </div>
 
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
-    <div style="background: var(--deck); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid var(--line)">
-      <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{knownCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: var(--muted)">de {{phraseTotal}} frases que você sabe</span>
-    </div>
-    <div style="background: var(--deck); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid var(--line)">
-      <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{reviewCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: var(--muted)">frases para revisar</span>
-    </div>
-    <div style="background: var(--deck); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 2px; border: 1px solid var(--line)">
-      <span style="font-family: Manrope, system-ui, sans-serif; font-size: 26px; font-weight: 700">{{readCount}}</span>
-      <span style="font-size: 12px; line-height: 1.3; color: var(--muted)">de {{textTotal}} textos concluídos</span>
-    </div>
+  <div class="hm-stats">
+    <div><strong>{{knownCount}}</strong><span>de {{phraseTotal}} frases que você sabe</span></div>
+    <div><strong>{{reviewCount}}</strong><span>frases para revisar</span></div>
+    <div><strong>{{readCount}}</strong><span>de {{textTotal}} textos concluídos</span></div>
   </div>
 
   <sc-if value="{{hasReview}}" hint-placeholder-val="{{ false }}">
@@ -1390,29 +1467,25 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 
 </div>
 
-<nav aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px; padding: 8px 4px calc(10px + env(safe-area-inset-bottom)) 6px; background: var(--deck); border-top: 1px solid var(--line)">
-  <button onClick="{{goInicio}}" style="{{nav.inicio}}">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z"></path></svg>
+<nav class="hm-nav" aria-label="Navegação principal" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px">
+  <button onClick="{{goInicio}}" class="{{navOn.inicio}}" style="{{nav.inicio}}">
+    <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 10.6 12 3l9 7.6V20a1.5 1.5 0 0 1-1.5 1.5H15v-6.2a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v6.2H4.5A1.5 1.5 0 0 1 3 20v-9.4Z"></path></svg>
     Início
   </button>
-  <button onClick="{{goCurso}}" style="{{nav.curso}}">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"></path><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"></path></svg>
+  <button onClick="{{goCurso}}" class="{{navOn.curso}}" style="{{nav.curso}}">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9.5 12 5l10 4.5-10 4.5L2 9.5Z"></path><path d="M6 11.3V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.7"></path><path d="M22 9.5v5"></path></svg>
     Curso
   </button>
-  <button onClick="{{goFrases}}" style="{{nav.frases}}">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"></path></svg>
-    Frases
-  </button>
-  <button onClick="{{goTextos}}" style="{{nav.textos}}">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2V4Z"></path><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7V4Z"></path></svg>
+  <button onClick="{{goTextos}}" class="{{navOn.textos}}" style="{{nav.textos}}">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2V5Z"></path><path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7V5Z"></path></svg>
     Leitura
   </button>
-  <button onClick="{{goPratica}}" style="{{nav.pratica}}">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+  <button onClick="{{goPratica}}" class="{{navOn.pratica}}" style="{{nav.pratica}}">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="2"></rect><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"></rect><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"></rect><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"></rect></svg>
     Prática
   </button>
-  <button onClick="{{goOuvir}}" style="{{nav.ouvir}}">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Z"></path><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z"></path></svg>
+  <button onClick="{{goOuvir}}" class="{{navOn.ouvir}}" style="{{nav.ouvir}}">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Z"></path><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z"></path></svg>
     Ouvir
   </button>
 </nav>
@@ -3745,7 +3818,8 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
     sync: sync,
     summary: function () {
       regen();
-      return { xp: st.xp, level: levelOf(st.xp).lv, streak: streakNow(), lessons: Object.keys(st.lessons).length, hearts: st.hearts.n };
+      var lo = levelOf(st.xp);
+      return { xp: st.xp, level: lo.lv, levelPct: Math.round(lo.cur / lo.need * 100), streak: streakNow(), lessons: Object.keys(st.lessons).length, hearts: st.hearts.n };
     },
     state: function () { return st; },
     openChat: function () { openChat(); },
@@ -4048,9 +4122,32 @@ function segStyle(active) {
     (active ? 'background: var(--deck); color: var(--text); box-shadow: 0 1px 3px rgba(20,26,51,0.10)' : 'background: transparent; color: var(--muted)');
 }
 
+// Ícone da categoria da Frase do dia (traço de 24x24, um só caminho).
+var CAT_ICONS = {
+  bank: 'M3 10h18M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18M12 3l9 5H3l9-5Z',
+  travel: 'M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z',
+  work: 'M3 8h18v12H3V8ZM8 8V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3M3 13h18',
+  food: 'M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7',
+  health: 'M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7 7-7Z',
+  home: 'M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z',
+  culture: 'M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7L12 2.5Z',
+  chat: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z'
+};
+function catIcon(name) {
+  var n = String(name || '');
+  var k = /Banco|Finanças|Compras|Vendas/.test(n) ? 'bank'
+    : /Viagem|Aeroporto|Hotel|Transporte|Direções/.test(n) ? 'travel'
+    : /Trabalho|Reuniões|E-mail|Atendimento/.test(n) ? 'work'
+    : /Restaurante|Comida/.test(n) ? 'food'
+    : /Saúde|Farmácia|Emergências/.test(n) ? 'health'
+    : /Casa|Família|Dia a dia/.test(n) ? 'home'
+    : /Cinema|História|Tecnologia|Esportes|Meio ambiente/.test(n) ? 'culture' : 'chat';
+  return CAT_ICONS[k];
+}
+
 function navStyle(active) {
-  return 'display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 56px; border: none; border-radius: 12px; font-size: 12px; font-weight: 600; ' +
-    (active ? 'background: transparent; color: var(--accent-t)' : 'background: transparent; color: var(--muted)');
+  return 'display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; min-height: 64px; padding-bottom: 6px; border: none; border-radius: 16px; font-family: Inter, system-ui, sans-serif; font-size: 13px; ' +
+    (active ? 'background: transparent; color: var(--text); font-weight: 700' : 'background: transparent; color: var(--muted); font-weight: 500');
 }
 
 function optStyle(answered, idx, correct, picked) {
@@ -4241,6 +4338,13 @@ class Component extends DCLogic {
         ouvir: navStyle(s.tab === 'ouvir'),
         curso: navStyle(s.tab === 'curso')
       },
+      navOn: {
+        inicio: s.tab === 'inicio' ? 'is-on' : '',
+        textos: s.tab === 'textos' ? 'is-on' : '',
+        pratica: s.tab === 'pratica' ? 'is-on' : '',
+        ouvir: s.tab === 'ouvir' ? 'is-on' : '',
+        curso: s.tab === 'curso' ? 'is-on' : ''
+      },
       goOuvir: function () { self.setState({ tab: 'ouvir' }); },
 
       // Ouvir
@@ -4351,8 +4455,10 @@ class Component extends DCLogic {
       curCatLabel: s.cat >= 0 && CATS[s.cat] ? CATS[s.cat].name : 'Escolher categoria',
       showCurso: (function () { if (window.FAF_COURSE) window.FAF_COURSE.sync(s.tab === 'curso'); return s.tab === 'curso'; })(),
       goCurso: function () { self.setState({ tab: 'curso' }); },
-      courseTitle: courseSum && courseSum.lessons ? 'Continuar o curso' : 'Comece o Curso Premium',
-      courseSub: courseSum && courseSum.lessons ? 'Nível ' + courseSum.level + ' · ' + courseSum.lessons + (courseSum.lessons === 1 ? ' lição concluída' : ' lições concluídas') : 'Trilha do A1 ao B2 com lições curtas, XP, ofensiva, baús e conquistas.',
+      courseTitle: courseSum && courseSum.lessons ? 'Continuar o curso' : 'Começar o curso',
+      courseSub: courseSum && courseSum.lessons ? 'Nível ' + courseSum.level + ' • ' + courseSum.lessons + (courseSum.lessons === 1 ? ' lição concluída' : ' lições concluídas') : 'Trilha do A1 ao B2',
+      coursePct: (courseSum && courseSum.lessons ? courseSum.levelPct : 0) + '%',
+      courseBar: 'display: block; height: 100%; width: ' + (courseSum && courseSum.lessons ? courseSum.levelPct : 0) + '%; border-radius: 999px; background: linear-gradient(90deg, #F7C55A, #EFA92E)',
       courseStats: courseSum ? courseSum.streak + (courseSum.streak === 1 ? ' dia' : ' dias') + ' · ' + courseSum.xp + ' XP' : '',
       homeCatsLine: CATS.length + ' categorias, do restaurante às finanças',
       homeTextsLine: TEXTS.length + ' textos, do básico ao avançado',
@@ -4444,7 +4550,7 @@ class Component extends DCLogic {
       goalTotal: GOAL,
       goalBar: 'height: 100%; width: ' + goalPct + '%; background: ' + (s.goalCount >= GOAL ? 'var(--green-bg)' : 'var(--brand)') + '; border-radius: 999px',
       goalMsg: goalMsg,
-      dia: { es: dia.es, pt: dia.pt, nota: dia.nota, hasNota: !!dia.nota, cat: dia.cat },
+      dia: { es: dia.es, pt: dia.pt, nota: dia.nota, hasNota: !!dia.nota, cat: dia.cat, icon: catIcon(dia.cat) },
       speakDia: function () { speak(dia.es); },
       knownCount: knownCount,
       phraseTotal: ALL.length,
