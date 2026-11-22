@@ -1090,7 +1090,7 @@ button.cx-stat{cursor:pointer}
 .cx-card-t{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .cx-card-t strong{font-size:17px;line-height:1.2;font-weight:800;letter-spacing:-.01em}
 .cx-card-s{font-size:13.5px;line-height:1.32;color:var(--muted)}
-.cx-tag{display:inline-block;padding:1px 8px;border-radius:999px;background:rgba(242,179,61,.16);color:#9A6514;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.cx-tag{display:inline-block;padding:1px 8px;border-radius:999px;background:rgba(242,179,61,.16);color:var(--cxg,#9A6514);font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .cx-stars{display:flex;gap:4px;margin-top:3px;color:#C3C9D6}
 .cx-stars .cx-ico svg{width:17px;height:17px}
 .cx-stars .is-on{color:#F2B33D}
@@ -1131,7 +1131,7 @@ button.cx-stat{cursor:pointer}
 .cx-up{flex:0 0 auto;font-size:13px;font-weight:700;color:var(--muted)}
 .cx-tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .cx-tool{padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--deck);color:var(--text);font:inherit;font-size:14px;font-weight:600;cursor:pointer}
-.cx-tool b{color:#9A6514}
+.cx-tool b{color:var(--cxg,#9A6514)}
 
 .cx-title{white-space:nowrap;font-size:clamp(20px,6vw,26px)}
 .cx-lvbtn{white-space:nowrap}
@@ -1151,8 +1151,74 @@ button.cx-stat{cursor:pointer}
 .cx-prem{height:40px;padding:0 13px 0 11px;font-size:15px;gap:5px}
 .cx-prem .cx-i svg{width:18px;height:18px}
 .cx-stat-l{white-space:normal;font-size:11.5px}
+
+/* ===== Curso: gamificação (nível, missões, ofensiva, meta) ===== */
+.cx-level{display:flex;align-items:center;gap:12px;width:100%;margin-top:10px;padding:10px 12px;border-radius:18px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;text-align:left;font:inherit;cursor:pointer}
+.cx-lvnum{flex:0 0 auto;width:46px;height:46px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(180deg,#FAD372,#E09A20);color:#14244A;box-shadow:0 6px 14px rgba(239,169,46,.3)}
+.cx-lvnum small{font-size:9px;font-weight:800;letter-spacing:.06em;line-height:1}
+.cx-lvnum strong{font-size:20px;line-height:1;font-weight:800}
+.cx-lvb{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:7px}
+.cx-lvt{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.cx-lvt strong{font-size:16px;font-weight:800;white-space:nowrap}
+.cx-lvt span{font-size:12px;color:rgba(255,255,255,.75);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cx-ach{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:1px;color:#F7C55A;font-size:12px}
+.cx-badges{display:flex;flex-wrap:wrap;gap:6px}
+.cx-badge.is-crown{display:inline-flex;align-items:center;gap:4px;background:linear-gradient(180deg,#FAD372,#E09A20);color:#14244A;border-color:#F8DC94}
+.cx-badge.is-crown .cx-i svg{width:15px;height:15px}
+.cx-mis,.cx-streak{margin-top:16px;padding:14px;border-radius:22px;background:var(--deck);border:1px solid var(--line);box-shadow:0 6px 18px rgba(15,27,61,.06);color:var(--text)}
+.cx-box-top{display:flex;align-items:center;gap:10px}
+.cx-box-top>strong{flex:1 1 auto;font-size:17px;font-weight:800}
+.cx-box-ic{flex:0 0 auto;width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#14244A;color:#F7C55A}
+.cx-box-ic.is-flame{background:rgba(242,138,31,.12)}
+.cx-box-ic.is-flame svg{width:26px;height:26px}
+.cx-box-s{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.cx-mlist{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
+.cx-m{display:flex;align-items:center;gap:10px}
+.cx-mchk{flex:0 0 auto;width:26px;height:26px;border-radius:50%;border:2px solid var(--line2,#D5DAE6);display:flex;align-items:center;justify-content:center;color:#fff}
+.cx-m.is-done .cx-mchk{border-color:#E09A20;background:linear-gradient(180deg,#F7C55A,#E09A20);animation:cx-pop .3s ease-out}
+.cx-mb{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:6px}
+.cx-mt-t{font-size:14.5px;font-weight:700}
+.cx-m.is-done .cx-mt-t{color:var(--muted);text-decoration:line-through}
+.cx-mrow{display:flex;align-items:center;gap:8px}
+.cx-mrow .cx-bar,.cx-streak .cx-bar{background:var(--line2,#E3E7F0)}
+.cx-mn{flex:0 0 auto;font-size:12px;font-weight:700;color:var(--muted);min-width:34px;text-align:right}
+.cx-mxp{flex:0 0 auto;font-size:12.5px;font-weight:800;color:var(--cxg,#9A6514);background:rgba(242,179,61,.16);padding:3px 8px;border-radius:999px}
+.cx-mchest{display:flex;align-items:center;gap:8px;margin:14px 0 0;padding:10px 12px;border-radius:14px;background:rgba(20,36,74,.06);font-size:13.5px;color:var(--muted)}
+.cx-mchest svg{width:22px;height:22px;color:#C98516}
+.cx-mchest.is-open{color:#14915D;background:rgba(51,192,141,.12)}
+.cx-mchest.is-open svg{color:#14915D}
+.cx-go.is-chest{margin-top:14px;height:52px;font-size:17px;animation:cx-glowbtn 1.6s ease-in-out infinite alternate}
+@keyframes cx-glowbtn{from{box-shadow:0 8px 20px rgba(239,169,46,.3)}to{box-shadow:0 8px 30px rgba(239,169,46,.7)}}
+.cx-freeze{display:flex;align-items:center;gap:4px;padding:5px 10px 5px 7px;border-radius:999px;border:1px solid rgba(91,168,245,.45);background:rgba(91,168,245,.1);color:var(--text);font:inherit;font-size:13px;cursor:pointer}
+.cx-freeze svg{width:18px;height:18px}
+.cx-week{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cx-wd{display:flex;flex-direction:column;align-items:center;gap:5px}
+.cx-wdot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--line2,#E3E7F0)}
+.cx-wd.is-did .cx-wdot{background:rgba(242,138,31,.15)}
+.cx-wd.is-did .cx-wdot svg{width:24px;height:24px}
+.cx-wd.is-frozen .cx-wdot{background:rgba(91,168,245,.18);color:#3B8BE0}
+.cx-wd.is-today .cx-wdot{box-shadow:0 0 0 2px #F2B33D}
+.cx-wl{font-size:11.5px;font-weight:700;color:var(--muted)}
+.cx-wd.is-today .cx-wl{color:var(--text)}
+.cx-daygoal{display:grid;grid-template-columns:1fr auto;grid-template-areas:"t c" "b b";gap:8px 10px;width:100%;margin-top:14px;padding:12px;border-radius:16px;border:1px solid var(--line);background:transparent;color:var(--text);text-align:left;font:inherit;cursor:pointer}
+.cx-dg-t{grid-area:t;display:flex;flex-direction:column;gap:2px}
+.cx-dg-t strong{font-size:14.5px}
+.cx-dg-t span{font-size:12.5px;color:var(--muted)}
+.cx-daygoal .cx-bar{grid-area:b}
+.cx-dg-c{grid-area:c;align-self:center;font-size:13px;font-weight:800;color:var(--cxg,#9A6514)}
+.cx-goals{display:flex;flex-direction:column;gap:8px;margin:14px 0}
+.cx-goalopt{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--deck);color:var(--text);font:inherit;cursor:pointer}
+.cx-goalopt span{font-size:13px;color:var(--muted)}
+.cx-goalopt.is-on{border-color:#F2B33D;background:rgba(242,179,61,.12)}
+.cx-freeze-big{display:flex;justify-content:center;margin-bottom:6px}
+.cx-freeze-big svg{width:64px;height:64px}
+.cx-bonus{margin:6px 0 0;font-weight:700;color:#C98516}
+.cx-urow .cx-un .cx-i svg{width:17px;height:17px}
+@media (prefers-reduced-motion:reduce){.cx-go.is-chest,.cx-m.is-done .cx-mchk{animation:none}}
 @media (max-width:370px){.cx-hero-t{font-size:26px}.cx-stat-v strong{font-size:22px}.cx-stat>.cx-i:first-child svg{width:28px;height:28px}.cx-prem{padding:0 12px;font-size:15px}}
 @media (prefers-reduced-motion:reduce){.cx-mt *,.cx-goal-art,.cx-item.is-current .cx-dot,.cx-stat.is-flame>.cx-i:first-child{animation:none!important}.cx-mt .cx-birds{display:none}}
+html[data-theme="dark"] #faf-course.cx{--cxg:#F5C66A}
+@media (prefers-color-scheme:dark){html:not([data-theme="light"]) #faf-course.cx{--cxg:#F5C66A}}
 </style>
 </head>
 <body>
@@ -3106,13 +3172,20 @@ function fafLang() {
     { id: 'ofensiva30', t: 'Um mês de hábito', d: 'Estude 30 dias seguidos.' },
     { id: 'xp100', t: '100 XP', d: 'Junte 100 pontos de experiência.' },
     { id: 'xp500', t: '500 XP', d: 'Junte 500 pontos de experiência.' },
-    { id: 'meta', t: 'Meta cumprida', d: 'Bata a meta diária de ' + DAILY_GOAL + ' XP.' },
+    { id: 'meta', t: 'Meta cumprida', d: 'Bata a sua meta diária de XP.' },
     { id: 'bau', t: 'Caçador de baús', d: 'Abra seu primeiro baú.' },
     { id: 'prova', t: 'Aprovado', d: 'Passe na prova de uma unidade.' },
     { id: 'revisao', t: 'De volta ao jogo', d: 'Recupere uma vida praticando.' },
     { id: 'nivel5', t: 'Nível 5', d: 'Chegue ao nível 5.' },
     { id: 'conversa', t: 'Primeira conversa', d: 'Troque 3 mensagens com a Lía.' },
-    { id: 'conversa10', t: 'Papo longo', d: 'Mande 10 mensagens numa conversa com a Lía.' }
+    { id: 'conversa10', t: 'Papo longo', d: 'Mande 10 mensagens numa conversa com a Lía.' },
+    { id: 'missoes', t: 'Missões em dia', d: 'Cumpra todas as missões de um dia.' },
+    { id: 'missoes7', t: 'Missionário', d: 'Abra 7 baús do dia.' },
+    { id: 'protegido', t: 'Ofensiva protegida', d: 'Um protetor salvou sua ofensiva.' },
+    { id: 'unidade', t: 'Unidade completa', d: 'Conclua todas as etapas de uma unidade.' },
+    { id: 'perfeito10', t: 'Perfeccionista', d: 'Termine 10 lições com 3 estrelas.' },
+    { id: 'xp1000', t: '1.000 XP', d: 'Junte 1.000 pontos de experiência.' },
+    { id: 'meta7', t: 'Meta da semana', d: 'Bata a meta diária em 7 dias diferentes.' }
   ];
   var PRAISE = ['Muito bem!', 'Isso mesmo!', 'Perfeito!', '¡Muy bien!', 'Excelente!', 'Mandou bem!', '¡Genial!'];
 
@@ -3123,7 +3196,7 @@ function fafLang() {
   function blank() {
     return { v: 1, xp: 0, day: { date: '', xp: 0 }, streak: { n: 0, last: '' }, hearts: { n: HEART_MAX, ts: Date.now() },
       lessons: {}, tests: {}, chests: {}, ach: {}, themes: ['indigo'], theme: 'indigo', sound: true, bestCombo: 0,
-      answers: 0, correct: 0, updated: 0 };
+      answers: 0, correct: 0, updated: 0, goal: DAILY_GOAL, days: {}, goals: {}, freeze: 0, frozen: {}, daily: null, chestsDaily: 0 };
   }
   function load() {
     try { var s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s && s.v === 1) return Object.assign(blank(), s); } catch (e) {}
@@ -3152,13 +3225,19 @@ function fafLang() {
   function dayXP() { return st.day.date === today() ? st.day.xp : 0; }
   function streakNow() { return (st.streak.last === today() || st.streak.last === yesterday()) ? st.streak.n : 0; }
   function addXP(n) {
-    var before = levelOf(st.xp).lv, hadGoal = dayXP() >= DAILY_GOAL;
+    var before = levelOf(st.xp).lv, hadGoal = dayXP() >= goalXP();
     st.xp += n;
     if (st.day.date !== today()) st.day = { date: today(), xp: 0 };
     st.day.xp += n;
-    if (!hadGoal && st.day.xp >= DAILY_GOAL) unlock('meta');
+    var t = today(); st.days = st.days || {}; st.days[t] = (st.days[t] || 0) + n; pruneDays();
+    if (!hadGoal && st.day.xp >= goalXP()) {
+      st.goals = st.goals || {}; st.goals[t] = 1; unlock('meta');
+      if (Object.keys(st.goals).length >= 7) unlock('meta7');
+      toast('Meta do dia batida!', st.day.xp + ' XP hoje. Sua ofensiva agradece.');
+    }
     if (st.xp >= 100) unlock('xp100');
     if (st.xp >= 500) unlock('xp500');
+    if (st.xp >= 1000) unlock('xp1000');
     var after = levelOf(st.xp).lv;
     if (after >= 5) unlock('nivel5');
     return after > before ? after : 0;
@@ -3171,6 +3250,7 @@ function fafLang() {
     if (st.streak.n >= 3) unlock('ofensiva3');
     if (st.streak.n >= 7) unlock('ofensiva7');
     if (st.streak.n >= 30) unlock('ofensiva30');
+    if (st.streak.n % 7 === 0 && (st.freeze || 0) < FREEZE_MAX) { st.freeze = (st.freeze || 0) + 1; toast('Protetor de ofensiva ganho', st.streak.n + ' dias seguidos! Ele salva sua ofensiva se você faltar um dia.'); }
   }
   function unlock(id) {
     if (st.ach[id]) return;
@@ -3178,6 +3258,116 @@ function fafLang() {
     var a = ACH.filter(function (x) { return x.id === id; })[0];
     if (a) toast('Conquista: ' + a.t, a.d);
   }
+
+  // ---------- gamificação: meta diária, missões do dia e protetor de ofensiva ----------
+  var GOALS = [{ xp: 10, t: 'Leve', d: '1 lição por dia' }, { xp: 20, t: 'Normal', d: '2 lições por dia' }, { xp: 30, t: 'Séria', d: '3 lições por dia' }, { xp: 50, t: 'Intensa', d: '5 lições por dia' }];
+  var FREEZE_MAX = 2, MISSION_XP = 10;
+  var MISSIONS = {
+    licoes2: { t: 'Conclua 2 lições', n: 2, k: 'lessons' },
+    licoes3: { t: 'Conclua 3 lições', n: 3, k: 'lessons' },
+    perfeita: { t: 'Faça 1 lição sem errar', n: 1, k: 'perfect' },
+    xp: { t: 'Ganhe 40 XP hoje', n: 40, k: 'xp' },
+    combo: { t: 'Acerte 8 seguidas', n: 8, k: 'combo' },
+    acertos: { t: 'Acerte 25 exercícios', n: 25, k: 'correct' },
+    leitura: { t: 'Faça frases ou uma leitura da unidade', n: 1, k: 'premium' },
+    lia: { t: 'Mande 3 mensagens para a Lía', n: 3, k: 'lia' }
+  };
+  function goalXP() { return st.goal || DAILY_GOAL; }
+  function pruneDays() {
+    var lim = new Date(); lim.setDate(lim.getDate() - 70); lim = today(lim);
+    ['days', 'frozen', 'goals'].forEach(function (k) { var o = st[k] || {}; Object.keys(o).forEach(function (d) { if (d < lim) delete o[d]; }); });
+  }
+  function dayDiff(a, b) { return Math.round((new Date(b + 'T12:00:00') - new Date(a + 'T12:00:00')) / 86400000); }
+  function addDays(d, n) { var x = new Date(d + 'T12:00:00'); x.setDate(x.getDate() + n); return today(x); }
+  // Protetor: se faltou dia(s) e há protetores suficientes, a ofensiva continua.
+  function applyFreeze() {
+    var last = st.streak.last, y = yesterday();
+    if (!last || !st.streak.n || last >= y) return;
+    var gap = dayDiff(last, y);
+    if (gap < 1 || gap > (st.freeze || 0)) return;
+    st.frozen = st.frozen || {};
+    for (var i = 1; i <= gap; i++) st.frozen[addDays(last, i)] = 1;
+    st.freeze -= gap; st.streak.last = y;
+    unlock('protegido');
+    toast('Ofensiva salva!', gap === 1 ? 'Você usou 1 protetor de ofensiva.' : 'Você usou ' + gap + ' protetores de ofensiva.');
+    save();
+  }
+  function hashStr(t) { var x = 0; for (var i = 0; i < t.length; i++) x = (x * 31 + t.charCodeAt(i)) >>> 0; return x; }
+  function daily() {
+    var t = today();
+    if (!st.daily || st.daily.date !== t) {
+      var x = hashStr(t + (window.FAF_IDIOMA || 'es')), rest = ['perfeita', 'xp', 'combo', 'acertos', 'leitura', 'lia'];
+      var a = rest[x % rest.length], b = rest.filter(function (k) { return k !== a; })[(x >>> 4) % (rest.length - 1)];
+      st.daily = { date: t, ids: [(x >>> 8) % 2 ? 'licoes3' : 'licoes2', a, b], c: {}, done: {}, chest: false };
+    }
+    return st.daily;
+  }
+  function mProg(id) { var m = MISSIONS[id], d = daily(); return Math.min(m.n, m.k === 'xp' ? dayXP() : (d.c[m.k] || 0)); }
+  function bump(k, v, isMax) { var d = daily(); d.c[k] = isMax ? Math.max(d.c[k] || 0, v) : (d.c[k] || 0) + (v || 1); }
+  function checkMissions() {
+    var d = daily(), changed = true, lv = 0;
+    while (changed) {
+      changed = false;
+      d.ids.forEach(function (id) {
+        if (d.done[id] || mProg(id) < MISSIONS[id].n) return;
+        d.done[id] = Date.now(); changed = true;
+        lv = addXP(MISSION_XP) || lv;
+        toast('Missão cumprida!', MISSIONS[id].t + ' · +' + MISSION_XP + ' XP');
+        if (d.ids.every(function (k) { return d.done[k]; })) { unlock('missoes'); toast('Todas as missões de hoje!', 'O baú do dia está pronto no Curso.'); }
+      });
+    }
+    return lv;
+  }
+  function missionsLeft() { var d = daily(); return d.ids.filter(function (k) { return !d.done[k]; }).length; }
+  function hoursLeft() { var n = new Date(), m = new Date(n); m.setHours(24, 0, 0, 0); return Math.max(1, Math.ceil((m - n) / 3600000)); }
+  function openDailyChest() {
+    var d = daily(); if (d.chest || missionsLeft()) return;
+    var giveFreeze = (st.freeze || 0) < FREEZE_MAX, xp = giveFreeze ? 25 : 40;
+    modal(function (box, close) {
+      var chest = h('button', { type: 'button', class: 'cc-chest', 'aria-label': 'Tocar para abrir o baú do dia' }, [icon('chest')]);
+      var info = h('div', { class: 'cc-chest-info' }, [h('h2', { text: 'Baú do dia' }), h('p', { class: 'cc-muted', text: 'Você cumpriu as 3 missões. Toque no baú para abrir.' })]);
+      box.appendChild(chest); box.appendChild(info);
+      chest.addEventListener('click', function () {
+        if (chest.classList.contains('is-open')) return;
+        chest.classList.add('is-shake');
+        setTimeout(function () {
+          chest.classList.remove('is-shake'); chest.classList.add('is-open'); SFX.chest(); confetti(box);
+          d.chest = Date.now(); st.chestsDaily = (st.chestsDaily || 0) + 1; if (st.chestsDaily >= 7) unlock('missoes7');
+          var lvUp = addXP(xp); touchStreak();
+          if (giveFreeze) st.freeze = (st.freeze || 0) + 1;
+          regen(); st.hearts.n = HEART_MAX; st.hearts.ts = Date.now();
+          save();
+          var items = [h('li', {}, [icon('bolt'), '+' + xp + ' XP']), h('li', {}, [icon('heart'), 'Vidas completas'])];
+          if (giveFreeze) items.push(h('li', {}, [h('span', { class: 'cx-i', html: CX_ICON.shield }), '1 protetor de ofensiva']));
+          info.replaceChildren(h('h2', { text: 'Você ganhou' }), h('ul', { class: 'cc-rewards' }, items),
+            h('button', { type: 'button', class: 'cc-btn', onclick: function () { close(); if (lvUp) levelUp(lvUp); }, text: 'Continuar' }));
+          info.querySelector('button').focus();
+        }, 650);
+      });
+    }, { onclose: function () { renderMap(); } });
+  }
+  function showGoalPicker() {
+    modal(function (box, close) {
+      box.appendChild(h('h2', { text: 'Meta diária' }));
+      box.appendChild(h('p', { class: 'cc-muted', text: 'Quanto XP você quer fazer por dia? Bater a meta mantém a ofensiva acesa.' }));
+      box.appendChild(h('div', { class: 'cx-goals' }, GOALS.map(function (g) {
+        return h('button', { type: 'button', class: 'cx-goalopt' + (goalXP() === g.xp ? ' is-on' : ''), 'aria-pressed': goalXP() === g.xp ? 'true' : 'false',
+          onclick: function () { st.goal = g.xp; save(); close(); } }, [h('strong', { text: g.t }), h('span', { text: g.xp + ' XP · ' + g.d })]);
+      })));
+      box.appendChild(h('button', { type: 'button', class: 'cc-btn is-ghost', onclick: close, text: 'Fechar' }));
+    }, { onclose: function () { renderMap(); } });
+  }
+  function showFreezeInfo() {
+    modal(function (box, close) {
+      box.appendChild(h('div', { class: 'cx-freeze-big', html: CX_ICON.shield }));
+      box.appendChild(h('h2', { text: 'Protetor de ofensiva' }));
+      box.appendChild(h('p', { class: 'cc-muted', text: 'Se você ficar um dia sem estudar, um protetor é usado sozinho e sua ofensiva continua. Você pode guardar até ' + FREEZE_MAX + '.' }));
+      box.appendChild(h('p', { class: 'cc-muted', text: 'Como ganhar: abra o baú do dia (cumpra as 3 missões) ou complete 7 dias seguidos.' }));
+      box.appendChild(h('p', {}, [h('strong', { text: 'Você tem ' + (st.freeze || 0) + ' de ' + FREEZE_MAX + '.' })]));
+      box.appendChild(h('button', { type: 'button', class: 'cc-btn', onclick: close, text: 'Entendi' }));
+    });
+  }
+  function ranks() { return ['Turista', 'Explorador', 'Viajante', 'Conversador', 'Fluente em treino', 'Quase nativo', 'Lenda']; }
   function theme() { return THEMES[st.theme] || THEMES.indigo; }
   function applyTheme(el) { var t = theme(); el.style.setProperty('--ca', t.a); el.style.setProperty('--cb', t.b); el.style.setProperty('--csoft', t.soft); }
 
@@ -3390,6 +3580,7 @@ function fafLang() {
     bars: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 15h3v5H4zM10.5 10h3v10h-3zM17 4h3v16h-3z"/></svg>',
     chev: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>',
     right: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></svg>',
+    trophy2: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M7 3h10v2h3v3a4 4 0 0 1-4 4h-.3A5 5 0 0 1 13 14.9V17h3v2H8v-2h3v-2.1A5 5 0 0 1 8.3 12H8a4 4 0 0 1-4-4V5h3V3Zm0 4H6v1a2 2 0 0 0 1.2 1.8C7 9.3 7 8.7 7 8V7Zm10 0v1c0 .7 0 1.3-.2 1.8A2 2 0 0 0 18 8V7h-1ZM6 20h12v2H6z"/></svg>',
     crown: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M3 7.5 7.5 11 12 4l4.5 7L21 7.5 19 18H5L3 7.5Zm2 12h14v2H5v-2Z"/></svg>',
     flame: '<svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><defs><linearGradient id="cxF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC93C"/><stop offset="1" stop-color="#F2721F"/></linearGradient></defs><path fill="url(#cxF)" d="M16 2c1.5 5-3.5 7.2-3.5 11 0 1.8 1 3 2.4 3.4-.4-2.6 1.1-4.6 3.2-6 .4 3.4 4.4 5 4.4 9.3A6.5 6.5 0 0 1 16 30c-5 0-8.5-3.6-8.5-8.4C7.5 13.4 15.5 9.6 16 2Z"/><path fill="#FFE27A" d="M16 30c-2.6 0-4.4-1.9-4.4-4.3 0-3 3-4.6 3.6-7.2 2 1.6 5.2 3.6 5.2 7 0 2.6-1.9 4.5-4.4 4.5Z"/></svg>',
     bolt: '<svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><path fill="#F2B33D" d="M18 2 5 19h9l-2 11 14-18h-9l1-10Z"/></svg>',
@@ -3413,7 +3604,11 @@ function fafLang() {
     quote: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 5v2h10V9H7Zm0 4v2h7v-2H7Z"/></svg>',
     book: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M3 4.5C5.5 3.3 8.6 3.4 11 5v15c-2.4-1.6-5.5-1.7-8-.5v-15Zm18 0v15c-2.5-1.2-5.6-1.1-8 .5V5c2.4-1.6 5.5-1.7 8-.5Z"/></svg>',
     exam: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M6 2h9l5 5v13.5A1.5 1.5 0 0 1 18.5 22h-12A1.5 1.5 0 0 1 5 20.5v-17A1.5 1.5 0 0 1 6.5 2H6Zm8 1.5V8h4.5L14 3.5ZM8 12.2l1.3-1.2 1.7 1.8 3.7-4 1.3 1.2-5 5.4-3-3.2ZM8 17h8v1.6H8V17Z"/></svg>',
-    chest: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M3 10h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9Zm2-5h14a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2Zm5.5 6.5h3V15h-3v-3.5Z"/></svg>'
+    chest: '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M3 10h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9Zm2-5h14a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2Zm5.5 6.5h3V15h-3v-3.5Z"/></svg>',
+    shield: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#5BA8F5" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path fill="#fff" d="M12 7.2v9.6M7.2 12h9.6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>',
+    target: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/></svg>',
+    snow: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 2 3-2M9 20l3-2 3 2"/></svg>',
+    check2: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></svg>'
   };
   function cxi(n) { var s = h('span', { class: 'cx-i', 'aria-hidden': 'true' }); s.innerHTML = CX_ICON[n] || ICON[n] || ''; return s; }
   // Ícone da lição pelo assunto do título.
@@ -3481,7 +3676,7 @@ function fafLang() {
 
   function renderMap(scrollToCurrent) {
     ensureRoot(); applyTheme(root); regen();
-    root.classList.add('cx');
+    root.classList.add('cx'); applyFreeze(); daily(); checkMissions(); save();
     var prevScroll = root.scrollTop;
     if (!course) root.replaceChildren(h('div', { class: 'cx-loading', text: 'Carregando o curso…' }));
     loadCourse().then(function () {
@@ -3524,12 +3719,24 @@ function fafLang() {
         })
       ]);
 
+      // nível e patente
+      var lo = levelOf(st.xp);
+      var lvlCard = h('button', { type: 'button', class: 'cx-level', onclick: showAchievements, 'aria-label': 'Nível ' + lo.lv + ', ' + rank(lo.lv) + '. Ver conquistas' }, [
+        h('span', { class: 'cx-lvnum' }, [h('small', { text: 'NÍV.' }), h('strong', { text: String(lo.lv) })]),
+        h('span', { class: 'cx-lvb' }, [
+          h('span', { class: 'cx-lvt' }, [h('strong', { text: rank(lo.lv) }), h('span', { text: (lo.need - lo.cur) + ' XP para o nível ' + (lo.lv + 1) })]),
+          h('span', { class: 'cx-bar is-thin' }, [h('i', { style: 'width:' + Math.max(3, Math.round(lo.cur / lo.need * 100)) + '%' })])
+        ]),
+        h('span', { class: 'cx-ach' }, [cxi('trophy2'), h('b', { text: Object.keys(st.ach).length + '/' + ACH.length })])
+      ]);
+
       // cartão da unidade com a montanha
       var nextNode = nodes.filter(function (n) { return !nodeDone(n); })[0];
+      if (pct === 100) unlock('unidade');
       var hero = h('section', { class: 'cx-hero' + (pct === 100 ? ' is-done' : '') }, [
         h('div', { class: 'cx-art', 'aria-hidden': 'true', html: MOUNT_SVG }),
         h('div', { class: 'cx-hero-in' }, [
-          h('span', { class: 'cx-badge', text: 'Unidade ' + (uIdx + 1) }),
+          h('span', { class: 'cx-badges' }, [h('span', { class: 'cx-badge', text: 'Unidade ' + (uIdx + 1) }), pct === 100 ? h('span', { class: 'cx-badge is-crown' }, [cxi('crown'), 'Concluída']) : null]),
           h('h2', { class: 'cx-hero-t', text: focus.title }),
           focus.desc ? h('p', { class: 'cx-hero-d', text: focus.desc }) : null,
           h('div', { class: 'cx-prog' }, [h('span', { class: 'cx-bar' }, [h('i', { style: 'width:' + Math.max(pct, 4) + '%' })]), h('span', { class: 'cx-pct', text: pct + '% concluído' })]),
@@ -3583,6 +3790,44 @@ function fafLang() {
         ])
       ]);
 
+      // missões do dia
+      var D = daily(), left = missionsLeft();
+      var mis = h('section', { class: 'cx-mis', 'aria-label': 'Missões do dia' }, [
+        h('div', { class: 'cx-box-top' }, [h('span', { class: 'cx-box-ic' }, [cxi('target')]), h('strong', { text: 'Missões do dia' }), h('span', { class: 'cx-box-s', text: 'renovam em ' + hoursLeft() + ' h' })]),
+        h('ul', { class: 'cx-mlist' }, D.ids.map(function (id) {
+          var m = MISSIONS[id], pr = mProg(id), ok = !!D.done[id];
+          return h('li', { class: 'cx-m' + (ok ? ' is-done' : '') }, [
+            h('span', { class: 'cx-mchk' }, [ok ? cxi('check2') : null]),
+            h('span', { class: 'cx-mb' }, [h('span', { class: 'cx-mt-t', text: m.t }), h('span', { class: 'cx-mrow' }, [h('span', { class: 'cx-bar is-thin' }, [h('i', { style: 'width:' + Math.round(pr / m.n * 100) + '%' })]), h('span', { class: 'cx-mn', text: pr + '/' + m.n })])]),
+            h('span', { class: 'cx-mxp', text: '+' + MISSION_XP + ' XP' })
+          ]);
+        })),
+        D.chest ? h('p', { class: 'cx-mchest is-open' }, [cxi('check2'), 'Baú do dia aberto. Novas missões amanhã!']) :
+          left ? h('p', { class: 'cx-mchest' }, [cxi('chest'), 'Cumpra as 3 missões para abrir o baú do dia (' + (3 - left) + '/3)']) :
+          h('button', { type: 'button', class: 'cx-go is-chest', onclick: openDailyChest }, [cxi('chest'), h('span', { text: 'Abrir baú do dia' })])
+      ]);
+
+      // ofensiva da semana, protetores e meta diária
+      var wk = [], WD = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
+      for (var k = 6; k >= 0; k--) {
+        var dt = addDays(today(), -k), did = (st.days || {})[dt] > 0 || (k === 0 && st.streak.last === today()), fr = (st.frozen || {})[dt];
+        wk.push(h('li', { class: 'cx-wd' + (did ? ' is-did' : fr ? ' is-frozen' : '') + (k === 0 ? ' is-today' : '') }, [
+          h('span', { class: 'cx-wdot' }, [did ? cxi('flame') : fr ? cxi('snow') : null]),
+          h('span', { class: 'cx-wl', text: k === 0 ? 'Hoje' : WD[new Date(dt + 'T12:00:00').getDay()] })
+        ]));
+      }
+      var gx = dayXP(), gp = Math.min(100, Math.round(gx / goalXP() * 100));
+      var streakBox = h('section', { class: 'cx-streak' }, [
+        h('div', { class: 'cx-box-top' }, [h('span', { class: 'cx-box-ic is-flame' }, [cxi('flame')]), h('strong', { text: streakNow() + (streakNow() === 1 ? ' dia seguido' : ' dias seguidos') }),
+          h('button', { type: 'button', class: 'cx-freeze', onclick: showFreezeInfo, 'aria-label': 'Protetores de ofensiva: ' + (st.freeze || 0) + ' de ' + FREEZE_MAX }, [cxi('shield'), h('b', { text: (st.freeze || 0) + '/' + FREEZE_MAX })])]),
+        h('ol', { class: 'cx-week' }, wk),
+        h('button', { type: 'button', class: 'cx-daygoal', onclick: showGoalPicker }, [
+          h('span', { class: 'cx-dg-t' }, [h('strong', { text: 'Meta diária · ' + (GOALS.filter(function (g) { return g.xp === goalXP(); })[0] || { t: '' }).t }), h('span', { text: gx >= goalXP() ? 'Cumprida! ' + gx + ' XP hoje' : Math.min(gx, goalXP()) + ' / ' + goalXP() + ' XP' })]),
+          h('span', { class: 'cx-bar is-thin' }, [h('i', { style: 'width:' + Math.max(gp, 3) + '%' })]),
+          h('span', { class: 'cx-dg-c', text: 'Mudar' })
+        ])
+      ]);
+
       // Lía
       var lia = h('button', { type: 'button', class: 'cx-lia', onclick: openChat, 'aria-label': 'Conversar com a Lía, a IA do Frase a Frase' }, [
         h('span', { class: 'cx-lia-av', 'aria-hidden': 'true', text: 'L' }),
@@ -3598,7 +3843,7 @@ function fafLang() {
         var ns = nodesOf(u), d = ns.filter(nodeDone).length, p = ns.length ? Math.round(d / ns.length * 100) : 0, soon = !u.lessons.length;
         return h('button', { type: 'button', class: 'cx-urow' + (u === focus ? ' is-on' : '') + (p === 100 ? ' is-done' : ''), disabled: soon,
           onclick: function () { VIEW.lv = lvIdx; VIEW.unit = u.id; renderMap(); root.scrollTo({ top: 0, behavior: 'smooth' }); } }, [
-          h('span', { class: 'cx-un', text: String(i + 1) }),
+          p === 100 ? h('span', { class: 'cx-un' }, [cxi('crown')]) : h('span', { class: 'cx-un', text: String(i + 1) }),
           h('span', { class: 'cx-ub' }, [h('strong', { text: u.title }), h('span', { class: 'cx-bar is-thin' }, [h('i', { style: 'width:' + p + '%' })])]),
           h('span', { class: 'cx-up', text: soon ? 'Em breve' : p === 100 ? 'Concluída' : p + '%' })
         ]);
@@ -3611,7 +3856,7 @@ function fafLang() {
         h('button', { type: 'button', class: 'cx-tool', 'aria-pressed': st.sound ? 'true' : 'false', onclick: function () { st.sound = !st.sound; save(); renderMap(); }, text: st.sound ? 'Som ligado' : 'Som desligado' })
       ]);
 
-      root.replaceChildren(head, stats, hero, list, goal, lia,
+      root.replaceChildren(head, stats, lvlCard, hero, list, goal, mis, streakBox, lia,
         h('h3', { class: 'cx-sec', text: 'Unidades do ' + LV.id + ' · ' + LV.name }), ulist, tools);
       if (scrollToCurrent && currentEl) currentEl.scrollIntoView({ block: 'center' }); else root.scrollTop = prevScroll;
     }, function () {
@@ -3638,7 +3883,7 @@ function fafLang() {
     w.appendChild(h('strong', { text: String(lv) }));
     return w;
   }
-  function rank(lv) { return ['Turista', 'Explorador', 'Viajante', 'Conversador', 'Fluente em treino', 'Hispanohablante', 'Leyenda'][Math.min(6, Math.floor((lv - 1) / 2))]; }
+  function rank(lv) { return ranks()[Math.min(6, Math.floor((lv - 1) / 2))]; }
   // Linha luminosa ligando os nós da trilha, desenhada depois do layout.
   // Cena espacial decorativa do mapa: disco voador com alien, nave atirando laser, alien flutuando e rajadas de laser.
   var SPACE_SVG = '<div class="cc-space-in">'
@@ -4128,6 +4373,7 @@ function fafLang() {
         if (S.combo > st.bestCombo) st.bestCombo = S.combo;
         if (S.combo >= 5) unlock('combo5');
         if (S.combo >= 10) unlock('combo10');
+        if (cfg.mode !== 'review') { bump('correct', 1); bump('combo', S.combo, true); var mlv = checkMissions(); if (mlv) S.lvUp = mlv; }
         SFX.ok();
         comboEl.replaceChildren(); if (S.combo >= 3) { comboEl.appendChild(icon('flame')); comboEl.appendChild(document.createTextNode(' COMBO x' + S.combo)); }
         comboEl.classList.toggle('is-on', S.combo >= 3);
@@ -4197,7 +4443,15 @@ function fafLang() {
         if (passed) { regen(); st.hearts.n = Math.min(HEART_MAX, st.hearts.n + 1); unlock('revisao'); earned = 5; title = 'Você ganhou 1 vida!'; sub = 'Revisar é o melhor jeito de fixar.'; }
         else { title = 'Faltou pouco'; sub = 'Acerte pelo menos 4 de 5 para ganhar uma vida.'; }
       }
+      var bonus = 0;
+      if (passed && cfg.mode !== 'review') bonus = S.maxCombo >= 10 ? 5 : S.maxCombo >= 5 ? 2 : 0;
+      earned += bonus;
+      if (cfg.mode === 'lesson' || cfg.mode === 'premium') {
+        bump('lessons', 1); if (stars === 3) bump('perfect', 1); if (cfg.mode === 'premium') bump('premium', 1);
+        if (Object.keys(st.lessons).filter(function (k) { return st.lessons[k].stars === 3; }).length >= 10) unlock('perfeito10');
+      }
       if (earned) { lvUp = addXP(earned); touchStreak(); }
+      lvUp = checkMissions() || lvUp || S.lvUp || 0;
       S.finished = true;
       save();
       if (!toastOn) nextToast();
@@ -4216,6 +4470,8 @@ function fafLang() {
             h('div', {}, [h('strong', { text: S.maxCombo }), h('span', { text: 'melhor sequência' })]),
             h('div', {}, [h('strong', { text: Math.floor(secs / 60) + ':' + String(secs % 60).padStart(2, '0') }), h('span', { text: 'tempo' })])
           ]),
+          bonus ? h('p', { class: 'cc-tip is-center cx-bonus', text: 'Inclui +' + bonus + ' XP de bônus de sequência' }) : null,
+          missionsLeft() < 3 || daily().chest ? h('p', { class: 'cc-tip is-center cx-bonus', text: missionsLeft() ? 'Missões de hoje: ' + (3 - missionsLeft()) + ' de 3' : daily().chest ? 'Missões de hoje cumpridas' : 'Missões cumpridas! Abra o baú do dia no Curso.' }) : null,
           streakNow() ? h('p', { class: 'cc-streak-line' }, [icon('flame'), streakNow() + (streakNow() === 1 ? ' dia de ofensiva' : ' dias de ofensiva')]) : null
         ]));
       setFoot([h('button', { type: 'button', class: 'cc-btn is-wide', onclick: function () { close(); if (lvUp) levelUp(lvUp); }, text: 'Continuar' })]);
@@ -4340,7 +4596,7 @@ function fafLang() {
         var txt = input.value.trim(); if (!txt || C.busy) return;
         input.value = ''; input.onInputFix(); setSugg([]);
         var mine = bubble('me', txt);
-        C.msgs.push({ role: 'user', content: txt }); C.sent++;
+        C.msgs.push({ role: 'user', content: txt }); C.sent++; bump('lia', 1); checkMissions(); save();
         if (C.xp < CHAT_XP_MAX) C.xp += 2;
         if (C.sent >= 3) unlock('conversa');
         if (C.sent >= 10) unlock('conversa10');
@@ -4377,7 +4633,7 @@ function fafLang() {
   window.FAF_COURSE = {
     sync: sync,
     summary: function () {
-      regen();
+      regen(); applyFreeze();
       var lo = levelOf(st.xp);
       return { xp: st.xp, level: lo.lv, levelPct: Math.round(lo.cur / lo.need * 100), streak: streakNow(), lessons: Object.keys(st.lessons).length, hearts: st.hearts.n };
     },
