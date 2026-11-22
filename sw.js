@@ -1,5 +1,5 @@
 /* Frase a Frase — funciona offline (exceto podcasts e vídeos, que precisam de internet) */
-var CACHE = 'faf-v56';
+var CACHE = 'faf-v57';
 var VOZ_CACHE = 'faf-voz'; // áudios da voz natural: guardados entre versões
 var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'data/frases.json', 'data/textos.json', 'data/curso.json', 'data/en/frases.json', 'data/en/textos.json', 'data/en/curso.json', 'conta.js?v=5'];
 self.addEventListener('install', function (e) {

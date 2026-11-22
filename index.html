@@ -1331,6 +1331,48 @@ html[data-theme="dark"] .cx-road-edge{stroke:#26365F}html[data-theme="dark"] .cx
 .cx-sheet .cx-mis,.cx-sheet .cx-streak{margin:0;border:none;box-shadow:none;padding:4px 0 0;background:transparent}
 .cx-level{background:linear-gradient(165deg,#1A2F60,#0F1D3D);border-color:rgba(242,179,61,.35);box-shadow:0 10px 24px rgba(15,29,61,.2)}
 .cx-level .cx-bar{background:rgba(255,255,255,.16)}
+
+/* ===== Curso: missões em destaque e Lía flutuante ===== */
+.cx-mstrip{margin-top:14px;padding:12px;border-radius:22px;background:var(--deck);border:1px solid var(--line);box-shadow:0 10px 26px rgba(15,27,61,.10);color:var(--text)}
+.cx-mhead{display:flex;align-items:center;gap:10px;width:100%;padding:0 2px;border:none;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.cx-mhead-t{flex:1 1 auto;min-width:0;display:flex;flex-direction:column}
+.cx-mhead-t strong{font-size:16.5px;font-weight:800}
+.cx-mhead-t span{font-size:12.5px;color:var(--muted)}
+.cx-mhead>.cx-i:last-child{color:var(--muted)}
+.cx-mgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:12px}
+.cx-mcell{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:0;padding:8px 4px 9px;border-radius:16px;border:1px solid var(--line);background:rgba(20,36,74,.03);color:var(--text);font:inherit;cursor:pointer;text-align:center}
+.cx-ring{position:relative;width:52px;height:52px;color:var(--text);display:block}
+.cx-ring svg{position:absolute;inset:0}
+.cx-ring circle:nth-child(2){transition:stroke-dashoffset .6s ease}
+.cx-ring-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.cx-ring-in b{font-size:12.5px;font-weight:800;letter-spacing:-.02em}
+.cx-mcell.is-done .cx-ring-in{color:#fff}
+.cx-mcell.is-done .cx-ring-in .cx-i{width:34px;height:34px;border-radius:50%;background:linear-gradient(180deg,#F7C55A,#E09A20)}
+.cx-mcell-t{font-size:11.5px;line-height:1.2;font-weight:700;min-height:28px;display:flex;align-items:center}
+.cx-mcell-x{font-size:11px;font-weight:800;color:var(--cxg,#9A6514);background:rgba(242,179,61,.16);padding:2px 7px;border-radius:999px}
+.cx-mcell.is-done{border-color:rgba(242,179,61,.6);background:rgba(242,179,61,.08)}
+.cx-mcell.is-done .cx-mcell-x{background:rgba(51,192,141,.14);color:#14915D}
+.cx-mchest-ic{position:relative;width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#22386E,#0F1D3D);color:#F7C55A}
+.cx-mchest-ic svg{width:28px;height:28px}
+.cx-mchest-lock{position:absolute;right:-4px;bottom:-4px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--deck);color:var(--muted);border:1px solid var(--line)}
+.cx-mchest-lock svg{width:12px;height:12px}
+.cx-mcell.is-chest.is-locked .cx-mchest-ic{filter:grayscale(.6);opacity:.75}
+.cx-mcell.is-chest.is-ready{border:2px solid #F2B33D;animation:cx-glowbtn 1.4s ease-in-out infinite alternate}
+.cx-mcell.is-chest.is-ready .cx-mchest-ic{background:linear-gradient(180deg,#FAD372,#E09A20);color:#14244A;animation:cx-shake 1.6s ease-in-out infinite}
+.cx-mcell.is-chest.is-ready .cx-mcell-x{background:linear-gradient(180deg,#FAD372,#EFA92E);color:#14244A}
+.cx-mcell.is-chest.is-open .cx-mchest-ic{background:rgba(51,192,141,.16);color:#14915D}
+@keyframes cx-shake{0%,70%,100%{transform:rotate(0)}75%{transform:rotate(-8deg)}85%{transform:rotate(8deg)}92%{transform:rotate(-4deg)}}
+.cx-fab{position:fixed;z-index:20;display:flex;align-items:center;flex-direction:row-reverse;gap:8px;padding:0;border:none;background:transparent;font:inherit;cursor:pointer}
+.cx-fab-av{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px;font-weight:800;background:linear-gradient(145deg,#FF5FA2,#7B5CFF);border:3px solid #fff;box-shadow:0 10px 26px rgba(123,92,255,.45);position:relative}
+.cx-fab-av::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(123,92,255,.5);animation:cx-fabpulse 2.4s ease-out infinite}
+@keyframes cx-fabpulse{0%{transform:scale(.9);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+.cx-fab-tip{display:flex;flex-direction:column;align-items:flex-end;padding:8px 12px;border-radius:14px;background:var(--deck);color:var(--text);box-shadow:0 8px 22px rgba(15,27,61,.18);text-align:right;opacity:0;transform:translateX(10px);pointer-events:none;transition:opacity .3s,transform .3s}
+.cx-fab-tip strong{font-size:14px}.cx-fab-tip span{font-size:12px;color:var(--muted)}
+.cx-fab.is-hello .cx-fab-tip{animation:cx-tip 5s ease forwards}
+@keyframes cx-tip{0%{opacity:0;transform:translateX(10px)}10%,80%{opacity:1;transform:none}100%{opacity:0;transform:translateX(10px)}}
+@media (hover:hover){.cx-fab:hover .cx-fab-tip{opacity:1;transform:none}}
+#faf-course[hidden] .cx-fab{display:none}
+@media (prefers-reduced-motion:reduce){.cx-fab-av::after,.cx-mcell.is-chest.is-ready,.cx-mcell.is-chest.is-ready .cx-mchest-ic{animation:none}.cx-fab.is-hello .cx-fab-tip{animation:none;opacity:1}}
 @media (max-width:370px){.cx-hero-t{font-size:26px}.cx-stat-v strong{font-size:22px}.cx-stat>.cx-i:first-child svg{width:28px;height:28px}.cx-prem{padding:0 12px;font-size:15px}}
 @media (prefers-reduced-motion:reduce){.cx-mt *,.cx-goal-art,.cx-item.is-current .cx-dot,.cx-stat.is-flame>.cx-i:first-child{animation:none!important}.cx-mt .cx-birds{display:none}}
 html[data-theme="dark"] #faf-course.cx{--cxg:#F5C66A}
@@ -3379,14 +3421,14 @@ function fafLang() {
   var GOALS = [{ xp: 10, t: 'Leve', d: '1 lição por dia' }, { xp: 20, t: 'Normal', d: '2 lições por dia' }, { xp: 30, t: 'Séria', d: '3 lições por dia' }, { xp: 50, t: 'Intensa', d: '5 lições por dia' }];
   var FREEZE_MAX = 2, MISSION_XP = 10;
   var MISSIONS = {
-    licoes2: { t: 'Conclua 2 lições', n: 2, k: 'lessons' },
-    licoes3: { t: 'Conclua 3 lições', n: 3, k: 'lessons' },
-    perfeita: { t: 'Faça 1 lição sem errar', n: 1, k: 'perfect' },
-    xp: { t: 'Ganhe 40 XP hoje', n: 40, k: 'xp' },
-    combo: { t: 'Acerte 8 seguidas', n: 8, k: 'combo' },
-    acertos: { t: 'Acerte 25 exercícios', n: 25, k: 'correct' },
-    leitura: { t: 'Faça frases ou uma leitura da unidade', n: 1, k: 'premium' },
-    lia: { t: 'Mande 3 mensagens para a Lía', n: 3, k: 'lia' }
+    licoes2: { t: 'Conclua 2 lições', n: 2, k: 'lessons', s: 'Concluir 2 lições' },
+    licoes3: { t: 'Conclua 3 lições', n: 3, k: 'lessons', s: 'Concluir 3 lições' },
+    perfeita: { t: 'Faça 1 lição sem errar', n: 1, k: 'perfect', s: 'Lição sem erros' },
+    xp: { t: 'Ganhe 40 XP hoje', n: 40, k: 'xp', s: 'Ganhar 40 XP' },
+    combo: { t: 'Acerte 8 seguidas', n: 8, k: 'combo', s: '8 acertos seguidos' },
+    acertos: { t: 'Acerte 25 exercícios', n: 25, k: 'correct', s: '25 acertos' },
+    leitura: { t: 'Faça frases ou uma leitura da unidade', n: 1, k: 'premium', s: 'Frases ou leitura' },
+    lia: { t: 'Mande 3 mensagens para a Lía', n: 3, k: 'lia', s: 'Conversar com a Lía' }
   };
   function goalXP() { return st.goal || DAILY_GOAL; }
   function pruneDays() {
@@ -3674,11 +3716,18 @@ function fafLang() {
     window.addEventListener('resize', function () { place(); if (visible) drawPaths(); });
     return root;
   }
+  function placeFab() {
+    var f = root && root.querySelector('.cx-fab'); if (!f) return;
+    var r = root.getBoundingClientRect();
+    f.style.bottom = Math.max(16, window.innerHeight - r.bottom + 16) + 'px';
+    f.style.right = Math.max(16, window.innerWidth - r.right + 16) + 'px';
+  }
   function place() {
     if (!root || root.hidden) return;
     var sc = document.getElementById('scroller'); if (!sc) return;
     var r = sc.getBoundingClientRect();
     root.style.top = r.top + 'px'; root.style.left = r.left + 'px'; root.style.width = r.width + 'px'; root.style.height = r.height + 'px';
+    placeFab();
   }
   function sync(on) {
     if (on === visible) { if (on) place(); return; }
@@ -3835,7 +3884,7 @@ function fafLang() {
       ]);
       var full = st.hearts.n >= HEART_MAX;
       var stats = h('div', { class: 'cx-stats' }, [
-        cxStat('flame', streakNow(), '', streakNow() === 1 ? 'dia seguido' : 'dias seguidos', 'is-flame'),
+        cxStat('flame', streakNow(), '', streakNow() === 1 ? 'dia seguido' : 'dias seguidos', 'is-flame', function () { openStreak(); }),
         cxStat('bolt', st.xp, 'XP', 'total', 'is-xp'),
         cxStat('heart', st.hearts.n, full ? 'vidas' : '', full ? '' : '+1 em ' + nextHeartIn() + ' min', 'is-heart', function () {
           toast(st.hearts.n + (st.hearts.n === 1 ? ' vida' : ' vidas'), full ? 'Vidas cheias. Cada erro numa lição gasta uma vida.' : 'Uma vida volta a cada 30 minutos. A próxima em ' + nextHeartIn() + ' min. Revisar também devolve vidas.');
@@ -4018,12 +4067,46 @@ function fafLang() {
           }, { wide: true, onclose: function () { renderMap(); } });
         };
       }
-      var quick = h('div', { class: 'cx-quick' }, [
-        h('button', { type: 'button', class: 'cx-qc' + (D.chest ? ' is-ok' : left ? '' : ' is-ready'), onclick: sheet(mis) }, [cxi('target'), h('span', {}, [h('strong', { text: 'Missões' }), h('em', { text: D.chest ? 'baú aberto' : left ? (3 - left) + '/3 hoje' : 'abrir baú!' })])]),
-        h('button', { type: 'button', class: 'cx-qc', onclick: sheet(streakBox) }, [cxi('flame'), h('span', {}, [h('strong', { text: 'Ofensiva' }), h('em', { text: Math.min(gx, goalXP()) + '/' + goalXP() + ' XP hoje' })])]),
-        h('button', { type: 'button', class: 'cx-qc', onclick: openChat }, [h('span', { class: 'cx-qc-l', text: 'L' }), h('span', {}, [h('strong', { text: 'Lía' }), h('em', { text: 'conversar' })])])
+      var openStreak = sheet(streakBox), openMis = sheet(mis);
+      // missões visíveis: 3 anéis de progresso + baú do dia
+      function ring2(fr, inner) {
+        var r = 21, c = 2 * Math.PI * r, w = h('span', { class: 'cx-ring' });
+        w.innerHTML = '<svg viewBox="0 0 52 52" width="52" height="52" aria-hidden="true"><circle cx="26" cy="26" r="' + r + '" fill="none" stroke="currentColor" stroke-opacity=".16" stroke-width="5"/>' +
+          '<circle cx="26" cy="26" r="' + r + '" fill="none" stroke="#F2B33D" stroke-width="5" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + (c * (1 - fr)).toFixed(1) + '" transform="rotate(-90 26 26)"/></svg>';
+        w.appendChild(h('span', { class: 'cx-ring-in' }, inner));
+        return w;
+      }
+      var chestState = D.chest ? 'is-open' : left ? 'is-locked' : 'is-ready';
+      var strip = h('section', { class: 'cx-mstrip' }, [
+        h('button', { type: 'button', class: 'cx-mhead', onclick: openMis }, [
+          h('span', { class: 'cx-box-ic' }, [cxi('target')]),
+          h('span', { class: 'cx-mhead-t' }, [h('strong', { text: 'Missões do dia' }), h('span', { text: D.chest ? 'Tudo feito! Novas missões em ' + hoursLeft() + ' h' : (3 - left) + ' de 3 cumpridas · renovam em ' + hoursLeft() + ' h' })]),
+          cxi('right')
+        ]),
+        h('div', { class: 'cx-mgrid' }, D.ids.map(function (id) {
+          var m = MISSIONS[id], pr = mProg(id), ok = !!D.done[id];
+          return h('button', { type: 'button', class: 'cx-mcell' + (ok ? ' is-done' : ''), onclick: openMis, 'aria-label': m.t + ': ' + pr + ' de ' + m.n + (ok ? ', cumprida' : '') }, [
+            ring2(pr / m.n, ok ? [cxi('check2')] : [h('b', { text: pr + '/' + m.n })]),
+            h('span', { class: 'cx-mcell-t', text: m.s || m.t }),
+            h('span', { class: 'cx-mcell-x', text: ok ? 'feita' : '+' + MISSION_XP + ' XP' })
+          ]);
+        }).concat([
+          h('button', { type: 'button', class: 'cx-mcell is-chest ' + chestState, onclick: chestState === 'is-ready' ? openDailyChest : openMis,
+            'aria-label': chestState === 'is-ready' ? 'Abrir baú do dia' : chestState === 'is-open' ? 'Baú do dia já aberto' : 'Baú do dia: cumpra as 3 missões' }, [
+            h('span', { class: 'cx-mchest-ic' }, [cxi(chestState === 'is-open' ? 'check2' : 'chest'), chestState === 'is-locked' ? h('span', { class: 'cx-mchest-lock' }, [icon('lock')]) : null]),
+            h('span', { class: 'cx-mcell-t', text: 'Baú do dia' }),
+            h('span', { class: 'cx-mcell-x', text: chestState === 'is-ready' ? 'Abrir!' : chestState === 'is-open' ? 'aberto' : (3 - left) + '/3' })
+          ])
+        ]))
       ]);
-      root.replaceChildren(head, stats, hero, lvlCard, quick, h('h3', { class: 'cx-sec', text: 'Trilha do ' + LV.id + ' · ' + LV.name }), list, trailEnd, lia, tools);
+      // Lía: botão flutuante no canto da tela do curso
+      var fab = h('button', { type: 'button', class: 'cx-fab', onclick: openChat, 'aria-label': 'Conversar com a Lía, a IA do Frase a Frase' }, [
+        h('span', { class: 'cx-fab-av', text: 'L' }),
+        h('span', { class: 'cx-fab-tip' }, [h('strong', { text: 'Lía' }), h('span', { text: 'Converse comigo' })])
+      ]);
+      if (!VIEW.fabTip) { VIEW.fabTip = true; fab.classList.add('is-hello'); }
+      root.replaceChildren(head, stats, hero, strip, lvlCard, h('h3', { class: 'cx-sec', text: 'Trilha do ' + LV.id + ' · ' + LV.name }), list, trailEnd, tools, fab);
+      placeFab();
       var jump = scrollToCurrent || VIEW.jump; VIEW.jump = false;
       if (jump && currentEl) currentEl.scrollIntoView({ block: 'center' }); else root.scrollTop = prevScroll;
     }, function () {
