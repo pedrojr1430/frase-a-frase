@@ -1959,6 +1959,9 @@ html[data-theme="dark"] #faf-course.cx{--cxg:#F5C66A}
       <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap">
         <span style="{{m.typeStyle}}">{{m.type}}</span>
         <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-blue); color: var(--blue-t)">{{m.nivel}}</span>
+        <sc-if value="{{m.hasTema}}" hint-placeholder-val="{{ false }}">
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--cream, #FDF3E3); color: var(--gold-deep, #B07A1C)">{{m.tema}}</span>
+        </sc-if>
         <sc-if value="{{m.heard}}" hint-placeholder-val="{{ false }}">
           <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint-green); color: var(--green-t)">Ouvido</span>
         </sc-if>
@@ -2656,7 +2659,8 @@ function fafLang() {
         });
         var tr = trs.filter(function (t) { return /json/.test(t.type); })[0] ||
           trs.filter(function (t) { return /vtt/.test(t.type) || /\.vtt$/.test(t.url); })[0] ||
-          trs.filter(function (t) { return /srt|subrip/.test(t.type) || /\.srt$/.test(t.url); })[0];
+          trs.filter(function (t) { return /srt|subrip/.test(t.type) || /\.srt$/.test(t.url); })[0] ||
+          trs.filter(function (t) { return /html/.test(t.type); })[0];
         if (!tr) return;
         var img = it.getElementsByTagName('itunes:image')[0];
         eps.push({
@@ -2678,7 +2682,30 @@ function fafLang() {
     if (!m) return 0;
     return (+(m[1] || 0)) * 3600 + (+m[2]) * 60 + (+m[3]) + (+('0.' + m[4]));
   }
-  function parseCues(text, type) {
+  // Transcrição em HTML (texto corrido, sem tempos): divide em frases e distribui pela duração do episódio.
+  function htmlCues(text, dur) {
+    var doc = new DOMParser().parseFromString(text, 'text/html');
+    doc.querySelectorAll('script,style,nav,header,footer,form,button,noscript').forEach(function (e) { e.remove(); });
+    // o bloco com mais texto em parágrafos é a transcrição
+    var best = null, bestLen = 0;
+    doc.querySelectorAll('article,main,section,div').forEach(function (el) {
+      var len = 0; el.querySelectorAll(':scope > p, :scope > h1, :scope > h2, :scope > h3').forEach(function (p) { len += p.textContent.length; });
+      if (len > bestLen) { bestLen = len; best = el; }
+    });
+    var blocks = best ? best.querySelectorAll(':scope > p, :scope > h1, :scope > h2, :scope > h3') : doc.querySelectorAll('p');
+    var sents = [];
+    Array.prototype.forEach.call(blocks, function (b) {
+      var t = b.textContent.replace(/\s+/g, ' ').trim();
+      if (!t) return;
+      (t.match(/[^.!?…]+[.!?…]+["»”)]?|[^.!?…]+$/g) || [t]).forEach(function (x) { x = x.trim(); if (x) sents.push(x); });
+    });
+    var total = sents.reduce(function (a, x) { return a + x.length + 12; }, 0) || 1, D = dur || total / 14, t0 = 0, cues = [];
+    sents.forEach(function (x) { var d = (x.length + 12) / total * D; cues.push({ s: t0, e: t0 + d, t: x, sp: '' }); t0 += d; });
+    cues.approx = true;
+    return cues;
+  }
+  function parseCues(text, type, dur) {
+    if (/html/.test(type)) return htmlCues(text, dur);
     if (/json/.test(type)) {
       var j = JSON.parse(text);
       return (j.segments || []).map(function (s) { return { s: +s.startTime, e: +s.endTime, t: String(s.body || ''), sp: s.speaker || '' }; });
@@ -2710,7 +2737,7 @@ function fafLang() {
   function loadTranscript(ep) {
     if (trCache[ep.tr.url]) return Promise.resolve(trCache[ep.tr.url]);
     return fetch(ep.tr.url).then(function (r) { if (!r.ok) throw new Error('tr'); return r.text(); }).then(function (t) {
-      var cues = mergeCues(parseCues(t, ep.tr.type));
+      var raw = parseCues(t, ep.tr.type, ep.dur), cues = raw.approx ? raw : mergeCues(raw);
       if (!cues.length) throw new Error('empty');
       trCache[ep.tr.url] = cues;
       return cues;
@@ -2852,6 +2879,7 @@ function fafLang() {
       if (trView !== myView) return;
       box.replaceChildren();
       myView.cues = cues;
+      if (cues.approx) box.appendChild(h('p', { class: 'faf-note', text: 'Este podcast publica o texto sem marcação de tempo: o destaque acompanha o áudio de forma aproximada. Toque numa frase para pular para perto dela.' }));
       myView.nodes = cues.map(function (c, i) {
         var b = h('button', { type: 'button', class: 'faf-line', 'data-i': String(i), onclick: function () { audio.currentTime = c.s; if (audio.paused) audio.play(); myView.userScrollAt = 0; } }, [
           h('span', { class: 'faf-line-time', text: fmt(c.s) }),
@@ -5167,7 +5195,10 @@ var MEDIA = [
     tip: 'Repare como o "ll" e o "y" soam diferente aqui.', url: '' },
   { id: 'avanzado', kind: 'podcast', title: 'Español Avanzado', source: 'Spanish Language Coach · podcast', nivel: 'Avançado', feed: 'https://rss.buzzsprout.com/2531655.rss',
     desc: 'Conversas com convidados nativos sobre cultura, sociedade e língua, em velocidade real.',
-    tip: 'Use a velocidade 0,9x se estiver rápido demais.', url: 'https://www.spanishlanguagecoach.com' }
+    tip: 'Use a velocidade 0,9x se estiver rápido demais.', url: 'https://www.spanishlanguagecoach.com' },
+  { id: 'historias-inter', kind: 'podcast', tema: 'História', title: 'Intermediate Spanish Stories', source: 'InterSpanish · podcast', nivel: 'Intermediário', feed: 'https://rss.buzzsprout.com/1727315.rss',
+    desc: 'Histórias reais e episódios da história contados em espanhol do México, num ritmo mais lento: a Inquisição na Nova Espanha, a Guerra das Malvinas, a tragédia de Armero, a fuga de Alcatraz e muito mais.',
+    tip: 'Antes de ouvir, leia o título e pense no que você já sabe sobre o assunto. Ajuda muito a entender.', url: 'https://interspanish.buzzsprout.com' }
 ];
 // Inglês: mesmo molde dos podcasts em espanhol (só feeds com transcrição pública na tag podcast:transcript e CORS liberado; conferido em 22/11/2026).
 var MEDIA_EN = [
@@ -5517,7 +5548,7 @@ class Component extends DCLogic {
         var heard = !!s.heard[m.id];
         var typeColors = m.kind === 'video' ? 'background: var(--tint-blue); color: var(--blue-t)' : m.kind === 'frases' ? 'background: var(--deck2); color: var(--text2)' : 'background: var(--tint-purple); color: var(--accent-t2)';
         return {
-          title: m.title, source: m.source, nivel: m.nivel, desc: m.desc, tip: m.tip, url: m.url,
+          title: m.title, source: m.source, nivel: m.nivel, desc: m.desc, tip: m.tip, url: m.url, tema: m.tema || '', hasTema: !!m.tema,
           hasPlayer: !!(m.feed || m.yt),
           noPlayer: !(m.feed || m.yt),
           playLabel: m.yt ? 'Assistir aqui' : 'Ouvir e ler',
