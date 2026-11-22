@@ -1096,7 +1096,11 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 <!-- ============ FRASES ============ -->
 <sc-if value="{{showFrases}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 16px">
-  <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Frases</h1>
+  <h1 style="margin: 0; padding-top: 8px; font-family: Unbounded, 'Manrope', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.01em; font-size: 30px;">Leitura</h1>
+  <div role="tablist" aria-label="Modo de leitura" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding: 4px; background: var(--deck2); border-radius: 14px">
+    <button role="tab" aria-selected="{{lsel.textos}}" onClick="{{goLeituraTextos}}" style="{{lseg.textos}}">Praticar com textos</button>
+    <button role="tab" aria-selected="{{lsel.frases}}" onClick="{{goLeituraFrases}}" style="{{lseg.frases}}">Praticar com frases</button>
+  </div>
   <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 4px; background: var(--deck2); border-radius: 14px">
     <button onClick="{{viewCats}}" style="{{fseg.cats}}">Categorias</button>
     <button onClick="{{viewCards}}" style="{{fseg.cards}}">Cartões</button>
@@ -1248,6 +1252,10 @@ body.faf-enter-first #scroller>div>*{animation-duration:.8s}
 
   <sc-if value="{{isCatalog}}" hint-placeholder-val="{{ true }}">
   <div style="display: flex; flex-direction: column; gap: 14px">
+  <div role="tablist" aria-label="Modo de leitura" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding: 4px; background: var(--deck2); border-radius: 14px">
+    <button role="tab" aria-selected="{{lsel.textos}}" onClick="{{goLeituraTextos}}" style="{{lseg.textos}}">Praticar com textos</button>
+    <button role="tab" aria-selected="{{lsel.frases}}" onClick="{{goLeituraFrases}}" style="{{lseg.frases}}">Praticar com frases</button>
+  </div>
     <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted)">Cada texto tem tradução frase por frase, áudio, palavras-chave e perguntas.</p>
     <input id="busca-texto" type="search" aria-label="Buscar texto" value="{{tquery}}" onChange="{{onTQuery}}" placeholder="Buscar por número, título ou palavra" style="min-height: 48px; box-sizing: border-box; width: 100%; padding: 0 14px; border: 1px solid var(--line2); border-radius: 12px; background: var(--deck); color: var(--text); font-family: inherit; font-size: 16px">
     <div style="display: flex; flex-wrap: wrap; gap: 8px">
@@ -4263,6 +4271,12 @@ function pill(active) {
     : 'min-height: 44px; padding: 0 16px; border: 1px solid var(--line2); background: var(--deck); color: var(--text); border-radius: 999px; font-size: 14px; font-weight: 600';
 }
 
+// Seletor principal da Leitura (textos / frases): o ativo fica preenchido com a cor da marca.
+function lsegStyle(active) {
+  return 'min-height: 46px; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; ' +
+    (active ? 'background: var(--brand); color: #FFFFFF; box-shadow: 0 2px 6px rgba(15,27,61,0.18)' : 'background: transparent; color: var(--muted)');
+}
+
 function segStyle(active) {
   return 'min-height: 44px; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; ' +
     (active ? 'background: var(--deck); color: var(--text); box-shadow: 0 1px 3px rgba(20,26,51,0.10)' : 'background: transparent; color: var(--muted)');
@@ -4487,14 +4501,14 @@ class Component extends DCLogic {
       nav: {
         inicio: navStyle(s.tab === 'inicio'),
         frases: navStyle(s.tab === 'frases'),
-        textos: navStyle(s.tab === 'textos'),
+        textos: navStyle(s.tab === 'textos' || s.tab === 'frases'),
         pratica: navStyle(s.tab === 'pratica'),
         ouvir: navStyle(s.tab === 'ouvir'),
         curso: navStyle(s.tab === 'curso')
       },
       navOn: {
         inicio: s.tab === 'inicio' ? 'is-on' : '',
-        textos: s.tab === 'textos' ? 'is-on' : '',
+        textos: s.tab === 'textos' || s.tab === 'frases' ? 'is-on' : '',
         pratica: s.tab === 'pratica' ? 'is-on' : '',
         ouvir: s.tab === 'ouvir' ? 'is-on' : '',
         curso: s.tab === 'curso' ? 'is-on' : ''
@@ -4531,6 +4545,10 @@ class Component extends DCLogic {
       goInicio: function () { self.setState({ tab: 'inicio' }); },
       goFrases: function () { self.setState({ tab: 'frases', cat: s.cat === -1 ? 0 : s.cat }); },
       goTextos: function () { self.setState({ tab: 'textos', reading: false }); },
+      lsel: { textos: String(s.tab === 'textos'), frases: String(s.tab === 'frases') },
+      lseg: { textos: lsegStyle(s.tab === 'textos'), frases: lsegStyle(s.tab === 'frases') },
+      goLeituraTextos: function () { if (s.tab !== 'textos') self.setState({ tab: 'textos', reading: false }); },
+      goLeituraFrases: function () { if (s.tab !== 'frases') self.setState({ tab: 'frases', cat: s.cat === -1 ? 0 : s.cat }); },
       goPratica: function () { self.setState({ tab: 'pratica' }); },
       goReview: function () { self.setState({ tab: 'frases', fview: 'cards', cat: -1, card: 0, flipped: false }); },
 
