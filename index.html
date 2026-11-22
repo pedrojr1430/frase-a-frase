@@ -590,6 +590,7 @@ body.fw-open #faf-menu-btn,body.fw-open .hm-premium{display:none}
 .fw-card{flex:0 0 auto;width:100%;max-width:520px;margin:0 auto;box-sizing:border-box;padding:22px 22px calc(22px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:12px}
 .fw-skip{align-self:center;min-height:44px;padding:0 12px;border:none;background:transparent;color:var(--text);font:inherit;font-size:15px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .fw-card .fa-small{text-align:center}
+.fw-wait{margin:0;padding:18px 0;text-align:center;font-size:15px;color:var(--muted)}
 .fw-err{margin:0;padding:10px 12px;border-radius:12px;font-size:14px;background:var(--tint-red);color:var(--red-t)}
 @media (prefers-reduced-motion:reduce){.fw,.fw-b{animation:none}}
 /* conta (login) */
@@ -1736,7 +1737,7 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   }
 })();
 </script>
-<script src="conta.js?v=3"></script>
+<script src="conta.js?v=4"></script>
 <script>/* Frase a Frase — botão voltar (Android e navegador): fecha a camada de cima ou volta à tela anterior, em vez de sair do app */
 (function () {
   'use strict';
@@ -1748,7 +1749,6 @@ function fafLang() { try { var o = JSON.parse(localStorage.getItem('fraseafrase.
   // Camadas, da mais alta para a mais baixa. Cada uma devolve true se fechou algo.
   var LAYERS = [
     function () { if (!window.FAF_ACCOUNT || !window.FAF_ACCOUNT.isOpen()) return false; window.FAF_ACCOUNT.close(); return true; },
-    function () { if (!window.FAF_ACCOUNT || !window.FAF_ACCOUNT.welcomeOpen()) return false; window.FAF_ACCOUNT.skipWelcome(); return true; },
     function () { var m = last('.fm-modal'); if (!m) return false; var b = m.querySelector('.fm-cancel'); if (b) b.click(); else m.remove(); return true; },
     function () { var m = document.getElementById('faf-menu'); if (!visible(m)) return false; var b = m.querySelector('.fm-close'); if (b) b.click(); else m.hidden = true; return true; },
     function () { var m = last('.cc-modal'); if (!m) return false; m.click(); if (m.isConnected) m.remove(); return true; },

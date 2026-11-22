@@ -1,7 +1,7 @@
 /* Frase a Frase — funciona offline (exceto podcasts e vídeos, que precisam de internet) */
-var CACHE = 'faf-v39';
+var CACHE = 'faf-v40';
 var VOZ_CACHE = 'faf-voz'; // áudios da voz natural: guardados entre versões
-var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'data/frases.json', 'data/textos.json', 'data/curso.json', 'conta.js?v=3'];
+var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'data/frases.json', 'data/textos.json', 'data/curso.json', 'conta.js?v=4'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
 });
@@ -16,6 +16,8 @@ self.addEventListener('fetch', function (e) {
   var url = new URL(req.url);
   var sameOrigin = url.origin === self.location.origin;
   var isFont = url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com';
+  // biblioteca do login (versão fixa no endereço, em conta.js): guardada para o app abrir sem internet
+  var isLib = url.hostname === 'cdn.jsdelivr.net' && url.pathname.indexOf('/npm/@supabase/') === 0;
   if (/\.workers\.dev$/.test(url.hostname) && url.pathname === '/voz') {
     e.respondWith(caches.open(VOZ_CACHE).then(function (c) {
       return c.match(req).then(function (hit) {
@@ -24,7 +26,7 @@ self.addEventListener('fetch', function (e) {
     }));
     return;
   }
-  if (!sameOrigin && !isFont) return;
+  if (!sameOrigin && !isFont && !isLib) return;
   if (req.mode === 'navigate' || (sameOrigin && url.pathname.indexOf('/data/') >= 0)) {
     // rede primeiro para pegar atualizações; cache se estiver offline
     // só a página do app vira "index.html" no cache (outras páginas, como a de privacidade, ficam com o próprio endereço)

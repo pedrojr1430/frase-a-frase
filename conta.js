@@ -1,6 +1,9 @@
 /* Frase a Frase — conta e sincronização (Supabase)
+   Camadas, de cima para baixo:
+     1. Folha de conta (.fa-wrap): formulários de entrar, criar conta, esqueci a senha, minha conta.
+     2. Portão de acesso (.fw): cobre o app inteiro enquanto não há login. Sem login, o app não abre.
+     3. App (#app): só fica utilizável (sem "inert") depois do login.
    Entrar com Google ou com e-mail e senha (com "Esqueci minha senha").
-   O login é opcional: sem conta, tudo continua só no aparelho.
    O progresso (todas as chaves fraseafrase.*) vai para a tabela `progresso`, uma linha por chave.
    Regra de conflito: vence a alteração mais recente de cada chave.
    Para ligar: preencher CONFIG.url e CONFIG.anonKey (ver supabase/LEIA-ME.md). */
@@ -12,9 +15,9 @@
     // chave pública "anon": pode ficar no site (a segurança vem das regras RLS do banco)
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhZHJvZHhsZ2hzZmtlYmltaXNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUzNDkxOTMsImV4cCI6MjExMDkyNTE5M30.s9mJk6rdOZbcV1CzkaRNlESMzQCFErrafVYNiRDHDvA'
   };
-  var LIB = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js';
-  var SKIP = { 'fraseafrase.trcache': 1, 'fraseafrase.sync': 1, 'fraseafrase.welcome': 1 };
-  var WELCOME_KEY = 'fraseafrase.welcome'; // tela de boas-vindas já vista neste aparelho
+  var LIB = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js';
+  var SKIP = { 'fraseafrase.trcache': 1, 'fraseafrase.sync': 1 };
+  var AUTH_KEY = 'faf-auth'; // onde o Supabase guarda a sessão neste aparelho
   var META_KEY = 'fraseafrase.sync';
   var HOME = location.origin + location.pathname.replace(/[^/]*$/, '');
 
@@ -169,17 +172,21 @@
         user = session ? session.user : null;
         if (ev === 'PASSWORD_RECOVERY') { setTimeout(function () { openSheet('nova-senha'); }, 300); }
         if (user && user.id !== was && ready) { tracking = false; pull(); }
-        if (user) welcomeDone();
+        if (user) hideGate(); else if (ready && !hasStoredSession()) showGate('pronto');
         emit();
       });
       return sb.auth.getSession();
     }).then(function (r) {
       user = r && r.data && r.data.session ? r.data.session.user : null;
       ready = true; emit();
-      if (user) { welcomeDone(); return pull(); }
+      if (user) { hideGate(); return pull(); }
       tracking = true;
-      if (isNewUser()) setTimeout(showWelcome, 150);
-    }).catch(function () { ready = true; tracking = true; syncErr = 'Não foi possível carregar o login. Verifique a internet.'; emit(); });
+      if (hasStoredSession()) hideGate(); // sessão guardada, mas sem internet para confirmar: deixa usar
+      else showGate('pronto');
+    }).catch(function () {
+      ready = true; tracking = true; syncErr = 'Não foi possível carregar o login. Verifique a internet.'; emit();
+      if (hasStoredSession()) hideGate(); else showGate('offline');
+    });
     document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') flush(); });
     try { if (sessionStorage.getItem('faf.synced')) { sessionStorage.removeItem('faf.synced'); setTimeout(function () { note('Progresso atualizado com a sua conta.'); }, 900); } } catch (e) {}
   }
@@ -218,6 +225,7 @@
   function signOut() {
     return flush().catch(function () {}).then(function () { return sb.auth.signOut(); }).then(function () {
       var m = meta(); delete m.uid; m.m = {}; saveMeta(m); user = null; emit();
+      closeSheet(); showGate('pronto');
     });
   }
   function deleteAccount() {
@@ -307,7 +315,7 @@
         input('fa-pass', criar ? 'Crie uma senha (mínimo 8 caracteres)' : 'Senha', 'password', criar ? 'new-password' : 'current-password') + msgHtml() +
         '<button type="submit" class="fa-btn is-main"' + (busy ? ' disabled' : '') + '>' + (busy ? 'Aguarde…' : criar ? 'Criar conta' : 'Entrar') + '</button></form>' +
         (criar ? '' : '<button type="button" class="fa-link" data-act="to-esqueci">Esqueci minha senha</button>') +
-        '<p class="fa-small">O login é opcional. Sem conta, o progresso fica só neste aparelho. Ao entrar, você concorda com a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p>';
+        '<p class="fa-small">Ao entrar, você concorda com a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p>';
     }
     box.innerHTML = h;
   }
@@ -329,7 +337,7 @@
     else if (a === 'google') run(google().then(function (r) { if (r && r.error) throw r.error; }));
     else if (a === 'sync') run(pull(), null);
     else if (a === 'sair') {
-      if (!window.confirm('Sair da conta? O progresso continua neste aparelho, mas deixa de ser sincronizado.')) return;
+      if (!window.confirm('Sair da conta? Para usar o app de novo, será preciso entrar.')) return;
       run(signOut(), null, function () { mode = 'entrar'; });
     }
     else if (a === 'excluir') {
@@ -373,70 +381,91 @@
     document.body.appendChild(n); setTimeout(function () { n.classList.add('is-out'); setTimeout(function () { n.remove(); }, 400); }, 2800);
   }
 
-  // ---------- boas-vindas (novos usuários) ----------
-  // Aparece na primeira vez que alguém abre o app, sem conta e sem progresso.
-  // Pode entrar com Google, entrar ou criar conta com e-mail, ou seguir sem conta.
-  var welcome = null;
-  function isNewUser() {
-    try { if (localStorage.getItem(WELCOME_KEY)) return false; } catch (e) { return false; }
-    if (/[?&](code|error)=/.test(location.search)) return false; // voltando do login do Google
-    return !hasLocalProgress();
+  // ---------- portão de acesso (camada 2) ----------
+  // O app só abre com login. Sem sessão, o portão cobre tudo e o app fica inativo (inert).
+  var gate = null, gateMode = '';
+  function hasStoredSession() { try { return !!localStorage.getItem(AUTH_KEY); } catch (e) { return false; } }
+  function lockApp(on) {
+    ['app', 'faf-dock', 'faf-menu-btn'].forEach(function (id) {
+      var el = document.getElementById(id); if (!el) return;
+      if (on) el.setAttribute('inert', ''); else el.removeAttribute('inert');
+    });
+    document.body.classList.toggle('fw-open', !!on);
+    if (on) { try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {} }
   }
-  function welcomeDone() {
-    try { _set.call(localStorage, WELCOME_KEY, '1'); } catch (e) {}
-    if (welcome) {
-      welcome.classList.add('is-out');
-      document.body.classList.remove('fw-open');
-      var w = welcome; welcome = null;
-      setTimeout(function () { w.remove(); }, 320);
+  function hideGate() {
+    gateMode = '';
+    lockApp(false);
+    if (gate) {
+      closeSheet();
+      var g = gate; gate = null;
+      g.classList.add('is-out');
+      setTimeout(function () { g.remove(); }, 320);
     }
   }
-  function showWelcome() {
-    if (welcome || user) return;
-    welcome = document.createElement('div');
-    welcome.className = 'fw';
-    welcome.setAttribute('role', 'dialog');
-    welcome.setAttribute('aria-modal', 'true');
-    welcome.setAttribute('aria-labelledby', 'fw-title');
-    welcome.innerHTML =
-      '<div class="fw-top">' +
-        '<div class="fw-bubbles" aria-hidden="true">' +
-          '<span class="fw-b is-es">¡Hola! ¿Qué tal?</span>' +
-          '<span class="fw-b is-pt">Olá! Tudo bem?</span>' +
+  function gateCard(mode) {
+    if (mode === 'carregando') return '<p class="fw-wait" role="status">Carregando…</p>';
+    if (mode === 'entrando') return '<p class="fw-wait" role="status">Entrando na sua conta…</p>';
+    if (mode === 'offline') return '<p class="fw-err" role="alert">Sem conexão com a internet. Para entrar no Frase a Frase, conecte-se e tente de novo.</p>' +
+      '<button type="button" class="fa-btn is-main" data-w="retry">Tentar de novo</button>';
+    return '<button type="button" class="fa-btn is-google" data-w="google">' + GOOGLE_G + 'Continuar com Google</button>' +
+      '<button type="button" class="fa-btn is-main" data-w="criar">Criar conta com e-mail</button>' +
+      '<button type="button" class="fa-btn is-light" data-w="entrar">Já tenho conta</button>' +
+      '<p class="fa-small">Para usar o app, entre com sua conta. Seu progresso fica salvo nela e você continua de onde parou em qualquer aparelho. Ao entrar, você concorda com a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p>' +
+      '<p class="fw-err" role="alert" hidden></p>';
+  }
+  function showGate(mode) {
+    if (user) return;
+    lockApp(true);
+    if (!gate) {
+      gate = document.createElement('div');
+      gate.className = 'fw';
+      gate.setAttribute('role', 'dialog');
+      gate.setAttribute('aria-modal', 'true');
+      gate.setAttribute('aria-labelledby', 'fw-title');
+      gate.innerHTML =
+        '<div class="fw-top">' +
+          '<div class="fw-bubbles" aria-hidden="true">' +
+            '<span class="fw-b is-es">¡Hola! ¿Qué tal?</span>' +
+            '<span class="fw-b is-pt">Olá! Tudo bem?</span>' +
+          '</div>' +
+          '<div class="fw-brand"><span class="fw-logo" aria-hidden="true">F</span><span>Frase a Frase</span></div>' +
+          '<h1 id="fw-title">Aprenda espanhol<br>frase a frase</h1>' +
+          '<ul class="fw-list">' +
+            '<li>600 frases do dia a dia com áudio</li>' +
+            '<li>150 textos com tradução e curso do A1 ao B2</li>' +
+            '<li>Seu progresso salvo em qualquer aparelho</li>' +
+          '</ul>' +
         '</div>' +
-        '<div class="fw-brand"><span class="fw-logo" aria-hidden="true">F</span><span>Frase a Frase</span></div>' +
-        '<h1 id="fw-title">Aprenda espanhol<br>frase a frase</h1>' +
-        '<ul class="fw-list">' +
-          '<li>600 frases do dia a dia com áudio</li>' +
-          '<li>150 textos com tradução e curso do A1 ao B2</li>' +
-          '<li>Seu progresso salvo em qualquer aparelho</li>' +
-        '</ul>' +
-      '</div>' +
-      '<div class="fw-card">' +
-        '<button type="button" class="fa-btn is-google" data-w="google">' + GOOGLE_G + 'Continuar com Google</button>' +
-        '<button type="button" class="fa-btn is-main" data-w="criar">Criar conta com e-mail</button>' +
-        '<button type="button" class="fa-btn is-light" data-w="entrar">Já tenho conta</button>' +
-        '<button type="button" class="fw-skip" data-w="skip">Agora não, usar sem conta</button>' +
-        '<p class="fa-small">Sem conta, o progresso fica só neste aparelho. Você pode entrar depois pelo menu. Ao entrar, você concorda com a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p>' +
-        '<p class="fw-err" role="alert" hidden></p>' +
-      '</div>';
-    document.body.appendChild(welcome);
-    document.body.classList.add('fw-open');
-    welcome.addEventListener('click', function (e) {
-      var b = e.target.closest('[data-w]'); if (!b) return;
-      var a = b.getAttribute('data-w');
-      if (a === 'skip') { welcomeDone(); return; }
-      if (a === 'entrar' || a === 'criar') { openSheet(a); return; }
-      if (a === 'google') {
-        b.disabled = true;
-        google().then(function (r) { if (r && r.error) throw r.error; }).catch(function (err) {
-          b.disabled = false;
-          var p = welcome && welcome.querySelector('.fw-err');
-          if (p) { p.textContent = friendly(err); p.hidden = false; }
-        });
-      }
-    });
-    setTimeout(function () { var f = welcome && welcome.querySelector('.fa-btn'); if (f) f.focus(); }, 60);
+        '<div class="fw-card"></div>';
+      (document.body || document.documentElement).appendChild(gate);
+      gate.addEventListener('click', onGateClick);
+    }
+    if (mode !== gateMode) {
+      gateMode = mode;
+      gate.querySelector('.fw-card').innerHTML = gateCard(mode);
+    }
+  }
+  function onGateClick(e) {
+    var b = e.target.closest('[data-w]'); if (!b) return;
+    var a = b.getAttribute('data-w');
+    if (a === 'retry') { location.reload(); return; }
+    if (!sb) return;
+    if (a === 'entrar' || a === 'criar') { openSheet(a); return; }
+    if (a === 'google') {
+      b.disabled = true;
+      google().then(function (r) { if (r && r.error) throw r.error; }).catch(function (err) {
+        b.disabled = false;
+        var p = gate && gate.querySelector('.fw-err');
+        if (p) { p.textContent = friendly(err); p.hidden = false; }
+      });
+    }
+  }
+  // Sem sessão guardada, o portão entra antes de o app aparecer (evita mostrar o app por um instante).
+  if (configured && !hasStoredSession()) {
+    var startMode = /[?&]code=/.test(location.search) ? 'entrando' : 'carregando';
+    if (document.body) showGate(startMode);
+    else document.addEventListener('DOMContentLoaded', function () { if (!user && (!ready || !hasStoredSession())) showGate(gateMode || startMode); });
   }
 
   // ---------- ganchos usados pelo resto do app ----------
@@ -444,9 +473,7 @@
     open: openSheet,
     close: closeSheet,
     isOpen: function () { return !!(sheet && !sheet.hidden); },
-    welcomeOpen: function () { return !!welcome; },
-    skipWelcome: function () { welcomeDone(); },
-    showWelcome: showWelcome,
+    gateOpen: function () { return !!gate; },
     user: function () { return user; },
     label: function () {
       if (user) return { label: 'Minha conta', sub: user.email || 'Conectado' };
