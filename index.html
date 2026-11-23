@@ -4437,7 +4437,14 @@ function fafLang() {
       if (S.done > 0 && S.done < S.total && !window.confirm('Sair agora? O progresso desta lição será perdido.')) return;
       close();
     }
-    function close() { ov.remove(); document.body.classList.remove('cc-locked'); lesson = null; try { speechSynthesis.cancel(); } catch (e) {} renderMap(); if (!toastOn) nextToast(); }
+    // Voz da lição: só toca no exercício atual. Ao trocar de exercício ou sair, para a fala e cancela a que estava agendada.
+    var sayTimer = 0;
+    function sayLater(text) { clearTimeout(sayTimer); sayTimer = setTimeout(function () { sayTimer = 0; speak(text); }, 250); }
+    function hush() {
+      clearTimeout(sayTimer); sayTimer = 0;
+      try { if (window.FAF && window.FAF.stopVoice) window.FAF.stopVoice(); else speechSynthesis.cancel(); } catch (e) {}
+    }
+    function close() { hush(); ov.remove(); document.body.classList.remove('cc-locked'); lesson = null; renderMap(); if (!toastOn) nextToast(); }
     function setFoot(kids) { foot.className = 'cc-l-foot'; foot.replaceChildren.apply(foot, kids); }
 
     function appLang() { return fafLang(); }
@@ -4488,6 +4495,7 @@ function fafLang() {
     }
 
     function next() {
+      hush();
       paintTop();
       if (cfg.mode === 'lesson' && st.hearts.n <= 0) return outOfHearts();
       var item = S.queue.shift();
@@ -4497,6 +4505,7 @@ function fafLang() {
 
     function render(item) {
       var e = item.e, answer = null, checkBtn;
+      hush();
       main.replaceChildren();
       if (item.retry) main.appendChild(h('p', { class: 'cc-kicker is-retry', text: 'Vamos tentar de novo' }));
       function ready(v) {
@@ -4517,7 +4526,7 @@ function fafLang() {
             h('button', { type: 'button', class: 'cc-play', 'aria-label': 'Ouvir de novo', onclick: function () { speak(e.es); } }, [icon('speaker')]),
             h('button', { type: 'button', class: 'cc-play is-slow', 'aria-label': 'Ouvir devagar', onclick: function () { speak(e.es, true); } }, [icon('turtle')])
           ]));
-          setTimeout(function () { speak(e.es); }, 250);
+          sayLater(e.es);
         } else {
           main.appendChild(h('p', { class: 'cc-kicker', text: 'Complete a frase' }));
           var parts = e.es.split('___');
@@ -4589,7 +4598,7 @@ function fafLang() {
             h('button', { type: 'button', class: 'cc-play', 'aria-label': 'Ouvir de novo', onclick: function () { speak(e.es); } }, [icon('speaker')]),
             h('button', { type: 'button', class: 'cc-play is-slow', 'aria-label': 'Ouvir devagar', onclick: function () { speak(e.es, true); } }, [icon('turtle')])
           ]));
-          setTimeout(function () { speak(e.es); }, 250);
+          sayLater(e.es);
         } else {
           main.appendChild(h('h2', { class: 'cc-q', text: e.pt }));
         }
@@ -5265,6 +5274,10 @@ var GAPS = [
   { before: 'Si hubiera sabido, ', after: ' ido más veces.', options: ['habría', 'había', 'habrá'], correct: 0, pt: 'Se soubesse, teria ido mais vezes.' }
 ];
 
+// Prática: ao ir para o próximo exercício, a voz do anterior para.
+function stopPracticeVoice() {
+  try { if (window.FAF && window.FAF.stopVoice) window.FAF.stopVoice(); else window.speechSynthesis.cancel(); } catch (e) {}
+}
 function todayStr() {
   var d = new Date();
   return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
@@ -5889,6 +5902,7 @@ class Component extends DCLogic {
       primaryExStyle: 'min-height: 52px; border: none; border-radius: 14px; font-size: 15px; font-weight: 600; ' + (primaryReady ? 'background: var(--brand); color: #FFFFFF' : 'background: var(--off); color: var(--muted)'),
       primaryEx: function () {
         if (s.checked && exOk) {
+          stopPracticeVoice();
           self.setState({ ex: (s.ex + 1) % EXS.length, built: [], checked: false });
         } else if (complete) {
           if (exOk) { self.bump({ checked: true }); speak(answerStr); }
@@ -5918,7 +5932,7 @@ class Component extends DCLogic {
       liAnswered: lAns,
       liFbText: lOk ? '¡Muy bien! Você entendeu de ouvido.' : 'Quase. Ouça de novo e compare com a frase escrita.',
       liFbStyle: fbStyle(lOk),
-      liNext: function () { self.setState({ li: (s.li + 1) % LISTEN.length, lpick: null, lshow: false }); },
+      liNext: function () { stopPracticeVoice(); self.setState({ li: (s.li + 1) % LISTEN.length, lpick: null, lshow: false }); },
 
       gap: { before: g.before, after: g.after, pt: g.pt },
       gPos: s.gi + 1,
@@ -5941,7 +5955,7 @@ class Component extends DCLogic {
       gAnswered: gAns,
       gFbText: gOk ? '¡Correcto!' : 'A resposta certa é "' + g.options[g.correct] + '".',
       gFbStyle: fbStyle(gOk),
-      gNext: function () { self.setState({ gi: (s.gi + 1) % GAPS.length, gpick: null }); }
+      gNext: function () { stopPracticeVoice(); self.setState({ gi: (s.gi + 1) % GAPS.length, gpick: null }); }
     };
   }
 }
